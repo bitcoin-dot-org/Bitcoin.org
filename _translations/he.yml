@@ -507,7 +507,7 @@ he:
     disclosuretxt: "אם מצאת בעיה הקשורה לביטקוין, בעיות שאינן קריטיות ניתן לשלוח בדוא\"ל  באנגלית לכל אחד ממפתחי הליבה או אל רשימת התפוצה הפרטית לעיל של מאבטחי ביטקוין. דוגמה לבעיה לא קריטית היא הפעלת מתקפת שיגור DoS אשר יקרה מדי לביצוע. בעיות קריטיות שהן רגישות מדי לשיגור בדוא\"ל שאינו מוצפן יש לשלוח לאחד או יותר ממפתחי הליבה, בהצפנה עם   מפתח(ות)  PGP שלהם."
     involve: "היה / היי מעורב / ת"
     involvetxt1: "ביטקוין הנו תוכנה פתוחה וחינמית וכל מפתח יכול לתרום לפרויקט. כל שנחוץ נמצא ב <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. בבקשה לוודא שקראת והנך פועל/ת לפי הנחיות תהליך הפיתוח המתוארות ב  README , כמו גם לספק איכות קוד גבוהה וכיבוד כל ההנחיות.."
-    involvetxt2: "דיוני פיתוח נערכים בגיטהאב ובקבוצת הדוא\"ל  <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>דיונים פחות פורמליים מתבצעים ב irc.freenode.net #bitcoin-core-dev  ו (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">logs</a>)."
+    involvetxt2: "דיוני פיתוח נערכים בגיטהאב ובקבוצת הדוא\"ל  <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>דיונים פחות פורמליים מתבצעים ב irc.freenode.net #bitcoin-core-dev  ו (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
     more: "פרויקטי תוכנה נוספים חופשיים"
     morewant: "מעונין/ת לתרום לפרויקט אחר?"
     morechoose: "ניתן לבחור פרויקט ע\"י מענה על מספר <a href=\"http://whatcanidoforbitcoin.xyz/\">שאלות לגבי כישוריך</a>."

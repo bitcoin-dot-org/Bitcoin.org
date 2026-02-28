@@ -1,0 +1,33 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+=== application info ===
+Version: 8.16 (816)
+id: bitcoinwallet
+title: "Bitcoin Wallet"
+titleshort: "Bitcoin Wallet"
+compat: "mobile android"
+user: thongngo
+level: 2
+platform:
+  - mobile: android
+    name: mobile
+    os:
+      - name: 
+        text: "walletbitcoinwallet"
+        link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
+        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
+        screenshot: "bitcoinwalletandroid.png"
+        features: "bech32 legacy_addresses segwit"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationspvp2p"
+          transparency: "checkgoodtransparencydeterministic"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
+---

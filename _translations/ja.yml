@@ -486,7 +486,7 @@ ja:
     disclosuretxt: "ビットコインに関する脆弱性を発見した場合、それが重大なものでない場合は、コア開発者や上記のビットコイン・セキュリティーメーリングリストに、英語でE-mailを送付ください。重大でない脆弱性の例としては、コンピューター・ハッカーによるDoS攻撃があります。慎重に扱う必要があり、暗号化していないE-mailでは送付すべきでない様な重大な脆弱性が見つかった場合、一人以上のコア開発者に、PGPキーで暗号化して送付ください。"
     involve: "参加する"
     involvetxt1: "ビットコインはフリーソフトウェアであり、開発者であれば誰でもプロジェクトに貢献できます。必要なものは全て<a href=\"https://github.com/bitcoin/bitcoin\">GitHub</a>上にあります。README に記載された開発プロセスを必ずお読みになり、質の高いコードを提供し、ガイドラインを守るようお願いします。"
-    involvetxt2: "開発に関する議論は、GitHubおよび<a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>のメーリングリスト上で行われます。開発に関するよりカジュアルな議論は、irc.freenode.net＃bitcoin-core-dev（<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">ウェブインターフェイス</a>、<a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">ログ</a>）上で行われます。"
+    involvetxt2: "開発に関する議論は、GitHubおよび<a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>のメーリングリスト上で行われます。開発に関するよりカジュアルな議論は、irc.freenode.net＃bitcoin-core-dev（<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">ウェブインターフェイス</a>、<a href=\"http://gnusha.org/bitcoin-core-dev/\">ログ</a>）上で行われます。"
     more: "他のフリーソフトウェア・プロジェクト"
     morewant: "異なるプロジェクトに貢献されたいですか？"
     morechoose: "<a href=\"http://whatcanidoforbitcoin.xyz/\">幾つかのスキルに関する質問</a>にお答えいただく事で、どのプロジェクトに貢献できるか選択する事ができます。"

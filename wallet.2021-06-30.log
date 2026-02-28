@@ -1,0 +1,282 @@
+04:34:26 [main] Context - Creating bitcoinj 0.15.10 context.
+04:34:26 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+04:34:26 [main] WalletApplication - created notification channels, took 22.07 ms
+04:34:26 [main] BootstrapReceiver - got broadcast: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=de.schildbach.wallet/.service.BootstrapReceiver (has extras) }
+04:34:26 [AsyncTask #1] StartBlockchainService - last used 509 minutes ago and expecting large data, rescheduling block chain sync in roughly 60 minutes
+10:13:11 [main] Context - Creating bitcoinj 0.15.10 context.
+10:13:11 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+10:13:11 [main] WalletApplication - created notification channels, took 4.674 ms
+10:13:11 [main] Configuration - just being used - last used 848 minutes ago
+10:13:11 [pool-2-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 21.49 ms
+10:13:11 [pool-2-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 228.2 ms
+10:13:12 [main] BlockchainService - acquiring WakeLock{7e61d6d held=false, refCount=0}
+10:13:12 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+10:13:12 [main] AbstractBlockChain - chain head is at height 689034:
+ block: 
+   hash: 00000000000000000007effcf35c0597a60d01a3dc685c81d997f49aa248c2d1
+   version: 545259524 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000b8eb5953eda182cc8f86e10b89531ed32791f35e800d0
+   time: 1624885648 (2021-06-28T13:07:28Z)
+   difficulty target (nBits): 386801401
+   nonce: 3435896201
+
+10:13:12 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+10:13:12 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@beeaa11, sync mode: FULL
+10:13:12 [main] BlockchainService - adding random peers from the P2P network
+10:13:12 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@beeaa11 asynchronously
+10:13:12 [PeerGroup Thread] PeerGroup - Starting ...
+10:13:12 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+10:13:12 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=8
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sipa.be
+10:13:12 [main] BlockchainService - device storage low
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bluematt.me
+10:13:12 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=8
+10:13:12 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@beeaa11 asynchronously
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bitcoin.dashjr.org
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoinstats.com
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.jonasschnelli.ch
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sprovoost.nl
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.emzy.de
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.btc.petertodd.org
+10:13:12 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "x8.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+10:13:12 [main] BlockchainService - trusted peer '176.194.148.90,' unknown host
+10:13:12 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
+10:13:12 [main] BlockchainService - trusted peer '3.129.216.175,' unknown host
+10:13:12 [Multiplexing discovery] DnsDiscovery - Got 21 peers from x8.dnsseed.bluematt.me
+10:13:12 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sipa.be": No address associated with hostname
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+10:13:12 [main] BlockchainService - trusted peer '104.16.40.77,' unknown host
+10:13:12 [Multiplexing discovery] DnsDiscovery - Got 25 peers from x8.seed.bitcoinstats.com
+10:13:12 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+10:13:12 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.btc.petertodd.org": No address associated with hostname
+10:13:12 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+10:13:12 [main] BlockchainService - trusted peer '3.209.12.198,' unknown host
+10:13:13 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+10:13:13 [main] BlockchainService - trusted peer '151.101.65.195,' unknown host
+10:13:13 [main] BlockchainService - trusted peer '151.101.1.195' resolved to 151.101.1.195
+10:13:13 [main] CrashReporter - crashing because of uncaught exception
+java.lang.NullPointerException: Attempt to invoke virtual method 'void org.bitcoinj.core.PeerGroup.addAddress(org.bitcoinj.core.PeerAddress, int)' on a null object reference
+	at de.schildbach.wallet.service.BlockchainService$3$1.onSuccess(BlockchainService.java:642)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask.lambda$null$0$ResolveDnsTask(ResolveDnsTask.java:47)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask$$Lambda$1.run(Unknown Source:6)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:239)
+	at android.app.ActivityThread.main(ActivityThread.java:8142)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1015)
+10:13:13 [main] CrashReporter - saved crash trace to /data/user/0/de.schildbach.wallet/cache/crash.trace
+10:13:15 [main] Context - Creating bitcoinj 0.15.10 context.
+10:13:15 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+10:13:15 [main] WalletApplication - created notification channels, took 4.111 ms
+10:13:15 [main] Configuration - just being used - last used 0 minutes ago
+10:13:15 [main] ReportIssueDialogFragment - opening dialog de.schildbach.wallet.ui.ReportIssueDialogFragment
+10:13:15 [pool-2-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 18.30 ms
+10:13:15 [pool-2-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 199.1 ms
+10:13:16 [main] BlockchainService - acquiring WakeLock{91046e0 held=false, refCount=0}
+10:13:16 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+10:13:16 [main] AbstractBlockChain - chain head is at height 689034:
+ block: 
+   hash: 00000000000000000007effcf35c0597a60d01a3dc685c81d997f49aa248c2d1
+   version: 545259524 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000b8eb5953eda182cc8f86e10b89531ed32791f35e800d0
+   time: 1624885648 (2021-06-28T13:07:28Z)
+   difficulty target (nBits): 386801401
+   nonce: 3435896201
+
+10:13:16 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+10:13:16 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@1aa6fd4, sync mode: FULL
+10:13:16 [main] BlockchainService - adding random peers from the P2P network
+10:13:16 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@1aa6fd4 asynchronously
+10:13:16 [PeerGroup Thread] PeerGroup - Starting ...
+10:13:16 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+10:13:16 [main] BlockchainService - device storage low
+10:13:16 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@1aa6fd4 asynchronously
+10:13:16 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=8
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bitcoin.dashjr.org
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bluematt.me
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sipa.be
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.emzy.de
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoinstats.com
+10:13:16 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=8
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.btc.petertodd.org
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.jonasschnelli.ch
+10:13:16 [Multiplexing discovery] DnsDiscovery - Got 21 peers from x8.dnsseed.bluematt.me
+10:13:16 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sipa.be": No address associated with hostname
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sprovoost.nl
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+10:13:16 [Multiplexing discovery] DnsDiscovery - Got 25 peers from x8.seed.bitcoinstats.com
+10:13:16 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.emzy.de doesn't appear to support service bit filtering: Unable to resolve host "x8.dnsseed.emzy.de": No address associated with hostname
+10:13:16 [main] BlockchainService - trusted peer '176.194.148.90,' unknown host
+10:13:16 [main] BlockchainService - trusted peer '3.129.216.175,' unknown host
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.emzy.de
+10:13:16 [main] BlockchainService - trusted peer '104.16.40.77,' unknown host
+10:13:16 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.btc.petertodd.org": No address associated with hostname
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+10:13:16 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sprovoost.nl": No address associated with hostname
+10:13:16 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+10:13:16 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+10:13:16 [main] BlockchainService - trusted peer '3.209.12.198,' unknown host
+10:13:16 [main] BlockchainService - trusted peer '151.101.65.195,' unknown host
+10:13:16 [main] BlockchainService - trusted peer '151.101.1.195' resolved to 151.101.1.195
+10:13:16 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+10:13:16 [main] CrashReporter - crashing because of uncaught exception
+java.lang.NullPointerException: Attempt to invoke virtual method 'void org.bitcoinj.core.PeerGroup.addAddress(org.bitcoinj.core.PeerAddress, int)' on a null object reference
+	at de.schildbach.wallet.service.BlockchainService$3$1.onSuccess(BlockchainService.java:642)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask.lambda$null$0$ResolveDnsTask(ResolveDnsTask.java:47)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask$$Lambda$1.run(Unknown Source:6)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:239)
+	at android.app.ActivityThread.main(ActivityThread.java:8142)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1015)
+10:13:16 [main] CrashReporter - saved crash trace to /data/user/0/de.schildbach.wallet/cache/crash.trace
+16:21:27 [main] Context - Creating bitcoinj 0.15.10 context.
+16:21:27 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+16:21:27 [main] WalletApplication - created notification channels, took 5.000 ms
+16:21:27 [main] Configuration - just being used - last used 368 minutes ago
+16:21:27 [pool-2-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 19.98 ms
+16:21:28 [pool-2-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 200.1 ms
+16:21:28 [OkHttp https://api.coingecko.com/...] ExchangeRatesRepository - fetched exchange rates from https://api.coingecko.com/api/v3/exchange_rates, took 944.2 ms
+16:21:28 [main] BlockchainService - acquiring WakeLock{7c5116a held=false, refCount=0}
+16:21:29 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+16:21:29 [main] AbstractBlockChain - chain head is at height 689034:
+ block: 
+   hash: 00000000000000000007effcf35c0597a60d01a3dc685c81d997f49aa248c2d1
+   version: 545259524 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000b8eb5953eda182cc8f86e10b89531ed32791f35e800d0
+   time: 1624885648 (2021-06-28T13:07:28Z)
+   difficulty target (nBits): 386801401
+   nonce: 3435896201
+
+16:21:29 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+16:21:29 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@e672579, sync mode: FULL
+16:21:29 [main] BlockchainService - adding random peers from the P2P network
+16:21:29 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@e672579 asynchronously
+16:21:29 [PeerGroup Thread] PeerGroup - Starting ...
+16:21:29 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+16:21:29 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=8
+16:21:29 [main] BlockchainService - device storage low
+16:21:29 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@e672579 asynchronously
+16:21:29 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=8
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sipa.be
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bitcoin.dashjr.org
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bluematt.me
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoinstats.com
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.emzy.de
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sprovoost.nl
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.jonasschnelli.ch
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.btc.petertodd.org
+16:21:29 [main] BlockchainService - trusted peer '176.194.148.90,' unknown host
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "x8.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+16:21:29 [main] BlockchainService - trusted peer '3.129.216.175,' unknown host
+16:21:29 [Multiplexing discovery] DnsDiscovery - Got 21 peers from x8.dnsseed.bluematt.me
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sipa.be": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+16:21:29 [main] BlockchainService - trusted peer '104.16.40.77,' unknown host
+16:21:29 [Multiplexing discovery] DnsDiscovery - Got 25 peers from x8.seed.bitcoinstats.com
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.emzy.de doesn't appear to support service bit filtering: Unable to resolve host "x8.dnsseed.emzy.de": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.emzy.de
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sprovoost.nl": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+16:21:29 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+16:21:29 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.btc.petertodd.org": No address associated with hostname
+16:21:29 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+16:21:29 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.bitcoin.sprovoost.nl
+16:21:29 [Multiplexing discovery] DnsDiscovery - Got 26 peers from dnsseed.emzy.de
+16:21:29 [main] BlockchainService - trusted peer '3.209.12.198,' unknown host
+16:21:29 [main] BlockchainService - trusted peer '151.101.65.195,' unknown host
+16:21:29 [main] BlockchainService - trusted peer '151.101.1.195' resolved to 151.101.1.195
+16:21:29 [main] CrashReporter - crashing because of uncaught exception
+java.lang.NullPointerException: Attempt to invoke virtual method 'void org.bitcoinj.core.PeerGroup.addAddress(org.bitcoinj.core.PeerAddress, int)' on a null object reference
+	at de.schildbach.wallet.service.BlockchainService$3$1.onSuccess(BlockchainService.java:642)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask.lambda$null$0$ResolveDnsTask(ResolveDnsTask.java:47)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask$$Lambda$1.run(Unknown Source:6)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:239)
+	at android.app.ActivityThread.main(ActivityThread.java:8142)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1015)
+16:21:29 [main] CrashReporter - saved crash trace to /data/user/0/de.schildbach.wallet/cache/crash.trace
+16:44:13 [main] Context - Creating bitcoinj 0.15.10 context.
+16:44:13 [main] WalletApplication - === starting app using flavor: prod, build type: release, network: org.bitcoin.production
+16:44:13 [main] WalletApplication - created notification channels, took 14.79 ms
+16:44:13 [main] Configuration - just being used - last used 22 minutes ago
+16:44:13 [main] ReportIssueDialogFragment - opening dialog de.schildbach.wallet.ui.ReportIssueDialogFragment
+16:44:13 [pool-2-thread-1] WalletApplication - BIP39 wordlist loaded from: 'bip39-wordlist.txt', took 21.48 ms
+16:44:13 [pool-2-thread-1] WalletApplication - wallet loaded from: '/data/user/0/de.schildbach.wallet/files/wallet-protobuf', took 263.9 ms
+16:44:13 [OkHttp https://api.coingecko.com/...] ExchangeRatesRepository - fetched exchange rates from https://api.coingecko.com/api/v3/exchange_rates, took 587.3 ms
+16:44:14 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.android.vending&sdk=30&current=814", strongly recommended minimum app version.google_play is "813"
+16:44:14 [AsyncTask #1] AlertDialogsFragment - according to "https://wallet.schildbach.de/version?package=de.schildbach.wallet&installer=com.android.vending&sdk=30&current=814", minimum security patch level for bluetooth is 2017-09-01
+16:44:14 [main] AlertDialogsFragment - showing low storage alert dialog
+16:44:14 [main] BlockchainService - acquiring WakeLock{c07154 held=false, refCount=0}
+16:44:14 [main] BlockchainService - service start command: de.schildbach.wallet.service.cancel_coins_received
+16:44:14 [main] AbstractBlockChain - chain head is at height 689034:
+ block: 
+   hash: 00000000000000000007effcf35c0597a60d01a3dc685c81d997f49aa248c2d1
+   version: 545259524 (BIP34, BIP66, BIP65)
+   previous block: 0000000000000000000b8eb5953eda182cc8f86e10b89531ed32791f35e800d0
+   time: 1624885648 (2021-06-28T13:07:28Z)
+   difficulty target (nBits): 386801401
+   nonce: 3435896201
+
+16:44:14 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+16:44:14 [main] BlockchainService - creating org.bitcoinj.core.PeerGroup@ecc44fa, sync mode: FULL
+16:44:14 [main] BlockchainService - adding random peers from the P2P network
+16:44:14 [main] BlockchainService - starting org.bitcoinj.core.PeerGroup@ecc44fa asynchronously
+16:44:14 [PeerGroup Thread] PeerGroup - Starting ...
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sprovoost.nl
+16:44:14 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://lightning-wallet.com:8081/peers?srvmask=8
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.btc.petertodd.org
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.emzy.de
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.jonasschnelli.ch
+16:44:14 [main] BlockchainService - active network is up, metered, type: MOBILE, state: CONNECTED/CONNECTED, extraInfo: m3-world
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoinstats.com
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bitcoin.dashjr.org
+16:44:14 [main] BlockchainService - device storage low
+16:44:14 [main] BlockchainService - stopping org.bitcoinj.core.PeerGroup@ecc44fa asynchronously
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.dnsseed.bluematt.me
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting WITNESS peers from x8.seed.bitcoin.sipa.be
+16:44:14 [Multiplexing discovery] HttpDiscovery - Requesting WITNESS peers from http://httpseed.bitcoin.schildbach.de/peers?srvmask=8
+16:44:14 [Multiplexing discovery] DnsDiscovery - Seed seed.btc.petertodd.org doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.btc.petertodd.org": No address associated with hostname
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.btc.petertodd.org
+16:44:14 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sprovoost.nl doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sprovoost.nl": No address associated with hostname
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sprovoost.nl
+16:44:14 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.btc.petertodd.org
+16:44:14 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.sipa.be doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.sipa.be": No address associated with hostname
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.sipa.be
+16:44:14 [Multiplexing discovery] DnsDiscovery - Got 23 peers from seed.bitcoin.sprovoost.nl
+16:44:14 [Multiplexing discovery] DnsDiscovery - Got 25 peers from seed.bitcoin.sipa.be
+16:44:14 [main] BlockchainService - trusted peer '176.194.148.90,' unknown host
+16:44:14 [main] BlockchainService - trusted peer '3.129.216.175,' unknown host
+16:44:14 [main] BlockchainService - trusted peer '104.16.40.77,' unknown host
+16:44:14 [main] BlockchainService - trusted peer '3.209.12.198,' unknown host
+16:44:14 [main] BlockchainService - trusted peer '151.101.65.195,' unknown host
+16:44:14 [main] BlockchainService - trusted peer '151.101.1.195' resolved to 151.101.1.195
+16:44:14 [main] CrashReporter - crashing because of uncaught exception
+java.lang.NullPointerException: Attempt to invoke virtual method 'void org.bitcoinj.core.PeerGroup.addAddress(org.bitcoinj.core.PeerAddress, int)' on a null object reference
+	at de.schildbach.wallet.service.BlockchainService$3$1.onSuccess(BlockchainService.java:642)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask.lambda$null$0$ResolveDnsTask(ResolveDnsTask.java:47)
+	at de.schildbach.wallet.ui.preference.ResolveDnsTask$$Lambda$1.run(Unknown Source:6)
+	at android.os.Handler.handleCallback(Handler.java:938)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:239)
+	at android.app.ActivityThread.main(ActivityThread.java:8142)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:626)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1015)
+16:44:14 [main] CrashReporter - saved crash trace to /data/user/0/de.schildbach.wallet/cache/crash.trace
+16:44:14 [Multiplexing discovery] DnsDiscovery - Seed dnsseed.bitcoin.dashjr.org doesn't appear to support service bit filtering: Unable to resolve host "x8.dnsseed.bitcoin.dashjr.org": No address associated with hostname
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting all peers from dnsseed.bitcoin.dashjr.org
+16:44:14 [Multiplexing discovery] DnsDiscovery - Seed seed.bitcoin.jonasschnelli.ch doesn't appear to support service bit filtering: Unable to resolve host "x8.seed.bitcoin.jonasschnelli.ch": No address associated with hostname
+16:44:14 [Multiplexing discovery] DnsDiscovery - Requesting all peers from seed.bitcoin.jonasschnelli.ch
