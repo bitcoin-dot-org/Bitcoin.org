@@ -283,6 +283,7 @@ pt_BR:
     walletbitbox: "BitBox02 é uma carteira de hardware, desenvolvida e fabricada na Suíça. É equipada com uma tela OLED, sensores de toque invisíveis, suporte USB-C e USB-A, backups offline para cartão microSD e mnemônico BIP39. A configuração de uma carteira BitBox02 e o gerenciamento de suas moedas são facilitados pelo BitBoxApp associado."
     walletbither: "Bitter é uma carteira simples e segura em muitas plataformas. Com modo frio / quente especialmente projetado, o usuário pode obter segurança e simplicidade. O XRANDOM do Bither usa diferentes fontes de entropia para gerar números aleatórios para os usuários. Ainda com HDM, os usuários podem ter as vantagens do HD e a segurança de Multi-assinatura."
     walletwasabi: "Wasabi é uma carteira Bitcoin focada em privacidade, não custodiada, de código aberto para Windows, Linux e Mac. Contém a anonimidade da rede Tor e funcionalidades de controle de moedas e CoinJoin."
+    walletginger: "GingerWallet é uma carteira Bitcoin open-source e não custodial para desktop. Os recursos incluem CoinJoin com o coordenador padrão, 2FA com criptografia de carteira, suporte multilíngue, filtros de blocos, integração com Tor e funcionalidade de código QR. Compatível com diversas carteiras de hardware para uso seguro."
     walletdownload: "Instalar"
     walletvisit: "Acessar o site"
     walletsourcecode: "Código fonte"
