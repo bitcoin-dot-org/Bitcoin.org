@@ -1,0 +1,185 @@
+/*** 
+Dark style guide
+***/
+
+$background: #090c14;
+$touch-bg: #121212;
+$text: #fff;
+$primary: #53a7ea;
+$primary-variant: #cc6500;
+$secondary: #ff9833;
+$error: #cf6679;
+$high-emphasis-opacity: 87%;
+$med-emphasis-opactiy: 60%;
+$disabled-emphasis-opacity: 38%;
+
+/* styles */
+
+body {
+    background-color: $background;
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+h3,h4,h5 {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+table {
+    border-color: $text;
+    opacity: $med-emphasis-opactiy;
+}
+.btn-light {
+    background-color: $secondary;
+    border-color: $secondary;
+}
+.btn-bright,
+.btn,
+.btn-light {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+
+
+/* Specific blocks */
+.mainhero,
+.mainoverview,
+.maindesc,
+.head {
+    background-color: $background;
+}
+.maindesc-text,
+.mainlist-item p,
+.mainsummary {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+.maincard-link {
+    color: $text;
+    opacity: $med-emphasis-opactiy;
+}
+/* Top main menu */
+.menusimple {
+    border-color: $text;
+    opacity: $high-emphasis-opacity;
+}
+.menusimple>li a,
+.menusimple>li a:active,
+.menusimple>li a:visited,
+.menusimple>li a:link {
+    color: $text;
+    /*opacity: $high-emphasis-opacity;*/
+}
+.menusimple > li a:hover,
+.menusimple>li>ul li:hover,
+.menusimple li:hover>a,
+.menusimple li.active>a {
+    color: #fff;
+    opacity: $high-emphasis-opacity;
+}
+.menusimple>li>ul li:hover {
+    background-color: $touch-bg;
+}
+.menusimple > li ul {
+    background-color: $touch-bg;
+    border-color: #fff;
+} 
+
+/* Language drop down menu */
+.lang li a,
+.lang li a:link,
+.lang li a:visited,
+.lang li a:active {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+.lang li ul {
+   background-color: $touch-bg;
+   border-color: $text;
+}
+.lang li ul li a:hover,
+.lang:hover li a {
+    color: $text;
+    background: inherit;
+    opacity: $med-emphasis-opactiy;
+}
+
+/* Inner pages */
+.content {
+    background-color: $background;
+}
+.toccontent li,
+.post-name,
+.start h2,
+.glossary_term,
+.bitcoin-paper div > p,
+.footer {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+}
+.start p,
+.summary {
+    color: $text;
+    opacity: $med-emphasis-opactiy;
+}
+.column-text p,
+.toccontent p,
+.introlink,
+.toc div > ul > li > a,
+.toc div > ul > li > ul a {
+    color: $text;
+    opacity: $high-emphasis-opacity;
+} 
+.toc + .toccontent,
+.toccontent-block {
+    border-left-color: $text;
+    opacity: $high-emphasis-opacity;
+}
+.boxexpand.expanded>h1:first-child,
+.boxexpand.expanded>h2:first-child,
+.boxexpand.expanded>h3:first-child {
+    background-color: $touch-bg;
+}
+.card h2 {
+    color: $primary-variant;
+}
+.card,                  
+.organization-img {
+    border-color: $touch-bg;
+}
+.organization-country {
+    color: $primary-variant;
+}
+.community-row,
+.card p {
+    border-bottom-color:$text;
+    opacity: $high-emphasis-opacity;
+}
+.develdocdisclaimer {
+    background-color: $error;
+}
+.develdocdisclaimer a {
+    color: $text;
+    text-decoration: underline;
+    opacity: $high-emphasis-opacity;
+}
+/* Browser elements / BOM */
+
+::-webkit-scrollbar {
+    background-color: #1c1e1f;
+    color: #c5c1b9;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #2a2c2e;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #323537;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #3d4043;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+* {
+    scrollbar-color: #2a2c2e #1c1e1f;
+}

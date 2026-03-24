@@ -21,7 +21,6 @@ end_of_page: |
 <div class="container hero-container" markdown="block">
 
 # Bitcoin Core
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

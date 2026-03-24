@@ -327,7 +327,6 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
 .wallet-label {
 	font-weight: 600;
 	font-size: 17px;
-	color: #13161F;
 	line-height: 1.4;
 	vertical-align: middle;
 }
@@ -652,18 +651,22 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
     position: absolute;
     top: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     height: 100%;
-    width: 36px;
     background: none;
     border: none;
     box-sizing: border-box;
     padding: 0;
+    z-index: 0;
+  }
+  .checkboxes-acc .checkboxes-acc-btn img {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%)
   }
   .checkboxes-acc.open .checkboxes-acc-btn img {
-    transform: rotate(180deg)
+    transform: rotate(180deg) translateY(50%)
   }
   .checkboxes-acc-content {
     display: none;
@@ -688,6 +691,7 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
     flex-wrap: wrap;
   }
   .checkboxes-acc-selected {
+    position: relative;
     height: 36px;
     display: flex;
     align-items: center;
@@ -697,6 +701,7 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
     background: #FFFFFF;
     border: 2px solid #F7931A;
     box-sizing: border-box;
+    z-index: 1;
   }
   .checkboxes-acc-selected-text {
     margin-right: 10px;
@@ -728,6 +733,7 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
   }
   .acc-content-btn {
     background: #fff;
+	line-height: 50px;
   }
   .acc-content-btn + .acc-content-btn {
     border-top: 1px solid #dadada;
@@ -737,6 +743,7 @@ label.disabled + .sidebar-selector-info .sidebar-selector-info-text {
   }
   .table-sort .acc-btn {
     font-weight: 600;
+	line-height: 50px;
   }
   .table-sort-title {
     margin: 0 0 5px;

@@ -4,40 +4,26 @@
 
 layout: base
 id: buy
+end_of_page: |
+  <script>showBuyWidget();</script>
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
 
-<div class="hero">
+<div class="hero" style="padding:25px;">
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 
 <div class="container">
-  <div class="row card-row">
-    <div class="card buy-card">
-      <img src="/img/icons/ico_exchange.svg?{{site.time | date: '%s'}}" alt="Bank icon">
-      <h2 id="bitcoin-exchange">
-        {% translate bitcoin-exchange %}</h2>
-      <p>{% translate bitcoin-exchange-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_local.svg?{{site.time | date: '%s'}}" alt="Signpost icon">
-      <h2 id="p2p-directory">
-        {% translate p2p-bitcoins %}</h2>
-      <p>{% translate p2p-bitcoins-text %}</p>
-    </div>
-    
-    <div class="card buy-card">
-      <img src="/img/icons/ico_atm.svg?{{site.time | date: '%s'}}" alt="Card icon">
-      <h2 id="bitcoin-atm">
-        {% translate bitcoin-atm %}</h2>
-      <p>{% translate bitcoin-atm-text %}</p>
-    </div>
+  <div class="row card-row" style="justify-content: center;">
+	<div class="card buy-card" style="width: 480px;margin-top: -30px;margin-bottom: 100px;">
+  		<div class="buy-widget"></div>
+  	</div>
+	<div class="buy-footer-notice">
+		<b>The above widget is provided by a third party provider (<a href="https://www.moonpay.com/">MoonPay</a>) and is not associated with bitcoin.org.</b>
+	</div>
   </div>
 </div>
 

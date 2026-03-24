@@ -67,7 +67,7 @@ ___
 This section shall outline the responsibilities and tasks for each user role.
 
 ### 1. Team Leaders
-Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) and Hendrawan AKA “khendraw” (Telegram: @khendraw)
+Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
 * Oversight on the complete translation efforts on Transifex.
 * Keeping track on everything.
@@ -100,7 +100,7 @@ ___
 
 ## Frequently Asked Questions
 
-This FAQ intends to provide answers to some questions that might occur while translating bitcoin.org on Transifex. If you feel that some questions are missing, get in contact with one of the Team Leaders or the Website Maintainer. Team Leaders are Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) and Hendrawan AKA “khendraw” (Telegram: @khendraw). The Website Maintainer is Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)). We are happy to add your question to the FAQ. 
+This FAQ intends to provide answers to some questions that might occur while translating bitcoin.org on Transifex. If you feel that some questions are missing, get in contact with Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). He is happy to help, adding your question to the FAQ. 
 
 ### 1. What is Transifex? 
 
@@ -112,7 +112,7 @@ Just jump to the [Getting Started with the Translation Team](#getting-started-wi
 
 ### 3. Do I need to know how to use GitHub to translate? 
 
-No, even though the website is managed on GitHub, it is only necessary to understand how to translate bitcoin.org on Transifex. Everything GitHub-related, such as creating a Pull Request to update a specific translation of bitcoin.org, is handled by Will Binns, the Website Maintainer. However, if you are familiar with GitHub, you are welcome to create your own Pull Request to update specific translations of bitcoin.org. Just take a look at section [Handling Translations on GitHub](#handling-translations-on-github) in this document. 
+No, even though the website is managed on GitHub, it is only necessary to understand how to translate bitcoin.org on Transifex. Everything GitHub-related, such as creating a Pull Request to update a specific translation of bitcoin.org, is handled by cobra, the owner of bitcoin.org. However, if you are familiar with GitHub, you are welcome to create your own Pull Request to update specific translations of bitcoin.org. Just take a look at section [Handling Translations on GitHub](#handling-translations-on-github) in this document. 
 
 ### 4. How do I use Transifex? 
 
@@ -127,13 +127,13 @@ A resource consists of a number of strings, with a string being for example a pa
 Your translations are welcome and help to improve bitcoin.org, the unofficial but original website of Bitcoin. Bitcoin.org was originally registered and owned by Bitcoin's first two developers, Satoshi Nakamoto and Martti Malmi. Translations are usually only pushed to the website if:
 
 1. the corresponding resource that contains the translations is 100% translated and 100% reviewed and 
-2. a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw) is notified about a resource being finished. 
+2. a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) is notified about a resource being finished. 
 
 ### 7. A reviewed translation contains a mistake. What should I do? 
 
 This depends on whether you are (a) a translator or (b) a reviewer or higher.
 
-If (a) is true, you won’t be able to change the string yourself. Thus, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. If no one responsible in your team is active, link one of the Team Leaders (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+If (a) is true, you won’t be able to change the string yourself. Thus, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. If no one responsible in your team is active, link a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
 
 If (b) is true, and you are sure that the translation contains a mistake, just edit the string. If you are not 100% sure, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. 
      
@@ -143,11 +143,11 @@ In general, no, however there are periods like during the summer 2018, in which 
 
 ### 9. Who is responsible for the translation project on Transifex? 
 
-Bitcoin.org itself is owned by theymos and cobra-bitcoin. The website is maintained by Will Binns with input from many other volunteers on GitHub. Will is also the project maintainer for the translation project on Transifex, with the effective oversight on translations done by Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) and Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+Bitcoin.org itself is owned by cobra. The website is maintained by cobra with input from many other volunteers on GitHub. Cobra is also one of the project maintainers for the translation project on Transifex, with the effective oversight on translations done by Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
 ### 10. I found a mistake in the original English version. What should I do? 
 
-Comment the mistake and mention one of the Team Leaders by using @username or contact the Team Leaders directly via message. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+Comment the mistake and mention one of the Team Leaders by using @username or contact a Team Leader directly via message. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
 ### 11. How do I get in contact with other translators? 
 
@@ -159,19 +159,19 @@ Apart from that, you can obviously contact other translators by using the direct
 
 ### 12. I translated a string completely. What’s next? 
 
-Great work! Now that the string is translated, it has to be reviewed. If there are active reviewers in your team, just wait for them to review to string. Get in contact with them if you feel that this is necessary. If there are no active reviewers (and coordinators) in your team, get in contact with the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). We can promote you to reviewer so that you can review your own strings as a last solution. 
+Great work! Now that the string is translated, it has to be reviewed. If there are active reviewers in your team, just wait for them to review to string. Get in contact with them if you feel that this is necessary. If there are no active reviewers (and coordinators) in your team, get in contact with a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).  He can promote you to reviewer so that you can review your own strings as a last solution. 
 
 ### 13. I am not sure how to translate a string/word. Where can I get help? 
 
 While it is possible to use the comment function on Transifex to ask for help, unfortunately no notification is sent out regarding a comment. Thus, your comment will probably stay unread until someone accidentally finds it. Therefore, we do not recommend using the comment function in this case. 
 
-Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact one of the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
      
 ### 14. I can’t find a team for my own language. Who should I contact to add a new language? 
 
 If you do not have a Transifex account yet, just look at point “2. Login and join the Bitcoin.org Translation Team” of the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team) in this document. When your language request is accepted or denied you will receive a notification. 
 
-You can also contact one of the Team Leaders about this. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+You can also contact a Team Leader about this. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
 
 ### 15. A suggestion provided by the glossary does not make sense. What should I do? 
 
@@ -189,7 +189,7 @@ Contact the reviewers in your language team and ask for a review; either through
 
 If the reviewers in your team are not active, contact the coordinator about this. Coordinators are either active native speakers or, if there is currently no active coordinator in place for your language, “Komodorpudel”, one of the Team Leaders, is set as coordinator. 
 
-If you do not receive a reply from an active coordinator, contact Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). If necessary, we can promote you to reviewer, so you can review your own strings. 
+If you do not receive a reply from an active coordinator, contact Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). If necessary, he can promote you to reviewer, so you can review your own strings. 
 
 ### 18. How to contact a member, reviewer, coordinator or team manager? 
 
@@ -211,7 +211,7 @@ However, if a translated string is significantly longer than the English string,
 
 All together: "You should create a new Bitcoin address every time you want to receive bitcoins" 
 
-Please note that the English version is not entirely consistent on this. If you find an issue, please contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). 
+Please note that the English version is not entirely consistent on this. If you find an issue, please contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
 ### 21. A certain string is hard to translate without any context. Where can I get some? 
 
@@ -231,13 +231,13 @@ However, if you see an URL-related warning message, this must be corrected becau
 
 You can open Issues by leaving a comment and flagging it as an “Issue”. 
 
-We strongly recommend to not use this function at all. Instead, please contact either the coordinator for your language or one of the Team Leaders directly. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw).
+We strongly recommend to not use this function at all. Instead, please contact either the coordinator for your language or a Team Leader directly. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
 ### 24. I cannot find an answer to my problem in the FAQ. What should I do? 
 
 Join our [Telegram Group](https://t.me/bitcoinaroundtheworld) and ask your question there. 
 
-Alternatively, you can directly contact the Team Leaders. Team Leaders are currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) or Hendrawan AKA “khendraw” (Telegram: @khendraw). We are happy to help. 
+Alternatively, you can directly contact a Team Leaders. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 ___
 
 ## Handling Translations on GitHub

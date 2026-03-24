@@ -1,0 +1,29 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: sell
+end_of_page: |
+  <script>showSellWidget();</script>
+---
+
+<!-- Note: this file exempt from check-for-subheading-anchors check -->
+
+<div class="hero" style="padding:25px;">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row card-row" style="justify-content: center;">
+	<div class="card buy-card" style="width: 480px;margin-top: -30px;margin-bottom: 100px;">
+  		<div class="sell-widget"></div>
+  	</div>
+	<div class="buy-footer-notice">
+		<b>The above widget is provided by a third party provider (<a href="https://www.moonpay.com/">MoonPay</a>) and is not associated with bitcoin.org.</b>
+	</div>
+  </div>
+</div>
+

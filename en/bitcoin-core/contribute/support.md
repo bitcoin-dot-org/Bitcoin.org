@@ -18,7 +18,6 @@ breadcrumbs:
 <div class="container hero-container" markdown="block">
 
 # Supporting Bitcoin Core Users
-{% include helpers/hero-social.html %}
 </div>
 </div>
 
@@ -31,7 +30,7 @@ are asked by complete newbies, so nearly everyone with any experience
 using Bitcoin Core can provide help.
 
 Before you start providing support, you may want to familiarize yourself
-with the available [documentation][bcc documentation].
+with the available [documentation](https://developer.bitcoin.org).
 
 ## Forums
 

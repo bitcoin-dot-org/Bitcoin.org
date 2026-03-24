@@ -15,7 +15,7 @@ platform:
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
       screenshot: "bitcoincore.png"
-      features: "bech32 full_node legacy_addresses segwit"
+      features: "bech32 full_node hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

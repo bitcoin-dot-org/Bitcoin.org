@@ -9,7 +9,6 @@ id: bitcoin-for-individuals
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summary">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -49,6 +48,9 @@ id: bitcoin-for-individuals
       <img src="/img/icons/ico_anon.svg?{{site.time | date: '%s'}}" alt="Icon" />
       <h2 id="anonymous">{% translate anonymous %}</h2>
       <p>{% translate anonymoustext %}</p>
+      <div class="herecomesbitcoin-sir">
+        {% include animations/herecomesbitcoin/sir.html %}
+      </div>
     </div>
   </div>
 

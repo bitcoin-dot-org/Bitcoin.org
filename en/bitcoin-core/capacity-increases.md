@@ -19,7 +19,6 @@ moved_url: https://bitcoincore.org/en/2015/12/21/capacity-increase
 
 # Capacity increases for the Bitcoin system
 
-{% include helpers/hero-social.html %}
 </div>
 </div>
 

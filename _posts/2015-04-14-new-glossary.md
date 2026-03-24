@@ -84,7 +84,7 @@ people load them.
 [jquery]: https://jquery.com/
 [jquery ui]: https://jqueryui.com/
 [several volunteers]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/793
-[Bitcoin.org developer documentation]: /en/developer-documentation
+[Bitcoin.org developer documentation]: https://developer.bitcoin.org/
 [the bitcoin foundation]: https://bitcoinfoundation.org/
 [glossary section]: /en/developer-glossary
 [events page]: /en/events

@@ -21,17 +21,20 @@ in the future
 - No indication that changes to the code are not properly tested
 - Wallet was publicly announced and released since at least 3 months
 - No concerning bug is found when testing the wallet
+- Provides a bug reporting method on the website and/or in the app
 - Website supports HTTPS and 301 redirects HTTP requests
 - SSL certificate passes [Qualys SSL Labs SSL
   test](https://www.ssllabs.com/ssltest/)
-- Website serving executable code or requiring authentication uses HSTS with a
-  max-age of at least 180 days
+- Website serving or linking to executable code or requiring authentication uses HSTS
+  - Existing listings: With a max-age of at least 180 days
+  - New listings: With a max-age of at least 1 year, and preload and includeSubDomains directives to qualify for browser preload list inclusion
+  `e.g. Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`
 - The identity of CEOs and/or developers is public
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
-- Uses deterministic ECDSA nonces (RFC 6979)
 - Avoid address reuse by using a new change address for each transaction
-- User has access to private keys
+- Uses deterministic ECDSA nonces (RFC 6979)
+- User has access to private keys for all major components of the wallet
 - If private keys or encryption keys are stored online:
   - Refuses weak passwords (short passwords and/or common passwords) used to
     secure access to any funds, or provides an aggressive account lock-out
@@ -51,15 +54,14 @@ recovery process.
   - Uses the push model (computer malware cannot sign a transaction without user
     input)
   - Protects the seed against unsigned firmware upgrades
+  - Has capability to prevent firmware downgrades
   - Supports importing custom seeds
-  - Provides source code and/or detailed specification for blackbox testing if
-    using a closed-source Secure Element
+  - Provides source code created for all open components and provides detailed specification for blackbox testing of
+    any closed-source secure elements
 
 Optional criteria (some could become requirements):
 
-- Received independent security audit(s)
 - Does not show "received from" Bitcoin addresses in the UI
-- Provides a bug reporting policy on the website
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.org/)
 - If user has exclusive access over its private keys:
@@ -68,15 +70,12 @@ Optional criteria (some could become requirements):
   - Uses a strong KDF and key stretching for wallet storage and backups
   - On desktop platform:
     - Encrypt the wallet by default
-- For hardware wallets:
-  - Prevents downgrading the firmware
 
 ### Adding a wallet
 
 *Before adding a wallet,* please make sure your wallet meets all of the
 Basic Requirements listed above, or open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
-to request an exemption or policy change. Feel free to email Will Binns
-([will@bitcoin.org](mailto:will@bitcoin.org)) if you have any questions.
+to request an exemption or policy change.
 
 You should follow the guidelines of the [Wikipedia Manual of Style](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Trademarks) for trademark capitalization.  For example, if you call your wallet **WEAKBOX wallet** it should be listed as **Weakbox wallet**.
 
@@ -117,7 +116,7 @@ below:
 * bech32: Bech32 is a special address format made possible by SegWit (see the
   feature description for SegWit for more info). This address format is also
   known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
-  sending and/or receiving to or from Bech32 addresses.
+  sending or receiving to Bech32 addresses.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive Bech32 format addresses.  Bech32 does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32 format receive address.
 

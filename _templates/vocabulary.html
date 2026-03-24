@@ -32,7 +32,6 @@ voc:
   <div class="container hero-container">
     <h1>{% translate pagetitle %}</h1>
     <p class="summarytxt">{% translate summary %}</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 
@@ -45,9 +44,9 @@ voc:
           <div class="sidebar-inner vocabulary-list">
             <button class="mob-sidebar-close" hidden></button>
             <ul>
-            {% alphab_for v in page.voc %}
+            {% for v in page.voc %}
               <li><a href="#{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</a></li>
-            {% endalphab_for %}
+            {% endfor %}
             </ul>
           </div>
         </div>
@@ -55,12 +54,12 @@ voc:
     </div>
 
     <div class="toccontent">
-      {% alphab_for v in page.voc %}
+      {% for v in page.voc %}
       <div class="toccontent-block boxexpand expanded">
         <h2 id="{% translate {{v}} anchor.vocabulary %}">{% translate {{v}} %}</h2>
         <p>{% translate {{v}}txt %}</p>
       </div>
-      {% endalphab_for %}
+      {% endfor %}
     </div>
 
   </div>

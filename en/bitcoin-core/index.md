@@ -25,7 +25,6 @@ breadcrumbs:
   <div class="container hero-container">
     <h1>Bitcoin Core</h1>
     <p class="summary">Helping you keep Bitcoin decentralized.</p>
-    {% include helpers/hero-social.html %}
   </div>
 </div>
 

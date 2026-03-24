@@ -42,19 +42,20 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 2.4.1**
+**Install Ruby 2.5.8**
 
-To install Ruby 2.4.1, simply run this command:
+To install Ruby 2.5.8, simply run this command:
 
-    rvm install 2.4.1
+    rvm install 2.5.8
 
 Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
-(which takes about 15 minutes).
+(which takes about 15 minutes, if you got an error see [error while
+compiling](#error-while-compiling)).
 
-After Ruby 2.4.1 is installed, make it your default Ruby:
+After Ruby 2.5.8 is installed, make it your default Ruby:
 
-    rvm alias create default ruby-2.4.1
+    rvm alias create default ruby-2.5.8
 
 And tell your system to use it:
 
@@ -188,3 +189,29 @@ before building you preview:
 You can also add this line to your `~/.bashrc` file if you frequently
 build site previews so that you don't have to remember to run it for
 each shell.
+
+#### Error While Compiling
+
+If you got an error while compiling that looks like this:
+```
+Error running '__rvm_make -j8',
+please read /home/myusername/.rvm/log/1739938091_ruby-2.5.8/make.log
+
+There has been an error while running make. Halting the installation.
+```
+
+And if the the `make.log` file has these lines at the end:
+```
+make: *** [uncommon.mk:240: build-ext] Error 2
+++ return 2
+```
+
+Probably you need to run the following command to install a specific openssl dependency needed by ruby-2.5.8 compilation:
+```
+rvm pkg install openssl
+```
+
+Then install/compile ruby with the following command:
+```
+rvm install ruby-2.5.8 --with-openssl-dir=$HOME/.rvm/usr
+```

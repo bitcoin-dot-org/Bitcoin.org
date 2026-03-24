@@ -28,5 +28,5 @@ platform:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkfailprivacynetworknosupporttor"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
 ---
