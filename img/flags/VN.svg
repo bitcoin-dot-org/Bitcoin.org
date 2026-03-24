@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle 2</title>
+    <desc>Flag of Vietnam</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="33"></rect>
+        <rect id="path-3" x="0" y="0" width="40" height="33"></rect>
+    </defs>
+    <g id="Bitcoin-Exchanges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Vietnam">
+            <g id="Rectangle-2">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <rect fill="#DA251D" mask="url(#mask-2)" x="0" y="0" width="40" height="33"></rect>
+                <polygon fill="#FFFF00" mask="url(#mask-2)" points="20,6.1 22.35,13.34 30,13.34 23.82,17.82 26.18,25.06 20,20.58 13.82,25.06 16.18,17.82 10,13.34 17.65,13.34"></polygon>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <rect stroke="#000000" stroke-width="0.3" x="0.15" y="0.15" width="39.7" height="32.7"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
