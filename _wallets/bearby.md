@@ -1,6 +1,7 @@
 ---
 id: bearby
 title: "Bearby"
+titleshort: "Bearby"
 compat: "desktop mac linux mobile android ios"
 level: 2
 platform:
