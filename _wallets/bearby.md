@@ -1,4 +1,7 @@
 ---
+# This file is licensed under the GNU General Public License v3 (GPL-3.0)
+# https://www.gnu.org/licenses/gpl-3.0.html
+
 id: bearby
 title: "Bearby"
 titleshort: "Bearby"
