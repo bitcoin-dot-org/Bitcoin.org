@@ -113,6 +113,7 @@ sl:
     wallettrezorone: "TREZOR je strojna denarnica, ki nudi visoko stopnjo varnosti, ne da bi za to žrtvovala udobje. Za razliko od hladne hrambe lahko TREZOR podpisuje nakazila, kadar je povezan z napravo, ki je povezana v internet. To pomeni, da je pošiljanje bitcoinov varno celo na varnostno ogroženem računalniku."
     walletwasabi: "Wasabi je osebno orientirana bitcoin denarnica."
     walletbitbox: "BitBox02 je strojna denarnica, zasnovana in proizvedena v Švici. Opremljena je z OLED zaslonom, nevidnimi drsniki, je kompatibilna z USB-C in USB-A, ponuja možnost izdelave varnostne kopije na microSD kartico in v obliki BIP39 besed. Upravljanje z denarnico in s kovanci je enostavno s pripadajočo aplikacijo BitBoxApp."
+    walletbearby: "Bearby je nekustodijska Bitcoin denarnica, zgrajena v Rustu za postkvantno dobo. Ponuja kvantno odporne shrambe ključev, podporo naslovom legacy, SegWit in bech32, integracijo s strojnimi denarnicami Ledger in povezavo preko krožnega seznama neodvisnih strežnikov Electrum. Na voljo za Android, iOS, macOS in Linux."
     walletdownload: "Namesti"
     walletvisit: "Obiščite spletno stran"
     walletsourcecode: "Izvorna koda"

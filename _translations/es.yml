@@ -120,6 +120,7 @@ es:
     wallettrezorone: "TREZOR es una cartera de hardware que proporciona un alto nivel de seguridad sin sacrificar conveniencia. Al contrario del almacenamiento en frío, TREZOR es capaz de firmar transacciones mientras esté conectado a un dispositivo online. Esto significa que gastar bitcoins es seguro, aún usando un ordenador infectado."
     walletwasabi: "Wasabi es un monedero de Bitcoin enfocado en recuperar la privacidad de sus usuarios, de código abierto y disponible para Windows, Linux y Mac, detaca por su integración con la red anónima Tor, su motor de CoinJoin y su característica de control fino de monedas."
     walletbitbox: "La BitBox02 es una hardware wallet, desarrollada y manufacturada en Suiza. Está equipada con una pantalla OLED, sensores táctiles invisibles, USB-C, soporte para USB-A y copias de seguridad offline tanto en tarjeta microSD como con semilla mnemotécnica BIP39. Configurar una cartera BitBox02 y gestionar tus monedas se hace muy sencillo gracias a la BitBoxApp."
+    walletbearby: "Bearby es un monedero Bitcoin no custodial construido en Rust para la era post-cuántica. Proporciona almacenamiento de claves resistente a la computación cuántica junto con soporte para direcciones legacy, SegWit y bech32, se integra con carteras hardware Ledger y se conecta mediante un grupo rotativo de servidores Electrum independientes. Disponible en Android, iOS, macOS y Linux."
     walletdownload: "Instalar"
     walletvisit: "Ir al sitio"
     walletsourcecode: "Código fuente"
