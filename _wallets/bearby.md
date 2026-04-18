@@ -19,7 +19,7 @@ platform:
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspv"
+          validation: "checkpassvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -27,7 +27,7 @@ platform:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
-          privacynetwork: "checkfailprivacynetworknotor"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
       - name: ios
         text: "walletbearby"
         link: "https://apps.apple.com/app/bearby-wallet/id1547105860"
@@ -36,7 +36,7 @@ platform:
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspv"
+          validation: "checkpassvalidationspvservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -44,7 +44,7 @@ platform:
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurecentralized"
-          privacynetwork: "checkfailprivacynetworknotor"
+          privacynetwork: "checkfailprivacynetworknosupporttor"
   - desktop:
     name: desktop
     default: &DEFAULT
@@ -57,13 +57,13 @@ platform:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
         transparency: "checkpasstransparencyopensource"
-        environment: "checkpassenvironmentdesktop"
+        environment: "checkfailenvironmentdesktop"
         privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
-        privacynetwork: "checkfailprivacynetworknotor"
+        privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: mac
         <<: *DEFAULT
