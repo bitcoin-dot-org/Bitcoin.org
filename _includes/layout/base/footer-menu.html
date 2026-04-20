@@ -108,6 +108,9 @@ http://opensource.org/licenses/MIT.
         <li id="sellbitcoinfootermenulink" {% if page.id == 'sell' %} class="active"{% endif %}>
           <a href="/en/{% translate sell url %}">{% translate menu-sell layout %}</a>
         </li>
+        <li{% if page.id == 'earn' %} class="active"{% endif %}>
+          <a href="/{{ page.lang }}/{% translate earn url %}">{% translate menu-earn layout %}</a>
+        </li>
         {% if page.lang == 'en' %}
         <li{% if page.id == 'full-node' %} class="active"{% endif %}>
           <a href="/en/full-node">{% translate menu-full-node layout %}</a>
