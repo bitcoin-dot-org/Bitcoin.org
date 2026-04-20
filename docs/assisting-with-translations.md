@@ -13,23 +13,23 @@ ___
 
 ## Getting Started with the Translation Team
 
-While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://www.transifex.com/bitcoinorg/bitcoinorg/).
+While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://explore.transifex.com/bitcoinorg/bitcoinorg/).
 This section shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
 
-General guidelines provided by Transifex itself can be found [here](https://docs.transifex.com/getting-started/translators).
+General guidelines provided by Transifex itself can be found [here](https://help.transifex.com/en/articles/6248698-getting-started-as-a-translator).
 
 ### 1. Create a Transifex Account
-* Follow this [link](https://www.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
+* Follow this [link](https://app.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
 
 ### 2. Login and join the Bitcoin.org Translation Team
-* Follow this [link](https://www.transifex.com/bitcoinorg/bitcoinorg/) and click on “Join team”.
+* Follow this [link](https://explore.transifex.com/bitcoinorg/bitcoinorg/) and click on “Join team”.
 * Select the language you want to translate into.
 * Your request to join a team will be accepted instantly, and you will be a translator for the language you selected.
 * If your language is not available yet, close the pop-up, scroll down, and click on “Request language” on the right side. Please consider first if it is necessary that bitcoin.org is available in your language. There is a lot of content to be translated and especially for languages with a low number of native speakers, there won’t be many people available that are willing to assist you.
 
 ### 3. Get to know the Interface
 * Play around with the interface. Transifex's interface can be a bit confusing and it cannot hurt to take a look around.
-* An introduction, provided by Transifex, can be found [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator).
+* An introduction, provided by Transifex, can be found [here](https://help.transifex.com/en/articles/6318216-translating-with-the-web-editor).
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
@@ -56,7 +56,7 @@ General guidelines provided by Transifex itself can be found [here](https://docs
 * Once reviewed, coordinators will notify the Team Leaders that a certain translation is ready for publication.
 * **In doubt, please contact coordinators on Transifex. That'll be much
   appreciated.**
-  
+
 ### 7. Take a look at the Responsibilities and Tasks for each User Role
 * The next section [Responsibilities and Tasks for each User Role](#responsibilities-and-tasks-for-each-user-role) outlines - as the title says - the responsibilities and tasks for each user role.
 
@@ -95,147 +95,147 @@ Various people across all language teams are coordinators. For a number of langu
 ### 4. Translators
 * Translating, thereby using translations provided by the glossary if applicable and striving for consistency across strings.
 * Extending the glossary with translations for necessary and general terms.
-    
+
 ___
 
 ## Frequently Asked Questions
 
-This FAQ intends to provide answers to some questions that might occur while translating bitcoin.org on Transifex. If you feel that some questions are missing, get in contact with Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). He is happy to help, adding your question to the FAQ. 
+This FAQ intends to provide answers to some questions that might occur while translating bitcoin.org on Transifex. If you feel that some questions are missing, get in contact with Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). He is happy to help, adding your question to the FAQ.
 
-### 1. What is Transifex? 
+### 1. What is Transifex?
 
-Transifex is a cloud-based localization platform, translation management software. It is used to manage the work on the various translations of bitcoin.org. 
-     
-### 2. I know how to speak a certain language and want to help – how can I get started? 
+Transifex is a cloud-based localization platform, translation management software. It is used to manage the work on the various translations of bitcoin.org.
 
-Just jump to the [Getting Started with the Translation Team](#getting-started-with-the-translation-team) section in this document. Everything is described there. 
+### 2. I know how to speak a certain language and want to help – how can I get started?
 
-### 3. Do I need to know how to use GitHub to translate? 
+Just jump to the [Getting Started with the Translation Team](#getting-started-with-the-translation-team) section in this document. Everything is described there.
 
-No, even though the website is managed on GitHub, it is only necessary to understand how to translate bitcoin.org on Transifex. Everything GitHub-related, such as creating a Pull Request to update a specific translation of bitcoin.org, is handled by cobra, the owner of bitcoin.org. However, if you are familiar with GitHub, you are welcome to create your own Pull Request to update specific translations of bitcoin.org. Just take a look at section [Handling Translations on GitHub](#handling-translations-on-github) in this document. 
+### 3. Do I need to know how to use GitHub to translate?
 
-### 4. How do I use Transifex? 
+No, even though the website is managed on GitHub, it is only necessary to understand how to translate bitcoin.org on Transifex. Everything GitHub-related, such as creating a Pull Request to update a specific translation of bitcoin.org, is handled by cobra, the owner of bitcoin.org. However, if you are familiar with GitHub, you are welcome to create your own Pull Request to update specific translations of bitcoin.org. Just take a look at section [Handling Translations on GitHub](#handling-translations-on-github) in this document.
 
-It is probably best if you take a look at the info provided by Transifex [here](https://docs.transifex.com/getting-started-1/translators) and [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator). Everything beyond the basics is probably best learned by clicking through the menus of Transifex. 
+### 4. How do I use Transifex?
 
-### 5. What are resources? 
+It is probably best if you take a look at the info provided by Transifex [here](https://help.transifex.com/en/articles/6248698-getting-started-as-a-translator) and [here](https://help.transifex.com/en/articles/6318216-translating-with-the-web-editor). Everything beyond the basics is probably best learned by clicking through the menus of Transifex.
 
-A resource consists of a number of strings, with a string being for example a paragraph or headline. The first resource "bitcoin.org" contains all strings of the main page. If you are no Bitcoin expert, start here. Everything else that follows starts with "devdocs...", indicating that these files are part of the developer documentation. It is recommended that you only try to translate the developer documentation if you are an experienced Bitcoin user and/or developer with a profound understanding. 
+### 5. What are resources?
 
-### 6. How and when are my translations put to use? 
+A resource consists of a number of strings, with a string being for example a paragraph or headline. The first resource "bitcoin.org" contains all strings of the main page. If you are no Bitcoin expert, start here. Everything else that follows starts with "devdocs...", indicating that these files are part of the developer documentation. It is recommended that you only try to translate the developer documentation if you are an experienced Bitcoin user and/or developer with a profound understanding.
+
+### 6. How and when are my translations put to use?
 
 Your translations are welcome and help to improve bitcoin.org, the unofficial but original website of Bitcoin. Bitcoin.org was originally registered and owned by Bitcoin's first two developers, Satoshi Nakamoto and Martti Malmi. Translations are usually only pushed to the website if:
 
-1. the corresponding resource that contains the translations is 100% translated and 100% reviewed and 
-2. a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) is notified about a resource being finished. 
+1. the corresponding resource that contains the translations is 100% translated and 100% reviewed and
+2. a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel) is notified about a resource being finished.
 
-### 7. A reviewed translation contains a mistake. What should I do? 
+### 7. A reviewed translation contains a mistake. What should I do?
 
 This depends on whether you are (a) a translator or (b) a reviewer or higher.
 
-If (a) is true, you won’t be able to change the string yourself. Thus, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. If no one responsible in your team is active, link a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
+If (a) is true, you won’t be able to change the string yourself. Thus, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. If no one responsible in your team is active, link a Team Leader (currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-If (b) is true, and you are sure that the translation contains a mistake, just edit the string. If you are not 100% sure, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username. 
-     
-### 8. Will I be paid for translating bitcoin.org? 
+If (b) is true, and you are sure that the translation contains a mistake, just edit the string. If you are not 100% sure, make a comment about the issue and mention reviewers and/or coordinators within your language team from whom you know that they are active by using @username.
 
-In general, no, however there are periods like during the summer 2018, in which we were able to compensate many volunteers. Compensating volunteers from time to time for their efforts is something we strive to be able to continue to do. 
+### 8. Will I be paid for translating bitcoin.org?
 
-### 9. Who is responsible for the translation project on Transifex? 
+In general, no, however there are periods like during the summer 2018, in which we were able to compensate many volunteers. Compensating volunteers from time to time for their efforts is something we strive to be able to continue to do.
+
+### 9. Who is responsible for the translation project on Transifex?
 
 Bitcoin.org itself is owned by cobra. The website is maintained by cobra with input from many other volunteers on GitHub. Cobra is also one of the project maintainers for the translation project on Transifex, with the effective oversight on translations done by Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-### 10. I found a mistake in the original English version. What should I do? 
+### 10. I found a mistake in the original English version. What should I do?
 
 Comment the mistake and mention one of the Team Leaders by using @username or contact a Team Leader directly via message. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-### 11. How do I get in contact with other translators? 
+### 11. How do I get in contact with other translators?
 
-You can join our [Telegram Group](https://t.me/bitcoinaroundtheworld). The Website Maintainer, both Team Leaders for translations, and a bunch of coordinators, reviewers, and translators are present in this group. 
+You can join our [Telegram Group](https://t.me/bitcoinaroundtheworld). The Website Maintainer, both Team Leaders for translations, and a bunch of coordinators, reviewers, and translators are present in this group.
 
-If you only want to contact members of your language team on Transifex, click on "Teams" on the top and then on the small blue chat bubble symbol. By clicking on “New discussion”, you can create language specific discussions. Everyone in the language team will receive an (email) notification about this. 
+If you only want to contact members of your language team on Transifex, click on "Teams" on the top and then on the small blue chat bubble symbol. By clicking on “New discussion”, you can create language specific discussions. Everyone in the language team will receive an (email) notification about this.
 
-Apart from that, you can obviously contact other translators by using the direct message function on Transifex. 
+Apart from that, you can obviously contact other translators by using the direct message function on Transifex.
 
-### 12. I translated a string completely. What’s next? 
+### 12. I translated a string completely. What’s next?
 
-Great work! Now that the string is translated, it has to be reviewed. If there are active reviewers in your team, just wait for them to review to string. Get in contact with them if you feel that this is necessary. If there are no active reviewers (and coordinators) in your team, get in contact with a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).  He can promote you to reviewer so that you can review your own strings as a last solution. 
+Great work! Now that the string is translated, it has to be reviewed. If there are active reviewers in your team, just wait for them to review to string. Get in contact with them if you feel that this is necessary. If there are no active reviewers (and coordinators) in your team, get in contact with a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).  He can promote you to reviewer so that you can review your own strings as a last solution.
 
-### 13. I am not sure how to translate a string/word. Where can I get help? 
+### 13. I am not sure how to translate a string/word. Where can I get help?
 
-While it is possible to use the comment function on Transifex to ask for help, unfortunately no notification is sent out regarding a comment. Thus, your comment will probably stay unread until someone accidentally finds it. Therefore, we do not recommend using the comment function in this case. 
+While it is possible to use the comment function on Transifex to ask for help, unfortunately no notification is sent out regarding a comment. Thus, your comment will probably stay unread until someone accidentally finds it. Therefore, we do not recommend using the comment function in this case.
 
-Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
-     
-### 14. I can’t find a team for my own language. Who should I contact to add a new language? 
+Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-If you do not have a Transifex account yet, just look at point “2. Login and join the Bitcoin.org Translation Team” of the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team) in this document. When your language request is accepted or denied you will receive a notification. 
+### 14. I can’t find a team for my own language. Who should I contact to add a new language?
 
-You can also contact a Team Leader about this. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
+If you do not have a Transifex account yet, just look at point “2. Login and join the Bitcoin.org Translation Team” of the section [Getting Started with the Translation Team](#getting-started-with-the-translation-team) in this document. When your language request is accepted or denied you will receive a notification.
 
-### 15. A suggestion provided by the glossary does not make sense. What should I do? 
+You can also contact a Team Leader about this. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-Don’t worry. Just ignore it and continue translating. Transifex will display a warning message that a glossary term is missing, but this has no impact on translations being published. 
+### 15. A suggestion provided by the glossary does not make sense. What should I do?
 
-### 16. I made a mistake in my own translation. What should I do? 
+Don’t worry. Just ignore it and continue translating. Transifex will display a warning message that a glossary term is missing, but this has no impact on translations being published.
 
-If your translation is not reviewed yet, just correct the mistake and save the new translation. 
+### 16. I made a mistake in my own translation. What should I do?
 
-If your translation was reviewed and the mistake not corrected in the process, correct the mistake if you are a reviewer yourself or contact the person that reviewed your translation. 
+If your translation is not reviewed yet, just correct the mistake and save the new translation.
 
-### 17. No one is reviewing the strings I translated. What should I do? 
+If your translation was reviewed and the mistake not corrected in the process, correct the mistake if you are a reviewer yourself or contact the person that reviewed your translation.
 
-Contact the reviewers in your language team and ask for a review; either through a direct message on Transifex or through Telegram if you have their Telegram-usernames. 
+### 17. No one is reviewing the strings I translated. What should I do?
 
-If the reviewers in your team are not active, contact the coordinator about this. Coordinators are either active native speakers or, if there is currently no active coordinator in place for your language, “Komodorpudel”, one of the Team Leaders, is set as coordinator. 
+Contact the reviewers in your language team and ask for a review; either through a direct message on Transifex or through Telegram if you have their Telegram-usernames.
 
-If you do not receive a reply from an active coordinator, contact Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). If necessary, he can promote you to reviewer, so you can review your own strings. 
+If the reviewers in your team are not active, contact the coordinator about this. Coordinators are either active native speakers or, if there is currently no active coordinator in place for your language, “Komodorpudel”, one of the Team Leaders, is set as coordinator.
 
-### 18. How to contact a member, reviewer, coordinator or team manager? 
+If you do not receive a reply from an active coordinator, contact Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). If necessary, he can promote you to reviewer, so you can review your own strings.
 
-Open the “Dashboard”, click on “Languages” and then on your specific language. Click on “View Members” on the top. 
+### 18. How to contact a member, reviewer, coordinator or team manager?
 
-From there, click on a member’s username to open the member’s profile page. There you can click on “Send Message” on the upper right section of the member profile screen and compose a message. 
+Open the “Dashboard”, click on “Languages” and then on your specific language. Click on “View Members” on the top.
 
-### 19. Does a translated string have to have the same number of symbols and/or lines as the original English string? 
+From there, click on a member’s username to open the member’s profile page. There you can click on “Send Message” on the upper right section of the member profile screen and compose a message.
 
-In general, no. Translated strings can be as long as they need to be. 
+### 19. Does a translated string have to have the same number of symbols and/or lines as the original English string?
 
-However, if a translated string is significantly longer than the English string, this could cause formatting issues. If this should be the case, we would notify you. 
+In general, no. Translated strings can be as long as they need to be.
 
-### 20. Sometimes “Bitcoin” is written with a capital letter (“Bitcoin”) and other times with a small letter (“bitcoin). Why? 
+However, if a translated string is significantly longer than the English string, this could cause formatting issues. If this should be the case, we would notify you.
 
-"Bitcoin" is used when talking about the protocol itself: "You should create a new Bitcoin address for every payment". 
+### 20. Sometimes “Bitcoin” is written with a capital letter (“Bitcoin”) and other times with a small letter (“bitcoin). Why?
 
-"bitcoin" is used when talking about actual units of bitcoin: "There is no fee to receive bitcoins" 
+"Bitcoin" is used when talking about the protocol itself: "You should create a new Bitcoin address for every payment".
 
-All together: "You should create a new Bitcoin address every time you want to receive bitcoins" 
+"bitcoin" is used when talking about actual units of bitcoin: "There is no fee to receive bitcoins"
+
+All together: "You should create a new Bitcoin address every time you want to receive bitcoins"
 
 Please note that the English version is not entirely consistent on this. If you find an issue, please contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-### 21. A certain string is hard to translate without any context. Where can I get some? 
+### 21. A certain string is hard to translate without any context. Where can I get some?
 
-In the best case, on Transifex the “string instructions” field between the source text-field and the translation-field contains a link to the location of the string on the website. 
+In the best case, on Transifex the “string instructions” field between the source text-field and the translation-field contains a link to the location of the string on the website.
 
-If no link can be found, click on “Context” below the field to enter the translation and use the code to navigate to the corresponding part of bitcoin.org  
+If no link can be found, click on “Context” below the field to enter the translation and use the code to navigate to the corresponding part of bitcoin.org
 
-Alternatively, you can just google parts of the string in English + "bitcoin.org" attached. Usually this leads to the part of bitcoin.org where the string is located. 
+Alternatively, you can just google parts of the string in English + "bitcoin.org" attached. Usually this leads to the part of bitcoin.org where the string is located.
 
-### 22. I finished a string but Transifex displays a warning. What should I do? 
+### 22. I finished a string but Transifex displays a warning. What should I do?
 
-The usual warning message you will see is “Glossary translation for term 'xyz' missing from translation”. However, this warning message can usually be ignored because in most cases it makes sense to translate certain words not according to the glossary. 
+The usual warning message you will see is “Glossary translation for term 'xyz' missing from translation”. However, this warning message can usually be ignored because in most cases it makes sense to translate certain words not according to the glossary.
 
-However, if you see an URL-related warning message, this must be corrected because otherwise it will cause issues while publishing the translations. Usually, the problem can easily be solved by checking all the links in the translated text. 
+However, if you see an URL-related warning message, this must be corrected because otherwise it will cause issues while publishing the translations. Usually, the problem can easily be solved by checking all the links in the translated text.
 
-### 23. When and how should I open an Issue? 
+### 23. When and how should I open an Issue?
 
-You can open Issues by leaving a comment and flagging it as an “Issue”. 
+You can open Issues by leaving a comment and flagging it as an “Issue”.
 
 We strongly recommend to not use this function at all. Instead, please contact either the coordinator for your language or a Team Leader directly. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 
-### 24. I cannot find an answer to my problem in the FAQ. What should I do? 
+### 24. I cannot find an answer to my problem in the FAQ. What should I do?
 
-Join our [Telegram Group](https://t.me/bitcoinaroundtheworld) and ask your question there. 
+Join our [Telegram Group](https://t.me/bitcoinaroundtheworld) and ask your question there.
 
 Alternatively, you can directly contact a Team Leaders. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 ___
@@ -282,21 +282,21 @@ translations at once:
 
     # Init Transifex project
     tx init
-    
+
     # Setup Transifex local client to use a project created on Transifex
     tx set --auto-remote https://www.transifex.com/bitcoinorg/bitcoinorg/
-    
+
     # Download all translations
     tx pull -a -s --skip
-    
+
     # Set the translations/bitcoinorg.bitcoinorg/en.yml file
     # as a source that will be pushed back to the server after
     # updating the translation
     tx set --source -r bitcoinorg.bitcoinorg -l en translations/bitcoinorg.bitcoinorg/en.yml
-    
+
     # (update en.yml)
-    
+
     # Push changes back to Transifex
     tx push -s -t -f --skip --no-interactive
-    
+
 
