@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
-# This file is licensed under the MIT License (MIT) available on
+# This file is licensed under the MIT License (MIT)
+#License available at:
 # http://opensource.org/licenses/MIT.
 
 require 'safe_yaml/load'
