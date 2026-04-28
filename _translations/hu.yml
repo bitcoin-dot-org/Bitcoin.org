@@ -259,6 +259,7 @@ hu:
     walletbitpay: "A BitPay Wallet az a HD-multisig tárca, amelyet eredetileg a BitPay vagyonának tárolására fejlesztettek. A BitPay többszemélyes és megosztott tárcát is támogat, valamint tesztnetet és a teljes fizetési protokollt. Egy privát <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a>-csomópont használatával fokozni lehet a biztonságot és az adatvédelmet."
     walletledgernanos: "A Ledger Nano S egy biztonságos Bitcoin-hardvertárca. Bármilyen számítógéphez csatlakozhat USB-n keresztül, ezenfelül rendelkezik egy OLED-kijelzővel a másodszori ellenőrzés érdekében. Minden tranzakció hitelesítését egyetlen gombnyomással el lehet végezni."
     walletwasabi: "A Wasabi egy nyílt forrású, nem letéti, személyes adatok védelmére fókuszáló Bitcoin tárca Windowsra, Linuxra és Macre. Beépített Tor anonimitás hálózat, CoinJoin és érmekontroll funkciókkal jön."
+    walletbitboxnova: "A BitBox02 Nova egy továbbfejlesztett BitBox02 hardvertárca jobb kialakítással, üveg OLED-kijelzővel, EAL6+ biztonsági chippel, USB-C és Bluetooth Low Energy kapcsolattal, valamint BitBoxApp-támogatással Windows, macOS, Linux, Android, iPhone és iPad rendszereken."
     walletdownload: "Telepítés"
     walletvisit: "Tovább a weboldalra"
     walletsourcecode: "Forráskód"
