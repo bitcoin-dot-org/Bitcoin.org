@@ -113,6 +113,7 @@ da:
     wallettrezorone: "Trezor er en hardware-tegnebog, der giver et højt sikkerhedsniveau uden at ofre bekvemmeligheden. Modsat kold opbevaring er Trezor i stand til at signere transaktioner, mens den er forbundet til en enhed med Internetforbindelse. Dette betyder, at det er sikkert at bruge bitcoin, selv fra en kompromitteret computer."
     walletnano: "Ledger Nano er en hardware-tegnebog, der er opbygget omkring en ST23YT66-smartcard-platform for banker. Den opbevarer brugernes private nøgler sikkert, validerer transaktioner, kan bruges som et sikkert forudbetalt kort eller en part til multisignaturer. Selvom det ikke har åben kildekode, kan det valideres deterministisk."
     walletwasabi: "Åben kildekode og privatlivsbeskyttende fokuseret Bitcoin tegnebog til Windows, Linux og Mac. Indbygget Tor anonymitet netværk, CoinJoin (MøntSaml) og mønt kontrol funktioner."
+    walletbitboxnova: "BitBox02 Nova er en opgraderet BitBox02-hardwaretegnebog med forbedret design, OLED-glasskærm, EAL6+ sikker chip, USB-C- og Bluetooth Low Energy-forbindelse samt BitBoxApp-understøttelse på Windows, macOS, Linux, Android, iPhone og iPad."
     walletdownload: "Installér"
     walletvisit: "Besøg hjemmeside"
     walletsourcecode: "Kildekode"
