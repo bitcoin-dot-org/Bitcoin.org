@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: onekeyclassic1s
-title: "OneKey Classic 1S"
-titleshort: "OneKey Classic 1S"
+id: onekeypro
+title: "OneKey Pro"
+titleshort: "OneKey Pro"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletonekeyclassic1s"
+        text: "walletonekeypro"
         link: "https://onekey.so/"
-        source: "https://github.com/OneKeyHQ/firmware-classic1s"
-        screenshot: "onekeyclassic1s.png"
+        source: "https://github.com/OneKeyHQ/firmware-pro"
+        screenshot: "onekeypro.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
