@@ -1411,6 +1411,159 @@ won't see incoming transactions until they've received at least one confirmation
 
 You will still be able to send transactions from the built-in wallet or from
 peers you've whitelisted using the `-whitelist` parameter.
+
+#### Running A Full Node As A Tor Hidden Service
+
+In addition to supporting the Bitcoin network by relaying transactions and
+blocks, your full node can also be reached via the Tor network. Running
+Bitcoin Core as a Tor hidden service provides several benefits:
+
+- **Privacy:** Connecting via Tor hides your IP address from blockchain
+  surveillance lists.
+- **Censorship resistance:** A `.onion` address cannot be easily blocked
+  by ISP-level filters.
+- **Universal reachability:** Tor penetrates NAT and firewall restrictions
+  that prevent inbound connections.
+
+These instructions assume Bitcoin Core is already installed and synchronised.
+For initial setup, see the [Linux](#linux-instructions),
+[Windows](#windows-instructions), or [macOS](#operating-systems) instructions.
+
+##### 1. Install Tor
+
+**Debian / Ubuntu**
+
+```bash
+sudo apt update && sudo apt install tor
+```
+
+**macOS (Homebrew)**
+
+```bash
+brew install tor
+```
+
+**Windows**
+
+Download the [Tor Expert Bundle](https://www.torproject.org/download/tor/)
+and extract it to a permanent location.
+
+##### 2. Configure Tor
+
+The Tor configuration file lives at:
+
+- **Linux:** /etc/tor/torrc
+- **macOS:** /usr/local/etc/tor/torrc (Homebrew) or ~/Library/Application Support/Tor/Tor/torrc
+- **Windows:** <Tor installation directory>\Tor\config\torrc
+
+Add the following to enable Bitcoin Core hidden services on the default P2P
+and RPC ports:
+
+```
+HiddenServiceDir /var/lib/tor/bitcoin-service/
+HiddenServicePort 8333 127.0.0.1:8333
+HiddenServicePort 8332 127.0.0.1:8332
+```
+
+Create the directory and set correct permissions:
+
+```bash
+sudo mkdir -p /var/lib/tor/bitcoin-service/
+sudo chown debian-tor:debian-tor /var/lib/tor/bitcoin-service/
+sudo chmod 700 /var/lib/tor/bitcoin-service/
+sudo systemctl restart tor
+```
+
+*(On macOS or Windows without systemd, start Tor manually or via launchd/service.)*
+
+##### 3. Retrieve Your Onion Address
+
+```bash
+sudo cat /var/lib/tor/bitcoin-service/hostname
+```
+
+Output looks like:
+
+```
+abcdef1234567890abcdef1234567890.onion
+```
+
+This is your node's unique hidden service address. Share it with anyone
+who needs to connect without knowing your IP.
+
+##### 4. Configure Bitcoin Core
+
+Add the following to your `bitcoin.conf` (default locations):
+
+- **Linux:** $HOME/.bitcoin/bitcoin.conf
+- **macOS:** ~/Library/Application Support/Bitcoin/bitcoin.conf
+- **Windows:** %APPDATA%\Bitcoin\bitcoin.conf
+
+```
+# Automatically create and advertise Tor hidden service
+listenonion=1
+torport=9050
+torbindaddress=127.0.0.1
+
+# Tor control port (automated onion address retrieval)
+torcontrol=127.0.0.1:9051
+torpassword=your_tor_control_port_password
+
+# Proxy all Bitcoin network traffic through Tor
+proxy=127.0.0.1:9050
+bind=127.0.0.1
+```
+
+Generate a hashed Tor control password:
+
+```bash
+tor --hash-password yourpassword
+```
+
+Add the hash output to your torrc:
+
+```
+HashedControlPassword 16:YOUR_HASHED_PASSWORD_HERE
+```
+
+##### 5. Restart Bitcoin Core
+
+```bash
+bitcoind -daemon
+# or restart Bitcoin-Qt if using the GUI
+```
+
+Confirm Tor initialisation in your debug log:
+
+```bash
+tail -f ~/.bitcoin/debug.log
+# Look for: "tor: Thread interrupt"
+```
+
+##### 6. Verify Reachability
+
+```bash
+bitcoin-cli getnetworkinfo | grep -A5 "addresses"
+```
+
+Look for an entry with `"network": "onion"` in the addresses list.
+
+Test from any machine with Tor installed:
+
+```bash
+torify curl --connect-timeout 10 https://your-onion-address.onion
+```
+
+##### Notes
+
+- Your `.onion` address is deterministic — it persists across restarts
+  unless you delete `HiddenServiceDir`.
+- For maximum privacy, use separate Tor circuits for P2P and RPC traffic.
+- `-onlynet=onion` maximises privacy but limits peer diversity.
+  Use `proxy=127.0.0.1:9050` without `-onlynet=onion` for both Tor and
+  regular connections.
+
+
 </div>
 
 </div>
