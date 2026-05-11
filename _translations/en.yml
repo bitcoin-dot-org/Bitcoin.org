@@ -1054,22 +1054,6 @@ en:
     business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
     business-search: "Global local and online business search"
     business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
-  earn:
-    title: "Earn Bitcoin - Bitcoin"
-    pagetitle: "Earn Bitcoin"
-    pagedesc: "You do not have to buy Bitcoin to get started. You can earn it by working, selling, contributing, and creating useful things."
-    work: "Find Bitcoin work"
-    worktext: "Bitcoin-focused job boards such as <a href=\"https://bitcoinerjobs.com/\">Bitcoiner Jobs</a> and communities such as <a href=\"https://www.reddit.com/r/Jobs4Bitcoins/\">Jobs4Bitcoins</a> can help you find people hiring for work paid in bitcoin."
-    freelance: "Complete freelance tasks"
-    freelancetext: "Task and bounty sites such as <a href=\"https://microlancer.io/\">Microlancer</a> and <a href=\"https://www.lightningbounties.com/\">Lightning Bounties</a> let people post small jobs that can be paid with Bitcoin or Lightning."
-    sellproducts: "Sell goods or services"
-    sellproductstext: "If you already sell products or services, you can accept Bitcoin directly. Tools such as <a href=\"https://btcpayserver.org/\">BTCPay Server</a> can help you receive payments without relying on a custodial payment processor."
-    create: "Create and share"
-    createtext: "Communities such as <a href=\"https://stacker.news/\">Stacker News</a> and apps built on <a href=\"https://nostr.com/\">Nostr</a> let people reward useful posts, writing, podcasts, and other work with small Bitcoin payments."
-    contribute: "Contribute to open source"
-    contributetext: "Some open source projects pay bounties for useful fixes and documentation. Bitcoin.org also has <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#earn-bitcoin-for-contributing\">bounties for selected contributions</a>."
-    safety: "Avoid scams"
-    safetytext: "Be skeptical of anyone promising easy returns, asking you to deposit money first, or requiring control of your wallet. Real earning opportunities pay for useful work, products, or services."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -1094,6 +1078,22 @@ en:
     translatetxt: "You can help spread Bitcoin awareness by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help with."
     help: "Meet the communities"
     helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects."
+  earn:
+    title: "Earn Bitcoin - Bitcoin"
+    pagetitle: "Earn Bitcoin"
+    summary: "There are many ways to earn bitcoin through work, business, creativity, and contributions to the Bitcoin ecosystem."
+    work: "Work for bitcoin"
+    worktxt: "Freelancers and remote workers can look for bitcoin-paying clients and employers on communities and job boards like <a href=\"https://www.reddit.com/r/Jobs4Bitcoins/\">Jobs4Bitcoins</a> and <a href=\"https://bitcoinerjobs.com/\">Bitcoiner Jobs</a>. People with existing employers or clients can also use services such as <a href=\"https://bitwage.com/\">Bitwage</a> to receive some or all of their pay in bitcoin."
+    sell: "Sell goods and services"
+    selltxt: "Merchants, creators, and small businesses can accept bitcoin directly. A self-hosted payment processor such as <a href=\"https://btcpayserver.org/\">BTCPay Server</a> can help you receive payments without relying on a custodial processor."
+    contribute: "Contribute to open source"
+    contributetxt: "Developers, writers, translators, designers, and testers can earn bitcoin by completing public bounties or applying for grants. Start with <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#earn-bitcoin-for-contributing\">Bitcoin.org bounties</a>, <a href=\"https://www.lightningbounties.com/\">Lightning Bounties</a>, or grant programs such as <a href=\"https://opensats.org/\">OpenSats</a>."
+    create: "Publish and create"
+    createtxt: "Writers, podcasters, video makers, musicians, and educators can use Bitcoin and Lightning payment tools to receive direct support from their audiences. Communities like <a href=\"https://stacker.news/\">Stacker News</a> and value-for-value apps such as <a href=\"https://fountain.fm/\">Fountain</a> are examples of this model."
+    mining: "Mine bitcoin"
+    miningtxt: "Bitcoin mining rewards miners for helping secure the network. Mining requires specialized hardware, reliable electricity, and careful cost planning, so it is not the easiest way for most newcomers to earn bitcoin."
+    safety: "Stay safe"
+    safetytxt: "Avoid any offer that asks you to pay money up front to earn bitcoin, promises guaranteed returns, or pressures you to share private keys or seed words. Research each service, understand its fees and privacy tradeoffs, and make sure the opportunity is legal where you live."
   vocabulary:
     title: "Vocabulary - Bitcoin"
     pagetitle: "Some Bitcoin words you might hear"
@@ -1231,8 +1231,8 @@ en:
     transactions-guide: transactions-guide
     wallets-guide: wallets-guide
     development: development
-    earn: earn
     download: download
+    earn: earn
     exchanges: exchanges
     events: events
     faq: faq
