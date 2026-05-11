@@ -1,0 +1,67 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: submit-your-business
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summary">{% translate pagedesc %}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row card-row">
+    <div class="card spend-card">
+      <img src="/img/icons/local.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="btc-map">{% translate btc-map %}</h2>
+      <p>{% translate btc-map-text %}</p>
+      <div>
+        <a class="btn-bright" href="https://btcmap.org/add-location">{% translate btc-map-button %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/product.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="spendabit">{% translate spendabit %}</h2>
+      <p>{% translate spendabit-text %}</p>
+      <div>
+        <a class="btn-bright" href="https://spendabit.co/onboard/">{% translate spendabit-button %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="coinmap">{% translate coinmap %}</h2>
+      <p>{% translate coinmap-text %}</p>
+      <div>
+        <a class="btn-bright" href="https://coinmap.org/add">{% translate coinmap-button %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/search.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="bitcoinwide">{% translate bitcoinwide %}</h2>
+      <p>{% translate bitcoinwide-text %}</p>
+      <div>
+        <a class="btn-bright" href="https://bitcoinwide.com/business/add">{% translate bitcoinwide-button %}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row card-row">
+    <div class="card spend-card">
+      <img src="/img/icons/check.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="before-submit">{% translate before-submit %}</h2>
+      <p>{% translate before-submit-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="keep-updated">{% translate keep-updated %}</h2>
+      <p>{% translate keep-updated-text %}</p>
+    </div>
+  </div>
+</div>
