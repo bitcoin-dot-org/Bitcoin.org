@@ -1427,7 +1427,7 @@ Bitcoin Core as a Tor hidden service provides several benefits:
 
 These instructions assume Bitcoin Core is already installed and synchronised.
 For initial setup, see the [Linux](#linux-instructions),
-[Windows](#windows-instructions), or [macOS](#operating-systems) instructions.
+[Windows](#windows-instructions), or [macOS](#mac-os-x-instructions) instructions.
 
 ##### 1. Install Tor
 
