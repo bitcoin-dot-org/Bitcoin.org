@@ -1054,6 +1054,22 @@ en:
     business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
     business-search: "Global local and online business search"
     business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
+  earn:
+    title: "Earn Bitcoin - Bitcoin"
+    pagetitle: "Earn Bitcoin"
+    pagedesc: "You do not have to buy Bitcoin to get started. You can earn it by working, selling, contributing, and creating useful things."
+    work: "Find Bitcoin work"
+    worktext: "Bitcoin-focused job boards such as <a href=\"https://bitcoinerjobs.com/\">Bitcoiner Jobs</a> and communities such as <a href=\"https://www.reddit.com/r/Jobs4Bitcoins/\">Jobs4Bitcoins</a> can help you find people hiring for work paid in bitcoin."
+    freelance: "Complete freelance tasks"
+    freelancetext: "Task and bounty sites such as <a href=\"https://microlancer.io/\">Microlancer</a> and <a href=\"https://www.lightningbounties.com/\">Lightning Bounties</a> let people post small jobs that can be paid with Bitcoin or Lightning."
+    sellproducts: "Sell goods or services"
+    sellproductstext: "If you already sell products or services, you can accept Bitcoin directly. Tools such as <a href=\"https://btcpayserver.org/\">BTCPay Server</a> can help you receive payments without relying on a custodial payment processor."
+    create: "Create and share"
+    createtext: "Communities such as <a href=\"https://stacker.news/\">Stacker News</a> and apps built on <a href=\"https://nostr.com/\">Nostr</a> let people reward useful posts, writing, podcasts, and other work with small Bitcoin payments."
+    contribute: "Contribute to open source"
+    contributetext: "Some open source projects pay bounties for useful fixes and documentation. Bitcoin.org also has <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#earn-bitcoin-for-contributing\">bounties for selected contributions</a>."
+    safety: "Avoid scams"
+    safetytext: "Be skeptical of anyone promising easy returns, asking you to deposit money first, or requiring control of your wallet. Real earning opportunities pay for useful work, products, or services."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -1164,6 +1180,7 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-sell: "Sell Bitcoin"
+    menu-earn: "Earn Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
@@ -1214,6 +1231,7 @@ en:
     transactions-guide: transactions-guide
     wallets-guide: wallets-guide
     development: development
+    earn: earn
     download: download
     exchanges: exchanges
     events: events
