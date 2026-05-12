@@ -1271,6 +1271,7 @@ en:
     bitcoin-paper: bitcoin-paper
     whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
+  submit-your-business: submit-your-business
   anchor:
     community:
       non-profit: non-profit
@@ -1369,3 +1370,15 @@ en:
       quantum: is-bitcoin-vulnerable-to-quantum-computing
       help: help
       morehelp: more-help
+
+submit-your-business:
+  pagetitle: 'Submit Your Business'
+  pagedesc: 'Get visibility for your Bitcoin business by submitting to online directories and services.'
+  online-directories: 'Online Directories'
+  online-directories-text: 'List your business on popular Bitcoin directories like Spendabit, Coinmap, and other services that help Bitcoin users find places to spend their coins.'
+  bitcoin-directories: 'Bitcoin Directories'
+  bitcoin-directories-text: 'Submit your business to dedicated Bitcoin business directories such as Bitcoin.com merchants, BTC Map, and local Bitcoin meetup groups.'
+  local-business: 'Local Business'
+  local-business-text: 'If you have a brick and mortar store, get listed on local business directories and display the Bitcoin logo to attract passing customers.'
+  promotion: 'Promotion Tips'
+  promotion-text: 'Display the Bitcoin logo on your website and in your store. Join Bitcoin business networks and forums to connect with the Bitcoin community.'
