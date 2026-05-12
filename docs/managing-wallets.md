@@ -33,6 +33,7 @@ in the future
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
 - Avoid address reuse by using a new change address for each transaction
+- Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - User has access to private keys for all major components of the wallet
 - If private keys or encryption keys are stored online:
@@ -41,9 +42,13 @@ in the future
 feature in response to failed login attempts along with a strict account
 recovery process.
 - If user has exclusive access over its private keys:
-  - Allows backup of the wallet
+  - Supports HD wallets (BIP32)
+  - Allows backup of the wallet seed on setup
   - Restoring wallet from backup is working
   - Source code is public and kept up to date under version control system
+  - On desktop platform:
+    - Encrypt the wallet by default
+    - Uses a strong KDF and key stretching for wallet storage and backups
 - If user has no access to some of the private keys in a multi-signature wallet:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
@@ -61,15 +66,8 @@ recovery process.
 
 Optional criteria (some could become requirements):
 
-- Does not show "received from" Bitcoin addresses in the UI
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.org/)
-- If user has exclusive access over its private keys:
-  - Supports HD wallets (BIP32)
-  - Provides users with step to print or write their wallet seed on setup
-  - Uses a strong KDF and key stretching for wallet storage and backups
-  - On desktop platform:
-    - Encrypt the wallet by default
 
 ### Adding a wallet
 
