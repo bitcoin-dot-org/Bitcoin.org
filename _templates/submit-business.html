@@ -1,0 +1,41 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: submit-business
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summary">{% translate summary %}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row card-row">
+    <div class="card spend-card">
+      <img src="/img/icons/local.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="local-map">{% translate local-map %}</h2>
+      <p>{% translate local-map-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/search.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="online-search">{% translate online-search %}</h2>
+      <p>{% translate online-search-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="business-directory">{% translate business-directory %}</h2>
+      <p>{% translate business-directory-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/badge.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="show-bitcoin">{% translate show-bitcoin %}</h2>
+      <p>{% translate show-bitcoin-text %}</p>
+    </div>
+  </div>
+</div>
