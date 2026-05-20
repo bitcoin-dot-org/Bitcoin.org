@@ -14,7 +14,7 @@ platform:
       link: "https://lianawallet.com/"
       source: "https://github.com/wizardsardine/liana/"
       screenshot: "liana.png"
-      features: "bech32 full_node hardware_wallet multisig segwit"
+      features: "bech32 full_node hardware_wallet legacy_addresses multisig segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"
