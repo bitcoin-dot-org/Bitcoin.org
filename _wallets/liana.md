@@ -20,7 +20,7 @@ platform:
         validation: "checkgoodvalidationfullnode"
         transparency: "checkgoodtransparencydeterministic"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkgoodprivacyimproved"
+        privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
