@@ -1248,6 +1248,57 @@ help on sites like [SuperUser](http://superuser.com).
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
 
+#### Tor Onion Service
+
+If you can't open port 8333 on your router, or you want other peers to
+reach your node without learning your public IP address, you can make
+Bitcoin Core reachable as a [Tor](https://www.torproject.org/) onion
+service. These instructions are for Linux systems running Bitcoin Core
+daemon. They expose only Bitcoin's peer-to-peer port, not the RPC port
+used to control your node.
+
+First install and start Tor. On many Debian and Ubuntu systems, the
+following commands are sufficient:
+
+    sudo apt-get install tor
+    sudo systemctl enable --now tor
+
+Next, add a Bitcoin onion service to Tor's configuration file. Open
+`/etc/tor/torrc` as root, add the following lines, and restart Tor:
+
+    HiddenServiceDir /var/lib/tor/bitcoin-service/
+    HiddenServicePort 8333 127.0.0.1:8334
+
+After Tor restarts, read the onion address it created:
+
+    sudo cat /var/lib/tor/bitcoin-service/hostname
+
+The command prints an address ending in `.onion`. Copy that address,
+open your Bitcoin Core configuration file (usually
+`~/.bitcoin/bitcoin.conf` on Linux; create it if it doesn't exist), and
+add the following lines, replacing `YOUR_ONION_ADDRESS.onion` with your
+onion address:
+
+    proxy=127.0.0.1:9050
+    listen=1
+    bind=127.0.0.1:8334=onion
+    externalip=YOUR_ONION_ADDRESS.onion
+
+The `proxy` option sends outbound connections through Tor. The
+`bind=127.0.0.1:8334=onion` option makes Bitcoin Core listen locally
+for connections forwarded by Tor, and `externalip` tells peers the onion
+address they can use to reach your node. Do not add Bitcoin Core's RPC
+port to Tor's `HiddenServicePort` lines.
+
+Restart Bitcoin Core after saving `bitcoin.conf`. You can check that
+Bitcoin Core is advertising the onion address by running:
+
+    bitcoin-cli getnetworkinfo
+
+Look for your `.onion` address in the `localaddresses` section. For more
+details, see Bitcoin Core's [Tor
+documentation](https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md).
+
 #### Firewall Configuration
 
 Firewalls block inbound connections.  To use Bitcoin, you need to
