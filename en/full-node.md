@@ -1039,6 +1039,121 @@ configure your router. You may also need to configure your firewall to
 allow inbound connections to port 8333. Please see the following
 subsections for details.
 
+### Running a Tor Onion Service
+
+Instead of accepting inbound connections through your public Internet
+address, you can accept them through a Tor onion service.  This can be
+useful if your router or Internet provider does not allow port
+forwarding, if your node runs on a network with changing public
+addresses, or if you want other Tor users to connect to your node
+without learning your clearnet address.  A Tor onion service is not the
+same thing as router port forwarding: Tor receives the inbound
+connection and forwards it to Bitcoin Core on your own computer.
+
+The following instructions are for Linux systems that use Tor's system
+service and a package manager.  Package names and service commands vary
+between distributions.
+
+Install Tor:
+
+    sudo apt-get install tor
+
+On systems using Fedora, Red Hat, or related distributions, the command
+will usually look like this instead:
+
+    sudo dnf install tor
+
+Enable and start Tor:
+
+    sudo systemctl enable tor
+    sudo systemctl start tor
+
+Open your Tor configuration file, usually `/etc/tor/torrc`, as root and
+add the following lines:
+
+    HiddenServiceDir /var/lib/tor/bitcoin-service/
+    HiddenServicePort 8333 127.0.0.1:8334
+
+The `HiddenServicePort` line tells Tor to accept connections to port
+8333 on your onion address and forward them to Bitcoin Core on
+`127.0.0.1:8334`.  The onion port is the public virtual port other
+nodes connect to; the `127.0.0.1:8334` target is the local address and
+port Bitcoin Core binds for inbound Tor connections.  The
+`HiddenServiceDir` directory contains your onion service hostname and
+private key.  It must be readable only by the Tor service user; do not
+copy it, publish its private key, or give other users access to it.
+
+Restart Tor:
+
+    sudo systemctl restart tor
+
+After Tor restarts, confirm that Tor created the hidden service
+directory and hostname file:
+
+    sudo ls -la /var/lib/tor/bitcoin-service/
+
+Then print the onion hostname:
+
+    sudo cat /var/lib/tor/bitcoin-service/hostname
+
+You should see an address ending in `.onion`.  Add that address to your
+Bitcoin Core configuration file, usually `~/.bitcoin/bitcoin.conf` for
+the user that runs Bitcoin Core:
+
+    listen=1
+    proxy=127.0.0.1:9050
+    bind=127.0.0.1:8334=onion
+    externalip=YOUR_ONION_HOSTNAME.onion
+
+Replace `YOUR_ONION_HOSTNAME.onion` with the hostname from the previous
+command.  These settings enable listening when using a proxy, route
+outbound connections through Tor, bind Bitcoin Core's onion listener to
+the same local address Tor forwards to, and advertise your onion service
+address to peers.  If Bitcoin Core is also configured to use Tor's
+control port and you only want to use the manual onion service above,
+add `listenonion=0` to prevent Bitcoin Core from creating a second onion
+service automatically.
+
+If your goal is location privacy, do not also advertise or accept
+connections on your clearnet address.  Keep the settings above, do not
+open or forward port 8333 on your router, and add:
+
+    onlynet=onion
+
+The `onlynet=onion` option prevents automatic outbound peer connections
+to IPv4 and IPv6 nodes; your node will only make automatic outbound peer
+connections to onion peers.  It does not hide a node that is also
+listening on or advertising IPv4 or IPv6 addresses.  If you want your
+node to keep using normal IPv4 or IPv6 outbound connections while also
+accepting onion inbound connections, do not set `onlynet=onion`.
+
+Restart Bitcoin Core after saving `bitcoin.conf`.  For Bitcoin Core
+daemon, run:
+
+    bitcoin-cli stop
+    bitcoind -daemon
+
+You can confirm that Bitcoin Core loaded your onion address with:
+
+    bitcoin-cli getnetworkinfo
+
+Look for your `.onion` address in the `localaddresses` section.  If you
+configured Bitcoin Core to use Tor as a proxy, also confirm that the
+`onion` network is listed as reachable.  You can see onion addresses
+your node knows about with:
+
+    bitcoin-cli getnodeaddresses 0 onion
+
+That command lists known onion peers, not your own service.  Once other
+peers connect to your onion service, inbound connections will appear in:
+
+    bitcoin-cli getpeerinfo
+
+Keep wallet and RPC access separate from this setup.  Do not expose
+Bitcoin Core's RPC port through Tor, through your router, or through
+your firewall.  The onion service above is only for Bitcoin's
+peer-to-peer port, 8333.
+
 ### Testing Connections
 
 The BitNodes project provides an online tool to let you test whether
