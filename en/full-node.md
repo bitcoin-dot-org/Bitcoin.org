@@ -1280,6 +1280,98 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+
+### Running Behind A Tor Onion Service
+
+You can also make your full node reachable through
+[Tor](https://www.torproject.org/) as an onion service, formerly called a
+hidden service. This can help nodes behind restrictive networks accept inbound
+connections without router port forwarding. It can also hide your public IP
+address from peers, although running the same node on clearnet and Tor may allow
+the two addresses to be linked.
+
+The steps below assume a Linux system using `systemd`, Tor's default SOCKS proxy
+on `127.0.0.1:9050`, and Bitcoin Core's default mainnet port. Adapt the package
+and service commands for your operating system.
+
+#### Automatic Onion Service
+
+Modern Bitcoin Core can ask Tor to create a Tor v3 onion service automatically.
+This is usually the simplest option.
+
+1. Install Tor and make sure it is running:
+
+        sudo apt install tor
+        sudo systemctl enable --now tor
+
+2. Enable Tor's control port and cookie authentication by adding or uncommenting
+   these lines in `/etc/tor/torrc`:
+
+        ControlPort 9051
+        CookieAuthentication 1
+        CookieAuthFileGroupReadable 1
+        DataDirectoryGroupReadable 1
+
+3. Restart Tor:
+
+        sudo systemctl restart tor
+
+4. Give the user that runs Bitcoin Core permission to read Tor's authentication
+   cookie. On Debian and Ubuntu systems the Tor group is usually `debian-tor`:
+
+        sudo usermod -a -G debian-tor "$USER"
+
+   Log out and log back in, or reboot, before continuing. If your distribution
+   uses a different Tor group name, find it with:
+
+        getent group | cut -d: -f1 | grep -i tor
+
+5. Add these settings to your `bitcoin.conf` file:
+
+        proxy=127.0.0.1:9050
+        listen=1
+        listenonion=1
+
+6. Restart Bitcoin Core. You can see the onion address that Bitcoin Core is
+   advertising with:
+
+        bitcoin-cli getnetworkinfo
+
+   Look for an address ending in `.onion` in the `localaddresses` section. If it
+   does not appear, add `debug=tor` to `bitcoin.conf`, restart Bitcoin Core, and
+   check `debug.log` for Tor authentication or control port errors.
+
+#### Manual Onion Service
+
+If you prefer to manage the onion service yourself, configure Tor to forward a
+public onion service port to Bitcoin Core's local onion listening port.
+
+1. Add this service definition to `/etc/tor/torrc`:
+
+        HiddenServiceDir /var/lib/tor/bitcoin-service/
+        HiddenServicePort 8333 127.0.0.1:8334
+
+2. Restart Tor and read the generated onion address:
+
+        sudo systemctl restart tor
+        sudo cat /var/lib/tor/bitcoin-service/hostname
+
+3. Add these settings to `bitcoin.conf`, replacing the example onion address
+   with the address from the previous step:
+
+        proxy=127.0.0.1:9050
+        listen=1
+        bind=127.0.0.1:8334=onion
+        externalip=yourgeneratedaddress.onion
+
+4. Restart Bitcoin Core. After your node has been online for a while, you can
+   check for inbound onion peers with:
+
+        bitcoin-cli getpeerinfo
+
+Only add Bitcoin Core's peer-to-peer port to this onion service. If you also run
+a web server or another service, create a separate onion service for it so that
+the services are not trivially linked.
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
