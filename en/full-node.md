@@ -1086,10 +1086,20 @@ Restart Tor:
 
     sudo systemctl restart tor
 
+Give the user that runs Bitcoin Core permission to read Tor's
+authentication cookie. On Debian- and Ubuntu-based systems, the Tor
+group is often `debian-tor`:
+
+    sudo usermod -a -G debian-tor "$USER"
+
+On systems that use a different Tor group name, use that group instead.
+After changing groups, log out and log back in before continuing.
+
 Then add these lines to your Bitcoin Core configuration file, usually
 `~/.bitcoin/bitcoin.conf`:
 
     listen=1
+    listenonion=1
     proxy=127.0.0.1:9050
 
 Restart Bitcoin Core. If Bitcoin Core can authenticate to Tor's control
