@@ -1,0 +1,76 @@
+---
+layout: base
+lang: en
+---
+
+<div class="container">
+<div class="card">
+<div class="card-padding">
+<h2>Developer Documentation</h2>
+
+<p>As a peer-to-peer digital currency, Bitcoin is designed to be mostly
+independent of any central authority. This documentation is for developers who
+want to build programs that interact with the Bitcoin network such as
+wallets, merchant systems, and specialized applications.</p>
+
+<h3>P2Pool and Sharechain</h3>
+
+<p>P2Pool (Peer-to-Peer Pool) is a decentralized mining pool that operates without a central authority. Instead of relying on a pool operator, P2Pool creates its own blockchain-like data structure called a "sharechain" that is separate from the main Bitcoin blockchain.</p>
+
+<h4>How P2Pool Works</h4>
+
+<p>P2Pool operates by creating a peer-to-peer network of mining nodes that
+distribute work and share rewards among participants. Each participating node
+maintains a complete copy of the sharechain, which contains records of all
+mining attempts (shares) submitted by all participants in the pool.</p>
+
+<h4>Sharechain Details</h4>
+
+<p>The sharechain is a separate blockchain maintained by the P2Pool network
+that tracks mining attempts and rewards distribution. Key characteristics
+include:</p>
+
+<ul>
+<li><b>Decentralized reward distribution:</b> Miners are rewarded proportionally
+to their contributed hashpower for shares found in the sharechain</li>
+
+<li><b>Dynamic difficulty adjustment:</b> The sharechain automatically adjusts
+difficulty to maintain consistent block timing appropriate for the
+participating hashrate</li>
+
+<li><b>Transparent merged mining:</b> P2Pool supports merged mining with other
+cryptocurrencies, allowing miners to simultaneously mine Bitcoin and other
+compatible coins</li>
+
+<li><b>Enhanced privacy:</b> P2Pool provides better transaction
+privacy compared to traditional pools by avoiding central points of failure</li>
+</ul>
+
+<h4>Technical Implementation</h4>
+
+<p>P2Pool implementation involves:</p>
+
+<ul>
+<li>Running a separate P2P network node that connects to other P2Pool nodes</li>
+<li>Each node maintains a complete sharechain copy for reward verification</li>
+<li>Shares are distributed based on measured hashpower contribution</li>
+<li>Block propagation uses the sharechain for faster, more reliable transaction
+inclusion</li>
+</ul>
+
+<h4>Benefits</h4>
+
+<ul>
+<li><b>Reduced orphan rates:</b> P2Pool's built-in relay network historically has
+had lower orphan rates than traditional pools</li>
+
+<li><b>Address privacy:</b> P2Pool provides enhanced privacy over other mining
+pools through decentralized payout distribution</li>
+
+<li><b>Merged mining capability:</b> P2Pool can transparently engage in merged
+mining without sharechain enhancement</li>
+</ul>
+
+</div>
+</div>
+</div>
