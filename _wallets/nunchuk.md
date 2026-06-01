@@ -22,7 +22,7 @@ platform:
           validation: "checkpassvalidationservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkpassprivacyimproved"
+          privacy: "checkpassprivacybasic"
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
@@ -41,7 +41,7 @@ platform:
         validation: "checkpassvalidationservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkpassprivacyimproved"
+        privacy: "checkpassprivacybasic"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
