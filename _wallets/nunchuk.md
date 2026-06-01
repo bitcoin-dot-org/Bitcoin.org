@@ -5,7 +5,7 @@
 id: nunchuk
 title: "Nunchuk"
 titleshort: "Nunchuk"
-compat: "desktop windows mac linux mobile android ios"
+compat: "desktop windows mac linux mobile android"
 level: 2
 platform:
   - mobile:
@@ -22,24 +22,7 @@ platform:
           validation: "checkpassvalidationservers"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkgoodprivacyimproved"
-          fees: "checkgoodfeecontrolfull"
-        privacycheck:
-          privacyaddressreuse: "checkpassprivacyaddressrotation"
-          privacydisclosure: "checkfailprivacydisclosurespv"
-          privacynetwork: "checkpassprivacynetworksupporttorproxy"
-      - name: ios
-        text: "walletnunchuk"
-        link: "https://apps.apple.com/us/app/nunchuk-bitcoin-wallet/id1563190073"
-        source: "https://github.com/nunchuk-io/libnunchuk/"
-        screenshot: "nunchukmobile.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
-        check:
-          control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationservers"
-          transparency: "checkfailtransparencyclosedsource"
-          environment: "checkpassenvironmentmobile"
-          privacy: "checkgoodprivacyimproved"
+          privacy: "checkpassprivacyimproved"
           fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
@@ -58,7 +41,7 @@ platform:
         validation: "checkpassvalidationservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkgoodprivacyimproved"
+        privacy: "checkpassprivacyimproved"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
