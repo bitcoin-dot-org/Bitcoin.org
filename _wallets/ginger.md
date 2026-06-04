@@ -15,7 +15,7 @@ platform:
       link: "https://gingerwallet.io/"
       source: "https://github.com/GingerPrivacy/GingerWallet"
       screenshot: "ginger.png"
-      features: "2fa bech32 hardware_wallet mixing_shuffling segwit"
+      features: "2fa bech32 hardware_wallet segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
