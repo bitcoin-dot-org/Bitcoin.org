@@ -2,21 +2,20 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: wasabi
-title: "Wasabi Wallet"
-titleshort: "Wasabi"
+id: ginger
+title: "Ginger Wallet"
+titleshort: "Ginger"
 compat: "desktop windows mac linux"
-user: beginner
 level: 3
 platform:
   - desktop:
     name: desktop
     default: &DEFAULT
-      text: "walletwasabi"
-      link: "https://wasabiwallet.io/"
-      source: "https://github.com/WalletWasabi/WalletWasabi/"
-      screenshot: "wasabi.png"
-      features: "bech32 hardware_wallet segwit"
+      text: "walletginger"
+      link: "https://gingerwallet.io/"
+      source: "https://github.com/GingerPrivacy/GingerWallet"
+      screenshot: "ginger.png"
+      features: "2fa bech32 hardware_wallet mixing_shuffling segwit"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
