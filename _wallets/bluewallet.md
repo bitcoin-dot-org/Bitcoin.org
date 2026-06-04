@@ -40,7 +40,7 @@ platform:
     os:
       - name: mac
         text: "walletbluewallet"
-        link: "https://bluewallet.io/desktop-bitcoin-wallet"
+        link: "https://bluewallet.app/desktop-bitcoin-wallet"
         source: "https://github.com/BlueWallet/BlueWallet"
         screenshot: "bluewalletmac.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
