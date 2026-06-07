@@ -95,7 +95,6 @@ following features are available for assignment:
 * hardware_wallet
 * legacy_addresses
 * lightning
-* mixing_shuffling
 * multisig
 * segwit
 
@@ -141,18 +140,12 @@ below:
     - To qualify for supporting this feature, the wallet must be able to send and receive legacy format addresses.  This does not need to be the default receive address format, but it should be easy and obvious for users to generate a legacy format receive address.
 
 
-* lightning: Some wallets support transactions on the Lightning Network. The
-  Lightning Network is new and somewhat experimental. It supports transferring
-  bitcoin without having to record each transaction on the blockchain, resulting
-  in faster transactions and lower fees.
+* lightning: Some wallets support transactions on the Lightning Network, a
+  second-layer protocol built on top of Bitcoin that enables fast, low-cost
+  payments through payment channels, without each transaction being recorded
+  individually on the blockchain.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive lightning network transactions.
-
-* mixing_shuffling: Some wallets support coin mixing and/or shuffling, which
-  pools transactions from multiple parties in order to increase privacy and
-  reduce traceability.
-
-  - To qualify for supporting this feature, the wallet must be able to participate in transactions which mix or shuffle funds with funds from other users.
 
 * multisig: Some wallets have the ability to require more than one key to
   authorize a transaction. This can be used to divide responsibility and control
@@ -170,7 +163,7 @@ below:
 Assignment of the features are done below the `screenshot` field and assigning
 multiple features can be done like so, for example:
 
-`features: "bech32 legacy_addresses mixing_shuffling segwit"`
+`features: "bech32 legacy_addresses segwit"`
 
 **Icon**: The png file must go in `/img/wallet`, be 144 X 144 px and optimized
 with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
