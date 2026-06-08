@@ -1,0 +1,83 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: submit-your-business
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summary">{% translate pagedesc %}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="intro-text">{% translate introtext %}</p>
+    </div>
+  </div>
+
+  <div class="row card-row">
+    <div class="card spend-card">
+      <img src="/img/icons/local.svg?{{site.time | date: '%s'}}" alt="map icon">
+      <h2 id="coinmap">{% translate coinmap %}</h2>
+      <p>{% translate coinmaptext %}</p>
+      <div>
+        <a class="btn-bright" href="https://coinmap.org/add/">{% translate coinmapbut %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/search.svg?{{site.time | date: '%s'}}" alt="search icon">
+      <h2 id="btcmap">{% translate btcmap %}</h2>
+      <p>{% translate btcmaptext %}</p>
+      <div>
+        <a class="btn-bright" href="https://btcmap.org/add-location">{% translate btcmapbut %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="directory icon">
+      <h2 id="bitcoinwide">{% translate bitcoinwide %}</h2>
+      <p>{% translate bitcoinwidetext %}</p>
+      <div>
+        <a class="btn-bright" href="https://bitcoinwide.com/submit">{% translate bitcoinwidebut %}</a>
+      </div>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="directory icon">
+      <h2 id="acceptedhere">{% translate acceptedhere %}</h2>
+      <p>{% translate acceptedheretext %}</p>
+      <div>
+        <a class="btn-bright" href="https://www.acceptedhere.io/submit-listing/">{% translate acceptedherebut %}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2 id="tips">{% translate tipstitle %}</h2>
+      <ul class="tips-list">
+        <li>{% translate tip1 %}</li>
+        <li>{% translate tip2 %}</li>
+        <li>{% translate tip3 %}</li>
+        <li>{% translate tip4 %}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2 id="benefits">{% translate benefitstitle %}</h2>
+      <p>{% translate benefitstext %}</p>
+      <ul class="benefits-list">
+        <li>{% translate benefit1 %}</li>
+        <li>{% translate benefit2 %}</li>
+        <li>{% translate benefit3 %}</li>
+      </ul>
+    </div>
+  </div>
+</div>
