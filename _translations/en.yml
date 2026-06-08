@@ -1271,6 +1271,7 @@ en:
     bitcoin-paper: bitcoin-paper
     whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
+  submit-your-business: submit-your-business
   anchor:
     community:
       non-profit: non-profit
@@ -1369,3 +1370,15 @@ en:
       quantum: is-bitcoin-vulnerable-to-quantum-computing
       help: help
       morehelp: more-help
+
+submit-your-business:
+  pagetitle: 'Submit Your Business'
+  pagedesc: 'Get visibility for your Bitcoin business by submitting to online directories and services.'
+  online-directories: 'Online Product Search'
+  online-directories-text: '<a href="https://spendabit.co/">Spendabit</a> is a product search engine for items you can buy with Bitcoin. List your products there to reach Bitcoin users actively looking to spend. <a href="https://paywithcrypt.com/">PayWithCrypto</a> also lets customers find merchants that accept crypto payments.'
+  bitcoin-directories: 'Business Directories'
+  bitcoin-directories-text: 'Submit your business to <a href="https://coinmap.org/">Coinmap</a>, a community-driven map of Bitcoin-accepting businesses worldwide. <a href="https://btcmap.org/">BTC Map</a> is another open-source directory where you can add your business location and details.'
+  local-business: 'Local Visibility'
+  local-business-text: 'If you run a brick and mortar store, list yourself on local search engines and Google Maps. Add the Bitcoin logo to your storefront and website. <a href="https://bitcoin.org/en/bitcoin-for-businesses">Visit the Bitcoin for Businesses page</a> to learn more about accepting Bitcoin in your store.'
+  promotion: 'Promotional Materials'
+  promotion-text: 'Display the <a href="https://en.bitcoin.it/wiki/Promotional_graphics">Bitcoin logo</a> prominently on your website and in your physical location. Join Bitcoin business networks on social media and consider offering a small discount for Bitcoin payments to attract early adopters.'
