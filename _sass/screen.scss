@@ -3555,6 +3555,11 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .develdocdisclaimerclose:active {
         right: 30px;
     }
+    // language selector BG on small viewport sizes when it is NOT a mobile device using the browser's native UI selector
+    #select-input {
+  background-color: black;
+  padding-left: 10px;
+}
 }
 
 @media handheld, only screen and ( max-width: 67.5em ), only screen and ( max-device-width: 67.5em ){
