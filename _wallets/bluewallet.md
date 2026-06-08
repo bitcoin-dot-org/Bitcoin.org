@@ -30,11 +30,11 @@ platform:
       - name: android
         <<: *DEFAULT-MOBILE
         link: "https://play.google.com/store/apps/details?id=io.bluewallet.bluewallet"
-        screenshot: "bluewalletandroid.jpg"
+        screenshot: "bluewalletandroid.png"
       - name: ios
         <<: *DEFAULT-MOBILE
         link: "https://apps.apple.com/us/app/bluewallet-bitcoin-wallet/id1376878040"
-        screenshot: "bluewalletios.jpg"
+        screenshot: "bluewalletios.png"
   - desktop:
     name: desktop
     os:
