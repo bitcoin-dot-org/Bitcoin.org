@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # http://opensource.org/licenses/MIT.
 
-id: jade
-title: "Blockstream Jade"
-titleshort: "Jade"
+id: jadeplus
+title: "Blockstream Jade Plus"
+titleshort: "Jade Plus"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletjade"
+        text: "walletjadeplus"
         link: "https://blockstream.com/jade/"
         source: "https://github.com/Blockstream/Jade"
-        screenshot: "jade.png"
+        screenshot: "jadeplus.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
         check:
           control: "checkgoodcontrolfull"
