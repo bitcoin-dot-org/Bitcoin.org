@@ -1,9 +1,10 @@
 ---
-# This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+layout: base-en
+id: full-node
+title: Running a Full Node
+---
 
-layout: base-core
-lang: en
+# Running a Full Node
 id: full-node
 title: "Running A Full Node - Bitcoin"
 end_of_page: |
@@ -17,12 +18,13 @@ breadcrumbs:
   - bcc documentation
   - Bandwidth sharing
 ---
-
-<!-- Variable assignment
-
-{% capture installFinished %}
-You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin&uio=d4) IRC chatroom on Freenode.
-
+    - [Mac OS X Yosemite 10.10.x](#mac-os-x-yosemite-1010x)
+    - [Windows](#windows)
+  - [Network Configuration](#network-configuration)
+  - [Tor Hidden Service](#tor-hidden-service)
+  - [Reducing Storage](#reducing-storage)
+- [Troubleshooting](#troubleshooting)
+- [Operating System Tuning](#operating-system-tuning)
 To support the Bitcoin network, you also need to allow incoming
 connections. Please read the [Network
 Configuration](#network-configuration) section for details.
@@ -493,12 +495,95 @@ still need to configure inbound connections as described later in the
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
 Bitcoin Core GUI will begin to download the block chain.  This step will take at
-least several days, and it may take much more time on a slow Internet connection
-or with a slow computer.  During the download, Bitcoin Core will use a
-significant part of your connection bandwidth.  You can stop Bitcoin Core at any
-time by closing it; it will resume from the point where it stopped the next time
-you start it.
 
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Tor Hidden Service
+
+You can run your full node as a [Tor](https://www.torproject.org/) hidden service to increase your privacy and the privacy of other Bitcoin users. Running a hidden service also allows you to accept incoming connections via Tor without needing to configure port forwarding on your router.
+
+### Install Tor
+
+First, install Tor. On Debian/Ubuntu:
+
+    sudo apt-get install tor
+
+On macOS with Homebrew:
+
+    brew install tor
+
+On Windows, download and install the [Tor Browser](https://www.torproject.org/download/) or the [Tor Expert Bundle](https://www.torproject.org/download/tor/).
+
+### Configure Tor
+
+Edit your `torrc` file to add a hidden service for Bitcoin. The location of this file varies by operating system:
+
+- Linux: `/etc/tor/torrc`
+- macOS: `/usr/local/etc/tor/torrc` (Homebrew)
+- Windows: `Tor Browser\Data\Tor\torrc`
+
+Add the following lines to your `torrc` file:
+
+    HiddenServiceDir /var/lib/tor/bitcoin-service/
+    HiddenServicePort 8333 127.0.0.1:8333
+
+On macOS with Homebrew, you may need to use a different directory:
+
+    HiddenServiceDir /usr/local/var/lib/tor/bitcoin-service/
+    HiddenServicePort 8333 127.0.0.1:8333
+
+Create the hidden service directory and set proper permissions:
+
+    sudo mkdir -p /var/lib/tor/bitcoin-service
+    sudo chown -R debian-tor:debian-tor /var/lib/tor/bitcoin-service
+    sudo chmod 700 /var/lib/tor/bitcoin-service
+
+Restart Tor to create the hidden service:
+
+    sudo systemctl restart tor
+
+### Get Your Onion Address
+
+After Tor restarts, your hidden service address will be generated. Retrieve it with:
+
+    sudo cat /var/lib/tor/bitcoin-service/hostname
+
+This will output a `.onion` address, for example: `abcdefgh12345678.onion`
+
+### Configure Bitcoin Core
+
+Add the following to your `bitcoin.conf` file to configure Bitcoin Core to use Tor:
+
+    # Use Tor for all connections
+    proxy=127.0.0.1:9050
+
+    # Bind to localhost only
+    bind=127.0.0.1
+
+    # Listen for incoming connections
+    listen=1
+
+    # Advertise the Tor hidden service
+    externalip=YOUR_ONION_ADDRESS.onion
+
+    # Discover local addresses
+    discover=1
+
+Replace `YOUR_ONION_ADDRESS.onion` with the address you retrieved in the previous step.
+
+Restart Bitcoin Core for the changes to take effect.
+
+### Verify Your Hidden Service
+
+Check that your node is accepting connections via Tor by looking for incoming connections from `.onion` addresses in the Bitcoin Core debug log or by using the `getpeerinfo` RPC command.
+
+</div>
+
+<div class="toccontent-block boxexpand expanded" markdown="1">
+
+## Reducing Storage
 ![Bitcoin-Qt Initial Block Download](/img/full-node/en-win10-ibd.png?{{site.time | date: '%s'}})
 
 After download is complete, you may use Bitcoin Core as your wallet or
