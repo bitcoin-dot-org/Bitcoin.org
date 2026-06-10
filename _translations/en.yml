@@ -244,7 +244,7 @@ en:
     wizard-feature-bech32: "Bech32"
     wizard-feature-bech32-description: "Bech32 is a special address format made possible by SegWit (see the feature description for SegWit for more info). This address format is also known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support sending or receiving to Bech32 addresses."
     wizard-feature-taproot: "Taproot"
-    wizard-feature-taproot-description: "Taproot is a 2021 upgrade to Bitcoin's output scripts, using the bech32m address format. These addresses start with 'bc1p'. Supporting bech32 ('bc1q' addresses) does not imply support for Taproot; some bitcoin wallets and services do not yet support sending or receiving to bc1p addresses."
+    wizard-feature-taproot-description: "Some wallets support Taproot, which can increase privacy and use block chain space more efficiently for complex transactions such as multisig. Some bitcoin wallets and services do not yet support sending or receiving to the Bech32m addresses (which begin with 'bc1p') which Taproot uses."
     wizard-feature-full_node: "Full Node"
     wizard-feature-full_node-description: "Some wallets fully validate transactions and blocks. Almost all full nodes help the network by accepting transactions and blocks from other full nodes, validating those transactions and blocks, and then relaying them to further full nodes."
     wizard-feature-hardware_wallet: "Hardware Wallet"
