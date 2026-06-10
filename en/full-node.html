@@ -1,0 +1,55 @@
+<p class="summary">Full nodes are computers that run the Bitcoin Core software and fully validate transactions and blocks. They make the Bitcoin network more secure and robust by providing validation and relaying only the valid transactions, thus helping to maintain the integrity of the Bitcoin network.</p>
+
+<h2>What is a Full Node?</h2>
+<p>A full node is a program that fully validates transactions and blocks. It is up to each user to verify the entire blockchain, and this is highly recommended for anyone with the time, bandwidth, and computing resourcse to do so. If you are only using a wallet, you do not need to run a full node, but you are encouraged to use one. If you are accepting payments, it is in your interest to run a full node to ensure that the transactions you are accepting are valid.</p>
+
+<h2>What is a Full Node?</h2>
+<p>A full node is a program that fully validates transactions and blocks. It is up to each user to verify the entire blockchain, and this is highly recommended for anyone with the time, bandwidth, and computing resourcse to do so. If you are only using a wallet, you do not need to run a full node, but you are encouraged to use one. If you are accepting payments, it is in your interest to run a full node to ensure that the transactions you are accepting are valid.</p>
+
+<h2>Setting Up a Full Node</h2>
+<p>Setting up a full node is easy, and in many cases takes just 30 minutes. The most important part of running a full node is to have a good understanding of how to use the software and what the software does. The following instructions are for Bitcoin Core, the original and most common Bitcoin full node software, or other full node software that is API-compatible with Bitcoin Core.</p>
+
+<h2>Running a Full Node as a Tor Hidden Service</h2>
+<p>You can enhance your privacy and help the network by running your full node as a Tor hidden service. This allows other nodes to connect to your node anonymously through the Tor network.</p>
+
+<h3>Setup Instructions:</h3>
+<ol>
+  <li>Install and configure Tor:
+    <ul>
+      <li>Download and install the Tor software from the <a href="https://www.torproject.org/">Tor Project website</a></li>
+      <li>Configure Tor as a client <strong>and</strong> relay:
+        <ul>
+          <li>On Linux, add these configurations in the <code>torrc</code> file (typically located at <code>/etc/tor/torrc</code>):
+            <pre>
+# Enable Tor's hidden service and protect your node's privacy
+HiddenServiceDir /var/lib/tor/bitcoin-service/
+HiddenServicePort 8333 127.0.0.1:8333
+
+# As of 0.45.0.1, the following Tor settings are included by default in Tor:
+# You don't need to change the torrc file
+</pre>
+          </li>
+          <li>For other systems, download the Tor software and configure it appropriately for your system</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Configure your Bitcoin node to use the Tor network by adding these settings to your bitcoin.conf file:
+    <pre>
+onion=127.0.0.1:9050
+externalip=your_onion_address_here.onion
+listen=1
+listenonion=1
+upnp=0
+</pre>
+  </li>
+  <li>Restart your Tor service and Bitcoin node to apply the changes</li>
+</ol>
+
+<p>Once your node is configured as a Tor hidden service, other nodes can connect to your node through the Tor network, enhancing both your privacy and the network's privacy.</p>
+
+<h2>Additional Configuration Tips</h2>
+<ul>
+  <li>Make sure your system has sufficient bandwidth and can be reached by the Bitcoin network</li>
+  <li>Consider setting up <a href="https://bitcoin.org/en/full-node#ubuntu-1610">troubleshooting</a> to verify your node is working properly</li>
+</ul>
