@@ -1280,6 +1280,219 @@ ask for help on sites like [SuperUser](http://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
+
+### Running Bitcoin Core as a Tor Hidden Service
+
+Running your full node as a Tor hidden service (also known as an onion service)
+allows you to accept inbound connections and support the network without
+exposing your IP address. This is useful for privacy-conscious node operators
+and for users behind restrictive firewalls or NAT that cannot use traditional
+port forwarding.
+
+These instructions assume you already have Bitcoin Core installed and
+running. If you have not yet set up a full node, follow the setup
+instructions for your operating system above before proceeding.
+
+#### Installing Tor
+
+**Linux (Debian/Ubuntu):**
+
+```bash
+sudo apt update
+sudo apt install tor
+```
+
+**Linux (Fedora/RHEL):**
+
+```bash
+sudo dnf install tor
+```
+
+**macOS:**
+
+```bash
+brew install tor
+```
+
+**Windows:**
+
+Download the Windows Expert Bundle from the
+[Tor Project download page](https://www.torproject.org/download/tor/)
+and extract it to a directory such as `C:\Tor`.
+
+#### Configuring Tor for a Hidden Service
+
+After installing Tor, edit the `torrc` configuration file. The location
+varies by operating system:
+
+- **Linux:** `/etc/tor/torrc`
+- **macOS:** `/usr/local/etc/tor/torrc` (Homebrew install) or `/etc/tor/torrc`
+- **Windows:** `C:\Tor\Data\Tor\torrc`
+
+Add the following lines to enable a hidden service that forwards
+connections to your Bitcoin Core node:
+
+```
+HiddenServiceDir /var/lib/tor/bitcoin_hidden_service/
+HiddenServicePort 8333 127.0.0.1:8333
+```
+
+On Linux, ensure the hidden service directory has the correct permissions:
+
+```bash
+sudo mkdir -p /var/lib/tor/bitcoin_hidden_service
+sudo chown -R debian-tor:debian-tor /var/lib/tor/bitcoin_hidden_service
+sudo chmod 700 /var/lib/tor/bitcoin_hidden_service
+```
+
+On macOS, use a directory writable by the `_tor` user, such as
+`/usr/local/var/lib/tor/bitcoin_hidden_service`:
+
+```
+HiddenServiceDir /usr/local/var/lib/tor/bitcoin_hidden_service/
+HiddenServicePort 8333 127.0.0.1:8333
+```
+
+On Windows, use a directory such as `C:\Tor\Data\Tor\bitcoin_hidden_service`:
+
+```
+HiddenServiceDir C:\Tor\Data\Tor\bitcoin_hidden_service\
+HiddenServicePort 8333 127.0.0.1:8333
+```
+
+After editing `torrc`, restart Tor:
+
+- **Linux:** `sudo systemctl restart tor`
+- **macOS:** `brew services restart tor` (Homebrew) or `sudo systemctl restart tor`
+- **Windows:** Restart the Tor service from the Services management console
+  (services.msc), or reboot your computer.
+
+#### Getting Your Onion Address
+
+After Tor has started, the hidden service directory will contain a file named
+`hostname` that holds your onion address. View it with:
+
+- **Linux/macOS:** `sudo cat /var/lib/tor/bitcoin_hidden_service/hostname`
+- **Windows:** `type C:\Tor\Data\Tor\bitcoin_hidden_service\hostname`
+
+The output will look like:
+
+```
+abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890.onion
+```
+
+Make a note of this address; you will need it in the next step.
+
+#### Configuring Bitcoin Core
+
+Bitcoin Core supports Tor out of the box. To route all of your node's
+traffic through the Tor network and advertise your hidden service, add the
+following lines to your `bitcoin.conf` file:
+
+```
+onlynet=onion
+proxy=127.0.0.1:9050
+listen=1
+bind=127.0.0.1:8333
+externalip=abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890.onion
+discover=0
+```
+
+Replace the onion address with the one from your `hostname` file.
+
+**Explanation of these options:**
+
+- `onlynet=onion` — Restricts all P2P connections to the Tor network only.
+- `proxy=127.0.0.1:9050` — Uses the Tor SOCKS5 proxy (Tor's default port).
+- `listen=1` — Enables inbound connections.
+- `bind=127.0.0.1:8333` — Binds to localhost only; Tor handles external
+  connections via the hidden service.
+- `externalip=<onion>` — Advertises your onion address to the network.
+- `discover=0` — Prevents your node from discovering and advertising its
+  public IP address.
+
+> **Note:** If you want to keep clearnet connections alongside Tor (for
+> example, to maintain outbound connections if Tor is temporarily
+> unavailable), omit `onlynet=onion` and instead set:
+>
+> ```
+> proxy=127.0.0.1:9050
+> onion=127.0.0.1:9050
+> ```
+>
+> This routes only Bitcoin P2P traffic through Tor while allowing clearnet
+> connections as a fallback. However, this will not fully hide your IP
+> address.
+
+After editing `bitcoin.conf`, restart Bitcoin Core.
+
+#### Verifying Your Hidden Service
+
+Once Bitcoin Core has restarted, check that it is advertising your onion
+address:
+
+```bash
+bitcoin-cli getnetworkinfo
+```
+
+Look for the `localaddresses` field in the output. It should list your
+onion address. For example:
+
+```json
+{
+  "localaddresses": [
+    {
+      "address": "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890.onion",
+      "port": 8333,
+      "score": 1
+    }
+  ]
+}
+```
+
+You should also confirm that your node has inbound connections:
+
+```bash
+bitcoin-cli getconnectioncount
+```
+
+If the number is greater than 10, inbound connections are working. You can
+also check for peers with `inbound: true`:
+
+```bash
+bitcoin-cli getpeerinfo | grep -A10 '"inbound": true'
+```
+
+#### Testing from the Outside
+
+You can verify that your hidden service is reachable by asking another node
+operator to connect to your onion address, or by checking your node's
+reachability through a Tor-aware monitoring tool such as
+[Bitnodes](https://bitnodes.io/).
+
+Since Bitnodes probes from clearnet and cannot directly connect to onion
+addresses, a simpler self-test is to connect to your own node via Tor:
+
+```bash
+# On a separate machine with Tor running
+bitcoin-cli -proxy=127.0.0.1:9050 addnode "abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890.onion:8333" add
+```
+
+#### Notes
+
+- Tor hidden services provide encryption and authentication between the
+  client and the service, which means that traffic between two Tor nodes is
+  also encrypted at the transport layer.
+- Running only as a hidden service reduces your node's contribution to the
+  network somewhat, since not all nodes support connecting to onion
+  addresses. However, it is still a valuable contribution to the network's
+  resilience and diversity.
+- For maximum privacy, consider combining Tor with `-onlynet=onion` and
+  `-proxyrandomize=1` (randomizes the proxy credentials per connection to
+  further obscure your identity).
+- If you are running both clearnet and Tor, be aware that other peers may
+  learn your public IP address through clearnet connections.
+
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
