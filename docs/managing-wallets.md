@@ -113,7 +113,7 @@ below:
 
 * bech32: Bech32 is a special address format made possible by SegWit (see the
   feature description for SegWit for more info). This address format is also
-  known as 'bc1 addresses'. Some bitcoin wallets and services do not yet support
+  known as 'bc1 addresses'. Some Bitcoin wallets and services do not yet support
   sending or receiving to Bech32 addresses.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive Bech32 format addresses.  Bech32 does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32 format receive address.
@@ -164,7 +164,7 @@ below:
 * taproot: Taproot is a 2021 protocol upgrade that improves Bitcoin's privacy,
   efficiency, and scripting flexibility, introducing Schnorr signatures. Taproot
   uses the bech32m address format, also known as 'bc1p addresses'. Some
-  bitcoin wallets and services do not yet support sending or receiving to Taproot
+  Bitcoin wallets and services do not yet support sending or receiving to Taproot
   addresses.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive Bech32m (bc1p) format addresses. This does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32m format receive address.
