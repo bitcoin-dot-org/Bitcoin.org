@@ -16,7 +16,7 @@ platform:
         link: "https://blockstream.com/jade/"
         source: "https://github.com/Blockstream/Jade"
         screenshot: "jade.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

@@ -15,7 +15,7 @@ platform:
       link: "https://bitcoin-safe.org/"
       source: "https://github.com/andreasgriffin/bitcoin-safe/"
       screenshot: "bitcoinsafe.png"
-      features: "bech32 hardware_wallet multisig segwit"
+      features: "bech32 hardware_wallet multisig segwit taproot"
       check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
