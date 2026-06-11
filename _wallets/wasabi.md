@@ -14,7 +14,7 @@ platform:
     default: &DEFAULT
       text: "walletwasabi"
       link: "https://wasabiwallet.io/"
-      source: "https://github.com/zkSNACKs/WalletWasabi/"
+      source: "https://github.com/WalletWasabi/WalletWasabi/"
       screenshot: "wasabi.png"
       features: "bech32 hardware_wallet segwit"
       check:

@@ -157,8 +157,7 @@ Plugins include:
 | events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
-| releases     | 10      | --             | Bitcoin Core release notes; Download
-page
+| releases     | 10      | --             | Bitcoin Core release notes; Download page
 | sitemap      | 10      | --             | /sitemap.xml
 
 Notes: some plugins interact with each other or with translations; for example

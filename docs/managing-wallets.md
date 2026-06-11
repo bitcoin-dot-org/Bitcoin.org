@@ -33,6 +33,7 @@ in the future
 - Avoid address reuse by displaying a new receiving address for each transaction
   in the wallet UI
 - Avoid address reuse by using a new change address for each transaction
+- Does not show "received from" Bitcoin addresses in the UI
 - Uses deterministic ECDSA nonces (RFC 6979)
 - User has access to private keys for all major components of the wallet
 - If private keys or encryption keys are stored online:
@@ -41,9 +42,13 @@ in the future
 feature in response to failed login attempts along with a strict account
 recovery process.
 - If user has exclusive access over its private keys:
-  - Allows backup of the wallet
+  - Supports HD wallets (BIP32)
+  - Allows backup of the wallet seed on setup
   - Restoring wallet from backup is working
   - Source code is public and kept up to date under version control system
+  - On desktop platform:
+    - Encrypt the wallet by default
+    - Uses a strong KDF and key stretching for wallet storage and backups
 - If user has no access to some of the private keys in a multi-signature wallet:
   - Provides 2FA authentication feature
   - Reminds the user to enable 2FA by email or in the main UI of the wallet
@@ -61,15 +66,8 @@ recovery process.
 
 Optional criteria (some could become requirements):
 
-- Does not show "received from" Bitcoin addresses in the UI
 - Website serving executable code or requiring authentication is included in the
   [HSTS preload list](https://hstspreload.org/)
-- If user has exclusive access over its private keys:
-  - Supports HD wallets (BIP32)
-  - Provides users with step to print or write their wallet seed on setup
-  - Uses a strong KDF and key stretching for wallet storage and backups
-  - On desktop platform:
-    - Encrypt the wallet by default
 
 ### Adding a wallet
 
@@ -97,7 +95,6 @@ following features are available for assignment:
 * hardware_wallet
 * legacy_addresses
 * lightning
-* mixing_shuffling
 * multisig
 * segwit
 
@@ -143,18 +140,12 @@ below:
     - To qualify for supporting this feature, the wallet must be able to send and receive legacy format addresses.  This does not need to be the default receive address format, but it should be easy and obvious for users to generate a legacy format receive address.
 
 
-* lightning: Some wallets support transactions on the Lightning Network. The
-  Lightning Network is new and somewhat experimental. It supports transferring
-  bitcoin without having to record each transaction on the blockchain, resulting
-  in faster transactions and lower fees.
+* lightning: Some wallets support transactions on the Lightning Network, a
+  second-layer protocol built on top of Bitcoin that enables fast, low-cost
+  payments through payment channels, without each transaction being recorded
+  individually on the blockchain.
 
   - To qualify for supporting this feature, the wallet must be able to send and receive lightning network transactions.
-
-* mixing_shuffling: Some wallets support coin mixing and/or shuffling, which
-  pools transactions from multiple parties in order to increase privacy and
-  reduce traceability.
-
-  - To qualify for supporting this feature, the wallet must be able to participate in transactions which mix or shuffle funds with funds from other users.
 
 * multisig: Some wallets have the ability to require more than one key to
   authorize a transaction. This can be used to divide responsibility and control
@@ -172,7 +163,7 @@ below:
 Assignment of the features are done below the `screenshot` field and assigning
 multiple features can be done like so, for example:
 
-`features: "bech32 legacy_addresses mixing_shuffling segwit"`
+`features: "bech32 legacy_addresses segwit"`
 
 **Icon**: The png file must go in `/img/wallet`, be 144 X 144 px and optimized
 with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
