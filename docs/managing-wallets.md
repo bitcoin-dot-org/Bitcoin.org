@@ -160,8 +160,8 @@ below:
 
   - To qualify for supporting this feature, the wallet must be able to receive SegWit transactions (with either Bech32 format or legacy format addresses).
 
-Assignment of the features are done below the `screenshot` field and assigning
-multiple features can be done like so, for example:
+The `features` property must be added after `screenshot` in the wallet file.
+Multiple features can be assigned like so, for example:
 
 `features: "bech32 legacy_addresses segwit"`
 
