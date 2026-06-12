@@ -16,7 +16,7 @@ platform:
         link: "https://foundationdevices.com/passport/"
         source: "https://github.com/Foundation-Devices/passport2"
         screenshot: "passport.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

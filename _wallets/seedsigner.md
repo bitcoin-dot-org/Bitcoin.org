@@ -16,7 +16,7 @@ platform:
         link: "https://seedsigner.com/hardware/"
         source: "https://github.com/SeedSigner/seedsigner"
         screenshot: "seedsigner.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
