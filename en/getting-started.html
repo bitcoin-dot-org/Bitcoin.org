@@ -1,0 +1,62 @@
+---
+---
+
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+        <p>{% translate visibled %}</p>
+        <ul class="faqs">
+          <li>{% translate visibled1 %}</li>
+          <li><a href="/en/submit-business">{% translate visibled2 %}</a></li>
+        </ul>
+      </div>
+    </div>
+---
+---
+
+<div class="hero">
+  <div class="container hero-container">
+    <h1>Submit Your Business</h1>
+    <p class="summary">Get your business listed on Bitcoin directories and maps.</p>
+  </div>
+  <div class="container hero-container">
+    <div class="row">
+      <div class="card">
+        <img src="/img/icons/coinmap.svg" alt="Coinmap">
+        <h2>Coinmap</h2>
+        <p>Add your business to the world map of places that accept Bitcoin.</p>
+        <a class="btn btn-bright" href="https://coinmap.org/">Visit Coinmap</a>
+      </div>
+      <div class="card">
+        <img src="/img/icons/spendabit.svg" alt="Spendabit">
+        <h2>Spendabit</h2>
+        <p>List your products on a search engine for things you can buy with Bitcoin.</p>
+        <a class="btn btn-bright" href="https://spendabit.co/">Visit Spendabit</a>
+      </div>
+      <div class="card">
+        <img src="/img/icons/usebitcoins.svg" alt="UseBitcoins">
+        <h2>UseBitcoins</h2>
+        <p>Submit your business to a directory of merchants accepting Bitcoin.</p>
+        <a class="btn btn-bright" href="https://usebitcoins.info/">Visit UseBitcoins</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>How to Submit</h2>
+  <p>Each service above has its own submission process. Click the link for the service you'd like to use and follow their instructions to get your business listed.</p>
+  <p>Being listed on multiple services can help increase your visibility to Bitcoin users around the world.</p>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/css/landing.css">
+en:
+  submit-business:
+    title: "Submit Your Business"
+    pagetitle: "Submit Your Business"
+    summary: "Get your business listed on Bitcoin directories and maps."
+defaults:
+  - scope:
+      path: "en/submit-business.html"
+    values:
+      layout: page
