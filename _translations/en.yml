@@ -63,6 +63,7 @@ en:
     pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests, however, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like with credit card numbers."
     visibility: "Get some free visibility"
     visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
+    visibilitylink: "Submit your business"
     multisig: "Multi-signature"
     multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
     transparency: "Accounting transparency"
@@ -1075,6 +1076,16 @@ en:
     business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
     business-search: "Global local and online business search"
     business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
+  submit-business:
+    title: "Submit your business - Bitcoin"
+    pagetitle: "Submit your business"
+    summary: "Help people find your business when they are looking for places to spend Bitcoin."
+    map: "Add your location to BTC Map"
+    map-text: "If you serve customers at a physical location, add your business to <a href=\"https://btcmap.org/\">BTC Map</a> so nearby Bitcoin users can discover it."
+    directory: "Join a business directory"
+    directory-text: "Directories such as <a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> let customers search for businesses and organizations that accept Bitcoin."
+    keep-current: "Keep your listing current"
+    keep-current-text: "Keep your directory listings up to date, add clear payment instructions, and display the <a href=\"https://en.bitcoin.it/wiki/Promotional_graphics\">Bitcoin logo</a> on your website or storefront."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -1273,6 +1284,7 @@ en:
     bitcoin-paper: bitcoin-paper
     whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
+    submit-business: submit-business
   anchor:
     community:
       non-profit: non-profit
