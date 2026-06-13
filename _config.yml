@@ -685,4 +685,6 @@ defaults:
 
 ## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
 sass:
+  - id: earn-bitcoin
+    title: Earn Bitcoin
   style: compressed
