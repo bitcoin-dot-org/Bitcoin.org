@@ -2,83 +2,62 @@
 ---
 
 <div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-        <p>{% translate informtxt %}</p>
-        <div class="row">
-          <div class="column left">
-            <p><a href="/en/submit-business">{% translate informbut %}</a></p>
-          </div>
-          <div class="column right">
-            <p><a href="/en/spend-bitcoin">{% translate informbut2 %}</a></p>
+  <div class="container hero-text">
+    <p>Getting started with Bitcoin</p>
+    <p>There is a growing number of users searching for ways to spend their bitcoins. You can submit your business in online directories to make it easy for people to find you.</p>
+
+    <div class="row">
+      <p><a href="/en/submit-business">Submit your business</a></p>
+    </div>
+  </div>
+</div>
 ---
 ---
 
 <div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summary">{% translate pagedesc %}</p>
+  <div class="container hero-text">
+    <p>Submit Your Business</p>
   </div>
 </div>
 
 <div class="container">
-  <div class="row card-row">
-    <div class="card">
-      <img src="/img/icons/ico_spread.svg?1651746487" alt="Spread" />
-      <h2 id gor="spread">{% translate spread %}</h2>
-      <p>{% translate spreadtxt %}</p>
-      <p><a href="https://coinmap.org/">{% translate spreadbut %}</a></p>
+  <div class="row card">
+    <h2 id="submit-business">Get Your Business Listed</h2>
+    <p>If you accept Bitcoin, you can get your business listed on several popular directories and services. This helps customers find you and increases your visibility in the Bitcoin ecosystem.</p>
+
+    <h3 id="directories">Business Directories</h3>
+    <div class="row">
+      <div class="card">
+        <h4><a href="https://coinmap.org/">Coinmap</a></h4>
+        <p>Coinmap is an interactive map that shows places where Bitcoin is accepted. Add your business to help customers find you in your area.</p>
+        <p><a href="https://coinmap.org/">Visit Coinmap</a></p>
+      </div>
     </div>
-    <div class="card">
-      <img src="/img/icons/ico_spend.svg?1651746487" alt="Spend" />
-      <h2 id="spend">{% translate spend %}</h2>
-      <p>{% translate spendtxt %}</p>
-      <p><a href="https://spendabit.co/">{% translate spendbut %}</a></p>
+
+    <div class="row">
+      <div class="card">
+        <h4><a href="https://spendabit.co/">Spendabit</a></h4>
+        <p>Spendabit is a search engine for products you can buy with Bitcoin. List your store to reach more customers.</p>
+        <p><a href="https://spendabit.co/">Visit Spendabit</a></p>
+      </div>
     </div>
-    <div class="card">
-      <img src="/img/icons/ico_find.svg?1651746487" alt="Find" />
-      <h2 id="find">{% translate find %}</h2>
-      <p>{% translate findtxt %}</p>
-      <p><a href="https://airbitz.co/">{% translate findbut %}</a></p>
+
+    <div class="row">
+      <div class="card">
+        <h4><a href="https://usebitcoins.info/">useBitcoins</a></h4>
+        <p>useBitcoins is a directory of businesses, websites, and services that accept Bitcoin.</p>
+        <p><a href="https://usebitcoins.info/">Visit useBitcoins</a></p>
+      </div>
     </div>
+
+    <h3 id="how-to">How to Submit Your Business</h3>
+    <p>Each directory has its own submission process. Generally, you will need to:</p>
+    <ol>
+      <li>Visit the directory's website</li>
+      <li>Look for an "Add Business" or "Submit" link</li>
+      <li>Fill out your business information, including name, address, and website</li>
+      <li>Indicate that you accept Bitcoin as payment</li>
+    </ol>
+    <p>Once submitted, your business will be reviewed and added to the directory.</p>
   </div>
 </div>
-
-<script type="text/javascript">
-  var timeOut;
-  function scrollToTop() {
-    if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-      window.scrollBy(0,-50);
-      timeOut=setTimeout('scrollToTop()',25);
-    }
-    else clearTimeout(timeOut);
-  }
-</script>
-en:
-  submit-business:
-    title: "Submit your business"
-    pagetitle: "Submit your business"
-    pagedesc: "Get your business listed on Bitcoin directories and maps."
-    spread: "Coinmap"
-    spreadtxt: "Add your business to Coinmap, a map of places that accept Bitcoin worldwide."
-    spreadbut: "Visit Coinmap"
-    spend: "Spendabit"
-    spendtxt: "List your products on Spendabit, a search engine for things you can buy with Bitcoin."
-    spendbut: "Visit Spendabit"
-    find: "Airbitz"
-    findtxt: "Add your business to Airbitz, a directory of Bitcoin-accepting businesses."
-    findbut: "Visit Airbitz"
-  getting-started:
-    informbut: "Submit your business"
-    informbut2: "Spend Bitcoin"
----
-layout: base
----
-
-{{ content }}
-defaults:
-  - scope:
-      path: "en/submit-business.html"
-    values:
-      layout: "submit-business"
-      title: "Submit your business"
