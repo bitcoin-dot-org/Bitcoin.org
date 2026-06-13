@@ -1,0 +1,53 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: earn-bitcoin
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summarytxt">{% translate summary %}</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row card-row">
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_conf.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="contribute">{% translate contribute %}</h2>
+      <p>{% translate contributetxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="jobs">{% translate jobs %}</h2>
+      <p>{% translate jobstxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_payment.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="sell">{% translate sell-products %}</h2>
+      <p>{% translate sell-products-txt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_wallet.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="payroll">{% translate payroll %}</h2>
+      <p>{% translate payrolltxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_micro.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="small-tasks">{% translate small-tasks %}</h2>
+      <p>{% translate small-tasks-txt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_warning.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="stay-safe">{% translate stay-safe %}</h2>
+      <p>{% translate stay-safe-txt %}</p>
+    </div>
+  </div>
+</div>

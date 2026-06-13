@@ -1099,6 +1099,22 @@ en:
     translatetxt: "You can help spread Bitcoin awareness by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help with."
     help: "Meet the communities"
     helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects."
+  earn-bitcoin:
+    title: "Earn Bitcoin - Bitcoin"
+    pagetitle: "Earn Bitcoin"
+    summary: "You do not need to buy bitcoin from an exchange to get started. Many people earn bitcoin by working, selling goods or services, contributing to open source projects, or receiving part of their regular income in bitcoin."
+    contribute: "Contribute to open source"
+    contributetxt: "Some Bitcoin projects pay bounties for useful contributions. Bitcoin.org maintains a list of <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/labels/Bounty\">open bounty issues</a>; if your pull request is merged, the bounty is paid to the bitcoin address you provide."
+    jobs: "Find jobs or freelance work"
+    jobstxt: "You can look for full-time roles, contract work, and small services where clients are willing to pay in bitcoin. Bitcoin-focused job boards such as <a href=\"https://bitcoinerjobs.com/\">Bitcoiner Jobs</a> and <a href=\"https://cryptocurrencyjobs.co/bitcoin/\">Cryptocurrency Jobs' Bitcoin listings</a> can be places to start."
+    sell-products: "Sell products or services"
+    sell-products-txt: "Merchants, freelancers, creators, and local businesses can earn bitcoin by accepting it directly from customers. A self-hosted payment processor such as <a href=\"https://btcpayserver.org/\">BTCPay Server</a> can help you receive bitcoin online or in person without relying on a custodial payment account."
+    payroll: "Receive income in bitcoin"
+    payrolltxt: "Some employers and payroll providers can pay wages, contractor invoices, or a percentage of regular income in bitcoin. Services such as <a href=\"https://bitwage.com/en-us\">Bitwage</a> can help workers receive part of their existing income in bitcoin where supported."
+    small-tasks: "Do small tasks"
+    small-tasks-txt: "Task boards, community forums, and tip-based projects can pay small amounts of bitcoin for testing, writing, design, support, translations, or other useful work. These opportunities usually pay less, so compare the time required with the expected payout."
+    stay-safe: "Stay safe"
+    stay-safe-txt: "Avoid any offer that asks for an upfront deposit, your private keys, a seed phrase, or promises guaranteed profit. Check the reputation of the person or service paying you, consider escrow for unfamiliar counterparties, and follow the tax and legal rules that apply where you live."
   vocabulary:
     title: "Vocabulary - Bitcoin"
     pagetitle: "Some Bitcoin words you might hear"
@@ -1203,6 +1219,7 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-sell: "Sell Bitcoin"
+    menu-earn-bitcoin: "Earn Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
@@ -1268,6 +1285,7 @@ en:
     scams: scams
     secure-your-wallet: secure-your-wallet
     support-bitcoin: support-bitcoin
+    earn-bitcoin: earn-bitcoin
     vocabulary: vocabulary
     you-need-to-know: you-need-to-know
     bitcoin-paper: bitcoin-paper
