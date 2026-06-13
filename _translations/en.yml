@@ -1099,6 +1099,22 @@ en:
     translatetxt: "You can help spread Bitcoin awareness by translating or improving translations inside important parts of the Bitcoin ecosystem. Just pick a project you would like to help with."
     help: "Meet the communities"
     helptxt: "You can join Bitcoin <a href=\"#community#\">communities</a> and talk with other Bitcoin enthusiasts. You can learn more about Bitcoin every day, give help to new users and get involved in interesting projects."
+  earn:
+    title: "Earn Bitcoin - Bitcoin"
+    pagetitle: "Earn Bitcoin"
+    summary: "There are many ways to earn bitcoin through work, business, creativity, and contributions to the Bitcoin ecosystem."
+    work: "Work for bitcoin"
+    worktxt: "Freelancers and remote workers can look for bitcoin-paying clients and employers on communities and job boards like <a href=\"https://www.reddit.com/r/Jobs4Bitcoins/\">Jobs4Bitcoins</a> and <a href=\"https://bitcoinerjobs.com/\">Bitcoiner Jobs</a>. People with existing employers or clients can also use services such as <a href=\"https://bitwage.com/\">Bitwage</a> to receive some or all of their pay in bitcoin."
+    sell: "Sell goods and services"
+    selltxt: "Merchants, creators, and small businesses can accept bitcoin directly. A self-hosted payment processor such as <a href=\"https://btcpayserver.org/\">BTCPay Server</a> can help you receive payments without relying on a custodial processor."
+    contribute: "Contribute to open source"
+    contributetxt: "Developers, writers, translators, designers, and testers can earn bitcoin by completing public bounties or applying for grants. Start with <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org#earn-bitcoin-for-contributing\">Bitcoin.org bounties</a>, <a href=\"https://www.lightningbounties.com/\">Lightning Bounties</a>, or grant programs such as <a href=\"https://opensats.org/\">OpenSats</a>."
+    create: "Publish and create"
+    createtxt: "Writers, podcasters, video makers, musicians, and educators can use Bitcoin and Lightning payment tools to receive direct support from their audiences. Communities like <a href=\"https://stacker.news/\">Stacker News</a> and value-for-value apps such as <a href=\"https://fountain.fm/\">Fountain</a> are examples of this model."
+    mining: "Mine bitcoin"
+    miningtxt: "Bitcoin mining rewards miners for helping secure the network. Mining requires specialized hardware, reliable electricity, and careful cost planning, so it is not the easiest way for most newcomers to earn bitcoin."
+    safety: "Stay safe"
+    safetytxt: "Avoid any offer that asks you to pay money up front to earn bitcoin, promises guaranteed returns, or pressures you to share private keys or seed words. Research each service, understand its fees and privacy tradeoffs, and make sure the opportunity is legal where you live."
   vocabulary:
     title: "Vocabulary - Bitcoin"
     pagetitle: "Some Bitcoin words you might hear"
@@ -1203,6 +1219,7 @@ en:
     menu-support-bitcoin: "Support Bitcoin"
     menu-buy: "Buy Bitcoin"
     menu-sell: "Sell Bitcoin"
+    menu-earn: "Earn Bitcoin"
     menu-full-node: "Running a full node"
     menu-other: "Other"
     menu-vocabulary: Vocabulary
@@ -1254,6 +1271,7 @@ en:
     wallets-guide: wallets-guide
     development: development
     download: download
+    earn: earn
     exchanges: exchanges
     events: events
     faq: faq

@@ -1,0 +1,55 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# http://opensource.org/licenses/MIT.
+
+layout: base
+id: earn
+---
+<div class="hero">
+  <div class="container hero-container">
+    <h1>{% translate pagetitle %}</h1>
+    <p class="summarytxt">{% translate summary %}</p>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row card-row">
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="work">{% translate work %}</h2>
+      <p>{% translate worktxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_wallet.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="sell">{% translate sell %}</h2>
+      <p>{% translate selltxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_code.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="contribute">{% translate contribute %}</h2>
+      <p>{% translate contributetxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_spread.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="create">{% translate create %}</h2>
+      <p>{% translate createtxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_mining.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="mining">{% translate mining %}</h2>
+      <p>{% translate miningtxt %}</p>
+    </div>
+
+    <div class="card support-card">
+      <img class="titleicon" src="/img/icons/ico_security.svg?{{site.time | date: '%s'}}" alt="Icon" />
+      <h2 id="safety">{% translate safety %}</h2>
+      <p>{% translate safetytxt %}</p>
+    </div>
+  </div>
+
+</div>
