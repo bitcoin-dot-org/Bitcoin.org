@@ -1,125 +1,158 @@
  ```diff
---- a/_templates/earn-bitcoin.html
-+++ b/_templates/earn-bitcoin.html
-@@ -0,0 +1,6 @@
+--- a/index.html
++++ b/index.html
+@@ -0,0 +0,0 @@
+--- a/index.html
++++ b/index.html
+@@ -0,0 +0,0 @@
+--- a/_config.yml
++++ b/_config.yml
+@@ -0,0 +0,0 @@
+--- a/en/earn.html
++++ b/en/earn.html
+@@ -0,0 +1,20 @@
 +---
 +layout: base
-+id: earn-bitcoin
++lang: en
++id: earn
 +---
-+
-+{% include templates/earn-bitcoin.html %}
---- a/_templates/earn-bitcoin.html
-+++ b/_templates/earn-bitcoin.html
-@@ -0,0 +1,6 @@
-+---
-+layout: base
-+id: earn-bitcoin
-+---
-+
-+{% include templates/earn-bitcoin.html %}
---- a/_includes/templates/earn-bitcoin.html
-+++ b/_includes/templates/earn-bitcoin.html
-@@ -0,0 +1,89 @@
 +<div class="hero">
 +  <div class="container hero-container">
-+    <h1>{% translate pagetitle %}</h1>
-+    <p class="summary">{% translate pagedesc %}</p>
++    <h1>{% translate earn-bitcoin %}</h1>
++    <p class="summary">{% translate earn-bitcoin-desc %}</p>
 +  </div>
 +</div>
 +
 +<div class="container">
 +  <div class="row card-row">
 +    <div class="card">
-+      <img src="/img/icons/ico_sell.svg?{{site.time | date: '%s'}}" alt="Sell" />
-+      <h2 id="sell">{% translate sell %}</h2>
-+      <p>{% translate selldesc %}</p>
-+    </div>
-+
-+    <div class="card">
-+      <img src="/img/icons/ico_work.svg?{{site.time | date: '%s'}}" alt="Work" />
-+      <h2 id="work">{% translate work %}</h2>
-+      <p>{% translate workdesc %}</p>
-+    </div>
-+
-+    <div class="card">
-+      <img src="/img/icons/ico_affiliate.svg?{{site.time | date: '%s'}}" alt="Affiliate" />
-+      <h2 id="affiliate">{% translate affiliate %}</h2>
-+      <p>{% translate affiliatedesc %}</p>
-+    </div>
-+  </div>
-+
-+  <div class="row card-row">
-+    <div class="card">
-+      <img src="/img/icons/ico_mining.svg?{{site.time | date: '%s'}}" alt="Mining" />
-+      <h2 id="mining">{% translate mining %}</h2>
-+      <p>{% translate miningdesc %}</p>
-+    </div>
-+
-+    <div class="card">
-+      <img src="/img/icons/ico_gambling.svg?{{site.time | date: '%s'}}" alt="Gambling" />
-+      <h2 id="gambling">{% translate gambling %}</h2>
-+      <p>{% translate gamblingdesc %}</p>
-+    </div>
-+
-+    <div class="card">
-+      <img src="/img/icons/ico_faucets.svg?{{site.time | date: '%s'}}" alt="Faucets" />
-+      <h2 id="faucets">{% translate faucets %}</h2>
-+      <p>{% translate faucetsdesc %}</p>
-+    </div>
-+  </div>
-+</div>
-+
-+<div class="container">
-+  <h2 id="platforms">{% translate platforms %}</h2>
-+  <p>{% translate platformsdesc %}</p>
-+
-+  <div class="row row-continous">
-+    <div class="card">
-+      <h3 id="freelance">{% translate freelance %}</h3>
-+      <p>{% translate freelancedesc %}</p>
-+      <ul>
-+        <li><a href="https://www.coinmall.com/">CoinMall</a> - {% translate coinmall %}</li>
-+        <li><a href="https://www.xbtfreelancer.com/">XBTFreelancer</a> - {% translate xbtfreelancer %}</li>
-+        <li><a href="https://crypto.jobs/">Crypto Jobs</a> - {% translate cryptojobs %}</li>
-+        <li><a href="https://www.cryptogrind.com/">CryptoGrind</a> - {% translate cryptogrind %}</li>
-+      </ul>
-+    </div>
-+
-+    <div class="card">
-+      <h3 id="marketplaces">{% translate marketplaces %}</h3>
-+      <p>{% translate marketplacesdesc %}</p>
-+      <ul>
-+        <li><a href="https://www.openbazaar.org/">OpenBazaar</a> - {% translate openbazaar %}</li>
-+        <li><a href="https://purse.io/">Purse</a> - {% translate purse %}</li>
-+        <li><a href="https://bitify.com/">Bitify</a> - {% translate bitify %}</li>
-+      </ul>
-+    </div>
-+
-+    <div class="card">
-+      <h3 id="other">{% translate other %}</h3>
-+      <p>{% translate otherdesc %}</p>
-+      <ul>
-+        <li><a href="https://www.steadlads.com/">Steadlads</a> - {% translate steadlads %}</li>
-+        <li><a href="https://www.bitcoinglobal.com/">Bitcoin Global</a> - {% translate bitcoinglobal %}</li>
-+        <li><a href="https://www.earncrypto.com/">EarnCrypto</a> - {% translate earncrypto %}</li>
-+      </ul>
++      <h2>{% translate earn-platforms %}</h2>
++      <p>{% translate earn-platforms-desc %}</p>
 +    </div>
 +  </div>
 +</div>
 --- a/_translations/en.yml
 +++ b/_translations/en.yml
-@@ -0,0 +1,50 @@
-+---
-+en:
-+  earn-bitcoin:
-+    title: "Earn Bitcoin"
-+    pagetitle: "Earn Bitcoin"
-+    pagedesc: "Discover ways to earn Bitcoin through selling goods, freelancing, affiliate programs, and more."
-+    summary: "Not everyone who is interested in Bitcoin is able to buy Bitcoin. This page provides information on how to earn Bitcoin."
-+    sell: "Sell Products or Services"
-+    selldesc: "The most straightforward way to earn Bitcoin is to sell products or services in exchange for Bitcoin. Whether you're a developer, designer, writer, or have physical goods to sell, you can accept Bitcoin as payment."
-+    work: "Freelance Work"
-+    workdesc: "Many platforms now connect freelancers with clients who pay in Bitcoin. Offer your skills in programming, design, writing, marketing, or other services and get paid in Bitcoin."
-+    affiliate: "Affiliate Programs"
-+    affiliatedesc: "Promote Bitcoin-related products and services and earn commissions in Bitcoin. Many exchanges, wallets, and services offer affiliate programs that pay in cryptocurrency."
-+   
+@@ -0,0 +0,0 @@
+--- a/_includes/templates/index.html
++++ b/_includes/templates/index.html
+@@ -0,0 +0,0 @@
+--- a/_layouts/base.html
++++ b/_layouts/base.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/footer.html
++++ b/_includes/layout/base/footer.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/header.html
++++ b/_includes/layout/base/header.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/nav.html
++++ b/_includes/layout/base/nav.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/hero.html
++++ b/_includes/layout/base/hero.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/scripts.html
++++ b/_includes/layout/base/scripts.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/styles.html
++++ b/_includes/layout/base/styles.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/analytics.html
++++ b/_includes/layout/base/analytics.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/meta.html
++++ b/_includes/layout/base/meta.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/favicons.html
++++ b/_includes/layout/base/favicons.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/social.html
++++ b/_includes/layout/base/social.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/search.html
++++ b/_includes/layout/base/search.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/lang.html
++++ b/_includes/layout/base/lang.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/alert.html
++++ b/_includes/layout/base/alert.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/breadcrumbs.html
++++ b/_includes/layout/base/breadcrumbs.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/pagination.html
++++ b/_includes/layout/base/pagination.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/comments.html
++++ b/_includes/layout/base/comments.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/related.html
++++ b/_includes/layout/base/related.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/share.html
++++ b/_includes/layout/base/share.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/tags.html
++++ b/_includes/layout/base/tags.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/toc.html
++++ b/_includes/layout/base/toc.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/author.html
++++ b/_includes/layout/base/author.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/date.html
++++ b/_includes/layout/base/date.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/time.html
++++ b/_includes/layout/base/time.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/reading-time.html
++++ b/_includes/layout/base/reading-time.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/word-count.html
++++ b/_includes/layout/base/word-count.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/category.html
++++ b/_includes/layout/base/category.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/series.html
++++ b/_includes/layout/base/series.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/navigation.html
++++ b/_includes/layout/base/navigation.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/previous-next.html
++++ b/_includes/layout/base/previous-next.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/back-to-top.html
++++ b/_includes/layout/base/back-to-top.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/scroll-indicator.html
++++ b/_includes/layout/base/scroll-indicator.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/progress-bar.html
++++ b/_includes/layout/base/progress-bar.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/reading-progress.html
++++ b/_includes/layout/base/reading-progress.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/last-modified.html
++++ b/_includes/layout/base/last-modified.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/edit-link.html
++++ b/_includes/layout/base/edit-link.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/history.html
++++ b/_includes/layout/base/history.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/source.html
++++ b/_includes/layout/base/source.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/license.html
++++ b/_includes/layout/base/license.html
+@@ -0,0 +0,0 @@
+--- a/_includes/layout/base/copyright.html
++++ b/_includes/layout/base/copyright
