@@ -1,119 +1,125 @@
  ```diff
---- a/_config.yml
-+++ b/_config.yml
-@@ -0,0 +0,0
---- a/en/earn.html
-+++ b/en/earn.html
-@@ -0,0 +0,0
---- a/index.html
-+++ b/index.html
-@@ -0,0 +0,0
---- a/_includes/templates/index.html
-+++ b/_includes/templates/index.html
-@@ -0,0 +0,0
---- a/_includes/templates/earn.html
-+++ b/_includes/templates/earn.html
-@@ -0,0 +0,0
---- a/_includes/navigation.html
-+++ b/_includes/navigation.html
-@@ -0,0 +0,0
---- a/_layouts/base.html
-+++ b/_layouts/base.html
-@@ -0,0 +0,0
---- a/_translations/en.yml
-+++ b/_translations/en.yml
-@@ -0,0 +0,0
---- a/en/earn.html
-+++ b/en/earn.html
+--- a/_templates/earn-bitcoin.html
++++ b/_templates/earn-bitcoin.html
 @@ -0,0 +1,6 @@
 +---
 +layout: base
-+lang: en
-+title: Earn Bitcoin
++id: earn-bitcoin
 +---
-+{% include templates/earn.html %}
---- a/_includes/templates/earn.html
-+++ b/_includes/templates/earn.html
-@@ -0,0 +1,67 @@
++
++{% include templates/earn-bitcoin.html %}
+--- a/_templates/earn-bitcoin.html
++++ b/_templates/earn-bitcoin.html
+@@ -0,0 +1,6 @@
++---
++layout: base
++id: earn-bitcoin
++---
++
++{% include templates/earn-bitcoin.html %}
+--- a/_includes/templates/earn-bitcoin.html
++++ b/_includes/templates/earn-bitcoin.html
+@@ -0,0 +1,89 @@
 +<div class="hero">
 +  <div class="container hero-container">
-+    <h1>{% translate earn-bitcoin-heading %}</h1>
-+    <p class="summary">{% translate earn-bitcoin-subheading %}</p>
++    <h1>{% translate pagetitle %}</h1>
++    <p class="summary">{% translate pagedesc %}</p>
 +  </div>
 +</div>
 +
 +<div class="container">
-+  <div class="row section">
-+    <div class="col-xs-12">
-+      <h2 id="earn">{% translate earn-bitcoin-title %}</h2>
-+      <p>{% translate earn-bitcoin-intro %}</p>
-+      
-+      <h3 id="freelancing">{% translate earn-freelancing %}</h3>
-+      <p>{% translate earn-freelancing-text %}</p>
++  <div class="row card-row">
++    <div class="card">
++      <img src="/img/icons/ico_sell.svg?{{site.time | date: '%s'}}" alt="Sell" />
++      <h2 id="sell">{% translate sell %}</h2>
++      <p>{% translate selldesc %}</p>
++    </div>
++
++    <div class="card">
++      <img src="/img/icons/ico_work.svg?{{site.time | date: '%s'}}" alt="Work" />
++      <h2 id="work">{% translate work %}</h2>
++      <p>{% translate workdesc %}</p>
++    </div>
++
++    <div class="card">
++      <img src="/img/icons/ico_affiliate.svg?{{site.time | date: '%s'}}" alt="Affiliate" />
++      <h2 id="affiliate">{% translate affiliate %}</h2>
++      <p>{% translate affiliatedesc %}</p>
++    </div>
++  </div>
++
++  <div class="row card-row">
++    <div class="card">
++      <img src="/img/icons/ico_mining.svg?{{site.time | date: '%s'}}" alt="Mining" />
++      <h2 id="mining">{% translate mining %}</h2>
++      <p>{% translate miningdesc %}</p>
++    </div>
++
++    <div class="card">
++      <img src="/img/icons/ico_gambling.svg?{{site.time | date: '%s'}}" alt="Gambling" />
++      <h2 id="gambling">{% translate gambling %}</h2>
++      <p>{% translate gamblingdesc %}</p>
++    </div>
++
++    <div class="card">
++      <img src="/img/icons/ico_faucets.svg?{{site.time | date: '%s'}}" alt="Faucets" />
++      <h2 id="faucets">{% translate faucets %}</h2>
++      <p>{% translate faucetsdesc %}</p>
++    </div>
++  </div>
++</div>
++
++<div class="container">
++  <h2 id="platforms">{% translate platforms %}</h2>
++  <p>{% translate platformsdesc %}</p>
++
++  <div class="row row-continous">
++    <div class="card">
++      <h3 id="freelance">{% translate freelance %}</h3>
++      <p>{% translate freelancedesc %}</p>
 +      <ul>
-+        <li><a href="https://www.coinmall.com/">CoinMall</a> - {% translate earn-coinmall %}</li>
-+        <li><a href="https://www.bitgigs.com/">BitGigs</a> - {% translate earn-bitgigs %}</li>
-+        <li><a href="https://crypto.jobs/">CryptoJobs</a> - {% translate earn-cryptojobs %}</li>
++        <li><a href="https://www.coinmall.com/">CoinMall</a> - {% translate coinmall %}</li>
++        <li><a href="https://www.xbtfreelancer.com/">XBTFreelancer</a> - {% translate xbtfreelancer %}</li>
++        <li><a href="https://crypto.jobs/">Crypto Jobs</a> - {% translate cryptojobs %}</li>
++        <li><a href="https://www.cryptogrind.com/">CryptoGrind</a> - {% translate cryptogrind %}</li>
 +      </ul>
-+      
-+      <h3 id="microtasks">{% translate earn-microtasks %}</h3>
-+      <p>{% translate earn-microtasks-text %}</p>
++    </div>
++
++    <div class="card">
++      <h3 id="marketplaces">{% translate marketplaces %}</h3>
++      <p>{% translate marketplacesdesc %}</p>
 +      <ul>
-+        <li><a href="https://microlancer.io/">Microlancer</a> - {% translate earn-microlancer %}</li>
-+        <li><a href="https://earnbitcoin.io/">EarnBitcoin</a> - {% translate earn-earnbitcoin %}</li>
++        <li><a href="https://www.openbazaar.org/">OpenBazaar</a> - {% translate openbazaar %}</li>
++        <li><a href="https://purse.io/">Purse</a> - {% translate purse %}</li>
++        <li><a href="https://bitify.com/">Bitify</a> - {% translate bitify %}</li>
 +      </ul>
-+      
-+      <h3 id="mining">{% translate earn-mining %}</h3>
-+      <p>{% translate earn-mining-text %}</p>
-+      
-+      <h3 id="affiliate">{% translate earn-affiliate %}</h3>
-+      <p>{% translate earn-affiliate-text %}</p>
-+      
-+      <h3 id="content">{% translate earn-content %}</h3>
-+      <p>{% translate earn-content-text %}</p>
++    </div>
++
++    <div class="card">
++      <h3 id="other">{% translate other %}</h3>
++      <p>{% translate otherdesc %}</p>
 +      <ul>
-+        <li><a href="https://tippin.me/">Tippin.me</a> - {% translate earn-tippin %}</li>
-+        <li><a href="https://www.yours.org/">Yours</a> - {% translate earn-yours %}</li>
++        <li><a href="https://www.steadlads.com/">Steadlads</a> - {% translate steadlads %}</li>
++        <li><a href="https://www.bitcoinglobal.com/">Bitcoin Global</a> - {% translate bitcoinglobal %}</li>
++        <li><a href="https://www.earncrypto.com/">EarnCrypto</a> - {% translate earncrypto %}</li>
 +      </ul>
-+      
-+      <h3 id="development">{% translate earn-development %}</h3>
-+      <p>{% translate earn-development-text %}</p>
-+      <ul>
-+        <li><a href="https://bitcointalk.org/index.php?board=6.0">BitcoinTalk Bounties</a> - {% translate earn-bitcointalk %}</li>
-+        <li><a href="https://github.com/bitcoin/bitcoin/issues">Bitcoin Core Issues</a> - {% translate earn-bitcoin-core %}</li>
-+      </ul>
-+      
-+      <h3 id="trading">{% translate earn-trading %}</h3>
-+      <p>{% translate earn-trading-text %}</p>
-+      
-+      <h3 id="lending">{% translate earn-lending %}</h3>
-+      <p>{% translate earn-lending-text %}</p>
-+      
-+      <h3 id="accepting">{% translate earn-accepting %}</h3>
-+      <p>{% translate earn-accepting-text %}</p>
-+      <ul>
-+        <li><a href="https://bitpay.com/">BitPay</a> - {% translate earn-bitpay %}</li>
-+        <li><a href="https://btcpayserver.org/">BTCPay Server</a> - {% translate earn-btcpay %}</li>
-+      </ul>
-+      
-+      <h3 id=" {...} {% translate earn-conclusion %}</h3>
-+      <p>{% translate earn-conclusion-text %}</p>
 +    </div>
 +  </div>
 +</div>
 --- a/_translations/en.yml
 +++ b/_translations/en.yml
-@@ -0,0 +1,40 @@
+@@ -0,0 +1,50 @@
++---
 +en:
-+  earn-bitcoin-heading: "Earn Bitcoin"
-+  earn-bitcoin-subheading: "Discover ways to earn Bitcoin through work, services, and participation in the ecosystem"
-+  earn-bitcoin-title: "Ways to Earn Bitcoin"
-+  earn-bitcoin-intro: "Not everyone who is interested in Bitcoin is able to buy Bitcoin. Fortunately, there are many ways to earn Bitcoin through work, services, and participation in the ecosystem. This page provides resources and information to help you get started earning Bitcoin."
-+  earn-freelancing: "Freelancing and Services"
-+  earn-freelancing-text: "Offer your skills and services in exchange for Bitcoin. Many platforms allow you to find work and get paid in Bitcoin or other cryptocurrencies."
-+  earn-coinmall: "A globally accessible marketplace where anyone can sell digital products for cryptocurrencies."
-+  earn-bitgigs: "A Bitcoin freelance marketplace where you can offer your services for Bitcoin."
-+  earn-cryptojobs: "A job board focused on cryptocurrency and blockchain jobs."
-+  earn-microtasks: "Microtasks and Small Jobs"
-+  earn-microtasks-text: "Complete small tasks and micro-jobs to earn Bitcoin. These tasks can range from simple online work to more specialized services."
-+  earn-microlancer: "
++  earn-bitcoin:
++    title: "Earn Bitcoin"
++    pagetitle: "Earn Bitcoin"
++    pagedesc: "Discover ways to earn Bitcoin through selling goods, freelancing, affiliate programs, and more."
++    summary: "Not everyone who is interested in Bitcoin is able to buy Bitcoin. This page provides information on how to earn Bitcoin."
++    sell: "Sell Products or Services"
++    selldesc: "The most straightforward way to earn Bitcoin is to sell products or services in exchange for Bitcoin. Whether you're a developer, designer, writer, or have physical goods to sell, you can accept Bitcoin as payment."
++    work: "Freelance Work"
++    workdesc: "Many platforms now connect freelancers with clients who pay in Bitcoin. Offer your skills in programming, design, writing, marketing, or other services and get paid in Bitcoin."
++    affiliate: "Affiliate Programs"
++    affiliatedesc: "Promote Bitcoin-related products and services and earn commissions in Bitcoin. Many exchanges, wallets, and services offer affiliate programs that pay in cryptocurrency."
++   
