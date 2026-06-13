@@ -47,4 +47,24 @@
 {% include layout/base/footer-js.html %}
 </body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: 'Bitcoin.org' }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  {% include templates/header.html %}
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  {% include templates/footer.html %}
+  
+  <script src="/js/main.js"></script>
+</body>
+</html>
 </html>
