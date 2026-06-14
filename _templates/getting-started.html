@@ -127,7 +127,11 @@ id: getting-started
             {% translate visibility %}</h2>
           <p>{% translate visibilitytxt %}</p>
           <div>
+            {% if page.lang == 'en' %}
+            <a class="btn-bright" href="/en/{% translate submit-your-business url %}">{% translate visibilitybut %}</a>
+            {% else %}
             <a class="btn-bright" href="/{{ page.lang }}/{% translate spend-bitcoin url %}">{% translate visibilitybut %}</a>
+            {% endif %}
           </div>
         </div>
       </div>

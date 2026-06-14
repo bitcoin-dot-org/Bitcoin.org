@@ -62,7 +62,7 @@ en:
     pci: "No PCI compliance required"
     pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests, however, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like with credit card numbers."
     visibility: "Get some free visibility"
-    visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
+    visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. You can <a href=\"/en/submit-your-business\">submit your business</a> to directories that help Bitcoin users find places to spend."
     multisig: "Multi-signature"
     multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
     transparency: "Accounting transparency"
@@ -1075,6 +1075,26 @@ en:
     business-map-text: "There are also many local businesses, like cafes and restaurants, that accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a> to browse thousands of businesses across the globe."
     business-search: "Global local and online business search"
     business-search-text: "<a href=\"https://bitcoinwide.com/\">BitcoinWide.com</a> is a global, open and free platform to search businesses, organizations or individuals who accept Bitcoin and other Cryptocurrency."
+  submit-your-business:
+    title: "Submit Your Business - Bitcoin"
+    pagetitle: "Submit Your Business"
+    pagedesc: "Help Bitcoin users find your shop, service, or online store."
+    btc-map: "Add a local place to BTC Map"
+    btc-map-text: "BTC Map is a free and open-source map of Bitcoin-accepting merchants. It is best for shops, restaurants, services, and other physical locations that accept Bitcoin."
+    btc-map-button: "Add to BTC Map"
+    spendabit: "List products on Spendabit"
+    spendabit-text: "Spendabit helps Bitcoin users search for products they can buy online. It is useful for ecommerce stores and merchants with online product catalogs."
+    spendabit-button: "Start Spendabit onboarding"
+    coinmap: "Add a location to Coinmap"
+    coinmap-text: "Coinmap is a long-running map for businesses that accept Bitcoin. Add your location so nearby Bitcoin users and travelers can find it."
+    coinmap-button: "Add to Coinmap"
+    bitcoinwide: "Submit to BitcoinWide"
+    bitcoinwide-text: "BitcoinWide lists local and online businesses that accept Bitcoin and other digital payments. It can be used for physical locations, organizations, and online services."
+    bitcoinwide-button: "Add to BitcoinWide"
+    before-submit: "Before you submit"
+    before-submit-text: "Prepare your business name, website, contact details, address if you have a physical location, and the Bitcoin payment methods you accept, such as on-chain or Lightning payments."
+    keep-updated: "Keep listings accurate"
+    keep-updated-text: "Directories are most useful when listings stay current. Update your listing if your hours, address, website, or payment options change, and remove it if you stop accepting Bitcoin."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
@@ -1273,6 +1293,7 @@ en:
     bitcoin-paper: bitcoin-paper
     whitepaper-mirrors: whitepaper-mirrors
     spend-bitcoin: spend-bitcoin
+    submit-your-business: submit-your-business
   anchor:
     community:
       non-profit: non-profit
