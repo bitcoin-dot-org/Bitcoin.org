@@ -15,7 +15,7 @@ platform:
         text: "walletcove"
         link: "https://apps.apple.com/app/cove-simple-bitcoin-wallet/id6642680364"
         source: "https://github.com/bitcoinppl/cove"
-        screenshot: "covemobile.png"
+        screenshot: "coveios.png"
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
@@ -32,7 +32,7 @@ platform:
         text: "walletcove"
         link: "https://play.google.com/store/apps/details?id=org.bitcoinppl.cove"
         source: "https://github.com/bitcoinppl/cove"
-        screenshot: "covemobile.png"
+        screenshot: "coveandroid.png"
         features: "bech32 hardware_wallet legacy_addresses segwit"
         check:
           control: "checkgoodcontrolfull"
