@@ -5,9 +5,29 @@
 id: nunchuk
 title: "Nunchuk"
 titleshort: "Nunchuk"
-compat: "desktop windows mac linux"
+compat: "desktop windows mac linux mobile android"
 level: 2
 platform:
+  - mobile:
+    name: mobile
+    os:
+      - name: android
+        text: "walletnunchuk"
+        link: "https://play.google.com/store/apps/details?id=io.nunchuk.android"
+        source: "https://github.com/nunchuk-io/nunchuk-android/"
+        screenshot: "nunchukandroid.png"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
+        check:
+          control: "checkgoodcontrolfull"
+          validation: "checkpassvalidationservers"
+          transparency: "checkpasstransparencyopensource"
+          environment: "checkpassenvironmentmobile"
+          privacy: "checkpassprivacybasic"
+          fees: "checkgoodfeecontrolfull"
+        privacycheck:
+          privacyaddressreuse: "checkpassprivacyaddressrotation"
+          privacydisclosure: "checkfailprivacydisclosurespv"
+          privacynetwork: "checkpassprivacynetworksupporttorproxy"
   - desktop:
     name: desktop
     default: &DEFAULT
@@ -15,7 +35,7 @@ platform:
       link: "https://nunchuk.io/"
       source: "https://github.com/nunchuk-io/nunchuk-desktop/"
       screenshot: "nunchukdesktop.png"
-      features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+      features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationservers"
