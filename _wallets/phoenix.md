@@ -22,7 +22,7 @@ platform:
         environment: "checkpassenvironmentmobile"
         privacy: "checkpassprivacybasic"
         fees: "checkpassfeecontroloverride"
-      privacycheck: &DEFAULT-PRIVACYCHECK
+      privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
         privacydisclosure: "checkfailprivacydisclosurecentralized"
         privacynetwork: "checkpassprivacynetworksupporttorproxy"
