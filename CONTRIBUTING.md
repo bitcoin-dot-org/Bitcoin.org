@@ -16,4 +16,4 @@ The following quick guides will help you get started:
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
 
 ### Questions?
-Please contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.
+If you need help, please [open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues).

@@ -15,7 +15,7 @@ platform:
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
       screenshot: "bitcoinknots.png"
-      features: "bech32 full_node legacy_addresses segwit"
+      features: "bech32 full_node legacy_addresses segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

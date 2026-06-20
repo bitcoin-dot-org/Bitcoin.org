@@ -16,7 +16,7 @@ platform:
         link: "https://selfcustody.github.io/krux/"
         source: "https://github.com/selfcustody/krux"
         screenshot: "krux.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
