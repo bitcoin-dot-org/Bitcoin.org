@@ -169,8 +169,8 @@ below:
 
   - To qualify for supporting this feature, the wallet must be able to send and receive Bech32m (bc1p) format addresses. This does not need to be the default receive address format, but it should be easy and obvious for users to generate a Bech32m format receive address.
 
-Assignment of the features are done below the `screenshot` field and assigning
-multiple features can be done like so, for example:
+The `features` property must be added after `screenshot` in the wallet file.
+Multiple features can be assigned like so, for example:
 
 `features: "bech32 legacy_addresses segwit"`
 
