@@ -1,6 +1,6 @@
 # Welcome to Bitcoin.org's Codebase
 
-Current Build Status: ![Build Status](https://travis-ci.org/bitcoin-dot-org/bitcoin.org.svg?branch=master)
+Current Build Status: ![Build Status](https://api.travis-ci.com/bitcoin-dot-org/bitcoin.org.svg?branch=master)
 
 Live site: [Bitcoin.org](https://bitcoin.org)
 
