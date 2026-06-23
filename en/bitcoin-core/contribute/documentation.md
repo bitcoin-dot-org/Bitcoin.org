@@ -63,8 +63,7 @@ To contribute, you can [edit the guide][edit bandwidth sharing
 guide] using the same GitHub web interface as described in the
 previous section.
 
-*Need help getting started? You can [open an issue][] or email Bitcoin.org
-documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
+*Need help getting started? You can [open an issue][].*
 
 ## Bitcoin Wiki
 
@@ -110,8 +109,7 @@ To contribute RPC edits, the easiest way is to:
 6. At the bottom of the page, fill out the Propose File Change form and
    submit it.
 
-*Need help getting started? You can [open an issue][] or email
-Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
+*Need help getting started? You can [open an issue][].*
 
 <br class="clear big">
 <div class="prevnext" markdown="block">
