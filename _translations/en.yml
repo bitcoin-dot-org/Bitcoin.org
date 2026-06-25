@@ -135,8 +135,8 @@ en:
 
     anonymous: "Protect your identity"
     anonymoustext: "With Bitcoin, there's no credit card number that malicious actors can collect in order to steal from you. Bitcoin transactions are recorded publicly and permanently on the block chain. While Bitcoin addresses are not inherently tied to real-world identities, they can sometimes be linked to individuals depending on how Bitcoin is used. Some effort is required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
-    lightning: "Instant, low-cost payments"
-    lightningtext: "The <a href=\"#resources##lightning\">Lightning Network</a> lets you send and receive bitcoin near-instantly, even for very small amounts, with minimal fees. Built on top of Bitcoin, it settles payments off-chain so they confirm in a moment rather than waiting for a block."
+    lightning: "Fast, low-cost payments"
+    lightningtext: "The <a href=\"#resources##lightning\">Lightning Network</a> lets you send and receive bitcoin near-instantly, even for very small amounts, with minimal fees. Built on top of Bitcoin, it settles payments off-chain so they confirm in seconds rather than waiting for a block."
     selfcustody: "Be your own bank"
     selfcustodytext: "With Bitcoin, you can hold your money yourself instead of trusting a bank or company to hold it for you. Your wallet keeps the keys that control your funds. This freedom comes with responsibility: it is up to you to <a href=\"#secure-your-wallet#\">secure your wallet</a>."
   bitcoin-paper:
