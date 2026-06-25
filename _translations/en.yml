@@ -108,32 +108,37 @@ en:
   bitcoin-for-individuals:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
-    summary: "Bitcoin is the easiest way to transact at a very low cost."
+    summary: "Bitcoin lets you send and receive money directly, anywhere in the world."
     mobile: "Mobile payments made easy"
-    mobiletext: "Bitcoin when used on a mobile device allows you to pay with a simple two-step scan-and-pay. There's no need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let the other party scan your mobile, or touch the two phones together (using NFC radio technology)."
+    mobiletext: "Bitcoin when used on a mobile device allows you to pay with a simple two-step scan-and-pay. There's no need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let the other party scan it, or tap to pay with a contactless reader where supported (using NFC technology)."
     international: "Fast international payments"
     internationaltext: >
       Sending bitcoins across borders is as easy as sending them across
       the street. There are no banks to make you wait three business
-      days, no extra fees for making an international transfer, and no
-      special limitations on the minimum or maximum amount you can send.
+      days and no special limitations on the minimum or maximum amount
+      you can send. You pay the network fee you choose, the same whether
+      the payment crosses the street or the planet.
 
     simple: "Works everywhere, anytime"
     simpletext: "Similarly to email, you don't need to ask recipients you're sending bitcoin to, to use the same software, wallets or service providers. You just need their bitcoin address and then you can transact with them anytime. The Bitcoin network is always running and never sleeps, even on weekends and holidays."
     secure: "Security and control over your money"
-    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
+    securetext: "Bitcoin transactions are secured by mathematics and energy. <a href=\"https://en.bitcoin.it/wiki/Elliptic_Curve_Digital_Signature_Algorithm\">Cryptographic signatures</a> (ECDSA and, since the 2021 Taproot upgrade, Schnorr signatures) prevent other people from spending your money. Energy spent by <a href=\"https://en.bitcoin.it/wiki/Proof_of_work\">proof of work (PoW)</a> prevents other people from undoing, rearranging or losing your transactions. So long as you take the required steps to <a href=\"#secure-your-wallet#\">protect your wallet</a>, Bitcoin can give you control over your money and a strong level of protection against many types of fraud."
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
       control how large a fee to pay when spending. Most wallets have
       reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are unrelated to the amount transferred, so it's
-      possible to send 100,000 bitcoins for the same fee it costs to
-      send 1 bitcoin.
+      transactions. The fee depends on the size of the transaction in
+      data, not on the amount of value being sent, so moving a large
+      amount does not by itself cost more than moving a small one.
 
     anonymous: "Protect your identity"
-    anonymoustext: "With Bitcoin, there's no credit card number that malicious actors can collect in order to steal from you. In fact, it's even possible in some cases to send a payment without revealing your identity, almost like with physical money. You should, however, take note that some effort can be required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    anonymoustext: "With Bitcoin, there's no credit card number that malicious actors can collect in order to steal from you. Bitcoin transactions are recorded publicly and permanently on the block chain. While Bitcoin addresses are not inherently tied to real-world identities, they can sometimes be linked to individuals depending on how Bitcoin is used. Some effort is required to <a href=\"#protect-your-privacy#\">protect your privacy</a>."
+    lightning: "Fast, low-cost payments"
+    lightningtext: "The <a href=\"#resources##lightning\">Lightning Network</a> lets you send and receive bitcoin near-instantly, even for very small amounts, with minimal fees. Built on top of Bitcoin, it settles payments off-chain so they confirm in seconds rather than waiting for a block."
+    selfcustody: "Be your own bank"
+    selfcustodytext: "With Bitcoin, you can hold your money yourself instead of trusting a bank or company to hold it for you. Your wallet keeps the keys that control your funds. This freedom comes with responsibility: it is up to you to <a href=\"#secure-your-wallet#\">secure your wallet</a>."
   bitcoin-paper:
     title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Bitcoin: A Peer-to-Peer Electronic Cash System"
