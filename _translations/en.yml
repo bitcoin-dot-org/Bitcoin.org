@@ -38,35 +38,38 @@ en:
   bitcoin-for-businesses:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"
-    summary: "Bitcoin is a very secure and inexpensive way to handle payments."
+    summary: "Bitcoin lets your business accept secure payments directly from customers."
     lowfee: "Choose your own fees"
     lowfeetext: >
       There is no fee to receive bitcoins, and many wallets let you
       control how large a fee to pay when spending. Most wallets have
       reasonable default fees, and higher fees can encourage faster <a
       href="#you-need-to-know##instant">confirmation</a> of your
-      transactions. Fees are unrelated to the amount transferred, so it's
-      possible to send 100,000 bitcoins for the same fee it costs to
-      send 1 bitcoin.
+      transactions. The fee depends on the size of the transaction in
+      data, not on the amount of value being sent, so moving a large
+      amount does not by itself cost more than moving a small one.
 
 
     fraud: "Protection against fraud"
-    fraudtext: "Any business that accepts credit cards or PayPal knows the problem of payments that are later reversed. Chargeback frauds result in limited market reach and increased prices, which in turn penalizes customers. Bitcoin payments are irreversible and secure, meaning that the cost of fraud is no longer pushed onto the shoulders of the merchants."
+    fraudtext: "Any business that accepts credit cards or online payment services knows the problem of payments that are later reversed. These reversals, called chargebacks, can be abused: chargeback fraud results in limited market reach and increased prices, which in turn penalizes customers. Bitcoin payments are irreversible and secure, meaning that the cost of fraud is no longer pushed onto the shoulders of the merchants."
     international: "Fast international payments"
     internationaltext: >
       Sending bitcoins across borders is as easy as sending them across
       the street. There are no banks to make you wait three business
-      days, no extra fees for making an international transfer, and no
-      special limitations on the minimum or maximum amount you can send.
+      days and no special limitations on the minimum or maximum amount
+      you can send. You pay the network fee you choose, the same whether
+      the payment crosses the street or the planet.
 
     pci: "No PCI compliance required"
-    pcitext: "Accepting credit cards online typically requires extensive security checks in order to comply with the PCI standard. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests, however, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like with credit card numbers."
-    visibility: "Get some free visibility"
-    visibilitytext: "Bitcoin is an emerging market of new customers who are searching for ways to spend their bitcoins. Accepting them is a good way to get new customers and give your business some new visibility. Accepting a new payment method has often shown to be a clever practice for online businesses."
+    pcitext: "Accepting credit cards online typically requires extensive security checks to comply with the PCI standard, a set of rules for handling customers' card data. Bitcoin still requires you to <a href=\"#secure-your-wallet#\">secure your wallet</a> and your payment requests, however, you do not carry the costs and responsibilities that come with processing sensitive information from your customers like with credit card numbers."
+    visibility: "Reach bitcoin customers"
+    visibilitytext: "A growing number of people hold bitcoin and look for places to spend it. Accepting Bitcoin lets your business reach these customers."
     multisig: "Multi-signature"
-    multisigtext: "Bitcoin also includes a multi-signature feature which allows bitcoins to be spent only if a subset of a group of people authorize the transaction. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
+    multisigtext: "Bitcoin includes a multi-signature feature: bitcoins can be set up so that spending them requires approval from several people instead of just one. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
     transparency: "Accounting transparency"
-    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the block chain. For example, non-profit organizations can allow the public to see how much they receive in donations."
+    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the <a href=\"#vocabulary##[vocabulary.blockchain]\">block chain<\/a>. For example, non-profit organizations can allow the public to see how much they receive in donations."
+    lightning: "Accept fast payments with Lightning"
+    lightningtext: "The <a href=\"#resources##lightning\">Lightning Network</a> lets your business accept bitcoin payments that settle near-instantly with minimal fees, even for small amounts. Point-of-sale systems and open-source payment tools support Lightning at checkout. See Lightning resources for more."
   bitcoin-for-developers:
     title: "Bitcoin for Developers - Bitcoin"
     pagetitle: "Bitcoin for Developers"
