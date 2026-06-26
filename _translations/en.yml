@@ -805,7 +805,7 @@ en:
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
-    pagedesc: "Using Bitcoin to transact is easy and accessible to everyone."
+    pagedesc: "Getting started with Bitcoin does not require deep technical knowledge."
     users: "How to use Bitcoin"
     inform: "Inform yourself"
     informtxt: "Bitcoin is different than what you know and use every day. Before you start using Bitcoin, there are a few things that you need to know in order to use it securely and avoid common pitfalls."
@@ -817,7 +817,7 @@ en:
     gettxt: "You can get Bitcoin by accepting it as a payment for goods and services. There are also several ways you can buy Bitcoin."
     getbut: "Buy Bitcoin"
     spend: "Spend Bitcoin"
-    spendtxt: "There are a growing number of services and merchants accepting Bitcoin all over the world. Use Bitcoin to pay them and rate your experience to help them gain more visibility."
+    spendtxt: "There are a growing number of services and merchants accepting Bitcoin all over the world. Use Bitcoin to pay them, and your feedback helps other people find trustworthy places to spend."
     spendbut: "Find merchants and products"
     merchants: "How to accept Bitcoin"
     merchantinform: "Inform yourself"
@@ -829,8 +829,8 @@ en:
     tax: "Accounting and taxes"
     taxtxt: "Merchants often deposit and display prices in their local currency. In other cases, Bitcoin works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."
     taxbut: "Read more"
-    visibility: "Gaining visibility"
-    visibilitytxt: "There is a growing number of users searching for ways to spend their bitcoins. You can submit your business in online directories to help them easily find you. You can also display the <a href=\"https://en.bitcoin.it/wiki/Promotional_graphics\">Bitcoin logo</a> on your website or your brick and mortar business."
+    visibility: "Reach bitcoin customers"
+    visibilitytxt: "A growing number of people hold bitcoin and look for places to spend it. Listing your business helps them find you. You can also display the <a href=\"https://en.bitcoin.it/wiki/Promotional_graphics\">Bitcoin logo</a> on your website or your physical storefront."
     visibilitybut: "Submit your business"
   how-it-works:
     title: "How does Bitcoin work? - Bitcoin"
