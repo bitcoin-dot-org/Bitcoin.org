@@ -229,12 +229,12 @@ have an easy-to-use node.
 [Initial block download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary.html).
+This will happen when a node is far behind the tip of the [best blockchain](https://developer.bitcoin.org/glossary.html).
 In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
 through the IBD process at the first run, and it may take a considerable amount of time since a new
-node has to download the entire block chain (which is roughly {{site.text.chain_gb}} gigabytes now).
+node has to download the entire blockchain (which is roughly {{site.text.chain_gb}} gigabytes now).
 During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
 increasing amount of storage space ([reduce storage](#reduce-storage) provides more details on reducing storage).
@@ -340,7 +340,7 @@ you want to use, click *Ok* to use the default.
 
 ![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -492,7 +492,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -644,7 +644,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -796,7 +796,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -921,7 +921,7 @@ you want to use, click Ok to use the default.
 
 ![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -1043,7 +1043,7 @@ subsections for details.
 
 The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. Before using BitNodes, you must first
-ensure that your node is fully synced with the block chain. Once you've done so,
+ensure that your node is fully synced with the blockchain. Once you've done so,
 start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
 [visit the Bitnodes page](https://bitnodes.io/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or

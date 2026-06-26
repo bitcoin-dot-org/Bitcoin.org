@@ -15,7 +15,7 @@ http://opensource.org/licenses/MIT.
   upload limit.
 
 - **Anti-virus:** Several people have placed parts of known computer
-  viruses in the Bitcoin block chain. This block chain data can't infect
+  viruses in the Bitcoin blockchain. This blockchain data can't infect
   your computer, but some anti-virus programs quarantine the data
   anyway, making it more difficult to run Bitcoin Core. This problem mostly
   affects computers running Windows.
