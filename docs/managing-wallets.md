@@ -154,7 +154,7 @@ below:
 
   - To qualify for supporting this feature, the wallet must give the user the ability to delegate authority to other users participating in multiple party transactions.  While some services provide authorization features (such as 2FA) based on multisignature technology, that is not this feature.
 
-* segwit: Some wallets support SegWit, which uses block chain space more
+* segwit: Some wallets support SegWit, which uses blockchain space more
   efficiently. This helps reduce fees paid by helping the Bitcoin network scale
   and sets the foundation for second layer solutions such as the Lightning
   Network.
