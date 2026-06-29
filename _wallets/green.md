@@ -16,7 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.greenaddress.greenbits_android_wallet"
         source: "https://github.com/Blockstream/green_android/"
         screenshot: "greenandroid.png"
-        features: "2fa bech32 hardware_wallet legacy_addresses segwit"
+        features: "2fa bech32 hardware_wallet legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull" # full control for singlesig accounts, eventual full control for 2of2_csv decaying into singlesig after 12 months for 2FA multisig accounts, full control for 2of3 2FA multisig accounts
           validation: "checkfailvalidationcentralized" # txs can be SPV validated (a la electrum) using the default electrum_url, and if a custom electrum server is set then it gets used for SPV validation
@@ -33,7 +33,7 @@ platform:
         link: "https://apps.apple.com/us/app/green-bitcoin-wallet/id1402243590"
         source: "https://github.com/Blockstream/green_ios/"
         screenshot: "greenios.png"
-        features: "2fa bech32 hardware_wallet legacy_addresses segwit"
+        features: "2fa bech32 hardware_wallet legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"
@@ -52,7 +52,7 @@ platform:
       link: "https://blockstream.com/green"
       source: "https://github.com/Blockstream/green_qt/"
       screenshot: "greendesktop.png"
-      features: "2fa bech32 hardware_wallet legacy_addresses segwit"
+      features: "2fa bech32 hardware_wallet legacy_addresses segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"

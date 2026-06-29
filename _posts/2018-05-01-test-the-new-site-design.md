@@ -38,7 +38,6 @@ before it goes live.
 **[Help test the new design.](https://bitcoin.cryptopelago.com/)**
 
 If you visited the link above and experienced any issues or have feedback, please
-[send us an email](mailto:will@bitcoin.org?subject=Redesign%20Feedback") or
 [open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=Redesign%20Feedback)
 on Bitcoin.org's GitHub repository. Please also make sure to note your device,
 operating system and browser version(s), when applicable, to give us additional
