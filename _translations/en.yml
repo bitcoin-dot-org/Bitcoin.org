@@ -802,6 +802,32 @@ en:
     help: "Help"
     morehelp: "I'd like to learn more. Where can I get help?"
     morehelptxt1: "You can find more information and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
+    whodecides: "Who decides how Bitcoin changes?"
+    whodecidestxt1: "No one person or group decides. Changes to Bitcoin are proposed publicly (often as Bitcoin Improvement Proposals, or BIPs), reviewed by developers, and only take effect if users, miners, and node operators voluntarily adopt them. Because the network requires broad consensus, changes that users do not accept simply do not happen."
+    lightning: "What is the Lightning Network?"
+    lightningtxt1: "The Lightning Network is a payment layer built on top of Bitcoin. It enables payments that are near-instant and typically cost less than a cent, using payment channels that settle back to the Bitcoin blockchain. It is well suited for small, frequent payments, while on-chain transactions remain the standard for larger transfers and long-term storage. See the <a href=\"#vocabulary##[vocabulary.lightning]\">vocabulary entry</a> for more details."
+    addresschange: "Why does my Bitcoin address change?"
+    addresschangetxt1: "Most modern wallets generate a new address for each payment you receive. All of these addresses belong to your wallet and remain valid - funds sent to older addresses are still yours. Using a fresh address for each transaction is recommended because it improves your privacy: since all transactions are public on the blockchain, reusing the same address makes it easier for others to link your payments together. See <a href=\"#protect-your-privacy#\">protecting your privacy</a> for more."
+    wrongaddress: "What happens if I send bitcoins to the wrong address?"
+    wrongaddresstxt1: "Bitcoin transactions are irreversible: once confirmed, they can only be refunded by the person receiving the funds. If the address is valid but no one controls it, the funds become permanently inaccessible. This is why you should always verify the entire receiving address before sending - not just the first and last characters - and consider a small test transaction before a large transfer."
+    downloadblockchain: "Do I need to download the blockchain to use Bitcoin?"
+    downloadblockchaintxt1: "No. Most wallets are lightweight clients that let you send and receive bitcoins without downloading the full blockchain. Downloading and validating the entire blockchain is only required to run a <a href=\"#vocabulary##[vocabulary.node]\">full node</a>, which offers the highest level of verification and strengthens the network."
+    whatiswallet: "What is a Bitcoin wallet?"
+    whatiswallettxt1: "A Bitcoin wallet is an application that manages your <a href=\"#vocabulary##[vocabulary.privatekey]\">private keys</a> - the credentials that allow you to spend your bitcoins. The wallet does not store coins themselves: bitcoins exist as records on the blockchain, and the wallet holds the keys that control them. Wallets range from mobile apps to dedicated hardware devices; see <a href=\"#choose-your-wallet#\">choosing a wallet</a> to compare options."
+    hotcold: "What is the difference between a hot wallet and a cold wallet?"
+    hotcoldtxt1: "A hot wallet runs on a device connected to the internet, such as a phone or computer, making it convenient for everyday payments. A cold wallet keeps the private keys offline - for example on a hardware wallet - which protects them from online attacks and makes it the safer choice for long-term storage. Many users combine both: a hot wallet with small amounts for spending, and cold storage for savings."
+    multiplewallets: "Can I use more than one wallet?"
+    multiplewalletstxt1: "Yes. You can use as many wallets as you like, and many users do - for example, a mobile wallet for daily spending and a hardware wallet for savings. Each wallet manages its own keys independently."
+    walletbackup: "How do I back up my wallet?"
+    walletbackuptxt1: "Most modern wallets are backed up with a <a href=\"#vocabulary##[vocabulary.seedphrase]\">recovery phrase</a>: writing it down and storing it securely offline allows you to restore your entire wallet if your device is lost, stolen, or broken. Never store your recovery phrase as a photo or in a cloud service, and never share it with anyone. See <a href=\"#secure-your-wallet#\">how to secure your wallet</a> for detailed practices."
+    selfcustody: "What is self-custody?"
+    selfcustodytxt1: "With Bitcoin, you can hold your own money directly, without relying on a bank or custodian. Your funds are controlled by <a href=\"#vocabulary##[vocabulary.privatekey]\">private keys</a> that only you hold, often secured on a hardware wallet. No intermediary controls your funds, and no institution can fail and take them with it. This freedom comes with responsibility: protecting your keys is essential, because with Bitcoin you are your own bank."
+    seedphrase: "What is a recovery phrase (seed phrase)?"
+    seedphrasetxt1: "A <a href=\"#vocabulary##[vocabulary.seedphrase]\">recovery phrase</a>, also called a seed phrase, is a sequence of words from which a wallet can be fully restored. It must be stored securely: anyone who obtains it can access the corresponding bitcoins, and no legitimate person, business, or support team will ever ask for it. See <a href=\"#secure-your-wallet#\">how to secure your wallet</a> for good practices."
+    notyourkeys: "Why do people say \"not your keys, not your coins\"?"
+    notyourkeystxt1: "When your bitcoins are held by an exchange or another custodian, you depend on that company's security and solvency - a form of counterparty risk. If the custodian is compromised or fails, you can lose access to your funds. When you hold your own private keys in a self-custodial wallet, no third party stands between you and your bitcoins. Many users keep only small amounts with custodians and store long-term savings in wallets where they hold the keys."
+    avoidscams: "How do I protect myself from scams?"
+    avoidscamstxt1: "Three principles prevent most scams: Bitcoin transactions are irreversible, so verify everything before sending; no legitimate person, business, or support team will ever ask for your recovery phrase or require payment in bitcoin to \"unlock\" funds; and guaranteed-return investment offers are scams. Learn to recognize the most common schemes on the <a href=\"#scams#\">avoid scams</a> page."
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
@@ -1372,3 +1398,16 @@ en:
       quantum: is-bitcoin-vulnerable-to-quantum-computing
       help: help
       morehelp: more-help
+      whodecides: who-decides-how-bitcoin-changes
+      lightning: what-is-the-lightning-network
+      addresschange: why-does-my-bitcoin-address-change
+      wrongaddress: what-happens-if-i-send-bitcoins-to-the-wrong-address
+      downloadblockchain: do-i-need-to-download-the-blockchain
+      whatiswallet: what-is-a-bitcoin-wallet
+      hotcold: hot-wallet-vs-cold-wallet
+      multiplewallets: can-i-use-more-than-one-wallet
+      walletbackup: how-do-i-back-up-my-wallet
+      selfcustody: what-is-self-custody
+      seedphrase: what-is-a-recovery-phrase
+      notyourkeys: not-your-keys-not-your-coins
+      avoidscams: how-do-i-protect-myself-from-scams
