@@ -737,20 +737,21 @@ en:
       continue to be buried under every block after it, which will
       exponentially consolidate this consensus and decrease the risk of
       a reversed transaction.
-      Each confirmation takes between a few seconds and 90 minutes, with
-      10 minutes being the average. If the transaction pays too low a
-      fee or is otherwise atypical, getting the first confirmation can
-      take much longer.  Every user is free to determine at what
+      New blocks are added to the blockchain approximately every 10 minutes
+      on average, but block discovery is probabilistic—an individual
+      confirmation may arrive much sooner or much later, and there is no
+      guaranteed minimum or maximum delay. If the transaction pays a fee
+      below what the network is currently prioritizing, the first
+      confirmation may take considerably longer.  Every user is free to determine at what
       point they consider a transaction sufficiently confirmed, but <a href="#you-need-to-know##instant">6 confirmations</a>
       is often considered to be as safe as waiting 6 months on a credit
       card transaction.
 
     fee: "How much will the transaction fee be?"
     feetxt1: >
-      Transactions can be processed without fees, but trying to send
-      free transactions can require waiting days or weeks. Although fees
-      may increase over time, normal fees currently only cost a tiny
-      amount. By default, all <a href="#choose-your-wallet#">Bitcoin
+      Transactions are typically processed with a fee, and fees vary
+      over time with demand for space in the blockchain. By default,
+      all <a href="#choose-your-wallet#">Bitcoin
       wallets</a> listed on Bitcoin.org add what they think is an
       appropriate fee to your transactions; most of those wallets will
       also give you chance to review the fee before sending the
@@ -759,8 +760,8 @@ en:
     feetxt2: >
       Transaction fees are used as a protection against users sending
       transactions to overload the network and as a way to pay
-      miners for their work helping to secure the network. The precise manner in which
-      fees work is still being developed and will change over time.
+      miners for their work helping to secure the network. Fee levels
+      vary over time with network usage.
       Because the fee is not related to the amount of bitcoins being
       sent, it may seem extremely low or unfairly high. Instead, the
       fee is relative to the number of bytes in the transaction, so
