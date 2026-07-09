@@ -3054,26 +3054,22 @@ br.big {
     color: #13161f;
 }
 .expanded .contributor-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    column-count: 3;
+    column-gap: 4%;
 }
 .contributor-title {
     font-size: 162.5%;
     color: #FF7E00;
 }
 .contributor {
-    width: 30%;
-    margin-right: 4%;
     margin-bottom: 20px;
-}
-.contributor:nth-child(3n+3) {
-    margin-right: 0;
+    break-inside: avoid;
 }
 p.contributor-language {
-    width: 30%;
-    margin-right: 4%;
     margin-bottom: 20px;
     color: #FF7E00;
+    break-inside: avoid;
 }
 p.contributor-language span {
     font-size: 18px;
@@ -4022,14 +4018,8 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .about-title {
         margin: 0 0 30px;
     }
-    .contributor {
-        width: 48%;
-    }
-    .contributor:nth-child(3n+3) {
-        margin-right: 4%;
-    }
-    .contributor:nth-child(even) {
-        margin-right: 0;
+    .expanded .contributor-row {
+        column-count: 2;
     }
     .ui-accordion .ui-accordion-content {
         padding: 30px 20px 30px 20px;
@@ -5064,10 +5054,7 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         margin: 0;
     }
     .expanded .contributor-row {
-        flex-direction: column;
-    }
-    .contributor {
-        width: 100%;
+        column-count: 1;
     }
     .lightweight-wallets-row {
         flex-direction: column
