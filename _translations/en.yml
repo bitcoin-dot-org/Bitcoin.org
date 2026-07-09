@@ -1109,7 +1109,7 @@ en:
     mining: "Mining"
     miningtxt: "<a href=\"https://en.bitcoin.it/wiki/Mining\">Bitcoin mining</a> today is a specialized industry that uses purpose-built hardware. <a href=\"https://www.bitcoinmining.com/\">Running a small miner</a> can still be a way to learn how proof-of-work secures the network and to take part in the mining ecosystem. If you mine, you can help protect the network by preferring smaller <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">mining pools</a> and pools that support decentralized block construction through the <a href=\"https://stratumprotocol.org/\">Stratum V2</a> protocol."
     develop: "Development"
-    developtxt: "Bitcoin is free software. If you are a developer, you can use your superpowers to do good and <a href=\"#development#\">improve Bitcoin</a>. You can contribute to Bitcoin Core, self-custody tools, payment infrastructure such as the Lightning Network, libraries, and documentation, or build new services that use Bitcoin."
+    developtxt: "Bitcoin is free software. If you are a developer, you can use your superpowers to do good and <a href=\"#development#\">improve Bitcoin</a>. You can contribute to Bitcoin Core, <a href=\"#faq##[faq.selfcustody]\">self-custody</a> tools, payment infrastructure such as the <a href=\"#vocabulary##[vocabulary.lightning]\">Lightning Network</a>, libraries, and documentation, or build new services that use Bitcoin."
     donation: "Donation"
     donationtxt: "You can directly fund open-source projects, educational and community initiatives, research, and non-profit organizations that contribute to Bitcoin's development and adoption."
     nonprofit: "Organizations"
