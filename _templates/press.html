@@ -14,7 +14,12 @@ dialogs:
   materialquotemore: "Show more quotes..."
   material_even_more_quotes: "For even more quotes about Bitcoin, please see <a href=\"https://en.wikiquote.org/wiki/Bitcoin\">WikiQuote.</a>"
   material_source: "source"
+  keyresources: "Key resources"
+  keyresourceswhitepaper: "The Bitcoin whitepaper"
+  keyresourcescore: "Bitcoin Core"
+  keyresourcesdevdocs: "Developer documentation"
   quotesatoshi: "With e-currency based on cryptographic proof, without the need to trust a third party middleman, money can be secure and transactions effortless."
+  quotehalfinney: "Running bitcoin"
   quotedankaminsky: "Entire classes of bugs are missing."
   quotechrisdixon: "There are 3 eras of currency: Commodity based, politically based, and now, math based."
   quotejeremyliew: "The potential for disruption is enormous."
@@ -28,7 +33,6 @@ dialogs:
     responsive services and secure the rights of their citizens to
     property, identity and increased financial inclusion.
 
-  quoteandyskelton: "PayPal alone blocks access from over 60 countries ... Whatever the reason, we don’t think an individual blogger from Haiti, Ethiopia, or Kenya should have diminished access to the blogosphere because of payment issues they can’t control."
   quotetuurdemeester: "The Babyboomers gave us the personal computer, Generation X gave us the Internet, and now Generation Y is building a new financial paradigm."
   quoterichardbrown: "Had you asked me five years ago, I would just say it was impossible. Bitcoin and cryptocurrencies solved this problem of coming to a consensus globally where you don't trust anybody else."
   quotefredwilson: "We believe that Bitcoin represents something fundamental and powerful ... It reminds us of SMTP, HTTP, RSS, and BitTorrent in its architecture and openness."
@@ -40,6 +44,15 @@ dialogs:
 <div class="toccontent-intro">
   <h2 id="volunteer">{% translate volunteer %}</h2>
   <p>{% translate volunteernonprofit %}</p>
+</div>
+
+<div class="toccontent-intro">
+  <h2 id="resources">{{ page.dialogs.keyresources }}</h2>
+  <ul>
+    <li><a href="/bitcoin.pdf">{{ page.dialogs.keyresourceswhitepaper }}</a></li>
+    <li><a href="https://bitcoincore.org/">{{ page.dialogs.keyresourcescore }}</a></li>
+    <li><a href="https://developer.bitcoin.org/">{{ page.dialogs.keyresourcesdevdocs }}</a></li>
+  </ul>
 </div>
 
 <div class="toccontent-block boxexpand expanded">
@@ -80,19 +93,12 @@ dialogs:
       <h3 id="used" onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate used faq %}</h3>
       <div>
         <p>{% translate usedtxt1 faq %}</p>
-        <p>
-          <img style="height:165px;width:380px;" src="/img/faq/merchants_map.png?{{site.time | date: '%s'}}" alt="Screenshot">
-        </p>
       </div>
     </div>
     <div>
       <h3 id="makepayment" onclick="faqShow(event);" ontouchstart="faqShow(event);" class="link-js">{% translate makepayment faq %}</h3>
       <div>
         <p>{% translate makepaymenttxt1 faq %}</p>
-        <p>
-          <img src="/img/faq/mobile_send.png?{{site.time | date: '%s'}}" style="height:325px;width:190px;" alt="Screenshot">
-          <img src="/img/faq/mobile_receive.png?{{site.time | date: '%s'}}" style="height:325px;width:190px;" alt="Screenshot">
-        </p>
       </div>
     </div>
     <div>
@@ -214,14 +220,12 @@ dialogs:
   <div class="press-videos">
   
     <div>
-      <a href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">
-        <img src="/img/press/video/funke.jpg" alt="what is Bitcoin">
+      <a href="https://www.youtube.com/watch?v=l1si5ZWLgy0" target="_blank">
+        <img src="https://i.ytimg.com/vi/l1si5ZWLgy0/hqdefault.jpg" alt="Introduction to Bitcoin">
       </a>
-      <br> What is Bitcoin - Funke
+      <br> Introduction to Bitcoin - Andreas M. Antonopoulos
       <br>
-      <a class="press-videos-link" href="https://www.youtube.com/watch?v=LP4GSvQUtBw&amp;feature=player_embedded" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a>
-      <br>
-      <a class="press-videos-more" href="https://drive.google.com/folderview?id=0Bw3qRtSO3Wwtb3dYLVNDTmNxSTQ&amp;usp=sharing" target="_blank">{{ page.dialogs.materialvideoformat }}</a>
+      <a class="press-videos-link" href="https://www.youtube.com/watch?v=l1si5ZWLgy0" target="_blank">{{ page.dialogs.materialvideoyoutube }}</a>
     </div>
   
     <div>
@@ -273,17 +277,17 @@ dialogs:
     <div class="quote">
       <span class="quote-text">{{ page.dialogs.quotesatoshi }}</span>
       <a class="quote-author" href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto">Satoshi Nakamoto</a>
-      <span class="quote-author-position">Bitcoin Developer (<a href="http://p2pfoundation.ning.com/forum/topics/bitcoin-open-{{page.dialogs.material_source}}">{{page.dialogs.material_source}}</a>)</span>
+      <span class="quote-author-position">Bitcoin Developer (<a href="https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/">{{page.dialogs.material_source}}</a>)</span>
+    </div>
+    <div class="quote">
+      <span class="quote-text">{{ page.dialogs.quotehalfinney }}</span>
+      <a class="quote-author" href="https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist)">Hal Finney</a>
+      <span class="quote-author-position">Computer Scientist, recipient of the first Bitcoin transaction (<a href="https://x.com/halfin/status/1110302988">{{page.dialogs.material_source}}</a>)</span>
     </div>
     <div class="quote">
       <span class="quote-text">{{ page.dialogs.quotegavinandresen }}</span>
       <a class="quote-author" href="https://en.wikipedia.org/wiki/Gavin_Andresen">Gavin Andresen</a>
-      <span class="quote-author-position">Chief Scientist, The Bitcoin Foundation (<a href="https://www.youtube.com/watch?v=0S4dSXTnfms">{{page.dialogs.material_source}}</a>)</span>
-    </div>
-    <div class="quote">
-      <span class="quote-text">{{ page.dialogs.quoteandyskelton }}</span>
-      <span class="quote-author">Andy Skelton</span>
-      <span class="quote-author-position">Developer, WordPress (<a href="https://en.blog.wordpress.com/2012/11/15/pay-another-way-bitcoin/">{{page.dialogs.material_source}}</a>)</span>
+      <span class="quote-author-position">Former Bitcoin Lead Developer (<a href="https://www.youtube.com/watch?v=0S4dSXTnfms">{{page.dialogs.material_source}}</a>)</span>
     </div>
     <div class="quote">
       <span class="quote-text">{{ page.dialogs.quotetuurdemeester }}</span>
