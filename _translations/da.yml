@@ -225,7 +225,7 @@ da:
     source: "Kildekode"
     versionhistory: "Vis versionshistorik"
     notelicense: "Bitcoin Core er et fællesskabs-drevet projekt med <a href=\"https://www.fsf.org/about/what-is-free-software\">fri, åben kildekode</a>, udgivet under <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licensen</a>."
-    notesync: "Den indledningsvise synkronering af Bitcoin Core vil tage tid og hente en masse data. Du bør være sikker på, at du har nok båndbredde og plads til hele blokkædens størrelse (mere end 65 GB). Hvis du har en god internetforbindelse, kan du hjælpe med at styrke netværket ved at holde din PC kørende med Bitcoin Core og port 8333 åben."
+    notesync: "Den indledningsvise synkronering af Bitcoin Core vil tage tid og hente en masse data. Du bør være sikker på, at du har nok båndbredde og plads til hele blokkædens størrelse (mere end {{site.text.bitcoin_datadir_gb}}GB). Hvis du har en god internetforbindelse, kan du hjælpe med at styrke netværket ved at holde din PC kørende med Bitcoin Core og port 8333 åben."
     full_node_guide: "Læs <a href=\"/en/full-node\">guiden for en fuld knude</a> for detaljer."
     patient: "Tjek din båndbredde og plads"
   events:

@@ -224,7 +224,7 @@ ko:
     sourcecode: "소스 코드 얻기"
     versionhistory: "버전 기록 보기"
     notelicense: "Bitcoin Core는 커뮤니티 주도의 <a href=\"https://www.fsf.org/about/what-is-free-software\">무료 오픈 소스</a> 프로젝트로서, <a href=\"http://opensource.org/licenses/mit-license.php\">MIT 라이센스</a>에 따라 배포되었습니다."
-    notesync: "비트코인 코어의 첫 동기화는 오랜 시간이 걸릴 수 있습니다. 전체 블록 체인 사이즈 (65GB 이상)을 위한 충분한 대역폭과 저장소를 가지셔야 합니다. torrent 파일 다운로드 방법을 알고 계신다면, 소프트웨어를 시작하기전에, 비트코인 코어 데이터 디렉토리에 (블록 체인의 이전 복사본)  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>를 넣기위한 이 처리과정에 속력을 높일 수 있습니다."
+    notesync: "비트코인 코어의 첫 동기화는 오랜 시간이 걸릴 수 있습니다. 전체 블록 체인 사이즈 ({{site.text.bitcoin_datadir_gb}}GB 이상)을 위한 충분한 대역폭과 저장소를 가지셔야 합니다. torrent 파일 다운로드 방법을 알고 계신다면, 소프트웨어를 시작하기전에, 비트코인 코어 데이터 디렉토리에 (블록 체인의 이전 복사본)  <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>를 넣기위한 이 처리과정에 속력을 높일 수 있습니다."
     patient: "참을성을 가지셔야 합니다"
   events:
     title: "컨퍼런스 및 이벤트 - Bitcoin"

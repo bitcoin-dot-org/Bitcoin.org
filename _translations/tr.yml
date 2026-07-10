@@ -224,7 +224,7 @@ tr:
     sourcecode: "Kaynak kodunu edinin"
     versionhistory: "Sürüm geçmişini göster"
     notelicense: "Bitcoin Core kişiler tarafından geliştirilen <a href=\"https://www.fsf.org/about/what-is-free-software\">ücretsiz yazılım</a> projesidir, <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> altında yayınlanır."
-    notesync: "Bitcoin Core'un ilk senkronizasyonu biraz zaman alabilir. Blok zincir boyutu'nun (65 GB'nin üzerinde) tamamı için güçlü bir bağlantınızın ve yeterli depolama alanınızın olduğundan emin olmalısınız. Eğer torrent dosyalarının nasıl indirildiğini biliyorsanız, uygulamanızı başlatmadan önce <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>(blok zincirinin önceki kopyası) dosyasını Bitcoin Core veri dizinine yerleştirerek süreci hızlandırabilirsiniz."
+    notesync: "Bitcoin Core'un ilk senkronizasyonu biraz zaman alabilir. Blok zincir boyutu'nun ({{site.text.bitcoin_datadir_gb}}GB'nin üzerinde) tamamı için güçlü bir bağlantınızın ve yeterli depolama alanınızın olduğundan emin olmalısınız. Eğer torrent dosyalarının nasıl indirildiğini biliyorsanız, uygulamanızı başlatmadan önce <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>(blok zincirinin önceki kopyası) dosyasını Bitcoin Core veri dizinine yerleştirerek süreci hızlandırabilirsiniz."
     patient: "Sabırlı olmalısınız"
   events:
     title: "Konferanslar ve etkinlikler - Bitcoin"

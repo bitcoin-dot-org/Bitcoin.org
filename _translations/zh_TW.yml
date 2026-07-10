@@ -224,7 +224,7 @@ zh_TW:
     sourcecode: "取得原始碼"
     versionhistory: "顯示版本歷史"
     notelicense: "Bitcoin Core 是社群所推動的<a href=\"https://www.fsf.org/about/what-is-free-software\">自由軟體</a>工程，它得到了<a href=\"http://opensource.org/licenses/mit-license.php\">MIT 許可證</a> 來發佈。"
-    notesync: "Bitcoin Core 初始同步會需要較長時間。請確保您有足夠的頻寬和儲存容量來滿足完整的區塊鏈大小 (超過 65GB) 。如果您知道如何下載一個 torrent 文件，您可以在開始運行這個軟體前通過把<a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (一個區塊鏈的先前備份) 放到 Bitcoin Core 的數據目錄中來加快同步進程。"
+    notesync: "Bitcoin Core 初始同步會需要較長時間。請確保您有足夠的頻寬和儲存容量來滿足完整的區塊鏈大小 (超過 {{site.text.bitcoin_datadir_gb}}GB) 。如果您知道如何下載一個 torrent 文件，您可以在開始運行這個軟體前通過把<a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (一個區塊鏈的先前備份) 放到 Bitcoin Core 的數據目錄中來加快同步進程。"
     patient: "你需要保持耐心"
   events:
     title: "會議與活動 - Bitcoin"
