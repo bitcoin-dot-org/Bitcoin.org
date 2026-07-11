@@ -129,7 +129,7 @@ breadcrumbs:
   For more News, see the complete list
   </div>
   <div class="corecard rss-card" markdown="block">
-  <a type="application/atom+xml" href="/en/rss/blog.xml">Subscribe to the RSS feed</a>
+  <a type="application/rss+xml" href="/en/rss/releases.rss">Subscribe to the RSS feed</a>
   For more notifications of new releases
   </div>
 </div>
