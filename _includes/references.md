@@ -380,10 +380,10 @@ http://opensource.org/licenses/MIT.
 [secp256k1]: http://www.secg.org/sec2-v2.pdf
 
 {% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
-[#bitcoin]: https://webchat.freenode.net/?channels=bitcoin&uio=d4
-[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&uio=d4
-[#bitcoin-mining]: https://webchat.freenode.net/?channels=bitcoin-mining&uio=d4
-[#bitcoin-wiki]: https://webchat.freenode.net/?channels=bitcoin-wiki&uio=d4
+[#bitcoin]: https://web.libera.chat/#bitcoin
+[#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
+[#bitcoin-mining]: https://web.libera.chat/#bitcoin-mining
+[#bitcoin-wiki]: https://web.libera.chat/#bitcoin-wiki
 [0bin]: http://0bin.net/
 [bcc automated testing]: https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing
 [bcc configuration]: https://en.bitcoin.it/wiki/Running_Bitcoin
@@ -395,7 +395,7 @@ http://opensource.org/licenses/MIT.
 [bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
 [core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
-[Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
+[Bitcoin beginners]: https://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core]: https://bitcoin.org/en/download
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
 [Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
@@ -412,8 +412,8 @@ http://opensource.org/licenses/MIT.
 [Bitcoin reddit]: http://www.reddit.com/r/Bitcoin
 [Bitcoin reddit new]: http://www.reddit.com/r/Bitcoin/new
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
-[Bitcoin stackexchange]: http://bitcoin.stackexchange.com
-[Bitcoin stackexchange tag bitcoin-qt]: http://bitcoin.stackexchange.com/questions/tagged/bitcoin-qt
+[Bitcoin stackexchange]: https://bitcoin.stackexchange.com
+[Bitcoin stackexchange tag bitcoin-qt]: https://bitcoin.stackexchange.com/questions/tagged/bitcoin-core
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
 [BitcoinJ]: http://bitcoinj.github.io
 [BitcoinJ documentation about pending transaction safety]: https://bitcoinj.github.io/security-model#pending-transactions

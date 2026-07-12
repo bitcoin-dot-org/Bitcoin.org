@@ -33,9 +33,7 @@ There are many ways to get help for Bitcoin Core, including
 
 ## Documentation
 
-Bitcoin Core currently doesn't have any cohesive or complete
-documentation---but we hope to improve that situation soon. For now, you
-can use the following resources:
+Bitcoin Core documentation is available from several sources:
 
 - Bitcoin Wiki pages: [running Bitcoin][bcc configuration], [data
   directory][bcc data directory], and other articles in the [Bitcoin
@@ -55,8 +53,8 @@ are the best place to ask for help using Bitcoin Core:
 
 - [Bitcoin StackExchange][] is a community dedicated entirely to
   answering questions about Bitcoin and related technology.  Many
-  questions about Bitcoin Core can be found under the [Bitcoin-Qt
-  tag](http://bitcoin.stackexchange.com/questions/tagged/bitcoin-qt)
+  questions about Bitcoin Core can be found under the [bitcoin-core
+  tag](https://bitcoin.stackexchange.com/questions/tagged/bitcoin-core)
 
 - [BitcoinTalk Technical Support][forum tech support] is a
   sub-forum dedicated to providing help for Bitcoin Core and other
@@ -68,7 +66,7 @@ are the best place to ask for help using Bitcoin Core:
 
 ## Live
 
-Internet Relay Chat (IRC) is the most popular way to get live online
+Internet Relay Chat (IRC) is a popular way to get live online
 help with Bitcoin Core. When you join an IRC chatroom, you must read
 the topic (which is usually automatically displayed) to learn the rules
 for that chatroom.

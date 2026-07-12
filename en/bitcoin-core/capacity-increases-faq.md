@@ -362,9 +362,9 @@ In particular, [code review][] is a critical part of getting soft forks
 deployed.
 
 To get specific suggestions on how you can help, please join the
-[#bitcoin-dev][] IRC channel.
+[#bitcoin-core-dev][#bitcoin-dev] IRC channel.
 
-[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
+[#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
 [actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
 [bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
