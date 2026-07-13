@@ -384,7 +384,6 @@ http://opensource.org/licenses/MIT.
 [#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
 [#bitcoin-mining]: https://web.libera.chat/#bitcoin-mining
 [#bitcoin-wiki]: https://web.libera.chat/#bitcoin-wiki
-[0bin]: http://0bin.net/
 [bcc automated testing]: https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing
 [bcc configuration]: https://en.bitcoin.it/wiki/Running_Bitcoin
 [bcc data directory]: https://en.bitcoin.it/wiki/Data_directory
@@ -470,11 +469,9 @@ http://opensource.org/licenses/MIT.
 [open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
 [Payment Request Generator]: https://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
 [peter todd p2sh example]: https://github.com/petertodd/checklocktimeverify-demos/blob/master/lib/python-bitcoinlib/examples/publish-text.py
-[Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
-[python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [Satoshi Nakamoto]: https://en.bitcoin.it/wiki/Satoshi_Nakamoto
 [setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2

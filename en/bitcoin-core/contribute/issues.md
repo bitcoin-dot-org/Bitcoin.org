@@ -55,7 +55,7 @@ new issue] providing the information listed below.
 3. Any relevant entries from your `debug.log` file. Note, this file can
    contain private information, so review it before posting or ask in
    the issue to email it directly to a developer rather than posting
-   publicly. You can publicly post logs on a [0bin service][0bin]. By
+   publicly. By
    default, the `debug.log` can be found at the following locations:
 
     - Windows: `%APPDATA%\Bitcoin\debug.log`
