@@ -55,7 +55,7 @@ After saving your translation, it will be reviewed and (if accepted)
 included in the next release of that version of Bitcoin Core.
 
 *If you have any questions, please contact the translation maintainers
-listed on Transifex or ask (in English) in the [#bitcoin-dev][] IRC
+listed on Transifex or ask (in English) in the [#bitcoin-core-dev][#bitcoin-dev] IRC
 chatroom.*
 
 <br class="clear big">

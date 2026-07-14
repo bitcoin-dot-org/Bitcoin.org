@@ -27,7 +27,7 @@ Thank you for considering contributing to Bitcoin Core!  We have
 instructions below to help you get started contributing in several different
 ways.
 
-If want to contribute in another way, please visit the [#bitcoin-dev][]
+If want to contribute in another way, please visit the [#bitcoin-core-dev][#bitcoin-dev]
 IRC chatroom and discuss your plan with a developer.
 
 <div markdown="block" class="row card-row">

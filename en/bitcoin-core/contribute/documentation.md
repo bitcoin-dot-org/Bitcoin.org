@@ -49,7 +49,7 @@ The files can be easily edited in GitHub's web interface:
 5. At the bottom of the page, fill out the Propose File Change form and
    submit it.
 
-*Need help getting started?  Stop by the [#bitcoin-dev][] IRC chatroom
+*Need help getting started?  Stop by the [#bitcoin-core-dev][#bitcoin-dev] IRC chatroom
 and tell us what documentation you want to write.*
 
 ## Bitcoin.org Bandwidth Sharing Guide
