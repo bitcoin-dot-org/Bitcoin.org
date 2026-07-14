@@ -30,3 +30,13 @@ The following quick guides will help you get started:
 ### Code of Conduct
 
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
+
+## License
+
+This repository is released under the terms of the [MIT license](https://opensource.org/licenses/MIT). See [LICENSE](LICENSE) for more information.
+
+The intellectual property rights in the files are owned by the respective
+authors. Some of the files can be licensed under MIT License (MIT) available on
+http://opensource.org/licenses/MIT or other licenses. Appropriate licensing
+information can be found in the header of the file or in the folder containing
+the file.
