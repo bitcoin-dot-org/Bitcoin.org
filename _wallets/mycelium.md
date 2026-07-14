@@ -14,7 +14,7 @@ platform:
       - name: android
         text: "walletmyceliumwallet"
         link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
-        source: "https://github.com/mycelium-com/wallet"
+        source: "https://github.com/mycelium-com/wallet-android"
         screenshot: "mycelium.png"
         features: "bech32 hardware_wallet legacy_addresses segwit taproot"
         check:
