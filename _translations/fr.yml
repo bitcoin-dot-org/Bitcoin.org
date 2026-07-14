@@ -225,7 +225,7 @@ fr:
     source: "Code source"
     versionhistory: "Afficher l'historique des versions"
     notelicense: "Bitcoin Core est un projet communautaire de <a href=\"https://www.fsf.org/about/what-is-free-software\">logiciel libre</a> publié sous la <a href=\"http://opensource.org/licenses/mit-license.php\">licence MIT</a>."
-    notesync: "La synchronisation initiale de Bitcoin Core peut prendre du temps et télécharger beaucoup de données. Assurez-vous de disposer de suffisamment de bande-passante et d'espace disque pour la taille de la chaine de blocs (plus de 65GB). Si vous avez une bonne connexion Internet, vous pouvez aider à renforcer le réseau en laissant votre ordinateur ouvert avec Bitcoin Core et le port 8333 ouvert."
+    notesync: "La synchronisation initiale de Bitcoin Core peut prendre du temps et télécharger beaucoup de données. Assurez-vous de disposer de suffisamment de bande-passante et d'espace disque pour la taille de la chaine de blocs (plus de {{site.text.bitcoin_datadir_gb}}GB). Si vous avez une bonne connexion Internet, vous pouvez aider à renforcer le réseau en laissant votre ordinateur ouvert avec Bitcoin Core et le port 8333 ouvert."
     full_node_guide: "Lisez le <a href=\"/en/full-node\">guide sur les nœuds réseau</a> pour plus de détails."
     patient: "Vérifiez votre bande-passante et votre espace"
   events:

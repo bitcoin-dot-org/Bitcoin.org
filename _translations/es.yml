@@ -225,7 +225,7 @@ es:
     sourcecode: "Obtener el código de origen"
     versionhistory: "Mostrar historial de versiones"
     notelicense: "Bitcoin Core es un proyecto <a href=\"https://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
-    notesync: "La sincronización inicial de Bitcoin Core puede tomar un largo tiempo. Debería asegurarse de que dispone de suficiente ancho de banda y espacio de almacenamiento para la descarga completa de la cadena de bloques (más de 65GB)."
+    notesync: "La sincronización inicial de Bitcoin Core puede tomar un largo tiempo. Debería asegurarse de que dispone de suficiente ancho de banda y espacio de almacenamiento para la descarga completa de la cadena de bloques (más de {{site.text.bitcoin_datadir_gb}}GB)."
     patient: "Debe tener paciencia"
   events:
     title: "Conferencias y eventos - Bitcoin"

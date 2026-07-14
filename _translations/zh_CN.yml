@@ -349,7 +349,7 @@ zh_CN:
     source: "源代码"
     versionhistory: "显示版本历史"
     notelicense: "Bitcoin Core客户端是一个由社区驱动的<a href=\"https://www.fsf.org/about/what-is-free-software\">自由软件</a>项目，基于<a href=\"http://opensource.org/licenses/mit-license.php\">MIT协议</a>授权发布。"
-    notesync: "Bitcoin Core 首次同步需要花费很长时间和下载很多数据。您应该确保有足够的带宽以及存储整个块链大小的磁盘空间（超过20GB）。如果你有一个良好的互联网连接，你可以保持您的电脑运行 Bitcoin Core 并且开放 8333 端口以帮助加强网络。"
+    notesync: "Bitcoin Core 首次同步需要花费很长时间和下载很多数据。您应该确保有足够的带宽以及存储整个块链大小的磁盘空间（超过{{site.text.bitcoin_datadir_gb}}GB）。如果你有一个良好的互联网连接，你可以保持您的电脑运行 Bitcoin Core 并且开放 8333 端口以帮助加强网络。"
     full_node_guide: "阅读<a href=\"/en/full-node\">完整的节点指南</a>了解细节。"
     patient: "检查您的带宽和空间"
     releasekeys: "比特币核心释放签名钥匙"
