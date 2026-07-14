@@ -13,7 +13,7 @@ platform:
     os:
       - name: hardware
         text: "walletpassport"
-        link: "https://foundationdevices.com/passport/"
+        link: "https://foundation.xyz/passport-core/"
         source: "https://github.com/Foundation-Devices/passport2"
         screenshot: "passport.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
