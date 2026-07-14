@@ -5,7 +5,7 @@
 id: bitpay
 title: "BitPay Wallet"
 titleshort: "BitPay"
-compat: "mobile desktop android ios windows mac linux"
+compat: "mobile android ios"
 user: beginner
 level: 3
 platform:
@@ -14,7 +14,7 @@ platform:
     default: &DEFAULT
       text: "walletbitpay"
       link: "https://bitpay.com/wallet"
-      source: "https://github.com/bitpay/copay"
+      source: "https://github.com/bitpay/bitpay-app"
       screenshot: "bitpay.png"
       features: "legacy_addresses multisig"
       check:
@@ -32,31 +32,5 @@ platform:
       - name: android
         <<: *DEFAULT
       - name: ios
-        <<: *DEFAULT
-  - desktop:
-    name: desktop
-    default: &DEFAULT
-      text: "walletbitpay"
-      link: "https://bitpay.com/wallet"
-      source: "https://github.com/bitpay/copay"
-      screenshot: "bitpay.png"
-      features: "legacy_addresses multisig"
-      check:
-        control: "checkgoodcontrolfull"
-        validation: "checkfailvalidationcentralized"
-        transparency: "checkpasstransparencyopensource"
-        environment: "checkfailenvironmentdesktop"
-        privacy: "checkpassprivacybasic"
-        fees: "checkpassfeecontroloverride"
-      privacycheck:
-        privacyaddressreuse: "checkpassprivacyaddressrotation"
-        privacydisclosure: "checkfailprivacydisclosurecentralized"
-        privacynetwork: "checkfailprivacynetworknosupporttor"
-    os:
-      - name: windows
-        <<: *DEFAULT
-      - name: mac
-        <<: *DEFAULT
-      - name: linux
         <<: *DEFAULT
 ---
