@@ -24,35 +24,29 @@ breadcrumbs:
 <div class="bitcore-content">
 <div class="container" markdown="block">
 
-Bitcoin Core has been fully translated into over two dozen languages,
-with dozens more languages partially translated---but more help is
-always needed.
+Multiple language support is critical to Bitcoin's global adoption.
+The Bitcoin Core translation project covers more than 150 languages,
+maintained by thousands of volunteer contributors---but more help is
+always needed, both to complete partial translations and to keep
+existing ones current.
 
-To contribute a translation, create a [Transifex][transifex] account and
-then go to the [Bitcoin Core translation page][bitcoin core transifex].
-From there you can click the Join Team button near the top of the page.
+To contribute a translation, create a [Transifex][transifex] account
+and join the [Bitcoin Core translation project][bitcoin core transifex].
+If you're new to Transifex, their [getting started guide for
+translators][transifex translator guide] walks through the basics of
+joining a project and translating strings.
 
-![Help translate Bitcoin](/img/bitcoin-core/transifex-1.png?{{site.time | date: '%s'}})
+![The Bitcoin Core translation project on Transifex](/img/bitcoin-core/transifex-project.png)
 
-After you've joined the team, find the language you want to help
-translate.  Click on it and choose what Bitcoin Core release you want to
-contribute to.
+Translators should also subscribe to the [translators mailing
+list][bitcoin translators list], where announcements are posted around
+pre-releases to notify translators of new strings to check.
 
-![Choose a language](/img/bitcoin-core/transifex-2.png?{{site.time | date: '%s'}})
-
-From the page listing a specific release, you can click the Translate
-button.
-
-![Translate](/img/bitcoin-core/transifex-3.png?{{site.time | date: '%s'}})
-
-On the Translation screen, click the Untranslated tab.  On the left pane
-will appear the English versions of text that needs translating.  On the
-right pane, you can enter your proposed translation.
-
-![Choose untranslated](/img/bitcoin-core/transifex-4.png?{{site.time | date: '%s'}})
-
-After saving your translation, it will be reviewed and (if accepted)
-included in the next release of that version of Bitcoin Core.
+After saving a translation, it will be reviewed and (if accepted)
+included in an upcoming release of Bitcoin Core.  Translated strings
+are pulled from Transifex periodically, primarily around pre-releases.
+For details about how translations flow into the software, see the
+[translation process documentation][bcc translation process].
 
 *If you have any questions, please contact the translation maintainers
 listed on Transifex or ask (in English) in the [#bitcoin-core-dev][#bitcoin-dev] IRC
