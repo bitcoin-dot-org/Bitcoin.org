@@ -33,10 +33,9 @@ General guidelines provided by Transifex itself can be found [here](https://help
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
-### 4. Join our Telegram Group
-* Join our [Telegram Group](https://t.me/bitcoinaroundtheworld).
-* The Website Maintainer, both Team Leaders for translations, a number of language coordinators, and various translators are present in this group.
-* We are happy to help in case you need assistance.
+### 4. Use Transifex discussions for help
+* Use the discussion tools inside Transifex to reach your language team or a coordinator when you need help.
+* If your language team is inactive, contact one of the Team Leaders directly through the translation platform.
 
 ### 5. Choose what you want to translate
 * Click on "Dashboard" on the top.
@@ -151,8 +150,6 @@ Comment the mistake and mention one of the Team Leaders by using @username or co
 
 ### 11. How do I get in contact with other translators? 
 
-You can join our [Telegram Group](https://t.me/bitcoinaroundtheworld). The Website Maintainer, both Team Leaders for translations, and a bunch of coordinators, reviewers, and translators are present in this group. 
-
 If you only want to contact members of your language team on Transifex, click on "Teams" on the top and then on the small blue chat bubble symbol. By clicking on “New discussion”, you can create language specific discussions. Everyone in the language team will receive an (email) notification about this. 
 
 Apart from that, you can obviously contact other translators by using the direct message function on Transifex. 
@@ -165,7 +162,7 @@ Great work! Now that the string is translated, it has to be reviewed. If there a
 
 While it is possible to use the comment function on Transifex to ask for help, unfortunately no notification is sent out regarding a comment. Thus, your comment will probably stay unread until someone accidentally finds it. Therefore, we do not recommend using the comment function in this case. 
 
-Instead, please ask your question in the [Telegram Group](https://t.me/bitcoinaroundtheworld) or contact a Team Leader. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
+Instead, please ask your question through your language team discussions on Transifex or contact a Team Leader directly. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel). 
      
 ### 14. I can’t find a team for my own language. Who should I contact to add a new language? 
 
@@ -185,7 +182,7 @@ If your translation was reviewed and the mistake not corrected in the process, c
 
 ### 17. No one is reviewing the strings I translated. What should I do? 
 
-Contact the reviewers in your language team and ask for a review; either through a direct message on Transifex or through Telegram if you have their Telegram-usernames. 
+Contact the reviewers in your language team and ask for a review through a direct message on Transifex or the language team discussion tools. 
 
 If the reviewers in your team are not active, contact the coordinator about this. Coordinators are either active native speakers or, if there is currently no active coordinator in place for your language, “Komodorpudel”, one of the Team Leaders, is set as coordinator. 
 
@@ -235,9 +232,7 @@ We strongly recommend to not use this function at all. Instead, please contact e
 
 ### 24. I cannot find an answer to my problem in the FAQ. What should I do? 
 
-Join our [Telegram Group](https://t.me/bitcoinaroundtheworld) and ask your question there. 
-
-Alternatively, you can directly contact a Team Leaders. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
+Contact your language team or a Team Leader directly through Transifex. Team Leader is currently Simon AKA “Komodorpudel” (Telegram: @Komodorpudel).
 ___
 
 ## Handling Translations on GitHub
@@ -273,5 +268,3 @@ code for other languages until they are updated.
 
 **When translation is needed**: If you want all changes you've made to be
 re-translated, you can simply update the resource file (en.yml) on Transifex.
-
-
