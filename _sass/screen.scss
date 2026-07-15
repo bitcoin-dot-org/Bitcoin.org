@@ -943,6 +943,12 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
     width: 290px;
     height: 55px;
 }
+// Give space when this button is stacked underneath the two other btn-home's in tablet screen width
+@media screen and (min-width: 769px) and (max-width: 1029px) {
+  #buybitcoinbutton {
+    margin-top: 10px;
+  }
+}
 .btn:not(:first-child) {
     margin-left: 6px;
 }
