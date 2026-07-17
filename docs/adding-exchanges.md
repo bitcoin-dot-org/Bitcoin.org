@@ -10,14 +10,15 @@ requesting to be added.
 
 ### How the Listings Are Organized
 
-`_templates/exchanges.html` is organized into nine top-level sections:
+`_templates/exchanges.html` is organized into ten top-level sections:
 
 + **International** and **Peer-to-Peer (P2P)** — non-geographic category
   sections. Exchanges are listed directly under the section heading, with
   no country subdivision.
-+ **Asia**, **Europe**, **Africa**, **North America**, and **South America** —
-  continental sections subdivided by country. Each country has its own `<h3>`
-  heading and flag SVG, with exchanges listed underneath.
++ **Asia**, **Europe**, **Africa**, **North America**, **Central America &
+  Caribbean**, and **South America** — continental sections subdivided by
+  country. Each country has its own `<h3>` heading and flag SVG, with exchanges
+  listed underneath.
 + **Australia** and **New Zealand** — country-level sections (no continental
   grouping). Exchanges are listed directly under the section heading, same
   flat structure as International and P2P.
