@@ -3,8 +3,8 @@
 # http://opensource.org/licenses/MIT.
 
 id: coldcard
-title: "Coldcard"
-titleshort: "Coldcard"
+title: "Coldcard Mk5"
+titleshort: "Coldcard Mk5"
 compat: "hardware"
 level: 2
 platform:
@@ -13,7 +13,7 @@ platform:
     os:
       - name: hardware
         text: "walletcoldcard"
-        link: "https://coldcardwallet.com/"
+        link: "https://coldcard.com/"
         source: "https://github.com/Coldcard/firmware"
         screenshot: "coldcard.png"
         features: "bech32 hardware_wallet legacy_addresses multisig segwit"
