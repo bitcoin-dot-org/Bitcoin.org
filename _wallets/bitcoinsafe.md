@@ -18,7 +18,7 @@ platform:
       features: "bech32 hardware_wallet multisig segwit taproot"
       check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
-        validation: "checkfailvalidationcentralized"
+        validation: "checkpassvalidationservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkpassprivacybasic"
