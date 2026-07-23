@@ -1,7 +1,6 @@
 language: ruby
-dist: jammy
 rvm:
-  - "3.3.12"
+  - "3.3.10"
 cache: bundler
 env:
   # http://docs.travis-ci.com/user/environment-variables/#Global-Variables

@@ -42,20 +42,20 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 3.3.12**
+**Install Ruby 3.3.10**
 
-To install Ruby 3.3.12, simply run this command:
+To install Ruby 3.3.10, simply run this command:
 
-    rvm install 3.3.12
+    rvm install 3.3.10
 
 Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
 (which takes about 15 minutes, if you got an error see [error while
 compiling](#error-while-compiling)).
 
-After Ruby 3.3.12 is installed, make it your default Ruby:
+After Ruby 3.3.10 is installed, make it your default Ruby:
 
-    rvm alias create default ruby-3.3.12
+    rvm alias create default ruby-3.3.10
 
 And tell your system to use it:
 
@@ -194,7 +194,7 @@ each shell.
 If you got an error while compiling that looks like this:
 ```
 Error running '__rvm_make -j8',
-please read /home/myusername/.rvm/log/1739938091_ruby-3.3.12/make.log
+please read /home/myusername/.rvm/log/1739938091_ruby-3.3.10/make.log
 
 There has been an error while running make. Halting the installation.
 ```
@@ -205,12 +205,12 @@ make: *** [uncommon.mk:240: build-ext] Error 2
 ++ return 2
 ```
 
-Probably you need to run the following command to install a specific openssl dependency needed by ruby-3.3.12 compilation:
+Probably you need to run the following command to install a specific openssl dependency needed by ruby-3.3.10 compilation:
 ```
 rvm pkg install openssl
 ```
 
 Then install/compile ruby with the following command:
 ```
-rvm install ruby-3.3.12 --with-openssl-dir=$HOME/.rvm/usr
+rvm install ruby-3.3.10 --with-openssl-dir=$HOME/.rvm/usr
 ```
