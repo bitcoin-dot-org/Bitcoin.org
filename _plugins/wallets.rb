@@ -67,7 +67,7 @@ module Jekyll
           puts('Lang ' + lang + ' disabled')
           next
         end
-        locs[lang] = YAML.load_file("_translations/"+file)[lang]
+        locs[lang] = YAML.unsafe_load_file("_translations/"+file)[lang]
       end
 
       # Getting information about each found wallet
@@ -76,7 +76,7 @@ module Jekyll
 
         platformsCol.docs.each do |doc|
           file = doc.path
-          data = YAML.load_file(file)
+          data = YAML.unsafe_load_file(file)
           platform = data['platform']
           os = data['os']
           if platform['name'] == os['name']
@@ -97,7 +97,7 @@ module Jekyll
 
         walletsCol.docs.each do |doc|
           file = doc.path
-          wallet = YAML.load_file(file)
+          wallet = YAML.unsafe_load_file(file)
           walletPlatforms = wallet['platform']
 
           # Going through all available combinations of
