@@ -19,7 +19,7 @@ module Jekyll
       data = []
       while page < 10 do
         begin
-          ar = JSON.parse(open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
+          ar = JSON.parse(URI.open("https://api.github.com/repos/"+repo+"/contributors?page=#{page}&per_page=100","User-Agent"=>"Ruby/#{RUBY_VERSION}").read)
         # Prevent any error to stop the build process, return an empty array instead
         rescue
           print 'GitHub API Call Failed!'
@@ -105,7 +105,7 @@ module Jekyll
       end
 
       ## Create cache directory if it doesn't exist
-      if !File.exists?('_cache')
+      if !File.exist?('_cache')
         Dir.mkdir('_cache')
       end
 
@@ -117,7 +117,7 @@ module Jekyll
       # file has to be updated, they both get updated.
       corecontributors_cache = '_cache/corecontributors.marshall'
       sitecontributors_cache = '_cache/sitecontributors.marshall'
-      if File.exists?(corecontributors_cache) && File.exists?(sitecontributors_cache)
+      if File.exist?(corecontributors_cache) && File.exist?(sitecontributors_cache)
         corecontributors_cache_age = (Time.now - File.stat(corecontributors_cache).mtime).to_i
         sitecontributors_cache_age = (Time.now - File.stat(sitecontributors_cache).mtime).to_i
       else
