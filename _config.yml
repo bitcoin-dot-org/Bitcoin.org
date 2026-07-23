@@ -684,4 +684,5 @@ defaults:
 
 ## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
 sass:
+  silence_deprecations: ["import"]
   style: compressed
