@@ -27,7 +27,7 @@ Thank you for considering contributing to Bitcoin Core!  We have
 instructions below to help you get started contributing in several different
 ways.
 
-If want to contribute in another way, please visit the [#bitcoin-core-dev][#bitcoin-dev]
+If you want to contribute in another way, please visit the [#bitcoin-core-dev][#bitcoin-dev]
 IRC chatroom and discuss your plan with a developer.
 
 <div markdown="block" class="row card-row">
@@ -49,7 +49,7 @@ IRC chatroom and discuss your plan with a developer.
 <div class="card core-card" markdown="block">
 <img src="/img/icons/ico_documentation.svg?{{site.time | date: '%s'}}" alt="icon">
 
-[Documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org)
+[Documentation][bcc contribute documentation]
 <p>Write documentation for users and developers</p>
 
 </div>
