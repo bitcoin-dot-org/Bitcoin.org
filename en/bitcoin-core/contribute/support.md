@@ -39,7 +39,7 @@ Core questions.
 
 - [Bitcoin StackExchange][] is a community dedicated entirely to
   answering questions about Bitcoin and related technology.  Many
-  questions about Bitcoin Core can be found under the [Bitcoin-Qt
+  questions about Bitcoin Core can be found under the [bitcoin-core
   tag][bitcoin stackexchange tag bitcoin-qt]
 
 - [BitcoinTalk Technical Support][forum tech support] is a
@@ -58,7 +58,7 @@ Core questions.
 
 ## Live
 
-Internet Relay Chat (IRC) is the most popular way to get live online
+Internet Relay Chat (IRC) is a popular way to get live online
 help with Bitcoin Core.  When providing links to documentation, most
 chatrooms require you post full links (not links shortened using
 services like TinyURL or Bit.ly).
