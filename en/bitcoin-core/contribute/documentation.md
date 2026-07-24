@@ -31,7 +31,7 @@ is available and how you can contribute.
 
 ## Bitcoin Core Docs Directory
 
-The [developer.bitcoin.org GitHub repository](https://github.com/bitcoin-dot-org/developer.bitcoin.org)
+The Bitcoin Core [`doc/` directory][Bitcoin Core docs directory]
 contains various files describing aspects of Bitcoin Core. Almost all of
 the files are meant for developers and testers rather than users.
 

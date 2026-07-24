@@ -25,7 +25,7 @@ breadcrumbs:
 <div class="container" markdown="block">
 
 If you discover a bug or other problem with Bitcoin Core, please report
-it.  The are two different processes, [responsible disclosure](#disclosure) for
+it.  There are two different processes, [responsible disclosure](#disclosure) for
 security bugs and [public issue tracking](#public-issue-tracking) for all other bugs.
 
 <div class="warning" markdown="block">
@@ -60,7 +60,7 @@ new issue] providing the information listed below.
 
     - Windows: `%APPDATA%\Bitcoin\debug.log`
 
-    - OS X: `$HOME/Library/Application Support/Bitcoin/debug.log`
+    - macOS: `$HOME/Library/Application Support/Bitcoin/debug.log`
 
     - Linux: `$HOME/.bitcoin/debug.log`
 
