@@ -105,7 +105,7 @@ filled with standard single-signature P2PKH transactions would be about
 be about 2.0MB.
 
 [current proposal]: https://youtu.be/fst1IK_mrng?t=2234
-[calculations]: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
+[calculations]: https://gnusha.org/pi/bitcoindev/20151208045803.GA1042@sapphire.erisian.com.au/
 
 ## Segregated witness sounds complicated; will the ecosystem be prepared for its deployment?  {#ecosystem-ready}
 
@@ -185,7 +185,7 @@ increases the maximum block size.
 
 No. That is not part of the [roadmap][].
 
-[roadmap]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
+[roadmap]: https://gnusha.org/pi/bitcoindev/CAAS2fgQyVs1fAEj+vqp8E2=FRnqsgs7VUKqALNBHNxRMDsHdVg@mail.gmail.com/
 
 ## If there's eventually going to be a hard fork, why not do it now? {#why-not-now}
 
