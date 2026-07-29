@@ -365,7 +365,7 @@ To get specific suggestions on how you can help, please join the
 [#bitcoin-core-dev][#bitcoin-dev] IRC channel.
 
 [#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
-[actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
+[actively studied]: https://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
 [bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
@@ -378,7 +378,7 @@ To get specific suggestions on how you can help, please join the
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
 [bitcoin core contributor]: /en/bitcoin-core/
-[Bitcoin relay network]: http://bitcoinrelaynetwork.org/
+[Bitcoin relay network]: https://bitcoinrelaynetwork.org/
 [code review]: https://bitcoin.org/en/development#code-review
 [commit spreadsheet]: https://docs.google.com/spreadsheets/d/15jtxuA3dVY5NUuYezZ4d_69ASUMYjqFOMxsF9ZX-BKA/edit?usp=sharing
 [commit stats]: https://github.com/bitcoin/bitcoin/graphs/contributors?from=2015-01-01&to=2015-12-31&type=c

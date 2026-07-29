@@ -12,7 +12,7 @@ date: 2015-03-05
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
   href="https://github.com/harding">GitHub</a>,
-  <a href="http://www.reddit.com/user/harda/">Reddit</a>)
+  <a href="https://www.reddit.com/user/harda/">Reddit</a>)
 ---
 
 <div class="post-content" markdown="1">
@@ -54,7 +54,7 @@ Summary for December 2014, January 2015, and February 2015.
   detailed instructions for supporting the network by running the
   Bitcoin Core full node. The announcement of the page received over
   [200 upvotes on
-  Reddit](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/).
+  Reddit](https://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/).
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">
@@ -244,7 +244,7 @@ to interact directly with wallet authors.
 ![Screenshot included in the full node guide](/img/blog/free/bitcoin-core.png?{{site.time | date: '%s'}})
 
 Fulfilling a [request made by Wladimir J. van der
-Laan](http://www.mail-archive.com/bitcoin-development%40lists.sourceforge.net/msg05406.html),
+Laan](https://www.mail-archive.com/bitcoin-development%40lists.sourceforge.net/msg05406.html),
 Bitcoin Core's lead developer, we were proud to write and publish a
 [guide to running a full node](https://bitcoin.org/en/full-node) this
 quarter.  The goal is to encourage users to run full nodes when possible
@@ -273,7 +273,7 @@ five days and has received over 4,000 page views.
 
 * **Over 200 upvotes:** soon after release, the guide was submitted to
   Reddit where it received [over 200
-  upvotes](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/)
+  upvotes](https://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/)
   and a rare "98% upvoted" quality score.
 
 The guide was primarily written by David A. Harding, with reviews by
@@ -331,7 +331,7 @@ SVG images.
 > "I don't know what people are complaining about... I think it's pretty
 > great actually!" ---/u/itsgremlin on Reddit about Bitcoin.org in
 > general
-> ([source](http://www.reddit.com/r/Bitcoin/comments/2oessw/bitcoinorg_what_would_you_want_here/cmmg9r7))
+> ([source](https://www.reddit.com/r/Bitcoin/comments/2oessw/bitcoinorg_what_would_you_want_here/cmmg9r7))
 
 ![Travis CI verifying the site builds correctly](/img/blog/free/travis.png?{{site.time | date: '%s'}})
 
@@ -392,7 +392,7 @@ volunteer quick start guide was contributed by David.
 
 > "This is awesome and sorely needed. [...] Appreciate everything you do
 > for the community, keep up the great work!" ---/u/wserd on Reddit
-> about the new Full Node page ([source](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/cough5b))
+> about the new Full Node page ([source](https://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/cough5b))
 
 
 ![Expense graph](/img/blog/free/expenses.png?{{site.time | date: '%s'}})
@@ -446,7 +446,7 @@ following three major goals during the next quarter:
   * [Improved type
     information](https://github.com/bitcoin-dot-org/bitcoin.org/pull/753) in
     the RPC and REST sections, as
-    [requested](http://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg07069.html)
+    [requested](https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg07069.html)
     by Ocaml-Bitcoin developer Dario Teixeira.
 
   * Substantially revising and expanding the [current wallet
@@ -476,7 +476,7 @@ following three major goals during the next quarter:
 > accomplished thanks to their sponsorship. Beyond that, they let us
 > make our own decisions, for which independence we're quite grateful."
 > ---David A. Harding on Reddit
-> ([source](http://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/couu1cv))
+> ([source](https://www.reddit.com/r/Bitcoin/comments/2wvdko/new_page_on_bitcoinorg_running_a_full_node/couu1cv))
 
 We thank [The Bitcoin Foundation](https://bitcoinfoundation.org/) for
 their continued financial support of the site, and extend our heartfelt

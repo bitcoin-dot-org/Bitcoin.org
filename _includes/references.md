@@ -376,8 +376,8 @@ http://opensource.org/licenses/MIT.
 [BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
 [BIP159]: https://github.com/bitcoin/bips/blob/master/bip-0159.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
-[RFC5737]: http://tools.ietf.org/html/rfc5737
-[secp256k1]: http://www.secg.org/sec2-v2.pdf
+[RFC5737]: https://tools.ietf.org/html/rfc5737
+[secp256k1]: https://www.secg.org/sec2-v2.pdf
 
 {% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
 [#bitcoin]: https://web.libera.chat/#bitcoin
@@ -411,13 +411,13 @@ http://opensource.org/licenses/MIT.
 [bcc translation process]: https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md
 [bitcoin translators list]: https://groups.google.com/forum/#!forum/bitcoin-translators
 [transifex translator guide]: https://help.transifex.com/en/articles/6248698-getting-started-as-a-translator
-[Bitcoin reddit]: http://www.reddit.com/r/Bitcoin
-[Bitcoin reddit new]: http://www.reddit.com/r/Bitcoin/new
+[Bitcoin reddit]: https://www.reddit.com/r/Bitcoin
+[Bitcoin reddit new]: https://www.reddit.com/r/Bitcoin/new
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
 [Bitcoin stackexchange]: https://bitcoin.stackexchange.com
 [Bitcoin stackexchange tag bitcoin-qt]: https://bitcoin.stackexchange.com/questions/tagged/bitcoin-core
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
-[BitcoinJ]: http://bitcoinj.github.io
+[BitcoinJ]: https://bitcoinj.github.io
 [BitcoinJ documentation about pending transaction safety]: https://bitcoinj.github.io/security-model#pending-transactions
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
@@ -429,7 +429,7 @@ http://opensource.org/licenses/MIT.
 [creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
 [DER]: https://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
-[DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
+[DNS A records]: https://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
@@ -446,12 +446,12 @@ http://opensource.org/licenses/MIT.
 [HTTP basic authentication]: https://en.wikipedia.org/wiki/Basic_access_authentication
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [information theoretic security]: https://en.wikipedia.org/wiki/Information_theoretic_security
-[inherit bitcoins]: http://bitcoin.stackexchange.com/q/38692/21052
+[inherit bitcoins]: https://bitcoin.stackexchange.com/q/38692/21052
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
-[IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
+[IPv4-mapped IPv6 addresses]: https://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
-[JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
+[JSON-RPC request batching]: https://www.jsonrpc.org/specification#batch
 [july 2015 chain forks]: https://en.bitcoin.it/wiki/July_2015_chain_forks
 [libblkmaker]: https://github.com/bitcoin/libblkmaker
 [localhost]: https://en.wikipedia.org/wiki/Localhost
@@ -466,7 +466,7 @@ http://opensource.org/licenses/MIT.
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
-[offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
+[offline transactions]: https://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
 [open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
@@ -478,8 +478,8 @@ http://opensource.org/licenses/MIT.
 [Satoshi Nakamoto]: https://en.bitcoin.it/wiki/Satoshi_Nakamoto
 [setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
-[Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
-[study of SPV privacy over tor]: http://arxiv.org/abs/1410.6079
+[Stratum mining protocol]: https://mining.bitcoin.cz/stratum-mining
+[study of SPV privacy over tor]: https://arxiv.org/abs/1410.6079
 [Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
 [transifex]: https://www.transifex.com/
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time

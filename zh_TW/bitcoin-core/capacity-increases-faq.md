@@ -53,7 +53,7 @@ moved_url: "https://bitcoincore.org/zh_TW/2015/12/21/%E7%B3%BB%E7%B5%B1%E6%93%B4
 根據Anthony Towns的[計算][calculations]，如果區塊裝滿了標準的單簽名P2PKH交易，體積大概為1.6MB；如果是2-of-2多重簽名交易，則大概為2.0MB。
 
 [current proposal]: https://youtu.be/fst1IK_mrng?t=2234
-[calculations]: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
+[calculations]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
 
 ## 隔離見證好像很複雜，比特幣生態各環節準備好沒有？ {#ecosystem-ready}
 
@@ -189,7 +189,7 @@ David Harding 提供了下表以[估計][estimated savings]在不同費用和交
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
 [bitcoin core contributor]: /en/bitcoin-core/
-[Bitcoin relay network]: http://bitcoinrelaynetwork.org/
+[Bitcoin relay network]: https://bitcoinrelaynetwork.org/
 [code review]: https://bitcoin.org/en/development#code-review
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf

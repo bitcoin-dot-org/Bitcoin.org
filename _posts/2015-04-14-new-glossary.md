@@ -12,7 +12,7 @@ date: 2015-04-14
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
   href="https://github.com/harding">GitHub</a>,
-  <a href="http://www.reddit.com/user/harda/">Reddit</a>)
+  <a href="https://www.reddit.com/user/harda/">Reddit</a>)
 ---
 
 *Thanks to [several volunteers][] and the financial sponsorship of [The

@@ -35,7 +35,7 @@ own languages — now 27 different languages and growing.
 
 Here are a few mentions and links to bitcoin.org from over the years:
 
-* 2009 - [Bitcoin open source implementation of P2P currency](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source)
+* 2009 - [Bitcoin open source implementation of P2P currency](https://p2pfoundation.ning.com/forum/topics/bitcoin-open-source)
 * 2010 - [Bitcoin Releases Version 0.3](https://news.slashdot.org/story/10/07/11/1747245/bitcoin-releases-version-03)
 * 2011 - [Bitcoin - A Step Toward Censorship-Resistant Digital Currency](https://www.eff.org/deeplinks/2011/01/bitcoin-step-toward-censorship-resistant)
 * 2012 - [Bitcoin - The Libertarian Introduction](http://moneyandstate.com/bitcoin-libertarian-introduction-used-care/)

@@ -136,7 +136,7 @@ unhidden by clicking on the progress bar at the bottom of the window.
 ### Support for JSON-RPC Named Arguments
 
 Commands sent over the JSON-RPC interface and through the `bitcoin-cli` binary
-can now use named arguments. This follows the [JSON-RPC specification](http://www.jsonrpc.org/specification)
+can now use named arguments. This follows the [JSON-RPC specification](https://www.jsonrpc.org/specification)
 for passing parameters by-name with an object.
 
 `bitcoin-cli` has been updated to support this by parsing `name=value` arguments

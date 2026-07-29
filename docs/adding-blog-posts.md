@@ -17,7 +17,7 @@ two-digit numbers).  The YAML front matter should be similar to this:
     author: >
       David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
       href="https://github.com/harding">GitHub</a>,
-      <a href="http://www.reddit.com/user/harda/">Reddit</a>)
+      <a href="https://www.reddit.com/user/harda/">Reddit</a>)
     ---
 
 The type, layout, and category should always be as specified above. The

@@ -42,7 +42,7 @@ module Jekyll
       File.open(File.join(site.dest, 'sitemap.xml'), 'w+') do |sitemap|
         #Open sitemap
         sitemap.puts '<?xml version="1.0" encoding="UTF-8"?>'
-        sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+        sitemap.puts '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"'
         sitemap.puts '	xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         #Add translated pages with their alternative in each languages
         locs['en']['url'].each do |id,value|

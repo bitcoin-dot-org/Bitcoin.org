@@ -288,7 +288,7 @@ prevented some users of the lightweight BreadWallet from connecting to
 honest nodes. Since the spy nodes didn't relay transactions, BreadWallet
 users stopped receiving notification of new transactions.
 
-**Learn more:** [Chainalysis CEO Denies 'Sybil Attack' on Bitcoin's Network](http://www.coindesk.com/chainalysis-ceo-denies-launching-sybil-attack-on-bitcoin-network/)
+**Learn more:** [Chainalysis CEO Denies 'Sybil Attack' on Bitcoin's Network](https://www.coindesk.com/chainalysis-ceo-denies-launching-sybil-attack-on-bitcoin-network/)
 </td>
 </tr>
 

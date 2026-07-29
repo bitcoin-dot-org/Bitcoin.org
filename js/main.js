@@ -203,7 +203,7 @@ function librariesShow(e) {
 
 function freenodeShow(e) {
   // Display freenode chat window on the "Development" page at user request.
-  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
+  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="https://webchat.freenode.net/?channels=bitcoin-dev" />';
   cancelEvent(e);
 }
 
