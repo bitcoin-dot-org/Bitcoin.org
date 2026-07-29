@@ -95,7 +95,7 @@ hesitate to [open an issue][].
 [Bitcoin Core's powerful features]: /en/bitcoin-core/features/
 [provide help]: /en/bitcoin-core/help
 [start contributing]: /en/bitcoin-core/contribute/
-[Internet Archive]: https://web.archive.org/web/20090303195936/https://bitcoin.org/
+[Internet Archive]: https://web.archive.org/web/20090303195936/http://bitcoin.org/
 [helps protect Bitcoin's essential decentralization]: /en/bitcoin-core/features/validation#help-protect-decentralization
 [bitcoin core overview]: /en/bitcoin-core/
 [feature overview]: /en/bitcoin-core/features/
