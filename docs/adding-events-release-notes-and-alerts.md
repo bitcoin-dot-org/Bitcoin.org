@@ -55,7 +55,7 @@ optional_magnetlink:
 ## 1. Make sure both ordered and unordered lists are preceded by an empty
 ## (whitespace only) line, like the empty line before this list item.
 ##
-## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
+## 2. Place URLs inside angle brackets, like <https://bitcoin.org/bin>
 ---
 ```
 
