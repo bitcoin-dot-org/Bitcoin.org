@@ -223,7 +223,7 @@ zh_TW:
     downloadsig: "核對發佈簽名"
     sourcecode: "取得原始碼"
     versionhistory: "顯示版本歷史"
-    notelicense: "Bitcoin Core 是社群所推動的<a href=\"https://www.fsf.org/about/what-is-free-software\">自由軟體</a>工程，它得到了<a href=\"http://opensource.org/licenses/mit-license.php\">MIT 許可證</a> 來發佈。"
+    notelicense: "Bitcoin Core 是社群所推動的<a href=\"https://www.fsf.org/about/what-is-free-software\">自由軟體</a>工程，它得到了<a href=\"https://opensource.org/licenses/mit-license.php\">MIT 許可證</a> 來發佈。"
     notesync: "Bitcoin Core 初始同步會需要較長時間。請確保您有足夠的頻寬和儲存容量來滿足完整的區塊鏈大小 (超過 {{site.text.bitcoin_datadir_gb}}GB) 。如果您知道如何下載一個 torrent 文件，您可以在開始運行這個軟體前通過把<a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (一個區塊鏈的先前備份) 放到 Bitcoin Core 的數據目錄中來加快同步進程。"
     patient: "你需要保持耐心"
   events:
@@ -670,7 +670,7 @@ zh_TW:
     menu-vocabulary: 詞彙
     menu-you-need-to-know: "使用須知"
     banner-translate: "這種語言的翻譯已經過時。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">點擊這裡來幫助把bitcoin.org 翻譯成您的語言</a>。"
-    footer: "以 <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
+    footer: "以 <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT 授權</a>發佈"
     sponsor: "一個由其贊助的社群網站"
     getstarted: "開始使用 Bitcoin"
   url:

@@ -538,7 +538,7 @@ nl:
     downloadtorrent: "Download torrent"
     source: "Broncode"
     versionhistory: "Toon versiegeschiedenis"
-    notelicense: "Bitcoin Core is een <a href=\"https://www.fsf.org/about/what-is-free-software\">vrije-software</a> project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
+    notelicense: "Bitcoin Core is een <a href=\"https://www.fsf.org/about/what-is-free-software\">vrije-software</a> project dat wordt ontwikkeld door de community en verspreid onder de <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-licentie</a>."
     notesync: "Het initieel synchroniseren van de Bitcoin Core kost tijd en het downloaden van veel data. Zorg ervoor dat u voldoende bandbreedte en opslagruimte heeft voor de volledige block chain grootte (meer dan {site.text.bitcoin_datadir_gb}GB). Als u over een goede internetverbinding beschikt, kunt u het netwerk helpen versterken door uw PC draaiende te houden met Bitcoin Core en poort 8333 open."
     full_node_guide: "Lees de <a href=\"/en/full-node\">full-node-handleiding</a> voor details."
     patient: "Controleer uw bandbreedte en beschikbare ruimte"
@@ -1132,7 +1132,7 @@ nl:
         Deze pagina is verhuisd naar de nieuwe Bitcoin Core
         website (klik hier om te worden doorgestuurd)
     banner-translate: "De vertalingen voor deze taal zijn verouderd. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klik hier om bitcoin.org in uw taal te helpen vertalen</a>."
-    footer: "Beschikbaar onder de <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
+    footer: "Beschikbaar onder de <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licentie</a>"
     donate-community: "Steun Bitcoin.org"
     donate-support: "Bitcoin.org wordt ondersteund door de gemeenschap."
     network-status: "Netwerk status"

@@ -224,7 +224,7 @@ es:
     downloadsig: "Verifique las firmas de las versiones"
     sourcecode: "Obtener el código de origen"
     versionhistory: "Mostrar historial de versiones"
-    notelicense: "Bitcoin Core es un proyecto <a href=\"https://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
+    notelicense: "Bitcoin Core es un proyecto <a href=\"https://www.fsf.org/about/what-is-free-software\">gratuito de código abierto</a> impulsado por la comunidad, liberado bajo la licencia <a href=\"https://opensource.org/licenses/mit-license.php\">MIT</a>."
     notesync: "La sincronización inicial de Bitcoin Core puede tomar un largo tiempo. Debería asegurarse de que dispone de suficiente ancho de banda y espacio de almacenamiento para la descarga completa de la cadena de bloques (más de {{site.text.bitcoin_datadir_gb}}GB)."
     patient: "Debe tener paciencia"
   events:
@@ -640,7 +640,7 @@ es:
     menu-vocabulary: Vocabulario
     menu-you-need-to-know: "Cosas que necesita saber"
     banner-translate: "Las traducciones para este idioma están desactualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Haga clic aquí para ayudar a traducir bitcoin.org a su idioma</a>."
-    footer: "Publicado bajo la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
+    footer: "Publicado bajo la <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">licencia MIT</a>"
     sponsor: "Una comunidad web patrocinada por"
     getstarted: "Cómo comenzar a usar Bitcoin"
   url:

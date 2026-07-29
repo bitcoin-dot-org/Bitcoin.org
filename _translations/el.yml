@@ -223,7 +223,7 @@ el:
     downloadsig: "Επιβεβαίωση έκδοσης υπογραφών"
     sourcecode: "Αποκτήστε τον πηγαίο κώδικα"
     versionhistory: "Εμφάνιση ιστορικού έκδοσης"
-    notelicense: "Το Bitcoin Core είναι ένα καθοδηγούμενο από την κοινότητα πρότζεκτ <a href=\"https://www.fsf.org/about/what-is-free-software\"> ελεύθερου λογισμικού</a>, που διατίθεται βάσει της <a href=\"http://opensource.org/licenses/mit-license.php\">MIT άδειας</a>."
+    notelicense: "Το Bitcoin Core είναι ένα καθοδηγούμενο από την κοινότητα πρότζεκτ <a href=\"https://www.fsf.org/about/what-is-free-software\"> ελεύθερου λογισμικού</a>, που διατίθεται βάσει της <a href=\"https://opensource.org/licenses/mit-license.php\">MIT άδειας</a>."
     notesync: "Ο αρχικός συγχρονισμός του Bitcoin πορτοφολιού μπορεί να πάρει πολύ χρόνο. Βεβαιωθείτε ότι έχετε αρκετό εύρος ζώνης (bandwidth) και τον απαραίτητο χώρο αποθήκευσης για ολόκληρο το μέγεθος της αλυσίδας των μπλοκ (πάνω από {{site.text.bitcoin_datadir_gb}}GB). Αν γνωρίζετε πώς να κατεβάσετε ένα αρχείο torrent, μπορείτε να συντομεύσετε τη διαδικασία βάζοντας το αρχείο <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> στον κατάλογο δεδομένων  του Bitcoin πριν ξεκινήσετε το λογισμικό."
     patient: "Θα χρεαστεί να δείξετε υπομονή"
   events:
@@ -670,7 +670,7 @@ el:
     menu-vocabulary: Λεξιλόγιο
     menu-you-need-to-know: "Πρέπει να γνωρίζετε"
     banner-translate: "Οι μεταφράσεις για αυτή την γλώσσα είναι ξεπερασμένες. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Κάντε κλικ εδώ για να βοηθήσετε στην μετάφραση του bitcoin.org στην γλώσσα σας.</a>."
-    footer: "Κυκλοφόρησε υπό την <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">άδεια MIT</a>"
+    footer: "Κυκλοφόρησε υπό την <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">άδεια MIT</a>"
     sponsor: "Μια κοινοτική ιστοσελίδα χρηματοδοτούμενη από"
     getstarted: "Ξεκινήστε με το Bitcoin"
   url:

@@ -361,7 +361,7 @@ uk:
     downloadtorrent: "Скачати torrent"
     source: "Вихідний код"
     versionhistory: "Показати історію версій"
-    notelicense: "Bitcoin Core - <a href=\"https://www.fsf.org/about/what-is-free-software\">вільний проект з відкритим початковим кодом</a>, що розробляється колективно та розповсюджується згідно умов <a href=\"http://opensource.org/licenses/mit-license.php\">ліцензії MIT</a>."
+    notelicense: "Bitcoin Core - <a href=\"https://www.fsf.org/about/what-is-free-software\">вільний проект з відкритим початковим кодом</a>, що розробляється колективно та розповсюджується згідно умов <a href=\"https://opensource.org/licenses/mit-license.php\">ліцензії MIT</a>."
     notesync: "Початкова синхронізація Bitcoin Core може зайняти тривалий час. Переконайтесь, що у вас достатньо пропускної здатності та вільного місця для зберігання повного ланцюжка блоків (більше {{site.text.bitcoin_datadir_gb}} ГБ). Якщо у вас хороше з'єднання з Інтернетом, ви можете допомогти у зміцненні мережі, тримаючи комп'ютер з Bitcoin Core та порт 8333 відкритим."
     full_node_guide: "Ознайомтеся з <a href=\"/en/full-node\">керівництвом повного вузла</a>."
     patient: "Перевірте пропускну здатність і місце"
@@ -905,7 +905,7 @@ uk:
       Ця сторінка була переміщена до нового сайта
       Bitcoin Core (клікніть сюди для переходу)
     banner-translate: "Переклад цією мовою застарілий. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Клікніть сюди, щоб допомогти перекласти bitcoin.org вашою мовою</a>."
-    footer: "ПЗ розповсюджується за <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">ліцензією MIT</a>"
+    footer: "ПЗ розповсюджується за <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">ліцензією MIT</a>"
     sponsor: "Спонсор веб-сайту спільноти "
     getstarted: "Початок роботи з Біткойн"
     bitcoin-core: "Bitcoin Core"

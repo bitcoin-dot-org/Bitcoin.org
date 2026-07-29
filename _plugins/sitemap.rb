@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #sitemap.rb generates a sitemap.xml file, which also includes
 #alternate hreflang for each translated version of each page.

@@ -31,7 +31,7 @@ Then copy in the following YAML header (the part between the three dashes, ---):
 ```
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 ## Required value below populates the %v variable (note: % needs to be escaped
 in YAML if it starts a value)

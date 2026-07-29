@@ -220,7 +220,7 @@ fa:
     downloadsig: "امضای واگذار کردن را درستی آزمایی کنید"
     sourcecode: "کد منبع را بدست آورید"
     versionhistory: "نمایش تاریخچه ی نسخه"
-    notelicense: "هسته بیت کوین یک پروژه ی <a href=\"https://www.fsf.org/about/what-is-free-software\">نرم افزار رایگان</a> جامعه-محور است که تحت <a href=\"http://opensource.org/licenses/mit-license.php\"> گواهینامه ی  MIT</a> منتشر شده است."
+    notelicense: "هسته بیت کوین یک پروژه ی <a href=\"https://www.fsf.org/about/what-is-free-software\">نرم افزار رایگان</a> جامعه-محور است که تحت <a href=\"https://opensource.org/licenses/mit-license.php\"> گواهینامه ی  MIT</a> منتشر شده است."
     notesync: "همگام سازی اولیه هسته بیت کوین ممکن است خیلی بطول بینجامد. باید از داشتن پهنای باند و محل ذخیره سازی کافی برای اندازه زنجیره بلاک  (بیش از {{site.text.bitcoin_datadir_gb}}GB) اطمینان حاصل کنید. اگر روش دانلود کردن فایل تورنت را بلد هستید، می توانید سرعت فرایند را با گذاردن <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a> (نسخه قبلی یک زنجیره بلاک) در دایرکتوری داده های هسته بیت کوین، پیش از شروع نرم افزار، افزایش دهید."
     patient: "باید شکیبا باشید"
   events:
@@ -638,7 +638,7 @@ fa:
     menu-vocabulary: دایره واژگان
     menu-you-need-to-know: "لازم است بدانید"
     banner-translate: "ترجمه ها به این زبان، منسوخ شده اند.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\"> اینجا را کلیک کنید و به ترجمه bitcoin.org  به زبان خود، کمک کنید</a>."
-    footer: " منتشر شده تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
+    footer: " منتشر شده تحت <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT license</a>"
     sponsor: "یک وب سایت جامعه با تامین مالی از سوی"
     getstarted: "آغاز به کار با بیت‌کوین"
   url:

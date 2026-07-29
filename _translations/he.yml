@@ -527,7 +527,7 @@ he:
     downloadtorrent: "הורדת torrent"
     source: "קוד מקור"
     versionhistory: "הצגת היסטורית גירסאות"
-    notelicense: "ליבת ביטקוין הנו פרויקט <a href=\"https://www.fsf.org/about/what-is-free-software\">תוכנה חינמית</a> מונחה קהילה המשוחרר תחת  <a href=\"http://opensource.org/licenses/mit-license.php\">רשיון MIT</a>."
+    notelicense: "ליבת ביטקוין הנו פרויקט <a href=\"https://www.fsf.org/about/what-is-free-software\">תוכנה חינמית</a> מונחה קהילה המשוחרר תחת  <a href=\"https://opensource.org/licenses/mit-license.php\">רשיון MIT</a>."
     notesync: "הסינכרון הראשוני של ליבת ביטקוין נמשכך זמן מה רק ומוריד נתונים רבים. עליך לוודא שברשותך רוחב פס הולם ושטח איחסון מספק עבור כל גודל שרשרת הבלוקים (מעל {{site.text.bitcoin_datadir_gb}}GB). אם ברשותך חיבור אינטרנט טוב, תוכל/י לחזק את הרשת ע\"י השארת מחשבך עם ליבת ביטקוין פועלת וערוץ 8333 פתוח."
     full_node_guide: "לפירוט קרא את <a href=\"/en/full-node\">מדריך הצומת המלא</a>."
     patient: "בדוק/י את רוחב הפס שלך ונפח האיחסון"
@@ -1105,7 +1105,7 @@ he:
         דף זה הועבר לאתר החדש של ליבת ביטקוין
         (הקישו כאן כדי להתנתב)
     banner-translate: "התרגום לשפה זו אינו עדכני. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">הקישו כאן כדי לתרגם את  bitcoin.org לשפתכם</a>."
-    footer: "שוחרר לפי <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">רשיון MIT </a>"
+    footer: "שוחרר לפי <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">רשיון MIT </a>"
     donate-community: "עזרו ל Bitcoin.org"
     donate-support: "Bitcoin.org הנו נתמך על ידי הקהילה."
     network-status: "מצב הרשת"

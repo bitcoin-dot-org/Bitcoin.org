@@ -536,7 +536,7 @@ sv:
     downloadtorrent: "Ladda ner torrent"
     source: "Källkod"
     versionhistory: "Visa versionshistorik"
-    notelicense: "Bitcoin Core drivs av en community som utvecklar projektet som <a href=\"https://www.fsf.org/about/what-is-free-software\">fri mjukvara</a> som publiceras under <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licensen</a>."
+    notelicense: "Bitcoin Core drivs av en community som utvecklar projektet som <a href=\"https://www.fsf.org/about/what-is-free-software\">fri mjukvara</a> som publiceras under <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-licensen</a>."
     notesync: "Bitcoin Cores inledande synkronisering tar tid och laddar ner mycket data. Se till att du har tillräcklig bandbredd och lagringskapacitet för den fullständiga blockkedjans storlek (mer än {{site.text.bitcoin_datadir_gb}}GB). Om du har en bra internetuppkoppling kan du hjälpa till att stärka nätverket genom att låta din PC köra Bitcoin Core och ha port 8333 öppen."
     full_node_guide: "Läs <a href=\"/en/full-node\">guiden för fullständig nod</a> för mer information."
     patient: "Kontrollera din bandbredd och lagringskapacitet"
@@ -1125,7 +1125,7 @@ sv:
         Denna sida har flyttat till Bitcoin Cores nya
         webbplats (klicka här för att omdirigeras dit)
     banner-translate: "Översättningen till det här språket är inaktuell. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
-    footer: "Publicerad under <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
+    footer: "Publicerad under <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
     donate-community: "Stöd Bitcoin.org"
     donate-support: "Bitcoin.org stöds av communityn."
     network-status: "Nätverksstatus"

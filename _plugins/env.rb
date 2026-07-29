@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 ## env.rb takes select environmental variables and makes them available
 ## to the site templates. Currently, only variables starting with

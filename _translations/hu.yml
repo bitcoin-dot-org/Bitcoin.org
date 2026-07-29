@@ -465,7 +465,7 @@ hu:
     downloadtorrent: "Torrent letöltése"
     source: "Forráskód"
     versionhistory: "Korábbi verziók mutatása"
-    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
+    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"https://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
     notesync: "A Bitcoin Core első szinkronizációja hosszú időt és rengeteg adat letöltését veszi igénybe. Győződj meg róla, hogy rendelkezel elegendő sávszélességgel és tárhellyel a teljes blokkláncmérethez (több mint {{site.text.bitcoin_datadir_gb}}GB). Amennyiben jó internetkapcsolattal rendelkezel, akkor úgy tudod erősíteni a hálózatot, hogy hagyod futni a számítógépedet a Bitcoin Core-ral és 8333-as porttal megnyitva."
     full_node_guide: "Olvasd el a <a href=\"/en/full-node\">teljes csomópontról szóló tájékoztatót</a> a részletekért."
     patient: "Ellenőrizd sávszélességed és a tárhelyed"
@@ -1051,7 +1051,7 @@ hu:
     banner-core-moved: |
         Ez az oldal elköltözött az új Bitcoin Core
         oldalra (kattints ide az átirányításhoz)
-    footer: "Az <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
+    footer: "Az <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licence</a> alatt közzétéve"
     donate-community: "Támogasd a Bitcoin.org-ot"
     donate-support: "A Bitcoin.org honlapot a közösség támogatja."
     network-status: "Hálózat státusza"

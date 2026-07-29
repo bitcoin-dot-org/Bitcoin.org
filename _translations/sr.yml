@@ -537,7 +537,7 @@ sr:
     downloadtorrent: "Preuzmi torrent"
     source: "Izvorni kod"
     versionhistory: "Prikaži istoriju verzije"
-    notelicense: "Bitkoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"http://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
+    notelicense: "Bitkoin Core je <a href=\"https://www.fsf.org/about/what-is-free-software\">besplatan softver</a> orijentisan na zajednicu, objavljen pod <a href=\"https://opensource.org/licenses/mit-license.php\">MIT licencom</a>."
     notesync: "Prvobitna sinhronizacija Bitcoi Core-a će potrajati jer preuzima veliki broj podataka sa interneta. Budite sigurni da imate dovoljno protoka i skladišnog prostora za preuzimanje block chain veličine (over {{site.text.bitcoin_datadir_gb}}GB). Ukoliko imate jaku internet konekciju, možete pomoći ojačavanju mreže tako što ćete na vaš računar pokrenuti Bitcoin Core uz otvoreni 8833 port."
     full_node_guide: "Pročitajte <a href=\"/en/full-node\">full node</a> uputstvo za više informacija."
     patient: "Proverite vaš internet protok i skladišni prostor računara."
@@ -1123,7 +1123,7 @@ sr:
     banner-core-moved: |
         Ova stranica premeštena je na novi Bitcoin Core sajt (klikni ovde za preusmeravanje)
     banner-translate: "Prevod za ovaj jezik je zastareo. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Kliknite ovde kako bi pomogli prevođenje bitcoin.org na vaš jezik</a>."
-    footer: "Izbačeno pod <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
+    footer: "Izbačeno pod <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT licencom</a>"
     donate-community: "Podržite Bitcoin.org"
     donate-support: "Bitcoin.org se održava od strane zajednice."
     network-status: "Status Mreže"

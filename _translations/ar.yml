@@ -216,7 +216,7 @@ ar:
     downloadsig: "التحقق من صحة توقيع الإصدار"
     sourcecode: "احصل على الكود المصدري \"source code\""
     versionhistory: "قم بإظهار تاريخ جميع الإصدارات"
-    notelicense: "Bitcoin Core أو برنامج البت كوين الرسمي هو مشروع <a href=\"https://www.fsf.org/about/what-is-free-software\">برنامج مجاني</a> مُطور ومدار بواسطة مجتمع البت كوين، البرنامج متاح للنشر والإستخدام تحت <a href=\"http://opensource.org/licenses/mit-license.php\">رخصة MIT</a>."
+    notelicense: "Bitcoin Core أو برنامج البت كوين الرسمي هو مشروع <a href=\"https://www.fsf.org/about/what-is-free-software\">برنامج مجاني</a> مُطور ومدار بواسطة مجتمع البت كوين، البرنامج متاح للنشر والإستخدام تحت <a href=\"https://opensource.org/licenses/mit-license.php\">رخصة MIT</a>."
     notesync: "المزامنة الأوّلية لبرنامج البت كوين الرسمي \"Bitcoin Core\" يمكنها أن تأخذ وقت طويل جداً لكي تكتمل. يجب عليك التأكد من امتلاكك لحجم نقل بيانات و مساحة تخزين كافية لحجم سلسلة الكتل (أكثر من {{site.text.bitcoin_datadir_gb}} جيجا بايت)."
     patient: "سيتوجب عليك الصبر"
   events:
@@ -632,7 +632,7 @@ ar:
     menu-vocabulary: المفردات
     menu-you-need-to-know: "يجب عليك معرفة"
     banner-translate: "الترجمة لهذه اللغة قديمة. </a> إضغط هنا لتساعد في ترجمة موقع bitcoin.org بلغتك<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">."
-    footer: "مصدر تحت <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT ترخيص</a>"
+    footer: "مصدر تحت <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT ترخيص</a>"
     sponsor: "موقع إلكتروني خاص بمجتمع البت كوين مدعم من قبل"
     getstarted: "إبدأ الآن مع البت كوين"
   url:

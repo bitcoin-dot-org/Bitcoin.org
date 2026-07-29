@@ -37,6 +37,6 @@ This repository is released under the terms of the [MIT license](https://opensou
 
 The intellectual property rights in the files are owned by the respective
 authors. Some of the files can be licensed under MIT License (MIT) available on
-http://opensource.org/licenses/MIT or other licenses. Appropriate licensing
+https://opensource.org/licenses/MIT or other licenses. Appropriate licensing
 information can be found in the header of the file or in the folder containing
 the file.

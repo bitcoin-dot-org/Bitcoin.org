@@ -223,7 +223,7 @@ tr:
     downloadsig: "Gönderme imzalarını onayla "
     sourcecode: "Kaynak kodunu edinin"
     versionhistory: "Sürüm geçmişini göster"
-    notelicense: "Bitcoin Core kişiler tarafından geliştirilen <a href=\"https://www.fsf.org/about/what-is-free-software\">ücretsiz yazılım</a> projesidir, <a href=\"http://opensource.org/licenses/mit-license.php\">MIT lisansı</a> altında yayınlanır."
+    notelicense: "Bitcoin Core kişiler tarafından geliştirilen <a href=\"https://www.fsf.org/about/what-is-free-software\">ücretsiz yazılım</a> projesidir, <a href=\"https://opensource.org/licenses/mit-license.php\">MIT lisansı</a> altında yayınlanır."
     notesync: "Bitcoin Core'un ilk senkronizasyonu biraz zaman alabilir. Blok zincir boyutu'nun ({{site.text.bitcoin_datadir_gb}}GB'nin üzerinde) tamamı için güçlü bir bağlantınızın ve yeterli depolama alanınızın olduğundan emin olmalısınız. Eğer torrent dosyalarının nasıl indirildiğini biliyorsanız, uygulamanızı başlatmadan önce <a href=\"/bin/blockchain/bootstrap.dat.torrent\">bootstrap.dat</a>(blok zincirinin önceki kopyası) dosyasını Bitcoin Core veri dizinine yerleştirerek süreci hızlandırabilirsiniz."
     patient: "Sabırlı olmalısınız"
   events:
@@ -670,7 +670,7 @@ tr:
     menu-vocabulary: Sözlük
     menu-you-need-to-know: "Bilmeniz gerekenler"
     banner-translate: "Bu dil için çeviriler güncel değildir.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">bitcoin.org'un dilinize çevrilmesine yardım etmek için buraya tıklayın</a>."
-    footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayınlanmaktadır"
+    footer: "<a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT lisansı</a> altında yayınlanmaktadır"
     sponsor: "Sponsor bir topluluğun web sitesi"
     getstarted: "Bitcoin'e başlarken"
   url:

@@ -287,7 +287,7 @@ ru:
     downloadtorrent: "Загрузить через Торрент."
     source: "Исходный код"
     versionhistory: "История версий"
-    notelicense: "Bitcoin Core - разрабатываемый коллективно <a href=\"https://www.fsf.org/about/what-is-free-software\">свободный проект с открытым исходным кодом</a>, распространяемый под лицензией <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
+    notelicense: "Bitcoin Core - разрабатываемый коллективно <a href=\"https://www.fsf.org/about/what-is-free-software\">свободный проект с открытым исходным кодом</a>, распространяемый под лицензией <a href=\"https://opensource.org/licenses/mit-license.php\">MIT</a>."
     notesync: "Первоначальная синхронизация Bitcoin Core займет время и приведет к загрузке большого объема данных. Вам следует убедиться, что у вас есть достаточно широкий канал и место на диске для хранения всего блокчейна (более  {{site.text.bitcoin_datadir_gb}} ГБ данных). Если у вас хорошее интернет-соединение, вы можете поддержать сеть, оставляя ваш ПК включенным с запущенным Bitcoin Core и открытым поротом 8333."
     full_node_guide: "Больше деталей в <a href=\"/en/full-node\">гайде по полным узлам</a>."
     patient: "Проверьте ширину канала и место на диске"
@@ -830,7 +830,7 @@ ru:
       Эта страница была перемещена на новый сайт
       Bitcoin Core (нажмите для перехода)
     banner-translate: "Перевод на этот язык устарел. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Кликните здесь чтобы помочь перевести bitcoin.org на ваш язык</a>."
-    footer: "ПО распространяется под лицензией <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT</a>"
+    footer: "ПО распространяется под лицензией <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT</a>"
     sponsor: "Веб-сайт сообщества спонсируется"
     getstarted: "Начало работы с Биткойном"
     bitcoin-core: "Bitcoin Core"

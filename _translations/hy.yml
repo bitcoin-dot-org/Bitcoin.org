@@ -541,7 +541,7 @@ hy:
     downloadtorrent: "Ներբեռնել torrent"
     source: "Ընթացիկ ծրագիր"
     versionhistory: "Ցույց տալ տարբերակի պատմությունը"
-    notelicense: "Բիթքոյնի միջուկը համայնքի կողմից վերահսկվող  <a href=\"https://www.fsf.org/about/what-is-free-software\">ազատ ծրագրային ապահովման </a> նախագիծ է, որը թողարկվել է <a href=\"http://opensource.org/licenses/mit-license.php\">Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրով</a>։  "
+    notelicense: "Բիթքոյնի միջուկը համայնքի կողմից վերահսկվող  <a href=\"https://www.fsf.org/about/what-is-free-software\">ազատ ծրագրային ապահովման </a> նախագիծ է, որը թողարկվել է <a href=\"https://opensource.org/licenses/mit-license.php\">Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրով</a>։  "
     notesync: "Բիթքոյնի միջուկի սկզբնական համաժամեցման համար կպահանջվի որոշակի ժամանակ և շատ տվյալների ներբեռնում: Դուք պետք է համոզվեք, որ ունեք բավարար թողունակություն և հիշողություն նախատեսված բլոկների ողջ շղթայի չափի համար (ավելի քան {{site.text.bitcoin_datadir_gb}} ԳԲ): Եթե Ձեր համացանցային կապն արագ է, ապա կարող եք օգնել ուժեղացնել ցանցը՝ Ձեր համակարգիչը միացած պահելով Բիթքոյն միջուկին և 8333 պորտին:"
     full_node_guide: "Մանրամասների համար կարդալ <a href=\"/en/full-node\">ամբողջական հանգույցի ուղեցույցը</a>:"
     patient: "Ստուգեք Ձեր համակարգչի թողունակությունն ու հիշողության ծավալը"
@@ -1133,7 +1133,7 @@ hy:
         Էջը տեղափոխվել է Բիթքոյնի միջուկի
         նոր կայք (սեղմեք այստեղ՝ հղմանը հետևելու համար)
     banner-translate: "Այս լեզվով թարգմանությունները հնացած են: <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">bitcoin.org-ը Ձեր լեզվով թարգամնելու համար սեղմեք այստեղ</a>:"
-    footer: "Թողարկվել է <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրով</a>։"
+    footer: "Թողարկվել է <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">Մասաչուսեթսի տեխնոլոգիական ինստիտուտի (MIT) արտոնագրով</a>։"
     donate-community: "Աջակցել Bitcoin.org-ին"
     donate-support: "Bitcoin.org-ը աջակցություն է ստանում համայնքից"
     network-status: "Ցանցի կարգավիճակը"

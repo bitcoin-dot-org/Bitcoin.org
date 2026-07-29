@@ -538,7 +538,7 @@ pt_BR:
     downloadtorrent: "Faça o download do torrent."
     source: "Código fonte"
     versionhistory: "Mostrar histórico da versão"
-    notelicense: "Bitcoin Core é um projeto <a href=\"https://www.fsf.org/about/what-is-free-software\">livre e de código aberto</a>, lançado sob a licença <a href=\"http://opensource.org/licenses/mit-license.php\">MIT</a>."
+    notelicense: "Bitcoin Core é um projeto <a href=\"https://www.fsf.org/about/what-is-free-software\">livre e de código aberto</a>, lançado sob a licença <a href=\"https://opensource.org/licenses/mit-license.php\">MIT</a>."
     notesync: "A sincronização inicial do Bitcoin Core irá demorar e fará o download de muitos dados. Você deve se assegurar que a velocidade de internet e seu espaço em disco são suficientes para baixar toda a blockchain (mais de {{site.text.bitcoin_datadir_gb}}GB). Se você tiver uma boa conexão de Internet, você pode ajudar a fortalecer a rede ao executando em seu PC o Bitcoin Core com a porta 8333 aberta."
     full_node_guide: "Leia o <a href=\"/en/full-node\">guia nó completo</a> para detalhes"
     patient: "Verifique a sua largura de banda e espaço disponível"
@@ -1127,7 +1127,7 @@ pt_BR:
         Esta página se mudou para o novo site do Bitcoin
         Core (clique aqui para ser redirecionado)
     banner-translate: "Traduções para esse idioma não estão atualizadas. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Clique aqui para ajudar a traduzir o bitcoin.org para o seu idioma.</a>"
-    footer: "Liberado sob a <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">Licença MIT</a>"
+    footer: "Liberado sob a <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">Licença MIT</a>"
     donate-community: "Ajude o Bitcoin.org"
     donate-support: "Bitcoin.org é apoiado pela comunidade."
     network-status: "Status da Rede"

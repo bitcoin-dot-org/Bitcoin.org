@@ -506,7 +506,7 @@ ja:
     downloadtorrent: "Torrentファイルのダウンロード"
     source: "ソースコード"
     versionhistory: "バージョン履歴の表示"
-    notelicense: "Bitcoin Coreは、コミュニティによって運営されている<a href=\"https://www.fsf.org/about/what-is-free-software\">フリーソフトウェア</a>プロジェクトであり、<a href=\"http://opensource.org/licenses/mit-license.php\">MITライセンス</a>の元に公開されています。"
+    notelicense: "Bitcoin Coreは、コミュニティによって運営されている<a href=\"https://www.fsf.org/about/what-is-free-software\">フリーソフトウェア</a>プロジェクトであり、<a href=\"https://opensource.org/licenses/mit-license.php\">MITライセンス</a>の元に公開されています。"
     notesync: "Bitcoin Coreの初期同期には時間を要し、また大量のデータをダウンロードします。全ブロックチェーン (over {{site.text.bitcoin_datadir_gb}}GB)をダウンロードする上では、十分な帯域幅とストレージ容量がある事をご確認ください。良好なインターネット接続環境をお持ちの場合、Bitcoin Coreが立ち上がった状態で8333ポートを開け、PCを起動したままにする事で、ネットワーク維持に協力できます。"
     full_node_guide: "詳細は<a href=\"/en/full-node\">フルノードガイド</a>をご参照ください。"
     patient: "帯域幅とディスク容量をご確認ください"
@@ -1057,7 +1057,7 @@ ja:
         このページは新しいBitcoin Coreのウェブサイトに移動しました。
         （リダイレクトにはこちらをクリックください）
     banner-translate: "この言語の翻訳は古くなっています。<a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">ご自身の言語で bitcoin.org の翻訳ボランティアをされたい場合、こちらをクリックください</a>。"
-    footer: "<a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MITライセンス</a>の下でのリリース"
+    footer: "<a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MITライセンス</a>の下でのリリース"
     donate-community: "Bitcoin.orgを支援する"
     donate-support: "Bitcoin.orgはコミュニティに支えられています。"
     network-status: "ネットワークステータス"

@@ -542,7 +542,7 @@ de:
     downloadtorrent: "Download über Torrent"
     source: "Quelltext"
     versionhistory: "Versionshistorie anzeigen"
-    notelicense: "Bitcoin Core ist ein gemeinschaftliches, <a href=\"https://www.fsf.org/about/what-is-free-software\">freies Software</a>-Projekt, veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-Lizenz</a>."
+    notelicense: "Bitcoin Core ist ein gemeinschaftliches, <a href=\"https://www.fsf.org/about/what-is-free-software\">freies Software</a>-Projekt, veröffentlicht unter der <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-Lizenz</a>."
     notesync: "Die Erstsynchronisierung von Bitcoin Core dauert sehr lange und lädt eine große Menge Daten herunter. Sie sollten sicherstellen, dass Sie ausreichend Bandbreite und Speicherplatz für die volle Größe der Blockchain (über {{site.text.bitcoin_datadir_gb}}GB) zur Verfügung haben. Falls Sie eine gute Internetverbindung haben, können Sie dabei helfen, das Netzwerk zu stärken, indem Sie auf Ihrem PC Bitcoin Core - mit geöffneten Port 8333 - laufen lassen."
     full_node_guide: "Lesen Sie den <a href=\"/en/full-node\">Full Node-Guide</a> für Details."
     patient: "Überprüfen Sie Ihre Bandbreite und den freien Speicherplatz"
@@ -1138,7 +1138,7 @@ de:
         Diese Seite ist auf die neue Bitcoin Core
         Website umgezogen (Klicken Sie hier, um weitergeleitet zu werden)
     banner-translate: "Übersetzungen für diese Sprache sind veraltet. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicken Sie hier, um bei der Übersetzung von bitcoin.org in Ihre Sprache zu helfen</a>."
-    footer: "Veröffentlicht unter der <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-Lizenz</a>"
+    footer: "Veröffentlicht unter der <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-Lizenz</a>"
     donate-community: "Bitcoin.org unterstützen"
     donate-support: "Bitcoin.org ist ein Community-Projekt."
     network-status: "Netzwerkstatus"

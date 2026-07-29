@@ -1,6 +1,6 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 {% comment %}<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->{% endcomment %}
@@ -461,7 +461,7 @@ http://opensource.org/licenses/MIT.
 [murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
-[MIT license]: http://opensource.org/licenses/MIT
+[MIT license]: https://opensource.org/licenses/MIT
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat

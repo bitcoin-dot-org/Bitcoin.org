@@ -540,7 +540,7 @@ ca:
     downloadtorrent: "Descarregar torrent"
     source: "Codi font"
     versionhistory: "Mostrar l'historial de versions"
-    notelicense: "Bitcoin Core és un projecte de <a href=\"https://www.fsf.org/about/what-is-free-software\">programari lliure</a> gestionat per la comunitat i entregat sota <a href=\"http://opensource.org/licenses/mit-license.php\">llicència MIT</a>."
+    notelicense: "Bitcoin Core és un projecte de <a href=\"https://www.fsf.org/about/what-is-free-software\">programari lliure</a> gestionat per la comunitat i entregat sota <a href=\"https://opensource.org/licenses/mit-license.php\">llicència MIT</a>."
     notesync: "La sincronització inicial de Bitcoin Core trigarà temps i baixarà moltes dades. Heu d'assegurar-vos que teniu prou amplada de banda i emmagatzematge per a la mida de la cadena de blocs completa (més de {{site.text.bitcoin_datadir_gb}} GB). Si teniu una bona connexió a Internet, podeu ajudar a enfortir la xarxa mantenint el vostre PC funcionant amb Bitcoin Core i el port 8333 oberts."
     full_node_guide: "Llegiu la <a href=\"/en/full-node\">guia completa</a> per a més detalls"
     patient: "Comprova el teu espai i ample de banda"
@@ -1132,7 +1132,7 @@ ca:
         Aquesta pàgina s'ha mogut al nou Bitcoin Core
         lloc web (fes clic aquí per ser redirigit)
     banner-translate: "Les traduccions d'aquest idioma estan obsoletes. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Feu clic aquí per ajudar a traduir bitcoin.org al vostre idioma</a>."
-    footer: "publicat sota la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">llicència MIT</a>"
+    footer: "publicat sota la <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">llicència MIT</a>"
     donate-community: "Suporta Bitcoin.org"
     donate-support: "Bitcoin.org està suportat per la comunitat."
     network-status: "Estat de la xarxa"
