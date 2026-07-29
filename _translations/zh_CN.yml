@@ -381,7 +381,7 @@ zh_CN:
     table: "目录"
     general: "概览"
     whatisbitcoin: "什么是比特币？"
-    whatisbitcointxt1: "比特币是一个共识网络，促成了一个全新的支付系统和一种完全数字化的货币。它是第一个去中心化的对等支付网络，由其用户自己掌控而无须中央管理机构或中间人。从用户的角度来看，比特币很像互联网的现金。比特币也可以看作是目前最杰出的<a href=\"http://financialcryptography.com/mt/archives/001325.html\">三式簿记系统</a>。"
+    whatisbitcointxt1: "比特币是一个共识网络，促成了一个全新的支付系统和一种完全数字化的货币。它是第一个去中心化的对等支付网络，由其用户自己掌控而无须中央管理机构或中间人。从用户的角度来看，比特币很像互联网的现金。比特币也可以看作是目前最杰出的<a href=\"https://financialcryptography.com/mt/archives/001325.html\">三式簿记系统</a>。"
     creator: "谁创造了比特币？"
     creatortxt1: "比特币是第一个实现了“隐秘货币”概念的货币。1998年，Wei Dai在cypherpunks邮件列表中首次阐述了“隐秘货币”的概念，即：一个采用密码学原理控制货币的发行和交易、而不是依赖于中央管理机构的全新的货币形态。2009年，中本聪（Satoshi Nakamoto 化名）在cryptography邮件列表中发表了第一个比特币规范及其概念证明。2010年年底，中本聪离开该项目，关于他的身份没有透露太多。此后，<a href=\"#development#\">众多开发人员</a>致力于比特币的项目，比特币社区迅速成长起来。"
     creatortxt2: "中本聪的匿名身份经常会引起毫无根据的忧虑，其中很多是与比特币开放源代码特性的误解有关。比特币的协议和软件都是公开发布的，世界各地的任何开发人员都可以查看其代码，或者开发他们自己修改过的比特币软件版本。就像目前的开发人员，中本聪的影响仅仅局限于那些他做出的被其他人采纳的改动，因此，中本聪并没有控制比特币。那么，在今天，关于比特币的发明者的身份问题可能和纸张发明者的身份问题一样。"
@@ -396,7 +396,7 @@ zh_CN:
     acquireli1: "作为商品或服务的支付方式。"
     acquireli2: "在一个<a href=\"http://howtobuybitcoins.info\">比特币交易所</a>购买比特币。"
     acquireli3: "和<a href=\"https://localbitcoins.com/\">你附近的人</a>兑换比特币。"
-    acquireli4: "通过具有竞争力的<a href=\"http://www.bitcoinmining.com/\">挖矿</a>赚取比特币。"
+    acquireli4: "通过具有竞争力的<a href=\"https://www.bitcoinmining.com/\">挖矿</a>赚取比特币。"
     acquiretxt1: "尽管可能有人愿意让对方以信用卡或PayPal支付的方式购买自己的比特币，大部分的交易平台是不接受来自这些支付方式的资金的。这是为了防止某些情况下有人用PayPal购买比特币，然后在交易到一半的时候撤销。这通常被称作退单。"
     makepayment: "用比特币支付有多难？"
     makepaymenttxt1: "相比借记卡或信用卡购物，比特币付款更加容易，无需一个商家账户就可以接收比特币付款。在你的电脑或智能手机上的钱包应用程序中，输入收款人的比特币地址和付款金额，按发送键即可完成付款。为了更方便地输入收款人地址，很多钱包可以通过二维码扫描或者NFC技术触碰两部手机获得地址。"
@@ -504,7 +504,7 @@ zh_CN:
     miningsecure: "如何通过挖矿帮助保护比特币的安全？"
     miningsecuretxt1: "挖矿创造了一种等同于彩票的竞争机制，向块链连续添加新的交易区块对任何人来说都是非常困难的。这一机制可以防止任何个体获得能够冻结某些交易的能力，从而确保了网络的中立性。这一机制也可以防止任何个体替换一部分块链来降低他们自己的花费，否则这种做法可以被用来欺诈其他用户。挖矿机制使得撤销一个以往的交易变得极其困难，因为这需要重写该交易之后的所有区块。"
     miningstart: "开始挖矿前，我需要些什么？"
-    miningstarttxt1: "在比特币的早期，任何人都可以利用他们计算机的中央处理器寻找新的区块。随着越来越多的人开始挖矿，寻找新区块的难度大幅提高，以至于目前唯一有成本效益的方法就是使用专门的硬件。你可以访问<a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> 获得更多信息。"
+    miningstarttxt1: "在比特币的早期，任何人都可以利用他们计算机的中央处理器寻找新的区块。随着越来越多的人开始挖矿，寻找新区块的难度大幅提高，以至于目前唯一有成本效益的方法就是使用专门的硬件。你可以访问<a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> 获得更多信息。"
     security: "安全性"
     secure: "比特币安全吗？"
     securetxt1: "比特币技术，包括协议和密码学，有着强大的安全性记录，并且比特币网络也许是世界上最大的分布式计算工程。比特币最常见的薄弱环节是用户失误。存储私钥的比特币钱包文件可能会意外地被删除，丢失或盗取。这跟用电子形式存储的实体现金非常相似。幸运的是，用户可以利用可靠的<a href=\"#secure-your-wallet#\">安全性策略</a>来保护他们的资金，也可以使用提供良好安全性等级以及偷盗或遗失保险服务的供应商。"
@@ -589,7 +589,7 @@ zh_CN:
     micro: "微支付"
     microtext: >
         收听按秒计费的网络广播，支付小费来屏蔽网页广告，或是按KB购买WiFi流量 -- 比特币的性能可以使这些想法成为可能。<a href="https://bitcoinj.github.io/working-with-micropayments">了解更多</a>使比特币微支付成为可能的技术以及正在设计实现中的使微支付更加便捷的<a
-        href="http://lightning.network/">未来更新</a>。
+        href="https://lightning.network/">未来更新</a>。
     mediation: "纠纷仲裁"
     mediationtext: "比特币可以利用多重签名来开发创新的纠纷仲裁服务。这一服务可以在双发无法达成一致的情况下由对资金没有控制权的第三方来批准或者拒绝一笔交易。因为这些服务都将与任何比特币用户和商家兼容，该创新势必导致自由竞争和更高的质量标准。"
     multisig: "多重签名账户"
@@ -682,7 +682,7 @@ zh_CN:
     pagetitle: "比特币资源"
     pagedesc: "寻找有关比特币的有用的站点和资源。"
     linkwiki: "<a href=\"https://zh-cn.bitcoin.it/\">比特币维基</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "目录"
     linkwallets: "钱包"
     linkmerchants: "商户"
@@ -754,7 +754,7 @@ zh_CN:
     node: "成为比特币网络的一部分"
     nodetxt: "如果你有一个很好的网络连接，你可以通过保持<a href=\"/en/full-node\">完全节点软件</a>在你的电脑或服务器上的运行，同时保持端口 8333 处于开放状态来加强比特币网络。完全节点传送所有的交易并保证交易安全。"
     mining: "挖矿"
-    miningtxt: "您可以开始通过<a href=\"http://www.bitcoinmining.com/\">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 较小的矿池并且优先考虑去中心化的矿池比如<a href=\"http://p2pool.in/\">P2Pool</a>或者支持getblocktemplate(GBT)的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">矿池</a>。 "
+    miningtxt: "您可以开始通过<a href=\"https://www.bitcoinmining.com/\">比特币挖矿</a> 来帮助处理交易。为了保护网络，你应该加入 较小的矿池并且优先考虑去中心化的矿池比如<a href=\"http://p2pool.in/\">P2Pool</a>或者支持getblocktemplate(GBT)的<a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">矿池</a>。 "
     develop: "开发"
     developtxt: "比特币是开源的。如果你是一个开发者，你可以施展你的超能力来做对比特币有利的事和<a href=\"#development#\">改进比特币</a>，或者，你也可以打造出基于比特币的惊人的服务或软件。"
     donation: "捐赠"

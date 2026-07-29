@@ -571,7 +571,7 @@ pt_BR:
     table: "Índice de conteúdo"
     general: "Geral"
     whatisbitcoin: "O que é Bitcoin?"
-    whatisbitcointxt1: "Bitcoin é uma rede que funciona de forma consensual onde foi possível criar uma nova forma de pagamento e também uma nova moeda completamente digital. É a primeira rede de pagamento descentralizada (ponto-a-ponto) onde os usuários é que gerenciam o sistema, sem necessidade de intermediador ou autoridade central. Da perspectiva do usuário, Bitcoin funciona como dinheiro para a Internet. Bitcoin também pode ser visto como o mais promissor <a href=\"http://financialcryptography.com/mt/archives/001325.html\">sistema de contabilidade de entrada tripla</a> existente."
+    whatisbitcointxt1: "Bitcoin é uma rede que funciona de forma consensual onde foi possível criar uma nova forma de pagamento e também uma nova moeda completamente digital. É a primeira rede de pagamento descentralizada (ponto-a-ponto) onde os usuários é que gerenciam o sistema, sem necessidade de intermediador ou autoridade central. Da perspectiva do usuário, Bitcoin funciona como dinheiro para a Internet. Bitcoin também pode ser visto como o mais promissor <a href=\"https://financialcryptography.com/mt/archives/001325.html\">sistema de contabilidade de entrada tripla</a> existente."
     creator: "Quem criou o Bitcoin?"
     creatortxt1: "Bitcoin é a primeira implementação de um conceito chamado de \"cripto-moeda\", que foi descrita pela primeira vez em 1998 por Wei Dai na lista de discussão cypherpunks, sugerindo a idéia de uma nova forma de dinheiro que usa criptografia para controlar sua criação e as transações, ao invés de uma autoridade central. A primeira especificação do Bitcoin e prova de conceito foi publicado em 2009 em uma lista de criptografia por Satoshi Nakamoto. Satoshi deixou o projeto no final de 2010, sem revelar muito sobre si mesmo. A comunidade desde então tem crescido exponencialmente com <a href=\"#development#\"> muitos desenvolvedores </a> trabalhando em Bitcoin."
     creatortxt2: "O anonimato de Satoshi frequentemente levantou preocupações injustificadas, muitos dos quais estão ligados a incompreensão da natureza open-source de Bitcoin. O protocolo e software Bitcoin são publicados abertamente e qualquer desenvolvedor em todo o mundo pode rever o código ou fazer a sua própria versão modificada do software Bitcoin. Assim como os desenvolvedores atuais, a influência de Satoshi limitou-se às mudanças que ele fez sendo adotada por outros e, portanto, ele não controlou Bitcoin. Como tal, a identidade do inventor do Bitcoin é provavelmente tão relevante hoje quanto a identidade da pessoa que inventou o papel."
@@ -586,7 +586,7 @@ pt_BR:
     acquireli1: "Como pagamento de bens ou serviços."
     acquireli2: "Comprar bitcoins em <a href=\"https://www.buybitcoinworldwide.com\">Bitcoin câmbio.</a>"
     acquireli3: "Troque de bitcoins com <a href=\"https://localbitcoins.com/\"> alguém perto de você </ a>."
-    acquireli4: "Ganhe bitcoins através de <a href=\"http://www.bitcoinmining.com/\">mineração </a> competitiva."
+    acquireli4: "Ganhe bitcoins através de <a href=\"https://www.bitcoinmining.com/\">mineração </a> competitiva."
     acquiretxt1: "Embora possa ser possível encontrar pessoas que desejam vender bitcoins em troca de um cartão de crédito ou pagamento PayPal, a maioria das trocas não permitem o financiamento através destes métodos de pagamento. Isto é devido aos casos em que alguém compra bitcoins com PayPal, e, em seguida, inverte a sua metade da transação. Isto é comumente referido como um estorno."
     makepayment: "Qual a dificuldade para fazer um pagamento Bitcoin?"
     makepaymenttxt1: "Pagamentos Bitcoin são mais fáceis de fazer do que compras feitas com cartão de crédito ou débito, e podem ser recebidos sem uma conta de comerciante. Os pagamentos são feitos a partir de uma aplicação de carteira, seja no seu computador ou smartphone, digitando o endereço do destinatário, o valor do pagamento e apertando enviar. Para tornar mais fácil de inserir o endereço de um destinatário, muitas carteiras podem obter o endereço por digitalização de um código QR ​​ou tocar dois telefones com a tecnologia NFC."
@@ -728,7 +728,7 @@ pt_BR:
     miningsecure: "Como a mineração ajuda a manter a segurança do Bitcoin?"
     miningsecuretxt1: "A mineração cria o equivalente a uma loteria competitiva que torna muito difícil para qualquer um adicionar consecutivamente novos blocos de transações na cadeia de blocos. Isso protege a neutralidade da rede, impedindo que qualquer indivíduo ganhe o poder de bloquear determinadas transações. Isso também impede que qualquer indivíduo substituia partes da cadeia de blocos para reverter seus próprios gastos, o que poderia ser usado para fraudar outros usuários. A mineração torna exponencialmente mais difícil de reverter uma transação passada, exigindo a alteração de todos os blocos seguintes a esta transação."
     miningstart: "O que eu preciso para começar a minerar?"
-    miningstarttxt1: "Nos primórdios do Bitcoin, qualquer pessoa poderia encontrar novos blocos usando a CPU do seu computador. Quando mais e mais pessoas começaram a minerar, a dificuldade em encontrar novos blocos cresceu gradativamente ao ponto de apenas hardwares especializados com ótimo custo-benefício de mineração serem usados hoje. Você pode visitar <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> para maiores informações."
+    miningstarttxt1: "Nos primórdios do Bitcoin, qualquer pessoa poderia encontrar novos blocos usando a CPU do seu computador. Quando mais e mais pessoas começaram a minerar, a dificuldade em encontrar novos blocos cresceu gradativamente ao ponto de apenas hardwares especializados com ótimo custo-benefício de mineração serem usados hoje. Você pode visitar <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> para maiores informações."
     security: "Segurança"
     secure: "Bitcoin é seguro?"
     securetxt1: "A tecnologia Bitcoin - o protocolo e a criptografia - tem um registro forte de segurança e a rede Bitcoin é provavelmente o maior projeto de computação distribuida do mundo. A vulnerabilidade mais comum do Bitcoin é o erro do usuário. Os arquivos de carteira de Bitcoin que guardam as chaves privadas necessárias, podem ser apagadas, roubadas ou perdidas. Isto é bem parecido com dinheiro tradicional mantido em formato digital. Fortunadamente, os usuários podem utilizar boas <a href=\"#secure-your-wallet#\">práticas de segurança</a> para proteger seu dinheiro ou utilizar provedores de serviço que oferecem bons níveis de seguro contra perda e roubo."
@@ -817,7 +817,7 @@ pt_BR:
         um hotspot Wi-Fi pagando por consumo. Bitcoin é eficiente o suficiente para
         tornar todas essas idéias possíveis. <a href="https://bitcoinj.github.io/working-with-micropayments">Saiba
         mais</a> sobre a tecnologia por trás dos micropagamentos do Bitcoin ou sobre
-        <a href="http://lightning.network/">futuras atualizações</a> atualmente sendo
+        <a href="https://lightning.network/">futuras atualizações</a> atualmente sendo
         projetadas e implementadas para tornar os micropagamentos mais acessíveis.
     mediation: "Mediação de disputa"
     mediationtext: "Bitcoin pode ser usado para desenvolver serviços inovadores de mediação e disputa usando multiassinaturas. Tais serviços podem tornar possível que uma terceira parte aprove ou rejeite a transação em casos de desacordo entre as outras partes sem que este tenha controle do dinheiro. Já que estes serviços serão compatíveis com qualquer usuário e comerciante usando o Bitcoin, isto levará sem dúvida a livre concorrência e nível mais alto de qualidade de padrões."
@@ -911,7 +911,7 @@ pt_BR:
     pagetitle: "Recursos Bitcoin"
     pagedesc: "Sites úteis e recursos sobre Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Wiki Bitcoin</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Diretórios"
     linkwallets: "Carteiras"
     linkmerchants: "Lojistas"
@@ -1018,7 +1018,7 @@ pt_BR:
     node: "Faça parte da rede Bitcoin"
     nodetxt: "Se você tem uma boa conexão de internet, você pode fortalecer a rede Bitcoin ao manter um <a href=\"/en/full-node\">full node</a> rodando no seu computador ou servidor na porta 8333. Full nodes certificam e transmitem todas as transações."
     mining: "Mineração"
-    miningtxt: "Você pode começar a <a href=\"http://www.bitcoinmining.com/\">minerar Bitcoins</a> para ajudar a processar transações. Para proteger a rede, você deve se juntar a pools de mineração menores e preferir pools descentralizadas como <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> com suporte a getblocktemplate (GBT)."
+    miningtxt: "Você pode começar a <a href=\"https://www.bitcoinmining.com/\">minerar Bitcoins</a> para ajudar a processar transações. Para proteger a rede, você deve se juntar a pools de mineração menores e preferir pools descentralizadas como <a href=\"http://p2pool.in/\">P2Pool</a> ou <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> com suporte a getblocktemplate (GBT)."
     develop: "Contribuindo com código"
     developtxt: "O Bitcoin é um software livre. Se você é um desenvolvedor, você pode usar seus superpoderes para fazer o bem e <a href=\"#development#\">melhorar o Bitcoin</a>. Ou você pode criar novos serviços ou softwares incríveis que usam o Bitcoin."
     donation: "Doando"

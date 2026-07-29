@@ -570,7 +570,7 @@ id:
     table: "Daftar Isi"
     general: "Umum"
     whatisbitcoin: "Apa itu Bitcoin?"
-    whatisbitcointxt1: "Bitcoin adalah jaringan konsensus yang memungkinkan sistem pembayaran baru dan uang yang sepenuhnya berbentuk digital. Bitcoin merupakan jaringan pembayaran peer-to-peer desentralisasi pertama yang dikontrol sepenuhnya oleh penggunanya tanpa ada otoritas sentral ataupun perantara. Dari sudut pandang pengguna, Bitcoin serupa seperti uang tunai di dunia internet. Bitcoin juga dapat dipandang sebagai <a href=\"http://financialcryptography.com/mt/archives/001325.html\">sistem pembukuan tiga pencatatan</a> paling menonjol yang ada saat ini."
+    whatisbitcointxt1: "Bitcoin adalah jaringan konsensus yang memungkinkan sistem pembayaran baru dan uang yang sepenuhnya berbentuk digital. Bitcoin merupakan jaringan pembayaran peer-to-peer desentralisasi pertama yang dikontrol sepenuhnya oleh penggunanya tanpa ada otoritas sentral ataupun perantara. Dari sudut pandang pengguna, Bitcoin serupa seperti uang tunai di dunia internet. Bitcoin juga dapat dipandang sebagai <a href=\"https://financialcryptography.com/mt/archives/001325.html\">sistem pembukuan tiga pencatatan</a> paling menonjol yang ada saat ini."
     creator: "Siapa yang menciptakan Bitcoin?"
     creatortxt1: "Bitcoin adalah implementasi pertama tentang konsep yang bernama \"cryptocurrency\", yang pertama kali dijelaskan pada tahun 1998 oleh Wei Dai dalam milis cypherpunks, menyarankan ide tentang bentuk baru uang yang menggunakan kriptografi untuk mengontrol pembuatan dan transaksi, daripada menggunakan otoritas terpusat. Spesifikasi Bitcoin dan bukti konsep pertama kali dipublikasikan pada tahun 2009 dalam sebuah milis kriptografi oleh Satoshi Nakamoto. Satoshi meninggalkan proyek ini di akhir tahun 2010 tanpa mengungkapkan diri pribadinya yang sebenarnya. Komunitas Bitcoin berkembang pesat seiring banyaknya <a href=\"#development#\">pengembang</a> yang mengerjakan Bitcoin."
     creatortxt2: "Anonimitas Satoshi seringkali menimbulkan perhatian yang salah, kebanyakan berhubungan dengan salah paham atas sifat Bitcoin yang berbasis sumber terbuka. Protokol dan perangkat lunak BItcoin dipublikasikan secara terbuka dan pengembang dari seluruh dunia dapat meninjau kode atau membuat sendiri perangkat lunak Bitcoin yang telah dimodifikasi versi mereka. Sama halnya dengan pengembang saat ini, pengaruh Satoshi terbatas pada beberapa perubahan yang ia ciptakan dan diadopsi oleh pengembang lain, dan dia tidak mengontrol Bitcoin. Dengan demikian, mencari identitas penemu Bitcoin saat ini sama saja seperti mencari identitas penemu surat kabar."
@@ -585,7 +585,7 @@ id:
     acquireli1: "Sebagai pembayaran untuk barang dan jasa."
     acquireli2: "Beli bitcoin di sebuah<a href=\"https://www.buybitcoinworldwide.com\">bursa Bitcoin</a>."
     acquireli3: "Bertukar bitcoin dengan <a href=\"https://localbitcoins.com/\">seseorang di dekat Anda</a>."
-    acquireli4: "Dapatkan bitcoin melalui cara <a href=\"http://www.bitcoinmining.com/\">menambang</a> yang kompetitif."
+    acquireli4: "Dapatkan bitcoin melalui cara <a href=\"https://www.bitcoinmining.com/\">menambang</a> yang kompetitif."
     acquiretxt1: "Meskipun masih mungkin untuk menemukan individu yang berniat menjual bitcoin untuk ditukar dengan pembayaran kartu kredit ataupun PayPal, sebagian besar transaksi tidak mengizinkan pembayaran melalui metode-metode tersebut. Hal ini dikarenakan kasus-kasus di mana seseorang membeli bitcoin menggunakan PayPal, lalu membatalkan separuh transaksi mereka. Kasus seperti ini biasanya disebut \"chargeback\"."
     makepayment: "Sulitkah melakukan pembayaran menggunakan Bitcoin?"
     makepaymenttxt1: "Pembayaran Bitcoin lebih mudah dibandingkan dengan kartu kredit maupun debit, dan dapat diterima tanpa akun penjual. Pembayaran dilakukan melalui aplikasi wallet, baik di komputer maupun ponsel anda, dengan memasukkan alamat penerima, jumlah pembayaran, dan tekan kirim. Untuk mempermudah memasukkan alamat penerima, banyak wallet kini dapat membaca alamat dengan memindai kode QR atau menyentuhkan dua ponsel bersamaan dengan teknologi NFC."
@@ -728,7 +728,7 @@ id:
     miningsecure: "Bagaimana penambangan membantu mengamankan Bitcoin?"
     miningsecuretxt1: "Penambangan hampir serupa seperti lotre kompetitif yang membuat semua orang sulit untuk menambahkan blok-blok transaksi baru ke dalam rantai-blok. Ini melindungi netralitas jaringan dengan mencegah siapapun mendapat kekuasaan untuk memblokir transaksi tertentu. Mekanisme ini juga mencegah siapapun mengganti bagian-bagian dari rantai-blok untuk menarik kembali uang yang mereka belanjakan, yang bisa digunakan sebagai penipuan terhadap pengguna lain. Penambangan membuat sangat sulit secara eksponensial untuk membatalkan transaksi yang telah terjadi dengan meminta penulisan ulang semua blok setelah transaksi tersebut."
     miningstart: "Apa yang saya butuhkan untuk mulai menambang?"
-    miningstarttxt1: "Pada awal kemunculan Bitcoin, siapa saja bisa menemukan blok baru dengan menggunakan CPU komputer mereka. Seiring dengan makin banyaknya orang yang mulai menambang, makin sulit untuk menemukan blok baru hingga sampai pada level di mana hanya metode yang paling ramah biaya untuk menemukan blok baru adalah dengan menggunakan perangkat keras khusus. Anda dapat mengunjungi <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> untuk informasi lebih lanjut."
+    miningstarttxt1: "Pada awal kemunculan Bitcoin, siapa saja bisa menemukan blok baru dengan menggunakan CPU komputer mereka. Seiring dengan makin banyaknya orang yang mulai menambang, makin sulit untuk menemukan blok baru hingga sampai pada level di mana hanya metode yang paling ramah biaya untuk menemukan blok baru adalah dengan menggunakan perangkat keras khusus. Anda dapat mengunjungi <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> untuk informasi lebih lanjut."
     security: "Keamanan"
     secure: "Apakah Bitcoin aman?"
     securetxt1: "Teknologi Bitcoin - protokol dan kriptografi - memiliki catatan rekor keamanan yang kuat, dan jaringan Bitcoin kemungkinan menjadi proyek penghitungan terdistribusi yang terbesar di dunia. Kelemahan Bitcoin yang paling umum terletak pada kesalahan penggunanya. Data-data wallet Bitcoin yang menyimpan kunci pribadi dapat terhapus tanpa sengaja, hilang, atau dicuri. Hal ini serupa dengan uang tunai fisik yang disimpan dalam bentuk digital. Untungnya, pengguna dapat menerapkan <a href=\"#secure-your-wallet#\">langkah-langkah pengamanan</a> untuk melindungi uang mereka atau menggunakan jasa penyedia layanan yang menawarkan keamanan tingkat tinggi dan asuransi terhadap pencurian atau kehilangan."
@@ -817,7 +817,7 @@ id:
         bandwidth dari sebuah hotspot WiFi per kilobyte. Bitcoin cukup efisien melakukan
         semua pembayaran ini. <a href="https://bitcoinj.github.io/working-with-micropayments">Pelajari
         lebih lanjut</a> mengenai teknologi di balik pembayaran mikro Bitcoin atau
-        tentang<a href="http://lightning.network/">upgrade masa depan</a> yang sedang
+        tentang<a href="https://lightning.network/">upgrade masa depan</a> yang sedang
         didesain dan diimplementasikan agar lebih mudah diakses.
     mediation: "Mediasi sengketa"
     mediationtext: "Bitcoin bisa digunakan untuk mengembangkan layanan mediasi penyelesaian sengketa transaksi elektronik yang inovatif menggunakan multiple signature. Layanan ini memungkinkan pihak ketiga untuk menyetujui atau membatalkan transaksi bila ada perselisihan antara pihak-pihak lain tanpa ada kendali atas uang mereka. Karena layanan ini harus sesuai dengan pengguna atau penjual di manapun yang menggunakan Bitcoin, maka kemungkinan layanan ini akan menciptakan iklim kompetisi dengan standar kualitas yang lebih tinggi."
@@ -911,7 +911,7 @@ id:
     pagetitle: "Sumber referensi Bitcoin"
     pagedesc: "Situs web dan sumber referensi yang berguna tentang Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
+    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Direktori"
     linkwallets: "Wallet"
     linkmerchants: "Penjual"
@@ -1018,7 +1018,7 @@ id:
     node: "Jadilah bagian dari jaringan"
     nodetxt: "Jika anda memiliki koneksi internet bagus, Anda bisa memperkuat jaringan Bitcoin dengan menjaga <a href=\"/en/full-node\">perangkat lunak full node</a>  tetap berjalan pada komputer atau server anda dengan port 8333 yang terbuka.  Full node berfungsi untuk mengamankan dan menyampaikan  kembali semua transaksi."
     mining: "Penambangan"
-    miningtxt: "Anda dapat mulai <a href=\"http://www.bitcoinmining.com/\">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya anda bergabung dengan pools pertambangan kecil, dan mungkin bisa memilih kelompok pertambangan terdesentralisasi seperti <a href=\"http://p2pool.in/\">P2Pool</a> atau <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> dengan dukungan getblocktemplate (GBT)."
+    miningtxt: "Anda dapat mulai <a href=\"https://www.bitcoinmining.com/\">menambang bitcoin</a> untuk membantu memroses transaksi. Untuk melindungi jaringan, sebaiknya anda bergabung dengan pools pertambangan kecil, dan mungkin bisa memilih kelompok pertambangan terdesentralisasi seperti <a href=\"http://p2pool.in/\">P2Pool</a> atau <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> dengan dukungan getblocktemplate (GBT)."
     develop: "Pengembangan"
     developtxt: "Bitcoin adalah perangkat lunak gratis, jika anda adalah seorang pengembang, anda dapat menggunakan daya dan potensi anda untuk melakukan kebaikan dan <a href=\"#development#\">meningkatkan Bitcoin</a>. Anda juga dapat membangun layanan atau perangkat lunak baru yang menakjubkan dengan menggunakan Bitcoin."
     donation: "Donasi"
