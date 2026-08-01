@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: en
@@ -359,7 +359,7 @@ Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way to
 do this is to tell Bitcoin Core GUI to start at login. This only works
 in desktop environments that support the [autostart
-specification](http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html#startup),
+specification](https://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html#startup),
 such as Gnome, KDE, and Unity.
 
 While running Bitcoin Core GUI, open the Settings menu and choose
@@ -1114,7 +1114,7 @@ If Bitcoin Core can't automatically configure your router to open port
 8333, you will need to manually configure your router.  We've tried to
 make the following instructions generic enough to cover most router
 models; if you need specific help with your router, please ask for help
-on a tech support site such as [SuperUser](http://superuser.com/).
+on a tech support site such as [SuperUser](https://superuser.com/).
 
 Enabling inbound connections requires two steps, plus an extra third
 step for firewall users:
@@ -1151,7 +1151,7 @@ your router's manual.
 
 Upon connecting, you will probably be prompted for a username and
 password.  If you configured a password, enter it now.  If not,
-the [Router Passwords site](http://www.routerpasswords.com/) provides a
+the [Router Passwords site](https://www.routerpasswords.com/) provides a
 database of known default username and password pairs.
 
 After logging in, you want to search your router's menus for options
@@ -1243,7 +1243,7 @@ change your firewall settings. See the Firewall section below.
 If something else went wrong, it's probably a problem with your router
 configuration. Re-read the instructions above to see if you missed
 anything, search the web for help with "port forwarding", and ask for
-help on sites like [SuperUser](http://superuser.com).
+help on sites like [SuperUser](https://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
@@ -1262,7 +1262,7 @@ additional information for Windows, see the links below:
 
 Mac OS X comes with its firewall disabled by default, but if you have
 enabled it, see the section Allowing Specific Applications from the
-[official Apple guide.](http://support.apple.com/en-us/HT201642)
+[official Apple guide.](https://support.apple.com/en-us/HT201642)
 
 Ubuntu also comes with its firewall disabled by default, but if you have
 enabled it, see the [Ubuntu wiki
@@ -1276,7 +1276,7 @@ instructions to test your connection.
 If something else went wrong re-read the DHCP, port forwarding, and
 firewall instructions above to see if you missed anything, search the
 web for help with "port forwarding" and "opening firewall ports", and
-ask for help on sites like [SuperUser](http://superuser.com).
+ask for help on sites like [SuperUser](https://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
