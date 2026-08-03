@@ -124,7 +124,7 @@ hu:
     summary: "Az írás, amely először mutatta be a Bitcoint"
     description: "Satoshi Nakamoto eredeti könyve jelenleg is ajánlott olvasmány mindenkinek, akit érdekel Bitcoin működése. Válaszd ki, melyik fordítást kívánod elolvasni:"
     translated_by: "fordította"
-    submit_new_translation: 'Le szeretnéd fordítani az írást anyanyelvedre? Látogasd meg a <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin fehér könyvének adatbázisát a GitHubon</a> a további utasításokért és <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">nyiss egy kérelmet</a>, ha kérdésed merülne fel.'
+    submit_new_translation: 'Le szeretnéd fordítani az írást anyanyelvedre? Látogasd meg a <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin fehér könyvének adatbázisát a GitHubon</a> a további utasításokért és <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">nyiss egy kérelmet</a>, ha kérdésed merülne fel.'
   buy:
     title: "Vásárolj bitcoint"
     pagetitle: "Hogyan vásárolj bitcoint"
@@ -144,7 +144,7 @@ hu:
     reddit: "A Reddit Bitcoin-közössége "
     stackexchange: "Bitcoin StackExchange (kérdezz-felelek)"
     irc: "IRC-csevegés"
-    ircjoin: "IRC-csatornák a <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat-on</a>."
+    ircjoin: "IRC-csatornák a <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat-on</a>."
     chanbitcoin: "(általános, Bitcoinnal kapcsolatos témák)"
     chandev: "(fejlesztési és technikai témák)"
     chanotc: "(tőzsdén kívüli (OTC) kereskedelem)"
@@ -465,7 +465,7 @@ hu:
     downloadtorrent: "Torrent letöltése"
     source: "Forráskód"
     versionhistory: "Korábbi verziók mutatása"
-    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"https://opensource.org/licenses/mit-license.php\">MIT licence</a> alatt kibocsátott, <a href=\"https://www.fsf.org/about/what-is-free-software\">ingyenes szoftverprojekt</a>."
+    notelicense: "A Bitcoin Core egy közösség által irányított, az <a href=\"https://www.fsf.org/about/what-is-free-software\">MIT licence</a> alatt kibocsátott, <a href=\"https://opensource.org/licenses/mit-license.php\">ingyenes szoftverprojekt</a>."
     notesync: "A Bitcoin Core első szinkronizációja hosszú időt és rengeteg adat letöltését veszi igénybe. Győződj meg róla, hogy rendelkezel elegendő sávszélességgel és tárhellyel a teljes blokkláncmérethez (több mint {{site.text.bitcoin_datadir_gb}}GB). Amennyiben jó internetkapcsolattal rendelkezel, akkor úgy tudod erősíteni a hálózatot, hogy hagyod futni a számítógépedet a Bitcoin Core-ral és 8333-as porttal megnyitva."
     full_node_guide: "Olvasd el a <a href=\"/en/full-node\">teljes csomópontról szóló tájékoztatót</a> a részletekért."
     patient: "Ellenőrizd sávszélességed és a tárhelyed"
@@ -741,8 +741,8 @@ hu:
         Képzeld el, hogy az internetes rádióadásért másodperc alapon fizetsz, weboldalak
         esetén minden meg nem jelenített reklámért egy kisebb összeget adományozol
         vagy egy wifi hotspot sávszélességét kilobájt alapon vásárolod meg. A bitcoin
-        minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.github.io/working-with-micropayments">Tudj
-        meg többet</a> (angol nyelven) a bitcoin mikroutalásokról vagy a <a href="https://lightning.network/">jövőbeli
+        minden ilyesfajta ötlet megvalósításához kellően hatékony. <a href="https://bitcoinj.org/working-with-micropayments">Tudj
+        meg többet</a> (angol nyelven) a bitcoin mikroutalásokról vagy a <a href="https://en.wikipedia.org/wiki/Lightning_Network">jövőbeli
         frissítésekről</a>, melyeket azért terveznek és használnak, hogy a mikroutalásokat
         hozzáférhetőbbé tegyék.
     mediation: "Mediáció"

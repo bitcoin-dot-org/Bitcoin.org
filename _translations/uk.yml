@@ -118,7 +118,7 @@ uk:
     summary: "Папір, що вперше представив Біткойн"
     description: "Оригінальний документ Сатоші Накамото все ще рекомендується читати будь-кому, хто вивчає, як працює біткойн. Виберіть, який переклад статті, який ви хочете прочитати:"
     translated_by: "перекладено з допомогою "
-    submit_new_translation: 'Ви хочете перекласти цю статтю своєю мовою? Відвідайте <a href="https://github.com/saivann/bitcoinwhitepaper">репозиторій Біткойн Паперу</a>для інструкцій та <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">відкрийте тікет</a>, якщо у вас є запитання.'
+    submit_new_translation: 'Ви хочете перекласти цю статтю своєю мовою? Відвідайте <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">репозиторій Біткойн Паперу</a>для інструкцій та <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">відкрийте тікет</a>, якщо у вас є запитання.'
   community:
     title: "Спільнота - Біткойн"
     pagetitle: "Біткойн-спільноти"
@@ -128,7 +128,7 @@ uk:
     reddit: "Біткойн-спільнота на Reddit"
     stackexchange: "Bitcoin StackExchange (питання та відповіді)"
     irc: "IRC-чат"
-    ircjoin: "IRC канали на <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "IRC канали на <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Загальна тема про Біткойн)"
     chandev: "(Тема розробки та технічна тема)"
     chanotc: "(Позабіржові угоди)"
@@ -633,9 +633,9 @@ uk:
         Уявіть собі, що ви слухаєте інтернет радіо з оплатою за кожну секунду, переглядаєте
         веб-сторінки з невеликими чайовими за кожну не показану вам рекламу, чи купляєте
         пропускну здатність WiFi-точки по кілобайту. Біткойн достатньо ефективний, щоб
-        усе це стало реальністю. <a href="https://bitcoinj.github.io/working-with-micropayments">Дізнайтесь
+        усе це стало реальністю. <a href="https://bitcoinj.org/working-with-micropayments">Дізнайтесь
         більше</a> про технологію, що стоїть за мікроплатежами в біткоїнах або про <a
-        href="https://lightning.network/">майбутні модернізації</a>, які в даний час
+        href="https://en.wikipedia.org/wiki/Lightning_Network">майбутні модернізації</a>, які в даний час
         розробляються та впроваджуються, щоб зробити мікроплатежі більш доступними.
     mediation: "Вирішення спорів"
     mediationtext: "Біткойн можна використовувати для розвитку інноваційних послуг з посередництва у вирішенні спорів з використанням мультипідпису. Такі послуги дозволять сторонній організації підтвердити чи відкликати платіж, у випадку непорозумінь, що виникли між іншими сторонами, без отримання контролю над їх грошима. Оскільки ці послуги будуть доступні будь-яким користувачам чи компаніям, що використовують Біткойн, це, напевне, призведе до конкуренції та вищим стандартам якості."
@@ -682,7 +682,7 @@ uk:
     pagetitle: "Прес-центр"
     summary: "Знайдіть респондентів, відповіді та високоякісні матеріали для преси."
     volunteer: "Респонденти"
-    volunteernonprofit: "Поспілкуйтесь із <a href=\"https://bitgive.org\">BitGive</a> чи місцевими <a href=\"#community##[community.non-profit]\">неприбутковими організаціями</a>."
+    volunteernonprofit: "Поспілкуйтесь із <a href=\"https://bitcoincore.org/en/contact\">BitGive</a> чи місцевими <a href=\"#community##[community.non-profit]\">неприбутковими організаціями</a>."
     volunteerpresscenter: "Знайдіть більше контактів для преси у незалежному прес-центрі Біткойн на <a href=\"https://bitcoinpresscenter.org\">bitcoinpresscenter.org</a>."
     faqmore: "Щоб дізнатися більше про Біткойн, будь ласка, завітайте на сторінку <a href=\"/en/faq\">ЧаПи</a> або відвідайте <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>."
   privacy:

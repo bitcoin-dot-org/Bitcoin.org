@@ -118,7 +118,7 @@ he:
     summary: "המאמר אשר הציג לראשונה את ביטקוין"
     description: "המאמר המקורי של סאטושי נאקאמוטו עדין מומלץ לקריאה לכל מי שלומד כיצד ביטקוין פועל. ניתן לבחור איזה תרגום של המאמר ברצונך לקרוא:"
     translated_by: "תורגם על ידי"
-    submit_new_translation: 'האם ברצונך לתרגם את המאמר לשפתך? בקר/י<a href="https://github.com/wbnns/bitcoinwhitepaper">בסיפריית המאמר ביטקוין ב GitHub</a> כדי לעיין בהוראות  <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">ופתח/י קריאת שרות</a>אם יש לך שאלות כלשהן.'
+    submit_new_translation: 'האם ברצונך לתרגם את המאמר לשפתך? בקר/י<a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">בסיפריית המאמר ביטקוין ב GitHub</a> כדי לעיין בהוראות  <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">ופתח/י קריאת שרות</a>אם יש לך שאלות כלשהן.'
   buy:
     title: "רכישת ביטקוין"
     pagetitle: "כיצד לרכוש ביטקוין"
@@ -138,7 +138,7 @@ he:
     reddit: "קהילת ביטקוין ב-Reddit"
     stackexchange: "ביטקוין ב StackExchange (שאלות ותשובות)"
     irc: "IRC Chat"
-    ircjoin: "ערוצי IRC ב-<a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "ערוצי IRC ב-<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(נושאי ביטקוין כלליים)"
     chandev: "(פיתוח והבטים טכניים)"
     chanotc: "(עסקות מעבר לדלפק)"
@@ -146,7 +146,7 @@ he:
     chanmining: "(נושאי כריית ביטקוין)"
     social: "רשתות חברתיות"
     linktwitter: "חיפוש בטוויטר"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">דף פייסבוק</a>"
+    facebook: "<a href=\"https://www.facebook.com/hashtag/bitcoin\">דף פייסבוק</a>"
     meetups: "מפגשים"
     meetupevents: "כנסים ואירועים העוסקים בביטקוין"
     meetupgroup: "קבוצות מפגש של ביטקוין"
@@ -793,8 +793,8 @@ he:
     microtext: >
         דמיינו הקשבה לרדיו אינטרנטי המשולם לפי שניה, שיטוט בדפי אתר עם תשלום טיפ זעיר
         כדי למנוע הצגת פרסומות, או רכישת רוחב פס מנקודה חמה של WIF לפי הקילובייט.
-        ביטקוין יעיל מספיק בכדי להפוך את כל הרעיונות האלו לישימים. <a href="https://bitcoinj.github.io/working-with-micropayments">ללימוד
-        נוסף</a> על הטכנולוגיה שמאחורי התשלומים הזעירים של ביטקוין או על  <a href="https://lightning.network/">עדכונים
+        ביטקוין יעיל מספיק בכדי להפוך את כל הרעיונות האלו לישימים. <a href="https://bitcoinj.org/working-with-micropayments">ללימוד
+        נוסף</a> על הטכנולוגיה שמאחורי התשלומים הזעירים של ביטקוין או על  <a href="https://en.wikipedia.org/wiki/Lightning_Network">עדכונים
         עתידיים</a>  שנמצאים בתהליך תכנון ומימוש ואשר יאפשרו לתשלומים זעירים להיות
         יותר נגישים.
     mediation: "גישור בעת מחלוקת"

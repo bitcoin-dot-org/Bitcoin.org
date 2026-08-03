@@ -98,7 +98,7 @@ zh_CN:
     summary: "最初提出比特币的论文"
     description: "中本聪的原始论文依然是每一名想了解比特币原理的人的推荐读物。选择您想阅读的译文："
     translated_by: "翻译者是"
-    submit_new_translation: '您想把这篇论文翻译成你的语言吗？请访问 <a href="https://github.com/saivann/bitcoinwhitepaper">比特币论文库</a> 查看操作指南，然后如果您有任何问题 <a href="https://github.com/saivann/bitcoinwhitepaper/issues/new">开放一个新问题</a>。'
+    submit_new_translation: '您想把这篇论文翻译成你的语言吗？请访问 <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">比特币论文库</a> 查看操作指南，然后如果您有任何问题 <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">开放一个新问题</a>。'
   buy:
     title: "购买 - 比特币"
     pagetitle: "如何购买比特币"
@@ -118,7 +118,7 @@ zh_CN:
     reddit: "Reddit上的比特币社区"
     stackexchange: "比特币StackExchange(问答网站)"
     irc: "IRC聊天室"
-    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>上的IRC聊天室。"
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>上的IRC聊天室。"
     chanbitcoin: "（比特币相关）"
     chandev: "（开发和技术）"
     chanotc: "（场外交易）"
@@ -394,7 +394,7 @@ zh_CN:
     usedtxt1: "是的，<a href=\"/en/spend-bitcoin\">越来越多的企业</a>和个人在使用比特币。这既包括像饭店，公寓和律师事务所那样的传统企业，也包括像Namecheap，Overstock.com，和Reddit 这样的流行在线服务。虽然比特币仍然是一个相对较新的现象，但它发展迅速。2013年8月底，<a href=\"https://bitcoincharts.com/bitcoin/\">流通中的比特币总值</a>超过了15亿美元，每天都有价值数百万美元的比特币在进行兑换。"
     acquire: "如何获得比特币？"
     acquireli1: "作为商品或服务的支付方式。"
-    acquireli2: "在一个<a href=\"http://howtobuybitcoins.info\">比特币交易所</a>购买比特币。"
+    acquireli2: "在一个<a href=\"https://www.buybitcoinworldwide.com\">比特币交易所</a>购买比特币。"
     acquireli3: "和<a href=\"https://localbitcoins.com/\">你附近的人</a>兑换比特币。"
     acquireli4: "通过具有竞争力的<a href=\"https://www.bitcoinmining.com/\">挖矿</a>赚取比特币。"
     acquiretxt1: "尽管可能有人愿意让对方以信用卡或PayPal支付的方式购买自己的比特币，大部分的交易平台是不接受来自这些支付方式的资金的。这是为了防止某些情况下有人用PayPal购买比特币，然后在交易到一半的时候撤销。这通常被称作退单。"
@@ -588,8 +588,8 @@ zh_CN:
     crowdfundingtext: "比特币可以用来运作Kickstarter风格的众筹活动，个人可以承诺向某个项目提供资金，只有当收到足够多的资金承诺来满足既定目标的情况下这些资金才会真正被取走。这种担保合约由比特币协议来处理，直到所有条件都满足后才允许交易发生。 <a href=\"https://en.bitcoin.it/wiki/Contracts#Example_3:_Assurance_contracts\">了解更多</a>众筹资金背后的技术。"
     micro: "微支付"
     microtext: >
-        收听按秒计费的网络广播，支付小费来屏蔽网页广告，或是按KB购买WiFi流量 -- 比特币的性能可以使这些想法成为可能。<a href="https://bitcoinj.github.io/working-with-micropayments">了解更多</a>使比特币微支付成为可能的技术以及正在设计实现中的使微支付更加便捷的<a
-        href="https://lightning.network/">未来更新</a>。
+        收听按秒计费的网络广播，支付小费来屏蔽网页广告，或是按KB购买WiFi流量 -- 比特币的性能可以使这些想法成为可能。<a href="https://bitcoinj.org/working-with-micropayments">了解更多</a>使比特币微支付成为可能的技术以及正在设计实现中的使微支付更加便捷的<a
+        href="https://en.wikipedia.org/wiki/Lightning_Network">未来更新</a>。
     mediation: "纠纷仲裁"
     mediationtext: "比特币可以利用多重签名来开发创新的纠纷仲裁服务。这一服务可以在双发无法达成一致的情况下由对资金没有控制权的第三方来批准或者拒绝一笔交易。因为这些服务都将与任何比特币用户和商家兼容，该创新势必导致自由竞争和更高的质量标准。"
     multisig: "多重签名账户"

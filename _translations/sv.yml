@@ -125,7 +125,7 @@ sv:
     summary: "Det dokument som först presenterade Bitcoin"
     description: "Satoshi Nakamotos originaldokument är fortfarande rekommenderad läsning för alla som studerar hur Bitcoin fungerar. Välj vilken översättning av texten du vill läsa:"
     translated_by: "översatt av"
-    submit_new_translation: 'Vill du översätta dokumentet till ditt språk? Besök <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoins vitbokkatalog på GitHub</a> för vidare instruktioner och <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">öppna ett ärende</a> om du har några frågor.'
+    submit_new_translation: 'Vill du översätta dokumentet till ditt språk? Besök <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoins vitbokkatalog på GitHub</a> för vidare instruktioner och <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">öppna ett ärende</a> om du har några frågor.'
   buy:
     title: "Köp bitcoin"
     pagetitle: "Hur man köper bitcoin"
@@ -145,7 +145,7 @@ sv:
     reddit: "Reddits Bitcoincommunity"
     stackexchange: "Bitcoin StackExchange (Frågor &amp; Svar)"
     irc: "IRC-chatt"
-    ircjoin: "IRC-kanaler på <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "IRC-kanaler på <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Generellt Bitcoinrelaterat)"
     chandev: "(Utveckling och teknik)"
     chanotc: "(Valutahandel över disk)"
@@ -582,7 +582,7 @@ sv:
     usedtxt1: "Ja. Det finns ett <a href=\"http://usebitcoins.info/\">växande antal företag</a> och privatpersoner som använder Bitcoin. Detta inkluderar vanliga företag som restauranger, hyresvärder och advokatbyråer, såväl som populära nättjänster som Namecheap and Overstock.com. Även om Bitcoin fortfarande är ett ganska nytt fenomen, växer det snabbt. I maj 2018 överskred <a href=\"https://bitcoincharts.com/bitcoin/\">det sammanlagda värdet av alla existerande bitcoin</a>100 miljarder US dollar, och bitcoin till ett värde av många miljoner bytte ägare varje dag. "
     acquire: "Hur får man tag på bitcoin?"
     acquireli1: "Som betalning för varor eller tjänster."
-    acquireli2: "Genom att köpa bitcoin på en  <a href=\"http://howtobuybitcoins.info\">Bitcoinbörs</a>."
+    acquireli2: "Genom att köpa bitcoin på en  <a href=\"https://www.buybitcoinworldwide.com\">Bitcoinbörs</a>."
     acquireli3: "Växla till sig bitcoin med <a href=\"https://localbitcoins.com/\">någon i närheten</a>."
     acquireli4: "Tjäna bitcoin genom konkurrensutsatt  <a href=\"https://www.bitcoinmining.com/\">grävning</a>."
     acquiretxt1: "Det går kanske att hitta privatpersoner som vill sälja bitcoin mot betalning med kreditkort eller PayPal, men de flesta valutabörser accepterar inte betalning med dessa metoder. Det har hänt att någon köper bitcoin med PayPal och sedan häver sin del av transaktionen. Det brukar kallas \"chargeback\"."
@@ -813,8 +813,8 @@ sv:
         Tänk dig att lyssna på internetradio och betala per lyssnad sekund, läsa webbsidor
         och ge lite dricks för varje annons du slipper se, eller att köpa bandbredd
         i en trådlös surfzon och betala per kilobyte. Bitcoin är tillräckligt effektivt
-        för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.github.io/working-with-micropayments">Lär
-        dig mer om</a> tekniken bakom mikrobetalningar med Bitcoin eller om <a href="https://lightning.network/">framtida
+        för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.org/working-with-micropayments">Lär
+        dig mer om</a> tekniken bakom mikrobetalningar med Bitcoin eller om <a href="https://en.wikipedia.org/wiki/Lightning_Network">framtida
         uppgraderingar</a> som utvecklas och implementeras just nu för att göra mikrobetalningar
         mer tillgängliga.
     mediation: "Tvistmedling"
@@ -835,7 +835,7 @@ sv:
     information: "Information publicerad på bitcoin.org"
     informationtxt1: "Webbsidan https://bitcoin.org/ (nedan kallad \"Webbplatsen\") tillhandahåller information och material av allmän karaktär. Du ges inte befogenhet och inte heller bör du lita på Webbplatsen för juridisk rådgivning, affärsrådgivning, eller rådgivning av något slag. Du handlar på egen risk om du förlitar dig på innehållet på Webbplatsen. Om du ska fatta beslut om att agera eller inte agera bör du kontakta ett behörigt juridiskt ombud i relevant jurisdiktion där du vill ha eller behöver hjälp. Ägarna till eller deltagare på Webbplatsen är inte på något sätt ansvariga för handlingar, beslut eller annat beteende som fattas eller inte fattas av med stöd av Webbplatsen."
     translations: "Översättningar"
-    translationstxt1: "Webbplatsen kan ha översättningar från den engelska versionen av det innehåll som finns tillgängligt på Webbplatsen. Dessa översättningar tillhandahålls endast som en bekvämlighet. I det fall den engelska versionen och den översätta är inkonsekventa är det den engelska som gäller. Om du hittar någon motstridighet, är du välkommen att rapportera detta på <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    translationstxt1: "Webbplatsen kan ha översättningar från den engelska versionen av det innehåll som finns tillgängligt på Webbplatsen. Dessa översättningar tillhandahålls endast som en bekvämlighet. I det fall den engelska versionen och den översätta är inkonsekventa är det den engelska som gäller. Om du hittar någon motstridighet, är du välkommen att rapportera detta på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Risker förknippade med att använda Bitcoin"
     useriskstxt1: "Webbplatsen kan inte hållas ansvarig för eventuella förluster, skador eller anspråk som härrör från händelser som omfattas av följande fem kategorier:"
     useriskstxt2: "Misstag som görs av den som använder någon Bitcoinrelaterad mjukvara eller tjänst, t.ex glömda lösenord, betalningar till fel Bitcoinadress och oavsiktlig radering av plånböcker."

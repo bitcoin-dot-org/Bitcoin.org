@@ -128,7 +128,7 @@ ca:
     summary: "El document que va introduir Bitcoin."
     description: "La lectura de l'article original de Satoshi Nakamoto encara se segueix recomanant per a qualsevol que estudiï com funciona Bitcoin. Escolliu quina traducció del document voleu llegir:"
     translated_by: "traduït per"
-    submit_new_translation: 'Voleu traduir el document a la vostra llengua? Visiteu el <a href="https://github.com/wbnns/bitcoinwhitepaper">Repositori del paper blanc de Bitcoin a GitHub</a> per obtenir instruccions i <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">obrir un tema</a> en cas de dubtes.'
+    submit_new_translation: 'Voleu traduir el document a la vostra llengua? Visiteu el <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Repositori del paper blanc de Bitcoin a GitHub</a> per obtenir instruccions i <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">obrir un tema</a> en cas de dubtes.'
   buy:
     title: "Comprar Bitcoin"
     pagetitle: "Com comprar bitcoin"
@@ -148,7 +148,7 @@ ca:
     reddit: "Comunitat Bitcoin a Reddit"
     stackexchange: "Bitcoin a StackExchange (Preguntes i respostes)"
     irc: "Xat IRC"
-    ircjoin: "Canals IRC a <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "Canals IRC a <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(General relacionat amb Bticoin)"
     chandev: "(Tècnic i desenvolupament)"
     chanotc: "(sobre l'Oficina de Canvi)"
@@ -517,7 +517,7 @@ ca:
     disclosuretxt: "Si trobes una vulnerabilitat relacionada amb Bitcoin i aquesta no és crítica, pots informar d'ella enviant un correu electrònic en anglès a qualsevol dels desenvolupadors principals. O també enviant un missatge a la llista privada de correu bitcoin-security apuntada més amunt. Un exemple de vulnerabilitat no crítica podria ser un atac de denegació de servei difícil d'aconseguir. Les vulnerabilitats crítiques que siguin massa sensibles per trametre en un missatge en text clar cal enviar-les  a un o més desenvolupadors del nucli xifrades amb les teves clau(s) PGP."
     involve: "Involucra't"
     involvetxt1: "Bitcoin és de codi obert i qualsevol desenvolupador pot contribuir al projecte. Tot el que necessites ho trobaràs al <a href=\"https://github.com/bitcoin/bitcoin\">repositori GitHub</a>. Si us plau, assegura't de llegir i seguir el procés de desenvolupament descrit al \"README\", així com d'escriure codi de bona qualitat i respectar totes les directrius."
-    involvetxt2: "El debat sobre el desenvolupament té lloc a GitHub i a la llista de correu <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a>. Es produeix una discussió de desenvolupament menys formal a irc.libera.chat # bitcoin-core-dev (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">interfície web</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">registres</a>)."
+    involvetxt2: "El debat sobre el desenvolupament té lloc a GitHub i a la llista de correu <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a>. Es produeix una discussió de desenvolupament menys formal a irc.libera.chat # bitcoin-core-dev (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">interfície web</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">registres</a>)."
     more: "Més projectes de programari lliure"
     morewant: "Voleu contribuir a un projecte diferent?"
     morechoose: "Pots triar un projecte per tal de contribuir-hi responent a algunes<a href=\"http://whatcanidoforbitcoin.xyz/\"> preguntes sobre les teves habilitats</a>."
@@ -820,9 +820,9 @@ ca:
         Imagineu escoltar la ràdio d’Internet pagant per segon, veure pàgines web
         per una petita propina per a cada anunci que no es mostra o comprar amplada
         de banda des d’un punt d’accés WiFi al quilobyte. Bitcoin és prou eficient
-        per fer possible totes aquestes idees. <a href="https://bitcoinj.github.io/working-with-micropayments">Obteniu
+        per fer possible totes aquestes idees. <a href="https://bitcoinj.org/working-with-micropayments">Obteniu
         més informació</a> sobre la tecnologia que hi ha darrere dels micropagaments
-        de Bitcoin o sobre <a href="https://lightning.network/">futures actualitzacions</a>
+        de Bitcoin o sobre <a href="https://en.wikipedia.org/wiki/Lightning_Network">futures actualitzacions</a>
         que s’estan dissenyant i implementant per fer els micropagaments més accessibles.
     mediation: "Mediació de disputes"
     mediationtext: "Bitcoin es pot utilitzar per desenvolupar serveis innovadors de mediació de conflictes mitjançant múltiples signatures. Aquests serveis podrien fer possible que un tercer aprovés o rebutgés una transacció en cas de desacord entre les altres parts sense tenir el control dels seus diners. Atès que aquests serveis serien compatibles amb qualsevol usuari i comerciant que utilitzi Bitcoin, probablement això conduiria a la lliure competència i a uns estàndards de qualitat més alts."
