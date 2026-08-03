@@ -126,7 +126,7 @@ sr:
     summary: "Dokument koji je predstavio Bitkoin"
     description: "Svakome ko želi da sazna kako Bitkoin funkcioniše, preporučujemo da pročita originalni dokument koji je napisao Satoshi Nakamoto. Odaberite koju prevedenu verziju dokumenta želite da pročitate."
     translated_by: "prevod"
-    submit_new_translation: 'Želite da prevedete papir na svoj jezik? Posetite <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitkoin beli papir repozitorijum na GitHub-u</a> za uputsvo i <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">otvorite problem</a> ako imate bilo kakvih pitanja.'
+    submit_new_translation: 'Želite da prevedete papir na svoj jezik? Posetite <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitkoin beli papir repozitorijum na GitHub-u</a> za uputsvo i <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">otvorite problem</a> ako imate bilo kakvih pitanja.'
   buy:
     title: "Kupi Bitcoin"
     pagetitle: "Kako kupiti Bitcoin"
@@ -146,7 +146,7 @@ sr:
     reddit: "Bitkoin zajednica na Reddit-u"
     stackexchange: "Bitcoin Stach Exchange (Pitanja i Odgovori)"
     irc: "IRC Ćaskanje"
-    ircjoin: "IRC Kanali na <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat-u</a>."
+    ircjoin: "IRC Kanali na <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat-u</a>."
     chanbitcoin: "(Generalno Bitkoin-povezano)"
     chandev: "Razvoj i stručno"
     chanotc: "Razmena"
@@ -154,7 +154,7 @@ sr:
     chanmining: "(Vezano za Bitkoin rudarenje)"
     social: "Socijalne mreže"
     linktwitter: "Twitter Pretraga"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Facebook Stranica</a>"
+    facebook: "<a href=\"https://www.facebook.com/hashtag/bitcoin\">Facebook Stranica</a>"
     meetups: "Okupljanja"
     meetupevents: "Bitkoin Konferencije i Događaji"
     meetupgroup: "Bitkoin Okupljanja"
@@ -812,8 +812,8 @@ sr:
         Zamslite da slušate radio stanicu koja se plaća onoliko koliko je slušate,
         po sekundi, da pretražujete web stranice sa mogućnošću davanje male napojnice
         za svaku reklamu koja se ne pokaže, ili da kupite WiFi protok po kilobajtu.
-        Bitkoin je dovoljno efikasan da učini sve navedene ideje mogućim. <a href="https://bitcoinj.github.io/working-with-micropayments">Saznajte
-        više</a> o tehnologiju Bitkoin mikroplaćanja ili o <a href="https://lightning.network/">budučim
+        Bitkoin je dovoljno efikasan da učini sve navedene ideje mogućim. <a href="https://bitcoinj.org/working-with-micropayments">Saznajte
+        više</a> o tehnologiju Bitkoin mikroplaćanja ili o <a href="https://en.wikipedia.org/wiki/Lightning_Network">budučim
         nadogradnjama</a> protokola koje se trenutno dešavaju kako bi mirkoplaćanja
         postala dostupnija.
     mediation: "Posredovanje u sporu"

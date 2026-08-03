@@ -132,7 +132,7 @@ de:
     summary: "Das Paper, das Bitcoin erstmals vorstellte"
     description: "Es wird noch immer jedem, der die Funktionsweise von Bitcoin studiert, empfohlen, Satoshi Nakamotos Paper zu lesen. Wählen Sie, welche Übersetzung der Abhandlung Sie lesen möchten:"
     translated_by: "übersetzt von"
-    submit_new_translation: 'Wollen Sie dieses Paper in Ihre Sprache übersetzten? Besuchen Sie das <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin-Whitepaper Repository auf GitHub</a> für eine Einführung und <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">öffnen Sie ein "Issue"</a>, falls Sie Fragen haben.'
+    submit_new_translation: 'Wollen Sie dieses Paper in Ihre Sprache übersetzten? Besuchen Sie das <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin-Whitepaper Repository auf GitHub</a> für eine Einführung und <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">öffnen Sie ein "Issue"</a>, falls Sie Fragen haben.'
   buy:
     title: "Bitcoin kaufen"
     pagetitle: "Wie man Bitcoins kauft"
@@ -152,7 +152,7 @@ de:
     reddit: "Reddits Bitcoin-Community"
     stackexchange: "Bitcoin StackExchange (Frage &amp; Antwort, englisch)"
     irc: "IRC-Chat"
-    ircjoin: "IRC-Channels auf <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "IRC-Channels auf <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Bitcoin allgemein, englisch)"
     chandev: "(Entwicklung und Technik, englisch)"
     chanotc: "(OTC-Handel, englisch)"
@@ -825,9 +825,9 @@ de:
         Stellen Sie sich vor, Sie hören Internetradio und werden dabei pro Sekunde
         abgerechnet, besuchen eine Website und zahlen einen kleinen Betrag für jede
         nicht gezeigte Werbung, oder kaufen Bandbreite eines WiFi-Hotspots pro Kilobyte.
-        Bitcoin ist effizient genug, um alle diese Ideen möglich zu machen. <a href="https://bitcoinj.github.io/working-with-micropayments">Lesen
+        Bitcoin ist effizient genug, um alle diese Ideen möglich zu machen. <a href="https://bitcoinj.org/working-with-micropayments">Lesen
         Sie mehr</a> über die Technologie, die hinter Bitcoin-Kleinstzahlungen steckt,
-        oder über <a href="https://lightning.network/">zukünftige Upgrades</a>, die
+        oder über <a href="https://en.wikipedia.org/wiki/Lightning_Network">zukünftige Upgrades</a>, die
         gegenwärtig entwickelt und implementiert werden, um Mikrozahlungen allgemein
         zugänglich zu machen.
     mediation: "Schlichtungsstelle"

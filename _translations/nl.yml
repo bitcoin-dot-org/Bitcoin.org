@@ -128,7 +128,7 @@ nl:
     summary: "Het document dat Bitcoin voor het eerst introduceerde"
     description: "Satoshi Nakamoto's originele papier wordt nog steeds aanbevolen om te lezen voor iedereen die bestudeert hoe Bitcoin werkt. Kies welke vertaling van het papier u wilt lezen:"
     translated_by: "vertaald door"
-    submit_new_translation: 'Wilt u de whitepaper in uw eigen taal vertalen? Bezoek dan de <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoin whitepaper repository op GitHub</a> voor instructies en <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">open een issue</a> als u vragen hebt.'
+    submit_new_translation: 'Wilt u de whitepaper in uw eigen taal vertalen? Bezoek dan de <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoin whitepaper repository op GitHub</a> voor instructies en <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">open een issue</a> als u vragen hebt.'
   buy:
     title: "Koop Bitcoin"
     pagetitle: "Hoe bitcoin te kopen"
@@ -148,7 +148,7 @@ nl:
     reddit: "Bitcoin-community op Reddit"
     stackexchange: "Bitcoin StackExchange (Vraag en antwoord)"
     irc: "IRC-chat"
-    ircjoin: "IRC-kanalen op <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "IRC-kanalen op <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Bitcoin algemeen)"
     chandev: "(Ontwikkeling en technische discussie)"
     chanotc: "(Over The Counter uitwisseling)"
@@ -820,8 +820,8 @@ nl:
         wordt betaald, webpagina's bekijkt met een kleine tip voor elke advertentie
         die niet wordt weergegeven, of bandbreedte koopt bij een WiFi-hotspot per
         kilobyte. Bitcoin is efficiënt genoeg om al deze ideeën mogelijk te maken.
-        <a href="https://bitcoinj.github.io/working-with-micropayments">Leer meer</a>
-        over de technologie achter Bitcoin microbetalingen of over <a href="https://lightning.network/">toekomstige
+        <a href="https://bitcoinj.org/working-with-micropayments">Leer meer</a>
+        over de technologie achter Bitcoin microbetalingen of over <a href="https://en.wikipedia.org/wiki/Lightning_Network">toekomstige
         upgrades</a> die momenteel worden ontworpen en geïmplementeerd om microbetalingen
         toegankelijker te maken.
     mediation: "Bemiddeling bij geschillen"

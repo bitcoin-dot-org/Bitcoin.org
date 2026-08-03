@@ -130,7 +130,7 @@ it:
     summary: "Il documento che introdusse per primo il bitcoin"
     description: "Il documento originale di Satoshi Nakamoto è ancora una lettura consigliata per chiunque voglia studiare il funzionamento del Bitcoin. Scegli quale traduzione del documento vuoi leggere:"
     translated_by: "tradotto da"
-    submit_new_translation: 'Vuoi tradurre questo documento nella tua lingua? Visita <a href="https://github.com/wbnns/bitcoinwhitepaper">l''archivio Bitcoin di white papers su GitHub</a> per le istruzioni e <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">apri una discussione</a> se hai domande.'
+    submit_new_translation: 'Vuoi tradurre questo documento nella tua lingua? Visita <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">l''archivio Bitcoin di white papers su GitHub</a> per le istruzioni e <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">apri una discussione</a> se hai domande.'
   buy:
     title: "Compra Bitcoin"
     pagetitle: "Come comprare bitcoin"
@@ -150,7 +150,7 @@ it:
     reddit: "Comunità Bitcoin su Reddit"
     stackexchange: "Bitcoin StackExchange (Q&amp;A)"
     irc: "Chat IRC"
-    ircjoin: "Canali IRC su <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "Canali IRC su <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Discussioni generali su Bitcoin)"
     chandev: "(Discussioni tecniche e sullo sviluppo)"
     chanotc: "(Discussioni riguardo gli scambi su Over The Counter)"
@@ -819,8 +819,8 @@ it:
         Immaginate di ascoltare una radio pagata in secondi di ascolto, di guardare
         una pagina web con una piccola mancia per ogni inserzione pubblicitaria omessa
         oppure di acquistare banda da un punto di accesso WiFi e pagarlo a kilobyte.
-        Bitcoin è talmente efficiente da rendere tutte queste idee possibili. <a href="https://bitcoinj.github.io/working-with-micropayments">Approfondisci</a>
-        la tecnologia alla base dei micro pagamenti Bitcoin o sui suoi <a href="https://lightning.network/">futuri
+        Bitcoin è talmente efficiente da rendere tutte queste idee possibili. <a href="https://bitcoinj.org/working-with-micropayments">Approfondisci</a>
+        la tecnologia alla base dei micro pagamenti Bitcoin o sui suoi <a href="https://en.wikipedia.org/wiki/Lightning_Network">futuri
         sviluppi</a>attualmente in fase di progettazione ed implementazione per rendere
         i micropagamenti più accessibili.
     mediation: "Mediazione delle controversie"

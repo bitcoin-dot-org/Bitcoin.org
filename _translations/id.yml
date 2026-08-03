@@ -126,7 +126,7 @@ id:
     summary: "Makalah yang pertama kali memperkenalkan Bitcoin"
     description: "Makalah asli Satoshi Nakamoto adalah bacaan yang cukup disarankan untuk semua yang tertarik mempelajari cara kerja Bitcoin. Pilih terjemahan yang ingin anda baca:"
     translated_by: "diterjemahkan oleh"
-    submit_new_translation: 'Apakah anda ingin menerjemahkan tulisan ini kedalam bahasa anda? Kunjungi <a href="https://github.com/wbnns/bitcoinwhitepaper">repositori whitepaper Bitcoin di GitHub</a> untuk instruksi dan <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">buka issue baru</a> jika anda memiliki pertanyaan apapun.'
+    submit_new_translation: 'Apakah anda ingin menerjemahkan tulisan ini kedalam bahasa anda? Kunjungi <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">repositori whitepaper Bitcoin di GitHub</a> untuk instruksi dan <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">buka issue baru</a> jika anda memiliki pertanyaan apapun.'
   buy:
     title: "Beli Bitcoin"
     pagetitle: "Bagaimana membeli bitcoin"
@@ -146,7 +146,7 @@ id:
     reddit: "Komunitas Bitcoin di Reddit"
     stackexchange: "Bursa-Saham Bitcoin (Tanya-Jawab)"
     irc: "Chat IRC"
-    ircjoin: "Kanal IRC pada <a href=\"https://web.libera.chat/#bitcoin\">Libera Chat</a>."
+    ircjoin: "Kanal IRC pada <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Hal Umum terkait Bitcoin)"
     chandev: "(Pengembangan dan teknis)"
     chanotc: "(Pertukaran Melalui Konter)"
@@ -154,7 +154,7 @@ id:
     chanmining: "(Hal-hal terkait penambangan Bitcoin)"
     social: "Jejaring sosial"
     linktwitter: "Pencarian Twitter"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">Halaman Facebook</a>"
+    facebook: "<a href=\"https://www.facebook.com/hashtag/bitcoin\">Halaman Facebook</a>"
     meetups: "Pertemuan"
     meetupevents: "Konferensi dan Acara Bitcoin"
     meetupgroup: "Kelompok Pertemuan Bitcoin"
@@ -815,9 +815,9 @@ id:
         Bayangkan dengan mendengar radio internet berbayar per detik, melihat halaman
         situs dengan tip kecil di tiap iklan yang tidak ditayangkan, atau membeli
         bandwidth dari sebuah hotspot WiFi per kilobyte. Bitcoin cukup efisien melakukan
-        semua pembayaran ini. <a href="https://bitcoinj.github.io/working-with-micropayments">Pelajari
+        semua pembayaran ini. <a href="https://bitcoinj.org/working-with-micropayments">Pelajari
         lebih lanjut</a> mengenai teknologi di balik pembayaran mikro Bitcoin atau
-        tentang<a href="https://lightning.network/">upgrade masa depan</a> yang sedang
+        tentang<a href="https://en.wikipedia.org/wiki/Lightning_Network">upgrade masa depan</a> yang sedang
         didesain dan diimplementasikan agar lebih mudah diakses.
     mediation: "Mediasi sengketa"
     mediationtext: "Bitcoin bisa digunakan untuk mengembangkan layanan mediasi penyelesaian sengketa transaksi elektronik yang inovatif menggunakan multiple signature. Layanan ini memungkinkan pihak ketiga untuk menyetujui atau membatalkan transaksi bila ada perselisihan antara pihak-pihak lain tanpa ada kendali atas uang mereka. Karena layanan ini harus sesuai dengan pengguna atau penjual di manapun yang menggunakan Bitcoin, maka kemungkinan layanan ini akan menciptakan iklim kompetisi dengan standar kualitas yang lebih tinggi."

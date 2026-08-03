@@ -100,7 +100,7 @@ ja:
     summary: "ビットコインが初めて提案された論文"
     description: "サトシナカモトの原論文は、ビットコインの仕組みを学ぶ全ての方に、現在でも推奨される読み物です。以下の中から、読みたい翻訳版の論文を選択してください。："
     translated_by: "翻訳者："
-    submit_new_translation: 'ビットコイン論文を母国語に翻訳されたいですか？手順については<a href="https://github.com/wbnns/bitcoinwhitepaper">GitHubのビットコインホワイトペーパーリポジトリ</a>にアクセスし、質問がある場合、<a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">イシューを作成</a>してください。'
+    submit_new_translation: 'ビットコイン論文を母国語に翻訳されたいですか？手順については<a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">GitHubのビットコインホワイトペーパーリポジトリ</a>にアクセスし、質問がある場合、<a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">イシューを作成</a>してください。'
   buy:
     title: "ビットコインの購入"
     pagetitle: "ビットコインの購入方法"
@@ -120,7 +120,7 @@ ja:
     reddit: "Redditのビットコイン・コミュニティ"
     stackexchange: "ビットコイン・スタック・エクスチェンジ （Q&amp;A）"
     irc: "IRCチャット"
-    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin\">フリーノード</a>でのIRCチャンネル。"
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">フリーノード</a>でのIRCチャンネル。"
     chanbitcoin: "（ビットコイン関連一般）"
     chandev: "（開発と技術）"
     chanotc: "（店頭取引）"
@@ -747,8 +747,8 @@ ja:
     micro: "マイクロペイメント"
     microtext: >
         1秒ごとに支払われるインターネットラジオを聞いたり、少額の支払いにより広告が表示されないWEBページを見たり、WiFiのホットスポットから1キロバイト毎に帯域幅を購入する事を想像してみてください。ビットコインによりこうしたアイデアが可能となります。ビットコインの<a
-        href="https://bitcoinj.github.io/working-with-micropayments">マイクロペイメントを支える技術</a>、またはマイクロペイメントをより使いやすくするために、現在設計され実装されている、<a
-        href="https://lightning.network/">将来のアップグレード</a>の詳細をご覧ください。
+        href="https://bitcoinj.org/working-with-micropayments">マイクロペイメントを支える技術</a>、またはマイクロペイメントをより使いやすくするために、現在設計され実装されている、<a
+        href="https://en.wikipedia.org/wiki/Lightning_Network">将来のアップグレード</a>の詳細をご覧ください。
     mediation: "紛争に対する調停"
     mediationtext: "ビットコインは、マルチシグを使用した革新的な紛争調停サービスの開発に使用する事ができます。こうしたサービスは、取引に関わる者同士の間で不合意が生じた場合、彼らのお金をコントロールする事なく、第三者が取引を承認したり拒絶したりする事ができます。こうしたサービスは、ビットコインを使用する全てのユーザーや商業者に対応する事から、自由競争を促し、品質が高まる事でしょう。"
     multisig: "マルチシグアカウント"
