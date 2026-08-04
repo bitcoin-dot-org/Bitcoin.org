@@ -528,7 +528,6 @@ hy:
     devcommunities: "Մշակողների համայնքներ"
     devcommunitiesintro: "Հետևյալ զրուցարաններում և վեբկայքերում քննարկումներ են անցկացվում Բիթքոյնի զարգացման վերաբերյալ: Խնդրում ենք անպայման կարդալ նրանց վարքագծի կանոնները նախքան հրապարակում անելը։ "
     ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">IRC ալիք #bitcoin-core-dev</a> Libera Chat-ում։ "
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Բիթքոյնի միջուկի Slack ալիք </a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Բիթքոյն ստեկերի (stack) փոխանակում</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk մշակում &amp; Տեխնիկական քննարկումների ֆորում</a>"
   download:
@@ -917,7 +916,6 @@ hy:
     pagetitle: "Բիթքոյն ռեսուրսներ"
     pagedesc: "Բիթքոյնի մասին օգտակար էջեր և ռեսուրսներ"
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Բիթքոյն Wiki </a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Տեղեկատուներ"
     linkwallets: "Դրամապանակներ"
     linkmerchants: "Առևտրականներ"
@@ -1010,9 +1008,7 @@ hy:
     pagetitle: "Ծախսել բիթքոյններ "
     summary: "Ողջ աշխարհում հազարավոր ձեռնարկություններ ընդունում են Բիթքոյն:"
     products-online: "Գտեք առցանց վաճառքի ապրանքներ"
-    products-online-text: "Բիթքոյնի օգտագործման ամենատարածված տարբերակը առցանց գնումներ կատարելն է: Կան հարյուրավոր առցանց խանութներ և մանրածախ առևտրականներ, որոնք ընդունում են Բիթքոյն: Օգտագործելով <a href=\"https://spendabit.co/\">Spendabit-ի</a> նման որոնողական համակարգ, Դուք կարող եք որոնել միլիոնավոր ապրանքներ, որոնք հասանելի են բիթքոյններով գնելու համար:"
     directory: "Փնտրել բիզնեսների ցանկ "
-    directory-text: "Դուք նաև կարող եք գտնել բազմաթիվ բիզնեսների ցանկ <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">առցանց տեղեկատուում</a>։ "
     business-map: "Գտնել տեղական բիզնեսներ"
     business-map-text: "Նաև բազմաթիվ տեղական բիզնեսներ, օրինակ՝ սրճարաններ և ռեստորաններ, ընդունում են Բիթքոյն։ Դուք կարող եք օգատգործել <a href=\"https://btcmap.org/\">btcmap.org</a> կայքը աշխարհի հազարավոր բիզնեսների մասին տեղեկություն ներբեռնելու համար։ "
   support-bitcoin:

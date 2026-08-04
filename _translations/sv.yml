@@ -523,7 +523,6 @@ sv:
     devcommunities: "Utvecklarcommunityn"
     devcommunitiesintro: "Följande chattrum och webbplatser har diskussioner om Bitcoinutveckling. Se till att läsa deras förhållningsregler innan du skriver något. "
     ircjoin: "IRC-kanalen <a href=\"https://web.libera.chat/#bitcoin-core-dev\">#bitcoin-core-dev</a> på Libera Chat."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Cores Slack-kanal</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -909,7 +908,6 @@ sv:
     pagetitle: "Bitcoinresurser"
     pagedesc: "Användbara webbplatser och resurser om Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin-wikin</a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Kataloger"
     linkwallets: "Plånböcker"
     linkmerchants: "Handlare"
@@ -1002,9 +1000,7 @@ sv:
     pagetitle: "Spendera Bitcoin"
     summary: "Det finns tusentals företag runt om i världen som accepterar Bitcoin."
     products-online: "Hitta produkter att köpa på nätet"
-    products-online-text: "Ett vanligt sätt att använda Bitcoin är att handla online. Det finns hundratals butiker och återförsäljare på internet som accepterar Bitcoin. Genom att använda en sökmotor som <a href=\"https://spendabit.co/\">Spendabit</a> kan du söka bland miljontals produkter som alla går att köpa med bitcoin."
     directory: "Bläddra i en företagskatalog"
-    directory-text: "Du kan också hitta många företag listade i <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">onlinekataloger</a>."
     business-map: "Hitta lokala företag"
     business-map-text: "Det finns också många lokala företag, till exempel kaféer och restauranger, som accepterar Bitcoin. Du kan använda <a href=\"https://btcmap.org/\">btcmap.org</a> för att bläddra bland tusentals företag runt om i världen som accepterar Bitcoin."
   support-bitcoin:

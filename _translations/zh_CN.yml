@@ -106,7 +106,6 @@ zh_CN:
     bitcoin-exchange: "使用比特币交易平台"
     bitcoin-exchange-text: "我们的 <a href=\"/en/exchanges\">Bitcoin Exchange</a> 页面列出了很多不同的服务，它们可以帮助你通过银行账户购买比特币。"
     local-bitcoins: "寻找在你的社区里买比特币的人"
-    local-bitcoins-text: "<a href=\"https://localbitcoins.com/\">Local Bitcoins</a> 可以让你搜索和浏览你的地区的比特币卖家。这些卖家会有评论和评分供你参考。"
     bitcoin-atm: "使用比特币ATM"
     bitcoin-atm-text: "比特币ATM取款机类似于普通的ATM取款机，但它们可以让你存取现金来兑换或话费比特币。<a href=\"https://coinatmradar.com/\">Coin ATM Radar</a> 有一个交互式地图可以让你找到离你最近的比特币ATM取款机。"
   community:
@@ -682,7 +681,6 @@ zh_CN:
     pagetitle: "比特币资源"
     pagedesc: "寻找有关比特币的有用的站点和资源。"
     linkwiki: "<a href=\"https://zh-cn.bitcoin.it/\">比特币维基</a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "目录"
     linkwallets: "钱包"
     linkmerchants: "商户"
@@ -740,9 +738,7 @@ zh_CN:
     pagetitle: "支付比特币"
     summary: "在全球范围有成千上万的企业都接受比特币。"
     products-online: "寻找在线销售的产品"
-    products-online-text: "一个共同的比特币使用就是在线购物。有成百上千的在线商店与零售商都接受比特币。使用像<a href=\"https://spendabit.co/\">Spendabit</a>这样的搜索引擎您就可以搜索几百万种产品，这些都是用比特币可以购买的商品。"
     directory: "浏览一个企业目录"
-    directory-text: "您也可以在<a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">在线目录</a>中找到许多企业。"
     business-map: "找到本地企业"
     business-map-text: "也有许多本地企业，例如咖啡馆和餐馆，他们也接受比特币。您可以使用<a href=\"https://btcmap.org/\">btcmap.org</a>来浏览全球成千上万的企业。"
   support-bitcoin:

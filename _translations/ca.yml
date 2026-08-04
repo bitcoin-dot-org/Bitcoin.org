@@ -527,7 +527,6 @@ ca:
     devcommunities: "Comunitats de desenvolupadors"
     devcommunitiesintro: "Les sales de xat i llocs web següents allotgen discussions sobre el desenvolupament de Bitcoin. Si et plau, llegeix les normes de comportament abans de publicar-hi."
     ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Canal IRC #bitcoin-core-dev</a> a Libera Chat."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Canal d'Slack de Bitcoin Core</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -916,7 +915,6 @@ ca:
     pagetitle: "Recursos de Bitcoin"
     pagedesc: "Llocs web i recursos útils sobre Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Wiki Bitcoin</a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directoris"
     linkwallets: "Moneders"
     linkmerchants: "Comerciants"
@@ -1009,9 +1007,7 @@ ca:
     pagetitle: "Gastar Bitcoin"
     summary: "Hi ha milers d'empreses a tot el món que accepten Bitcoin."
     products-online: "Trobeu productes en venda en línia"
-    products-online-text: "Un ús comú de Bitcoin és fer compres en línia. Hi ha centenars de botigues en línia i minoristes que accepten Bitcoin. Mitjançant un motor de cerca com <a href=\"https://spendabit.co/\">Spendabit</a>, podeu cercar entre milions de productes, tots disponibles per a la compra amb bitcoins."
     directory: "Navegueu per un directori d'empreses"
-    directory-text: "També podeu trobar moltes empreses llistades als <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">directoris en línia</a>."
     business-map: "Trobeu negocis locals"
     business-map-text: "També hi ha moltes empreses locals, com ara cafeteries i restaurants, que accepten Bitcoin. Podeu utilitzar <a href=\"https://btcmap.org/\">btcmap.org</a> per navegar per milers d'empreses arreu del món."
   support-bitcoin:

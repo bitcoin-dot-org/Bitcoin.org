@@ -514,7 +514,6 @@ km:
     devcommunities: "អ្នកអភិវឌ្ឍន៍សហគមន៍"
     devcommunitiesintro: "បន្ទប់ជជែក និងគេហទំព័រខាងក្រោមរៀបចំការពិភាក្សាអំពីការអភិវឌ្ឍន៍ Bitcoin ។ សូម​ប្រាកដ​ថា​បាន​អាន​ច្បាប់​នៃ​ការ​ប្រព្រឹត្ត​របស់​ពួកគេ​មុន​ពេល​ប្រកាស។"
     ircjoin: "ប៉ុស្តិ៍ <a href=\"https://web.libera.chat/#bitcoin-core-dev\">IRC #bitcoin-core-dev </a>នៅលើ Libera Chat ។"
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Core Slack Channel</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk ដេបាតម៉ង់ និង​ វេទិកាពិភាក្សាបច្ចេកទេស</a>"
   download:
@@ -891,7 +890,6 @@ km:
     pagetitle: "ធនធាន Bitcoin"
     pagedesc: "គេហទំព័រមានប្រយោជន៍ និងធនធានអំពី Bitcoin ។"
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directories"
     linkwallets: "កាបូបច្រើន"
     linkmerchants: "Merchants"
@@ -984,9 +982,7 @@ km:
     pagetitle: "Spending Bitcoin"
     summary: "មានអាជីវកម្មរាប់ពាន់នៅទូទាំងពិភពលោកដែលទទួលយក Bitcoin ។"
     products-online: "ស្វែងរកផលិតផលសម្រាប់លក់តាមអ៊ីនធឺណិត"
-    products-online-text: "ការប្រើប្រាស់ទូទៅមួយសម្រាប់ Bitcoin គឺការទិញតាមអ៊ីនធឺណិត។ មានហាងអនឡាញរាប់រយ និងអ្នកលក់រាយដែលទទួលយក Bitcoin ។ ដោយប្រើម៉ាស៊ីនស្វែងរកដូចជា <a href=\"https://spendabit.co/\">Spendabit </a>អ្នកអាចស្វែងរកតាមរយៈផលិតផលរាប់លាន ដែលអាចរកបានសម្រាប់ការទិញជាមួយ bitcoins ។"
     directory: "រុករកបញ្ជីអាជីវកម្ម"
-    directory-text: "អ្នកក៏អាចស្វែងរកអាជីវកម្មជាច្រើនដែលបានរាយក្នុង<a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">បញ្ជីអនឡាញ</a>ផងដែរ។"
     business-map: "ស្វែងរកជំនួញក្នុងស្រុក"
     business-map-text: "មានអាជីវកម្មក្នុងស្រុកជាច្រើនផងដែរ ដូចជាហាងកាហ្វេ និងភោជនីយដ្ឋាន ដែលទទួលយក Bitcoin ។ អ្នកអាចប្រើ <a href=\"https://btcmap.org/\">btcmap.org</a> ដើម្បីរកមើលអាជីវកម្មរាប់ពាន់នៅជុំវិញពិភពលោក។"
   support-bitcoin:

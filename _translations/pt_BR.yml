@@ -525,7 +525,6 @@ pt_BR:
     devcommunities: "Comunidades de desenvolvedores"
     devcommunitiesintro: "As seguintes salas de bate-papo e web sites apresentam discussões sobre o desenvolvimento da Bitcoin. Por favor assegure-se de ler as regras de conduta antes de enviar um comentário."
     ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Canal IRC #bitcoin-core-dev</a> em Libera Chat."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Canal Slack Bitcoin Core</a>"
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Fórum Bitcointalk sobre Desenvolvimento e Discussões Tecnológicas.</a>"
   download:
@@ -911,7 +910,6 @@ pt_BR:
     pagetitle: "Recursos Bitcoin"
     pagedesc: "Sites úteis e recursos sobre Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Wiki Bitcoin</a>"
-    linkcointelegraph: "<a href=\"https://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Diretórios"
     linkwallets: "Carteiras"
     linkmerchants: "Lojistas"
@@ -1004,9 +1002,7 @@ pt_BR:
     pagetitle: "Gastando Bitcoin"
     summary: "Existem milhares de comércios pelo mundo que aceitam Bitcoin."
     products-online: "Encontre produtos à venda online"
-    products-online-text: "Um dos usos comuns do Bitcoin é fazer compras online. Existem centenas de lojas online e varejos que aceitam Bitcoin. Usando um buscador como <a href=\"https://spendabit.co/\">Spendabit</a>, você consegue pesquisar por milhões de produtos, todos disponíveis para compra com bitcoins."
     directory: "Navegue por um diretório comercial"
-    directory-text: "Você também pode encontrar muitas empresas listadas em <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">diretórios online</a>."
     business-map: "Encontre empresas locais"
     business-map-text: "Há também muitos negócios locais, como cafeterias e restaurantes, que aceitam Bitcoin. Você pode usar <a href=\"https://btcmap.org/\">btcmap.org</a> para pesquisar milhares de negócios em todo o mundo."
   support-bitcoin:
