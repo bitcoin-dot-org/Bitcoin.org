@@ -37,7 +37,7 @@ https://opensource.org/licenses/MIT.
 - [Mark Friedenbach](https://github.com/maaku)
 - [Eric Martindale](https://github.com/martindale)
 - [Manuel Aráoz](https://github.com/maraoz)
-- [Marco Falke](https://github.com/MarcoFalke)
+- [Marco Falke](https://github.com/maflcko)
 - [Matt Corallo](https://github.com/TheBlueMatt)
 - [Midnight Magic](https://github.com/midnightmagic)
 - [Michael Ford](https://github.com/fanquake)
