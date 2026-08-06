@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: unstoppable
 title: "Unstoppable"
@@ -17,14 +17,14 @@ platform:
         link: "https://apps.apple.com/app/bank-bitcoin-wallet/id1447619907?ls=1"
         source: "https://github.com/horizontalsystems/unstoppable-wallet-ios"
         screenshot: "unstoppable_ios.png"
-        features: "bech32 legacy_addresses segwit"
+        features: "bech32 legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkpassfeecontroldynamic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"
@@ -34,14 +34,14 @@ platform:
         link: "https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet"
         source: "https://github.com/horizontalsystems/unstoppable-wallet-android"
         screenshot: "unstoppable_android.png"
-        features: "bech32 legacy_addresses segwit"
+        features: "bech32 legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvp2p"
           transparency: "checkgoodtransparencydeterministic"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
-          fees: "checkpassfeecontroldynamic"
+          fees: "checkgoodfeecontrolfull"
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
           privacydisclosure: "checkfailprivacydisclosurespv"

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 

@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: zh_CN
@@ -53,7 +53,7 @@ moved_url: "https://bitcoincore.org/zh_CN/2015/12/21/%E7%B3%BB%E7%BB%9F%E6%89%A9
 根据Anthony Towns的[计算][calculations]，如果区块装满了标准的单签名P2PKH交易，体积大概为1.6MB；如果是2-of-2多重签名交易，则大概为2.0MB。
 
 [current proposal]: https://youtu.be/fst1IK_mrng?t=2234
-[calculations]: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
+[calculations]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
 
 ## 隔离见证好像很复杂，比特币生态各环节准备好没有？ {#ecosystem-ready}
 
@@ -189,7 +189,7 @@ David Harding 提供了下表以[估计][estimated savings]在不同费用和交
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
 [bitcoin core contributor]: /en/bitcoin-core/
-[Bitcoin relay network]: http://bitcoinrelaynetwork.org/
+[Bitcoin relay network]: https://bitcoinrelaynetwork.org/
 [code review]: https://bitcoin.org/en/development#code-review
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf

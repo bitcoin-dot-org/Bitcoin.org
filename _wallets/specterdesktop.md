@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: specterdesktop
 title: "Specter Desktop"
@@ -15,7 +15,7 @@ platform:
       link: "https://specter.solutions/"
       source: "https://github.com/cryptoadvance/specter-desktop"
       screenshot: "specterdesktop.png"
-      features: "bech32 full_node hardware_wallet multisig segwit"
+      features: "bech32 full_node hardware_wallet multisig segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

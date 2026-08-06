@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: en
@@ -21,7 +21,7 @@ breadcrumbs:
 <!-- Variable assignment
 
 {% capture installFinished %}
-You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://webchat.freenode.net/?channels=bitcoin&uio=d4) IRC chatroom on Freenode.
+You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://web.libera.chat/#bitcoin) IRC chatroom on Libera Chat.
 
 To support the Bitcoin network, you also need to allow incoming
 connections. Please read the [Network
@@ -229,12 +229,12 @@ have an easy-to-use node.
 [Initial block download](https://developer.bitcoin.org/devguide/p2p_network.html#initial-block-download)
 refers to the process where nodes synchronize themselves
 to the network by downloading blocks that are new to them.
-This will happen when a node is far behind the tip of the [best block chain](https://developer.bitcoin.org/glossary.html).
+This will happen when a node is far behind the tip of the [best blockchain](https://developer.bitcoin.org/glossary.html).
 In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
 
 If you are trying to set up a new node following the instructions below, you will go
 through the IBD process at the first run, and it may take a considerable amount of time since a new
-node has to download the entire block chain (which is roughly {{site.text.chain_gb}} gigabytes now).
+node has to download the entire blockchain (which is roughly {{site.text.chain_gb}} gigabytes now).
 During the download, there could be a high usage for the network and CPU
 (since the node has to verify the blocks downloaded), and the client will take up an
 increasing amount of storage space ([reduce storage](#reduce-storage) provides more details on reducing storage).
@@ -281,7 +281,7 @@ followed by the argument `xzf` followed by the file name. The argument
 
 This will create the directory `bitcoin-{{site.DOWNLOAD_VERSION}}` within your current
 working directory. We will install the contents of its `bin`
-subdirectory into the `/usr/local/bin` directory using the the `install`
+subdirectory into the `/usr/local/bin` directory using the `install`
 command. The install command is part of the GNU coreutils available on
 nearly every Linux distribution, and the `/usr/local/bin` directory is a
 standard location for self-installed executables (you may edit the
@@ -330,7 +330,7 @@ following message will be displayed:
     /usr/local/bin/bitcoin-qt: error while loading shared libraries: libQtGui.so.4: cannot open shared object file: No such file or directory
 
 Search your distribution's package database for the missing file
-missing and install package containing that file.  Then re-run
+and install package containing that file.  Then re-run
 `/usr/local/bin/bitcoin-qt` to see if it's missing another file.
 Repeat until Bitcoin Core GUI starts.
 
@@ -340,7 +340,7 @@ you want to use, click *Ok* to use the default.
 
 ![Bitcoin-Qt Welcome](/img/full-node/en-bitcoin-qt-welcome.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -359,7 +359,7 @@ Starting your node automatically each time you login to your computer
 makes it easy for you to contribute to the network. The easiest way to
 do this is to tell Bitcoin Core GUI to start at login. This only works
 in desktop environments that support the [autostart
-specification](http://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html#startup),
+specification](https://standards.freedesktop.org/autostart-spec/autostart-spec-latest.html#startup),
 such as Gnome, KDE, and Unity.
 
 While running Bitcoin Core GUI, open the Settings menu and choose
@@ -492,7 +492,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win10-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -644,7 +644,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -796,7 +796,7 @@ still need to configure inbound connections as described later in the
 
 ![Opening outgoing firewall for Bitcoin Core](/img/full-node/en-win7-bitcoin-core-outgoing-firewall.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -921,7 +921,7 @@ you want to use, click Ok to use the default.
 
 ![Bitcoin Core Welcome](/img/full-node/en-osx-welcome-to-bitcoin-core.png?{{site.time | date: '%s'}})
 
-Bitcoin Core GUI will begin to download the block chain.  This step will take at
+Bitcoin Core GUI will begin to download the blockchain.  This step will take at
 least several days, and it may take much more time on a slow Internet connection
 or with a slow computer.  During the download, Bitcoin Core will use a
 significant part of your connection bandwidth.  You can stop Bitcoin Core at any
@@ -1043,7 +1043,7 @@ subsections for details.
 
 The BitNodes project provides an online tool to let you test whether
 your node accepts inbound connections. Before using BitNodes, you must first
-ensure that your node is fully synced with the block chain. Once you've done so,
+ensure that your node is fully synced with the blockchain. Once you've done so,
 start Bitcoin Core (either the GUI or the daemon), wait 10 minutes, and then
 [visit the Bitnodes page](https://bitnodes.io/#join-the-network). The tool
 will attempt to guess your IP address---if the address is wrong (or
@@ -1114,7 +1114,7 @@ If Bitcoin Core can't automatically configure your router to open port
 8333, you will need to manually configure your router.  We've tried to
 make the following instructions generic enough to cover most router
 models; if you need specific help with your router, please ask for help
-on a tech support site such as [SuperUser](http://superuser.com/).
+on a tech support site such as [SuperUser](https://superuser.com/).
 
 Enabling inbound connections requires two steps, plus an extra third
 step for firewall users:
@@ -1151,7 +1151,7 @@ your router's manual.
 
 Upon connecting, you will probably be prompted for a username and
 password.  If you configured a password, enter it now.  If not,
-the [Router Passwords site](http://www.routerpasswords.com/) provides a
+the [Router Passwords site](https://www.routerpasswords.com/) provides a
 database of known default username and password pairs.
 
 After logging in, you want to search your router's menus for options
@@ -1243,7 +1243,7 @@ change your firewall settings. See the Firewall section below.
 If something else went wrong, it's probably a problem with your router
 configuration. Re-read the instructions above to see if you missed
 anything, search the web for help with "port forwarding", and ask for
-help on sites like [SuperUser](http://superuser.com).
+help on sites like [SuperUser](https://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)
@@ -1262,7 +1262,7 @@ additional information for Windows, see the links below:
 
 Mac OS X comes with its firewall disabled by default, but if you have
 enabled it, see the section Allowing Specific Applications from the
-[official Apple guide.](http://support.apple.com/en-us/HT201642)
+[official Apple guide.](https://support.apple.com/en-us/HT201642)
 
 Ubuntu also comes with its firewall disabled by default, but if you have
 enabled it, see the [Ubuntu wiki
@@ -1276,7 +1276,7 @@ instructions to test your connection.
 If something else went wrong re-read the DHCP, port forwarding, and
 firewall instructions above to see if you missed anything, search the
 web for help with "port forwarding" and "opening firewall ports", and
-ask for help on sites like [SuperUser](http://superuser.com).
+ask for help on sites like [SuperUser](https://superuser.com).
 
 We can't provide direct support, but if you see a way to improve these
 instructions, please [open an issue.](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new)

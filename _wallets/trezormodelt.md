@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: trezormodelt
 title: "Trezor Model T"
@@ -16,7 +16,7 @@ platform:
         link: "https://trezor.io/"
         source: "https://github.com/trezor/trezor-firmware"
         screenshot: "trezormodelt.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoinwallet
 title: "Bitcoin Wallet"
@@ -14,8 +14,8 @@ platform:
     os:
       - name: android
         text: "walletbitcoinwallet"
-        link: "https://play.google.com/store/apps/details?id=de.schildbach.wallet"
-        source: "https://github.com/bitcoin-wallet/bitcoin-wallet"
+        link: "https://f-droid.org/packages/de.schildbach.wallet/"
+        source: "https://gitlab.com/bitcoin-wallet/bitcoin-wallet"
         screenshot: "bitcoinwalletandroid.png"
         features: "bech32 legacy_addresses segwit"
         check:

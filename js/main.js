@@ -1,5 +1,5 @@
 // This file is licensed under the MIT License (MIT) available on
-// http://opensource.org/licenses/MIT.
+// https://opensource.org/licenses/MIT.
 
 // This file is used for javascript code
 // necessary for some pages to work properly.
@@ -203,7 +203,7 @@ function librariesShow(e) {
 
 function freenodeShow(e) {
   // Display freenode chat window on the "Development" page at user request.
-  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
+  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="https://webchat.freenode.net/?channels=bitcoin-dev" />';
   cancelEvent(e);
 }
 
@@ -731,34 +731,302 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
-function showBuySellWidgets() {
-  
-    var sellWidget = window.MoonPayWebSdk.init({
-    flow: 'sell',
-    environment: 'production',
-    containerNodeSelector: '#sell-widget',
-    variant: 'embedded',
-    params: {
-      theme: 'light',
-      colorCode: '#FF9500',
-      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R'
-    }
-  });
+var moonPaySignerBaseUrl = 'https://moonpay.bitcoin.org';
+var moonPayApiKey = 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R';
+var moonPayEnvironment;
 
-  var buyWidget = window.MoonPayWebSdk.init({
-    flow: 'buy',
-    environment: 'production',
-    containerNodeSelector: '#buy-widget',
-    variant: 'embedded',
-    params: {
-      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
-      theme: 'light',
-      colorCode: '#FF9500'
-    }
-  });
+if (moonPayApiKey.indexOf('pk_test_') === 0) {
+  moonPayEnvironment = 'sandbox';
+} else if (moonPayApiKey.indexOf('pk_live_') === 0) {
+  moonPayEnvironment = 'production';
+} else {
+  throw new Error(
+    'MoonPay API key must begin with pk_test_ or pk_live_.'
+  );
+}
 
-  sellWidget.show();
-  buyWidget.show();
+function getMoonPaySignerUrl(path) {
+  return moonPaySignerBaseUrl.replace(/\/$/, '') + path;
+}
+
+function getMoonPaySignerError(jqXHR, fallbackMessage) {
+  var payload = jqXHR.responseJSON;
+
+  if (!payload && jqXHR.responseText) {
+    try {
+      payload = JSON.parse(jqXHR.responseText);
+    } catch (e) {
+      payload = null;
+    }
+  }
+
+  var message = fallbackMessage;
+  var code = 'signer_request_failed';
+
+  if (payload && payload.error) {
+    if (payload.error.message) {
+      message = payload.error.message;
+    }
+
+    if (payload.error.code) {
+      code = payload.error.code;
+    }
+  }
+
+  var error = new Error(message);
+
+  error.code = code;
+  error.status = jqXHR.status;
+
+  return error;
+}
+
+function requestMoonPayAllowedIpAddress() {
+  return $.ajax({
+    url: getMoonPaySignerUrl('/v1/moonpay/ip-hash'),
+    type: 'POST',
+    dataType: 'json',
+    cache: false,
+    crossDomain: true
+  });
+}
+
+function requestMoonPaySignature(urlForSignature) {
+  return $.ajax({
+    url: getMoonPaySignerUrl('/v1/moonpay/signature'),
+    type: 'POST',
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    processData: false,
+    cache: false,
+    crossDomain: true,
+    data: JSON.stringify({
+      urlForSignature: urlForSignature
+    })
+  });
+}
+
+function initializeSignedMoonPayWidget(flow, containerSelector) {
+  var deferred = $.Deferred();
+
+  if (!window.MoonPayWebSdk ||
+      typeof window.MoonPayWebSdk.init !== 'function') {
+    deferred.reject(
+      new Error('MoonPay Web SDK is not loaded.')
+    );
+
+    return deferred.promise();
+  }
+
+  if ($(containerSelector).length === 0) {
+    deferred.reject(
+      new Error(
+        'MoonPay widget container was not found: ' +
+        containerSelector
+      )
+    );
+
+    return deferred.promise();
+  }
+
+  requestMoonPayAllowedIpAddress()
+    .done(function(ipResponse) {
+      if (!ipResponse ||
+          typeof ipResponse.allowedIpAddress !== 'string' ||
+          ipResponse.allowedIpAddress === '') {
+        deferred.reject(
+          new Error(
+            'The MoonPay signer returned an invalid IP hash.'
+          )
+        );
+
+        return;
+      }
+
+      var widget;
+
+      try {
+        widget = window.MoonPayWebSdk.init({
+          flow: flow,
+          environment: moonPayEnvironment,
+          containerNodeSelector: containerSelector,
+          variant: 'embedded',
+          params: {
+            apiKey: moonPayApiKey,
+            theme: 'light',
+            colorCode: '#FF9500',
+            allowedIpAddress: ipResponse.allowedIpAddress
+          }
+        });
+
+        if (!widget ||
+            typeof widget.generateUrlForSigning !== 'function' ||
+            typeof widget.updateSignature !== 'function' ||
+            typeof widget.show !== 'function') {
+          throw new Error(
+            'The MoonPay Web SDK returned an unsupported ' +
+            flow +
+            ' widget.'
+          );
+        }
+      } catch (error) {
+        deferred.reject(error);
+        return;
+      }
+
+      var urlForSignature;
+
+      try {
+        urlForSignature = widget.generateUrlForSigning();
+      } catch (error) {
+        deferred.reject(error);
+        return;
+      }
+
+      requestMoonPaySignature(urlForSignature)
+        .done(function(signatureResponse) {
+          if (!signatureResponse ||
+              typeof signatureResponse.signature !== 'string' ||
+              signatureResponse.signature === '') {
+            deferred.reject(
+              new Error(
+                'The MoonPay signer returned an invalid signature.'
+              )
+            );
+
+            return;
+          }
+
+          try {
+            widget.updateSignature(
+              signatureResponse.signature
+            );
+
+            deferred.resolve(widget);
+          } catch (error) {
+            deferred.reject(error);
+          }
+        })
+        .fail(function(jqXHR) {
+          deferred.reject(
+            getMoonPaySignerError(
+              jqXHR,
+              'Unable to sign the MoonPay ' +
+              flow +
+              ' widget URL.'
+            )
+          );
+        });
+    })
+    .fail(function(jqXHR) {
+      deferred.reject(
+        getMoonPaySignerError(
+          jqXHR,
+          'Unable to bind the MoonPay ' +
+          flow +
+          ' widget to the client IP address.'
+        )
+      );
+    });
+
+  return deferred.promise();
+}
+
+function showMoonPayWidget(flow, containerSelector, retry) {
+  if (retry === undefined) {
+    retry = false;
+  }
+
+  initializeSignedMoonPayWidget(
+    flow,
+    containerSelector
+  )
+    .done(function(widget) {
+      widget.show();
+    })
+    .fail(function(error) {
+      /*
+       * Repeat the complete IP-hash and signing sequence once
+       * if the visitor's public IP changes between requests.
+       */
+      if (!retry && error.code === 'client_ip_changed') {
+        showMoonPayWidget(
+          flow,
+          containerSelector,
+          true
+        );
+
+        return;
+      }
+
+      console.error(
+        'Unable to display the MoonPay ' +
+        flow +
+        ' widget:',
+        error
+      );
+    });
+}
+
+function showBuyWidget() {
+  showMoonPayWidget(
+    'buy',
+    '.buy-widget'
+  );
+}
+
+function showSellWidget() {
+  showMoonPayWidget(
+    'sell',
+    '.sell-widget'
+  );
+}
+
+function handlePageRedirect(isBuyPage, isSellPage) {
+    if (isBuyPage === undefined) {
+        isBuyPage = false;
+    }
+    if (isSellPage === undefined) {
+        isSellPage = false;
+    }
+
+    $.get('/cdn-cgi/trace')
+        .done(function(response) {
+            var data = {};
+            var lines = response.split('\n');
+            for (var i = 0; i < lines.length; i++) {
+                var line = lines[i];
+                var parts = line.split('=');
+                if (parts.length === 2) {
+                    var key = parts[0];
+                    var value = decodeURIComponent(parts[1] || '');
+                    data[key] = value;
+                }
+            }
+
+            if (isBuyPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showBuyWidget();
+                }
+            } else if (isSellPage) {
+                if (data.loc === 'GB') {
+                    window.location.href = '/';
+                } else {
+                    showSellWidget();
+                }
+            } else {
+                if (data.loc === 'GB') {
+                    $('#buybitcoinbutton').hide();
+                    $('#buybitcoinmenulink').hide();
+                    $('#buybitcoinfootermenulink').hide();
+                    $('#getstartedbuybutton').hide();
+                    $('#sellbitcoinmenulink').hide();
+                    $('#sellbitcoinfootermenulink').hide();
+                }
+            }
+        });
 }
 
 function sortTableColumn(selectedOption) {
@@ -777,3 +1045,17 @@ function sortTableColumn(selectedOption) {
     } else cell.classList.add('hidden');
   }
 }
+
+/* jshint ignore:start */
+window.addEventListener('wheel', (event) => {
+  let cat = document.querySelector('.herecomesbitcoin-cat');
+
+  const screenBottom = window.innerHeight;
+  const scrollBottom = window.scrollY + window.innerHeight;
+  if (scrollBottom + screenBottom >= document.body.offsetHeight && event.deltaY > 200) {
+    setTimeout(() => {
+      cat.classList.add('show');
+    }, 1000);
+  }
+})
+/* jshint ignore:end */

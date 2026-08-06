@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoinknots
 title: "Bitcoin Knots"
@@ -15,7 +15,7 @@ platform:
       link: "https://bitcoinknots.org/"
       source: "https://github.com/bitcoinknots/bitcoin/"
       screenshot: "bitcoinknots.png"
-      features: "bech32 full_node legacy_addresses segwit"
+      features: "bech32 full_node legacy_addresses segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"
