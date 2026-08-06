@@ -157,8 +157,8 @@ The English [homepage](https://bitcoin.org/en/) and [Getting
 Started](https://bitcoin.org/en/getting-started) page by themselves
 received over 2.0 million visits this quarter. These and other regular
 content pages are often updated based on suggestions by first-time
-contributors, with the bulk of updates going to the [Events
-page](https://bitcoin.org/en/events) and the [Resources
+contributors, with the bulk of updates going to the Events
+page and the [Resources
 page](https://bitcoin.org/en/resources) (and its many translations).
 
 * **Update events:** listed 20 new events in addition to the events

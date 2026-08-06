@@ -34,7 +34,7 @@ desktop/laptop screens.
 
 A link is provided at the bottom of the page to allow readers to
 recommend new glossary terms. (It works like the Submit New Event link
-on the [Events page][].)
+on the Events page.)
 
 ### Glossary entries
 
@@ -87,4 +87,3 @@ people load them.
 [Bitcoin.org developer documentation]: https://developer.bitcoin.org/
 [the bitcoin foundation]: https://bitcoinfoundation.org/
 [glossary section]: /en/developer-glossary
-[events page]: /en/events
