@@ -26,8 +26,4 @@ Here are some ways you can help:
   using [Transifex](https://app.transifex.com/bitcoinorg/bitcoinorg/) or help
   review new and updated translations.
 
-* Add Bitcoin events to the [events page](https://bitcoin.org/en/events)
-  either by editing `_events.yml` according to the [event instructions](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md)
-  or by filling in a [pre-made events issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
-
 * Help improve Bitcoin.org another way. [Open an issue](https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new) on GitHub to let us know what you're interested in and how you'd like to get involved.
