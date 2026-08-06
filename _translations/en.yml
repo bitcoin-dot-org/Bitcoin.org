@@ -67,7 +67,7 @@ en:
     multisig: "Multi-signature"
     multisigtext: "Bitcoin includes a multi-signature feature: bitcoins can be set up so that spending them requires approval from several people instead of just one. This can be used by a board of directors, for example, to prevent members from making expenditures without enough consent from other members, as well as to track which members permitted particular transactions."
     transparency: "Accounting transparency"
-    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the <a href=\"#vocabulary##[vocabulary.blockchain]\">blockchain<\/a>. For example, non-profit organizations can allow the public to see how much they receive in donations."
+    transparencytext: "Many organizations are required to produce accounting documents about their activity. Using Bitcoin allows you to offer the highest level of transparency since you can provide information to verify balances and transactions through the <a href=\"#vocabulary##[vocabulary.blockchain]\">blockchain</a>. For example, non-profit organizations can allow the public to see how much they receive in donations."
     lightning: "Accept fast payments with Lightning"
     lightningtext: "The <a href=\"#resources##lightning\">Lightning Network</a> lets your business accept bitcoin payments that settle near-instantly with minimal fees, even for small amounts. Point-of-sale systems and open-source payment tools support Lightning at checkout. See Lightning resources for more."
   bitcoin-for-developers:
