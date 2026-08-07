@@ -37,7 +37,7 @@ module Jekyll
         Dir.foreach('_translations') do |file|
           next if file == '.' or file == '..'
           lang=file.split('.')[0]
-          site['loc'][lang] = YAML.load_file('_translations/'+file)[lang]
+          site['loc'][lang] = YAML.unsafe_load_file('_translations/'+file)[lang]
         end
       end
       #define id, category and lang
