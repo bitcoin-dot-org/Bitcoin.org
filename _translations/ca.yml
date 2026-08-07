@@ -128,7 +128,7 @@ ca:
     summary: "El document que va introduir Bitcoin."
     description: "La lectura de l'article original de Satoshi Nakamoto encara se segueix recomanant per a qualsevol que estudiï com funciona Bitcoin. Escolliu quina traducció del document voleu llegir:"
     translated_by: "traduït per"
-    submit_new_translation: 'Voleu traduir el document a la vostra llengua? Visiteu el <a href="https://github.com/wbnns/bitcoinwhitepaper">Repositori del paper blanc de Bitcoin a GitHub</a> per obtenir instruccions i <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">obrir un tema</a> en cas de dubtes.'
+    submit_new_translation: 'Voleu traduir el document a la vostra llengua? Visiteu el <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Repositori del paper blanc de Bitcoin a GitHub</a> per obtenir instruccions i <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">obrir un tema</a> en cas de dubtes.'
   buy:
     title: "Comprar Bitcoin"
     pagetitle: "Com comprar bitcoin"
@@ -148,7 +148,7 @@ ca:
     reddit: "Comunitat Bitcoin a Reddit"
     stackexchange: "Bitcoin a StackExchange (Preguntes i respostes)"
     irc: "Xat IRC"
-    ircjoin: "Canals IRC a <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
+    ircjoin: "Canals IRC a <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(General relacionat amb Bticoin)"
     chandev: "(Tècnic i desenvolupament)"
     chanotc: "(sobre l'Oficina de Canvi)"
@@ -277,7 +277,6 @@ ca:
     walletcoin: "Coin és una cartera gratuïta que us permet fer pagaments a tot el món a la xarxa Bitcoin. És segur, fàcil d’utilitzar i es pot instal·lar còmodament al telèfon."
     wallettrezorone: "Trezor és una cartera hardware que proporciona un alt nivell de seguretat sense renunciar a la comoditat. A diferència de l’emmagatzematge en fred, Trezor és capaç de signar transaccions mentre està connectat a un dispositiu en línia. Això significa que gastar bitcoins és segur fins i tot quan s’utilitza un equip compromès."
     wallettrezormodelt: "Trezor Model T és una cartera hardware d’última generació, dissenyada tenint en compte els avantatges del Trezor original, combinada amb una interfície moderna i intuïtiva per millorar l’experiència i la seguretat de l’usuari. Compta amb una pantalla tàctil, un processador més ràpid, així com totes les funcions del Trezor One."
-    walletcoldcard: "Coldcard és una cartera hardware fàcil d’utilitzar, ultra segura, de codi obert i assequible, que es pot fer fàcilment mitjançant una targeta microSD xifrada. La vostra clau privada s’emmagatzema en un xip de seguretat dedicat. El disseny del programari MicroPython us permet fer canvis."
     walletkeepkey: "KeepKey és una cartera hardware que dóna senzillesa a la seguretat de Bitcoin. Quan confieu a KeepKey els vostres diners, cada transacció de bitcoins que feu ha de ser revisada i aprovada mitjançant la pantalla OLED i el botó de confirmació."
     walletbitpay: "BitPay Wallet és la cartera multisignatura HD construïda originalment per assegurar els fons de BitPay. BitPay admet múltiples carteres personals i compartides, testnet i el protocol de pagament complet. Es pot utilitzar un node <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> privat per millorar la seguretat i la privadesa."
     walletledgernanos: "Ledger Nano S és una cartera hardware Bitcoin segura. Es connecta a qualsevol ordinador mitjançant USB i incorpora una pantalla OLED integrada per comprovar i confirmar cada transacció amb un sol toc als botons."
@@ -518,7 +517,7 @@ ca:
     disclosuretxt: "Si trobes una vulnerabilitat relacionada amb Bitcoin i aquesta no és crítica, pots informar d'ella enviant un correu electrònic en anglès a qualsevol dels desenvolupadors principals. O també enviant un missatge a la llista privada de correu bitcoin-security apuntada més amunt. Un exemple de vulnerabilitat no crítica podria ser un atac de denegació de servei difícil d'aconseguir. Les vulnerabilitats crítiques que siguin massa sensibles per trametre en un missatge en text clar cal enviar-les  a un o més desenvolupadors del nucli xifrades amb les teves clau(s) PGP."
     involve: "Involucra't"
     involvetxt1: "Bitcoin és de codi obert i qualsevol desenvolupador pot contribuir al projecte. Tot el que necessites ho trobaràs al <a href=\"https://github.com/bitcoin/bitcoin\">repositori GitHub</a>. Si us plau, assegura't de llegir i seguir el procés de desenvolupament descrit al \"README\", així com d'escriure codi de bona qualitat i respectar totes les directrius."
-    involvetxt2: "El debat sobre el desenvolupament té lloc a GitHub i a la llista de correu <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>. Es produeix una discussió de desenvolupament menys formal a irc.freenode.net # bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">interfície web</a>, <a href=\"http://bitcoinstats.com/irc/bitcoin-core-dev/logs\">registres</a>)."
+    involvetxt2: "El debat sobre el desenvolupament té lloc a GitHub i a la llista de correu <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a>. Es produeix una discussió de desenvolupament menys formal a irc.libera.chat # bitcoin-core-dev (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">interfície web</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">registres</a>)."
     more: "Més projectes de programari lliure"
     morewant: "Voleu contribuir a un projecte diferent?"
     morechoose: "Pots triar un projecte per tal de contribuir-hi responent a algunes<a href=\"http://whatcanidoforbitcoin.xyz/\"> preguntes sobre les teves habilitats</a>."
@@ -527,8 +526,7 @@ ca:
     contributorsorder: "(Ordenats per ordre de contribucions)"
     devcommunities: "Comunitats de desenvolupadors"
     devcommunitiesintro: "Les sales de xat i llocs web següents allotgen discussions sobre el desenvolupament de Bitcoin. Si et plau, llegeix les normes de comportament abans de publicar-hi."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Canal IRC #bitcoin-core-dev</a> a freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Canal d'Slack de Bitcoin Core</a>"
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Canal IRC #bitcoin-core-dev</a> a Libera Chat."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -541,7 +539,7 @@ ca:
     downloadtorrent: "Descarregar torrent"
     source: "Codi font"
     versionhistory: "Mostrar l'historial de versions"
-    notelicense: "Bitcoin Core és un projecte de <a href=\"https://www.fsf.org/about/what-is-free-software\">programari lliure</a> gestionat per la comunitat i entregat sota <a href=\"http://opensource.org/licenses/mit-license.php\">llicència MIT</a>."
+    notelicense: "Bitcoin Core és un projecte de <a href=\"https://www.fsf.org/about/what-is-free-software\">programari lliure</a> gestionat per la comunitat i entregat sota <a href=\"https://opensource.org/licenses/mit-license.php\">llicència MIT</a>."
     notesync: "La sincronització inicial de Bitcoin Core trigarà temps i baixarà moltes dades. Heu d'assegurar-vos que teniu prou amplada de banda i emmagatzematge per a la mida de la cadena de blocs completa (més de {{site.text.bitcoin_datadir_gb}} GB). Si teniu una bona connexió a Internet, podeu ajudar a enfortir la xarxa mantenint el vostre PC funcionant amb Bitcoin Core i el port 8333 oberts."
     full_node_guide: "Llegiu la <a href=\"/en/full-node\">guia completa</a> per a més detalls"
     patient: "Comprova el teu espai i ample de banda"
@@ -574,7 +572,7 @@ ca:
     table: "Taula de continguts"
     general: "General"
     whatisbitcoin: "Què és Bitcoin?"
-    whatisbitcointxt1: "Bitcoin és una xarxa consensuada que proporciona un nou sistema de pagament i una moneda completament digital. És la primera xarxa de pagament descentralitzada P2P que és portada a terme pels seus usuaris sense la gestió d'una autoritat central o intermediaris. Des de la perspectiva de l'usuari, Bitcoin és molt similar als diners en efectiu per a Internet. Bitcoin també pot ser vist com el  <a href=\"http://financialcryptography.com/mt/archives/001325.html\">sistema de comptabilitat triple per partida</a> més prominent en existència."
+    whatisbitcointxt1: "Bitcoin és una xarxa consensuada que proporciona un nou sistema de pagament i una moneda completament digital. És la primera xarxa de pagament descentralitzada P2P que és portada a terme pels seus usuaris sense la gestió d'una autoritat central o intermediaris. Des de la perspectiva de l'usuari, Bitcoin és molt similar als diners en efectiu per a Internet. Bitcoin també pot ser vist com el  <a href=\"https://financialcryptography.com/mt/archives/001325.html\">sistema de comptabilitat triple per partida</a> més prominent en existència."
     creator: "Qui va crear Bitcoin?"
     creatortxt1: "Bitcoin és la primera implementació d'un concepte anomenat \"criptomoneda\", el qual va ser descrit per primera vegada l'any 1998 per Wei Dai a la llista de correu cypherpunks. Suggeria la idea d'una nou tipus de moneda que en comptes d'una autoritat central utilitzés criptografia per tal de controlar la seva creació i les seves transaccions. La primera especificació Bitcoin i la prova de concepte va ser publicada l'any 2009 per Satoshi Nakamoto en una llista de correu de criptografia. Satoshi va deixar el projecte a finals del 2010 sense revelar gaire res sobre ell mateix. La comunitat des de llavors ha crescut exponencialment amb molts <a href=\"#development#\">desenvolupadors</a> treballant-hi."
     creatortxt2: "L'anonimat de Satoshi ha plantejat preocupacions injustificades moltes de les quals van lligades a no entendre la naturalesa \"open-source\" de Bitcoin. El protocol Bitcoin i el seu programari es publica obertament i qualsevol desenvolupador del món el pot revisar o fer-ne la seva pròpia versió modificada. Tal com passa amb els desenvolupadors actuals, la influència de Satoshi es limitava als canvis que feia i que posteriorment eren adoptats per altres. Ell no controlava Bitcoin. Vist així, la identitat de l'inventor de Bitcoin podria considerar-se avui tan rellevant com la identitat de la persona que va inventar el paper."
@@ -589,7 +587,7 @@ ca:
     acquireli1: "Com a pagament per a béns o serveis."
     acquireli2: "Compra bitcoins a una <a href=\"https://www.buybitcoinworldwide.com\">casa de canvi</a>."
     acquireli3: "Canvia bitcoins amb <a href=\"https://localbitcoins.com/\">algú a prop teu</a>."
-    acquireli4: "Guanya bitcoins a trabés de <a href=\"http://www.bitcoinmining.com/\">mineria</a> competitiva."
+    acquireli4: "Guanya bitcoins a trabés de <a href=\"https://www.bitcoinmining.com/\">mineria</a> competitiva."
     acquiretxt1: "Tot i que encara és possible trobar persones que desitgin vendre bitcoins amb pagaments PayPal o amb targeta de crèdit, la majoria de cases de canvi no accepten aquests tipus de pagament. Això es deu a casos en què algú ha comprat bitcoins amb PayPal i després ha revertit el pagament. Aquesta acció es coneix com a \"chargeback\"."
     makepayment: "Quina dificultat té fer un pagament amb Bitcoin?"
     makepaymenttxt1: "Els pagaments Bitcoin són més fàcils de fer que les compres amb targeta de crèdit o dèbit i es poden rebre sense un compte d'empresa. Els pagaments es fan des de l'aplicació moneder, sigui al teu ordinador o telèfon intel·ligent, entrant l'adreça del beneficiari. Molts moneders poden obtenir l'adreça escanejant un codi QR o tocant els dos telèfons amb tecnologia NFC."
@@ -734,7 +732,7 @@ ca:
     miningsecure: "Com ajuda la mineria a assegurar Bitcoin?"
     miningsecuretxt1: "La mineria crea l’equivalent a una loteria competitiva que fa que sigui molt difícil afegir nous blocs de transaccions a la cadena de blocs de manera consecutiva. Això protegeix la neutralitat de la xarxa evitant que qualsevol individu pugui obtenir el poder de bloquejar determinades transaccions. Això també evita que qualsevol individu substitueixi parts de la cadena de blocs per revertir les seves pròpies despeses, que es podrien utilitzar per estafar altres usuaris. La mineria fa que sigui exponencialment més difícil revertir una transacció passada en requerir la reescriptura de tots els blocs posteriors a aquesta transacció."
     miningstart: "Què necessito per començar a minar?"
-    miningstarttxt1: "En els primers dies de Bitcoin, qualsevol podia trobar un bloc nou utilitzant la CPU del seu ordinador. A mesura que cada cop més gent va començar a explotar la mineria, la dificultat de trobar nous blocs va augmentar molt fins al punt que l'únic mètode rendible d'explotació actual és utilitzar maquinari especialitzat. Podeu visitar <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> per obtenir més informació."
+    miningstarttxt1: "En els primers dies de Bitcoin, qualsevol podia trobar un bloc nou utilitzant la CPU del seu ordinador. A mesura que cada cop més gent va començar a explotar la mineria, la dificultat de trobar nous blocs va augmentar molt fins al punt que l'únic mètode rendible d'explotació actual és utilitzar maquinari especialitzat. Podeu visitar <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> per obtenir més informació."
     security: "Seguretat"
     secure: "Bitcoin és segur?"
     securetxt1: "La tecnologia Bitcoin - el protocol i la criptografia - té un fort historial de seguretat i la xarxa Bitcoin és probablement el projecte d’informàtica distribuïda més gran del món. La vulnerabilitat més comuna de Bitcoin és l’error de l’usuari. Els fitxers de la cartera Bitcoin que emmagatzemen les claus privades necessàries es poden esborrar accidentalment, perdre o robar. Això és força similar a l’efectiu físic emmagatzemat en forma digital. Afortunadament, els usuaris poden emprar bones <a href=\"#secure-your-wallet#\">pràctiques de seguretat</a> per protegir els seus diners o utilitzar proveïdors de serveis que ofereixen bons nivells de seguretat i assegurança contra robatoris o pèrdues."
@@ -821,9 +819,9 @@ ca:
         Imagineu escoltar la ràdio d’Internet pagant per segon, veure pàgines web
         per una petita propina per a cada anunci que no es mostra o comprar amplada
         de banda des d’un punt d’accés WiFi al quilobyte. Bitcoin és prou eficient
-        per fer possible totes aquestes idees. <a href="https://bitcoinj.github.io/working-with-micropayments">Obteniu
+        per fer possible totes aquestes idees. <a href="https://bitcoinj.org/working-with-micropayments">Obteniu
         més informació</a> sobre la tecnologia que hi ha darrere dels micropagaments
-        de Bitcoin o sobre <a href="http://lightning.network/">futures actualitzacions</a>
+        de Bitcoin o sobre <a href="https://en.wikipedia.org/wiki/Lightning_Network">futures actualitzacions</a>
         que s’estan dissenyant i implementant per fer els micropagaments més accessibles.
     mediation: "Mediació de disputes"
     mediationtext: "Bitcoin es pot utilitzar per desenvolupar serveis innovadors de mediació de conflictes mitjançant múltiples signatures. Aquests serveis podrien fer possible que un tercer aprovés o rebutgés una transacció en cas de desacord entre les altres parts sense tenir el control dels seus diners. Atès que aquests serveis serien compatibles amb qualsevol usuari i comerciant que utilitzi Bitcoin, probablement això conduiria a la lliure competència i a uns estàndards de qualitat més alts."
@@ -917,7 +915,6 @@ ca:
     pagetitle: "Recursos de Bitcoin"
     pagedesc: "Llocs web i recursos útils sobre Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Wiki Bitcoin</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Directoris"
     linkwallets: "Moneders"
     linkmerchants: "Comerciants"
@@ -1010,9 +1007,7 @@ ca:
     pagetitle: "Gastar Bitcoin"
     summary: "Hi ha milers d'empreses a tot el món que accepten Bitcoin."
     products-online: "Trobeu productes en venda en línia"
-    products-online-text: "Un ús comú de Bitcoin és fer compres en línia. Hi ha centenars de botigues en línia i minoristes que accepten Bitcoin. Mitjançant un motor de cerca com <a href=\"https://spendabit.co/\">Spendabit</a>, podeu cercar entre milions de productes, tots disponibles per a la compra amb bitcoins."
     directory: "Navegueu per un directori d'empreses"
-    directory-text: "També podeu trobar moltes empreses llistades als <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">directoris en línia</a>."
     business-map: "Trobeu negocis locals"
     business-map-text: "També hi ha moltes empreses locals, com ara cafeteries i restaurants, que accepten Bitcoin. Podeu utilitzar <a href=\"https://btcmap.org/\">btcmap.org</a> per navegar per milers d'empreses arreu del món."
   support-bitcoin:
@@ -1024,7 +1019,7 @@ ca:
     node: "Sigues la xarxa"
     nodetxt: "Si teniu una bona connexió a Internet, podeu reforçar la xarxa Bitcoin mantenint el <a href=\"/en/full-node\">programari de node complet</a> en execució al vostre ordinador o servidor amb el port 8333 obert. Els nodes complets estan assegurant i transmetent totes les transaccions."
     mining: "Minant"
-    miningtxt: "Pots començar a <a href=\"http://www.bitcoinmining.com/\">minar bitcoins</a> per ajudar a processar les transaccions. Per tal de protegir la xarxa el millor seria unir-se a un <a href=\"http://p2pool.in/\">\"pool\" petit de minat</a> i entre aquests triar-ne un de descentralitzat com P2Pool o <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">\"pools\"</a> amb suport per (GBT)."
+    miningtxt: "Pots començar a <a href=\"https://www.bitcoinmining.com/\">minar bitcoins</a> per ajudar a processar les transaccions. Per tal de protegir la xarxa el millor seria unir-se a un <a href=\"http://p2pool.in/\">\"pool\" petit de minat</a> i entre aquests triar-ne un de descentralitzat com P2Pool o <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">\"pools\"</a> amb suport per (GBT)."
     develop: "Desenvolupament"
     developtxt: "Bitcoin és programari lliure. Si sou un desenvolupador/a, podeu utilitzar els vostres superpoders per fer el bé i <a href=\"#development#\">millorar Bitcoin</a>. O podeu crear nous serveis o programes sorprenents que facin servir Bitcoin."
     donation: "Donació"
@@ -1133,7 +1128,7 @@ ca:
         Aquesta pàgina s'ha mogut al nou Bitcoin Core
         lloc web (fes clic aquí per ser redirigit)
     banner-translate: "Les traduccions d'aquest idioma estan obsoletes. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Feu clic aquí per ajudar a traduir bitcoin.org al vostre idioma</a>."
-    footer: "publicat sota la <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">llicència MIT</a>"
+    footer: "publicat sota la <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">llicència MIT</a>"
     donate-community: "Suporta Bitcoin.org"
     donate-support: "Bitcoin.org està suportat per la comunitat."
     network-status: "Estat de la xarxa"

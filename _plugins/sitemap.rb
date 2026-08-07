@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #sitemap.rb generates a sitemap.xml file, which also includes
 #alternate hreflang for each translated version of each page.
@@ -42,7 +42,7 @@ module Jekyll
       File.open(File.join(site.dest, 'sitemap.xml'), 'w+') do |sitemap|
         #Open sitemap
         sitemap.puts '<?xml version="1.0" encoding="UTF-8"?>'
-        sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+        sitemap.puts '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"'
         sitemap.puts '	xmlns:xhtml="http://www.w3.org/1999/xhtml">'
         #Add translated pages with their alternative in each languages
         locs['en']['url'].each do |id,value|

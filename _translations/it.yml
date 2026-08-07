@@ -130,7 +130,7 @@ it:
     summary: "Il documento che introdusse per primo il bitcoin"
     description: "Il documento originale di Satoshi Nakamoto è ancora una lettura consigliata per chiunque voglia studiare il funzionamento del Bitcoin. Scegli quale traduzione del documento vuoi leggere:"
     translated_by: "tradotto da"
-    submit_new_translation: 'Vuoi tradurre questo documento nella tua lingua? Visita <a href="https://github.com/wbnns/bitcoinwhitepaper">l''archivio Bitcoin di white papers su GitHub</a> per le istruzioni e <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">apri una discussione</a> se hai domande.'
+    submit_new_translation: 'Vuoi tradurre questo documento nella tua lingua? Visita <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">l''archivio Bitcoin di white papers su GitHub</a> per le istruzioni e <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">apri una discussione</a> se hai domande.'
   buy:
     title: "Compra Bitcoin"
     pagetitle: "Come comprare bitcoin"
@@ -150,7 +150,7 @@ it:
     reddit: "Comunità Bitcoin su Reddit"
     stackexchange: "Bitcoin StackExchange (Q&amp;A)"
     irc: "Chat IRC"
-    ircjoin: "Canali IRC su <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
+    ircjoin: "Canali IRC su <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Discussioni generali su Bitcoin)"
     chandev: "(Discussioni tecniche e sullo sviluppo)"
     chanotc: "(Discussioni riguardo gli scambi su Over The Counter)"
@@ -279,7 +279,6 @@ it:
     walletmyceliumwallet: "Il portafoglio per Android Mycelium è progettato per la sicurezza, la velocità, e la facilità di utilizzo. Ha funzionalità uniche per gestire le tue chiavi e per il cold storage, ed inoltre fornisce compatibilità con Trezor ed altri."
     walletbitgo: "BitGo è un portafoglio multi-firma ad alta sicurezza, che protegge i tuoi bitcoin da furti e perdite. Tu ne hai la gestione totale, infatti BitGo non può spendere o bloccare i fondi. I portafogli BitGo sono facili da utilizzare e offrono funzioni di sicurezza avanzata come limiti di spesa e accesso multi-utente."
     wallettrezor: "Trezor è un portafoglio hardware che fornisce un elevato livello di sicurezza senza sacrificare la comodità. A differenza del cold storage, trezor è in grado di firmare le transazioni quando connesso a un dispositivo online. Ciò significa che è sicuro spendere Bitcoin anche quando si utilizza un computer compromesso."
-    walletcoldcard: "Coldcard è un portafoglio fisico, facile da usare, ultrasicuro, open-source ed economico, di cui si può fare una copia di back-up in maniera semplice usando una scheda microSD criptata. La tua chiave privata è salvata in un chip di sicurezza dedicato. Il programma in MicroPython ti permette ti effettuare modifiche."
     walletkeepkey: "KeepKey é un wallet hardware che mette in sicurezza facilmente i bitcoin. Quanto ci si affida a KeepKey ogni transazione che effettui con bitcoin va riverificata e approvata tramite il display OLED e il pulsante di conferma."
     walletbitpay: "BitPay Wallet è il portafoglio HD-multifirma realizzato originariamente per proteggere i fondi di BitPay. BitPay supporta più portafogli personali e condivisi, testnet e il protocollo di pagamento completo. Per una maggiore sicurezza e privacy si può utilizzare un nodo <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> privato."
     walletledgernanos: "Ledger Nano S è un portafoglio hardware sicuro di Bitcoin. Connette ogni computer tramite USB e incorpora un display OLED integrato per ricontrollare e confermare ogni transazione con un semplice tocco."
@@ -520,7 +519,7 @@ it:
     disclosuretxt: "Se trovi una vulnerabilità relativa a Bitcoin, le vulnerabilità non critiche possono essere spedite via e-mail in inglese a chiunque dei principali sviluppatori, o inviate alla mailing list della sicurezza di bitcoin privata in alto. Un esempio di vulnerabilità non critica è una negazione dell'attacco al servizio costoso da portare via. Le vulnerabilità critiche che sono più sensibili per le e-mail non criptate, dovrebbero essere inviate ad uno o più principali sviluppatori, encriptate con le loro chiavi PGP."
     involve: "Partecipa"
     involvetxt1: "Lo sviluppo di Bitcoin è open-source e qualsiasi sviluppatore può contribuire al progetto. Tutto quello di cui hai bisogno è nel <a href=\"https://github.com/bitcoin/bitcoin\">deposito GitHub</a>. Per favore assicurati di leggere e di seguire il processo di sviluppo descritto nel file README, al fine di produrre un codice di buona qualità e rispettare tutte le linee guida."
-    involvetxt2: "Le discussioni relative allo sviluppo hanno luogo su GitHub e sulla <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a> mailing list. Discussioni meno formali sullo sviluppo si trovano su irc.freenode.net # bitcoin-core-dev(<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>,<a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
+    involvetxt2: "Le discussioni relative allo sviluppo hanno luogo su GitHub e sulla <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a> mailing list. Discussioni meno formali sullo sviluppo si trovano su irc.libera.chat # bitcoin-core-dev(<a href=\"https://web.libera.chat/#bitcoin-core-dev\">web interface</a>,<a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
     more: "Altri progetti open-source"
     morewant: "Vuoi contribuire ad un progetto diverso?"
     morechoose: "Puoi scegliere a quale progetto contribuire rispondendo ad alcune domande riguardo le tue <a href=\"http://whatcanidoforbitcoin.org/\">abilità</a>."
@@ -529,7 +528,7 @@ it:
     contributorsorder: "(Ordinati per numero di incarichi)"
     devcommunities: "Comunità di sviluppatori"
     devcommunitiesintro: "I seguenti siti e chatroom ospitano discussioni riguardo lo sviluppo di Bitcoin. Si prega di leggere le regole di comportamento prima di inserire messaggi."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">Canale IRC #bitcoin-core-dev</a> su freenode."
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Canale IRC #bitcoin-core-dev</a> su Libera Chat."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">Forum di BitcoinTalk - Development &amp; Technical Discussion</a>"
   download:
@@ -575,7 +574,7 @@ it:
     table: "Sommario"
     general: "Generale"
     whatisbitcoin: "Che cos'è Bitcoin?"
-    whatisbitcointxt1: "Bitcoin è una rete di consenso che consente un sistema di pagamento ed è una forma di denaro completamente digitale. Si tratta della prima rete decentralizzata di pagamento peer-to-peer, gestita dai suoi utenti senza alcuna autorità centrale o intermediari. Dalla prospettiva di un utente, Bitcoin è per la maggior parte denaro liquido che circola in internet. Bitcoin può anche essere considerato come il più illustre <a href=\"http://financialcryptography.com/mt/archives/001325.html\">triplo sistema di bloccaggio di accesso e contabilità</a> esistente."
+    whatisbitcointxt1: "Bitcoin è una rete di consenso che consente un sistema di pagamento ed è una forma di denaro completamente digitale. Si tratta della prima rete decentralizzata di pagamento peer-to-peer, gestita dai suoi utenti senza alcuna autorità centrale o intermediari. Dalla prospettiva di un utente, Bitcoin è per la maggior parte denaro liquido che circola in internet. Bitcoin può anche essere considerato come il più illustre <a href=\"https://financialcryptography.com/mt/archives/001325.html\">triplo sistema di bloccaggio di accesso e contabilità</a> esistente."
     creator: "Chi ha creato Bitcoin?"
     creatortxt1: "Bitcoin è la prima realizzazione di un concetto chiamato \"cryptocurrency\", che fu descritta per la prima volta nel 1998 da Wei Dai nella mailing list cypherpunk, suggerendo l'idea di una nuova forma di denaro che usa la crittografia per controllare la sua creazione e le transazioni, piuttosto che un'autorità centrale. Le prime specifiche di Bitcoin e l'esposizione dell'idea furono pubblicate nel 2009 in una mailing list di crittografia da Satoshi Nakamoto. Satoshi lasciò il progetto alla fine del 2010 senza rivelare molto di se stesso. La comunità è cresciuta in modo esponenziale con <a href=\"#development#\">molti sviluppatori</a> che lavorano su Bitcoin."
     creatortxt2: "L'anonimato di Satoshi spesso ha sollevato preoccupazioni ingiustificate, alcune delle quali sono legate a incomprensioni sulla natura open-source di Bitcoin. Il protocollo e il software Bitcoin sono stati pubblicati apertamente e qualsiasi sviluppatore in giro per il mondo può revisionare il codice o creare la propria versione modificata del software Bitcoin. Proprio come gli sviluppatori attuali, l'influenza di Satoshi fu limitata ai cambiamenti che fece in corso di adozione da altri e quindi lui non controllava Bitcoin. In quanto tale, l'identità dell'inventore di Bitcoin oggi è probabilmente rilevante come l'identità della persona che ha inventato la carta."
@@ -590,7 +589,7 @@ it:
     acquireli1: "Come pagamento per beni o servizi."
     acquireli2: "Acquista bitcoin da un <a href=\"https://www.buybitcoinworldwide.com\">cambio Bitcoin</a>."
     acquireli3: "Scambia bitcoin con <a href=\"https://localbitcoins.com/\">qualcuno vicino a te</a>."
-    acquireli4: "Guadagna bitcoin attraverso un<a href=\"http://www.bitcoinmining.com/\">mining</a> competitivo."
+    acquireli4: "Guadagna bitcoin attraverso un<a href=\"https://www.bitcoinmining.com/\">mining</a> competitivo."
     acquiretxt1: "Può capitare di incontrare soggetti che intendono vendere bitcoin in cambio di una carta di credito o di un pagamento via Paypal, ma la maggioranza degli scambi non consente di accogliere questi metodi di pagamento. Questo è dovuto a casi in cui qualcuno acquista dei bitcoin con Paypal, e poi scambia metà della transazione. Questa operazione si definisce comunemente con il termine di chargeback. "
     makepayment: "Quanto è difficile effettuare un pagamento Bitcoin?"
     makepaymenttxt1: "I pagamenti Bitcoin sono più semplici da effettuare che con una carta di credito o un Bancomat, e possono essere ricevuti senza un conto da commerciante. I pagamenti sono effettuati da un'applicazione portafoglio, che sia sul tuo computer o sullo smartphone, inserendo l'indirizzo del destinatario, l'importo del pagamento e premendo invio. Per rendere più facile inserire un indirizzo, alcuni portafogli possono ottenerlo scannerizzando un codice QR o sfiorando due telefoni insieme con tecnologia NFC."
@@ -733,7 +732,7 @@ it:
     miningsecure: "Come aiuta il mining a tenere sicura la rete Bitcoin ?"
     miningsecuretxt1: "La fase di mining crea l'equivalente di una lotteria competitiva, che rende difficile per chiunque aggiungere di conseguenza nuovi blocchi di transazioni all'interno di una block chain. Questo protegge la neutralità della rete, prevenendo che chiunque possa acquisire la capacità di bloccare determinate transazioni. Questo impedisce anche che si sostituiscano parti della block chain per ridurre le proprie spese, il che potrebbe essere utilizzato per defraudare gli altri utenti. Il mining rende esponenzialmente più difficile invertire una transazione passata, richiedendo di riscrivere tutti i block in seguito alla transazione. "
     miningstart: " Che cosa mi occorre per iniziare il mining?"
-    miningstarttxt1: "Nei primi giorni di Bitcoin, chiunque poteva trovare un nuovo blocco, attraverso il proprio CPU del computer. Man mano che sempre più persone iniziarono l'operazione del mining,  la difficoltà di trovare nuovi blocchi aumentava enormemente, fino al punto in cui l'unico metodo vantaggioso del mining oggi utilizza un hardware specializzato. Puoi visitare <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> per maggiori informazioni."
+    miningstarttxt1: "Nei primi giorni di Bitcoin, chiunque poteva trovare un nuovo blocco, attraverso il proprio CPU del computer. Man mano che sempre più persone iniziarono l'operazione del mining,  la difficoltà di trovare nuovi blocchi aumentava enormemente, fino al punto in cui l'unico metodo vantaggioso del mining oggi utilizza un hardware specializzato. Puoi visitare <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> per maggiori informazioni."
     security: "Sicurezza"
     secure: "Bitcoin è sicuro?"
     securetxt1: "La tecnologia di Bitcoin - il protocollo e la criptologia - ha un potente registro della sicurezza, e la rete Bitcoin è probabilmente il maggiore progetto di elaborazione distribuito al mondo.  La più comune vulnerabilità di Bitcoin è un errore dell'utente. Il portafoglio Bitcoin raccoglie tutte le chiavi private necessarie, che possono essere cancellate, perdute, perse accidentalmente. Ciò è molto simile al denaro liquido immagazzinato in forma digitale. Per fortuna, gli utenti possono impiegare<a href=\"#secure-your-wallet#\">delle pratiche di sicurezza</a> per proteggere il proprio denaro o utilizzare i provider che offrono dei buoni livelli di sicurezza e assicurazione contro furto o perdita. "
@@ -820,8 +819,8 @@ it:
         Immaginate di ascoltare una radio pagata in secondi di ascolto, di guardare
         una pagina web con una piccola mancia per ogni inserzione pubblicitaria omessa
         oppure di acquistare banda da un punto di accesso WiFi e pagarlo a kilobyte.
-        Bitcoin è talmente efficiente da rendere tutte queste idee possibili. <a href="https://bitcoinj.github.io/working-with-micropayments">Approfondisci</a>
-        la tecnologia alla base dei micro pagamenti Bitcoin o sui suoi <a href="http://lightning.network/">futuri
+        Bitcoin è talmente efficiente da rendere tutte queste idee possibili. <a href="https://bitcoinj.org/working-with-micropayments">Approfondisci</a>
+        la tecnologia alla base dei micro pagamenti Bitcoin o sui suoi <a href="https://en.wikipedia.org/wiki/Lightning_Network">futuri
         sviluppi</a>attualmente in fase di progettazione ed implementazione per rendere
         i micropagamenti più accessibili.
     mediation: "Mediazione delle controversie"
@@ -840,7 +839,7 @@ it:
     title: "Note legali - Bitcoin"
     pagetitle: "Note legali"
     information: "Informazioni pubblicate su bitcoin.org"
-    informationtxt1: "Il sito web http://bitcoin.org/ (da qui in poi chiamato \"il sito\") fornisce informazioni e materiale di natura generale. Non siete autorizzati, e non dovreste neanche, ad affidarvi al sito per consigli legali, commerciali o di qualsiasi tipo. Agite a vostro rischio in base ai contenuti del sito. In qualsiasi caso dovreste contattare un legale competente nel campo nel quale avete bisogno di aiuto. I proprietari del sito, e anche chi vi contribuisce, non sono ritenuti responsabili delle vostre azioni, decisioni o comportamenti attuati in base ai contenuti del sito."
+    informationtxt1: "Il sito web https://bitcoin.org/ (da qui in poi chiamato \"il sito\") fornisce informazioni e materiale di natura generale. Non siete autorizzati, e non dovreste neanche, ad affidarvi al sito per consigli legali, commerciali o di qualsiasi tipo. Agite a vostro rischio in base ai contenuti del sito. In qualsiasi caso dovreste contattare un legale competente nel campo nel quale avete bisogno di aiuto. I proprietari del sito, e anche chi vi contribuisce, non sono ritenuti responsabili delle vostre azioni, decisioni o comportamenti attuati in base ai contenuti del sito."
     translations: "Traduzioni"
     translationstxt1: "Il sito può contenere traduzioni del materiale nella versione in Inglese. Queste traduzioni sono fornite solo per comodità. In caso di difformità tra la versione Inglese e quella tradotta, la versione Inglese è sempre quella di riferimento. Se hai trovato delle incongruenze, ti chiediamo di segnalarle su <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Rischi correlati all'utilizzo di Bitcoin"
@@ -916,7 +915,6 @@ it:
     pagetitle: "Risorse Bitcoin"
     pagedesc: "Siti web e risorse utili su Bitcoin."
     linkwiki: "<a href=\"https://it.bitcoin.it/\">Bitcoin Wiki</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Guide"
     linkwallets: "Portafogli"
     linkmerchants: "Commercianti"
@@ -1009,9 +1007,7 @@ it:
     pagetitle: "Spendere Bitcoin"
     summary: "Ci sono migliaia di attività commerciali in tutto il mondo che accettano Bitcoin."
     products-online: "Trova prodotti in vendita online"
-    products-online-text: "Un uso comune dei Bitcoin è lo shopping online. Ci sono centinaia di negozi online e rivenditori che accettano Bitcoin. Usando un motore di ricerca come <a href=\"https://spendabit.co/\">Spendabit</a> puoi cercare tra milioni di prodotti, tutti acquistabili tramite i bitcoins."
     directory: "Naviga in una categoria di commercio"
-    directory-text: "Puoi anche trovare altre attività elencate in <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">categorie online</a>"
     business-map: "Trova attività commerciali locali"
     business-map-text: "Ci sono anche molte attività commerciali, come bar e ristoranti, che accettano Bitcoin. Puoi utilizzare <a href=\"https://btcmap.org/\">btcmap.org</a> per esplorare migliaia di attività commerciali situate in tutto il mondo."
   support-bitcoin:
@@ -1023,7 +1019,7 @@ it:
     node: "Diventa parte della rete"
     nodetxt: "Se hai una buona connessione Internet, puoi rafforzare la rete Bitcoin facendo girare sul tuo computer o server un portafoglio <a href=\"/en/full-node\">full-node</a> aprendo la porta 8333. I programmi full-node effettuano le transazioni e le rendono sicure."
     mining: "Mining-Estrazione"
-    miningtxt: "Puoi iniziare a <a href=\"http://www.bitcoinmining.com/\">minare bitcoin</a> aiutando a proteggere le transazioni. Per poter proteggere la rete, dovresti unirti ai piccoli mining pools e preferire pool decentralizzati come <a href=\"http://p2pool.in/\">P2Pool</a> oppure <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> con il supporto ai getblocktemplate (GBT)"
+    miningtxt: "Puoi iniziare a <a href=\"https://www.bitcoinmining.com/\">minare bitcoin</a> aiutando a proteggere le transazioni. Per poter proteggere la rete, dovresti unirti ai piccoli mining pools e preferire pool decentralizzati come <a href=\"http://p2pool.in/\">P2Pool</a> oppure <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pools</a> con il supporto ai getblocktemplate (GBT)"
     develop: "Sviluppo"
     developtxt: "Bitcoin è un software gratuito. Se sei uno sviluppatore, puoi usare i tuoi super poteri per far del bene e <a href=\"#development#\">migliorare Bitcoin</a>. Oppure puoi realizzare nuovi incredibili servizi o software che usa Bitcoin."
     donation: "Donazioni"
@@ -1132,7 +1128,7 @@ it:
         Questa pagina è stata spostata nel nuovo sito web di Bitcoin Core
         (clicca qui per essere reindirizzato)
     banner-translate: "La traduzione per questa lingua è ormai datata.  <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Clicca qui per aiutarci a tradurre il sito bitcoin.org nella tua lingua</a>."
-    footer: "Rilasciato sotto <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
+    footer: "Rilasciato sotto <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">licenza MIT</a>"
     donate-community: "Sostieni Bitcoin.org"
     donate-support: "Bitcoin.org è sostenuto dalla comunità."
     network-status: "Stato della Rete"

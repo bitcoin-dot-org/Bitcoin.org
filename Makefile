@@ -1,5 +1,5 @@
 ## This file is licensed under the MIT License (MIT) available on
-## http://opensource.org/licenses/MIT.
+## https://opensource.org/licenses/MIT.
 
 S=@  ## Silent: only print errors by default;
      ## run `make S='' [other args]` to print commands as they're run

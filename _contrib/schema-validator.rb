@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 require 'safe_yaml/load'
 require 'json-schema'
