@@ -4,7 +4,7 @@ rvm:
   - "3.3.10"
 cache: bundler
 env:
-  # http://docs.travis-ci.com/user/environment-variables/#Global-Variables
+  # https://docs.travis-ci.com/user/environment-variables/#Global-Variables
   global:
     - BITCOINORG_BUILD_TYPE=deployment
 

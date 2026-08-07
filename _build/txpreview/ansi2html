@@ -4,7 +4,7 @@
 
 # Licence: LGPLv2
 # Author:
-#    http://www.pixelbeat.org/docs/terminal_colours/
+#    https://www.pixelbeat.org/docs/terminal_colours/
 # Examples:
 #    ls -l --color=always | ansi2html.sh > ls.html
 #    git show --color | ansi2html.sh > last_change.html
@@ -33,7 +33,7 @@
 #                         Handle isolated <bold> attributes with css.
 #                         Strip more terminal control codes.
 #    V0.15, 16 Oct 2013
-#      http://github.com/pixelb/scripts/commits/master/scripts/ansi2html.sh
+#      https://github.com/pixelb/scripts/commits/master/scripts/ansi2html.sh
 
 if [ "$1" = "--version" ]; then
     printf '0.15\n' && exit
@@ -51,7 +51,7 @@ fi
 [ "$1" = "--bg=dark" ] && { dark_bg=yes; shift; }
 
 if [ "$1" = "--palette=solarized" ]; then
-   # See http://ethanschoonover.com/solarized
+   # See https://ethanschoonover.com/solarized
    P0=073642;  P1=D30102;  P2=859900;  P3=B58900;
    P4=268BD2;  P5=D33682;  P6=2AA198;  P7=EEE8D5;
    P8=002B36;  P9=CB4B16; P10=586E75; P11=657B83;

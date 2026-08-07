@@ -23,7 +23,7 @@ The following quick guides will help you get started:
 + [Assisting with Translations](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md)
 + [Adding Exchanges](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-exchanges.md)
 + [Managing Wallets](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/managing-wallets.md)
-+ [Adding Events, Release Notes and Alerts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md)
++ [Adding Release Notes and Alerts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-release-notes-and-alerts.md)
 + [Adding Blog Posts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-blog-posts.md)
 + [Miscellaneous / Other](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md)
 
@@ -37,6 +37,6 @@ This repository is released under the terms of the [MIT license](https://opensou
 
 The intellectual property rights in the files are owned by the respective
 authors. Some of the files can be licensed under MIT License (MIT) available on
-http://opensource.org/licenses/MIT or other licenses. Appropriate licensing
+https://opensource.org/licenses/MIT or other licenses. Appropriate licensing
 information can be found in the header of the file or in the folder containing
 the file.

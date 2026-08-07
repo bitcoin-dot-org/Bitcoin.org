@@ -145,7 +145,7 @@ Then to enable some plugins or languages, you can add them back in.
 For example:
 
     ## Slower (but still pretty fast) build and test
-    ENABLED_PLUGINS="events autocrossref" ENABLED_LANGS="en fr" make -i valid
+    ENABLED_PLUGINS="autocrossref" ENABLED_LANGS="en fr" make -i valid
 
 Plugins include:
 
@@ -154,7 +154,6 @@ Plugins include:
 | alerts       | 5       | --             | Network alert pages
 | autocrossref | 90      | --             | Developer documentation
 | contributors | 5       | GitHub.com     | Contributor listings
-| events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
 | releases     | 10      | --             | Bitcoin Core release notes; Download page

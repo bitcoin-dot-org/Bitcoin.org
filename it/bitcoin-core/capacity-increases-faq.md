@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: it
@@ -89,7 +89,7 @@ pieno solamente di transazioni P2PKH a firma singola standard sarebbe circa
 1.6MB e un blocco pieno solo di firme multiple 2-di-2 sarebbe di 2.0MB.
 
 [current proposal]: https://youtu.be/fst1IK_mrng?t=2234
-[calculations]: http://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
+[calculations]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011869.html
 
 ## Segregated witness sembra complicata. Sarà pronto l'ecosistema per la sua messa in campo?  {#ecosystem-ready}
 
@@ -364,7 +364,7 @@ Per ricevere suggerimenti specifici su come si può contribuire, unisciti
 al canale IRC [#bitcoin-dev][].
 
 [#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
-[actively studied]: http://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
+[actively studied]: https://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
 [bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
@@ -377,7 +377,7 @@ al canale IRC [#bitcoin-dev][].
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
 [bitcoin core contributor]: /en/bitcoin-core/
-[Bitcoin relay network]: http://bitcoinrelaynetwork.org/
+[Bitcoin relay network]: https://bitcoinrelaynetwork.org/
 [code review]: https://bitcoin.org/en/development#code-review
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf

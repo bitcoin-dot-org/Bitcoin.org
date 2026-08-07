@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #templates.rb generates all translated pages using templates in
 #_templates. The final file name of each page is defined in
