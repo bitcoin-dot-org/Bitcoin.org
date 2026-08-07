@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: en
@@ -45,6 +45,6 @@ Other versions of this page:
 
 Signatures may be added to Bitcoin.org pull request [#1165](https://github.com/bitcoin-dot-org/bitcoin.org/pull/1165)
 
-[1]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html
+[1]: https://gnusha.org/pi/bitcoindev/CAAS2fgQyVs1fAEj+vqp8E2=FRnqsgs7VUKqALNBHNxRMDsHdVg@mail.gmail.com/
 </div>
 </div>

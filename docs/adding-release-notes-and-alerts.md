@@ -1,25 +1,4 @@
-## Adding Events, Release Notes and Alerts
-
-### Events
-
-Events added to Bitcoin.org should have clear agendas that relate to Bitcoin
-in some way - e.g. it being used as a currency, harnessing its technology,
-speakers from bitcoin-related companies, etc.
-
-If you're not comfortable with GitHub pull requests, please open a [new issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?title=New%20event&body=%20%20%20%20-%20date%3A%20YYYY-MM-DD%0A%20%20%20%20%20%20title%3A%20%22%22%0A%20%20%20%20%20%20venue%3A%20%22%22%0A%20%20%20%20%20%20address%3A%20%22%22%0A%20%20%20%20%20%20city%3A%20%22%22%0A%20%20%20%20%20%20country%3A%20%22%22%0A%20%20%20%20%20%20link%3A%20%22%22).
-
-To create an event pull request, place the event in `_events.yml` and adhere to
-this format:
-
-```
-- date: 2014-02-21
-  title: "2014 Texas Bitcoin Conference"
-  venue: "Circuit of the Americas™ - Technology and Conference Center"
-  address: "9201 Circuit of the Americas Blvd"
-  city: "Austin, TX"
-  country: "United States"
-  link: "http://texasbitcoinconference.com/"
-```
+## Adding Release Notes and Alerts
 
 ### Release Notes
 
@@ -31,7 +10,7 @@ Then copy in the following YAML header (the part between the three dashes, ---):
 ```
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 ## Required value below populates the %v variable (note: % needs to be escaped
 in YAML if it starts a value)
@@ -55,7 +34,7 @@ optional_magnetlink:
 ## 1. Make sure both ordered and unordered lists are preceded by an empty
 ## (whitespace only) line, like the empty line before this list item.
 ##
-## 2. Place URLs inside angle brackets, like <http://bitcoin.org/bin>
+## 2. Place URLs inside angle brackets, like <https://bitcoin.org/bin>
 ---
 ```
 
@@ -88,7 +67,7 @@ is the particular version:
    do this locally or in GitHub's web GUI.
 
 2. Follow the instructions in the [Release
-   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-release-notes-and-alerts.md#release-notes)
    section to create a new release.  You should leave the `optional_date` blank
    unless you happen to know the date of the planned release.
 

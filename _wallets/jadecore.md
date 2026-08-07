@@ -1,10 +1,10 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
-id: coldcardq
-title: "Coldcard Q"
-titleshort: "Coldcard Q"
+id: jadecore
+title: "Blockstream Jade Core"
+titleshort: "Jade Core"
 compat: "hardware"
 level: 2
 platform:
@@ -12,11 +12,11 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletcoldcardq"
-        link: "https://coldcard.com/"
-        source: "https://github.com/Coldcard/firmware"
-        screenshot: "coldcardq.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        text: "walletjadecore"
+        link: "https://blockstream.com/jade/"
+        source: "https://github.com/Blockstream/Jade"
+        screenshot: "jadecore.png"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

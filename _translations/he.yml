@@ -118,7 +118,7 @@ he:
     summary: "המאמר אשר הציג לראשונה את ביטקוין"
     description: "המאמר המקורי של סאטושי נאקאמוטו עדין מומלץ לקריאה לכל מי שלומד כיצד ביטקוין פועל. ניתן לבחור איזה תרגום של המאמר ברצונך לקרוא:"
     translated_by: "תורגם על ידי"
-    submit_new_translation: 'האם ברצונך לתרגם את המאמר לשפתך? בקר/י<a href="https://github.com/wbnns/bitcoinwhitepaper">בסיפריית המאמר ביטקוין ב GitHub</a> כדי לעיין בהוראות  <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">ופתח/י קריאת שרות</a>אם יש לך שאלות כלשהן.'
+    submit_new_translation: 'האם ברצונך לתרגם את המאמר לשפתך? בקר/י<a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">בסיפריית המאמר ביטקוין ב GitHub</a> כדי לעיין בהוראות  <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">ופתח/י קריאת שרות</a>אם יש לך שאלות כלשהן.'
   buy:
     title: "רכישת ביטקוין"
     pagetitle: "כיצד לרכוש ביטקוין"
@@ -138,7 +138,7 @@ he:
     reddit: "קהילת ביטקוין ב-Reddit"
     stackexchange: "ביטקוין ב StackExchange (שאלות ותשובות)"
     irc: "IRC Chat"
-    ircjoin: "ערוצי IRC ב-<a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
+    ircjoin: "ערוצי IRC ב-<a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(נושאי ביטקוין כלליים)"
     chandev: "(פיתוח והבטים טכניים)"
     chanotc: "(עסקות מעבר לדלפק)"
@@ -146,7 +146,7 @@ he:
     chanmining: "(נושאי כריית ביטקוין)"
     social: "רשתות חברתיות"
     linktwitter: "חיפוש בטוויטר"
-    facebook: "<a href=\"https://www.facebook.com/bitcoins\">דף פייסבוק</a>"
+    facebook: "<a href=\"https://www.facebook.com/hashtag/bitcoin\">דף פייסבוק</a>"
     meetups: "מפגשים"
     meetupevents: "כנסים ואירועים העוסקים בביטקוין"
     meetupgroup: "קבוצות מפגש של ביטקוין"
@@ -267,7 +267,6 @@ he:
     walletmyceliumwallet: "ארנק Mycelium לאנדרואיד מתוכנן לבטיחות, מהירות ופשטות השימוש. יש לו תכונות מיוחדות לניהול המפתחות שלך ועבור איחסון קר מציע תאימות עם Trezor ואחרים."
     walletbitgo: "ארנק BitGo הנו מאובטח מאד ומרובה חתימות, אשר מגן על הביטקוינים שלך מגנבות ואבדן. הנך בשליטה מלאה. BitGo אינו יכול לשלם או להקפיא כספים. ארנקי BitGo קלים לשימוש ומציעים אפשרויות של בטיחות מוגברת כגון סכומים מירביים להוצאה וגישה מרובת משתמשים."
     wallettrezor: "Trezor הנו ארנק חומרה המספק רמת אבטחה גבוהה שלא על חשבון הנוחיות. שלא כמו איחסון קר, הוא יכול לאפשר חתימה על עסקות בעת שהוא מחובר למכשיר מקוון. המשמעות היא שניתן להשתמש בביטקוינים באופן מאובטח אפילו אם משתמשים במחשב שאבטחתו נפרצה."
-    walletcoldcard: "Coldcard הנו ארנק חומרת קוד פתוח מאד בטיחותי ונוח לשימוש אשר קל מאד לגבות בעזרת כרטיס   microSD מוצפן. המפתח הפרטי שלך מאוחסן בצ'יפ יעודי מאובטח. העיצוב המבוסס תוכנת MicroPython מאפשר לך לבצע שינויי תוכנה."
     walletkeepkey: "KeepKey הנו ארנק חומרה אשר מפשט את אבטחת ביטקוין. כאשר הנך מפקיד/ה בארנק את כספך, כל עסקת ביטקוין שתבצע מחייבת עיון ואישור באמצעות תצוגת מסך OLED וכפתור אישור."
     walletbitpay: " ארנק BitPay הנו ארנק HD מרובה החתימות שבמקור נוצר להגן על מטבעות הBitPay.  הוא תומך בארנקים מרובי משתמשים ושיתופיים,ברשת הבדיקות testnet, ובפרוטוקול המלא של תשלומים. צומת  <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a> פרטי יכול לשמש עבור שידרוג האבטחה והפרטיות."
     walletledgernanos: "Ledger Nano S הנו ארנק חומרה מאובטח של ביטקוין. הוא מתחבר לכל מחשב באמצעות USB ומשולב בו צג OLED כדי לוודא ולאשר כל עסקה בהקשה אחת על הכפתורים שלו."
@@ -506,7 +505,7 @@ he:
     disclosuretxt: "אם מצאת בעיה הקשורה לביטקוין, בעיות שאינן קריטיות ניתן לשלוח בדוא\"ל  באנגלית לכל אחד ממפתחי הליבה או אל רשימת התפוצה הפרטית לעיל של מאבטחי ביטקוין. דוגמה לבעיה לא קריטית היא הפעלת מתקפת שיגור DoS אשר יקרה מדי לביצוע. בעיות קריטיות שהן רגישות מדי לשיגור בדוא\"ל שאינו מוצפן יש לשלוח לאחד או יותר ממפתחי הליבה, בהצפנה עם   מפתח(ות)  PGP שלהם."
     involve: "היה / היי מעורב / ת"
     involvetxt1: "ביטקוין הנו תוכנה פתוחה וחינמית וכל מפתח יכול לתרום לפרויקט. כל שנחוץ נמצא ב <a href=\"https://github.com/bitcoin/bitcoin\">GitHub repository</a>. בבקשה לוודא שקראת והנך פועל/ת לפי הנחיות תהליך הפיתוח המתוארות ב  README , כמו גם לספק איכות קוד גבוהה וכיבוד כל ההנחיות.."
-    involvetxt2: "דיוני פיתוח נערכים בגיטהאב ובקבוצת הדוא\"ל  <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>דיונים פחות פורמליים מתבצעים ב irc.freenode.net #bitcoin-core-dev  ו (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
+    involvetxt2: "דיוני פיתוח נערכים בגיטהאב ובקבוצת הדוא\"ל  <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a>דיונים פחות פורמליים מתבצעים ב irc.libera.chat #bitcoin-core-dev  ו (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">web interface</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">logs</a>)."
     more: "פרויקטי תוכנה נוספים חופשיים"
     morewant: "מעונין/ת לתרום לפרויקט אחר?"
     morechoose: "ניתן לבחור פרויקט ע\"י מענה על מספר <a href=\"http://whatcanidoforbitcoin.xyz/\">שאלות לגבי כישוריך</a>."
@@ -515,7 +514,7 @@ he:
     contributorsorder: "(ממוין לפי מספר ה commits)"
     devcommunities: "קהילות המפתחים"
     devcommunitiesintro: "חדרי השיחה והאתרים הבאים מארחים דיונים על פיתוח ביטקוין. בבקשה לוודא שקראת את כללי ההתנהגות לפני העלאת פוסט."
-    ircjoin: "<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> על freenode."
+    ircjoin: "<a href=\"https://web.libera.chat/#bitcoin-core-dev\">IRC Channel #bitcoin-core-dev</a> על Libera Chat."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -528,7 +527,7 @@ he:
     downloadtorrent: "הורדת torrent"
     source: "קוד מקור"
     versionhistory: "הצגת היסטורית גירסאות"
-    notelicense: "ליבת ביטקוין הנו פרויקט <a href=\"https://www.fsf.org/about/what-is-free-software\">תוכנה חינמית</a> מונחה קהילה המשוחרר תחת  <a href=\"http://opensource.org/licenses/mit-license.php\">רשיון MIT</a>."
+    notelicense: "ליבת ביטקוין הנו פרויקט <a href=\"https://www.fsf.org/about/what-is-free-software\">תוכנה חינמית</a> מונחה קהילה המשוחרר תחת  <a href=\"https://opensource.org/licenses/mit-license.php\">רשיון MIT</a>."
     notesync: "הסינכרון הראשוני של ליבת ביטקוין נמשכך זמן מה רק ומוריד נתונים רבים. עליך לוודא שברשותך רוחב פס הולם ושטח איחסון מספק עבור כל גודל שרשרת הבלוקים (מעל {{site.text.bitcoin_datadir_gb}}GB). אם ברשותך חיבור אינטרנט טוב, תוכל/י לחזק את הרשת ע\"י השארת מחשבך עם ליבת ביטקוין פועלת וערוץ 8333 פתוח."
     full_node_guide: "לפירוט קרא את <a href=\"/en/full-node\">מדריך הצומת המלא</a>."
     patient: "בדוק/י את רוחב הפס שלך ונפח האיחסון"
@@ -561,7 +560,7 @@ he:
     table: "תוכן הענינים"
     general: "כללי"
     whatisbitcoin: "מהו ביטקוין?"
-    whatisbitcointxt1: "ביטקוין הנה רשת קונצנזוס המאפשרת מערכת תשלומים חדשנית וכסף דיגיטלי לגמרי. זוהי רשת התשלומים הראשונה המבוזרת ותומכת בתקשורת ישירה ואשר מתבבסת על משתמשיה ללא הנהלה מרכזית או תיווך צד שלישי. ממבטו של המשתמש, ביטקוין הנו די דומה לכסף מזומן אינטרנטי. ביטקוין יכול להחשב גם כ<a href=\"http://financialcryptography.com/mt/archives/001325.html\">מערכת ניהול ספרים משולשת </a> הבולטת ביותר שבנמצא."
+    whatisbitcointxt1: "ביטקוין הנה רשת קונצנזוס המאפשרת מערכת תשלומים חדשנית וכסף דיגיטלי לגמרי. זוהי רשת התשלומים הראשונה המבוזרת ותומכת בתקשורת ישירה ואשר מתבבסת על משתמשיה ללא הנהלה מרכזית או תיווך צד שלישי. ממבטו של המשתמש, ביטקוין הנו די דומה לכסף מזומן אינטרנטי. ביטקוין יכול להחשב גם כ<a href=\"https://financialcryptography.com/mt/archives/001325.html\">מערכת ניהול ספרים משולשת </a> הבולטת ביותר שבנמצא."
     creator: "מי יצר את ביטקוין?"
     creatortxt1: "ביטקוין הנו היישום הראשון של המונח הנקרא \"מטבע מוצפן דיגיטלי\". אשר לראשונה תואר ב 1998 ע\"י Wei Dai  ברשימת המייל סייברפאנק, בהציעו את הרעיון של צורת כסף חדשה הנשענת על קריפטוגרפיה כדי לשלוט ביצירת הכסף ובעסקות, במקום שליטה של גורם מרכזי. המפרט הראשון של ביטקוין והוכחת הישימות פורסם ב 2009 בקבוצת המייל של הקריפטוגרפים ע\"י סאטושי נאקאמוטו. סאטושי עזב את הפרויקט בשלהי 2010 מבלי שיגלה יותר מדי על עצמו. הקהילה גדלה מאז בקצב אקספוננציאלי עם  <a href=\"#development#\"> מפתחים רבים</a> שעובדים על ביטקוין."
     creatortxt2: "האנונימיות של סאטושי גררה לעתים חששות לא מוצדקים, שרבים מהם קשורים לאי הבנת מהות הקוד הפתוח של ביטקוין. הפרוטוקול של ביטקוין והתוכנה מפורסמים בגלוי וכל מפתח ברחבי העולם יכול לבחון את הקוד או ליצור גירסה מעודכנת של תוכנת ביטקוין משל עצמו בדיוק כמו מפתחי ביטקוין הנוכחיים. השפעתו של סאטושי היתה מוגבלת לשינויים שביצע ואשר אומצו ע\"י אחרים ולכן הוא לא שלט בביטקוין. וכך, הזהות של ממציא ביטקוין חשובה היום בודאי באותה המידה שחשובה הזהות של ממציא הנייר."
@@ -576,7 +575,7 @@ he:
     acquireli1: "כאמצעי תשלום לסחורות ושירותים."
     acquireli2: "רכישת ביטקוינים ב <a href=\"https://www.buybitcoinworldwide.com\">בורסת ביטקוין</a>."
     acquireli3: "החלפת ביטקוינים עם <a href=\"https://localbitcoins.com/\">מישהו בסביבתך</a>."
-    acquireli4: "זכייה בביטקוינים דרך תחרותיות <a href=\"http://www.bitcoinmining.com/\">הכרייה</a>."
+    acquireli4: "זכייה בביטקוינים דרך תחרותיות <a href=\"https://www.bitcoinmining.com/\">הכרייה</a>."
     acquiretxt1: "בעוד שיתכן שניתן למצוא כאלו שרוצים למכור ביטקוינים בתמורה לתשלום בכרטיס אשראי או פיי פאל, מרבית הבורסות אינן מרשות מימון בשיטות תשלום אלה. הדבר נובע ממקרים בהם מישהו קונה ביטקוינים עם פאיי פאל, ואז מבטל את חלקו בעסקה. הכינוי המקובל לפעולה שכזו הנה ביטול הוראת חיוב (chargenack)."
     makepayment: "עד כמה קשה לבצע תשלום בביטקוין?"
     makepaymenttxt1: "יותר קל לבצע תשלומי ביטקוין מאשר רכישות בכרטיסי אשראי או כרטיסי דביט, וניתן לקבלם ללא מספר חשבון הסוחר. תשלומים מתבצעים מאפליקצית ארנק, בין אם ממחשבך או מהטלפון הסלולרי שלך, ע\"י הכנסת כתובת הנמען, הסכום לתשלום, ולחיצת \"שלח\". כדי להקל על הכנסת כתובת הנמען, ארנקים רבים יכולים לקלוט את הכתובת ע\"י סריקת קוד QR או ע\"י מגע של שני הסלולרים בשימוש בטכנולוגית NFC. "
@@ -708,7 +707,7 @@ he:
     miningsecure: "כיצד כרייה עוזרת באבטחת ביטקוין?"
     miningsecuretxt1: "הכרייה דומה לתחרות לוטו אשר מקשה מאד על מישהו לזכות באופן קבוע כתוצאה מההצלחה להכניס בלוקים חדשים לשרשרת הבלוקים. הדבר מבטיח את הנייטרליות של הרשת המונעת מפרט מסוים לרכוש את הכח למנוע מעסקות ספציפיות מלהכנס לבלוק. הדבר גם מונע ממישהו להחליף בלוק בבלוק אחר, או לחזור אחורנית בזמן ולפתח רצף בלוקים אחר שמצ'פר אותו וגורם לרמייה לאחרים. הכרייה גורמת לקושי הולך וגובר באופן אקפוננציאלי לבצע שינויים בדיעבד של עסקות באמצעות כתיבה מחדש של בלוקים העוקבים לעסקה ששונתה."
     miningstart: "מה נחוץ כדי שאתחיל בכרייה?"
-    miningstarttxt1: "בימים הראשונים של ביטקוין, כל אחד יכל למצוא בלוק חדש ע\"י השימוש ב CPU של מחשבו. ככל שיותר אנשים הצטרפו לכרייה, רמת הקושי של מציאת בלוקים חדשים גדלה מאד עד לנקודה בה רק שיטות של עלות תועלת של כרייה כיום מנצלות חומרה יעודית. ניתן לבקר ב <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> למידע נוסף."
+    miningstarttxt1: "בימים הראשונים של ביטקוין, כל אחד יכל למצוא בלוק חדש ע\"י השימוש ב CPU של מחשבו. ככל שיותר אנשים הצטרפו לכרייה, רמת הקושי של מציאת בלוקים חדשים גדלה מאד עד לנקודה בה רק שיטות של עלות תועלת של כרייה כיום מנצלות חומרה יעודית. ניתן לבקר ב <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> למידע נוסף."
     security: "אבטחה"
     secure: "האם ביטקוין מאובטח?"
     securetxt1: " טכנולוגית ביטקוין - הפרוטוקול וההצפנה - בעלי רקורד חזק של אבטחה, ורשת ביטקוין קרוב לודאי הנה פרויקט התוכנה המבוזרת הגדול בעולם. הפגיעות הגדולה ביותר של ביטקוין הנה בשגיאות משתמש. קבצי ארנק ביטקוין אשר שומרים את המפתחות הפרטיים הנחוצים, יכולים להמחק בטעות, או להגנב או ללכת לאיבוד. הדבר דומה לכסף מזומן הנשמר דיגיטלית. למרבה המזל, משתמשים יכולים ליישם <a href=\"#secure-your-wallet#\">הרגלי אבטחה סבירים</a> כדי להגן על כספם או להשתמש בנותני שירות אשר מציעים רמת אבטחה טובה וביטוח כנגד אבדן. "
@@ -794,8 +793,8 @@ he:
     microtext: >
         דמיינו הקשבה לרדיו אינטרנטי המשולם לפי שניה, שיטוט בדפי אתר עם תשלום טיפ זעיר
         כדי למנוע הצגת פרסומות, או רכישת רוחב פס מנקודה חמה של WIF לפי הקילובייט.
-        ביטקוין יעיל מספיק בכדי להפוך את כל הרעיונות האלו לישימים. <a href="https://bitcoinj.github.io/working-with-micropayments">ללימוד
-        נוסף</a> על הטכנולוגיה שמאחורי התשלומים הזעירים של ביטקוין או על  <a href="http://lightning.network/">עדכונים
+        ביטקוין יעיל מספיק בכדי להפוך את כל הרעיונות האלו לישימים. <a href="https://bitcoinj.org/working-with-micropayments">ללימוד
+        נוסף</a> על הטכנולוגיה שמאחורי התשלומים הזעירים של ביטקוין או על  <a href="https://en.wikipedia.org/wiki/Lightning_Network">עדכונים
         עתידיים</a>  שנמצאים בתהליך תכנון ומימוש ואשר יאפשרו לתשלומים זעירים להיות
         יותר נגישים.
     mediation: "גישור בעת מחלוקת"
@@ -890,7 +889,6 @@ he:
     pagetitle: "מקורות מידע ביטקוין"
     pagedesc: "אתרים שימושיים ומקורות בנושא ביטקוין"
     linkwiki: "<a href=\"https://en.bitcoin.it/\">ביטקוין וויקי</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "ספריות"
     linkwallets: "ארנקים"
     linkmerchants: "סוחרים"
@@ -983,9 +981,7 @@ he:
     pagetitle: "רכישה עם ביטקוין"
     summary: "ישנם אלפי עסקים בכל העולם אשר מקבלים ביטקוין."
     products-online: "חיפוש מוצרים הנמכרים במקוון"
-    products-online-text: "שימוש נפוץ אחד של ביטקוין הוא רכישות מקוונות. ישנן מאות חנויות מקוונות וסוחרים שמקבלים ביטקוין. כשמשתמשים במנוע חיפוש כמו.  <a href=\"https://spendabit.co/\">Spendabit</a> ניתן לחפש מבין מיליוני מוצרים, כולם ניתנים לרכישה בביטקוינים., "
     directory: "ניווט בתוך רשימת העסקים"
-    directory-text: "ניתן גם למצוא עסקים רבים שנרשמו ב  <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">סיפריות המקוונות</a>."
     business-map: "מציאת עסקים מקומיים"
     business-map-text: "יש גם עסקים מקומיים רבים כגון בתי קפה ומסעדות אשר מקבלים ביטקוין. ניתן להשתמש ב <a href=\"https://btcmap.org/\">btcmap.org</a> כדי לסרוק אלפי עסקים ברחבי העולם.."
   support-bitcoin:
@@ -997,7 +993,7 @@ he:
     node: "היה חלק מהרשת"
     nodetxt: "אם יש לך חיבור טוב לאינטרנט, תוכל לחזק את רשת ביטקוין ע\"י שמירת <a href=\"/en/full-node\">תוכנת צומת מלא</a> שפועל על מחשבך בערוץ  8333 שצריך להשאר פתוח."
     mining: "כרייה"
-    miningtxt: "ניתן להתחיל  <a href=\"http://www.bitcoinmining.com/\">בכריית ביטקוין</a> כדי לעזור לעבד טרנזקציות ובכך לעזור להגן על הרשת, ניתן להצטרף למאגרי כרייה קטנים ולהעדיף מאגרים מבוזרים כגון    <a href=\"http://p2pool.in/\">P2Pool</a> או <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">מאגרים</a> עם תמיכה של (getblocktemplate (GBT "
+    miningtxt: "ניתן להתחיל  <a href=\"https://www.bitcoinmining.com/\">בכריית ביטקוין</a> כדי לעזור לעבד טרנזקציות ובכך לעזור להגן על הרשת, ניתן להצטרף למאגרי כרייה קטנים ולהעדיף מאגרים מבוזרים כגון    <a href=\"http://p2pool.in/\">P2Pool</a> או <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">מאגרים</a> עם תמיכה של (getblocktemplate (GBT "
     develop: "פיתוח"
     developtxt: "ביטקוין הנה תוכנה חופשית וחינמית. אם הנך מפתח/ת תוכל/י לנצל את יכולתך המיוחדת למען עשיית טוב ו<a href=\"#development#\">לשפר את ביטקוין</a>. או שתוכל לבנות שירותים חדשים מדהימים או תוכנה המשתמשת בביטקוין."
     donation: "תרומות"
@@ -1106,7 +1102,7 @@ he:
         דף זה הועבר לאתר החדש של ליבת ביטקוין
         (הקישו כאן כדי להתנתב)
     banner-translate: "התרגום לשפה זו אינו עדכני. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">הקישו כאן כדי לתרגם את  bitcoin.org לשפתכם</a>."
-    footer: "שוחרר לפי <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">רשיון MIT </a>"
+    footer: "שוחרר לפי <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">רשיון MIT </a>"
     donate-community: "עזרו ל Bitcoin.org"
     donate-support: "Bitcoin.org הנו נתמך על ידי הקהילה."
     network-status: "מצב הרשת"

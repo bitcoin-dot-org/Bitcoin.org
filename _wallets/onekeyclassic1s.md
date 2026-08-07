@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: onekeyclassic1s
 title: "OneKey Classic 1S"
@@ -16,7 +16,7 @@ platform:
         link: "https://onekey.so/"
         source: "https://github.com/OneKeyHQ/firmware-classic1s"
         screenshot: "onekeyclassic1s.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

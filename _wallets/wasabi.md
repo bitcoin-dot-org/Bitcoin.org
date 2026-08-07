@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: wasabi
 title: "Wasabi Wallet"
@@ -16,7 +16,7 @@ platform:
       link: "https://wasabiwallet.io/"
       source: "https://github.com/WalletWasabi/WalletWasabi/"
       screenshot: "wasabi.png"
-      features: "bech32 hardware_wallet segwit"
+      features: "bech32 hardware_wallet segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"
