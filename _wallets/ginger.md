@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: ginger
 title: "Ginger Wallet"
@@ -15,7 +15,7 @@ platform:
       link: "https://gingerwallet.io/"
       source: "https://github.com/GingerPrivacy/GingerWallet"
       screenshot: "ginger.png"
-      features: "2fa bech32 hardware_wallet mixing_shuffling segwit"
+      features: "2fa bech32 hardware_wallet segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkfailvalidationcentralized"

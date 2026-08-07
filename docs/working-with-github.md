@@ -2,9 +2,9 @@
 
 GitHub allows you to make changes to a project using git, and later submit them
 in a "pull request" so they can be reviewed and discussed. In order to use
-GitHub, you need to [sign up](http://github.com/signup) and [set up
-git](https://help.github.com/articles/set-up-git). You will also need to
-[fork](https://help.github.com/articles/fork-a-repo/) the bitcoin.org repository
+GitHub, you need to [sign up](https://github.com/signup) and [set up
+git](https://docs.github.com/en/get-started/git-basics/set-up-git). You will also need to
+[fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) the bitcoin.org repository
 from its [GitHub page](https://github.com/bitcoin-dot-org/bitcoin.org) and clone
 your GitHub repository into a local directory with the following command lines:
 
@@ -18,12 +18,12 @@ git remote add upstream https://github.com/bitcoin-dot-org/bitcoin.org.git
 
 1. Checkout to your master branch. `git checkout master`
 2. Create a new branch from the master branch. `git checkout -b (any name)`
-3. Edit files and [preview](#previewing) the result.
+3. Edit files and [preview](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/setting-up-your-environment.md) the result.
 4. Track changes in files. `git add -A`
 5. Commit your changes. `git commit -m '(short description for your change)'`
 6. Push your branch on your GitHub repository. `git push origin (name of your
    branch)`
-7. Click on your branch on GitHub and click the **Compare / pull request**
+7. Click on your branch on GitHub and click the **Compare & pull request**
    button to send a pull request.
 
 When submitting a pull request, please take required time to discuss your
@@ -33,7 +33,7 @@ changes into separate branches and pull requests.
 **Travis Continuous Integration (CI)**
 
 Shortly after your Pull Request (PR) is submitted, a Travis CI job will
-be added to [our queue](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). This
+be added to [our queue](https://app.travis-ci.com/bitcoin-dot-org/bitcoin.org). This
 will build the site and run some basic checks. If the job fails, you
 will be emailed a link to the build log and the PR will indicate a
 failed job. Read the build report and try to correct the problem---but
@@ -49,9 +49,9 @@ builds before opening a pull request, it's really simple:
 1. Make sure the master branch of your repository is up to date with the
    bitcoin-dot-org/bitcoin.org master branch.
 
-2. Open [this guide](http://docs.travis-ci.com/user/getting-started/)
-   and perform steps one, two, and four. (The other steps are already
-   done in our master branch.)
+2. Open [this guide](https://docs.travis-ci.com/user/getting-started/)
+   and enable Travis CI for your repository. (The build configuration is
+   already present in our repository.)
 
 3. After you push a branch to your repository, go to your branches page
    (e.g. for user harding, github.com/harding/bitcoin.org/branches). A
