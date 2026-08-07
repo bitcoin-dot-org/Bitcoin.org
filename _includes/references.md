@@ -1,6 +1,6 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 {% comment %}<!-- Terms; must have tooltip description in "quotes"; alphabetical order -->{% endcomment %}
@@ -376,15 +376,14 @@ http://opensource.org/licenses/MIT.
 [BIP152]: https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki
 [BIP159]: https://github.com/bitcoin/bips/blob/master/bip-0159.mediawiki
 [CVE-2012-2459]: https://en.bitcoin.it/wiki/CVEs#CVE-2012-2459
-[RFC5737]: http://tools.ietf.org/html/rfc5737
-[secp256k1]: http://www.secg.org/sec2-v2.pdf
+[RFC5737]: https://tools.ietf.org/html/rfc5737
+[secp256k1]: https://www.secg.org/sec2-v2.pdf
 
 {% comment %}<!-- Other external site links; alphabetical order -->{% endcomment %}
-[#bitcoin]: https://webchat.freenode.net/?channels=bitcoin&uio=d4
-[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&uio=d4
-[#bitcoin-mining]: https://webchat.freenode.net/?channels=bitcoin-mining&uio=d4
-[#bitcoin-wiki]: https://webchat.freenode.net/?channels=bitcoin-wiki&uio=d4
-[0bin]: http://0bin.net/
+[#bitcoin]: https://web.libera.chat/#bitcoin
+[#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
+[#bitcoin-mining]: https://web.libera.chat/#bitcoin-mining
+[#bitcoin-wiki]: https://web.libera.chat/#bitcoin-wiki
 [bcc automated testing]: https://github.com/bitcoin/bitcoin/blob/master/README.md#automated-testing
 [bcc configuration]: https://en.bitcoin.it/wiki/Running_Bitcoin
 [bcc data directory]: https://en.bitcoin.it/wiki/Data_directory
@@ -395,7 +394,7 @@ http://opensource.org/licenses/MIT.
 [bcc tor hs]: https://en.bitcoin.it/wiki/Tor#Hidden_services
 [core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
-[Bitcoin beginners]: http://www.reddit.com/r/bitcoinbeginners
+[Bitcoin beginners]: https://www.reddit.com/r/bitcoinbeginners
 [Bitcoin Core]: https://bitcoin.org/en/download
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
 [Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
@@ -408,14 +407,17 @@ http://opensource.org/licenses/MIT.
 [Bitcoin Core issue #2381]: https://github.com/bitcoin/bitcoin/issues/2381
 [Bitcoin Core master]: https://github.com/bitcoin/bitcoin
 [Bitcoin Core pull #4468]: https://github.com/bitcoin/bitcoin/pull/4468
-[Bitcoin core transifex]: https://www.transifex.com/projects/p/bitcoin/
-[Bitcoin reddit]: http://www.reddit.com/r/Bitcoin
-[Bitcoin reddit new]: http://www.reddit.com/r/Bitcoin/new
+[Bitcoin core transifex]: https://explore.transifex.com/bitcoin/bitcoin/
+[bcc translation process]: https://github.com/bitcoin/bitcoin/blob/master/doc/translation_process.md
+[bitcoin translators list]: https://groups.google.com/forum/#!forum/bitcoin-translators
+[transifex translator guide]: https://help.transifex.com/en/articles/6248698-getting-started-as-a-translator
+[Bitcoin reddit]: https://www.reddit.com/r/Bitcoin
+[Bitcoin reddit new]: https://www.reddit.com/r/Bitcoin/new
 [Bitcoin Seeder]: https://github.com/sipa/bitcoin-seeder
-[Bitcoin stackexchange]: http://bitcoin.stackexchange.com
-[Bitcoin stackexchange tag bitcoin-qt]: http://bitcoin.stackexchange.com/questions/tagged/bitcoin-qt
+[Bitcoin stackexchange]: https://bitcoin.stackexchange.com
+[Bitcoin stackexchange tag bitcoin-qt]: https://bitcoin.stackexchange.com/questions/tagged/bitcoin-core
 [bitcoin-documentation mailing list]: https://groups.google.com/forum/#!forum/bitcoin-documentation
-[BitcoinJ]: http://bitcoinj.github.io
+[BitcoinJ]: https://bitcoinj.github.io
 [BitcoinJ documentation about pending transaction safety]: https://bitcoinj.github.io/security-model#pending-transactions
 [bitcoinj micropayment tutorial]: https://bitcoinj.github.io/working-with-micropayments
 [casascius address utility]: https://github.com/casascius/Bitcoin-Address-Utility
@@ -427,7 +429,7 @@ http://opensource.org/licenses/MIT.
 [creative commons attribution 3.0 license]: https://creativecommons.org/licenses/by/3.0/
 [DER]: https://en.wikipedia.org/wiki/X.690#DER_encoding
 [dig command]: https://en.wikipedia.org/wiki/Dig_%28Unix_command%29
-[DNS A records]: http://tools.ietf.org/html/rfc1035#section-3.2.2
+[DNS A records]: https://tools.ietf.org/html/rfc1035#section-3.2.2
 [DNS Seed Policy]: https://github.com/bitcoin/bitcoin/blob/master/doc/dnsseed-policy.md
 [docs issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
 [ECDSA]: https://en.wikipedia.org/wiki/Elliptic_Curve_DSA
@@ -444,12 +446,12 @@ http://opensource.org/licenses/MIT.
 [HTTP basic authentication]: https://en.wikipedia.org/wiki/Basic_access_authentication
 [HTTP longpoll]: https://en.wikipedia.org/wiki/Push_technology#Long_polling
 [information theoretic security]: https://en.wikipedia.org/wiki/Information_theoretic_security
-[inherit bitcoins]: http://bitcoin.stackexchange.com/q/38692/21052
+[inherit bitcoins]: https://bitcoin.stackexchange.com/q/38692/21052
 [IP-to-IP payment protocol]: https://en.bitcoin.it/wiki/IP_Transactions
-[IPv4-mapped IPv6 addresses]: http://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
+[IPv4-mapped IPv6 addresses]: https://en.wikipedia.org/wiki/IPv6#IPv4-mapped_IPv6_addresses
 [irc channels]: https://en.bitcoin.it/wiki/IRC_channels
 [JSON-RPC version 1.0]: http://json-rpc.org/wiki/specification
-[JSON-RPC request batching]: http://www.jsonrpc.org/specification#batch
+[JSON-RPC request batching]: https://www.jsonrpc.org/specification#batch
 [july 2015 chain forks]: https://en.bitcoin.it/wiki/July_2015_chain_forks
 [libblkmaker]: https://github.com/bitcoin/libblkmaker
 [localhost]: https://en.wikipedia.org/wiki/Localhost
@@ -459,29 +461,27 @@ http://opensource.org/licenses/MIT.
 [murmur3]: https://en.wikipedia.org/wiki/MurmurHash
 [man-in-the-middle]: https://en.wikipedia.org/wiki/Man-in-the-middle_attack
 [MIME]: https://en.wikipedia.org/wiki/Internet_media_type
-[MIT license]: http://opensource.org/licenses/MIT
+[MIT license]: https://opensource.org/licenses/MIT
 [mozrootstore]: https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
-[offline transactions]: http://bitcoin.stackexchange.com/a/34122/21052
+[offline transactions]: https://bitcoin.stackexchange.com/a/34122/21052
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
 [open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
 [Payment Request Generator]: https://github.com/gavinandresen/paymentrequest/blob/master/php/demo_website/createpaymentrequest.php
 [peter todd p2sh example]: https://github.com/petertodd/checklocktimeverify-demos/blob/master/lib/python-bitcoinlib/examples/publish-text.py
-[Piotr Piasecki's testnet faucet]: https://tpfaucet.appspot.com/
 [prime symbol]: https://en.wikipedia.org/wiki/Prime_%28symbol%29
 [protobuf]: https://developers.google.com/protocol-buffers/
 [python-bitcoinlib]: https://github.com/petertodd/python-bitcoinlib
-[python-blkmaker]: https://gitorious.org/bitcoin/python-blkmaker
 [Satoshi Nakamoto]: https://en.bitcoin.it/wiki/Satoshi_Nakamoto
 [setup tor]: https://www.torproject.org/
 [SHA256]: https://en.wikipedia.org/wiki/SHA-2
-[Stratum mining protocol]: http://mining.bitcoin.cz/stratum-mining
-[study of SPV privacy over tor]: http://arxiv.org/abs/1410.6079
+[Stratum mining protocol]: https://mining.bitcoin.cz/stratum-mining
+[study of SPV privacy over tor]: https://arxiv.org/abs/1410.6079
 [Tor]: https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29
-[transifex]: https://www.transifex.com/projects/p/bitcoinorg/
+[transifex]: https://www.transifex.com/
 [unix epoch time]: https://en.wikipedia.org/wiki/Unix_time
 [URI encoded]: https://tools.ietf.org/html/rfc3986
 [wiki bitcoin core compatible devices arm]: https://en.bitcoin.it/wiki/Bitcoin_Core_compatible_devices#ARM-based_Chipsets

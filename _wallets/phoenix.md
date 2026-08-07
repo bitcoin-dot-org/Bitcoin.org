@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: phoenix
 title: "Phoenix"
@@ -14,7 +14,6 @@ platform:
     default: &DEFAULT
       text: "walletphoenix"
       source: "https://github.com/ACINQ/phoenix"
-      screenshot: "phoenix.png"
       features: "bech32 lightning segwit"
       check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
@@ -31,7 +30,9 @@ platform:
       - name: android
         link: "https://play.google.com/store/apps/details?id=fr.acinq.phoenix.mainnet"
         <<: *DEFAULT
+        screenshot: "phoenixandroid.png"
       - name: ios
         link: "https://apps.apple.com/app/phoenix-wallet/id1544097028"
         <<: *DEFAULT
+        screenshot: "phoenixios.png"
 ---
