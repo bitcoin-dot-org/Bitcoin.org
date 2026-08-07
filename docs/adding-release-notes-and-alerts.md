@@ -67,7 +67,7 @@ is the particular version:
    do this locally or in GitHub's web GUI.
 
 2. Follow the instructions in the [Release
-   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md#release-notes)
+   Notes](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-release-notes-and-alerts.md#release-notes)
    section to create a new release.  You should leave the `optional_date` blank
    unless you happen to know the date of the planned release.
 
