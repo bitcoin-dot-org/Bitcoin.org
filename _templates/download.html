@@ -59,7 +59,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
         <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl core-link">{% translate downloadtorrent %}</a>
         {% if site.DOWNLOAD_MAGNETLINK %}
         <a href="{{ site.DOWNLOAD_MAGNETLINK | replace: '&', '\&amp;'}}" class="magnetlink core-link" data-proofer-ignore></a>{% endif %}
-        <a href="https://github.com/bitcoin/bitcoin" class="dl core-link">{% translate source %}</a>
+        <a href="https://github.com/bitcoin/bitcoin/tree/v{{ site.DOWNLOAD_VERSION }}" class="dl core-link">{% translate source %}</a>
         <a href="/en/version-history" class="core-link">{% translate versionhistory %}</a>
       </div>
       
