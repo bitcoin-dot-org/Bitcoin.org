@@ -98,8 +98,8 @@ help].
   Laptop<br>
   [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux<br>
   Some BSDs
 
@@ -126,8 +126,8 @@ help].
   Laptop<br>
   [Most ARM chipsets][wiki bitcoin core compatible devices arm]
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux<br>
   Some BSDs
 
@@ -150,14 +150,14 @@ help].
 
 - {{UPLOAD}} 5 GB/day (150 GB/month)
 
-- {{MEMORY}} 1 GB
+- {{MEMORY}} 2 GB
 
 - {{SYSTEM}} Desktop<br>
   Laptop<br>
   [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux
 
 
