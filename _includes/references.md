@@ -466,7 +466,7 @@ https://opensource.org/licenses/MIT.
 [native irc client]: https://en.wikipedia.org/wiki/List_of_IRC_clients
 [netcat]: https://en.wikipedia.org/wiki/Netcat
 [nop opcodes]: https://en.bitcoin.it/wiki/Script#Reserved_words
-[offline transactions]: https://bitcoin.stackexchange.com/a/34122/21052
+[offline transactions]: https://github.com/bitcoin/bitcoin/blob/master/doc/offline-signing-tutorial.md
 [open a pull request]: https://github.com/bitcoin-dot-org/bitcoin.org#working-with-github
 [open an issue]: https://github.com/bitcoin-dot-org/bitcoin.org/issues/new
 [open assets protocol]: https://github.com/OpenAssets/open-assets-protocol/blob/master/specification.mediawiki
