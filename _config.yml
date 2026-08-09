@@ -634,11 +634,11 @@ text:
 collections:
   ## _alerts
   alerts:
-    output: true
+    output: false
     permalink: /en/alert/:path
   ## _releases
   releases:
-    output: true
+    output: false
     permalink: /en/release/:path
   ## _wallets
   wallets:
