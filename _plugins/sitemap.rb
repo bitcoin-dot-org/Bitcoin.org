@@ -1,8 +1,8 @@
 # This file is licensed under the MIT License (MIT) available on
 # https://opensource.org/licenses/MIT.
 
-#sitemap.rb generates a sitemap.xml file, which also includes
-#alternate hreflang for each translated version of each page.
+# sitemap.rb generates the sitemap.xml file.
+# Translated alternatives are declared in each page's HTML head.
 
 require 'yaml'
 require 'cgi'
@@ -11,90 +11,156 @@ module Jekyll
 
   class SitemapFile < StaticFile
     def write(dest)
-      # do nothing
+      # Do nothing. The sitemap is written by SitemapGenerator.
     end
   end
 
   class SitemapGenerator < Generator
     def generate(site)
-      #Do nothing if plugin is disabled
-      if !ENV['ENABLED_PLUGINS'].nil? and ENV['ENABLED_PLUGINS'].index('sitemap').nil?
-        print 'Sitemap disabled' + "\n"
+      # Do nothing if the plugin is disabled.
+      if !ENV['ENABLED_PLUGINS'].nil? &&
+         ENV['ENABLED_PLUGINS'].index('sitemap').nil?
+        puts 'Sitemap disabled'
         return
       end
-      #Load translations
+
+      # Load translations.
       locs = {}
-      enabled = ENV['ENABLED_LANGS'];
-      enabled = enabled.split(' ') if !enabled.nil?
+
+      enabled = ENV['ENABLED_LANGS']
+      enabled = enabled.split(' ') unless enabled.nil?
+
       Dir.foreach('_translations') do |file|
-        next if file == '.' or file == '..' or file == 'COPYING'
-        lang=file.split('.')[0]
-        #Ignore lang if disabled
-        if lang != 'en' and !enabled.nil? and !enabled.include?(lang)
+        next if file == '.'
+        next if file == '..'
+        next if file == 'COPYING'
+
+        lang = file.split('.')[0]
+
+        # Ignore the language if it is disabled.
+        if lang != 'en' &&
+           !enabled.nil? &&
+           !enabled.include?(lang)
           next
         end
-        locs[lang] = YAML.unsafe_load_file('_translations/'+file)[lang]
+
+        translation_file = File.join('_translations', file)
+        locs[lang] = YAML.unsafe_load_file(translation_file)[lang]
       end
-      #Create destination directory if does not exists
-      if !File.directory?(site.dest)
-        Dir.mkdir(site.dest)
-      end
-      File.open(File.join(site.dest, 'sitemap.xml'), 'w+') do |sitemap|
-        #Open sitemap
+
+      # Create the destination directory if it does not exist.
+      Dir.mkdir(site.dest) unless File.directory?(site.dest)
+
+      sitemap_path = File.join(site.dest, 'sitemap.xml')
+
+      File.open(sitemap_path, 'w+') do |sitemap|
+        # Open the sitemap.
         sitemap.puts '<?xml version="1.0" encoding="UTF-8"?>'
-        sitemap.puts '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"'
-        sitemap.puts '	xmlns:xhtml="http://www.w3.org/1999/xhtml">'
-        #Add translated pages with their alternative in each languages
-        locs['en']['url'].each do |id,value|
-          locs.each do |lang,value|
-            #Don't add a page if their url is not translated
-            next if locs[lang]['url'][id].nil? or locs[lang]['url'][id] == ''
+        sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+
+        # Add translated pages as normal sitemap URLs.
+        #
+        # hreflang links are generated in each page's HTML head instead
+        # of being duplicated in the sitemap.
+        locs['en']['url'].each_key do |id|
+          locs.each_key do |lang|
+            translated_url = locs[lang]['url'][id]
+
+            # Do not add a page if its URL is not translated.
+            next if translated_url.nil? || translated_url.empty?
+
             sitemap.puts '<url>'
-            sitemap.puts '  <loc>https://bitcoin.org/'+lang+'/'+CGI::escape(locs[lang]['url'][id])+'</loc>'
-            locs.each do |altlang,value|
-              next if locs[altlang]['url'][id].nil? or locs[altlang]['url'][id] == '' or altlang == lang
-              sitemap.puts '  <xhtml:link'
-              sitemap.puts '    rel="alternate"'
-              sitemap.puts '    hreflang="'+altlang+'"'
-              sitemap.puts '    href="https://bitcoin.org/'+altlang+'/'+CGI::escape(locs[altlang]['url'][id])+'" />'
-            end
+            sitemap.puts(
+              '  <loc>https://bitcoin.org/' +
+              lang + '/' +
+              CGI::escape(translated_url) +
+              '</loc>'
+            )
             sitemap.puts '</url>'
           end
         end
-	#Add static non-translated pages
-        Dir.glob('en/**/*.{md,html}').concat(Dir.glob('*.{md,html}')).each do |file|
-          next if file == 'index.html' or file == '404.html' or file == 'README.md'
-          #Ignore google webmaster tools
+
+        # Add static non-translated pages.
+        static_pages = Dir.glob('en/**/*.{md,html}')
+        static_pages.concat(Dir.glob('*.{md,html}'))
+
+        static_pages.each do |file|
+          next if file == 'index.html'
+          next if file == '404.html'
+          next if file == 'README.md'
+
+          # Ignore Google webmaster verification files.
           data = File.read(file)
-          next if !data.index('google-site-verification:').nil?
+          next unless data.index('google-site-verification:').nil?
+
+          public_path = file
+                        .gsub('.html', '')
+                        .gsub('.md', '')
+
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/'+file.gsub('.html','').gsub('.md','')+'</loc>'
+          sitemap.puts(
+            '  <loc>https://bitcoin.org/' +
+            public_path +
+            '</loc>'
+          )
           sitemap.puts '</url>'
         end
-        #Add alerts pages
+
+        # Add alert pages.
         Dir.foreach('_alerts') do |file|
-          next if file == '.' or file == '..'
+          next if file == '.'
+          next if file == '..'
+
+          alert_path = file
+                       .gsub('.html', '')
+                       .gsub('.md', '')
+
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/en/alert/'+file.gsub('.html','')+'</loc>'
+          sitemap.puts(
+            '  <loc>https://bitcoin.org/en/alert/' +
+            alert_path +
+            '</loc>'
+          )
           sitemap.puts '</url>'
         end
-        #Add releases pages
+
+        # Add release pages.
         Dir.foreach('_releases') do |file|
-          next if file == '.' or file == '..'
-          file = file.split('-')
-          next if file.length < 4
-          file.shift()
-          file.shift()
-          file.shift()
-          file = file.join('-')
+          next if file == '.'
+          next if file == '..'
+
+          release_parts = file.split('-')
+          next if release_parts.length < 4
+
+          # Remove the YYYY-MM-DD date prefix.
+          release_parts.shift
+          release_parts.shift
+          release_parts.shift
+
+          release_path = release_parts
+                         .join('-')
+                         .gsub('.md', '')
+                         .gsub('.html', '')
+
           sitemap.puts '<url>'
-          sitemap.puts '  <loc>https://bitcoin.org/en/release/'+file.gsub('.md','').gsub('.html','')+'</loc>'
+          sitemap.puts(
+            '  <loc>https://bitcoin.org/en/release/' +
+            release_path +
+            '</loc>'
+          )
           sitemap.puts '</url>'
         end
-        #Close sitemap
+
+        # Close the sitemap.
         sitemap.puts '</urlset>'
       end
-      site.static_files << SitemapFile.new(site, site.source, '', 'sitemap.xml')
+
+      site.static_files << SitemapFile.new(
+        site,
+        site.source,
+        '',
+        'sitemap.xml'
+      )
     end
   end
 
