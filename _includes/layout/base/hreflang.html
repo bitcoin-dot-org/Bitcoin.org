@@ -1,0 +1,11 @@
+{% for alternate in page.hreflang_alternates %}
+<link rel="alternate"
+      hreflang="{{ alternate.lang }}"
+      href="{{ alternate.url | escape }}">
+{% endfor %}
+
+{% if page.hreflang_x_default %}
+<link rel="alternate"
+      hreflang="x-default"
+      href="{{ page.hreflang_x_default | escape }}">
+{% endif %}
