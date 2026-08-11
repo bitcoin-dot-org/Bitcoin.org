@@ -59,6 +59,7 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-consistent-bitcoin-core-titles \
     check-for-too-many-wallets-on-one-platform \
     check-validate-yaml \
+    check-yaml-syntax \
     check-wallet-description-length \
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
@@ -299,3 +300,6 @@ check-validate-yaml:
 check-wallet-description-length:
 ## Ensure wallet descriptions are 320 characters or less
 	$S sed -n '/^  choose-your-wallet:/,/^  [-a-z]\+:/{/wallet.*:.\{320\}/p} ' _translations/en.yml | eval $(ERROR_ON_OUTPUT)
+check-yaml-syntax:
+## Ensure every YAML file parses with Psych, the parser used by the build
+	$S ruby _contrib/check-yaml.rb
