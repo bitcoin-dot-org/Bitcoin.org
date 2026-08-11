@@ -5,6 +5,9 @@
 require 'safe_yaml/load'
 require 'json-schema'
 
+# MultiJSON support is deprecated by json-schema 6.x.
+JSON::Validator.use_multi_json = false
+
 if ARGV[1].nil?
   puts "Usage: schema-validator.rb <schema-file> <file-to-validate>"
   exit(255)
