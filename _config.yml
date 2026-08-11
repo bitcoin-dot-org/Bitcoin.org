@@ -581,6 +581,9 @@ source:      .
 destination: ./_site
 plugins_dir: ./_plugins
 exclude:
+    - CODE_OF_CONDUCT.md
+    - CONTRIBUTING.md
+    - README.md
     - Gemfile
     - Gemfile.lock
     - Makefile
