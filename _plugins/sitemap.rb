@@ -56,7 +56,9 @@ module Jekyll
       File.open(sitemap_path, 'w+') do |sitemap|
         # Open the sitemap.
         sitemap.puts '<?xml version="1.0" encoding="UTF-8"?>'
-        sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        sitemap.puts(
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        )
 
         # Add translated pages as normal sitemap URLs.
         #
@@ -80,22 +82,19 @@ module Jekyll
           end
         end
 
-        # Add static non-translated pages.
-        static_pages = Dir.glob('en/**/*.{md,html}')
-        static_pages.concat(Dir.glob('*.{md,html}'))
+        # Add static, non-translated English pages.
+        #
+        # Only scan the public English content directory. Scanning the
+        # repository root would incorrectly add files such as
+        # CONTRIBUTING.md and CODE_OF_CONDUCT.md to the sitemap.
+        static_pages = Dir.glob('en/**/*.{md,html}').sort
 
         static_pages.each do |file|
-          next if file == 'index.html'
-          next if file == '404.html'
-          next if file == 'README.md'
-
           # Ignore Google webmaster verification files.
           data = File.read(file)
           next unless data.index('google-site-verification:').nil?
 
-          public_path = file
-                        .gsub('.html', '')
-                        .gsub('.md', '')
+          public_path = file.sub(/\.(?:html|md)\z/, '')
 
           sitemap.puts '<url>'
           sitemap.puts(
@@ -106,14 +105,27 @@ module Jekyll
           sitemap.puts '</url>'
         end
 
+        # Add standalone, indexable files deployed outside Jekyll.
+        standalone_files = [
+          'bitcoin.pdf'
+        ]
+        
+        standalone_files.each do |file|
+          sitemap.puts '<url>'
+          sitemap.puts(
+            '  <loc>https://bitcoin.org/' +
+            file +
+            '</loc>'
+          )
+          sitemap.puts '</url>'
+        end
+
         # Add alert pages.
-        Dir.foreach('_alerts') do |file|
+        Dir.foreach('_alerts').sort.each do |file|
           next if file == '.'
           next if file == '..'
 
-          alert_path = file
-                       .gsub('.html', '')
-                       .gsub('.md', '')
+          alert_path = file.sub(/\.(?:html|md)\z/, '')
 
           sitemap.puts '<url>'
           sitemap.puts(
@@ -125,7 +137,7 @@ module Jekyll
         end
 
         # Add release pages.
-        Dir.foreach('_releases') do |file|
+        Dir.foreach('_releases').sort.each do |file|
           next if file == '.'
           next if file == '..'
 
@@ -139,8 +151,7 @@ module Jekyll
 
           release_path = release_parts
                          .join('-')
-                         .gsub('.md', '')
-                         .gsub('.html', '')
+                         .sub(/\.(?:html|md)\z/, '')
 
           sitemap.puts '<url>'
           sitemap.puts(
