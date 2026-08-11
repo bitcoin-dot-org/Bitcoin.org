@@ -4,6 +4,7 @@
 S=@  ## Silent: only print errors by default;
      ## run `make S='' [other args]` to print commands as they're run
 
+SHELL=/bin/bash
 SITEDIR=_site
 JEKYLL_LOG=._jekyll.log
 
@@ -63,7 +64,7 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-wallet-description-length \
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
-post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
+post-build-tests-fast: check-site-was-built check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
@@ -104,7 +105,7 @@ clean:
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
 build:
-	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
+	$S export LANG=C.UTF-8 ; set -o pipefail ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
@@ -114,7 +115,7 @@ build:
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
 check-for-build-errors:
-	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
+	$S egrep -i '(error|warn|exception|killed|no space left|cannot allocate)' $(JEKYLL_LOG) \
 	    | grep -vi 'rouge/lexers/shell.rb' \
 	    | eval $(ERROR_ON_OUTPUT)
 
@@ -303,3 +304,9 @@ check-wallet-description-length:
 check-yaml-syntax:
 ## Ensure every YAML file parses with Psych, the parser used by the build
 	$S ruby _contrib/check-yaml.rb
+check-site-was-built:
+## Ensure the Jekyll build produced a complete site before later checks run.
+## A healthy build currently produces about 3.8k HTML files; 3000 is a conservative floor.
+	$S test -f $(SITEDIR)/index.html || { echo "ERROR: $(SITEDIR)/index.html missing - Jekyll produced no site (see $(JEKYLL_LOG))" ; exit 1 ; }
+	$S test -d $(SITEDIR)/img || { echo "ERROR: $(SITEDIR)/img missing - incomplete build (see $(JEKYLL_LOG))" ; exit 1 ; }
+	$S c=$$(find $(SITEDIR) -name '*.html' | wc -l) ; test $$c -ge 3000 || { echo "ERROR: only $$c HTML files in $(SITEDIR), expected 3000+ (see $(JEKYLL_LOG))" ; exit 1 ; }
