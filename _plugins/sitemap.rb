@@ -1,10 +1,10 @@
 # This file is licensed under the MIT License (MIT) available on
 # https://opensource.org/licenses/MIT.
 
-# sitemap.rb generates the sitemap.xml file.
+# sitemap.rb generates the sitemap.xml file from the pages that were
+# actually generated, after all page generators have run.
 # Translated alternatives are declared in each page's HTML head.
 
-require 'yaml'
 require 'cgi'
 
 module Jekyll
@@ -16,6 +16,8 @@ module Jekyll
   end
 
   class SitemapGenerator < Generator
+    priority :lowest
+
     def generate(site)
       # Do nothing if the plugin is disabled.
       if !ENV['ENABLED_PLUGINS'].nil? &&
@@ -24,154 +26,58 @@ module Jekyll
         return
       end
 
-      # Load translations.
-      locs = {}
+      origin = 'https://bitcoin.org'
 
-      enabled = ENV['ENABLED_LANGS']
-      enabled = enabled.split(' ') unless enabled.nil?
+      entries = site.pages
+                    .select { |page| indexable?(page) }
+                    .map { |page| origin + public_path(page.url) }
 
-      Dir.foreach('_translations') do |file|
-        next if file == '.'
-        next if file == '..'
-        next if file == 'COPYING'
-
-        lang = file.split('.')[0]
-
-        # Ignore the language if it is disabled.
-        if lang != 'en' &&
-           !enabled.nil? &&
-           !enabled.include?(lang)
-          next
-        end
-
-        translation_file = File.join('_translations', file)
-        locs[lang] = YAML.unsafe_load_file(translation_file)[lang]
+      # Standalone, indexable files deployed outside the Jekyll build.
+      standalone_files = [
+        'bitcoin.pdf'
+      ]
+      standalone_files.each do |file|
+        entries << "#{origin}/#{file}"
       end
 
-      # Create the destination directory if it does not exist.
+      entries = entries.uniq.sort
+
       Dir.mkdir(site.dest) unless File.directory?(site.dest)
-
-      sitemap_path = File.join(site.dest, 'sitemap.xml')
-
-      File.open(sitemap_path, 'w+') do |sitemap|
-        # Open the sitemap.
+      File.open(File.join(site.dest, 'sitemap.xml'), 'w+') do |sitemap|
         sitemap.puts '<?xml version="1.0" encoding="UTF-8"?>'
-        sitemap.puts(
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-        )
-
-        # Add translated pages as normal sitemap URLs.
-        #
-        # hreflang links are generated in each page's HTML head instead
-        # of being duplicated in the sitemap.
-        locs['en']['url'].each_key do |id|
-          locs.each_key do |lang|
-            translated_url = locs[lang]['url'][id]
-
-            # Do not add a page if its URL is not translated.
-            next if translated_url.nil? || translated_url.empty?
-
-            sitemap.puts '<url>'
-            sitemap.puts(
-              '  <loc>https://bitcoin.org/' +
-              lang + '/' +
-              CGI::escape(translated_url) +
-              '</loc>'
-            )
-            sitemap.puts '</url>'
-          end
-        end
-
-        # Add static, non-translated English pages.
-        #
-        # Only scan the public English content directory. Scanning the
-        # repository root would incorrectly add files such as
-        # CONTRIBUTING.md and CODE_OF_CONDUCT.md to the sitemap.
-        static_pages = Dir.glob('en/**/*.{md,html}').sort
-
-        static_pages.each do |file|
-          # Ignore Google webmaster verification files.
-          data = File.read(file)
-          next unless data.index('google-site-verification:').nil?
-
-          public_path = file.sub(/\.(?:html|md)\z/, '')
-
+        sitemap.puts '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        entries.each do |url|
           sitemap.puts '<url>'
-          sitemap.puts(
-            '  <loc>https://bitcoin.org/' +
-            public_path +
-            '</loc>'
-          )
+          sitemap.puts "  <loc>#{url}</loc>"
           sitemap.puts '</url>'
         end
-
-        # Add standalone, indexable files deployed outside Jekyll.
-        standalone_files = [
-          'bitcoin.pdf'
-        ]
-        
-        standalone_files.each do |file|
-          sitemap.puts '<url>'
-          sitemap.puts(
-            '  <loc>https://bitcoin.org/' +
-            file +
-            '</loc>'
-          )
-          sitemap.puts '</url>'
-        end
-
-        # Add alert pages.
-        Dir.foreach('_alerts').sort.each do |file|
-          next if file == '.'
-          next if file == '..'
-
-          alert_path = file.sub(/\.(?:html|md)\z/, '')
-
-          sitemap.puts '<url>'
-          sitemap.puts(
-            '  <loc>https://bitcoin.org/en/alert/' +
-            alert_path +
-            '</loc>'
-          )
-          sitemap.puts '</url>'
-        end
-
-        # Add release pages.
-        Dir.foreach('_releases').sort.each do |file|
-          next if file == '.'
-          next if file == '..'
-
-          release_parts = file.split('-')
-          next if release_parts.length < 4
-
-          # Remove the YYYY-MM-DD date prefix.
-          release_parts.shift
-          release_parts.shift
-          release_parts.shift
-
-          release_path = release_parts
-                         .join('-')
-                         .sub(/\.(?:html|md)\z/, '')
-
-          sitemap.puts '<url>'
-          sitemap.puts(
-            '  <loc>https://bitcoin.org/en/release/' +
-            release_path +
-            '</loc>'
-          )
-          sitemap.puts '</url>'
-        end
-
-        # Close the sitemap.
         sitemap.puts '</urlset>'
       end
 
-      site.static_files << SitemapFile.new(
-        site,
-        site.source,
-        '',
-        'sitemap.xml'
-      )
+      site.static_files << SitemapFile.new(site, site.source, '', 'sitemap.xml')
+    end
+
+    private
+
+    def indexable?(page)
+      # Redirect stubs point elsewhere and should not be indexed.
+      return false if page.data['redirect']
+      # Only pages rendered as HTML belong in the sitemap.
+      return false unless page.output_ext == '.html'
+      return false if page.name == '404.html'
+      # Google webmaster verification files.
+      return false if page.content.to_s.include?('google-site-verification:')
+      true
+    end
+
+    def public_path(url)
+      path = url.to_s
+      path = "/#{path}" unless path.start_with?('/')
+      path = path.sub(%r{/index\.html$}, '/')
+                 .sub(/\.html$/, '')
+      path.split('/', -1)
+          .map { |segment| CGI.escape(segment).gsub('+', '%20') }
+          .join('/')
     end
   end
 
