@@ -25,6 +25,7 @@ module Jekyll
 
       ## Read in the file's YAML header
       self.read_yaml(File.join(base, srcdir), src)
+      self.data["path"] = srcdir + "/" + src
 
       ## Die if required_ variables aren't set
       if self.data['required_version']
