@@ -109,7 +109,7 @@ build:
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
-	  | xargs -d '\n' sha256sum > _site/sha256sums.txt
+	  | while IFS= read -r file; do sha256sum "$$file"; done > _site/sha256sums.txt
 	$S git log -1 --format="%H" > _site/commit.txt
 
 ## Jekyll annoyingly returns success even when it emits errors and
