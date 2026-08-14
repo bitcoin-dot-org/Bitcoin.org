@@ -7,6 +7,7 @@ S=@  ## Silent: only print errors by default;
 SHELL=/bin/bash
 SITEDIR=_site
 JEKYLL_LOG=._jekyll.log
+BIP_GENERATOR=_build/generate_bips.py
 
 #######################
 ## REGULAR ARGUMENTS ##
@@ -16,7 +17,7 @@ JEKYLL_LOG=._jekyll.log
 default: clean build
 
 ## `make preview`: start the built-in Jekyll preview
-preview: clean
+preview: clean generate-bips
 	$S export LANG=C.UTF-8 ; bundle exec jekyll serve --incremental
 
 ## `make test`: don't build, but do run all tests
@@ -62,6 +63,7 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-validate-yaml \
     check-yaml-syntax \
     check-wallet-description-length \
+    check-bip-generator
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 post-build-tests-fast: check-site-was-built check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
@@ -71,7 +73,8 @@ post-build-tests-fast: check-site-was-built check-for-build-errors ensure-each-s
     check-for-empty-title-tag \
     check-for-subheading-anchors \
     check-jshint \
-    check-for-javascript-in-svgs
+    check-for-javascript-in-svgs \
+    check-bip-pages
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -104,13 +107,22 @@ clean:
 
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
-build:
+build: generate-bips
 	$S export LANG=C.UTF-8 ; set -o pipefail ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
 	  | while IFS= read -r file; do sha256sum "$$file"; done > _site/sha256sums.txt
 	$S git log -1 --format="%H" > _site/commit.txt
+
+generate-bips:
+	$S python3 $(BIP_GENERATOR)
+
+check-bip-generator:
+	$S python3 _build/test_bips.py
+
+check-bip-pages:
+	$S python3 $(BIP_GENERATOR) --check-output $(SITEDIR)/bip
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
@@ -147,8 +159,11 @@ check-for-missing-anchors:
 
 check-for-broken-markdown-reference-links:
 ## Report Markdown reference-style links which weren't converted to HTML
-## links in the output, indicating there's no reference definition
-	$S find $(SITEDIR) -name '*.html' -type f | xargs grep '\]\[' | eval $(ERROR_ON_OUTPUT)
+## links in the output, indicating there's no reference definition. BIP source
+## contains protocol examples where adjacent brackets are intentional and is
+## validated separately by check-bip-pages.
+	$S find $(SITEDIR) -path $(SITEDIR)/bip -prune -o -name '*.html' -type f -print0 \
+	  | xargs -0 grep '\]\[' | eval $(ERROR_ON_OUTPUT)
 
 check-for-non-ascii-urls:
 ## Always check all translated urls don't contain non-ASCII
