@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 from pathlib import Path
 import re
 import sys
@@ -309,6 +310,7 @@ Example abstract.
     def test_output_inspector_scopes_links_and_alt_checks_to_bip_content(self) -> None:
         inspector = BIPS.OutputInspector()
         inspector.feed(
+            '<head><meta name="description" content="Trusted site metadata"></head>'
             '<nav><a href="relative-menu-link">Menu</a></nav>'
             '<article class="article bip-document">'
             '<h2 id="abstract">Abstract</h2>'
@@ -317,6 +319,8 @@ Example abstract.
             '</article>'
         )
 
+        self.assertTrue(inspector.found_bip_document)
+        self.assertEqual([], inspector.unsafe_document_html)
         self.assertEqual(
             [
                 ("href", "/bip/9/#specification"),
@@ -326,6 +330,60 @@ Example abstract.
         )
         self.assertEqual(["/bip/9/assets/example.png"], inspector.images_without_alt)
         self.assertIn("abstract", inspector.ids)
+
+    def test_output_inspector_rejects_unsafe_html_inside_bip_content(self) -> None:
+        inspector = BIPS.OutputInspector()
+        inspector.feed(
+            '<meta name="description" content="Trusted site metadata">'
+            '<article class="article bip-document">'
+            '<meta http-equiv="refresh" content="0; url=https://example.test">'
+            '</article>'
+        )
+
+        self.assertEqual(["<meta"], inspector.unsafe_document_html)
+
+    def test_output_check_scopes_unsafe_html_validation_to_bip_content(self) -> None:
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        root = Path(temporary.name)
+        config = root / "bips-source.json"
+        output = root / "bip"
+        page = output / "110" / "index.html"
+        page.parent.mkdir(parents=True)
+        (output / "index.html").write_text("BIP index", encoding="utf-8")
+        config.write_text(
+            json.dumps(
+                {
+                    "repository": "https://github.com/bitcoin/bips.git",
+                    "commit": "a" * 40,
+                    "cache_directory": "_cache/bitcoin-bips",
+                    "output_directory": "bip",
+                    "expected_bip_count": 1,
+                    "expected_image_asset_count": 1,
+                }
+            ),
+            encoding="utf-8",
+        )
+        trusted_head = '<head><meta name="description" content="BIP 110"></head>'
+        article = (
+            '<article class="article bip-document expanded">'
+            '<h2 id="abstract">Abstract</h2><p>Example.</p>'
+            '</article>'
+        )
+        page.write_text(trusted_head + article, encoding="utf-8")
+
+        BIPS.check_output(config, output)
+
+        page.write_text(
+            trusted_head
+            + article.replace(
+                '<p>Example.</p>',
+                '<meta http-equiv="refresh" content="0"><p>Example.</p>',
+            ),
+            encoding="utf-8",
+        )
+        with self.assertRaises(BIPS.BuildError):
+            BIPS.check_output(config, output)
 
 
 if __name__ == "__main__":

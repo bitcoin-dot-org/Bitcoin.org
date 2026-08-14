@@ -1111,13 +1111,20 @@ class OutputInspector(HTMLParser):
         self.legacy_links: list[str] = []
         self.document_links: list[tuple[str, str]] = []
         self.images_without_alt: list[str] = []
+        self.unsafe_document_html: list[str] = []
+        self.found_bip_document = False
         self.in_bip_document = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         attributes = dict(attrs)
         classes = (attributes.get("class") or "").split()
         if tag == "article" and "bip-document" in classes:
+            self.found_bip_document = True
             self.in_bip_document = True
+        if self.in_bip_document:
+            unsafe = UNSAFE_HTML.search(self.get_starttag_text() or "")
+            if unsafe:
+                self.unsafe_document_html.append(unsafe.group(0))
         if attributes.get("id"):
             self.ids.append(str(attributes["id"]))
         for name in ("href", "src"):
@@ -1155,9 +1162,15 @@ def check_output(config_path: Path, output_root: Path) -> None:
     identifiers_by_bip: dict[int, set[str]] = {}
     for page in pages:
         content = page.read_text(encoding="utf-8")
-        validate_rendered_html(content, str(page))
         inspector = OutputInspector()
         inspector.feed(content)
+        if not inspector.found_bip_document:
+            raise BuildError(f"Missing BIP document in {page}")
+        if inspector.unsafe_document_html:
+            raise BuildError(
+                f"Unsafe HTML in BIP document {page}: "
+                f"{inspector.unsafe_document_html[0]!r}"
+            )
         duplicates = [name for name, count in collections.Counter(inspector.ids).items() if count > 1]
         if duplicates:
             raise BuildError(f"Duplicate IDs in {page}: {', '.join(duplicates[:10])}")
