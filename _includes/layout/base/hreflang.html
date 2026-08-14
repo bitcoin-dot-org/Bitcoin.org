@@ -3,6 +3,10 @@ This file is licensed under the MIT License (MIT) available on
 https://opensource.org/licenses/MIT.
 {% endcomment %}
 
+{% if page.canonical_url %}
+<link rel="canonical" href="{{ page.canonical_url | escape }}">
+{% endif %}
+
 {% for alternate in page.hreflang_alternates %}
 <link rel="alternate"
       hreflang="{{ alternate.lang }}"
