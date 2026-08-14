@@ -29,7 +29,12 @@ dependencies and tools, which are pretty easy on any modern Linux:
 On recent versions of Ubuntu and Debian, you can run the following
 command to ensure you have the required libraries, headers, and tools:
 
-    sudo apt-get install build-essential git libicu-dev zlib1g-dev
+    sudo apt-get install build-essential git libicu-dev pandoc python3 zlib1g-dev
+
+Python and Pandoc generate the local HTML mirror of the BIP documents. The
+generator fetches the exact `bitcoin/bips` revision pinned in
+`_build/bips-source.json`, caches it in `_cache`, and refuses to build a partial
+or different revision.
 
 **Install RVM**
 
@@ -153,6 +158,7 @@ Plugins include:
 |--------------|---------|----------------|------------------------
 | alerts       | 5       | --             | Network alert pages
 | autocrossref | 90      | --             | Developer documentation
+| bips         | 40      | GitHub.com     | Bitcoin Improvement Proposals
 | contributors | 5       | GitHub.com     | Contributor listings
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
