@@ -671,7 +671,7 @@ def rewrite_links(
             return f'{attribute}="{fragment}"'
 
         if url in {"README.mediawiki", "./README.mediawiki"}:
-            return f'{attribute}="/bip/"'
+            return f'{attribute}="/bips/"'
 
         auxiliary_match = auxiliary.fullmatch(url)
         if auxiliary_match:
@@ -981,8 +981,8 @@ def write_index(output_root: Path, bips: list[Bip], commit: str) -> None:
                 "Browse Bitcoin Improvement Proposals by number, title, type and "
                 "current repository status."
             ),
-            f"canonical_url: {yaml_value('https://bitcoin.org/bip/')}",
-            f"permalink: {yaml_value('/bip/')}",
+            f"canonical_url: {yaml_value('https://bitcoin.org/bips/')}",
+            f"permalink: {yaml_value('/bips/')}",
             f"bip_count: {len(bips)}",
             f"bip_source_commit: {yaml_value(commit)}",
             "---",
@@ -1155,7 +1155,8 @@ def check_output(config_path: Path, output_root: Path) -> None:
             f"Found {len(pages)} rendered BIP pages in {output_root}; "
             f"expected {expected_bip_count}"
         )
-    if not (output_root / "index.html").is_file() or not (output_root / "110" / "index.html").is_file():
+    index_page = output_root.parent / "bips" / "index.html"
+    if not index_page.is_file() or not (output_root / "110" / "index.html").is_file():
         raise BuildError("The BIP index or BIP 110 page was not rendered")
 
     inspectors: dict[int, OutputInspector] = {}

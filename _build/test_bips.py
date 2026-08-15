@@ -198,6 +198,7 @@ Example abstract.
         rendered = (
             '<a href="bip-0009.mediawiki#GetBlockTemplate_changes">BIP 9</a>'
             '<a href="#Abstract">Abstract</a>'
+            '<a href="README.mediawiki">BIP index</a>'
         )
         identifiers = {9: {"getblocktemplate-changes"}, 110: {"abstract"}}
 
@@ -211,6 +212,19 @@ Example abstract.
 
         self.assertIn('href="/bip/9/#getblocktemplate-changes"', rewritten)
         self.assertIn('href="#abstract"', rewritten)
+        self.assertIn('href="/bips/"', rewritten)
+
+    def test_index_uses_plural_public_route(self) -> None:
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        output = Path(temporary.name) / "bip"
+        output.mkdir()
+
+        BIPS.write_index(output, [], "a" * 40)
+
+        content = (output / "index.html").read_text(encoding="utf-8")
+        self.assertIn('canonical_url: "https://bitcoin.org/bips/"', content)
+        self.assertIn('permalink: "/bips/"', content)
 
     def test_legacy_github_and_reference_fragments_are_resolved(self) -> None:
         self.assertEqual(
@@ -350,7 +364,9 @@ Example abstract.
         output = root / "bip"
         page = output / "110" / "index.html"
         page.parent.mkdir(parents=True)
-        (output / "index.html").write_text("BIP index", encoding="utf-8")
+        index_page = root / "bips" / "index.html"
+        index_page.parent.mkdir(parents=True)
+        index_page.write_text("BIP index", encoding="utf-8")
         config.write_text(
             json.dumps(
                 {
