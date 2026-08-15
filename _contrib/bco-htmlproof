@@ -23,11 +23,11 @@ HTMLProofer.check_directory(
       /^\/stats/
     ],
     :swap_urls => {
-      /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
-      /^([^#]+[^\/$])$/ => '\1.html',
-      /^(.+)(#.+)/ => '\1.html\2',
-      /\/(.html#.+)/ => '\1',
-      /\$$/ => '',
+    /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
+    /^([^#]+[^\/$])$/ => '\1.html',
+    /^(.+[^\/])(#.+)$/ => '\1.html\2',
+    /\/(.html#.+)/ => '\1',
+    /\$$/ => '',
     },
   }
 ).run
