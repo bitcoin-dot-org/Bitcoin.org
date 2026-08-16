@@ -75,6 +75,7 @@ class Bip:
     body: str
     rendered_html: str = ""
     description: str = ""
+    span_tables: dict[str, str] = dataclasses.field(default_factory=dict)
 
     @property
     def title(self) -> str:
@@ -142,6 +143,34 @@ def run(command: list[str], cwd: Path | None = None, input_text: str | None = No
     if process.stderr.strip():
         print(process.stderr.strip(), file=sys.stderr)
     return process.stdout.strip()
+
+
+MINIMUM_PANDOC_VERSION = (2, 9)
+
+
+def parse_pandoc_version(version_output: str) -> tuple[int, int]:
+    match = re.match(r"pandoc(?:\.exe)?\s+(\d+)\.(\d+)", version_output)
+    if not match:
+        raise BuildError(f"Unable to parse the Pandoc version from: {version_output!r}")
+    return int(match.group(1)), int(match.group(2))
+
+
+def ensure_pandoc_version() -> None:
+    """Refuse to build with a Pandoc older than the tested range.
+
+    The generator is exercised against Pandoc 2.9 (Ubuntu jammy), 3.1 and
+    3.10; releases older than 2.9 have not been tested and may silently
+    produce different HTML.
+    """
+    version_output = run(["pandoc", "--version"]).splitlines()[0]
+    version = parse_pandoc_version(version_output)
+    if version < MINIMUM_PANDOC_VERSION:
+        minimum = ".".join(str(part) for part in MINIMUM_PANDOC_VERSION)
+        raise BuildError(
+            f"Pandoc {version[0]}.{version[1]} is older than the minimum tested "
+            f"version {minimum}; found: {version_output}"
+        )
+    print(f"Using {version_output}")
 
 
 def ensure_source(config: dict[str, object], explicit_source: Path | None = None) -> tuple[Path, str]:
@@ -259,13 +288,15 @@ def parse_bip(path: Path) -> Bip:
 
 
 def render_with_pandoc(bip: Bip, source_root: Path) -> str:
-    body = (
-        preprocess_mediawiki_references(
-            preprocess_mediawiki_blocks(preprocess_mediawiki_files(bip.body))
+    if bip.source_format == "mediawiki":
+        despanned, bip.span_tables = preprocess_mediawiki_spanned_tables(
+            preprocess_mediawiki_table_spacing(bip.body)
         )
-        if bip.source_format == "mediawiki"
-        else normalize_markdown_footnotes(bip.body)
-    )
+        body = preprocess_mediawiki_references(
+            preprocess_mediawiki_blocks(preprocess_mediawiki_files(despanned))
+        )
+    else:
+        body = normalize_markdown_footnotes(bip.body)
     input_format = "mediawiki+gfm_auto_identifiers" if bip.source_format == "mediawiki" else "gfm"
     output = run(
         [
@@ -323,6 +354,198 @@ def wrap_document_tables(rendered: str) -> str:
     if depth != 0:
         raise BuildError("Unbalanced table markup after HTML normalization")
     return "".join(output)
+
+
+SPAN_ATTRIBUTE = re.compile(r'\b(colspan|rowspan)\s*=\s*"?(\d+)"?', re.IGNORECASE)
+
+
+def convert_wiki_cell_inline(content: str) -> str:
+    """Minimally convert MediaWiki inline markup inside an HTML-converted cell."""
+    # A rare <ref> inside a table cell becomes an inline parenthetical; the
+    # protected table is substituted after reference preprocessing runs.
+    content = re.sub(
+        r"<ref[^>]*>(.*?)</ref\s*>", r" (\1)", content, flags=re.IGNORECASE | re.DOTALL
+    )
+    content = re.sub(r"<ref[^>]*/\s*>", "", content, flags=re.IGNORECASE)
+    # Escape angle brackets that do not start an HTML tag, e.g. <33 byte ...>.
+    content = re.sub(r"<(?![A-Za-z/!])", "&lt;", content)
+    content = re.sub(r"\[\[([^|\]]+)\|([^\]]+)\]\]", r'<a href="\1">\2</a>', content)
+    content = re.sub(r"\[\[([^\]]+)\]\]", r'<a href="\1">\1</a>', content)
+    content = re.sub(r"'''(.+?)'''", r"<strong>\1</strong>", content)
+    content = re.sub(r"''(.+?)''", r"<em>\1</em>", content)
+    return content
+
+
+def wiki_table_to_html(table: str) -> str:
+    """Convert one complete MediaWiki table to a plain HTML table.
+
+    Pandoc's MediaWiki reader fixes the column count from the first row and
+    silently drops the remaining cells of wider rows (jgm/pandoc#1696), so
+    tables using colspan/rowspan must bypass it entirely. Cell content may
+    continue on following lines; those lines belong to the current cell.
+    """
+    lines = mask_protected_pipes(table).splitlines()
+    caption = ""
+    rows = []
+    current = []
+
+    def append_cells(raw: str, tag: str, separator: str) -> None:
+        for cell in re.split(separator, raw):
+            attributes = ""
+            if "|" in cell:
+                prefix, _, remainder = cell.partition("|")
+                if "=" in prefix and "[[" not in prefix:
+                    spans = SPAN_ATTRIBUTE.findall(prefix)
+                    attributes = "".join(
+                        f' {name.lower()}="{value}"' for name, value in spans
+                    )
+                    cell = remainder
+            current.append([tag, attributes, convert_wiki_cell_inline(cell.strip())])
+
+    for line in lines[1:-1]:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("|+"):
+            caption = convert_wiki_cell_inline(stripped[2:].strip())
+        elif stripped.startswith("|-"):
+            if current:
+                rows.append(current)
+                current = []
+        elif stripped.startswith("!"):
+            append_cells(stripped[1:], "th", r"!!")
+        elif stripped.startswith("|") and not stripped.startswith("|}"):
+            append_cells(stripped[1:], "td", r"\|\|")
+        elif current:
+            # A single newline inside a MediaWiki cell is a soft wrap.
+            current[-1][2] += " " + convert_wiki_cell_inline(stripped)
+    if current:
+        rows.append(current)
+    body = "".join(
+        "<tr>" + "".join(f"<{t}{a}>{c}</{t}>" for t, a, c in row) + "</tr>"
+        for row in rows
+        if row
+    )
+    caption_markup = f"<caption>{caption}</caption>" if caption else ""
+    return f"<table>{caption_markup}{body}</table>"
+
+
+def preprocess_mediawiki_table_spacing(source: str) -> str:
+    """Insert a blank line before tables glued to a preceding raw-HTML line.
+
+    Pandoc's MediaWiki reader treats a line such as <br/> as the start of a
+    raw HTML block and swallows a directly following table as part of it,
+    silently dropping the table (BIP 75). A preceding table-syntax line is
+    left untouched so nested tables are unaffected.
+    """
+    return re.sub(
+        r"^(?!\s*$)(?![|!{]).*\n(?=\{\|)",
+        lambda match: match.group(0) + "\n",
+        source,
+        flags=re.MULTILINE,
+    )
+
+
+PROTECTED_PIPE_SPANS = re.compile(
+    r"<(code|tt|nowiki)\b[^>]*>.*?</\1\s*>", re.IGNORECASE | re.DOTALL
+)
+
+
+def mask_protected_pipes(text: str) -> str:
+    """Turn pipes inside inline code into entities before cell splitting.
+
+    A cell such as <code>hash(A || B)</code> contains the OR operator, not
+    two cell separators; the entity renders identically and keeps the code
+    span within a single cell.
+    """
+    return PROTECTED_PIPE_SPANS.sub(
+        lambda match: match.group(0).replace("|", "&#124;"), text
+    )
+
+
+def wiki_table_row_widths(table: str) -> list[int]:
+    """Count the cells of each row, honouring multi-line cell content."""
+    widths: list[int] = []
+    current = 0
+    for line in mask_protected_pipes(table).splitlines()[1:-1]:
+        stripped = line.strip()
+        if not stripped or stripped.startswith("|+"):
+            continue
+        if stripped.startswith("|-"):
+            if current:
+                widths.append(current)
+                current = 0
+        elif stripped.startswith("!"):
+            # Structural width counts every cell, including empty ones —
+            # an empty corner header is still a rendered column.
+            current += len(re.split(r"!!", stripped[1:]))
+        elif stripped.startswith("|") and not stripped.startswith("|}"):
+            current += len(re.split(r"\|\|", stripped[1:]))
+    if current:
+        widths.append(current)
+    return widths
+
+
+def preprocess_mediawiki_spanned_tables(source: str) -> str:
+    """Keep every column of tables that use colspan/rowspan.
+
+    Most affected tables only use a single full-width colspan header as a
+    visual title; converting that row to a MediaWiki caption lets Pandoc
+    parse the rest of the table correctly. Tables with any remaining span
+    are converted to plain HTML tables instead.
+    """
+    title_row = re.compile(
+        r"^\{\|(?P<table_start>[^\n]*)\n"
+        r"(?P<separator>\|-[^\n]*\n)?"
+        r'!\s*colspan\s*=\s*"?\d+"?[^|\n]*\|\s*(?P<title>[^\n]*)\n',
+        re.MULTILINE,
+    )
+
+    def to_caption(match: "re.Match[str]") -> str:
+        title = match.group("title").strip()
+        return "{|" + match.group("table_start") + "\n|+ " + title + "\n"
+
+    tables: dict[str, str] = {}
+
+    def transform_table(match: "re.Match[str]") -> str:
+        table = match.group(0)
+        widths = wiki_table_row_widths(table)
+        # Pandoc locks the column count to the first row and silently drops
+        # the extra cells of any wider row, whether the mismatch comes from
+        # colspan/rowspan markup or from a header that is simply narrower
+        # than the data rows (jgm/pandoc#1696).
+        ragged = bool(widths) and max(widths) > widths[0]
+        if not SPAN_ATTRIBUTE.search(table) and not ragged:
+            # Pipes inside inline code split cells on some Pandoc versions
+            # (2.9 drops whole tables of BIP 150); the entity renders the
+            # same and parses identically everywhere.
+            return mask_protected_pipes(table)
+        table = title_row.sub(to_caption, table, count=1)
+        widths = wiki_table_row_widths(table)
+        ragged = bool(widths) and max(widths) > widths[0]
+        if not SPAN_ATTRIBUTE.search(table) and not ragged:
+            return mask_protected_pipes(table)
+        # Protect the converted table from Pandoc entirely: its HTML reader
+        # drops rowspan attributes when rebalancing rows, so the finished
+        # table is substituted back after HTML normalization.
+        token = f"BIPSPANTABLETOKEN{len(tables)}"
+        # Apply the same unknown-tag escaping the rest of the document gets,
+        # so placeholders such as <keytype> stay visible as text.
+        tables[token] = escape_unknown_html_tags(wiki_table_to_html(table))
+        return token
+
+    source = re.sub(
+        r"^\{\|.*?^\|\}", transform_table, source, flags=re.MULTILINE | re.DOTALL
+    )
+    return source, tables
+
+
+def restore_spanned_tables(rendered: str, tables: dict[str, str]) -> str:
+    """Substitute protected span tables back after Pandoc normalization."""
+    for token, markup in tables.items():
+        rendered = rendered.replace(f"<p>{token}</p>", markup)
+        rendered = rendered.replace(token, markup)
+    return rendered
 
 
 def preprocess_mediawiki_blocks(source: str) -> str:
@@ -427,6 +650,81 @@ def reference_name(attributes: str) -> str | None:
     return next((value for value in match.groups() if value), None) if match else None
 
 
+REF_TOKEN = re.compile(
+    r"<ref(?P<self_attributes>\s[^>]*?)?\s*/>"
+    r"|<ref(?P<open_attributes>\s[^>]*)?>"
+    r"|</ref\s*>",
+    re.IGNORECASE,
+)
+
+
+def find_reference_spans(source: str) -> list[dict]:
+    """Locate top-level <ref> elements with balanced tag matching.
+
+    The previous non-greedy regex paired an outer opening tag with the first
+    closing tag it met, so a nested <ref>…</ref> scrambled the surrounding
+    text (BIP 324) or broke newer Pandoc on the orphaned closer. A depth
+    counter pairs each opener with its own closer instead; stray closers are
+    consumed silently and an unterminated opener is treated as literal text.
+    """
+    spans: list[dict] = []
+    depth = 0
+    current: dict | None = None
+    for token in REF_TOKEN.finditer(source):
+        text = token.group(0)
+        if text.lower().startswith("</"):
+            if depth == 0:
+                continue
+            depth -= 1
+            if depth == 0 and current is not None:
+                current["end"] = token.end()
+                current["content"] = source[current["content_start"] : token.start()]
+                spans.append(current)
+                current = None
+        elif token.group("self_attributes") is not None or text.rstrip().endswith("/>"):
+            if depth == 0:
+                spans.append(
+                    {
+                        "start": token.start(),
+                        "end": token.end(),
+                        "attributes": token.group("self_attributes") or "",
+                        "content": "",
+                    }
+                )
+        else:
+            if depth == 0:
+                current = {
+                    "start": token.start(),
+                    "content_start": token.end(),
+                    "attributes": token.group("open_attributes") or "",
+                }
+            depth += 1
+    return spans
+
+
+def convert_note_blocks(content: str) -> str:
+    """Make block-level MediaWiki markup survive inside a raw-HTML note.
+
+    Note bodies are emitted inside a raw <div>, where Pandoc no longer
+    parses MediaWiki block syntax: tables vanished entirely (BIP 85) and
+    indented code blocks collapsed into run-on text. Convert both to HTML
+    here instead.
+    """
+    content = re.sub(
+        r"^\{\|.*?^\|\}",
+        lambda match: wiki_table_to_html(match.group(0)),
+        content,
+        flags=re.MULTILINE | re.DOTALL,
+    )
+
+    def to_pre(match: re.Match[str]) -> str:
+        lines = [line[1:] for line in match.group(0).splitlines()]
+        return "<pre>" + html.escape("\n".join(lines), quote=False) + "</pre>"
+
+    content = re.sub(r"(?:^ \S[^\n]*\n?)+", to_pre, content, flags=re.MULTILINE)
+    return content
+
+
 def preprocess_mediawiki_references(source: str) -> str:
     """Replace MediaWiki references before Pandoc sees nested list markup.
 
@@ -441,51 +739,70 @@ def preprocess_mediawiki_references(source: str) -> str:
         r"|<ref(?P<short_attributes>\s[^>]*)?\s*/>",
         re.IGNORECASE | re.DOTALL,
     )
-    matches = list(reference_pattern.finditer(source))
+    matches = find_reference_spans(source)
     if not matches:
         return re.sub(r"<references\b[^>]*>", "", source, flags=re.IGNORECASE)
 
     named_content: dict[str, str] = {}
-    for match in matches:
-        attributes = match.group("full_attributes") or match.group("short_attributes") or ""
-        name = reference_name(attributes)
-        content = (match.group("content") or "").strip()
-        if name and content and name not in named_content:
-            named_content[name] = content
+
+    def collect_names(spans: list[dict]) -> None:
+        for span in spans:
+            name = reference_name(span["attributes"])
+            content = span["content"].strip()
+            if name and content and name not in named_content:
+                named_content[name] = content
+            if content:
+                collect_names(find_reference_spans(content))
+
+    collect_names(matches)
 
     notes: list[dict[str, object]] = []
     named_notes: dict[str, dict[str, object]] = {}
     output: list[str] = []
     cursor = 0
 
-    for match in matches:
-        output.append(source[cursor : match.start()])
-        attributes = match.group("full_attributes") or match.group("short_attributes") or ""
+    def marker_for(attributes: str, content: str) -> str:
         name = reference_name(attributes)
-        content = (match.group("content") or "").strip()
-
+        content = content.strip()
         note = named_notes.get(name) if name else None
         if note is None:
             if not content and name:
                 content = named_content.get(name, "")
+            # Reserve the number before recursing so notes are numbered in
+            # reading order even when references nest.
+            note = {"number": len(notes) + 1, "content": "", "uses": 0}
+            notes.append(note)
+            if name:
+                named_notes[name] = note
             if not content:
                 # Preserve a visible marker rather than silently inventing text
                 # for a malformed upstream reference.
                 content = "Reference text is not available in the source document."
-            note = {"number": len(notes) + 1, "content": content, "uses": 0}
-            notes.append(note)
-            if name:
-                named_notes[name] = note
-
+            else:
+                content = convert_note_blocks(replace_spans(content))
+            note["content"] = content
         note["uses"] = int(note["uses"]) + 1
         number = int(note["number"])
         use = int(note["uses"])
-        output.append(
+        return (
             f'<sup><span id="bip-ref-{number}-{use}"></span>'
             f'&#91;[[#bip-note-{number}|{number}]]&#93;</sup>'
         )
-        cursor = match.end()
 
+    def replace_spans(text: str) -> str:
+        pieces: list[str] = []
+        position = 0
+        for span in find_reference_spans(text):
+            pieces.append(text[position : span["start"]])
+            pieces.append(marker_for(span["attributes"], span["content"]))
+            position = span["end"]
+        pieces.append(text[position:])
+        return "".join(pieces)
+
+    for match in matches:
+        output.append(source[cursor : match["start"]])
+        output.append(marker_for(match["attributes"], match["content"]))
+        cursor = match["end"]
     output.append(source[cursor:])
     processed = "".join(output)
 
@@ -507,7 +824,8 @@ def preprocess_mediawiki_references(source: str) -> str:
         processed = references_pattern.sub("", processed)
     else:
         processed += "\n\n==Footnotes==\n\n" + notes_markup
-    return processed
+    # A stray closer with no matching opener would abort newer Pandoc.
+    return re.sub(r"</ref\s*>", "", processed, flags=re.IGNORECASE)
 
 
 def escape_unknown_html_tags(rendered: str) -> str:
@@ -749,6 +1067,58 @@ def rewrite_links(
 
     rendered = re.sub(r"<img\b[^>]*>", add_image_alt, rendered, flags=re.IGNORECASE)
     return rendered
+
+
+MASKED_INLINE = re.compile(
+    r"<(code|tt|nowiki)\b[^>]*>.*?</\1\s*>", re.IGNORECASE | re.DOTALL
+)
+STRIPPED_BLOCKS = re.compile(
+    r"<!--.*?-->|<pre\b[^>]*>.*?</pre\s*>", re.IGNORECASE | re.DOTALL
+)
+
+
+def count_source_table_cells(body: str) -> int:
+    """Count the table cells a faithful rendering of this document must show.
+
+    Comments and literal <pre> examples are excluded; pipes inside inline
+    code are masked so an || operator is not miscounted as a cell separator.
+    The count is a lower bound: renderers may add padding cells but must
+    never drop content cells.
+    """
+    body = STRIPPED_BLOCKS.sub(" ", body)
+    body = MASKED_INLINE.sub(lambda match: match.group(0).replace("|", " "), body)
+    cells = 0
+    for table in re.finditer(r"^\{\|.*?^\|\}", body, re.MULTILINE | re.DOTALL):
+        for line in table.group(0).splitlines():
+            line = line.strip()
+            if not line or line.startswith(("{|", "|}", "|-", "|+")):
+                continue
+            if line.startswith("!"):
+                # A lone full-width colspan header is rendered as a table
+                # caption, not as a cell, so it is excluded from the bound.
+                if re.match(r"!\s*colspan\s*=", line) and "!!" not in line:
+                    continue
+                parts = re.split(r"!!", line[1:])
+            elif line.startswith("|"):
+                parts = re.split(r"\|\|", line[1:])
+            else:
+                continue
+            # Empty cells (upstream double-separator typos) are not required.
+            cells += sum(1 for part in parts if part.strip())
+    return cells
+
+
+def validate_table_cell_parity(bip: "Bip") -> None:
+    """Fail the build if rendering lost table cells (see jgm/pandoc#1696)."""
+    expected = count_source_table_cells(bip.body)
+    if not expected:
+        return
+    rendered = len(re.findall(r"<t[dh]\b", bip.rendered_html))
+    if rendered < expected:
+        raise BuildError(
+            f"Table cells lost in {bip.filename}: the source contains "
+            f"{expected} cells but only {rendered} were rendered"
+        )
 
 
 def validate_rendered_html(rendered: str, context: str) -> None:
@@ -1042,6 +1412,7 @@ def build(
         print("BIPs disabled")
         return
 
+    ensure_pandoc_version()
     source_root, commit = ensure_source(config, explicit_source)
     tracked_files = tracked_source_files(source_root)
     source_paths = sorted(
@@ -1069,6 +1440,7 @@ def build(
         rendered = render_with_pandoc(bip, source_root)
         rendered = escape_unknown_html_tags(rendered)
         rendered = normalize_html_with_pandoc(rendered, source_root)
+        rendered = restore_spanned_tables(rendered, bip.span_tables)
         rendered = wrap_document_tables(rendered)
         rendered = normalize_ids(rendered)
         validate_rendered_html(rendered, bip.filename)
@@ -1086,6 +1458,7 @@ def build(
             identifiers_by_bip,
         )
         validate_rendered_html(bip.rendered_html, bip.filename)
+        validate_table_cell_parity(bip)
         bip.description = description_for(bip)
 
     for index, bip in enumerate(bips):

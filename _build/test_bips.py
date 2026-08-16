@@ -402,5 +402,138 @@ Example abstract.
             BIPS.check_output(config, output)
 
 
+    def test_spanned_title_header_becomes_a_caption(self) -> None:
+        source = (
+            '{| class="wikitable"\n! colspan="3" | template request\n|-\n'
+            "! Key !! Type !! Description\n|-\n| a || b || c\n|}"
+        )
+        processed, tables = BIPS.preprocess_mediawiki_spanned_tables(source)
+        self.assertEqual({}, tables)
+        self.assertIn("|+ template request", processed)
+        self.assertNotIn("colspan", processed)
+
+    def test_rowspan_tables_become_protected_html(self) -> None:
+        source = (
+            "{|\n"
+            '!rowspan=3 style=""|Version\n'
+            "!colspan=2|Hash size\n"
+            "|-\n"
+            "| first line of a cell\n"
+            "continued on a soft-wrapped line\n"
+            "| <33 byte pubkey>\n"
+            "|}"
+        )
+        processed, tables = BIPS.preprocess_mediawiki_spanned_tables(source)
+        self.assertEqual(1, len(tables))
+        (token, markup), = tables.items()
+        self.assertIn(token, processed)
+        self.assertIn('rowspan="3"', markup)
+        self.assertIn('colspan="2"', markup)
+        self.assertNotIn("style", markup)
+        self.assertIn("first line of a cell continued on a soft-wrapped line", markup)
+        self.assertIn("&lt;33 byte pubkey>", markup)
+
+    def test_ragged_tables_are_protected(self) -> None:
+        source = (
+            "{|\n! Opcode\n! Cost\n|-\n"
+            "|OP_MIN\n|wordspan * 4\n|OTHER\n|}"
+        )
+        processed, tables = BIPS.preprocess_mediawiki_spanned_tables(source)
+        self.assertEqual(1, len(tables))
+        markup = next(iter(tables.values()))
+        for cell in ("OP_MIN", "wordspan * 4", "OTHER"):
+            self.assertIn(f"<td>{cell}</td>", markup)
+
+    def test_code_pipes_do_not_split_or_convert_cells(self) -> None:
+        source = (
+            "{|\n! Field !! Data type !! Comments\n|-\n"
+            "| 32bytes || hash || <code>hash(a || b || c)</code>\n|}"
+        )
+        processed, tables = BIPS.preprocess_mediawiki_spanned_tables(source)
+        self.assertEqual({}, tables)
+        self.assertIn("{|", processed)
+        self.assertIn("<code>hash(a &#124;&#124; b &#124;&#124; c)</code>", processed)
+
+    def test_tables_glued_to_raw_html_get_breathing_room(self) -> None:
+        source = "Introductory sentence:\n<br/>\n{| class=\"wikitable\"\n! A\n|}"
+        spaced = BIPS.preprocess_mediawiki_table_spacing(source)
+        self.assertIn("<br/>\n\n{|", spaced)
+        nested = "{|\n| outer cell\n{| inner\n|}\n|}"
+        self.assertEqual(nested, BIPS.preprocess_mediawiki_table_spacing(nested))
+
+    def test_nested_references_are_paired_correctly(self) -> None:
+        source = (
+            "Outer text<ref>Outer note with an inner"
+            "<ref name=inner>Inner note.</ref> marker.</ref> body continues.\n"
+            "<references />"
+        )
+        processed = BIPS.preprocess_mediawiki_references(source)
+        self.assertNotIn("<ref", processed.lower())
+        self.assertNotIn("</ref", processed.lower())
+        self.assertIn('id="bip-note-1"', processed)
+        self.assertIn('id="bip-note-2"', processed)
+        self.assertIn("body continues.", processed.split("bip-footnotes")[0])
+        outer_note = processed.split('id="bip-note-1"')[1].split("</li>")[0]
+        self.assertIn("#bip-note-2", outer_note)
+
+    def test_table_inside_a_reference_survives(self) -> None:
+        source = (
+            "Claim<ref>Explained by:\n{|\n! K !! V\n|-\n| pwd || 21\n|}\n</ref>.\n"
+            "<references />"
+        )
+        processed = BIPS.preprocess_mediawiki_references(source)
+        self.assertIn("<table>", processed)
+        self.assertIn("<td>pwd</td>", processed)
+
+    def test_stray_reference_closers_are_removed(self) -> None:
+        source = "Before</ref> middle<ref>note</ref> after.\n<references />"
+        processed = BIPS.preprocess_mediawiki_references(source)
+        self.assertNotIn("</ref", processed.lower())
+        self.assertIn("Before middle", processed)
+
+    def test_pandoc_version_gate(self) -> None:
+        self.assertEqual((3, 1), BIPS.parse_pandoc_version("pandoc 3.1.3"))
+        self.assertEqual((2, 9), BIPS.parse_pandoc_version("pandoc 2.9.2.1"))
+        self.assertLess(BIPS.parse_pandoc_version("pandoc 2.5"), BIPS.MINIMUM_PANDOC_VERSION)
+        with self.assertRaises(BIPS.BuildError):
+            BIPS.parse_pandoc_version("not pandoc at all")
+
+    def test_cell_parity_counter_bounds(self) -> None:
+        body = (
+            "<!-- {|\n| commented || out\n|} -->\n"
+            "<pre>{|\n| literal || example\n|}</pre>\n"
+            "{|\n"
+            '! colspan="2" | Title only\n'
+            "|-\n"
+            "! A !! B\n"
+            "|-\n"
+            "| <code>x || y</code> || value ||||\n"
+            "|}"
+        )
+        self.assertEqual(4, BIPS.count_source_table_cells(body))
+
+    def test_cell_parity_validator_rejects_losses(self) -> None:
+        bip = BIPS.Bip(
+            number=1,
+            filename="bip-0001.mediawiki",
+            source_path=Path("bip-0001.mediawiki"),
+            source_format="mediawiki",
+            headers={
+                "BIP": "1",
+                "Title": "T",
+                "Authors": "A <a@example.test>",
+                "Status": "Draft",
+                "Type": "Process",
+                "Assigned": "2025-01-02",
+            },
+            body="{|\n! A !! B\n|-\n| 1 || 2\n|}",
+            rendered_html="<table><tr><th>A</th><th>B</th></tr>"
+            "<tr><td>1</td><td>2</td></tr></table>",
+        )
+        BIPS.validate_table_cell_parity(bip)
+        bip.rendered_html = "<table><tr><th>A</th></tr><tr><td>1</td></tr></table>"
+        with self.assertRaises(BIPS.BuildError):
+            BIPS.validate_table_cell_parity(bip)
+
 if __name__ == "__main__":
     unittest.main()
