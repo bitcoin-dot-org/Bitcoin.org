@@ -86,10 +86,13 @@ https://opensource.org/licenses/MIT.
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
-.bip-status--deployed,
-.bip-status--complete {
+.bip-status--deployed {
     color: #185d32;
     background: #dff3e7;
+}
+.bip-status--complete {
+    color: #174d75;
+    background: #e4f1fb;
 }
 .bip-status--draft {
     color: #805000;
@@ -613,64 +616,221 @@ https://opensource.org/licenses/MIT.
     }
 }
 
-@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ) {
+@media handheld, only screen and ( max-width: 48em ), only screen and ( max-device-width: 48em ) {
+    .bip-toolbar__inner,
+    .bip-hero,
+    .bip-hero *,
+    .bip-overview,
+    .bip-overview *,
+    .bip-content,
+    .bip-content * {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
     .bip-toolbar__inner {
-        padding-right: 15px;
-        padding-left: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        gap: .75rem;
+        padding: .5rem 1rem;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        scrollbar-width: thin;
+        -webkit-overflow-scrolling: touch;
     }
     .bip-toolbar a {
-        margin-right: 18px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+        margin: 0;
+        padding: .625rem .125rem;
+        line-height: 1.25;
+        white-space: nowrap;
     }
+
     .bip-hero {
-        padding: 55px 15px 60px;
+        padding: 2.5rem 1rem 2.75rem;
     }
     .bip-hero h1 {
-        font-size: 225%;
+        max-width: 100%;
+        font-size: clamp(2rem, 8.5vw, 2.75rem);
+        line-height: 1.12;
+        overflow-wrap: anywhere;
+    }
+    .bip-hero__eyebrow {
+        margin-bottom: .75rem;
+        font-size: .8125rem;
+    }
+    .bip-hero__summary {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: .625rem;
+        margin-top: 1.5rem;
     }
     .bip-hero__summary > span:not(.bip-status) {
-        margin-left: 10px;
-        padding-left: 10px;
+        margin: 0;
+        padding: 0;
+        border-left: 0;
     }
+    .bip-hero__summary .bip-status {
+        justify-self: start;
+    }
+
     .bip-overview {
-        padding: 40px 0;
+        padding: 2rem 0;
+    }
+    .bip-overview > .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .bip-metadata {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.25rem 1rem;
+        margin: 0;
     }
     .bip-metadata > div,
     .bip-metadata > .bip-metadata__wide {
-        width: 100%;
+        width: auto;
+        min-width: 0;
+        padding: 0;
+    }
+    .bip-metadata dd,
+    .bip-metadata a,
+    .bip-neutrality-notice,
+    .bip-status-notice {
+        overflow-wrap: anywhere;
     }
     .bip-status-notice,
     .bip-neutrality-notice {
-        padding: 16px;
+        margin-top: 1.5rem;
+        padding: 1rem;
     }
+
+    .bip-content {
+        min-width: 0;
+    }
+    .bip-content .bip-document > * {
+        max-width: 100%;
+    }
+    .bip-document {
+        min-width: 0;
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+    .bip-document h2 {
+        margin-top: 2.75rem;
+        font-size: clamp(1.5rem, 6vw, 1.875rem);
+    }
+    .bip-document h3 {
+        margin-top: 2.25rem;
+        font-size: clamp(1.25rem, 5vw, 1.5rem);
+    }
+    .bip-document p,
+    .bip-content .bip-document p:last-child,
+    .bip-document li {
+        line-height: 1.65;
+    }
+    .bip-document a,
+    .bip-source-note {
+        overflow-wrap: anywhere;
+    }
+    .bip-document code {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+    .bip-document pre {
+        width: 100%;
+        max-width: 100%;
+        margin: 1.5rem 0;
+        padding: 1rem;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        white-space: pre;
+        border-radius: 4px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .bip-document pre code {
+        display: block;
+        min-width: -webkit-max-content;
+        min-width: -moz-max-content;
+        min-width: max-content;
+        padding: 0;
+        font-size: .8125rem;
+        white-space: pre;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+    .bip-document ul,
+    .bip-document ol {
+        padding-left: 1.375rem;
+    }
+    .bip-document blockquote {
+        margin-right: 0;
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .bip-document figure {
+        max-width: 100%;
+        margin: 2rem 0;
+    }
+    .bip-document img,
+    .bip-document video {
+        max-width: 100%;
+        height: auto;
+    }
+    .bip-document iframe {
+        max-width: 100%;
+    }
+    .bip-document .bip-table-wrap {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        -webkit-overflow-scrolling: touch;
+    }
+    .bip-document .bip-table-wrap table {
+        min-width: 40rem;
+    }
+    .bip-document > table {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .bip-prev-next {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: .75rem;
+    }
+    .bip-prev-next a,
+    .bip-prev-next__next {
+        width: 100%;
+        margin: 0;
+    }
+    .bip-toolbar a:focus-visible,
+    .bip-prev-next a:focus-visible {
+        outline: 3px solid #ffb347;
+        outline-offset: 2px;
+    }
+}
+
+@media handheld, only screen and ( max-width: 40em ), only screen and ( max-device-width: 40em ) {
     .bip-reader .bip-toc {
         width: 100%;
     }
-    .bip-content {
+    .bip-reader .bip-content {
+        width: 100%;
+        min-width: 0;
         max-width: none;
         padding: 30px 15px 0;
-    }
-    .bip-content .bip-document > * {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .bip-document h2 {
-        margin-top: 50px;
-        font-size: 150%;
-    }
-    .bip-document h3 {
-        font-size: 125%;
-    }
-    .bip-document pre {
-        margin-right: -15px;
-        margin-left: -15px;
-        border-radius: 0;
-    }
-    .bip-prev-next {
-        display: block;
-    }
-    .bip-prev-next a {
-        width: 100%;
-        margin-bottom: 12px;
+        border-left: 0;
     }
     .bip-index-controls {
         display: block;
@@ -682,6 +842,23 @@ https://opensource.org/licenses/MIT.
     }
     .bip-index-table {
         min-width: 650px;
+    }
+}
+
+@media handheld, only screen and ( max-width: 30em ), only screen and ( max-device-width: 30em ) {
+    .bip-metadata {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .bip-metadata dd {
+        font-size: 1rem;
+    }
+    .bip-neutrality-notice,
+    .bip-status-notice {
+        padding: .875rem;
+        font-size: .9375rem;
+    }
+    .bip-document blockquote {
+        padding: .875rem;
     }
 }
 
