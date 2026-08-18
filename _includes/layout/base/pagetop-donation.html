@@ -38,6 +38,7 @@ https://opensource.org/licenses/MIT.
         <span aria-hidden="true">×</span>
       </button>
       <h2 id="donation-modal-title" class="modal-header-text">{% translate donation-modal-header layout %}</h2>
+      <!-- no subhead-links here -->
       <p id="donation-modal-description" class="modal-subheader">{% translate donation-modal-subheader layout %}</p>
     </div>
     <div class="modal-body">
@@ -49,6 +50,7 @@ https://opensource.org/licenses/MIT.
           aria-label="{% translate donation-modal-qr-label layout %}"></div>
         <div class="donation-payment-actions">
           <h3 id="donation-payment-title">{% translate donation-modal-payment-title layout %}</h3>
+          <!-- no subhead-links here -->
           <p class="donation-network-note">{% translate donation-modal-network-note layout %}</p>
           <a class="donation-wallet-btn" href="bitcoin:{{ site.donation_banner.address }}">
             {% translate donation-modal-open-wallet layout %}
@@ -71,6 +73,7 @@ https://opensource.org/licenses/MIT.
 
       <section class="donation-amount-section" aria-labelledby="donation-amount-title">
         <h3 id="donation-amount-title">{% translate donation-modal-choose-amount layout %}</h3>
+        <!-- no subhead-links here -->
         <div class="donation-amount-options">
         {% for amount in site.donation_banner.amounts_in_usd %}
         <button
