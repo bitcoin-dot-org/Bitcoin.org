@@ -1,0 +1,9 @@
+{
+  "_license": "MIT; see https://opensource.org/licenses/MIT",
+  "repository": "https://github.com/bitcoin/bips.git",
+  "commit": "60f5b33b0a7be3cf09b933d97b78071d684db7d1",
+  "cache_directory": "_cache/bitcoin-bips",
+  "output_directory": "bip",
+  "expected_bip_count": 210,
+  "expected_image_asset_count": 79
+}

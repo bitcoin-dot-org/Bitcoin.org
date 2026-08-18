@@ -14,6 +14,12 @@ HTMLProofer.check_directory(
     :enforce_https => false,
     :check_internal_hash => false,
     :checks => ["Links"],
+    # BIP mirror pages are fully link-checked by the generator itself
+    # (_build/generate_bips.py --check-output validates every internal
+    # route, fragment and asset of all 210 pages); re-parsing them here
+    # is redundant and exhausts CI memory (the job gets OOM-killed).
+    # The /bips/ index page is still checked.
+    :ignore_files => [%r{/bip/}],
     :ignore_urls => [
       '#',
       /^$/,
@@ -23,11 +29,11 @@ HTMLProofer.check_directory(
       /^\/stats/
     ],
     :swap_urls => {
-      /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
-      /^([^#]+[^\/$])$/ => '\1.html',
-      /^(.+)(#.+)/ => '\1.html\2',
-      /\/(.html#.+)/ => '\1',
-      /\$$/ => '',
+    /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
+    /^([^#]+[^\/$])$/ => '\1.html',
+    /^(.+[^\/])(#.+)$/ => '\1.html\2',
+    /\/(.html#.+)/ => '\1',
+    /\$$/ => '',
     },
   }
 ).run

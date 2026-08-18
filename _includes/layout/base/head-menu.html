@@ -37,6 +37,7 @@ https://opensource.org/licenses/MIT.
   <li><a class="is-expand">{% translate menu-resources layout %}</a>
     <ul>
       <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
+      <li{% if page.id == 'bip' %} class="active"{% endif %}><a href="/bips/">{% translate menu-bips layout %}</a></li>
       <li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a></li>
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       {% comment %}

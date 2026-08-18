@@ -6,8 +6,11 @@ https://opensource.org/licenses/MIT.
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png?{{site.time | date: '%s'}}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
-{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
+<title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title | escape }}{% endif %}</title>
+{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription | escape }}">{% elsif page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+{% if page.bip_source_commit %}<meta property="og:title" content="{{ page.title | escape }}">{% endif %}
+{% if page.bip_source_commit and page.description %}<meta property="og:description" content="{{ page.description | escape }}">{% endif %}
+{% if page.bip_source_commit %}<meta property="og:url" content="{{ page.canonical_url | escape }}">{% endif %}
 {% include layout/base/hreflang.html %}
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">

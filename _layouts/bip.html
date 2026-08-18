@@ -1,0 +1,137 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# https://opensource.org/licenses/MIT.
+layout: base
+end_of_page: |
+  <script>updateToc(); onScrollButton();</script>
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": {{ page.bip_title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "dateCreated": {{ page.bip_assigned | jsonify }},
+  "version": {{ page.bip_version | jsonify }},
+  "mainEntityOfPage": {{ page.canonical_url | jsonify }},
+  "isBasedOn": {{ page.bip_source_url | jsonify }},
+  "author": [{% for author in page.bip_authors %}{"@type":"Person","name":{{ author.name | jsonify }}}{% unless forloop.last %},{% endunless %}{% endfor %}]
+}
+</script>
+
+<div class="bip-page">
+  <nav class="bip-toolbar" aria-label="BIP links">
+    <div class="container bip-toolbar__inner">
+      <a href="/bips/">All BIPs</a>
+      <a href="{{ page.bip_source_url | escape }}">Canonical source</a>
+      <a href="{{ page.bip_history_url | escape }}">Revision history</a>
+      {% if page.bip_discussions.size > 0 %}
+        <a href="{{ page.bip_discussions[0].url | escape }}">Discussion</a>
+      {% endif %}
+    </div>
+  </nav>
+
+  <header class="bip-hero">
+    <div class="container bip-hero__inner">
+      <p class="bip-hero__eyebrow">Bitcoin Improvement Proposal {{ page.bip_number }}</p>
+      <h1>{{ page.bip_title | escape }}</h1>
+      <div class="bip-hero__summary">
+        <span class="bip-status bip-status--{{ page.bip_status_slug }}">{{ page.bip_status | escape }}</span>
+        <span>{{ page.bip_type | escape }}</span>
+        {% if page.bip_layer != '' %}<span>{{ page.bip_layer | escape }}</span>{% endif %}
+      </div>
+    </div>
+  </header>
+
+  <section class="bip-overview" aria-label="BIP metadata">
+    <div class="container">
+      <dl class="bip-metadata">
+        <div class="bip-metadata__wide">
+          <dt>Authors</dt>
+          <dd>
+            {% for author in page.bip_authors %}
+              <a href="mailto:{{ author.email | uri_escape }}">{{ author.name | escape }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </dd>
+        </div>
+        <div><dt>Status</dt><dd>{{ page.bip_status | escape }}</dd></div>
+        <div><dt>Type</dt><dd>{{ page.bip_type | escape }}</dd></div>
+        {% if page.bip_layer != '' %}<div><dt>Layer</dt><dd>{{ page.bip_layer | escape }}</dd></div>{% endif %}
+        <div><dt>Assigned</dt><dd>{{ page.bip_assigned | escape }}</dd></div>
+        {% if page.bip_version != '' %}<div><dt>Version</dt><dd>{{ page.bip_version | escape }}</dd></div>{% endif %}
+        <div><dt>Document licence</dt><dd>{{ page.bip_license | escape }}</dd></div>
+        {% if page.bip_license_code != '' %}<div><dt>Code licence</dt><dd>{{ page.bip_license_code | escape }}</dd></div>{% endif %}
+      </dl>
+
+      {% if page.bip_requires.size > 0 or page.bip_replaces.size > 0 or page.bip_proposed_replacement.size > 0 %}
+      <div class="bip-relations" aria-label="Related BIPs">
+        {% if page.bip_requires.size > 0 %}<span>Requires:
+          {% for number in page.bip_requires %}<a href="/bip/{{ number }}/">BIP {{ number }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </span>{% endif %}
+        {% if page.bip_replaces.size > 0 %}<span>Replaces:
+          {% for number in page.bip_replaces %}<a href="/bip/{{ number }}/">BIP {{ number }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </span>{% endif %}
+        {% if page.bip_proposed_replacement.size > 0 %}<span>Proposed replacement:
+          {% for number in page.bip_proposed_replacement %}<a href="/bip/{{ number }}/">BIP {{ number }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        </span>{% endif %}
+      </div>
+      {% endif %}
+
+      {% if page.bip_status == 'Closed' or page.bip_status == 'Draft' %}
+      <div class="bip-status-notice bip-status-notice--{{ page.bip_status_slug }}" role="note">
+        <strong>Repository status: {{ page.bip_status | escape }}.</strong>
+        This label comes directly from the canonical BIP source and may change in a later revision.
+      </div>
+      {% endif %}
+
+      <div class="bip-neutrality-notice" role="note">
+        <strong>About this mirror.</strong> A BIP is a proposal or technical document. Publication here does not imply
+        adoption, Bitcoin community consensus, or endorsement by Bitcoin.org. For authoritative text and history,
+        use the <a href="{{ page.bip_source_url | escape }}">canonical bitcoin/bips source</a>.
+      </div>
+    </div>
+  </section>
+
+  <div class="toc-container bip-reader">
+    <div class="row toc-row">
+      <aside id="toc" class="toc bip-toc" aria-label="On this page">
+        <div>
+          <button class="mob-sidebar-open" hidden>ON THIS PAGE</button>
+          <div class="sidebar">
+            <div class="sidebar-inner">
+              <button class="mob-sidebar-close" hidden aria-label="Close table of contents"></button>
+              <p class="bip-toc__title">On this page</p>
+              {% include helpers/toc.html html=content sanitize=true h_min=2 h_max=3 %}
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main class="toccontent bip-content">
+        <article class="article bip-document expanded">
+          {{ content }}
+        </article>
+
+        <p class="bip-source-note">
+          Rendered from bitcoin/bips revision
+          <a href="https://github.com/bitcoin/bips/tree/{{ page.bip_source_commit }}"><code>{{ page.bip_source_commit | slice: 0, 12 }}</code></a>.
+          The document is distributed under its declared {{ page.bip_license | escape }} licence.
+        </p>
+
+        <nav class="bip-prev-next" aria-label="Adjacent BIPs">
+          {% if page.bip_previous %}
+            <a class="bip-prev-next__previous" href="/bip/{{ page.bip_previous.number }}/">
+              <span>Previous</span>BIP {{ page.bip_previous.number }}: {{ page.bip_previous.title | escape }}
+            </a>
+          {% endif %}
+          {% if page.bip_next %}
+            <a class="bip-prev-next__next" href="/bip/{{ page.bip_next.number }}/">
+              <span>Next</span>BIP {{ page.bip_next.number }}: {{ page.bip_next.title | escape }}
+            </a>
+          {% endif %}
+        </nav>
+      </main>
+    </div>
+  </div>
+</div>
