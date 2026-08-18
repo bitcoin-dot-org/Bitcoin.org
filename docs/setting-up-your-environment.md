@@ -29,7 +29,12 @@ dependencies and tools, which are pretty easy on any modern Linux:
 On recent versions of Ubuntu and Debian, you can run the following
 command to ensure you have the required libraries, headers, and tools:
 
-    sudo apt-get install build-essential git libicu-dev zlib1g-dev
+    sudo apt-get install build-essential git libicu-dev pandoc python3 zlib1g-dev
+
+Python and Pandoc generate the local HTML mirror of the BIP documents. The
+generator fetches the exact `bitcoin/bips` revision pinned in
+`_build/bips-source.json`, caches it in `_cache`, and refuses to build a partial
+or different revision.
 
 **Install RVM**
 
@@ -42,20 +47,20 @@ following command:
 
     source ~/.rvm/scripts/rvm
 
-**Install Ruby 2.5.8**
+**Install Ruby 3.3.10**
 
-To install Ruby 2.5.8, simply run this command:
+To install Ruby 3.3.10, simply run this command:
 
-    rvm install 2.5.8
+    rvm install 3.3.10
 
 Sometimes this will find a pre-compiled Ruby package for your Linux
 distribution, but sometimes it will need to compile Ruby from scratch
 (which takes about 15 minutes, if you got an error see [error while
 compiling](#error-while-compiling)).
 
-After Ruby 2.5.8 is installed, make it your default Ruby:
+After Ruby 3.3.10 is installed, make it your default Ruby:
 
-    rvm alias create default ruby-2.5.8
+    rvm alias create default ruby-3.3.10
 
 And tell your system to use it:
 
@@ -145,7 +150,7 @@ Then to enable some plugins or languages, you can add them back in.
 For example:
 
     ## Slower (but still pretty fast) build and test
-    ENABLED_PLUGINS="events autocrossref" ENABLED_LANGS="en fr" make -i valid
+    ENABLED_PLUGINS="autocrossref" ENABLED_LANGS="en fr" make -i valid
 
 Plugins include:
 
@@ -153,12 +158,11 @@ Plugins include:
 |--------------|---------|----------------|------------------------
 | alerts       | 5       | --             | Network alert pages
 | autocrossref | 90      | --             | Developer documentation
+| bips         | 40      | GitHub.com     | Bitcoin Improvement Proposals
 | contributors | 5       | GitHub.com     | Contributor listings
-| events       | 5       | Google Maps    | Events page
 | glossary     | 30      | --             | Developer glossary
 | redirects    | 20      | --             | Redirects from old URLs
-| releases     | 10      | --             | Bitcoin Core release notes; Download
-page
+| releases     | 10      | --             | Bitcoin Core release notes; Download page
 | sitemap      | 10      | --             | /sitemap.xml
 
 Notes: some plugins interact with each other or with translations; for example
@@ -195,7 +199,7 @@ each shell.
 If you got an error while compiling that looks like this:
 ```
 Error running '__rvm_make -j8',
-please read /home/myusername/.rvm/log/1739938091_ruby-2.5.8/make.log
+please read /home/myusername/.rvm/log/1739938091_ruby-3.3.10/make.log
 
 There has been an error while running make. Halting the installation.
 ```
@@ -206,12 +210,12 @@ make: *** [uncommon.mk:240: build-ext] Error 2
 ++ return 2
 ```
 
-Probably you need to run the following command to install a specific openssl dependency needed by ruby-2.5.8 compilation:
+Probably you need to run the following command to install a specific openssl dependency needed by ruby-3.3.10 compilation:
 ```
 rvm pkg install openssl
 ```
 
 Then install/compile ruby with the following command:
 ```
-rvm install ruby-2.5.8 --with-openssl-dir=$HOME/.rvm/usr
+rvm install ruby-3.3.10 --with-openssl-dir=$HOME/.rvm/usr
 ```

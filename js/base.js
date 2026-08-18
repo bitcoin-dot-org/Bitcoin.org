@@ -1,5 +1,5 @@
 // This file is licensed under the MIT License (MIT) available on
-// http://opensource.org/licenses/MIT.
+// https://opensource.org/licenses/MIT.
 
 // This file should be used only for javascript code
 // necessary for all pages to work properly.
@@ -142,15 +142,23 @@ function onTouchClick(e, callback, callbackClick) {
 }
 
 function mobileMenuShow(e) {
-  // Show the mobile menu when the visitors touch the menu icon.
-  var show = function() {
-    var mm = document.getElementById('menusimple');
-    var ml = document.getElementById('langselect');
-    mm.style.display = ml.style.display = (mm.style.display === 'block') ? '' : 'block';
-    addClass(mm, 'menutap');
-    cancelEvent(e);
-  };
-  onTouchClick(e, show);
+    var show = function() {
+        var mm = document.getElementById('menusimple');
+        var ml = document.getElementById('langselect');
+        var display = (mm.style.display === 'block') ? '' : 'block';
+
+        mm.style.display = display;
+
+        // Some pages, such as BIP pages, have no language selector.
+        if (ml) {
+            ml.style.display = display;
+        }
+
+        addClass(mm, 'menutap');
+        cancelEvent(e);
+    };
+
+    onTouchClick(e, show);
 }
 
 function mobileMenuHover(e) {

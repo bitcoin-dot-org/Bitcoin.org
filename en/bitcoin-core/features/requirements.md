@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 lang: en
@@ -98,8 +98,8 @@ help].
   Laptop<br>
   [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux<br>
   Some BSDs
 
@@ -126,8 +126,8 @@ help].
   Laptop<br>
   [Most ARM chipsets][wiki bitcoin core compatible devices arm]
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux<br>
   Some BSDs
 
@@ -150,14 +150,14 @@ help].
 
 - {{UPLOAD}} 5 GB/day (150 GB/month)
 
-- {{MEMORY}} 1 GB
+- {{MEMORY}} 2 GB
 
 - {{SYSTEM}} Desktop<br>
   Laptop<br>
   [Some ARM chipsets][wiki bitcoin core compatible devices arm] >1 GHz
 
-- {{OS}} Windows 7/8.x/10<br>
-  Mac OS X<br>
+- {{OS}} Windows 10+<br>
+  macOS 14+<br>
   Linux
 
 
@@ -174,15 +174,17 @@ help].
 
 <div class="not-displayed">
   <div id="backup_your_keys" title="Backup Your Keys" markdown="block">
-  By default, you need to backup Bitcoin Core after every 100
-  transactions.  This includes both transactions you send as well as
-  payments you request (whether or not you actually received the payment).
+  Bitcoin Core uses HD (hierarchical deterministic) wallets, so a
+  single backup is enough to recover your bitcoins at any time.
 
-  For example, you need to backup after sending 33 payments and requesting
-  67 payments (even though you only received 60 payments).
+  Regular backups (for example, weekly) are still recommended to
+  preserve wallet metadata such as labels, which cannot be recovered
+  from a blockchain rescan.
 
-  Bitcoin Core can be configured to allow you to go more transactions
-  between backups.  See the [`-keypool` setting][bcc configuration].
+  After encrypting your wallet or changing its passphrase, make a new
+  backup immediately: encryption generates a new seed, and bitcoins
+  received by it cannot be recovered from earlier backups.
+
   </div>
 
   <div id="secure_your_wallet" title="Secure Your Wallet" markdown="block">

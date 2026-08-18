@@ -1,11 +1,13 @@
 ## This file is licensed under the MIT License (MIT) available on
-## http://opensource.org/licenses/MIT.
+## https://opensource.org/licenses/MIT.
 
 S=@  ## Silent: only print errors by default;
      ## run `make S='' [other args]` to print commands as they're run
 
+SHELL=/bin/bash
 SITEDIR=_site
 JEKYLL_LOG=._jekyll.log
+BIP_GENERATOR=_build/generate_bips.py
 
 #######################
 ## REGULAR ARGUMENTS ##
@@ -15,7 +17,7 @@ JEKYLL_LOG=._jekyll.log
 default: clean build
 
 ## `make preview`: start the built-in Jekyll preview
-preview: clean
+preview: clean generate-bips
 	$S export LANG=C.UTF-8 ; bundle exec jekyll serve --incremental
 
 ## `make test`: don't build, but do run all tests
@@ -42,11 +44,14 @@ install-deps-development:
 
 ## Install dependencies (deployment version)
 install-deps-deployment:
+	bundle config set --local deployment true
+	bundle config set --local without slow_test
 ifdef BUNDLE_DIR
-	bundle install --deployment --without :slow_test --path=$(BUNDLE_DIR)
+	bundle config set --local path "$(BUNDLE_DIR)"
 else
-	bundle install --deployment --without :slow_test
+	bundle config set --local path vendor/bundle
 endif
+	bundle install
 
 ## Pre-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
 pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignments \
@@ -56,17 +61,20 @@ pre-build-tests-fast: check-for-non-ascii-urls check-for-wrong-filename-assignme
     check-for-consistent-bitcoin-core-titles \
     check-for-too-many-wallets-on-one-platform \
     check-validate-yaml \
+    check-yaml-syntax \
     check-wallet-description-length \
+    check-bip-generator
 
 ## Post-build tests which, aggregated together, take less than 10 seconds to run on a typical PC
-post-build-tests-fast: check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
+post-build-tests-fast: check-site-was-built check-for-build-errors ensure-each-svg-has-a-png check-for-liquid-errors \
     check-for-missing-anchors check-for-broken-markdown-reference-links \
     check-for-broken-kramdown-tables check-for-duplicate-header-ids \
     check-for-headers-containing-auto-link check-for-missing-subhead-links \
     check-for-empty-title-tag \
     check-for-subheading-anchors \
     check-jshint \
-    check-for-javascript-in-svgs
+    check-for-javascript-in-svgs \
+    check-bip-pages
 
 ## All pre-build tests, including those which might take multiple minutes
 pre-build-tests: pre-build-tests-fast
@@ -99,18 +107,27 @@ clean:
 
 ## Always build using the default locale so log messages can be grepped.
 ## This should not affect webpage output.
-build:
-	$S export LANG=C.UTF-8 ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
+build: generate-bips
+	$S export LANG=C.UTF-8 ; set -o pipefail ; bundle exec jekyll build 2>&1 | tee $(JEKYLL_LOG)
 	$S grep -r -L 'Note: this file is built non-deterministically' _site/ \
 	  | egrep -v 'sha256sums.txt' \
 	  | sort \
-	  | xargs -d '\n' sha256sum > _site/sha256sums.txt
+	  | while IFS= read -r file; do sha256sum "$$file"; done > _site/sha256sums.txt
 	$S git log -1 --format="%H" > _site/commit.txt
+
+generate-bips:
+	$S python3 $(BIP_GENERATOR)
+
+check-bip-generator:
+	$S python3 _build/test_bips.py
+
+check-bip-pages:
+	$S python3 $(BIP_GENERATOR) --check-output $(SITEDIR)/bip
 
 ## Jekyll annoyingly returns success even when it emits errors and
 ## exceptions, so we'll grep its output for error strings
 check-for-build-errors:
-	$S egrep -i '(error|warn|exception)' $(JEKYLL_LOG) \
+	$S egrep -i '(error|warn|exception|killed|no space left|cannot allocate)' $(JEKYLL_LOG) \
 	    | grep -vi 'rouge/lexers/shell.rb' \
 	    | eval $(ERROR_ON_OUTPUT)
 
@@ -142,8 +159,11 @@ check-for-missing-anchors:
 
 check-for-broken-markdown-reference-links:
 ## Report Markdown reference-style links which weren't converted to HTML
-## links in the output, indicating there's no reference definition
-	$S find $(SITEDIR) -name '*.html' -type f | xargs grep '\]\[' | eval $(ERROR_ON_OUTPUT)
+## links in the output, indicating there's no reference definition. BIP source
+## contains protocol examples where adjacent brackets are intentional and is
+## validated separately by check-bip-pages.
+	$S find $(SITEDIR) -path $(SITEDIR)/bip -prune -o -name '*.html' -type f -print0 \
+	  | xargs -0 grep '\]\[' | eval $(ERROR_ON_OUTPUT)
 
 check-for-non-ascii-urls:
 ## Always check all translated urls don't contain non-ASCII
@@ -296,3 +316,12 @@ check-validate-yaml:
 check-wallet-description-length:
 ## Ensure wallet descriptions are 320 characters or less
 	$S sed -n '/^  choose-your-wallet:/,/^  [-a-z]\+:/{/wallet.*:.\{320\}/p} ' _translations/en.yml | eval $(ERROR_ON_OUTPUT)
+check-yaml-syntax:
+## Ensure every YAML file parses with Psych, the parser used by the build
+	$S ruby _contrib/check-yaml.rb
+check-site-was-built:
+## Ensure the Jekyll build produced a complete site before later checks run.
+## A healthy build currently produces about 3.8k HTML files; 3000 is a conservative floor.
+	$S test -f $(SITEDIR)/index.html || { echo "ERROR: $(SITEDIR)/index.html missing - Jekyll produced no site (see $(JEKYLL_LOG))" ; exit 1 ; }
+	$S test -d $(SITEDIR)/img || { echo "ERROR: $(SITEDIR)/img missing - incomplete build (see $(JEKYLL_LOG))" ; exit 1 ; }
+	$S c=$$(find $(SITEDIR) -name '*.html' | wc -l) ; test $$c -ge 3000 || { echo "ERROR: only $$c HTML files in $(SITEDIR), expected 3000+ (see $(JEKYLL_LOG))" ; exit 1 ; }

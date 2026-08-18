@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base
 id: spend-bitcoin
@@ -14,30 +14,34 @@ id: spend-bitcoin
 <div class="container">
   <div class="row card-row">
     <div class="card spend-card">
-      <img src="/img/icons/product.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="products-online">{% translate products-online %}</h2>
-      <p>{% translate products-online-text %}</p>
-    </div>
-
-    <div class="card spend-card">
-      <img src="/img/icons/search.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="business-search">{% translate business-search %}</h2>
-      <p>{% translate business-search-text %}</p>
-    </div>
-
-    <div class="card spend-card">
-      <img src="/img/icons/directory.svg?{{site.time | date: '%s'}}" alt="icon">
-      <h2 id="directory">{% translate directory %}</h2>
-      <p>{% translate directory-text %}</p>
-    </div>
-
-
-    <div class="card spend-card">
       <img src="/img/icons/local.svg?{{site.time | date: '%s'}}" alt="icon">
       <h2 id="map">{% translate business-map %}</h2>
       <p>{% translate business-map-text %}</p>
     </div>
 
+    <div class="card spend-card">
+      <img src="/img/icons/product.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="online">{% translate spend-online %}</h2>
+      <p>{% translate spend-online-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/ico_voucher.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="gift-cards">{% translate spend-giftcards %}</h2>
+      <p>{% translate spend-giftcards-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/donation.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="give">{% translate spend-give %}</h2>
+      <p>{% translate spend-give-text %}</p>
+    </div>
+
+    <div class="card spend-card">
+      <img src="/img/icons/ico_business.svg?{{site.time | date: '%s'}}" alt="icon">
+      <h2 id="business">{% translate spend-business %}</h2>
+      <p>{% translate spend-business-text %}</p>
+    </div>
+
   </div>
 </div>
-

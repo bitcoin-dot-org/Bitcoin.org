@@ -1,6 +1,6 @@
 /*
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 */
 
 /*Styles for HTML tags*/
@@ -477,17 +477,33 @@ h1 span.fa, h2 span.fa, h3 span.fa, h4 span.fa, h5 span.fa, h6 span.fa {
 }
 .hero {
     position: relative;
-    padding: 96px 30px 138px;
-    background: url(../img/hero/hero-bg.svg?1528322191) bottom no-repeat;
-    background-size: cover;
+    padding: 75px 30px 82px;
+    color: #fff;
+    background-color: #13161f;
+    background-image: radial-gradient(circle at 82% 20%, #2b303d 0, #13161f 43%, #090c14 100%);
     z-index: 10;
 }
 .hero-container {
     position: relative;
-    padding: 0 40px;
+    max-width: 970px;
+    padding: 0 30px;
 }
 .hero h1 {
-    margin-bottom: 20px;
+    max-width: 930px;
+    margin: 0;
+    font-size: 300%;
+    font-weight: 600;
+    line-height: 1.15;
+    text-align: left;
+}
+.hero .summary,
+.hero .summarytxt {
+    max-width: 700px;
+    margin: 20px 0 0;
+    color: #c3c5ca;
+    font-size: 125%;
+    line-height: 1.5;
+    text-align: left;
 }
 .footer {
     position: relative;
@@ -2615,6 +2631,10 @@ br.big {
     background: url(../img/flags/north-america.svg?1528322191) center no-repeat;
     background-size: contain;
 }
+.exchanges-central-america-title::before {
+    background: url(../img/flags/central-america.svg?1528322191) center no-repeat;
+    background-size: contain;
+}
 .exchanges-australia-title::before {
     background: url(../img/flags/australia.svg?1528322191) center no-repeat;
     background-size: contain;
@@ -3054,26 +3074,22 @@ br.big {
     color: #13161f;
 }
 .expanded .contributor-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    column-count: 3;
+    column-gap: 4%;
 }
 .contributor-title {
     font-size: 162.5%;
     color: #FF7E00;
 }
 .contributor {
-    width: 30%;
-    margin-right: 4%;
     margin-bottom: 20px;
-}
-.contributor:nth-child(3n+3) {
-    margin-right: 0;
+    break-inside: avoid;
 }
 p.contributor-language {
-    width: 30%;
-    margin-right: 4%;
     margin-bottom: 20px;
     color: #FF7E00;
+    break-inside: avoid;
 }
 p.contributor-language span {
     font-size: 18px;
@@ -3538,6 +3554,17 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .develdocdisclaimer{
         display:none;
     }
+    .hero{
+        padding:20px 0 30px;
+        color:#000;
+        background:#fff;
+        border-bottom:2px solid #000;
+    }
+    .hero h1,
+    .hero .summary,
+    .hero .summarytxt{
+        color:#000;
+    }
 }
 
 /*Styles specific to mobiles*/
@@ -3635,13 +3662,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     }
     .banner-message a span{
         width:auto;
-    }
-    .hero {
-        padding: 64px 30px 100px;
-    }
-    .hero h1 {
-        font-size: 30px;
-        margin-bottom: 10px;
     }
     .content{
         position:static;
@@ -4022,14 +4042,8 @@ html[data-theme="dark"] .dark-theme-toggle::before {
     .about-title {
         margin: 0 0 30px;
     }
-    .contributor {
-        width: 48%;
-    }
-    .contributor:nth-child(3n+3) {
-        margin-right: 4%;
-    }
-    .contributor:nth-child(even) {
-        margin-right: 0;
+    .expanded .contributor-row {
+        column-count: 2;
     }
     .ui-accordion .ui-accordion-content {
         padding: 30px 20px 30px 20px;
@@ -4054,7 +4068,16 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         padding: 0 15px;
     }
     .hero-container {
-        padding: 0 40px;
+        padding: 0 15px;
+    }
+    .hero {
+        padding: 2.5rem 1rem 2.75rem;
+    }
+    .hero h1 {
+        max-width: 100%;
+        font-size: clamp(2rem, 8.5vw, 2.75rem);
+        line-height: 1.12;
+        overflow-wrap: anywhere;
     }
     .footer-bottom-row {
         flex-direction: column;
@@ -4623,20 +4646,6 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         -webkit-transform: translateY(-50%) rotate(180deg);
                 transform: translateY(-50%) rotate(180deg);
     }
-    .summarytxt {
-        font-size: 112.5%;
-    }
-    .hero {
-        padding: 80px 0 90px;
-    }
-    .hero-container {
-        padding: 0 15px;
-    }
-    .hero h1 {
-        margin-bottom: 0;
-        font-size: 137.5%;
-        line-height: 1.7;
-    }
     .mainhero {
         padding: 55px 0 50px;
     }
@@ -5064,10 +5073,7 @@ html[data-theme="dark"] .dark-theme-toggle::before {
         margin: 0;
     }
     .expanded .contributor-row {
-        flex-direction: column;
-    }
-    .contributor {
-        width: 100%;
+        column-count: 1;
     }
     .lightweight-wallets-row {
         flex-direction: column

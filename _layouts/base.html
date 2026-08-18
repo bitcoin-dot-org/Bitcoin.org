@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 ---
 <!DOCTYPE HTML>
 <html lang="{{ page.lang }}">
@@ -19,8 +19,10 @@
   {% include layout/base/head-logo.html %}
   {% include layout/base/head-menu.html %}
   {% include layout/base/head-mobile-menu.html %}
+  {% unless page.hide_language_selector %}
   {% include layout/base/head-language-dropdown.html %}
   {% include layout/base/head-language-select.html %}
+  {% endunless %}
 </div></div>
 
 <div class="body">

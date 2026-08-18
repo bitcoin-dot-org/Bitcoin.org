@@ -125,7 +125,7 @@ sv:
     summary: "Det dokument som först presenterade Bitcoin"
     description: "Satoshi Nakamotos originaldokument är fortfarande rekommenderad läsning för alla som studerar hur Bitcoin fungerar. Välj vilken översättning av texten du vill läsa:"
     translated_by: "översatt av"
-    submit_new_translation: 'Vill du översätta dokumentet till ditt språk? Besök <a href="https://github.com/wbnns/bitcoinwhitepaper">Bitcoins vitbokkatalog på GitHub</a> för vidare instruktioner och <a href="https://github.com/wbnns/bitcoinwhitepaper/issues/new">öppna ett ärende</a> om du har några frågor.'
+    submit_new_translation: 'Vill du översätta dokumentet till ditt språk? Besök <a href="https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md#assisting-with-translations">Bitcoins vitbokkatalog på GitHub</a> för vidare instruktioner och <a href="https://github.com/bitcoin-dot-org/Bitcoin.org/issues/new">öppna ett ärende</a> om du har några frågor.'
   buy:
     title: "Köp bitcoin"
     pagetitle: "Hur man köper bitcoin"
@@ -145,7 +145,7 @@ sv:
     reddit: "Reddits Bitcoincommunity"
     stackexchange: "Bitcoin StackExchange (Frågor &amp; Svar)"
     irc: "IRC-chatt"
-    ircjoin: "IRC-kanaler på <a href=\"https://webchat.freenode.net/?channels=bitcoin&amp;uio=d4\">freenode</a>."
+    ircjoin: "IRC-kanaler på <a href=\"https://web.libera.chat/#bitcoin-core-dev\">Libera Chat</a>."
     chanbitcoin: "(Generellt Bitcoinrelaterat)"
     chandev: "(Utveckling och teknik)"
     chanotc: "(Valutahandel över disk)"
@@ -274,13 +274,13 @@ sv:
     walletcoin: "Coin är en fri plånbok som gör det möjligt att göra betalningar till hela världen över Bitcoinnätverket. Den är säker, lättanvänd och kan enkelt installeras på din telefon."
     wallettrezorone: "Trezor är en hårdvaruplånbok som tillhandahåller en hög säkerhetsnivå utan att ge avkall på bekvämlighet. Till skillnad från kall lagring kan Trezor signera transaktioner när den är ansluten till en uppkopplad enhet. Detta betyder att det är säkert att spendera bitcoin även när man använder en komprometterad dator."
     wallettrezormodelt: "Trezor Model T är en nästa generationens hårdvaruplånbok som är designad så att den ursprungliga Trezorns fördelar tagits tillvara.  Detta kombinerat med ett modernt och intuitivt gränssnitt som ger en förbättrad användarupplevelse och högre säkerhet. Den har pekskärm, snabbare processor såväl som alla funktioner i Trezor One."
-    walletcoldcard: "Coldcard är en lättanvänd, ultra-säker hårdvaruplånbok till överkomligt pris som är baserad på öppen källkod. Den går lätt att säkerhetskopiera till ett krypterat microSD-kort. Din privata nyckel lagras i ett dedikerat säkerhetschip. Programutveckling i MicroPython låter dig göra ändringar."
     walletkeepkey: "KeepKey är en hårdvaruplånbok som gör bitcoinsäkerhet enkel. När du förvarar dina pengar med KeepKey, måste varje bitcointransaktion du gör granskas och godkännas via dess OLED-skärm och bekräftelseknapp."
     walletbitpay: "Bitpay Wallet är en HD-plånbok med multisignatur som ursprungligen utvecklades för att säkra BitPays tillgångar. BitPay stöder flera personliga och delade plånböcker, testnet och det fullständiga Payment-protokollet. En privat <a href=\"https://github.com/bitpay/bitcore-wallet-service\">BWS</a>-nod kan användas för förbättrad säkerhet och integritet."
     walletledgernanos: "Ledger Nano S är en säker hårdvaruplånbok för Bitcoin. Den ansluter till din dator med USB och har en inbyggd OLED-skärm för att göra det möjligt att dubbelkolla och bekräfta varje transaktion med ett enkelt knapptryck."
     walletbitbox: "BitBox02 är en hårdvaruplånbok som utvecklas och tillverkas i Schweiz. Den är utrustad med en OLED-skärm, osynliga peksensorer, stöd för USB-C och USB-A, säkerhetskopiering offline till både micro-SD-kort och BIP39-minnesfras. Det är enkelt att konfigurera en BitBox02-plånbok och hantera sina mynt, via den kompletterande appen BitBoxApp."
-    walletbither: "Bither är en enkel och säker plånbok för flera plattformar. Den har speciellt utformade arbetslägen för varm- och kallagring, vilket gör det både enkelt och säkert för användaren. Bithers XRANDOM använder olika entropikällor för att generera äkta slumptal åt användaren. HDM gör det också möjligt för användaren att få fördelarna av HD och säkerheten hos multisig."
+    walletbither: "Bither är en enkel och säker plånbok för flera plattformar. Den har speciellt utformade arbetslägen för varm- och kallagring, vilket gör det både enkelt och säkert för användaren. Bithers XRANDOM använder olika entropikällor för att generera äkta slumptal åt användaren."
     walletwasabi: "Wasabi är en integritetsfokuserad Bitcoinplånbok för Windows, Linux och Mac som är baserad på öppen källkod och inte kräver förvaring hos tredje part. Den har inbyggt stöd för Tor, CoinJoin och funktioner för myntkontroll. "
+    walletginger: "GingerWallet är en open-source, icke-förvarad Bitcoin-plånbok för skrivbordet. Funktioner inkluderar CoinJoin med standardkoordinatorn, 2FA med plånbokskryptering, flerspråkigt stöd, blockfilter, Tor-integration och QR-kodfunktionalitet. Kompatibel med olika hårdvaruplånböcker för säker användning."
     walletdownload: "Installera"
     walletvisit: "Besök webbplatsen"
     walletsourcecode: "Källkod"
@@ -513,7 +513,7 @@ sv:
     disclosuretxt: "Om du upptäcker en sårbarhet relaterad till Bitcoin, så kan icke-kritiska sårbarheter skickas via e-post på engelska till någon av huvudutvecklarna eller skickas till den privata e-postlistan bitcoin-security som anges ovan. Ett exempel på en icke-kritisk sårbarhet kan vara en väldigt kostsam överbelastningsattack. Kritiska sårbarheter är de som är för känsliga för att skickas med okrypterad e-post. De ska istället skickas till en eller flera av huvudutvecklarna, krypterat med deras PGP-nyckel."
     involve: "Engagera dig"
     involvetxt1: "Bitcoin är fri mjukvara och vilken utvecklare som helst kan delta i projektet. Allt du behöver finns på <a href=\"https://github.com/bitcoin/bitcoin\">GitHub</a>. Läs igenom och följ utvecklingsprocessen som beskrivs i filen README och bidra med högkvalitativ kod och respektera alla riktlinjer."
-    involvetxt2: "Diskussion avseende utveckling sker på GitHub och e-postlistan <a href=\"https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev\">bitcoin-dev</a>. Mer informella diskussioner hålls på irc.freenode.net #bitcoin-core-dev (<a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">webbgränssnitt</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">loggar</a>)."
+    involvetxt2: "Diskussion avseende utveckling sker på GitHub och e-postlistan <a href=\"https://groups.google.com/g/bitcoindev\">bitcoin-dev</a>. Mer informella diskussioner hålls på irc.libera.chat #bitcoin-core-dev (<a href=\"https://web.libera.chat/#bitcoin-core-dev\">webbgränssnitt</a>, <a href=\"http://gnusha.org/bitcoin-core-dev/\">loggar</a>)."
     more: "Fler projekt med fri mjukvara"
     morewant: "Vill du delta i ett annat projekt?"
     morechoose: "Du kan välja ett projekt att delta i genom att svara på några <a href=\"http://whatcanidoforbitcoin.xyz/\">frågor om dina färdigheter</a>."
@@ -522,8 +522,7 @@ sv:
     contributorsorder: "(Sorterad efter antal commit)"
     devcommunities: "Utvecklarcommunityn"
     devcommunitiesintro: "Följande chattrum och webbplatser har diskussioner om Bitcoinutveckling. Se till att läsa deras förhållningsregler innan du skriver något. "
-    ircjoin: "IRC-kanalen <a href=\"https://webchat.freenode.net/?channels=bitcoin-core-dev\">#bitcoin-core-dev</a> på freenode."
-    slack: "<a href=\"https://slack.bitcoincore.org/\">Bitcoin Cores Slack-kanal</a>"
+    ircjoin: "IRC-kanalen <a href=\"https://web.libera.chat/#bitcoin-core-dev\">#bitcoin-core-dev</a> på Libera Chat."
     stackexchange: "<a href=\"https://bitcoin.stackexchange.com/\">Bitcoin StackExchange</a>"
     bitcointalkdev: "<a href=\"https://bitcointalk.org/index.php?board=6.0\">BitcoinTalk Development &amp; Technical Discussion Forum</a>"
   download:
@@ -536,7 +535,7 @@ sv:
     downloadtorrent: "Ladda ner torrent"
     source: "Källkod"
     versionhistory: "Visa versionshistorik"
-    notelicense: "Bitcoin Core drivs av en community som utvecklar projektet som <a href=\"https://www.fsf.org/about/what-is-free-software\">fri mjukvara</a> som publiceras under <a href=\"http://opensource.org/licenses/mit-license.php\">MIT-licensen</a>."
+    notelicense: "Bitcoin Core drivs av en community som utvecklar projektet som <a href=\"https://www.fsf.org/about/what-is-free-software\">fri mjukvara</a> som publiceras under <a href=\"https://opensource.org/licenses/mit-license.php\">MIT-licensen</a>."
     notesync: "Bitcoin Cores inledande synkronisering tar tid och laddar ner mycket data. Se till att du har tillräcklig bandbredd och lagringskapacitet för den fullständiga blockkedjans storlek (mer än {{site.text.bitcoin_datadir_gb}}GB). Om du har en bra internetuppkoppling kan du hjälpa till att stärka nätverket genom att låta din PC köra Bitcoin Core och ha port 8333 öppen."
     full_node_guide: "Läs <a href=\"/en/full-node\">guiden för fullständig nod</a> för mer information."
     patient: "Kontrollera din bandbredd och lagringskapacitet"
@@ -569,7 +568,7 @@ sv:
     table: "Innehållsförteckning"
     general: "Allmänt"
     whatisbitcoin: "Vad är Bitcoin?"
-    whatisbitcointxt1: "Bitcoin är ett konsensusnätverk som möjliggör ett nytt betalningssystem och en helt digital valuta. Det är det första decentraliserade icke-hierarkiska betalningsnätverk som drivs av sina användare utan någon central auktoritet eller några mellanhänder. Ur en användares perspektiv är Bitcoin ungefär som kontanter för Internet. Bitcoin kan också ses som det mest dominerande <a href=\"http://financialcryptography.com/mt/archives/001325.html\">systemet för trippel bokföring</a> som existerar."
+    whatisbitcointxt1: "Bitcoin är ett konsensusnätverk som möjliggör ett nytt betalningssystem och en helt digital valuta. Det är det första decentraliserade icke-hierarkiska betalningsnätverk som drivs av sina användare utan någon central auktoritet eller några mellanhänder. Ur en användares perspektiv är Bitcoin ungefär som kontanter för Internet. Bitcoin kan också ses som det mest dominerande <a href=\"https://financialcryptography.com/mt/archives/001325.html\">systemet för trippel bokföring</a> som existerar."
     creator: "Vem skapade Bitcoin?"
     creatortxt1: "Bitcoin är den första implementationen av ett koncept som kallas \"kryptovaluta\", som först beskrevs 1998 av Wei Dai på e-postlistan cypherpunks. Han presenterade idén om en ny form av pengar som använder kryptografi för att styra utgivning och transaktioner, istället för en central auktoritet. Den första Bitcoinspecifikationen och koncepttestet publicerades 2009 av Satoshi Nakamoto på en kryptografisk e-postlista. Satoshi lämnade projektet sent 2010 utan att avslöja särskilt mycket om sig själv. Communityn har sedan dess vuxit exponentiellt och har <a href=\"#development#\">många utvecklare</a> som arbetar på Bitcoin."
     creatortxt2: "Satoshis anonymitet har ofta väckt oberättigad oro, till stor del kopplat till missförstånd när det gäller Bitcoins öppna källkod. Bitcoinprotokollet och mjukvaran publiceras öppet och vilken utvecklare som helst i världen kan granska koden och skapa sin egen modifierade version av Bitcoinmjukvaran. Precis som för de nuvarande utvecklarna var Satoshis påverkan begränsad till att de ändringar han gjorde skulle införas av andra och därför styrde han inte Bitcoin. Så identiteten hos Bitcoins skapare är förmodligen lika relevant idag som identiteten hos personen som uppfann pappret."
@@ -582,9 +581,9 @@ sv:
     usedtxt1: "Ja. Det finns ett <a href=\"http://usebitcoins.info/\">växande antal företag</a> och privatpersoner som använder Bitcoin. Detta inkluderar vanliga företag som restauranger, hyresvärder och advokatbyråer, såväl som populära nättjänster som Namecheap and Overstock.com. Även om Bitcoin fortfarande är ett ganska nytt fenomen, växer det snabbt. I maj 2018 överskred <a href=\"https://bitcoincharts.com/bitcoin/\">det sammanlagda värdet av alla existerande bitcoin</a>100 miljarder US dollar, och bitcoin till ett värde av många miljoner bytte ägare varje dag. "
     acquire: "Hur får man tag på bitcoin?"
     acquireli1: "Som betalning för varor eller tjänster."
-    acquireli2: "Genom att köpa bitcoin på en  <a href=\"http://howtobuybitcoins.info\">Bitcoinbörs</a>."
+    acquireli2: "Genom att köpa bitcoin på en  <a href=\"https://www.buybitcoinworldwide.com\">Bitcoinbörs</a>."
     acquireli3: "Växla till sig bitcoin med <a href=\"https://localbitcoins.com/\">någon i närheten</a>."
-    acquireli4: "Tjäna bitcoin genom konkurrensutsatt  <a href=\"http://www.bitcoinmining.com/\">grävning</a>."
+    acquireli4: "Tjäna bitcoin genom konkurrensutsatt  <a href=\"https://www.bitcoinmining.com/\">grävning</a>."
     acquiretxt1: "Det går kanske att hitta privatpersoner som vill sälja bitcoin mot betalning med kreditkort eller PayPal, men de flesta valutabörser accepterar inte betalning med dessa metoder. Det har hänt att någon köper bitcoin med PayPal och sedan häver sin del av transaktionen. Det brukar kallas \"chargeback\"."
     makepayment: "Hur svårt är det att göra en Bitcoinbetalning?"
     makepaymenttxt1: "Det är lättare att göra en bitcoinbetalning än att köpa något med betal- eller kreditkort, och betalningen kan tas emot utan något speciellt handlarkonto. Betalningar görs från en plånboksapp, antingen på datorn eller smarttelefonen, genom att man anger mottagarens adress och betalningens belopp och sedan trycker på skicka. För att göra det lättare att skriva mottagarens adress kan många plånböcker läsa in adressen genom att skanna en QR-kod, eller låta två telefoner med NFC-teknik vidröra varandra."
@@ -726,7 +725,7 @@ sv:
     miningsecure: "Hur hjälper grävning till att säkra Bitcoin?"
     miningsecuretxt1: "Grävning skapar något som motsvarar ett konkurrensutsatt lotteri vilket gör det mycket svårt för någon att i följd lägga till nya block med transaktioner till blockkedjan. Detta skyddar nätverkets neutralitet genom att förhindra att någon individ tar makten att blockera vissa transaktioner. Detta förhindrar också en enskild person från att ersätta delar av blockkedjan för att göra sina egna spenderingar ogjorda, vilket skulle kunna vara ett sätt att lura andra användare. Grävning gör det exponentiellt mycket svårare att häva en tidigare transaktion genom att det kräver att alla block som följer på denna transaktion skrivs om."
     miningstart: "Vad behöver jag för att komma igång med grävning?"
-    miningstarttxt1: "När Bitcoin fortfarande var ganska nytt kunde vem som helst hitta ett nytt block genom att använda sin dators CPU. Allteftersom fler och fler människor ägnade sig åt grävning ökade svårigheten så mycket att det enda kostnadseffektiva sättet att gräva idag är att använda specialiserad hårdvara. Besök <a href=\"http://www.bitcoinmining.com/\">BitcoinMining.com</a> för mer information."
+    miningstarttxt1: "När Bitcoin fortfarande var ganska nytt kunde vem som helst hitta ett nytt block genom att använda sin dators CPU. Allteftersom fler och fler människor ägnade sig åt grävning ökade svårigheten så mycket att det enda kostnadseffektiva sättet att gräva idag är att använda specialiserad hårdvara. Besök <a href=\"https://www.bitcoinmining.com/\">BitcoinMining.com</a> för mer information."
     security: "Säkerhet"
     secure: "Är Bitcoin säkert?"
     securetxt1: "Bitcointeknologin, alltså protokollet och kryptografin, har historiskt varit mycket säkert och Bitcoinnätverket är förmodligen det största distribuerade beräkningsprojektet i världen. Bitcoins vanligaste sårbarhet är användarfel. Bitcoinplånboksfiler som innehåller de nödvändiga privata nycklarna kan av misstag raderas, förloras eller stjälas. Detta är ganska likt fysiska pengar som förvaras i en digital form. Som tur är kan användare införa goda <a href=\"#secure-your-wallet#\">säkerhetsrutiner</a> för att skydda sina pengar eller använda tjänsteleverantörer som erbjuder en bra säkerhetsnivå och försäkring mot stöld eller förlust."
@@ -813,8 +812,8 @@ sv:
         Tänk dig att lyssna på internetradio och betala per lyssnad sekund, läsa webbsidor
         och ge lite dricks för varje annons du slipper se, eller att köpa bandbredd
         i en trådlös surfzon och betala per kilobyte. Bitcoin är tillräckligt effektivt
-        för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.github.io/working-with-micropayments">Lär
-        dig mer om</a> tekniken bakom mikrobetalningar med Bitcoin eller om <a href="http://lightning.network/">framtida
+        för att göra alla dessa idéer möjliga. <a href="https://bitcoinj.org/working-with-micropayments">Lär
+        dig mer om</a> tekniken bakom mikrobetalningar med Bitcoin eller om <a href="https://en.wikipedia.org/wiki/Lightning_Network">framtida
         uppgraderingar</a> som utvecklas och implementeras just nu för att göra mikrobetalningar
         mer tillgängliga.
     mediation: "Tvistmedling"
@@ -835,7 +834,7 @@ sv:
     information: "Information publicerad på bitcoin.org"
     informationtxt1: "Webbsidan https://bitcoin.org/ (nedan kallad \"Webbplatsen\") tillhandahåller information och material av allmän karaktär. Du ges inte befogenhet och inte heller bör du lita på Webbplatsen för juridisk rådgivning, affärsrådgivning, eller rådgivning av något slag. Du handlar på egen risk om du förlitar dig på innehållet på Webbplatsen. Om du ska fatta beslut om att agera eller inte agera bör du kontakta ett behörigt juridiskt ombud i relevant jurisdiktion där du vill ha eller behöver hjälp. Ägarna till eller deltagare på Webbplatsen är inte på något sätt ansvariga för handlingar, beslut eller annat beteende som fattas eller inte fattas av med stöd av Webbplatsen."
     translations: "Översättningar"
-    translationstxt1: "Webbplatsen kan ha översättningar från den engelska versionen av det innehåll som finns tillgängligt på Webbplatsen. Dessa översättningar tillhandahålls endast som en bekvämlighet. I det fall den engelska versionen och den översätta är inkonsekventa är det den engelska som gäller. Om du hittar någon motstridighet, är du välkommen att rapportera detta på <a href=\"https://github.com/bitcoin/bitcoin.org\">GitHub</a>."
+    translationstxt1: "Webbplatsen kan ha översättningar från den engelska versionen av det innehåll som finns tillgängligt på Webbplatsen. Dessa översättningar tillhandahålls endast som en bekvämlighet. I det fall den engelska versionen och den översätta är inkonsekventa är det den engelska som gäller. Om du hittar någon motstridighet, är du välkommen att rapportera detta på <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org\">GitHub</a>."
     userisks: "Risker förknippade med att använda Bitcoin"
     useriskstxt1: "Webbplatsen kan inte hållas ansvarig för eventuella förluster, skador eller anspråk som härrör från händelser som omfattas av följande fem kategorier:"
     useriskstxt2: "Misstag som görs av den som använder någon Bitcoinrelaterad mjukvara eller tjänst, t.ex glömda lösenord, betalningar till fel Bitcoinadress och oavsiktlig radering av plånböcker."
@@ -909,7 +908,6 @@ sv:
     pagetitle: "Bitcoinresurser"
     pagedesc: "Användbara webbplatser och resurser om Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin-wikin</a>"
-    linkcointelegraph: "<a href=\"http://cointelegraph.com/\">CoinTelegraph</a>"
     directories: "Kataloger"
     linkwallets: "Plånböcker"
     linkmerchants: "Handlare"
@@ -1002,9 +1000,7 @@ sv:
     pagetitle: "Spendera Bitcoin"
     summary: "Det finns tusentals företag runt om i världen som accepterar Bitcoin."
     products-online: "Hitta produkter att köpa på nätet"
-    products-online-text: "Ett vanligt sätt att använda Bitcoin är att handla online. Det finns hundratals butiker och återförsäljare på internet som accepterar Bitcoin. Genom att använda en sökmotor som <a href=\"https://spendabit.co/\">Spendabit</a> kan du söka bland miljontals produkter som alla går att köpa med bitcoin."
     directory: "Bläddra i en företagskatalog"
-    directory-text: "Du kan också hitta många företag listade i <a href=\"https://99bitcoins.com/who-accepts-bitcoins-payment-companies-stores-take-bitcoins/\">onlinekataloger</a>."
     business-map: "Hitta lokala företag"
     business-map-text: "Det finns också många lokala företag, till exempel kaféer och restauranger, som accepterar Bitcoin. Du kan använda <a href=\"https://btcmap.org/\">btcmap.org</a> för att bläddra bland tusentals företag runt om i världen som accepterar Bitcoin."
   support-bitcoin:
@@ -1016,7 +1012,7 @@ sv:
     node: "Var en del av nätverket"
     nodetxt: "Om du har en bra Internetuppkoppling, kan du göra Bitcoinnätverkat starkare genom att ha en <a href=\"/en/full-node\">fullnodsmjukvara</a> igång på din dator eller server och öppna port 8333. Fullständiga noder säkrar och vidarebefordrar alla transaktioner."
     mining: "Grävning"
-    miningtxt: "Du kan börja <a href=\"http://www.bitcoinmining.com/\">gräva bitcoin</a> för att hjälpa till att bearbeta transaktioner. För att skydda nätverket bör du ansluta dig till en mindre pool och gärna någon decentraliserad brytningspool som <a href=\"http://p2pool.in/\">P2Pool</a> eller en <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pool</a> med stöd för getblocktemplate (GBT)."
+    miningtxt: "Du kan börja <a href=\"https://www.bitcoinmining.com/\">gräva bitcoin</a> för att hjälpa till att bearbeta transaktioner. För att skydda nätverket bör du ansluta dig till en mindre pool och gärna någon decentraliserad brytningspool som <a href=\"http://p2pool.in/\">P2Pool</a> eller en <a href=\"https://en.bitcoin.it/wiki/Comparison_of_mining_pools\">pool</a> med stöd för getblocktemplate (GBT)."
     develop: "Utveckling"
     developtxt: "Bitcoin är fri programvara. Om du är utvecklare kan du använda dina superkrafter för att göra nytta och<a href=\"#development#\"> förbättra Bitcoin</a>. Eller så kan du bygga fantastiska nya tjänster eller programvara som använder Bitcoin."
     donation: "Donationer"
@@ -1125,7 +1121,7 @@ sv:
         Denna sida har flyttat till Bitcoin Cores nya
         webbplats (klicka här för att omdirigeras dit)
     banner-translate: "Översättningen till det här språket är inaktuell. <a href=\"https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md\">Klicka här för att hjälpa till att översätta bitcoin.org till ditt språk</a>."
-    footer: "Publicerad under <a href=\"http://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
+    footer: "Publicerad under <a href=\"https://opensource.org/licenses/mit-license.php\" target=\"_blank\">MIT-licensen</a>"
     donate-community: "Stöd Bitcoin.org"
     donate-support: "Bitcoin.org stöds av communityn."
     network-status: "Nätverksstatus"

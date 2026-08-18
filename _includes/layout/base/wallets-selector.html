@@ -1,6 +1,6 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <div class="wallet-selector choose-wallet-screen" data-number="5" data-screen-name="selector">
@@ -311,6 +311,23 @@ http://opensource.org/licenses/MIT.
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
                         {% translate wizard-feature-bech32-description choose-your-wallet %}
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="important-checkbox-row">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" name="features" value="taproot" class="checkbox js-wallet-selector js-selector" />
+                    <div class="checkbox-text">{% translate wizard-feature-taproot choose-your-wallet %}</div>
+                  </label>
+
+                  <div class="sidebar-selector-info">
+                    <p class="sidebar-selector-info-text">Not available</p>
+                    <div class="tooltip-trigger">
+                      <img src="/img/icons/info-alt.svg" alt="info">
+                      <div class="wallet-selector-tooltip tooltip">
+                        {% translate wizard-feature-taproot-description choose-your-wallet %}
                       </div>
                     </div>
                   </div>

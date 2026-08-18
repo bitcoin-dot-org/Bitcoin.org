@@ -7,7 +7,7 @@ The following quick guides will help you get started:
 + [Improving Developer Documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org/)
 + [Assisting with Translations](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md)
 + [Managing Wallets](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/managing-wallets.md)
-+ [Adding Events, Release Notes and Alerts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-events-release-notes-and-alerts.md)
++ [Adding Release Notes and Alerts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-release-notes-and-alerts.md)
 + [Adding Blog Posts](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/adding-blog-posts.md)
 + [Miscellaneous / Other](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/miscellaneous.md)
 
@@ -16,4 +16,4 @@ The following quick guides will help you get started:
 Participation in this project is subject to a [Code of Conduct](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/CODE_OF_CONDUCT.md).
 
 ### Questions?
-Please contact Will Binns ([will@bitcoin.org](mailto:will@bitcoin.org)) if you need help.
+If you need help, please [open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues).

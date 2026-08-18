@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #templates.rb generates all translated pages using templates in
 #_templates. The final file name of each page is defined in
@@ -35,7 +35,7 @@ module Jekyll
           print 'Lang ' + lang + ' disabled' + "\n"
           next
         end
-        locs[lang] = YAML.load_file("_translations/"+file)[lang]
+        locs[lang] = YAML.unsafe_load_file("_translations/"+file)[lang]
       end
       #Generate each translated page based on templates
       if !File.directory?(site.dest)
@@ -52,7 +52,11 @@ module Jekyll
           ## the index.html file name
           dst.gsub!(/\/$/, '/index')
 
-          dst = dst+'.html'
+          dst = dst + '.html'
+
+          redirect_path = "/#{lang}/#{dst.sub(/\.html\z/, '')}"
+          next if site.config.fetch('redirects', {}).key?(redirect_path)
+
           site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
         end
         site.pages << TranslatePage.new(site, site.source, lang, '_templates', 'index.html', lang, 'index.html')

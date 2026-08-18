@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #Drop outdated fallback HTML code in all layouts for specified language.
 #Example: ./_contrib/updatetx.rb

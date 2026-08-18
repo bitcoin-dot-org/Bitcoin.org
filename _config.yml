@@ -1,3 +1,5 @@
+url: "https://bitcoin.org"
+
 langsorder:
 - 'id'
 - 'ca'
@@ -579,6 +581,9 @@ source:      .
 destination: ./_site
 plugins_dir: ./_plugins
 exclude:
+    - CODE_OF_CONDUCT.md
+    - CONTRIBUTING.md
+    - README.md
     - Gemfile
     - Gemfile.lock
     - Makefile
@@ -612,7 +617,7 @@ text:
   ## Values last updated 2026-04-17
   ## All variable names must indicate unit type for easy translation of adjacent text,
   ##   such as: subsidy_in_decimal_bitcoins or
-  ##   bitcoin_org_docs_maintainer_email_link
+  ##   bitcoin_datadir_gb
   ## For increasing variables, like chain size, choose a somewhat higher
   ##   value so we don't need to update too often
   subsidy_in_decimal_bitcoins: 3.125
@@ -627,7 +632,6 @@ text:
   total_tx_count_in_millions: 1300
   typical_ibd_time_in_hours: 4
   typical_144_block_catchup_time_in_minutes: 5
-  bitcoin_org_docs_maintainer_email_link: '<a href="mailto:will@bitcoin.org">Will Binns</a>'
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
   assertion_month: 2017-06-01
@@ -635,11 +639,11 @@ text:
 collections:
   ## _alerts
   alerts:
-    output: true
+    output: false
     permalink: /en/alert/:path
   ## _releases
   releases:
-    output: true
+    output: false
     permalink: /en/release/:path
   ## _wallets
   wallets:
@@ -685,4 +689,5 @@ defaults:
 
 ## Options as of version 3.4.20 are: nested (default), compact, compressed, or expanded
 sass:
+  silence_deprecations: ["import"]
   style: compressed
