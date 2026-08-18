@@ -807,7 +807,7 @@ en:
     morehelp: "I'd like to learn more. Where can I get help?"
     morehelptxt1: "You can find more information and help on the <a href=\"#resources#\">resources</a> and <a href=\"#community#\">community</a> pages or on the <a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Wiki FAQ</a>."
     whodecides: "Who decides how Bitcoin changes?"
-    whodecidestxt1: "No one person or group decides. Changes to Bitcoin are proposed publicly (often as vement Proposals, or BIPs), reviewed by developers, and only take effect if users, miners, and node operators voluntarily adopt them. Because the network requires broad consensus, changes that users do not accept simply do not happen."
+    whodecidestxt1: "No one person or group decides. Changes to Bitcoin are proposed publicly (often as Bitcoin Improvement Proposals, or BIPs), reviewed by developers, and only take effect if users, miners, and node operators voluntarily adopt them. Because the network requires broad consensus, changes that users do not accept simply do not happen."
     lightning: "What is the Lightning Network?"
     lightningtxt1: "The Lightning Network is a payment layer built on top of Bitcoin. It enables payments that are near-instant and typically cost less than a cent, using payment channels that settle back to the Bitcoin blockchain. It is well suited for small, frequent payments, while on-chain transactions remain the standard for larger transfers and long-term storage. See the <a href=\"#vocabulary##[vocabulary.lightning]\">vocabulary entry</a> for more details."
     addresschange: "Why does my Bitcoin address change?"
