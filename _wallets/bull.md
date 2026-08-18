@@ -3,7 +3,7 @@
 # http://opensource.org/licenses/MIT.
 
 id: bull
-title: "Bull Bitcoin"
+title: "BULL by Bull Bitcoin"
 titleshort: "BULL"
 compat: "mobile android ios"
 level: 2
@@ -22,7 +22,7 @@ platform:
           validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkgoodprivacyimproved" # Payjoin v2 
+          privacy: "checkpassprivacybasic" # default reveals addresses to Bull electrum server; Payjoin v2 and Tor supported
           fees: "checkgoodfeecontrolfull" # rbf
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
@@ -39,7 +39,7 @@ platform:
           validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
-          privacy: "checkgoodprivacyimproved" # Payjoin v2 
+          privacy: "checkpassprivacybasic" # default reveals addresses to Bull electrum server; Payjoin v2 and Tor supported
           fees: "checkgoodfeecontrolfull" # rbf
         privacycheck:
           privacyaddressreuse: "checkpassprivacyaddressrotation"
