@@ -658,10 +658,12 @@ collections:
 donation_banner:
   address: bc1qp6ejw8ptj9l9pkscmlf8fhhkrrjeawgpyjvtq8
   display: true
+  dismissal_days: 14
+  default_amount_in_usd: 25
   amounts_in_usd:
+    - 10
+    - 25
     - 50
-    - 100
-    - 200
 
 defaults:
   - scope:
