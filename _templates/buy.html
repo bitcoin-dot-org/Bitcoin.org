@@ -4,6 +4,8 @@
 
 layout: base
 id: buy
+end_of_page: |
+  <script>showBuyWidget();</script>
 ---
 
 <!-- Note: this file exempt from check-for-subheading-anchors check -->
@@ -17,19 +19,10 @@ id: buy
 <div class="container">
   <div class="row card-row" style="justify-content: center;">
 	<div class="card buy-card" style="width: 480px;margin-top: -30px;margin-bottom: 100px;">
-  		<div class="buy-widget">
-			<iframe
-  				src="https://buy.onramper.com?apiKey=pk_prod_01M07QJ4632DNXDGX7Y0FQRFQW&amp;primaryColor=ff9500&amp;borderRadius=0.5&amp;wgBorderRadius=0.7&amp;mode=buy&amp;onlyCryptos=btc"
-  				title="Onramper Widget"
-  				height="630px"
-  				width="420px"
-  				allow="accelerometer; autoplay; camera; gyroscope; payment"
-  				loading="lazy">
-			</iframe>
-		</div>
+  		<div class="buy-widget"></div>
   	</div>
 	<div class="buy-footer-notice">
-		<b>The above widget is provided by a third party provider (<a href="https://onramper.com">Onramper</a>) and is not associated with bitcoin.org.</b>
+		<b>The above widget is provided by a third party provider (<a href="https://www.moonpay.com/">MoonPay</a>) and is not associated with bitcoin.org.</b>
 	</div>
   </div>
 </div>
