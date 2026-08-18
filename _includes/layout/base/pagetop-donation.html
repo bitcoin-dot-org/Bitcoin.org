@@ -4,73 +4,116 @@ https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 {% if site.donation_banner.display %}
-<div class="donation-container">
-  <div class="donation-text">
-    <div class="donation-text-container">
-      <button onclick="closeDonationBanner()" class="donation-modal-close">
-        <img src="/img/icons/ico_close.svg?{{site.time | date: '%s'}}" alt="Close">
-      </button>
-      <p>
-        {% translate donation-banner-text layout %}
-      </p>
-      <button type="button" class="donation-btn" onclick="openDonationModal()">
-        {% translate donation-banner-donate-button layout %}
-      </button>
-    </div>
+<div class="donation-container" data-dismissal-days="{{ site.donation_banner.dismissal_days | default: 14 }}">
+  <div class="donation-bar">
+    <p class="donation-bar-copy">
+      <strong>{% translate donation-banner-toggle-button layout %}</strong>
+      <span>{% translate donation-banner-text layout %}</span>
+    </p>
+    <button type="button" class="donation-btn" onclick="openDonationModal(event)">
+      {% translate donation-banner-donate-button layout %}
+    </button>
+    <button type="button" class="donation-banner-dismiss" onclick="dismissDonationBanner()" aria-label="{% translate donation-banner-dismiss layout %}">
+      <img src="/img/icons/ico_close.svg?{{site.time | date: '%s'}}" alt="">
+    </button>
   </div>
-  <button type="button" class="donation-visibility-toggle" onclick="toggleDonationBanner()">
-    {% translate donation-banner-toggle-button layout %}
-  </button>
 </div>
 {% endif %}
 
-
-<div id="donation-modal" style="display: none" class="donation-modal hidden">
+<div
+  id="donation-modal"
+  style="display: none"
+  class="donation-modal hidden"
+  role="dialog"
+  aria-modal="true"
+  aria-hidden="true"
+  aria-labelledby="donation-modal-title"
+  aria-describedby="donation-modal-description"
+  tabindex="-1"
+  data-rate-loading="{% translate donation-modal-rate-loading layout %}"
+  data-rate-unavailable="{% translate donation-modal-rate-unavailable layout %}">
   <div class="modal-dialog">
     <div class="modal-header">
-      <div class="modal-close-btn" onclick="closeDonationModal()">×</div>
-      <p class="modal-header-text section-title">{% translate donation-modal-header layout %}</p>
+      <button type="button" class="modal-close-btn" onclick="closeDonationModal()" aria-label="{% translate donation-modal-close layout %}">
+        <span aria-hidden="true">×</span>
+      </button>
+      <h2 id="donation-modal-title" class="modal-header-text">{% translate donation-modal-header layout %}</h2>
+      <p id="donation-modal-description" class="modal-subheader">{% translate donation-modal-subheader layout %}</p>
     </div>
-    <p class="modal-subheader">{% translate donation-modal-subheader layout %}</p>
-    <div style="text-align: center;">
-      <div id="donation-qr-code" data-address="{{ site.donation_banner.address }}"></div>
-    </div>
-    <div>
-      <a
-        class="donation-btc-address"
-        href="bitcoin:{{ site.donation_banner.address }}"
-        target="_blank">
-        {{ site.donation_banner.address }}
-      </a>
-    </div>
-    <div class="modal-body bg-white" style="overflow-y:hidden;text-align: center;">
-      <div>
+    <div class="modal-body">
+      <section class="donation-payment-section" aria-labelledby="donation-payment-title">
+        <div
+          id="donation-qr-code"
+          data-address="{{ site.donation_banner.address }}"
+          role="img"
+          aria-label="{% translate donation-modal-qr-label layout %}"></div>
+        <div class="donation-payment-actions">
+          <h3 id="donation-payment-title">{% translate donation-modal-payment-title layout %}</h3>
+          <p class="donation-network-note">{% translate donation-modal-network-note layout %}</p>
+          <a class="donation-wallet-btn" href="bitcoin:{{ site.donation_banner.address }}">
+            {% translate donation-modal-open-wallet layout %}
+          </a>
+          <div class="donation-address-block">
+            <code id="donation-btc-address-text">{{ site.donation_banner.address }}</code>
+          </div>
+          <button
+            type="button"
+            class="donation-copy-btn"
+            onclick="copyDonationAddress(this)"
+            data-default-label="{% translate donation-modal-copy-address layout %}"
+            data-copied-label="{% translate donation-modal-copied layout %}"
+            data-failed-label="{% translate donation-modal-copy-failed layout %}">
+            {% translate donation-modal-copy-address layout %}
+          </button>
+          <p id="donation-copy-status" class="donation-copy-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="donation-amount-section" aria-labelledby="donation-amount-title">
+        <h3 id="donation-amount-title">{% translate donation-modal-choose-amount layout %}</h3>
+        <div class="donation-amount-options">
         {% for amount in site.donation_banner.amounts_in_usd %}
-        <button type="button" class="donation-amount-btn" data-amount-usd="{{ amount }}">
-          ${{ amount }}.00
-          <div class="donation-amount-usd-in-btc">(... BTC)</div>
+        <button
+          type="button"
+          class="donation-amount-btn{% if amount == site.donation_banner.default_amount_in_usd %} is-selected{% endif %}"
+          data-amount-usd="{{ amount }}"
+          aria-pressed="{% if amount == site.donation_banner.default_amount_in_usd %}true{% else %}false{% endif %}">
+          <span>${{ amount }}</span>
+          <small class="donation-amount-usd-in-btc">… BTC</small>
         </button>
         {% endfor %}
-      </div>
+        </div>
 
-      <div>
-        <input
-          style="margin-right: 15px"
-          type="text"
-          placeholder="{% translate donation-modal-input-custom-amount layout %} (BTC)"
-          id="donation-input-amount-btc" class="donation-amount-input">
-        <input
-          type="text"
-          placeholder="{% translate donation-modal-input-custom-amount layout %} (USD)"
-          id="donation-input-amount-usd" class="donation-amount-input">
-      </div>
+        <div class="donation-custom-amounts">
+          <label for="donation-input-amount-btc">
+            <span>{% translate donation-modal-btc-amount layout %}</span>
+            <input
+              type="text"
+              inputmode="decimal"
+              autocomplete="off"
+              placeholder="0.00000000"
+              id="donation-input-amount-btc"
+              class="donation-amount-input">
+          </label>
+          <label for="donation-input-amount-usd">
+            <span>{% translate donation-modal-usd-amount layout %}</span>
+            <input
+              type="text"
+              inputmode="decimal"
+              autocomplete="off"
+              placeholder="0.00"
+              id="donation-input-amount-usd"
+              class="donation-amount-input">
+          </label>
+        </div>
+        <p id="donation-rate-status" class="donation-rate-status" role="status" aria-live="polite"></p>
+      </section>
 
-      <div>
-        <textarea
-          class="donation-amount-input"
-          id="donation-input-message"
-          placeholder="{% translate donation-modal-optional-message layout %}"></textarea>
-      </div>
+      <details class="donation-more-options">
+        <summary>{% translate donation-modal-more-options layout %}</summary>
+        <label for="donation-input-message">{% translate donation-modal-optional-message layout %}</label>
+        <textarea class="donation-amount-input" id="donation-input-message" rows="2"></textarea>
+      </details>
     </div>
   </div>
 </div>
