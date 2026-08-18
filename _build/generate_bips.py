@@ -1315,7 +1315,7 @@ def index_body(bips: list[Bip], commit: str) -> str:
       <div class="bip-index-field">
         <label for="bip-status-filter">Status</label>
         <select id="bip-status-filter">
-          <option value="">All statuses ({len(bips)})</option>
+          <option value="">All ({len(bips)})</option>
           {status_options}
         </select>
       </div>
