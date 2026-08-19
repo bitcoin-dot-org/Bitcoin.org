@@ -78,6 +78,14 @@ https://opensource.org/licenses/MIT.
         <li{% if page.id == 'community' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a>
         </li>
+        <li{% if page.id == 'bip' %} class="active"{% endif %}>
+          <a href="/bips/">{% translate menu-bips layout %}</a>
+        </li>
+        {% if page.lang == 'en' %}
+        <li>
+          <a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a>
+        </li>
+        {% endif %}
         <li{% if page.id == 'vocabulary' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}
           </a>
