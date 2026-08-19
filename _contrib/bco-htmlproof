@@ -6,34 +6,67 @@ path_to_check = ARGV[0].nil? ? "./_site" : ARGV[0]
 
 ## Internal-links-only check, ported from the html-proofer 2.x API
 ## (require path, class name, and option names changed in 4.x/5.x).
-HTMLProofer.check_directory(
-  path_to_check,
-  {
-    :disable_external => true,
-    :allow_missing_href => true,
-    :enforce_https => false,
-    :check_internal_hash => false,
-    :checks => ["Links"],
-    # BIP mirror pages are fully link-checked by the generator itself
-    # (_build/generate_bips.py --check-output validates every internal
-    # route, fragment and asset of all 210 pages); re-parsing them here
-    # is redundant and exhausts CI memory (the job gets OOM-killed).
-    # The /bips/ index page is still checked.
-    :ignore_files => [%r{/bip/}],
-    :ignore_urls => [
-      '#',
-      /^$/,
-      /^\/bin/,
-      /^.*\.(pdf|PDF)$/,
-      'bitcoin:bc1qp6ejw8ptj9l9pkscmlf8fhhkrrjeawgpyjvtq8',
-      /^\/stats/
-    ],
-    :swap_urls => {
+base_options = {
+  :disable_external => true,
+  :allow_missing_href => true,
+  :enforce_https => false,
+  :check_internal_hash => false,
+  :checks => ["Links"],
+  # BIP mirror pages are fully link-checked by the generator itself
+  # (_build/generate_bips.py --check-output validates every internal
+  # route, fragment and asset of all 210 pages); re-parsing them here
+  # is redundant and exhausts CI memory (the job gets OOM-killed).
+  # The /bips/ index page is still checked.
+  :ignore_files => [%r{/bip/}],
+  :ignore_urls => [
+    '#',
+    /^$/,
+    /^\/bin/,
+    /^.*\.(pdf|PDF)$/,
+    'bitcoin:bc1qp6ejw8ptj9l9pkscmlf8fhhkrrjeawgpyjvtq8',
+    /^\/stats/
+  ],
+  :swap_urls => {
     /(css|png|rss|pdf|jpg|asc|xml)$/ => '\1$',
     /^([^#]+[^\/$])$/ => '\1.html',
     /^(.+[^\/])(#.+)$/ => '\1.html\2',
     /\/(.html#.+)/ => '\1',
     /\$$/ => '',
-    },
-  }
-).run
+  },
+}
+
+## One full-site pass parses every document in a single process and gets
+## OOM-killed on CI now that the site has grown (#4954). Run the same
+## check in slices instead — one top-level directory at a time, plus one
+## pass for the root files — so each pass parses only a fraction of the
+## documents while link targets still resolve against the whole site.
+top_level_directories = Dir.children(path_to_check)
+  .select { |entry| File.directory?(File.join(path_to_check, entry)) }
+  .sort
+slices = top_level_directories.reject { |name| name == "bip" }
+
+ignore_for = lambda do |excluded|
+  excluded.map { |name| %r{#{Regexp.escape(path_to_check)}/#{Regexp.escape(name)}/} }
+end
+
+failures = []
+run_slice = lambda do |label, extra_ignores|
+  options = base_options.merge(
+    :ignore_files => base_options[:ignore_files] + extra_ignores
+  )
+  begin
+    HTMLProofer.check_directory(path_to_check, options).run
+  rescue SystemExit, StandardError => error
+    failures << "#{label}: #{error.message}"
+  end
+end
+
+slices.each do |directory|
+  run_slice.call(directory, ignore_for.call(top_level_directories - [directory]))
+end
+run_slice.call("(root files)", ignore_for.call(top_level_directories))
+
+unless failures.empty?
+  puts failures
+  exit 1
+end
