@@ -269,7 +269,6 @@ it:
     walletcatweb: "Web"
     walletcatweb-description: "I portafogli web sono portafogli bitcoin che sono accessibili usando un browser web. Non è necessaria nessuna installazione o software aggiuntivo."
     walletbitcoincore: "Bitcoin Core è un client Bitcoin completo e costituisce la spina dorsale della rete. Offre alti livelli di sicurezza, privacy e stabilità. Tuttavia, ha meno funzioni e richiede molto spazio e memoria."
-    walletbitcoinknots: "Bitcoin Knots è un client Bitcoin completo e costituisce la spina dorsale della rete. Offre alti livelli di sicurezza, privacy e stabilità. Include molte più funzionalità rispetto a Bitcoin Core, ma non sono state testate approfonditamente. Occupa molto spazio e memoria."
     walletarmory: "Armory è un client per Bitcoin avanzato che ne espande le funzioni per gli utenti esperti. Offre diverse funzionalità di backup e criptaggio e permette una sicura archiviazione su computer non in linea."
     walletelectrum: "Electrum punta a velocità e semplicità, con un basso impiego di risorse. Utilizza dei server remoti che gestiscono le parti più complicate del sistema Bitcoin, e permette il recupero del proprio portafoglio con una frase segreta."
     walletmsigna: "mSIGNA è un portafoglio avanzato e di facile utilizzo che fornisce velocità e semplicità, scalabilità di livello aziendale e una robusta sicurezza. Supporta BIP32, transazioni multi-firma, archiviazione offline, sincronizzazione su più dispositivi, copie di backup elettroniche cifrate e anche cartacee."
