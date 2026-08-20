@@ -435,7 +435,6 @@ var donationTickerRequest = null;
 var donationModalOpener = null;
 var donationModalOpenTimer = null;
 var donationBodyOverflow = '';
-var donationBannerStorageKey = 'bitcoinorg-donation-banner-dismissed-at';
 
 function parseDonationAmount(value) {
     var normalized = String(value || '').replace(',', '.').replace(/^\s+|\s+$/g, '');
@@ -752,39 +751,10 @@ function copyDonationAddress(button) {
     }
 }
 
-function dismissDonationBanner() {
-    var banner = $('.donation-container');
-    banner.addClass('is-dismissed').attr('aria-hidden', 'true');
-
-    try {
-        window.localStorage.setItem(donationBannerStorageKey, String(new Date().getTime()));
-    } catch (error) {
-        // The banner still closes when storage is unavailable.
-    }
-}
-
 function initDonationUI() {
     var modal = $('#donation-modal');
     if (!modal.length) {
         return;
-    }
-
-    var banner = $('.donation-container');
-    if (banner.length) {
-        var dismissalDays = parseInt(banner.data('dismissal-days'), 10) || 14;
-
-        try {
-            var dismissedAt = parseInt(window.localStorage.getItem(donationBannerStorageKey), 10);
-            var dismissalDuration = dismissalDays * 24 * 60 * 60 * 1000;
-
-            if (!isNaN(dismissedAt) && new Date().getTime() - dismissedAt < dismissalDuration) {
-                banner.addClass('is-dismissed').attr('aria-hidden', 'true');
-            } else {
-                window.localStorage.removeItem(donationBannerStorageKey);
-            }
-        } catch (error) {
-            // Keep the banner visible when storage is unavailable.
-        }
     }
 
     $('[data-amount-usd]').off('.donation').on('click.donation', function() {
@@ -833,10 +803,6 @@ function initDonationUI() {
 
 function toggleDonationBanner() {
     openDonationModal();
-}
-
-function closeDonationBanner() {
-    dismissDonationBanner();
 }
 
 if (document.readyState === 'loading') {
