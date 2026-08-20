@@ -14,9 +14,8 @@ https://opensource.org/licenses/MIT.
     var CURRENT_CACHE_KEY = 'bitcoin-org-price-current-v1';
     var CHART_CACHE_PREFIX = 'bitcoin-org-price-chart-v1-';
     var PREFERENCE_KEY = 'bitcoin-org-price-currency';
-    var CURRENT_TTL = 2 * 60 * 1000;
+    var CURRENT_TTL = 5 * 60 * 1000;
     var REQUEST_TIMEOUT = 8000;
-    var REFRESH_INTERVAL = 2 * 60 * 1000;
     var SVG_NAMESPACE = 'http://www.w3.org/2000/svg';
 
     var currencies = {
@@ -1045,6 +1044,12 @@ https://opensource.org/licenses/MIT.
         loadChart(false);
     }
 
+    function refreshStaleCurrent() {
+        if (Date.now() - state.currentFetchedAt >= CURRENT_TTL) {
+            loadCurrent(false);
+        }
+    }
+
     function bindEvents() {
         var rangeButtons = document.querySelectorAll('.price-range');
         var i;
@@ -1124,10 +1129,11 @@ https://opensource.org/licenses/MIT.
         elements.svg.ontouchend = hideTooltip;
 
         document.addEventListener('visibilitychange', function() {
-            if (!document.hidden && Date.now() - state.currentFetchedAt >= CURRENT_TTL) {
-                loadCurrent(false);
+            if (!document.hidden) {
+                refreshStaleCurrent();
             }
         });
+        window.addEventListener('focus', refreshStaleCurrent);
     }
 
     function init() {
@@ -1142,12 +1148,6 @@ https://opensource.org/licenses/MIT.
         bindEvents();
         loadCurrent(false);
         loadChart(false);
-
-        window.setInterval(function() {
-            if (!document.hidden && Date.now() - state.currentFetchedAt >= CURRENT_TTL) {
-                loadCurrent(false);
-            }
-        }, REFRESH_INTERVAL);
     }
 
     init();
