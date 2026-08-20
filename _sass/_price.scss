@@ -275,12 +275,20 @@ https://opensource.org/licenses/MIT.
 }
 
 .price-currency-control select:focus,
-.price-range:focus,
 .price-refresh:focus,
 .price-input-wrap input:focus {
     outline: 2px solid #f7931a;
     outline: 2px solid var(--price-orange);
     outline-offset: 2px;
+}
+
+.price-range:focus {
+    outline: 0;
+    box-shadow: inset 0 0 0 2px var(--price-orange);
+}
+
+.price-range.is-active:focus {
+    box-shadow: inset 0 0 0 2px #fff;
 }
 
 .price-range-bar {
