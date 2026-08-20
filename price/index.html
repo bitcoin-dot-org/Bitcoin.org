@@ -1,0 +1,199 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# https://opensource.org/licenses/MIT.
+
+layout: base
+lang: en
+id: price
+title: Bitcoin Price Today - Live BTC Price Chart | Bitcoin.org
+description: See the current Bitcoin price, explore the BTC price chart in multiple currencies, and convert bitcoin and satoshis using independent market data.
+permalink: /price/
+hide_language_selector: true
+end_of_page: |
+  <script type="text/javascript" src="/js/price.js"></script>
+---
+
+<main class="price-page" id="price-page">
+  <section class="price-hero">
+    <div class="container price-hero__container">
+      <div class="price-hero__copy">
+        <p class="price-eyebrow">Bitcoin market data</p>
+        <h1>Bitcoin price today</h1>
+        <!-- no subhead-links here -->
+        <p class="price-hero__summary">Follow the current BTC price, explore its history, and convert bitcoin into your local currency.</p>
+      </div>
+
+      <div class="price-hero__quote" aria-live="polite" aria-atomic="true">
+        <div class="price-hero__pair">
+          <span class="price-coin" aria-hidden="true">&#8383;</span>
+          <span>BTC / <span data-currency-code>USD</span></span>
+        </div>
+        <div class="price-hero__value-row">
+          <span class="price-hero__value" id="price-current">Loading&hellip;</span>
+          <span class="price-change" id="price-change">&mdash;</span>
+        </div>
+        <p class="price-hero__updated" id="price-updated">Connecting to market data&hellip;</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container price-content">
+    <section class="price-panel" aria-labelledby="price-chart-heading">
+      <div class="price-toolbar">
+        <div>
+          <p class="price-panel__eyebrow">Bitcoin price chart</p>
+          <h2 id="price-chart-heading">BTC to <span data-currency-code>USD</span></h2>
+          <!-- no subhead-links here -->
+        </div>
+        <div class="price-currency-control">
+          <label for="price-currency">Display currency</label>
+          <div class="price-select-wrap">
+            <select id="price-currency" name="currency">
+              <option value="usd">USD - US Dollar</option>
+              <option value="eur">EUR - Euro</option>
+              <option value="gbp">GBP - British Pound</option>
+              <option value="jpy">JPY - Japanese Yen</option>
+              <option value="cad">CAD - Canadian Dollar</option>
+              <option value="aud">AUD - Australian Dollar</option>
+              <option value="chf">CHF - Swiss Franc</option>
+              <option value="cny">CNY - Chinese Yuan</option>
+              <option value="inr">INR - Indian Rupee</option>
+              <option value="brl">BRL - Brazilian Real</option>
+              <option value="mxn">MXN - Mexican Peso</option>
+              <option value="zar">ZAR - South African Rand</option>
+              <option value="ngn">NGN - Nigerian Naira</option>
+              <option value="sgd">SGD - Singapore Dollar</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="price-range-bar" role="group" aria-label="Chart time range">
+        <button class="price-range is-active" type="button" data-days="1" aria-pressed="true">1D</button>
+        <button class="price-range" type="button" data-days="7" aria-pressed="false">7D</button>
+        <button class="price-range" type="button" data-days="30" aria-pressed="false">1M</button>
+        <button class="price-range" type="button" data-days="365" aria-pressed="false">1Y</button>
+      </div>
+
+      <div class="price-chart" id="price-chart">
+        <div class="price-chart__loading" id="price-chart-loading" role="status">Loading chart data&hellip;</div>
+        <svg id="price-chart-svg" viewBox="0 0 1000 380" preserveAspectRatio="none" role="img" tabindex="0" aria-labelledby="price-chart-title price-chart-description" aria-describedby="price-chart-help">
+          <title id="price-chart-title">Bitcoin price chart</title>
+          <desc id="price-chart-description">Historical Bitcoin price in US dollars over one day.</desc>
+          <defs>
+            <linearGradient id="price-area-gradient" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#f7931a" stop-opacity="0.34"></stop>
+              <stop offset="100%" stop-color="#f7931a" stop-opacity="0"></stop>
+            </linearGradient>
+          </defs>
+          <g id="price-chart-grid" aria-hidden="true"></g>
+          <path id="price-chart-area" class="price-chart__area" d=""></path>
+          <path id="price-chart-line" class="price-chart__line" d=""></path>
+          <g id="price-chart-axis" aria-hidden="true"></g>
+          <line id="price-chart-crosshair" class="price-chart__crosshair" x1="0" x2="0" y1="18" y2="326" hidden></line>
+          <circle id="price-chart-point" class="price-chart__point" cx="0" cy="0" r="6" hidden></circle>
+        </svg>
+        <div class="price-chart__tooltip" id="price-chart-tooltip" role="status" aria-live="polite" hidden>
+          <strong id="price-tooltip-value"></strong>
+          <span id="price-tooltip-date"></span>
+        </div>
+        <span class="price-visually-hidden" id="price-chart-help">Focus the chart and use the left and right arrow keys to inspect prices over time.</span>
+      </div>
+
+      <div class="price-status-row">
+        <p class="price-status" id="price-status" role="status">Market data is loading.</p>
+        <button class="price-refresh" id="price-refresh" type="button">Refresh data</button>
+      </div>
+    </section>
+
+    <section class="price-stats" aria-label="Bitcoin market summary">
+      <article class="price-stat">
+        <span class="price-stat__label" id="price-high-label">1-day high</span>
+        <strong class="price-stat__value" id="price-high">&mdash;</strong>
+      </article>
+      <article class="price-stat">
+        <span class="price-stat__label" id="price-low-label">1-day low</span>
+        <strong class="price-stat__value" id="price-low">&mdash;</strong>
+      </article>
+      <article class="price-stat">
+        <span class="price-stat__label">Market cap</span>
+        <strong class="price-stat__value" id="price-market-cap">&mdash;</strong>
+      </article>
+      <article class="price-stat">
+        <span class="price-stat__label">24-hour volume</span>
+        <strong class="price-stat__value" id="price-volume">&mdash;</strong>
+      </article>
+    </section>
+
+    <section class="price-converter" aria-labelledby="price-converter-heading">
+      <div class="price-converter__intro">
+        <p class="price-panel__eyebrow">Bitcoin calculator</p>
+        <h2 id="price-converter-heading">Convert bitcoin</h2>
+        <!-- no subhead-links here -->
+        <p>Enter an amount on either side to convert between bitcoin and <span data-currency-name>US dollars</span> using the current displayed price.</p>
+      </div>
+      <div class="price-converter__fields">
+        <label class="price-converter__field" for="price-btc-amount">
+          <span>Bitcoin</span>
+          <span class="price-input-wrap">
+            <input id="price-btc-amount" type="number" min="0" step="0.00000001" value="1" inputmode="decimal">
+            <strong>BTC</strong>
+          </span>
+        </label>
+        <span class="price-converter__equals" aria-hidden="true">=</span>
+        <label class="price-converter__field" for="price-fiat-amount">
+          <span><span data-currency-name>US dollars</span></span>
+          <span class="price-input-wrap">
+            <input id="price-fiat-amount" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Loading">
+            <strong data-currency-code>USD</strong>
+          </span>
+        </label>
+      </div>
+      <p class="price-sats" id="price-sats">1 bitcoin equals 100,000,000 satoshis.</p>
+    </section>
+
+    <section class="price-explainer" aria-labelledby="price-explainer-heading">
+      <div class="price-explainer__main">
+        <p class="price-panel__eyebrow">Understanding the number</p>
+        <h2 id="price-explainer-heading">There is no single official Bitcoin price</h2>
+        <!-- no subhead-links here -->
+        <p>Bitcoin trades around the world on many independent markets. Each market has its own buyers, sellers, liquidity, and local currency, so quoted prices can differ slightly from one service to another.</p>
+        <p>This page uses an aggregated market price to provide a broad reference. It is not a price at which bitcoin.org offers to buy or sell bitcoin.</p>
+      </div>
+      <aside class="price-explainer__aside" aria-labelledby="price-moves-heading">
+        <h3 id="price-moves-heading">Why does the price move?</h3>
+        <!-- no subhead-links here -->
+        <ul>
+          <li>Changes in global supply and demand</li>
+          <li>Market liquidity and trading activity</li>
+          <li>News, adoption, and economic conditions</li>
+          <li>Differences between currencies and exchanges</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="price-learn" aria-labelledby="price-learn-heading">
+      <div>
+        <p class="price-panel__eyebrow">Go beyond the price</p>
+        <h2 id="price-learn-heading">Learn how Bitcoin works</h2>
+        <!-- no subhead-links here -->
+        <p>Price is only one part of Bitcoin. Learn how to use it, choose a wallet, and protect your money before getting started.</p>
+      </div>
+      <div class="price-learn__links">
+        <a class="btn btn-bright" href="/en/getting-started">Get started</a>
+        <a class="btn btn-light" href="/en/choose-your-wallet">Choose a wallet</a>
+        <a class="price-learn__text-link" href="/en/you-need-to-know">What you need to know</a>
+      </div>
+    </section>
+
+    <section class="price-methodology" aria-labelledby="price-methodology-heading">
+      <h2 id="price-methodology-heading">Data and privacy</h2>
+      <!-- no subhead-links here -->
+      <p><a href="https://www.coingecko.com/en/api" rel="noopener">Powered by CoinGecko</a>, an independent market-data aggregator, with Blockchain.com used as an automatic fallback. Your browser requests market data directly; bitcoin.org does not operate an exchange and does not receive your conversion amounts. Values are informational, may be delayed, and are not financial advice.</p>
+    </section>
+
+    <noscript>
+      <p class="price-noscript">JavaScript is required to retrieve current market data and draw the chart. The rest of this educational page remains available without it.</p>
+    </noscript>
+  </div>
+</main>
