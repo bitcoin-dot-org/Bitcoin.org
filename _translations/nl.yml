@@ -267,7 +267,6 @@ nl:
     walletcatweb: "Web"
     walletcatweb-description: "Web-portemonnees zijn bitcoin-portemonnees, die toegankelijk zijn via een webbrowser. Er is geen extra software nodig."
     walletbitcoincore: "Bitcoin Core is een volledige Bitcoin cliënt en bouwt de backbone van het netwerk. Het biedt een hoog niveau van beveiliging, privacy en stabiliteit. Het heeft echter minder functies en vereist veel opslagruimte en geheugen."
-    walletbitcoinknots: "Bitcoin Knots is een volledige Bitcoin cliënt en bouwt de backbone van het netwerk. Het biedt een hoog niveau van beveiliging, privacy en stabiliteit. Het bevat meer geavanceerde functies dan Bitcoin Core, maar ze zijn niet zo goed getest. Het gebruikt veel opslagruimte en geheugen."
     walletarmory: "Armory is een geavanceerde Bitcoin-client die de functies voor Bitcoin-powerusers uitbreidt. Het biedt verschillende back-up- en encryptiemogelijkheden en beveiligde cold-storage op offline computers."
     walletelectrum: "Electrum is gericht op snelheid en eenvoud en is zeer licht voor uw computer. Het laat de ingewikkeldere taken van het Bitcoin-systeem uitvoeren door servers elders en het biedt de mogelijkheid om uw portemonnee terug te vinden met behulp van een geheime zin."
     walletbitcoinwallet: "Bitcoin Wallet is eenvoudig te gebruiken en betrouwbaar, terwijl het ook veilig en snel is. De visie is decentralisatie en \"zero trust\"; er is geen centrale dienst nodig voor de Bitcoin-gerelateerde handelingen. De applicatie is een goede keuze voor niet-technische personen."
