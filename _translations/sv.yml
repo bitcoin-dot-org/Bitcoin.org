@@ -264,7 +264,6 @@ sv:
     walletcatweb: "Webben"
     walletcatweb-description: "En webbplånbok är en bitcoinplånbok som kan användas via en webbläsare. Den kräver ingen installation av ytterligare programvara."
     walletbitcoincore: "Bitcoin Core är en fullständig Bitcoinklient och utgör nätverkets ryggrad. Den har höga säkerhets-, integritets- och stabilitetsnivåer. Dock har den färre funktioner och kräver mycket utrymme på hårddisken och i RAM-minnet. "
-    walletbitcoinknots: "Bitcoin Knots är en fullständig Bitcoinklient och utgör nätverkets ryggrad. Den har höga säkerhets-, integritets- och stabilitetsnivåer. Den har mer avancerade funktioner än Bitcoin Core, men dessa är inte lika vältestade. Den använder mycket plats och minne."
     walletarmory: "Armory är en avancerad Bitcoinklient som utökar sina funktioner för avancerade Bitcoinanvändare. Den erbjuder många funktioner för säkerhetskopiering och kryptering, och stödjer säker kallagring på offlinedatorer."
     walletelectrum: "Electrums fokus är snabbhet och enkelhet med låg resursanvändning. Den använder fjärrservrar som hanterar de mest komplicerade delarna av Bitcoinsystemet och gör det möjligt att återställa sin plånbok från en hemlig lösenfras."
     walletbitcoinwallet: "Bitcoin Wallet är pålitlig och enkel att använda, samtidigt som den är både säker och snabb. Visionen är decentralisering och \"zero trust\". Ingen central tjänst behövs för Bitcoinrelaterade operationer. Appen är ett bra val för den som inte är så teknisk."

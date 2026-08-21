@@ -265,7 +265,6 @@ sr:
     walletcatweb: "Internet"
     walletcatweb-description: "Web novčanik dostupni su preko web pretraživača. Nije neophodna instalacija dodatnog softvera kako bi se koristio."
     walletbitcoincore: "Bitcoin Core je potpuni Bitkoin klijent i čini okosnicu mreže. Pruža visoki nivo bezbednosti, privatnosti, i stabilnosti. Medjutim, ima manjak mogućnosti i zauzima mnogo prostora i memorije."
-    walletbitcoinknots: "Bitcoin Knots je potpuni Bitkoin klijent bitan deo mreže, Nudi veliki niv sigurnosti, privatnosti i stabilnosti. Uključuje naprednije opcije od Bitcoin Core softvera, ali nije toliko detaljno testiran. Zauzima mnogo prostora i memorije."
     walletarmory: "Armorz je Bitkoin klijent za napredne korisnike. Nudi mnoštvo opcija za backup i enkripciju, i daje mogućnost hladnog-skladištenja na računarima koji nisu povezani na mrežu."
     walletelectrum: "Electrum je fokusiran na brzinu i jednostavnost i ne konzumira mnogo resursa. Koristi servere koji mogu da podnesu i najzahtevnije delove Bitkoin sistema, takodje ima i opciju da oporaviti svoj novčanik uz pomoć tajne fraze."
     walletmsigna: "mSIGNA je napredan, ali i lak za korišćenje novčanik sa fokusom na brzinu i jedonstanost, visoku sigurnost i upotrebljivost na nivou preduzeća. Podržava BIP32, transakcije sa više potpisa, hladno skladištenje, sinhronizaciju na više uredjaja i enkriptovani elektronski i papirni bekap."

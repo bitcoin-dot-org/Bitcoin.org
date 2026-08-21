@@ -266,7 +266,6 @@ pt_BR:
     walletcatweb: "Web"
     walletcatweb-description: "As carteiras Web são carteiras de bitcoin acessíveis usando um navegador web. Nenhuma instalação de software adicional é necessária."
     walletbitcoincore: "Bitcoin Core é um cliente de Bitcoin completo e constrói a espinha dorsal da rede. Ele oferece altos níveis de segurança, privacidade e estabilidade. No entanto, ele possui menos recursos e ocupa bastante espaço e memória"
-    walletbitcoinknots: "Bitcoin Knots é um cliente Bitcoin completo e constrói a espinha dorsal da rede. Oferece altos níveis de segurança, privacidade e estabilidade. Ele inclui recursos mais avançados que o Bitcoin Core, mas eles não estão tão bem testados. Ele usa muito espaço e memória."
     walletarmory: "Armory é um cliente avançado de Bitcoin que expande as suas características para usuários de Bitcoin mais avançados. Ele oferece muitas características de proteção e de encriptação, e permite um armazenamento a frio seguro em computadores offline."
     walletelectrum: "A principal característica do Electrum é a rapidez e simplicidade, com baixo uso de recursos. Ele utiliza servidores remotos, responsáveis pela parte mais complicada do funcionamento do Bitcoin, e permite recuperar sua carteira a partir de sua senha pessoal."
     walletbitcoinwallet: "Bitcoin Wallet é fácil de usar e confiável, sendo também seguro e rápido. Sua visão é descentralização e confiança zero; nenhum serviço central é necessário para operações relacionadas com Bitcoin. O aplicativo é uma boa escolha para pessoas não técnicas."
