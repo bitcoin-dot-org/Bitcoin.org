@@ -126,6 +126,9 @@ https://opensource.org/licenses/MIT.
     <div class="footermenu-item footermenu-other">
       <p class="footer-title">{% translate menu-other layout %}:</p>
       {% if page.lang == 'en' %}
+          <a href="/price/">Price</a>
+      {% endif %}
+      {% if page.lang == 'en' %}
       <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
       {% endif %}
       <a href="/{{ page.lang }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
