@@ -2,9 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # https://opensource.org/licenses/MIT.
 
-id: bitbox
-title: "BitBox02"
-titleshort: "BitBox02"
+id: bitboxnova
+title: "BitBox02 Nova"
+titleshort: "BitBox02 Nova"
 compat: "hardware"
 level: 2
 platform:
@@ -12,10 +12,10 @@ platform:
     name: hardware
     os:
       - name: hardware
-        text: "walletbitbox"
-        link: "https://bitbox.swiss/bitbox02/"
+        text: "walletbitboxnova"
+        link: "https://bitbox.swiss/bitbox02/nova/"
         source: "https://github.com/BitBoxSwiss/bitbox02-firmware"
-        screenshot: "bitbox02.png"
+        screenshot: "bitboxnova.png"
         features: "bech32 hardware_wallet multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"

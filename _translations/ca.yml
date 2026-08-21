@@ -267,7 +267,6 @@ ca:
     walletcatweb: "Web"
     walletcatweb-description: "Les carteres web són carteres bitcoin accessibles mitjançant un navegador web. No cal instal·lar cap programari addicional."
     walletbitcoincore: "Bitcoin Core és un client complet de Bitcoin que forma l'esquelet de la xarxa. Ofereix un alt nivell de seguretat, privacitat i estabilitat. Ara bé, té poques característiques i ocupa molt d'espai de disc i memòria."
-    walletbitcoinknots: "Bitcoin Knots és un client complet de Bitcoin i crea la columna vertebral de la xarxa. Ofereix alts nivells de seguretat, privadesa i estabilitat. Inclou funcions més avançades que Bitcoin Core, però no estan tan ben provades. Utilitza molt espai i memòria."
     walletarmory: "Armory és un client Bitcoin que amplia les característiques per usuaris Bitcoin avançats. Ofereix molts tipus de còpies de seguretat i encriptacions. Permet emmagatzemament en \"fred\" a màquines fora de línia."
     walletelectrum: "Electrum se centra en la velocitat i simplicitat, amb una utilització baixa de recursos. Fa servir servidors remots que s'encarreguen de la part més complicada del sistema Bitcoin. Això et permet recuperar el moneder amb una frase secreta en cas de necessitat."
     walletbitcoinwallet: "El moneder Bitcoin Wallet és molt fàcil d'utilitzar a la vegada que segur i ràpid. La seva visió és la descentralització i la confiança zero; no fa falta cap servei central per a cap operació relacionada amb Bitcoin. Aquesta APP és una bona elecció per als usuaris no tècnics."

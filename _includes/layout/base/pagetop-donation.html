@@ -4,7 +4,7 @@ https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 {% if site.donation_banner.display %}
-<div class="donation-container" data-dismissal-days="{{ site.donation_banner.dismissal_days | default: 14 }}">
+<div class="donation-container">
   <div class="donation-bar">
     <p class="donation-bar-copy">
       <strong>{% translate donation-banner-toggle-button layout %}</strong>
@@ -12,9 +12,6 @@ https://opensource.org/licenses/MIT.
     </p>
     <button type="button" class="donation-btn" onclick="openDonationModal(event)">
       {% translate donation-banner-donate-button layout %}
-    </button>
-    <button type="button" class="donation-banner-dismiss" onclick="dismissDonationBanner()" aria-label="{% translate donation-banner-dismiss layout %}">
-      <img src="/img/icons/ico_close.svg?{{site.time | date: '%s'}}" alt="">
     </button>
   </div>
 </div>
