@@ -1,0 +1,45 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# https://opensource.org/licenses/MIT.
+
+layout: sidebar
+id: halving
+---
+  <div class="halving-stats">
+    <div class="halving-stat"><span class="halving-stat-value" id="halving-remaining">&mdash;</span><span class="halving-stat-label">{% translate statremaining %}</span></div>
+    <div class="halving-stat"><span class="halving-stat-value" id="halving-date">&mdash;</span><span class="halving-stat-label">{% translate statdate %}</span></div>
+    <div class="halving-stat"><span class="halving-stat-value" id="halving-height">&mdash;</span><span class="halving-stat-label">{% translate statheight %}</span></div>
+    <div class="halving-stat"><span class="halving-stat-value">3.125 BTC</span><span class="halving-stat-label">{% translate statreward %}</span></div>
+    <div class="halving-stat"><span class="halving-stat-value">1.5625 BTC</span><span class="halving-stat-label">{% translate statnext %}</span></div>
+  </div>
+  <p>{% translate progresstxt %}</p>
+  <div class="halving-progress"><div class="halving-progress-bar" id="halving-progress-bar"></div></div>
+
+  <h2 id="reward-chart">{% translate chartsubsidy %}</h2>
+  <div class="halving-chart-wrap"><canvas id="halving-subsidy-chart" width="900" height="420" data-label-x="{% translate chartblocks %}"></canvas></div>
+
+  <h2 id="supply-chart">{% translate chartsupply %}</h2>
+  <div class="halving-chart-wrap"><canvas id="halving-supply-chart" width="900" height="420" data-label-cap="{% translate chartcap %}" data-label-x="{% translate chartblocks %}"></canvas></div>
+
+  <h2 id="history">{% translate historytitle %}</h2>
+  <table class="halving-table">
+    <thead><tr><th>{% translate colevent %}</th><th>{% translate coldate %}</th><th>{% translate colblock %}</th><th>{% translate colreward %}</th></tr></thead>
+    <tbody>
+      <tr><td>{% translate event1 %}</td><td>2012-11-28</td><td>210,000</td><td>25 BTC</td></tr>
+      <tr><td>{% translate event2 %}</td><td>2016-07-09</td><td>420,000</td><td>12.5 BTC</td></tr>
+      <tr><td>{% translate event3 %}</td><td>2020-05-11</td><td>630,000</td><td>6.25 BTC</td></tr>
+      <tr><td>{% translate event4 %}</td><td>2024-04-20</td><td>840,000</td><td>3.125 BTC</td></tr>
+      <tr><td>{% translate eventnext %}</td><td>2028 ({% translate estimated %})</td><td>1,050,000</td><td>1.5625 BTC</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="what-is-the-halving">{% translate whatis %}</h2>
+  <p>{% translate whatistxt %}</p>
+  <h2 id="why-fixed-supply">{% translate why %}</h2>
+  <p>{% translate whytxt %}</p>
+  <h2 id="miners">{% translate miners %}</h2>
+  <p>{% translate minerstxt %}</p>
+  <h2 id="date-estimate">{% translate howest %}</h2>
+  <p class="halving-end">{% translate howesttxt %}</p>
+
+<script src="/js/halving.js?{{site.time | date: '%s'}}"></script>

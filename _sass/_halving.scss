@@ -1,0 +1,62 @@
+.halving-stats {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 32px 0;
+}
+.halving-stat {
+    -ms-flex: 1 1 180px;
+    flex: 1 1 180px;
+    padding: 20px;
+    border: 1px solid #e0e6eb;
+    border-radius: 8px;
+    text-align: center;
+}
+.halving-stat-value {
+    display: block;
+    font-size: 175%;
+    font-weight: 600;
+    color: #f7931a;
+}
+.halving-stat-label {
+    display: block;
+    margin-top: 6px;
+    font-size: 87.5%;
+    color: #6b7f8f;
+}
+.halving-progress {
+    height: 10px;
+    border-radius: 5px;
+    background: #e0e6eb;
+    overflow: hidden;
+    margin: 8px 0 40px;
+}
+.halving-progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background: #f7931a;
+}
+.halving-chart-wrap {
+    margin: 24px 0 40px;
+}
+.halving-chart-wrap canvas {
+    width: 100%;
+    height: auto;
+}
+.halving-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0 40px;
+}
+.halving-table th,
+.halving-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e0e6eb;
+    text-align: left;
+}
+.halving-end {
+    margin-bottom: 64px;
+}

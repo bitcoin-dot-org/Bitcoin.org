@@ -896,6 +896,39 @@ en:
     list3: "Low processing fees"
     desc: "Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. <b>Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and <a href=\"#support-bitcoin#\">everyone can take part</a></b>. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system."
     overview: "Get a quick overview for"
+  halving:
+    title: "Bitcoin Halving Countdown - Bitcoin"
+    pagetitle: "Bitcoin Halving Countdown"
+    summary: "Roughly every four years, the reward that Bitcoin pays for mining a block is cut in half. This page tracks the countdown to the next halving and explains why the schedule exists."
+    statheight: "Current block height"
+    statremaining: "Blocks until the halving"
+    statdate: "Estimated date"
+    statreward: "Current block reward"
+    statnext: "Reward after the halving"
+    progresstxt: "Progress through the current halving period"
+    chartsubsidy: "Block reward over time"
+    chartsupply: "Total supply approaching 21 million"
+    chartcap: "21 million cap"
+    chartblocks: "Block height"
+    historytitle: "Halving history"
+    colevent: "Event"
+    coldate: "Date"
+    colblock: "Block"
+    colreward: "New reward"
+    event1: "First halving"
+    event2: "Second halving"
+    event3: "Third halving"
+    event4: "Fourth halving"
+    eventnext: "Fifth halving"
+    estimated: "estimated"
+    whatis: "What is the halving?"
+    whatistxt: "New bitcoins enter circulation as a reward to the miner of each block. Every 210,000 blocks — roughly four years — that reward is cut in half. This event is called the halving. It started at 50 bitcoins per block in 2009 and reaches zero around the year 2140, when all bitcoins will have been issued."
+    why: "Why does Bitcoin do this?"
+    whytxt: "Bitcoin has a fixed supply: there will never be more than 21 million bitcoins. The halving schedule is how that limit is enforced — issuance slows down predictably until it stops entirely. Unlike money that can be printed at will, nobody can decide to create more bitcoins."
+    miners: "What happens to miners?"
+    minerstxt: "Each halving reduces the new bitcoins miners earn per block, so transaction fees make up a growing share of their income. Over time, fees are expected to replace the block reward entirely as the incentive that keeps the network secure."
+    howest: "How is the date estimated?"
+    howesttxt: "Bitcoin targets one block every ten minutes on average, so the date of block 1,050,000 can only be estimated. Blocks tend to arrive slightly faster when mining power grows, which is why halvings usually land a little earlier than a simple calendar projection. The countdown above recalculates from the live block height every time the page loads."
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Innovation in Payment Systems"
@@ -1270,6 +1303,7 @@ en:
     menu-bitcoin-for-developers: Developers
     menu-bitcoin-for-individuals: Individuals
     menu-bips: "BIPs list"
+    menu-halving: "Halving countdown"
     menu-price: "Price"
     menu-community: Community
     menu-development: Development
@@ -1340,6 +1374,7 @@ en:
     buy: buy
     sell: sell
     choose-your-wallet: choose-your-wallet
+    halving: halving
     community: community
     developer-documentation: developer-documentation
     developer-examples: developer-examples

@@ -42,6 +42,13 @@ https://opensource.org/licenses/MIT.
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       <li{% if page.id == 'bip' %} class="active"{% endif %}><a href="/bips/">{% translate menu-bips layout %}</a></li>
       {% comment %}
+        After the halving page is translated, add the language to the
+        condition below
+      {% endcomment %}
+      {% if page.lang == 'en' %}
+      <li{% if page.id == 'halving' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate halving url %}">{% translate menu-halving layout %}</a></li>
+      {% endif %}
+      {% comment %}
         After the developer-documentation page is translated, add the language
         to the condition below
       {% endcomment %}
