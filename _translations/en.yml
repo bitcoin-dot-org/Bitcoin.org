@@ -2,6 +2,7 @@ en:
   about-us:
     title: "About bitcoin.org"
     pagetitle: "About bitcoin.org"
+    metadescription: "Learn who owns and maintains bitcoin.org, how the project is governed, its mission, contributors, funding, and commitment to neutral Bitcoin education."
     pagedesc: "Bitcoin.org is dedicated to helping Bitcoin develop in a sustainable way."
     own: "Who owns bitcoin.org?"
     owntxt-title: "Satoshi Nakamoto and Martti Malmi"
@@ -38,6 +39,7 @@ en:
   bitcoin-for-businesses:
     title: "Bitcoin for Businesses - Bitcoin"
     pagetitle: "Bitcoin for Businesses"
+    metadescription: "Learn how businesses can accept Bitcoin and Lightning payments, manage fees, reduce payment friction, and understand security responsibilities."
     summary: "Bitcoin lets your business accept secure payments directly from customers."
     lowfee: "Choose your own fees"
     lowfeetext: >
@@ -111,6 +113,7 @@ en:
   bitcoin-for-individuals:
     title: "Bitcoin for Individuals - Bitcoin"
     pagetitle: "Bitcoin for Individuals"
+    metadescription: "Learn how to use Bitcoin for payments and self-custody, including wallets, fees, privacy, security, and the responsibilities of controlling your funds."
     summary: "Bitcoin lets you send and receive money directly, anywhere in the world."
     mobile: "Mobile payments made easy"
     mobiletext: "Bitcoin when used on a mobile device allows you to pay with a simple two-step scan-and-pay. There's no need to sign up, swipe your card, type a PIN, or sign anything. All you need to receive Bitcoin payments is to display the QR code in your Bitcoin wallet app and let the other party scan it, or tap to pay with a contactless reader where supported (using NFC technology)."
@@ -145,6 +148,7 @@ en:
   bitcoin-paper:
     title: "Bitcoin: A Peer-to-Peer Electronic Cash System"
     pagetitle: "Bitcoin: A Peer-to-Peer Electronic Cash System"
+    metadescription: "Read Satoshi Nakamoto's original Bitcoin white paper and find translations of the document that introduced Bitcoin's peer-to-peer electronic cash system."
     summary: "The paper that first introduced Bitcoin"
     description: "Satoshi Nakamoto's original paper is still recommended reading for anyone studying how Bitcoin works. Choose which translation of the paper you want to read:"
     translated_by: "translated by"
@@ -155,9 +159,11 @@ en:
   sell:
     title: "Sell Bitcoin"
     pagetitle: "Sell Bitcoin"
+    metadescription: "Sell bitcoin for your local currency using an available payout method. Review fees and identity checks, choose a service, and complete your sale."
   buy:
     title: "Buy Bitcoin"
     pagetitle: "Buy Bitcoin"
+    metadescription: "Buy bitcoin with a card, bank transfer, or other available payment method. Review fees and identity checks, then send your bitcoin to a secure wallet."
     summary: "There are several ways you can buy bitcoin."
     bitcoin-exchange: "Use a Bitcoin Exchange"
     bitcoin-exchange-text: "Our <a href=\"/en/exchanges\">Bitcoin Exchange</a> page, lists many different businesses that can help you buy bitcoin using your bank account."
@@ -168,6 +174,7 @@ en:
   community:
     title: "Community - Bitcoin"
     pagetitle: "Bitcoin Communities"
+    metadescription: "Find Bitcoin communities, discussion forums, technical chat channels, meetups, conferences, and nonprofit organizations around the world."
     pagedesc: "Find interesting people, groups and communities related to Bitcoin."
     forums: "Forums"
     bitcointalk: "<a href=\"https://bitcointalk.org/\">BitcoinTalk Forum</a>"
@@ -553,6 +560,7 @@ en:
   development:
     title: "Development - Bitcoin"
     pagetitle: "Bitcoin development"
+    metadescription: "Learn how to contribute to Bitcoin development through code review, documentation, testing, translations, research, and developer communities."
     pagedesc: "Bitcoin is a global project and open source software."
     summary: "Find more information about current specification, software and developers."
     spec: "Documentation"
@@ -578,6 +586,7 @@ en:
   download:
     title: "Download - Bitcoin"
     pagetitle: "Download Bitcoin Core"
+    metadescription: "Download the latest Bitcoin Core release for Windows, macOS, or Linux, and verify the installer signatures and checksums before running it."
     latestversion: "Latest version:"
     download: "Download Bitcoin Core"
     downloados: "Or choose your operating system"
@@ -592,7 +601,7 @@ en:
     releasekeys: "Bitcoin Core Release Signing Keys"
   exchanges:
     title: "Exchanges - Bitcoin"
-    metadescription: "Places to buy bitcoin in exchange for other currencies. Exchange US dollars (BTC/USD), Euros (BTC/EUR), Yuan (BTC/CNY) and other currencies for bitcoin."
+    metadescription: "Browse services that exchange bitcoin for local currencies and compare available options before choosing a third-party platform."
     pagetitle: "Bitcoin Exchanges"
     pagedesc: "Places to buy bitcoin in exchange for other currencies."
     exchange: "Bitcoin Exchanges"
@@ -614,6 +623,7 @@ en:
   faq:
     title: "FAQ - Bitcoin"
     pagetitle: "Frequently Asked Questions"
+    metadescription: "Find clear answers to frequently asked questions about Bitcoin, including wallets, mining, transactions, fees, privacy, security, legality, and supply."
     summary: "Find answers to recurring questions and myths about Bitcoin."
     table: "Table of contents"
     general: "General"
@@ -834,6 +844,7 @@ en:
   getting-started:
     title: "Getting started - Bitcoin"
     pagetitle: "Getting started with Bitcoin"
+    metadescription: "Get started with Bitcoin by choosing a wallet, securing your funds, receiving bitcoin, and learning how transactions and confirmations work."
     pagedesc: "Getting started with Bitcoin does not require deep technical knowledge."
     users: "How to use Bitcoin"
     inform: "Inform yourself"
@@ -864,6 +875,7 @@ en:
   how-it-works:
     title: "How does Bitcoin work? - Bitcoin"
     pagetitle: "How does Bitcoin work?"
+    metadescription: "Learn how Bitcoin works, including the blockchain, transactions, private keys, mining, confirmations, and the peer-to-peer network."
     intro: "This is a question often surrounded by confusion, so here's a quick explanation!"
     basics: "The basics for a new user"
     basicstxt1: "As a new user, you can <a href=\"#getting-started#\">get started</a> with Bitcoin without understanding the technical details. Once you've installed a Bitcoin wallet on your computer or mobile phone, it will generate your first Bitcoin address and you can create more whenever you need one. You can disclose your addresses to your friends so that they can pay you or vice versa. In fact, this is pretty similar to how email works, except that Bitcoin addresses should be used only once."
@@ -887,6 +899,7 @@ en:
   innovation:
     title: "Innovation - Bitcoin"
     pagetitle: "Innovation in Payment Systems"
+    metadescription: "Explore Bitcoin payment innovations including Lightning, multisignature security, programmable transactions, transparency, and self-custody."
     summary: "Bitcoin isn't just about sending money. It has many features and opens new possibilities that the community continues to build on. Here are some of the technologies in active use today, along with directions still being explored. The most interesting uses of Bitcoin may be the ones still ahead."
     control: "Control against fraud"
     controltext: "Bitcoin gives users a high level of security for their money. The network protects against common types of fraud like chargebacks or unwanted charges, and bitcoins cannot be counterfeited. Users can back up or encrypt their wallets, and hardware wallets make funds very difficult to steal or lose. Bitcoin is designed to let its users hold complete control over their money."
@@ -918,6 +931,7 @@ en:
   legal:
     title: "Legal disclaimer - Bitcoin"
     pagetitle: "Legal disclaimer"
+    metadescription: "Read the bitcoin.org legal disclaimer covering information accuracy, investment and tax risks, third-party services, jurisdictions, and liability."
     information: "Information published on bitcoin.org"
     informationtxt1: "The website https://bitcoin.org/ (hereinafter, referred to as the \"Website\") provides information and material of a general nature. You are not authorized and nor should you rely on the Website for legal advice, business advice, or advice of any kind. You act at your own risk in reliance on the contents of the Website. Should you make a decision to act or not act you should contact a licensed attorney in the relevant jurisdiction in which you want or need help. In no way are the owners of, or contributors to, the Website responsible for the actions, decisions, or other behavior taken or not taken by you in reliance upon the Website."
     translations: "Translations"
@@ -946,6 +960,7 @@ en:
   press:
     title: "Press - Bitcoin"
     pagetitle: "Press center"
+    metadescription: "Find Bitcoin facts, terminology, statistics, media resources, project information, and independent experts for accurate press coverage."
     summary: "Find interviewees, answers and high quality press materials."
     volunteer: "Interviewees"
     volunteernonprofit: "Communicate with the <a href=\"https://bitcoincore.org/en/contact\">Bitcoin Core Project</a> or local <a href=\"#community##[community.non-profit]\">non-profit organizations</a>."
@@ -953,6 +968,7 @@ en:
   privacy:
     title: "Privacy Policy - Bitcoin"
     pagetitle: "Privacy Policy"
+    metadescription: "Read the bitcoin.org privacy policy to understand the information the site collects, how cookies and logs are used, and how to contact the project."
     privacytxt1: "This page informs you of our policies regarding the collection, use and disclosure of personal information we receive from users of our site (https://bitcoin.org). We use your personal information to better understand your usage of the site, and to collect traffic statistics."
     privacytxt2: "By using the site, you agree to the collection and use of information in accordance with this policy."
     privacylogdata: "Log Data"
@@ -974,6 +990,7 @@ en:
   protect-your-privacy:
     title: "Protect your privacy - Bitcoin"
     pagetitle: "Protect your privacy"
+    metadescription: "Learn practical ways to improve your Bitcoin privacy, including address reuse, public transaction data, network privacy, and payment practices."
     pagedesc: "Bitcoin is often perceived as an anonymous payment network. But in reality, Bitcoin is probably the most transparent payment network in the world. At the same time, Bitcoin can provide acceptable levels of privacy when used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your privacy</b>."
     traceable: "Understanding Bitcoin traceability"
     traceabletxt: "Bitcoin works with an unprecedented level of transparency that most people are not used to dealing with. All Bitcoin transactions are public, traceable, and permanently stored in the Bitcoin network. Bitcoin addresses are the only information used to define where bitcoins are allocated and where they are sent. These addresses are created privately by each user's wallets. However, once addresses are used, they become tainted by the history of all transactions they are involved with. Anyone can see the balance and all transactions of any address. Since users usually have to reveal their identity in order to receive services or goods, Bitcoin addresses cannot remain fully anonymous. As the blockchain is permanent, it's important to note that something not traceable currently may become trivial to trace in the future. For these reasons, Bitcoin addresses should only be used once and users must be careful not to disclose their addresses."
@@ -990,6 +1007,7 @@ en:
   resources:
     title: "Resources - Bitcoin"
     pagetitle: "Bitcoin Resources"
+    metadescription: "Explore selected Bitcoin resources, including wallets, block explorers, statistics, developer tools, Lightning projects, books, and learning materials."
     pagedesc: "Useful websites and resources about Bitcoin."
     linkwiki: "<a href=\"https://en.bitcoin.it/\">Bitcoin Wiki</a>"
     charts: "Charts & Tools"
@@ -1002,6 +1020,7 @@ en:
   scams:
     title: "Avoid Scams - Bitcoin"
     pagetitle: "Avoid Scams"
+    metadescription: "Learn to recognize and avoid common Bitcoin scams, including phishing, fake exchanges, giveaways, impersonation, malware, ransomware, and Ponzi schemes."
     summary: "Familiarize yourself with some of the most commonly observed bitcoin scams to help protect yourself and your finances. Three principles cover the foundation of avoiding most of these: bitcoin transactions are irreversible, so verify before you send; verify the entire receiving address, not just the first or last characters; and remember that no legitimate person, business, or support team will ever ask for your seed phrase or private key."
     table: "Types of Scams"
     address-poisoning: "Address Poisoning"
@@ -1055,6 +1074,7 @@ en:
   secure-your-wallet:
     title: "Securing your wallet - Bitcoin"
     pagetitle: "Securing your wallet"
+    metadescription: "Learn how to secure a Bitcoin wallet with strong backups, offline storage, encryption, multisignature protection, and safe recovery practices."
     summary: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. <b>Always remember that it is your responsibility to adopt good practices in order to protect your money</b>. If you are new to some of the terms used here, the <a href=\"#vocabulary#\">vocabulary</a> page explains them."
     everyday: "Small amounts for everyday uses"
     everydaytxt: "A Bitcoin wallet is like a wallet with cash. If you wouldn't keep a thousand dollars in your pocket, you might want to have the same consideration for your Bitcoin wallet. In general, it is a good practice to keep only small amounts of bitcoins on your computer or mobile device for everyday use and to keep the remaining part of your funds in a safer environment."
@@ -1095,6 +1115,7 @@ en:
   spend-bitcoin:
     title: "Spending Bitcoin - Bitcoin"
     pagetitle: "Spending Bitcoin"
+    metadescription: "Learn how to spend bitcoin online and in person, use Bitcoin and Lightning payments, and find merchants and services that accept bitcoin."
     summary: "There are thousands of businesses, across the globe, that accept Bitcoin."
     business-map: "Find local businesses"
     business-map-text: "Many local businesses, like cafes, restaurants, and shops, accept Bitcoin. You can use <a href=\"https://btcmap.org/\">btcmap.org</a>, an open-source map built on open data, to browse thousands of them across the globe. Many in-person payments are made over the Lightning Network, a payment layer built on top of Bitcoin that makes payments instant and keeps fees low. Acceptance now reaches national chains: <a href=\"https://www.steaknshake.com/\">Steak 'n Shake</a>, for example, takes Lightning payments at its restaurants across the United States."
@@ -1109,6 +1130,7 @@ en:
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
+    metadescription: "Discover ways to support Bitcoin by running a node, contributing code or translations, educating others, and helping the network and community."
     summary: "Bitcoin was born from a small community and has grown fast. There are a lot of things you can do to support it and help others learn more."
     use: "Using Bitcoin"
     usetxt: "<a href=\"#getting-started#\">Using Bitcoin</a> is the first thing you can do to support Bitcoin. You can use Bitcoin to send and receive payments anywhere in the world, without intermediaries. You can accept payments and make purchases with Bitcoin."
@@ -1133,6 +1155,7 @@ en:
   vocabulary:
     title: "Vocabulary - Bitcoin"
     pagetitle: "Some Bitcoin words you might hear"
+    metadescription: "Understand common Bitcoin terms including addresses, blocks, mining, private keys, recovery phrases, wallets, fees, Taproot, and Lightning."
     summary: "Bitcoin provides a new approach to payments and, as such, there are some new words that might become a part of your vocabulary."
     table: "Table of contents"
     address: "Address"
@@ -1186,6 +1209,7 @@ en:
   you-need-to-know:
     title: "Some things you need to know - Bitcoin"
     pagetitle: "Some things you need to know"
+    metadescription: "Understand Bitcoin risks and responsibilities before using it, including price volatility, irreversible payments, wallet security, privacy, and taxes."
     summary: "If you're getting started with Bitcoin, there are a few things you should know. Bitcoin lets you exchange money and transact in a different way than you normally do. As such, you should take time to inform yourself before using Bitcoin for any serious transaction. Bitcoin should be treated with the same care as your regular wallet, or even more in some cases!"
     secure: "Securing your wallet"
     securetxt: "Like in real life, your wallet must be secured. Bitcoin makes it possible to transfer value anywhere in a very easy way and it allows you to be in control of your money. Such great features also come with great security concerns. At the same time, Bitcoin can provide very high levels of security if used correctly. Always remember that it is your responsibility to adopt good practices in order to protect your money. <a href=\"#secure-your-wallet#\">Read more about securing your wallet</a>."
@@ -1214,6 +1238,32 @@ en:
     experimentaltxt: "Bitcoin continues to evolve through active development. Improvements make the network more capable, but can also introduce new challenges as adoption grows. During these growing pains you might encounter increased fees, slower confirmations, or even more severe issues. Be prepared for problems and consult a technical expert before making any major investments, but keep in mind that nobody can predict Bitcoin's future."
     tax: "Government taxes and regulations"
     taxtxt: "Bitcoin is not an official currency. That said, most jurisdictions still require you to pay income, sales, payroll, and capital gains taxes on anything that has value, including bitcoins. It is your responsibility to ensure that you adhere to <a href=\"https://en.wikipedia.org/wiki/Legality_of_bitcoin_by_country\">tax and other legal or regulatory mandates</a> issued by your government and/or local municipalities."
+  full-node:
+    metadescription: "Learn how to run a Bitcoin full node, including hardware, storage and bandwidth requirements, Bitcoin Core setup, pruning, networking, and security."
+  alerts:
+    metadescription: "Review archived Bitcoin.org network alerts and security notices, including their dates, historical context, and related updates."
+  site-blog:
+    metadescription: "Browse the Bitcoin.org blog archive for project announcements, contributor updates, Bitcoin Core news, and articles published from 2015 to 2019."
+  version-history:
+    metadescription: "Browse Bitcoin Core version history and release notes, including publication dates, upgrade information, bug fixes, and security updates."
+  bitcoin-core-overview:
+    metadescription: "Learn about Bitcoin Core, the open-source software that validates the Bitcoin blockchain, supports the peer-to-peer network, and includes a wallet."
+  bitcoin-core-feature-overview:
+    metadescription: "Explore Bitcoin Core features for validation, privacy, network support, system requirements, and its graphical user interface."
+  bitcoin-core-requirements:
+    metadescription: "Review the operating system, storage, memory, bandwidth, and hardware requirements for running the current version of Bitcoin Core."
+  bitcoin-core-validation:
+    metadescription: "Learn how Bitcoin Core independently validates blocks and transactions to enforce Bitcoin consensus rules without trusting a third party."
+  bitcoin-core-privacy:
+    metadescription: "Learn how Bitcoin Core handles transaction and network privacy, what information may be exposed, and which settings affect privacy."
+  bitcoin-core-user-interface:
+    metadescription: "Explore the Bitcoin Core graphical interface for sending and receiving bitcoin, managing transactions, configuring settings, and monitoring the node."
+  bitcoin-core-donate-bandwidth:
+    metadescription: "Learn how Bitcoin Core supports the peer-to-peer network by relaying blocks and transactions and how to configure inbound connections and bandwidth."
+  bitcoin-core-help:
+    metadescription: "Find help for installing, configuring, and troubleshooting Bitcoin Core through documentation, communities, issue trackers, and support channels."
+  bitcoin-core-contribute:
+    metadescription: "Learn how to contribute to Bitcoin Core through code review, testing, documentation, translations, issue reporting, and technical support."
   layout:
     menu-about-us: "About bitcoin.org"
     menu-bitcoin-for-businesses: Businesses

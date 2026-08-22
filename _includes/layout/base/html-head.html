@@ -4,18 +4,34 @@ https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png?{{site.time | date: '%s'}}" />
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title | escape }}{% endif %}</title>
-{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription | escape }}">{% elsif page.description %}<meta name="description" content="{{ page.description | escape }}">{% endif %}
+{% capture metadescription %}{% translate metadescription {{page.id}} {{page.lang}} %}{% endcapture %}
+{% if metadescription != '' %}
+<meta name="description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta name="description" content="{{ page.description | escape }}">
+{% endif %}
 <meta property="og:site_name" content="bitcoin.org">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if title != '' %}{{ title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
-{% if metadescription != '' %}<meta property="og:description" content="{{ metadescription | escape }}">{% elsif page.description %}<meta property="og:description" content="{{ page.description | escape }}">{% endif %}
-<meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url | escape }}{% else %}https://bitcoin.org{{ page.url }}{% endif %}">
+{% if metadescription != '' %}
+<meta property="og:description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta property="og:description" content="{{ page.description | escape }}">
+{% endif %}
+<meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url | escape }}{% else %}https://bitcoin.org{{ page.url | escape }}{% endif %}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title != '' %}{{ title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+{% if metadescription != '' %}
+<meta name="twitter:description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta name="twitter:description" content="{{ page.description | escape }}">
+{% endif %}
+<meta name="twitter:image" content="https://bitcoin.org/img/icons/opengraph.png">
 {% include layout/base/hreflang.html %}
 <link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">
