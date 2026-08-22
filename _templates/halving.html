@@ -2,17 +2,9 @@
 # This file is licensed under the MIT License (MIT) available on
 # https://opensource.org/licenses/MIT.
 
-layout: base
+layout: sidebar
 id: halving
 ---
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle %}</h1>
-    <p class="summarytxt">{% translate summary %}</p>
-  </div>
-</div>
-<div class="container">
-
   <div class="halving-stats">
     <div class="halving-stat"><span class="halving-stat-value" id="halving-remaining">&mdash;</span><span class="halving-stat-label">{% translate statremaining %}</span></div>
     <div class="halving-stat"><span class="halving-stat-value" id="halving-date">&mdash;</span><span class="halving-stat-label">{% translate statdate %}</span></div>
@@ -23,13 +15,13 @@ id: halving
   <p>{% translate progresstxt %}</p>
   <div class="halving-progress"><div class="halving-progress-bar" id="halving-progress-bar"></div></div>
 
-  <h2>{% translate chartsubsidy %}</h2>
+  <h2 id="reward-chart">{% translate chartsubsidy %}</h2>
   <div class="halving-chart-wrap"><canvas id="halving-subsidy-chart" width="900" height="420" data-label-x="{% translate chartblocks %}"></canvas></div>
 
-  <h2>{% translate chartsupply %}</h2>
+  <h2 id="supply-chart">{% translate chartsupply %}</h2>
   <div class="halving-chart-wrap"><canvas id="halving-supply-chart" width="900" height="420" data-label-cap="{% translate chartcap %}" data-label-x="{% translate chartblocks %}"></canvas></div>
 
-  <h2>{% translate historytitle %}</h2>
+  <h2 id="history">{% translate historytitle %}</h2>
   <table class="halving-table">
     <thead><tr><th>{% translate colevent %}</th><th>{% translate coldate %}</th><th>{% translate colblock %}</th><th>{% translate colreward %}</th></tr></thead>
     <tbody>
@@ -41,14 +33,13 @@ id: halving
     </tbody>
   </table>
 
-  <h2>{% translate whatis %}</h2>
+  <h2 id="what-is-the-halving">{% translate whatis %}</h2>
   <p>{% translate whatistxt %}</p>
-  <h2>{% translate why %}</h2>
+  <h2 id="why-fixed-supply">{% translate why %}</h2>
   <p>{% translate whytxt %}</p>
-  <h2>{% translate miners %}</h2>
+  <h2 id="miners">{% translate miners %}</h2>
   <p>{% translate minerstxt %}</p>
-  <h2>{% translate howest %}</h2>
-  <p>{% translate howesttxt %}</p>
+  <h2 id="date-estimate">{% translate howest %}</h2>
+  <p class="halving-end">{% translate howesttxt %}</p>
 
-</div>
 <script src="/js/halving.js?{{site.time | date: '%s'}}"></script>
