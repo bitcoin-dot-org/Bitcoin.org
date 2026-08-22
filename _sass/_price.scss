@@ -122,20 +122,12 @@ https://opensource.org/licenses/MIT.
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 29px;
     height: 29px;
-    color: #fff;
-    background: #f7931a;
-    background: var(--price-orange);
-    border-radius: 50%;
-    font-size: 125%;
-    font-weight: 600;
+}
+.price-coin svg {
+    width: 100%;
+    height: 100%;
 }
 
 .price-hero__value-row {
