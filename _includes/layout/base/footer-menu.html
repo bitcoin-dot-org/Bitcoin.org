@@ -82,6 +82,11 @@ https://opensource.org/licenses/MIT.
           <a href="/bips/">{% translate menu-bips layout %}</a>
         </li>
         {% if page.lang == 'en' %}
+        <li{% if page.id == 'halving' %} class="active"{% endif %}>
+          <a href="/{{ page.lang }}/{% translate halving url %}">{% translate menu-halving layout %}</a>
+        </li>
+        {% endif %}
+        {% if page.lang == 'en' %}
         <li>
           <a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a>
         </li>
