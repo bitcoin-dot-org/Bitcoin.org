@@ -6,7 +6,6 @@ id: zeus
 title: "ZEUS"
 titleshort: "ZEUS"
 compat: "mobile android ios"
-user: beginner
 level: 2
 platform:
   - mobile:
@@ -17,7 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=app.zeusln.zeus"
         source: "https://github.com/ZeusLN/zeus"
         screenshot: "zeusandroid.png"
-        features: "bech32 lightning segwit"
+        features: "bech32 lightning segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
@@ -34,7 +33,7 @@ platform:
         link: "https://apps.apple.com/app/zeus-wallet/id1456038895"
         source: "https://github.com/ZeusLN/zeus"
         screenshot: "zeusios.png"
-        features: "bech32 lightning segwit"
+        features: "bech32 lightning segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationspvservers"
