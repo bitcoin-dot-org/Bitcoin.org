@@ -7,12 +7,22 @@ https://opensource.org/licenses/MIT.
   <div class="container">
 
     <div class="wallet-selector-row">
-      <button id="sidebarOpenButton" class="sidebar-selector-btn-open">{% translate wallet-selector-filters choose-your-wallet %}</button>
+      <button type="button" id="sidebarOpenButton" class="sidebar-selector-btn-open" aria-controls="sidebarSelector" aria-expanded="false">
+        <span class="wallet-filter-button-icon" aria-hidden="true"></span>
+        <span>{% translate wallet-selector-filters choose-your-wallet %}</span>
+        <span class="wallet-filter-active-count js-wallet-filter-active-count" hidden>0</span>
+      </button>
       <div id="sidebarSelector" class="sidebar-selector">
-        <button id="sidebarCloseButton" class="sidebar-selector-btn-close">
-          <img src="/img/icons/close-selector.svg" alt="Close">
-        </button>
-        <div class="sidebar-selector-section">
+        <div class="sidebar-selector-top">
+          <p id="sidebarSelectorTitle" class="sidebar-selector-eyebrow">
+            <span>{% translate wallet-selector-filters choose-your-wallet %}</span>
+            <span class="wallet-filter-active-count js-wallet-filter-active-count" hidden>0</span>
+          </p>
+          <button type="button" id="sidebarCloseButton" class="sidebar-selector-btn-close" aria-controls="sidebarSelector" aria-label="{% translate wallet-selector-filters choose-your-wallet %}">
+            <img src="/img/icons/close-selector.svg" alt="">
+          </button>
+        </div>
+        <div class="sidebar-selector-section sidebar-selector-platform-section">
           <h3 id="sidebarOsSelectorTitle" class="sidebar-selector-title">{% translate wallet-selector-operating-system choose-your-wallet %}</h3>
           <div class="sidebar-selector-platforms">
             <div class="sidebar-selector-platforms-row">
@@ -28,17 +38,19 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="android" data-path="/{{page.lang}}/wallets/mobile/android"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="android" data-path="/{{page.lang}}/wallets/mobile/android/" data-text="{% translate platformandroid choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_android.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_android_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate platformandroid choose-your-wallet %}</span>
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="ios" data-path="/{{page.lang}}/wallets/mobile/ios/" />
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="ios" data-path="/{{page.lang}}/wallets/mobile/ios/" data-text="{% translate platformios choose-your-wallet %}" />
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate platformios choose-your-wallet %}</span>
                     </div>
                   </label>
                 </div>
@@ -55,24 +67,27 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="linux" data-path="/{{page.lang}}/wallets/desktop/linux/" />
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="linux" data-path="/{{page.lang}}/wallets/desktop/linux/" data-text="{% translate platformlinux choose-your-wallet %}" />
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_linux.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_linux_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate platformlinux choose-your-wallet %}</span>
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="mac" data-path="/{{page.lang}}/wallets/desktop/mac/"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="mac" data-path="/{{page.lang}}/wallets/desktop/mac/" data-text="{% translate platformmac choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate platformmac choose-your-wallet %}</span>
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="windows" data-path="/{{page.lang}}/wallets/desktop/windows/"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="windows" data-path="/{{page.lang}}/wallets/desktop/windows/" data-text="{% translate platformwindows choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_windows.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_windows_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate platformwindows choose-your-wallet %}</span>
                     </div>
                   </label>
                 </div>
@@ -91,10 +106,11 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="hardware" data-path="/{{page.lang}}/wallets/hardware/"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="hardware" data-path="/{{page.lang}}/wallets/hardware/" data-text="{% translate walletcathardware choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_hardware.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_hardware_bright.svg" alt="" class="platform-radio-icon-active">
+                      <span class="platform-radio-label">{% translate walletcathardware choose-your-wallet %}</span>
                     </div>
                   </label>
                 </div>
@@ -115,8 +131,8 @@ https://opensource.org/licenses/MIT.
                   <label class="platform-radio-wrapper">
                     <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="web" data-path="/{{page.lang}}/wallets/web/" />
                     <div class="platform-radio-custom">
-                      <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
-                      <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
+                      <img src="/img/os/wallet_menu_web.svg" alt="" class="platform-radio-icon-inactive">
+                      <img src="/img/os/wallet_menu_web_bright.svg" alt="" class="platform-radio-icon-active">
                     </div>
                   </label>
                 </div>
@@ -126,7 +142,7 @@ https://opensource.org/licenses/MIT.
             </div>
           </div>
         </div>
-        <div class="sidebar-selector-section">
+        <div class="sidebar-selector-section sidebar-selector-user-section">
           <h3 id="sidebarHardwareSelector" class="sidebar-selector-title">{% translate wallet-selector-user-type choose-your-wallet %}</h3>
 
           <div class="sidebar-selector-types-row">
@@ -136,7 +152,7 @@ https://opensource.org/licenses/MIT.
                 <p class="user-radio-text">{% translate wizard-user-new choose-your-wallet %}</p>
               </label>
               <div class="sidebar-selector-info">
-                <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                 <div class="tooltip-trigger">
                   <img src="/img/icons/info-alt.svg" alt="info">
                   <div class="wallet-selector-tooltip tooltip">
@@ -151,7 +167,7 @@ https://opensource.org/licenses/MIT.
                 <p class="user-radio-text">{% translate wizard-user-experienced choose-your-wallet %}</p>
               </label>
               <div class="sidebar-selector-info">
-                <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                 <div class="tooltip-trigger">
                   <img src="/img/icons/info-alt.svg" alt="info">
                   <div class="wallet-selector-tooltip tooltip">
@@ -172,7 +188,7 @@ https://opensource.org/licenses/MIT.
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
                 <div id="importantSelectedBox" class="checkboxes-acc-selected-list"></div>
-                <button id="importantAccordionButton" class="checkboxes-acc-btn">
+                <button id="importantAccordionButton" class="checkboxes-acc-btn" aria-label="{% translate wallet-selector-criteria choose-your-wallet %}">
                   <img src="/img/icons/angle.svg" alt="angle">
                 </button>
               </div>
@@ -183,7 +199,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-control choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -198,7 +214,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-validation choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -213,7 +229,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-transparency choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -228,7 +244,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-environment choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -243,7 +259,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-privacy choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -258,7 +274,7 @@ https://opensource.org/licenses/MIT.
                     <div class="checkbox-text">{% translate wizard-criteria-fees choose-your-wallet %}</div>
                   </label>
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -277,7 +293,7 @@ https://opensource.org/licenses/MIT.
             <div class="checkboxes-acc">
               <div class="checkboxes-acc-header">
                 <div id="featuresSelectedBox" class="checkboxes-acc-selected-list"></div>
-                <button class="checkboxes-acc-btn">
+                <button class="checkboxes-acc-btn" aria-label="{% translate wallet-selector-features choose-your-wallet %}">
                   <img src="/img/icons/angle.svg" alt="angle">
                 </button>
               </div>
@@ -289,7 +305,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -306,7 +322,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -323,7 +339,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -340,7 +356,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -357,7 +373,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -374,7 +390,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -391,7 +407,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -408,7 +424,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -425,7 +441,7 @@ https://opensource.org/licenses/MIT.
                   </label>
 
                   <div class="sidebar-selector-info">
-                    <p class="sidebar-selector-info-text">Not available</p>
+                <p class="sidebar-selector-info-text">{% translate helper-feature-unavailable choose-your-wallet %}</p>
                     <div class="tooltip-trigger">
                       <img src="/img/icons/info-alt.svg" alt="info">
                       <div class="wallet-selector-tooltip tooltip">
@@ -442,14 +458,25 @@ https://opensource.org/licenses/MIT.
 
       </div>
 
+      <button type="button" id="sidebarScrim" class="sidebar-selector-scrim" tabindex="-1" aria-hidden="true"></button>
+
       <div class="wallet-selector-content">
 
         <div class="wallet-table-wrapper wallet-selector-section" data-section-name="walletsList">
 
-          <h2 id="walletTableTitle" class="wallet-selector-title">{% translate wallet-selector-results choose-your-wallet %}</h2>
+          <div class="wallet-results-heading">
+            <div>
+              <p class="wallet-results-eyebrow">{% translate wallet-selector-browse choose-your-wallet %}</p>
+              <h2 id="walletTableTitle" class="wallet-selector-title">{% translate wallet-selector-results choose-your-wallet %}</h2>
+            </div>
+            <div class="wallet-result-count" aria-live="polite" aria-atomic="true">
+              <strong id="walletMatchCount">0</strong>
+              <span>{% translate wallet-selector-results-wallets choose-your-wallet %}</span>
+            </div>
+          </div>
 
           <div class="table-sort">
-            <h3 id="walletTableSortTitle" class="table-sort-title">{% translate wallet-selector-sort choose-your-wallet %}:</h3>
+            <h3 id="walletTableSortTitle" class="table-sort-title">{% translate wallet-selector-criteria choose-your-wallet %}:</h3>
             <div id="tableAccordion" class="acc">
               <button id="tableAccordionButton" class="acc-btn">{% translate wizard-criteria-control choose-your-wallet %}</button>
               <div class="acc-content">
@@ -498,8 +525,9 @@ https://opensource.org/licenses/MIT.
                     data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% if platform.name == 'hardware' and checkValue contains 'checkneutral' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
                   >
                     <div class="wallet-table-data">
-                      <img class="wallet-img" src="/img/wallet/{{id}}.png" alt="{{ wallet.title }}" />
+                      <img class="wallet-img" src="/img/wallet/{{id}}.png" alt="" />
                       <span class="wallet-label">{{wallet.titleshort}}</span>
+                      <span class="wallet-row-arrow" aria-hidden="true">&#8594;</span>
                     </div>
                     {% for check in os.check %}
                       {% assign checkName = check[0] %}
@@ -549,7 +577,7 @@ https://opensource.org/licenses/MIT.
 
         </div>
 
-        <div class="wallet-selector-section empty-box" data-section-name="noMatch">
+        <div class="wallet-selector-section empty-box" data-section-name="noMatch" role="status" aria-live="polite">
           <img src="/img/icons/empty.svg" alt="wallet with magnifier">
           <h2 id="noMatchBoxTitle" class="empty-box-title">{% translate wallet-selector-results-no-match choose-your-wallet %}</h2>
           <p class="empty-box-text">{% translate wallet-selector-results-no-match-cta choose-your-wallet %}</p>

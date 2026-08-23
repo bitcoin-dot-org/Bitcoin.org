@@ -3,41 +3,38 @@ This file is licensed under the MIT License (MIT) available on
 https://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="wizard js-wizard choose-wallet-screen" data-screen-name="wizard">
+<section class="wizard js-wizard choose-wallet-screen" data-screen-name="wizard">
   <div class="container">
-    <div class="helper-row">
-      <div class="helper-content">
-        <div>
-          {% include layout/base/helper-step-1.html %}
-          {% include layout/base/helper-step-2.html %}
-          {% include layout/base/helper-step-3.html %}
-          {% include layout/base/helper-step-4.html %}
+    <div class="wallet-finder-wizard-shell wallet-finder-surface">
+      <nav class="wallet-finder-progress" aria-label="{% translate helper-intro-title choose-your-wallet %}">
+        <button type="button" class="wallet-finder-progress-step js-progress-nav" data-selector="1" data-progress-step="1">
+          <span class="wallet-finder-progress-number">1</span>
+          <span class="wallet-finder-progress-label">{% translate wallet-selector-operating-system choose-your-wallet %}</span>
+        </button>
+        <button type="button" class="wallet-finder-progress-step js-progress-nav" data-selector="2" data-progress-step="2" disabled>
+          <span class="wallet-finder-progress-number">2</span>
+          <span class="wallet-finder-progress-label">{% translate wallet-selector-user-type choose-your-wallet %}</span>
+        </button>
+        <button type="button" class="wallet-finder-progress-step js-progress-nav" data-selector="3" data-progress-step="3" disabled>
+          <span class="wallet-finder-progress-number">3</span>
+          <span class="wallet-finder-progress-label">{% translate wallet-selector-criteria choose-your-wallet %}</span>
+        </button>
+        <button type="button" class="wallet-finder-progress-step js-progress-nav" data-selector="4" data-progress-step="4" disabled>
+          <span class="wallet-finder-progress-number">4</span>
+          <span class="wallet-finder-progress-label">{% translate wallet-selector-features choose-your-wallet %}</span>
+        </button>
+      </nav>
+
+      <div class="helper-row">
+        <div class="helper-content">
+          <div>
+            {% include layout/base/helper-step-1.html %}
+            {% include layout/base/helper-step-2.html %}
+            {% include layout/base/helper-step-3.html %}
+            {% include layout/base/helper-step-4.html %}
+          </div>
         </div>
       </div>
-<!--  <div class="discover">
-        <h2 id="discoverBoxTitle" class="discover-title">Discover more</h2>
-        <div class="discover-links-list" data-links-step="1">
-          <a href="#" class="discover-link">Read about each wallet type</a>
-          <a href="#" class="discover-link">Which wallet is the best?</a>
-        </div>
-        <div class="discover-links-list" data-links-step="2">
-          <a href="#" class="discover-link">Learn about Bitcoin</a>
-        </div>
-        <div class="discover-links-list" data-links-step="3">
-          <a href="#" class="discover-link">Read more about Control</a>
-          <a href="#" class="discover-link">Read more about Validation</a>
-          <a href="#" class="discover-link">Read more about Fees</a>
-          <a href="#" class="discover-link">Read more about Transparency</a>
-          <a href="#" class="discover-link">Read more about Environment</a>
-          <a href="#" class="discover-link">Read more about Privacy</a>
-        </div>
-        <div class="discover-links-list" data-links-step="4">
-          <a href="#" class="discover-link">Read more about Multisig</a>
-          <a href="#" class="discover-link">Read more about Segwit</a>
-          <a href="#" class="discover-link">Read more about Bech32</a>
-          <a href="#" class="discover-link">Read more about Lightning Network</a>
-        </div>
-      </div> -->
     </div>
   </div>
-</div>
+</section>

@@ -3,21 +3,27 @@ This file is licensed under the MIT License (MIT) available on
 https://opensource.org/licenses/MIT.
 {% endcomment %}
 
-<div class="helper-intro choose-wallet-screen" data-screen-name="intro">
+<section class="helper-intro choose-wallet-screen" data-screen-name="intro" aria-labelledby="wizardIntroTitle">
   <div class="container">
-    <div class="helper-intro-row">
-      <div class="helper-intro-img-wrapper">
-        <img src="/img/helper/helper-illustration.svg" alt="{% translate helper-illustration choose-your-wallet %}">
-      </div>
+    <div class="helper-intro-row wallet-finder-surface">
       <div class="helper-intro-description">
+        <p class="wallet-finder-section-kicker">{% translate wallet-selector-browse choose-your-wallet %}</p>
         <h2 id="wizardIntroTitle" class="section-title helper-intro-title">{% translate helper-intro-title choose-your-wallet %}</h2>
         <p class="helper-intro-text">{% translate helper-intro-text choose-your-wallet %}</p>
         <div class="helper-navigation helper-intro-navigation">
-          <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
-          <button class="helper-next-btn btn-bright js-helper-nav-btn visible" data-selector="1">{% translate helper-next-btn choose-your-wallet %}</button>
+          <button type="button" class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
+          <button type="button" class="helper-next-btn btn-bright js-helper-nav-btn visible" data-selector="1">
+            <span>{% translate helper-next-btn choose-your-wallet %}</span>
+            <span class="wallet-finder-button-arrow" aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+      </div>
+      <div class="helper-intro-img-wrapper">
+        <div class="helper-intro-visual">
+          <img src="/img/helper/helper-illustration.svg" alt="{% translate helper-illustration choose-your-wallet %}">
         </div>
       </div>
     </div>
 
   </div>
-</div>
+</section>

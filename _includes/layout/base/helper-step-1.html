@@ -12,7 +12,7 @@ https://opensource.org/licenses/MIT.
       <div class="helper-selected-block">
         <div class="row">
           <p class="helper-selected-filter js-selected-platform"></p>
-          <button class="helper-change-btn js-helper-nav-btn" data-selector="1">{% translate helper-change-btn choose-your-wallet %}</button>
+          <button type="button" class="helper-change-btn js-helper-nav-btn" data-selector="1">{% translate helper-change-btn choose-your-wallet %}</button>
         </div>
       </div>
     </div>
@@ -23,17 +23,19 @@ https://opensource.org/licenses/MIT.
         <h3 id="wizardMobileTitle" class="helper-platforms-title">{% translate wizard-mobile-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="android" data-text="Mobile / Android"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="android" data-text="{% translate platformandroid choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_android.svg" alt="android" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_android_bright.svg" alt="android" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_android.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_android_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate platformandroid choose-your-wallet %}</span>
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="ios" data-text="Mobile / iOS"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="ios" data-text="{% translate platformios choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_mac.svg" alt="ios" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_mac_bright.svg" alt="ios" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate platformios choose-your-wallet %}</span>
             </div>
           </label>
         </div>
@@ -46,24 +48,27 @@ https://opensource.org/licenses/MIT.
         <h3 id="wizardDesktopTitle" class="helper-platforms-title">{% translate wizard-desktop-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="linux" data-text="Desktop / Linux"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="linux" data-text="{% translate platformlinux choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_linux.svg" alt="linux" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_linux_bright.svg" alt="linux" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_linux.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_linux_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate platformlinux choose-your-wallet %}</span>
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="mac" data-text="Desktop / OS X"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="mac" data-text="{% translate platformmac choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_mac.svg" alt="mac" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_mac_bright.svg" alt="mac" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate platformmac choose-your-wallet %}</span>
             </div>
           </label>
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="windows" data-text="Desktop / Windows"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="windows" data-text="{% translate platformwindows choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_windows.svg" alt="windows" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_windows_bright.svg" alt="windows" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_windows.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_windows_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate platformwindows choose-your-wallet %}</span>
             </div>
           </label>
         </div>
@@ -82,8 +87,8 @@ https://opensource.org/licenses/MIT.
           <label class="helper-radio-wrapper">
             <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="web" data-text="Web"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_web.svg" alt="web" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_web_bright.svg" alt="web" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_web.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_web_bright.svg" alt="" class="platform-radio-icon-active">
             </div>
           </label>
         </div>
@@ -98,10 +103,11 @@ https://opensource.org/licenses/MIT.
         <h3 id="wizardHardwareTitle" class="helper-platforms-title">{% translate wizard-hardware-title choose-your-wallet %}</h3>
         <div class="helper-platforms-row">
           <label class="helper-radio-wrapper">
-            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="hardware" data-text="Hardware"/>
+            <input type="radio" class="platform-radio js-wizard-selector js-selector js-helper-radio" name="platform" value="hardware" data-text="{% translate walletcathardware choose-your-wallet %}"/>
             <div class="platform-radio-custom helper-platforms-radio">
-              <img src="/img/os/wallet_menu_hardware.svg" alt="hardware" class="platform-radio-icon-inactive">
-              <img src="/img/os/wallet_menu_hardware_bright.svg" alt="hardware" class="platform-radio-icon-active">
+              <img src="/img/os/wallet_menu_hardware.svg" alt="" class="platform-radio-icon-inactive">
+              <img src="/img/os/wallet_menu_hardware_bright.svg" alt="" class="platform-radio-icon-active">
+              <span class="helper-platform-label">{% translate walletcathardware choose-your-wallet %}</span>
             </div>
           </label>
         </div>
@@ -113,8 +119,11 @@ https://opensource.org/licenses/MIT.
     </div>
 
     <div class="helper-navigation">
-      <button class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
-      <button class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="2" data-button-type="platform">{% translate helper-next-btn choose-your-wallet %}</button>
+      <button type="button" class="skip-helper-btn js-skip-btn">{% translate skip-helper-btn choose-your-wallet %}</button>
+      <button type="button" class="helper-next-btn btn-bright js-helper-nav-btn" data-selector="2" data-button-type="platform">
+        <span>{% translate helper-next-btn choose-your-wallet %}</span>
+        <span class="wallet-finder-button-arrow" aria-hidden="true">&#8594;</span>
+      </button>
     </div>
   </div>
 </div>

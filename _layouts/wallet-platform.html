@@ -5,21 +5,23 @@
 layout: base
 ---
 
-<div class="hero">
-  <div class="container hero-container">
-    <h1>{% translate pagetitle choose-your-wallet %}</h1>
-    <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+<main class="wallet-finder-page">
+  <div class="hero">
+    <div class="container hero-container">
+      <h1>{% translate pagetitle choose-your-wallet %}</h1>
+      <p class="summary">{% translate pagedesc choose-your-wallet %}</p>
+    </div>
   </div>
-</div>
 
-{% include layout/base/helper-intro.html %}
-{% include layout/base/helper-wizard.html %}
-{% include layout/base/wallets-selector.html %}
+  {% include layout/base/helper-intro.html %}
+  {% include layout/base/helper-wizard.html %}
+  {% include layout/base/wallets-selector.html %}
 
-<noscript>
-  {% include layout/base/wallets-menu.html %}
-  {% include layout/base/wallets-menu-mobile.html %}
-  {% include layout/base/wallets-list.html %}
-</noscript>
+  <noscript>
+    {% include layout/base/wallets-menu.html %}
+    {% include layout/base/wallets-menu-mobile.html %}
+    {% include layout/base/wallets-list.html %}
+  </noscript>
+</main>
 
 <script type="text/javascript" src="/js/walletSelector.js"></script>

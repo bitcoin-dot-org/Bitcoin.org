@@ -1,8 +1,17 @@
+(function() {
+'use strict';
+
+var walletFinderPage = document.querySelector('.wallet-finder-page');
+if (!walletFinderPage) return;
+
 var linksList = Array.prototype.slice.call(document.querySelectorAll('.wallet-link'));
 var selectorsList = Array.prototype.slice.call(document.querySelectorAll('.js-wallet-selector'));
 var sidebarOpenButton = document.getElementById('sidebarOpenButton');
 var sidebarSelector = document.getElementById('sidebarSelector');
+var sidebarScrim = document.getElementById('sidebarScrim');
+var walletSelectorScreen = document.querySelector('.wallet-selector');
 var platformSelectors = document.querySelectorAll('.platform-radio');
+var sidebarMediaQuery = window.matchMedia('(max-width: 820px)');
 
 function queryStringToArray() {            
   var categories = ['platform', 'user', 'important', 'features'];
@@ -40,6 +49,10 @@ function setUrlParameter(parameter, value) {
   history.pushState(null, null, updateQueryStringParameter(parameter, value));
 }
 
+function replaceUrlParameter(parameter, value) {
+  history.replaceState(null, null, updateQueryStringParameter(parameter, value));
+}
+
 function checkIfFiltersInclude(categories, filters) {
   for (var i = 0; i < filters.length; i++) {
     var filter = filters[i];
@@ -52,12 +65,87 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
+function createWalletOrderSeed() {
+  if (window.crypto && window.crypto.getRandomValues && window.Uint32Array) {
+    try {
+      var randomValues = new Uint32Array(1);
+      window.crypto.getRandomValues(randomValues);
+      return randomValues[0];
+    } catch (error) {
+      // Fall back when random values are blocked by the browser.
+    }
+  }
+
+  return (Math.floor(Math.random() * 4294967296) ^ new Date().getTime()) >>> 0;
+}
+
+function getWalletOrderSeed() {
+  var storageKey = 'bitcoinOrgWalletOrderSeedV1';
+  var storedSeed = null;
+
+  try {
+    storedSeed = window.sessionStorage.getItem(storageKey);
+  } catch (error) {
+    storedSeed = null;
+  }
+
+  if (storedSeed !== null && /^\d+$/.test(storedSeed)) {
+    return Number(storedSeed) >>> 0;
+  }
+
+  var seed = createWalletOrderSeed();
+
+  try {
+    window.sessionStorage.setItem(storageKey, String(seed));
+  } catch (error) {
+    // The order remains random for this page load when storage is unavailable.
+  }
+
+  return seed;
+}
+
+function createSeededRandom(seed) {
+  var state = seed >>> 0;
+
+  return function() {
+    state = (state * 1664525 + 1013904223) >>> 0;
+    return state / 4294967296;
+  };
+}
+
+function shuffleWalletRows() {
+  var walletTable = document.querySelector('.wallet-table');
+  if (!walletTable || linksList.length < 2) return;
+
+  var shuffledRows = linksList.slice();
+  var random = createSeededRandom(getWalletOrderSeed());
+
+  for (var i = shuffledRows.length - 1; i > 0; i--) {
+    var randomIndex = Math.floor(random() * (i + 1));
+    var currentRow = shuffledRows[i];
+    shuffledRows[i] = shuffledRows[randomIndex];
+    shuffledRows[randomIndex] = currentRow;
+  }
+
+  var shuffledRowsFragment = document.createDocumentFragment();
+  for (var j = 0; j < shuffledRows.length; j++) {
+    shuffledRowsFragment.appendChild(shuffledRows[j]);
+  }
+  walletTable.appendChild(shuffledRowsFragment);
+
+  linksList = shuffledRows;
+  walletsList = walletTable.querySelectorAll('.wallet-link');
+}
+
 function sortTableColumn(selectedOption) {
   var tableAccordion = document.getElementById('tableAccordion');
   var tableAccordionButton = document.getElementById('tableAccordionButton');
+  var selectedButton = document.querySelector('.table-sort-btn[data-sort="' + selectedOption + '"]');
+  var selectedLabel = selectedButton ? selectedButton.textContent.replace(/^\s+|\s+$/g, '') : selectedOption;
   
-  changeAccordionButtonText(tableAccordionButton, selectedOption);
+  changeAccordionButtonText(tableAccordionButton, selectedLabel);
   tableAccordion.classList.remove('open');
+  tableAccordionButton.setAttribute('aria-expanded', 'false');
 
   var tableCells = document.querySelectorAll('.wallet-table-data[data-cell]');
 
@@ -76,17 +164,23 @@ function displayRelevantScreen(relevantScreenName) {
     if (screen.dataset.screenName ===  relevantScreenName) screen.classList.add('visible');
     else screen.classList.remove('visible');
   }
+
+  if (relevantScreenName !== 'selector' && walletSelectorScreen.classList.contains('filters-open')) {
+    setSidebarVisibility(false, false);
+  }
 }
 
 function displaySelectedHeaderValues(accordionType, selectedFilters, accordion) {
-  if (selectedFilters && accordionType === 'important' || accordionType === 'features') {
+  if (selectedFilters && (accordionType === 'important' || accordionType === 'features')) {
     var text = selectedFilters.split(',').map(function(s) {
-      return s.split('_').join(' ');
+      return getFilterLabel(s);
+    }).filter(function(label) {
+      return label !== '';
     }).join(', ');
     accordion.querySelector('.helper-selected-filter').textContent = text;
   } else if (selectedFilters) {
-    var text = document.querySelector('input[value=' + selectedFilters + ']').dataset.text;
-    accordion.querySelector('.helper-selected-filter').textContent = text;
+    var selectedInput = document.querySelector('.js-wizard-selector[value="' + selectedFilters + '"]');
+    accordion.querySelector('.helper-selected-filter').textContent = selectedInput.dataset.text;
   }
 }
 
@@ -130,9 +224,27 @@ function displayRelevantWizardContent(selectedStep) {
     highlightCompletedHeader(selectedFilters, selectedStep, accordionStep, accordion);
     displaySelectedHeaderValues(accordionType, selectedFilters, accordion);
   }
-  
 
+  updateProgressIndicator(selectedStep);
   checkInputsActivity();
+}
+
+function updateProgressIndicator(selectedStep) {
+  var currentStep = Number(selectedStep);
+  var progressButtons = document.querySelectorAll('.wallet-finder-progress-step');
+
+  for (var i = 0; i < progressButtons.length; i++) {
+    var button = progressButtons[i];
+    var buttonStep = Number(button.dataset.progressStep);
+    var canNavigate = buttonStep === 1 || verifyPreviousStepsChecks(buttonStep);
+
+    button.disabled = !canNavigate;
+    button.classList.toggle('active', buttonStep === currentStep);
+    button.classList.toggle('complete', buttonStep < currentStep);
+
+    if (buttonStep === currentStep) button.setAttribute('aria-current', 'step');
+    else button.removeAttribute('aria-current');
+  }
 }
 
 function scrollToHeader(number) {
@@ -152,8 +264,7 @@ function isInViewport(element) {
 function scrollToNextButton(buttonType) {
   var nextButton = document.querySelector('[data-button-type="' + buttonType + '"]');
   if (!isInViewport(nextButton)) {
-    nextButton.scrollIntoView(false);
-    window.scrollBy(0, 20); 
+    nextButton.scrollIntoView({ block: 'nearest' });
   }
 }
 
@@ -164,7 +275,7 @@ function displayNextButton() {
     var button = nextButtonsList[i];
     var radioType = button.dataset.buttonType;
     var checkedRadio = document.querySelector('.js-helper-radio[name="' + radioType + '"]:checked');
-    if (checkedRadio) button.classList.add('visible');
+    button.classList.toggle('visible', !!checkedRadio);
   }
   
 }
@@ -188,6 +299,7 @@ function disableInputs(isDisabled) {
   for (var i = 0; i < checkboxes.length; i++) {
     var checkbox = checkboxes[i];
     checkbox.disabled = isDisabled;
+    checkbox.parentNode.classList.toggle('disabled', isDisabled);
   }
 }
 
@@ -207,13 +319,10 @@ function checkIfPlatformSelected(filters) {
 }
 
 function highlightCheckedSelectorInputs(filters) {
-  if (checkIfPlatformSelected(filters)) {  
-    for (var i = 0; i < selectorsList.length; i++) {
-      var selector = selectorsList[i];
-      if (filters.indexOf(selector.value) > -1) selector.checked = true;
-      else selector.checked = false;
-    }
-  } 
+  for (var i = 0; i < selectorsList.length; i++) {
+    var selector = selectorsList[i];
+    selector.checked = filters.indexOf(selector.value) > -1;
+  }
 }
 
 function setWalletsVisibility(filters) {
@@ -228,10 +337,27 @@ function setWalletsVisibility(filters) {
 
 function displaySelectedOs() {
   var selectedOs = document.querySelector('.js-platform-radio:checked');
-  var selectedOsValue = selectedOs.value;
-  if (selectedOsValue === 'ios') selectedOsValue = 'iOS';
-  else selectedOsValue = selectedOsValue.charAt(0).toUpperCase() + selectedOsValue.slice(1);
+  var selectedOsValue = selectedOs.dataset.text || selectedOs.value;
   document.getElementById('selectedOs').textContent = selectedOsValue;
+}
+
+function updateWalletMatchCount() {
+  var matchCount = document.querySelectorAll('.wallet-link.visible').length;
+  var matchCountElement = document.getElementById('walletMatchCount');
+
+  if (matchCountElement) matchCountElement.textContent = matchCount;
+}
+
+function updateActiveFilterCount(filters) {
+  var countElements = document.querySelectorAll('.js-wallet-filter-active-count');
+  var activeCount = filters.filter(function(filter) {
+    return filter !== '';
+  }).length;
+
+  for (var i = 0; i < countElements.length; i++) {
+    countElements[i].textContent = activeCount;
+    countElements[i].hidden = activeCount === 0;
+  }
 }
 
 function displaySelectorSection(relevantSectionName) {
@@ -273,7 +399,21 @@ function disableUnavailableInputs() {
   for (var i = 0; i < inputsList.length; i++) {
     var input = inputsList[i];
     var filtersList = queryStringToArray();
-    filtersList.push(input.value);
+
+    if (input.type === 'radio') {
+      var groupInputs = document.getElementsByName(input.name);
+      var groupValues = [];
+
+      for (var groupIndex = 0; groupIndex < groupInputs.length; groupIndex++) {
+        groupValues.push(groupInputs[groupIndex].value);
+      }
+
+      filtersList = filtersList.filter(function(filter) {
+        return groupValues.indexOf(filter) === -1;
+      });
+    }
+
+    if (filtersList.indexOf(input.value) === -1) filtersList.push(input.value);
     
     var matchedWallets = [];
     for (var j = 0; j < walletsList.length; j++) {
@@ -292,7 +432,7 @@ function disableUnavailableInputs() {
       isWalletMatch && matchedWallets.push(wallet);
     }
     
-    if (!matchedWallets.length && input.name !== 'platform') {
+    if (!matchedWallets.length && input.name !== 'platform' && !input.checked) {
       input.disabled = true;
       input.parentNode.classList.add('disabled');
     } else {
@@ -301,9 +441,6 @@ function disableUnavailableInputs() {
     }
   }
 
-  var isNewUserInputDisabled = document.querySelector('.js-wallet-selector[value="beginner"]').disabled;
-  var experiencedUser = document.querySelector('.js-wallet-selector[value="experienced"]');
-  if (isNewUserInputDisabled) experiencedUser.checked = true;
 }
 
 function displayRelevantSelectorContent() {
@@ -311,6 +448,8 @@ function displayRelevantSelectorContent() {
 
   highlightCheckedSelectorInputs(filters);
   setWalletsVisibility(filters);
+  updateWalletMatchCount();
+  updateActiveFilterCount(filters);
   displayRelevantSelectortSection(filters);
   displaySelectedCheckbox();
   disableUnavailableInputs();
@@ -368,15 +507,52 @@ function collectCheckedInputsValues(selectedInputs) {
   return selectedInputsValues;
 }
 
+function getFilterInput(filter) {
+  var filterInputs = document.querySelectorAll('#sidebarSelector .js-wallet-selector');
+
+  for (var i = 0; i < filterInputs.length; i++) {
+    if (filterInputs[i].value === filter) return filterInputs[i];
+  }
+
+  return null;
+}
+
+function getFilterLabel(filter) {
+  var filterInput = getFilterInput(filter);
+  var label = filterInput && filterInput.parentNode.querySelector('.checkbox-text');
+
+  return label ? label.textContent.replace(/^\s+|\s+$/g, '') : '';
+}
+
 function renderCheckboxesHTML(filters, position) {
   filters = filters.split(',');
-  var template = '<div class="checkboxes-acc-selected"><p class="checkboxes-acc-selected-text">%value%</p><button class="checkboxes-acc-selected-remove" data-checkbox-remove="%attribute%"><img src="/img/icons/close-btn.svg" alt="close"></button></div>';
 
   position.innerHTML = '';
   filters.forEach(function(filter) {
-    var html = template.replace('%value%', filter.split('_').join(' '));
-    html = html.replace('%attribute%', filter);
-    position.insertAdjacentHTML("beforeend", html);
+    var filterLabel = getFilterLabel(filter);
+    if (!filterLabel) return;
+
+    var selectedFilter = document.createElement('div');
+    var selectedFilterText = document.createElement('p');
+    var removeButton = document.createElement('button');
+    var removeIcon = document.createElement('img');
+
+    selectedFilter.className = 'checkboxes-acc-selected';
+    selectedFilterText.className = 'checkboxes-acc-selected-text';
+    selectedFilterText.textContent = filterLabel;
+
+    removeButton.type = 'button';
+    removeButton.className = 'checkboxes-acc-selected-remove';
+    removeButton.dataset.checkboxRemove = filter;
+    removeButton.setAttribute('aria-label', filterLabel);
+
+    removeIcon.src = '/img/icons/close-btn.svg';
+    removeIcon.alt = '';
+
+    removeButton.appendChild(removeIcon);
+    selectedFilter.appendChild(selectedFilterText);
+    selectedFilter.appendChild(removeButton);
+    position.appendChild(selectedFilter);
   });
 }
 
@@ -397,7 +573,7 @@ function displaySelectedCheckbox() {
   for (var i = 0; i < removeCheckboxFilterButtons.length; i++) {
     var button = removeCheckboxFilterButtons[i];
     button.addEventListener('click', function() {
-      removeCheckboxFilter(button.dataset.checkboxRemove);
+      removeCheckboxFilter(this.dataset.checkboxRemove);
       sortTableColumn('control');
     });
   }
@@ -409,7 +585,7 @@ function checkUserInputsActivity(selectedPlatform) {
   var wallets = document.querySelectorAll('.wallet-link.visible');
   var separatorText = document.querySelector('.helper-user-separator');
   if (!wallets.length) {
-    setUrlParameter('user', 'experienced');
+    if (getUrlParameter('user') !== 'experienced') setUrlParameter('user', 'experienced');
     separatorText.classList.add('disabled');
   } else separatorText.classList.remove('disabled');
 }
@@ -447,6 +623,7 @@ function onWizardRadioChange(radio) {
   if (radioName === 'platform' && getUrlParameter('features')) clearSelection('features');
   
   displayNextButton();
+  updateProgressIndicator(getUrlParameter('step'));
   scrollToNextButton(radioName);
 }
 
@@ -472,7 +649,7 @@ function updateOldUrls(input) {
       url = window.location.protocol + '//' + window.location.hostname + input.dataset.path + window.location.search;
     }
 
-    history.pushState(null, null, url);
+    history.replaceState(null, null, url);
   }
 }
 
@@ -481,23 +658,166 @@ function onWalletSelectorInputChange(input) {
   var filters = collectCheckedInputsValues(selectedInputs);
 
   if (input.name === 'platform') {
-    clearUrlParameters();
-    setUrlParameter('step', '5');
-    setUrlParameter('platform', input.value);
+    history.pushState(
+      null,
+      null,
+      window.location.pathname + '?step=5&platform=' + encodeURIComponent(input.value)
+    );
   } else setUrlParameter(input.name, filters);
   
   displayRelevantSelectorContent();
 }
 
+function setSidebarVisibility(isOpen, shouldMoveFocus) {
+  if (!sidebarMediaQuery.matches) {
+    sidebarOpenButton.classList.remove('visible');
+    sidebarSelector.classList.remove('hidden');
+    walletSelectorScreen.classList.remove('filters-open');
+    sidebarOpenButton.setAttribute('aria-expanded', 'true');
+    sidebarSelector.removeAttribute('role');
+    sidebarSelector.removeAttribute('aria-modal');
+    sidebarSelector.removeAttribute('aria-labelledby');
+    document.body.classList.remove('wallet-filters-open');
+    return;
+  }
+
+  sidebarOpenButton.classList.toggle('visible', !isOpen);
+  sidebarSelector.classList.toggle('hidden', !isOpen);
+  walletSelectorScreen.classList.toggle('filters-open', isOpen);
+  sidebarOpenButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  document.body.classList.toggle('wallet-filters-open', isOpen);
+
+  if (isOpen) {
+    sidebarSelector.setAttribute('role', 'dialog');
+    sidebarSelector.setAttribute('aria-modal', 'true');
+    sidebarSelector.setAttribute('aria-labelledby', 'sidebarSelectorTitle');
+  } else {
+    sidebarSelector.removeAttribute('role');
+    sidebarSelector.removeAttribute('aria-modal');
+    sidebarSelector.removeAttribute('aria-labelledby');
+  }
+
+  if (!isOpen) closeTooltips();
+
+  if (shouldMoveFocus && isOpen) document.getElementById('sidebarCloseButton').focus();
+  else if (shouldMoveFocus && !isOpen) sidebarOpenButton.focus();
+}
+
 function toggleSidebarVisibility() {
-  sidebarOpenButton.classList.toggle('visible');
-  sidebarSelector.classList.toggle('hidden');
+  setSidebarVisibility(sidebarSelector.classList.contains('hidden'), true);
+}
+
+function syncSidebarVisibility() {
+  setSidebarVisibility(!sidebarMediaQuery.matches, false);
+}
+
+function keepFocusInSidebar(event) {
+  if (event.key !== 'Tab' || !walletSelectorScreen.classList.contains('filters-open')) return;
+
+  var candidates = Array.prototype.slice.call(sidebarSelector.querySelectorAll('button:not([disabled]), input:not([disabled]), [tabindex="0"]'));
+  var focusable = candidates.filter(function(element) {
+    return element.offsetParent !== null;
+  });
+
+  if (!focusable.length) return;
+
+  var firstElement = focusable[0];
+  var lastElement = focusable[focusable.length - 1];
+
+  if (event.shiftKey && document.activeElement === firstElement) {
+    event.preventDefault();
+    lastElement.focus();
+  } else if (!event.shiftKey && document.activeElement === lastElement) {
+    event.preventDefault();
+    firstElement.focus();
+  }
 }
 
 function removeCheckboxFilter(filterValue) {
-  var filter = document.querySelector('.js-wallet-selector[value="' + filterValue +'"]');
+  var filter = getFilterInput(filterValue);
+  if (!filter) return;
   filter.checked = false;
   onWalletSelectorInputChange(filter);
+}
+
+function setupButtonTypes() {
+  var buttons = walletFinderPage.querySelectorAll('button:not([type])');
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].setAttribute('type', 'button');
+  }
+}
+
+function closeTooltips(exceptTrigger) {
+  var tooltipTriggers = walletFinderPage.querySelectorAll('.tooltip-trigger.is-open');
+
+  for (var i = 0; i < tooltipTriggers.length; i++) {
+    if (tooltipTriggers[i] !== exceptTrigger) {
+      tooltipTriggers[i].classList.remove('is-open');
+      tooltipTriggers[i].setAttribute('aria-expanded', 'false');
+    }
+  }
+}
+
+function getTooltipLabel(trigger, tooltip) {
+  var container = trigger.parentNode;
+
+  for (var i = 0; i < 4 && container; i++) {
+    var label = container.querySelector('.sidebar-selector-label, .checkbox-text, .user-radio-text');
+    if (label) return label.textContent.replace(/^\s+|\s+$/g, '');
+    container = container.parentNode;
+  }
+
+  return tooltip.textContent.replace(/^\s+|\s+$/g, '');
+}
+
+function setupAccessibleTooltips() {
+  var tooltipTriggers = walletFinderPage.querySelectorAll('.tooltip-trigger');
+
+  for (var i = 0; i < tooltipTriggers.length; i++) {
+    (function(trigger, index) {
+      var tooltip = trigger.querySelector('.tooltip');
+      if (!tooltip) return;
+
+      var tooltipId = 'walletTooltip' + index;
+      tooltip.id = tooltipId;
+      tooltip.setAttribute('role', 'tooltip');
+      trigger.setAttribute('role', 'button');
+      trigger.setAttribute('tabindex', '0');
+      trigger.setAttribute('aria-label', getTooltipLabel(trigger, tooltip));
+      trigger.setAttribute('aria-describedby', tooltipId);
+      trigger.setAttribute('aria-expanded', 'false');
+
+      var triggerImage = trigger.querySelector('img');
+      if (triggerImage) triggerImage.setAttribute('alt', '');
+
+      trigger.addEventListener('click', function(event) {
+        var willOpen = !trigger.classList.contains('is-open');
+        closeTooltips(trigger);
+        trigger.classList.toggle('is-open', willOpen);
+        trigger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        event.stopPropagation();
+      });
+
+      trigger.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          trigger.click();
+        } else if (event.key === 'Escape') {
+          trigger.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }(tooltipTriggers[i], i));
+  }
+
+  document.addEventListener('click', function() {
+    closeTooltips();
+  });
+}
+
+function updateDisclosureState(button, disclosure) {
+  button.setAttribute('aria-expanded', disclosure.classList.contains('open') ? 'true' : 'false');
 }
 
 function setListeners() {
@@ -505,6 +825,13 @@ function setListeners() {
   navigationButtons.forEach(function(button) {
     button.addEventListener('click', function() {
       onNavigationButtonClick(button);
+    });
+  });
+
+  var progressButtons = Array.prototype.slice.call(document.querySelectorAll('.js-progress-nav'));
+  progressButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      if (!button.disabled) onNavigationButtonClick(button);
     });
   });
 
@@ -555,18 +882,26 @@ function setListeners() {
 
   var sidebarCloseButton = document.getElementById('sidebarCloseButton');
   sidebarCloseButton.addEventListener('click', toggleSidebarVisibility);
+  sidebarScrim.addEventListener('click', function() {
+    setSidebarVisibility(false, true);
+  });
   
   var filtersAccordionButtons = Array.prototype.slice.call(document.querySelectorAll('.checkboxes-acc-btn'));
   filtersAccordionButtons.forEach(function(button) {
+    button.setAttribute('aria-expanded', 'false');
     button.addEventListener('click', function(e) {
-      button.parentNode.parentNode.classList.toggle('open');
+      var disclosure = button.parentNode.parentNode;
+      disclosure.classList.toggle('open');
+      updateDisclosureState(button, disclosure);
     });
   });
   
   var accordionButtons = Array.prototype.slice.call(document.querySelectorAll('.acc-btn'));
   accordionButtons.forEach(function(button) {
+    button.setAttribute('aria-expanded', 'false');
     button.addEventListener('click', function() {
       this.parentNode.classList.toggle('open');
+      updateDisclosureState(this, this.parentNode);
     });
   });
   
@@ -580,17 +915,31 @@ function setListeners() {
   window.addEventListener('popstate', function() {
     displayRelevantContent();
   });
+
+  window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && walletSelectorScreen.classList.contains('filters-open')) {
+      setSidebarVisibility(false, true);
+    } else keepFocusInSidebar(event);
+  });
+
+  if (sidebarMediaQuery.addEventListener) {
+    sidebarMediaQuery.addEventListener('change', syncSidebarVisibility);
+  } else {
+    sidebarMediaQuery.addListener(syncSidebarVisibility);
+  }
 }
 
 function checkOldUrls() {
-  var pathnameElements = window.location.pathname.substr(1).slice(0, -1).split('/');
+  var pathnameElements = window.location.pathname.split('/').filter(function(part) {
+    return part !== '';
+  });
   
   for (var i = 0; i < platformSelectors.length; i++) {
     var platform = platformSelectors[i].value;
     
     if (pathnameElements.indexOf(platform) > -1) {
-      setUrlParameter('platform', platform);
-      setUrlParameter('step', 5);
+      replaceUrlParameter('platform', platform);
+      replaceUrlParameter('step', 5);
       break;
     }
   }
@@ -617,8 +966,14 @@ function displayRelevantContent() {
 }
 
 function init() {
+  setupButtonTypes();
+  setupAccessibleTooltips();
+  shuffleWalletRows();
   checkOldUrls();
   displayRelevantContent();
   setListeners();
+  syncSidebarVisibility();
 }
 init();
+
+}());

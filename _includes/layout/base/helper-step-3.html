@@ -15,7 +15,7 @@ https://opensource.org/licenses/MIT. {% endcomment %}
       <div class="helper-selected-block">
         <div class="row">
           <div class="helper-selected-filter"></div>
-          <button class="helper-change-btn js-helper-nav-btn" data-selector="3">
+          <button type="button" class="helper-change-btn js-helper-nav-btn" data-selector="3">
             {% translate helper-change-btn choose-your-wallet %}
           </button>
         </div>
@@ -152,15 +152,17 @@ https://opensource.org/licenses/MIT. {% endcomment %}
       </label>
     </div>
     <div class="helper-navigation">
-      <button class="skip-helper-btn js-skip-btn">
+      <button type="button" class="skip-helper-btn js-skip-btn">
         {% translate skip-helper-btn choose-your-wallet %}
       </button>
       <div class="helper-navigation-row">
         <button
+          type="button"
           class="helper-next-btn btn-bright js-helper-nav-btn visible"
           data-selector="4"
         >
-          {% translate helper-next-btn choose-your-wallet %}
+          <span>{% translate helper-next-btn choose-your-wallet %}</span>
+          <span class="wallet-finder-button-arrow" aria-hidden="true">&#8594;</span>
         </button>
       </div>
     </div>
