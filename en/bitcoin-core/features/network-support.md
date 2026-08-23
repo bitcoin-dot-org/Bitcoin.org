@@ -30,7 +30,7 @@ breadcrumbs:
 
 The Bitcoin peer-to-peer network serves both Bitcoin Core and many other
 Bitcoin programs (mostly lightweight wallets).  By contributing some of
-your bandwidth---typically about 100 GB upload a month---you can help
+your bandwidth---typically about 150 GB upload a month---you can help
 support Bitcoin.
 
 The [bandwidth sharing guide][] provides all of the details you need
