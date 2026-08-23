@@ -65,6 +65,11 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
+function normalizeWalletOrderSeed(value) {
+  var uint32Size = 4294967296;
+  return ((Number(value) % uint32Size) + uint32Size) % uint32Size;
+}
+
 function createWalletOrderSeed() {
   if (window.crypto && window.crypto.getRandomValues && window.Uint32Array) {
     try {
@@ -76,7 +81,9 @@ function createWalletOrderSeed() {
     }
   }
 
-  return (Math.floor(Math.random() * 4294967296) ^ new Date().getTime()) >>> 0;
+  return normalizeWalletOrderSeed(
+    Math.floor(Math.random() * 4294967296) + new Date().getTime()
+  );
 }
 
 function getWalletOrderSeed() {
@@ -90,7 +97,7 @@ function getWalletOrderSeed() {
   }
 
   if (storedSeed !== null && /^\d+$/.test(storedSeed)) {
-    return Number(storedSeed) >>> 0;
+    return normalizeWalletOrderSeed(storedSeed);
   }
 
   var seed = createWalletOrderSeed();
@@ -105,10 +112,10 @@ function getWalletOrderSeed() {
 }
 
 function createSeededRandom(seed) {
-  var state = seed >>> 0;
+  var state = normalizeWalletOrderSeed(seed);
 
   return function() {
-    state = (state * 1664525 + 1013904223) >>> 0;
+    state = normalizeWalletOrderSeed(state * 1664525 + 1013904223);
     return state / 4294967296;
   };
 }
