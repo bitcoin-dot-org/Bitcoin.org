@@ -168,7 +168,7 @@ layout: base
                     <p class="wallet-criterion-name">
                       {% translate wizard-criteria-{{checkName}} choose-your-wallet %}
                     </p>
-                    <h3 class="wallet-criterion-title">{% translate {{checkValue}} choose-your-wallet %}</h3>
+                    <h3 id="wallet-criterion-{{checkName}}" class="wallet-criterion-title">{% translate {{checkValue}} choose-your-wallet %}</h3>
                   </div>
                   <span class="wallet-rating-label">
                     {% if ratingClass == 'good' %}
@@ -206,7 +206,7 @@ layout: base
                         {% endif %}
                         <div class="wallet-privacy-item wallet-rating-{{ privacyRatingClass }}">
                           <div class="wallet-privacy-heading">
-                            <h4>{% translate {{privacycheck[1]}} choose-your-wallet %}</h4>
+                            <h4 id="wallet-criterion-privacy-{{privacycheck[0]}}">{% translate {{privacycheck[1]}} choose-your-wallet %}</h4>
                             <span class="wallet-privacy-rating">
                               {% if privacyRatingClass == 'good' %}
                                 {% translate wallet-scoring-good choose-your-wallet %}
