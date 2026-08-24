@@ -55,7 +55,7 @@ third_party_privacy:
 {% include bitcoin-core/download-bitcoin-core.html %}
 
 > What if every time you spent or received cash, all the transaction
-> details were published to your Twitter or Facebook feed for all your
+> details were published to your social media feed for all your
 > friends to see? You probably wouldn't want to use cash any more.
 
 Every confirmed Bitcoin transaction is published to the blockchain
@@ -397,12 +397,10 @@ Isn't that worth occasionally starting up a few seconds slower?
   </div>
 
   <div id="spv_decentralized_peer" title="P2P Decentralized Peer Discovery" markdown="block">
-  The following P2P lightweight wallets use decentralized peer discovery
-  by default.
+  We don't currently know of any P2P lightweight wallets that use
+  decentralized peer discovery by default.
 
-  - BRD
-
-  If you know of another compliant lightweight wallet, please [tell us
+  If you know of a compliant lightweight wallet, please [tell us
   about it][docs issue].
   </div>
 
