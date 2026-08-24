@@ -634,7 +634,7 @@ text:
   typical_144_block_catchup_time_in_minutes: 5
   ## Before updating this, verify all assertions are still correct: git grep site.text.assertion_month
   ## Use ISO-8601 format, but feel free to round to the nearest month
-  assertion_month: 2017-06-01
+  assertion_month: 2026-08-01
 
 collections:
   ## _alerts
