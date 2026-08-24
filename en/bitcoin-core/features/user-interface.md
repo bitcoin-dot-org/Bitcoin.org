@@ -140,7 +140,7 @@ configuration.
 </div>
 
 <div class="alert ui-alert" markdown="block">
-**Learn more:** documentation for the [Bitcoin Core APIs](https://bitcoin.org/en/developer-reference#bitcoin-core-apis)
+**Learn more:** documentation for the [Bitcoin Core APIs](https://developer.bitcoin.org/reference/rpc/)
 </div>
 
 ## Lightweight Wallets Using Bitcoin Core {#lightweight}
@@ -229,7 +229,7 @@ validation decentralization].
   <div class="multicode" markdown="block">
   {% highlight bash %}
   bitcoin-cli -testnet sendmany \
-    "test1" \
+    "" \
     '''
       {
         "mjSk1Ny9spzU2fouzYgLqGUD8U41iR35QN": 0.1,
@@ -259,7 +259,6 @@ validation decentralization].
           "txid" : "d54994ece1d11b19785c7248868696250ab195605b469632b7bd68130e880c9a",
           "vout" : 1,
           "address" : "mgnucj8nYqdrPFh2JfZSB1NmUThUGnmsqe",
-          "account" : "test label",
           "scriptPubKey" : "76a9140dfc8bafc8419853b34d5e072ad37d1a5159f58488ac",
           "amount" : 0.00010000,
           "confirmations" : 6210,
@@ -270,7 +269,7 @@ validation decentralization].
   </div>
   </div>
 
-  <div id="rpc_rawtx" title="Create/Sign/Spent Raw Transactions" markdown="block">
+  <div id="rpc_rawtx" title="Create/Sign/Send Raw Transactions" markdown="block">
   Create a raw transaction:
 
   <div class="multicode" markdown="block">
@@ -292,7 +291,7 @@ validation decentralization].
 
   <div class="multicode" markdown="block">
   {% highlight bash %}
-  bitcoin-cli -testnet signrawtransaction 01000000011da9283b4ddf8d\
+  bitcoin-cli -testnet signrawtransactionwithwallet 01000000011da9283b4ddf8d\
   89eb996988b89ead56cecdc44041ab38bf787f1206cd90b51e0000000000ffff\
   ffff01405dc600000000001976a9140dfc8bafc8419853b34d5e072ad37d1a51\
   59f58488ac00000000
