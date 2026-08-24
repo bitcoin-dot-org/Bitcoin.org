@@ -440,7 +440,7 @@ https://opensource.org/licenses/MIT.
 [fake satoshi transaction]: https://www.reddit.com/r/Bitcoin/comments/3fv42j/blockchaininfo_spoofed_transactions_problem_aug_4/
 [forum tech support]: https://bitcointalk.org/index.php?board=4.0
 [ghash betcoin double spend]: https://bitcointalk.org/index.php?topic=321630.msg3445371
-[gitian sigs]: https://github.com/bitcoin/gitian.sigs
+[gitian sigs]: https://github.com/bitcoin-core/guix.sigs
 [high-speed block relay network]: https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg03189.html
 [HMAC-SHA512]: https://en.wikipedia.org/wiki/HMAC
 [HTTP basic authentication]: https://en.wikipedia.org/wiki/Basic_access_authentication
