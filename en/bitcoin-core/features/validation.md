@@ -146,7 +146,7 @@ that the operators of StrongCoin could steal bitcoins from their users
 at any time even though the users supposedly controlled their own
 private keys.
 
-**Learn More:** [OzCoin Hacked, Stolen Funds Seized and Returned by StrongCoin](https://bitcoinmagazine.com/4273/ozcoin-hacked-stolen-funds-seized-and-returned-by-strongcoin/)
+**Learn More:** [OzCoin Hacked, Stolen Funds Seized and Returned by StrongCoin](https://bitcoinmagazine.com/business/ozcoin-hacked-stolen-funds-seized-and-returned-by-strongcoin-1366822516)
 </td>
 </tr>
 
@@ -288,7 +288,7 @@ prevented some users of the lightweight BreadWallet from connecting to
 honest nodes. Since the spy nodes didn't relay transactions, BreadWallet
 users stopped receiving notification of new transactions.
 
-**Learn more:** [Chainalysis CEO Denies 'Sybil Attack' on Bitcoin's Network](https://www.coindesk.com/chainalysis-ceo-denies-launching-sybil-attack-on-bitcoin-network/)
+**Learn more:** [Chainalysis CEO Denies 'Sybil Attack' on Bitcoin's Network](https://web.archive.org/web/2015/https://www.coindesk.com/chainalysis-ceo-denies-launching-sybil-attack-on-bitcoin-network/)
 </td>
 </tr>
 
@@ -437,7 +437,7 @@ Core right now:
    power users, businesses, and programmers. The [user interface][bcc
    user interface] page provides an overview, the [installation
    instructions][bandwidth sharing guide] can help you get started, and
-   the [RPC](https://developer.bitcoin.org/reference/rpc/)documentation can help you find specific
+   the [RPC](https://developer.bitcoin.org/reference/rpc/) documentation can help you find specific
    commands. If you're using [`getnewaddress`](https://developer.bitcoin.org/reference/rpc/getnewaddress.html) to
    create receiving addresses, your received transactions will be fully
    validated.
