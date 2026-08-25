@@ -1100,3 +1100,42 @@ html[lang='fa'] .wallet-detail-page .wallet-similar-browse-arrow {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Wallet page declutter: criterion descriptions collapse until requested,
+   and the similar-wallet cards show a glyph-only score strip. The words
+   stay in the DOM for screen readers. */
+.wallet-detail-page .wallet-criterion-card > .wallet-criterion-heading {
+  cursor: pointer;
+  list-style: none;
+}
+
+.wallet-detail-page .wallet-criterion-heading::-webkit-details-marker {
+  display: none;
+}
+
+.wallet-detail-page .wallet-criterion-heading .wallet-rating-label::after {
+  content: " \25BE";
+}
+
+.wallet-detail-page .wallet-criterion-card[open] > .wallet-criterion-heading .wallet-rating-label::after {
+  content: " \25B4";
+}
+
+.wallet-detail-page .wallet-similar-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wallet-detail-page .wallet-similar-criterion,
+.wallet-detail-page .wallet-similar-rating > span:not(.wallet-score-mark) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

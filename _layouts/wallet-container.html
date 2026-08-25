@@ -162,8 +162,8 @@ layout: base
                 {% assign ratingClass = 'neutral' %}
               {% endif %}
 
-              <article class="wallet-criterion-card wallet-rating-{{ ratingClass }}">
-                <div class="wallet-criterion-heading">
+              <details class="wallet-criterion-card wallet-rating-{{ ratingClass }}"{% if ratingClass == 'fail' %} open{% endif %}>
+                <summary class="wallet-criterion-heading">
                   <div class="wallet-criterion-heading-copy">
                     <p class="wallet-criterion-name">
                       {% translate wizard-criteria-{{checkName}} choose-your-wallet %}
@@ -181,7 +181,7 @@ layout: base
                       {% translate wallet-scoring-fail choose-your-wallet %}
                     {% endif %}
                   </span>
-                </div>
+                </summary>
 
                 <div class="wallet-criterion-description">
                   {% capture criterionDescription %}{% translate {{checkValue}}txt choose-your-wallet %}{% endcapture %}
@@ -225,7 +225,7 @@ layout: base
                     </div>
                   {% endif %}
                 </div>
-              </article>
+              </details>
               {% endif %}
             {% endfor %}
           </div>
