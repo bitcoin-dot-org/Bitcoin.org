@@ -475,6 +475,13 @@ https://opensource.org/licenses/MIT.
             </div>
           </div>
 
+          <div class="wallet-score-legend">
+            <span class="wallet-legend-item"><span class="wallet-score wallet-good"></span>{% translate wallet-scoring-good choose-your-wallet %}</span>
+            <span class="wallet-legend-item"><span class="wallet-score wallet-pass"></span>{% translate wallet-scoring-pass choose-your-wallet %}</span>
+            <span class="wallet-legend-item"><span class="wallet-score wallet-caution"></span>{% translate wallet-scoring-fail choose-your-wallet %}</span>
+            <span class="wallet-legend-item"><span class="wallet-score wallet-neutral"></span>{% translate wallet-scoring-neutral choose-your-wallet %}</span>
+          </div>
+
           <div class="table-sort">
             <h3 id="walletTableSortTitle" class="table-sort-title">{% translate wallet-selector-criteria choose-your-wallet %}:</h3>
             <div id="tableAccordion" class="acc">
@@ -554,25 +561,6 @@ https://opensource.org/licenses/MIT.
                 {% endfor %}
               {% endfor %}
             {% endfor %}
-          </div>
-
-          <div class="wallet-hints-row">
-            <div class="wallet-hint">
-              <div class="wallet-good"></div>
-              <p class="wallet-hint-text">{% translate wallet-scoring-good choose-your-wallet %}</p>
-            </div>
-            <div class="wallet-hint">
-              <div class="wallet-pass"></div>
-              <p class="wallet-hint-text">{% translate wallet-scoring-pass choose-your-wallet %}</p>
-            </div>
-            <div class="wallet-hint">
-              <div class="wallet-caution"></div>
-              <p class="wallet-hint-text">{% translate wallet-scoring-fail choose-your-wallet %}</p>
-            </div>
-            <div class="wallet-hint">
-              <div class="wallet-neutral"></div>
-              <p class="wallet-hint-text">{% translate wallet-scoring-neutral choose-your-wallet %}</p>
-            </div>
           </div>
 
         </div>

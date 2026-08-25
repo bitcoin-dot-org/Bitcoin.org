@@ -2236,3 +2236,40 @@ html[lang='fa'] .wallet-finder-page .wallet-link.visible:hover {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Results declutter: the per-cell score words move into a single legend
+   above the table. The words stay in the DOM for screen readers. */
+.wallet-finder-page .wallet-score-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 0 0 14px;
+  padding: 0 24px;
+}
+
+.wallet-finder-page .wallet-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--wallet-muted);
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.wallet-finder-page .wallet-legend-item .wallet-score {
+  width: 11px;
+  height: 11px;
+  margin: 0;
+}
+
+.wallet-finder-page .wallet-table-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
