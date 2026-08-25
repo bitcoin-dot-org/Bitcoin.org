@@ -26,7 +26,7 @@ https://opensource.org/licenses/MIT.
           <h3 id="sidebarOsSelectorTitle" class="sidebar-selector-title">{% translate wallet-selector-operating-system choose-your-wallet %}</h3>
           <div class="sidebar-selector-platforms">
             <div class="sidebar-selector-platforms-row">
-              <div class="sidebar-selector-platform">
+              <div class="sidebar-selector-platform sidebar-mobile-platform">
                 <div class="sidebar-selector-label-row">
                   <h3 id="sidebarMobileSelectorTitle" class="sidebar-selector-label">{% translate walletcatmobile choose-your-wallet %}</h3>
                   <div class="tooltip-trigger">
@@ -533,19 +533,22 @@ https://opensource.org/licenses/MIT.
                       {% assign checkName = check[0] %}
                       {% assign checkValue = check[1] %}
                       <div class="wallet-table-data" data-cell="{{checkName}}">
+                        <span class="wallet-table-criterion">
+                          {% translate wizard-criteria-{{checkName}} choose-your-wallet %}
+                        </span>
                         <div class="wallet-score-wrapper">
                           {% if checkValue contains 'checkgood' %}
                             <span class="wallet-table-text">{% translate wallet-scoring-good choose-your-wallet %}</span>
-                            <div class="wallet-score wallet-good"></div>
+                            <div class="wallet-score wallet-good" aria-hidden="true"></div>
                           {% elsif checkValue contains 'checkpass' %}
                             <span class="wallet-table-text">{% translate wallet-scoring-pass choose-your-wallet %}</span>
-                            <div class="wallet-score wallet-pass"></div>
+                            <div class="wallet-score wallet-pass" aria-hidden="true"></div>
                           {% elsif checkValue contains 'checkfail' %}
                             <span class="wallet-table-text">{% translate wallet-scoring-fail choose-your-wallet %}</span>
-                            <div class="wallet-score wallet-caution"></div>
+                            <div class="wallet-score wallet-caution" aria-hidden="true"></div>
                           {% elsif checkValue contains 'checkneutral' %}
                             <span class="wallet-table-text">{% translate wallet-scoring-neutral choose-your-wallet %}</span>
-                            <div class="wallet-score wallet-neutral"></div>
+                            <div class="wallet-score wallet-neutral" aria-hidden="true"></div>
                           {% endif %}
                         </div>
                       </div>
@@ -558,19 +561,19 @@ https://opensource.org/licenses/MIT.
 
           <div class="wallet-hints-row">
             <div class="wallet-hint">
-              <div class="wallet-good"></div>
+              <div class="wallet-good" aria-hidden="true"></div>
               <p class="wallet-hint-text">{% translate wallet-scoring-good choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
-              <div class="wallet-pass"></div>
+              <div class="wallet-pass" aria-hidden="true"></div>
               <p class="wallet-hint-text">{% translate wallet-scoring-pass choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
-              <div class="wallet-caution"></div>
+              <div class="wallet-caution" aria-hidden="true"></div>
               <p class="wallet-hint-text">{% translate wallet-scoring-fail choose-your-wallet %}</p>
             </div>
             <div class="wallet-hint">
-              <div class="wallet-neutral"></div>
+              <div class="wallet-neutral" aria-hidden="true"></div>
               <p class="wallet-hint-text">{% translate wallet-scoring-neutral choose-your-wallet %}</p>
             </div>
           </div>
