@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bitcoin.org — Find your wallet (2026 design prototype)</title>
+<style>
+  :root{
+    --orange:#F7931A; --orange-dk:#D97B06; --navy:#14213D; --navy2:#22304F;
+    --ink:#24292F; --gray:#69707A; --line:#E4E7EB;
+    --paper:#F7F8FA; --card:#FFFFFF; --soft:#FBF7F0;
+    --good:#2F7D46; --ok:#7FB35C; --warn:#E8930C; --warn-bg:#FDF3E3; --warn-ink:#7A4E06;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  @media (prefers-reduced-motion: reduce){ *{transition:none !important; animation:none !important;} }
+  body{
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.6; font-size:16px;
+  }
+  button{font:inherit; cursor:pointer; background:none; border:none; color:inherit;}
+  .ic{width:22px; height:22px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; flex:none;}
+  .topbar{background:var(--navy); color:#fff; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:12px;}
+  .brand{display:flex; align-items:center; gap:10px; font-weight:600;}
+  .coin{width:22px; height:22px; border-radius:50%; background:var(--orange); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; transform:rotate(-12deg);}
+  .proto-tag{font-size:12px; color:#C7CEDB; border:1px solid #3A4763; border-radius:999px; padding:3px 12px;}
+  .wrap{max-width:760px; margin:0 auto; padding:40px 20px 70px;}
+  .view{display:none;} .view.active{display:block; animation:fadein .25s ease;}
+  @keyframes fadein{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;}}
+
+  /* ---------- landing ---------- */
+  .hero{text-align:center; padding:24px 0 8px;}
+  .hero h1{font-size:34px; color:var(--navy); font-weight:700; letter-spacing:-.5px; line-height:1.2;}
+  .hero h1 em{font-style:normal; color:var(--orange);}
+  .hero p{color:var(--gray); margin:14px auto 0; max-width:46ch; font-size:17px;}
+  .doors{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:36px 0 10px;}
+  @media (max-width:640px){ .doors{grid-template-columns:1fr;} }
+  .door{
+    background:var(--card); border:1.5px solid var(--line); border-radius:16px;
+    padding:26px 24px; text-align:left; transition:border-color .15s, transform .15s, box-shadow .15s;
+  }
+  .door:hover, .door:focus-visible{border-color:var(--orange); transform:translateY(-2px); box-shadow:0 8px 24px rgba(20,33,61,.08); outline:none;}
+  .door.primary{border-color:var(--orange); background:linear-gradient(0deg, var(--soft), var(--card));}
+  .door .dico{color:var(--orange); margin-bottom:12px; display:block;}
+  .door .dico .ic{width:26px; height:26px;}
+  .door h2{font-size:19px; color:var(--navy); font-weight:600; margin-bottom:6px;}
+  .door p{font-size:14px; color:var(--gray);}
+  .door .go{display:inline-block; margin-top:14px; color:var(--orange); font-weight:600; font-size:14px;}
+
+  .learn{max-width:560px; margin:26px auto 0; background:var(--card); border:1px solid var(--line); border-radius:12px;}
+  .learnbtn{width:100%; padding:14px 18px; display:flex; align-items:center; gap:10px; font-weight:600; font-size:14.5px; color:var(--navy2); text-align:left;}
+  .learnbtn .chev{margin-left:auto; color:#B4BAC3; transition:transform .15s;}
+  .learn.open .chev{transform:rotate(180deg);}
+  .learnbody{display:none; padding:0 18px 16px; color:var(--gray); font-size:14.5px;}
+  .learn.open .learnbody{display:block;}
+  .learnbody b{color:var(--navy);}
+
+  /* ---------- wizard ---------- */
+  .steps{display:flex; align-items:center; justify-content:center; gap:8px; margin-bottom:30px;}
+  .stepdot{width:9px; height:9px; border-radius:50%; background:#D7DBE1; transition:background .2s, transform .2s;}
+  .stepdot.on{background:var(--orange); transform:scale(1.25);}
+  .stepdot.done{background:var(--navy);}
+  .qhead{text-align:center; margin-bottom:8px;}
+  .qhead .qn{font-size:12.5px; font-weight:700; letter-spacing:1.5px; color:var(--orange); text-transform:uppercase;}
+  .qhead h2{font-size:26px; color:var(--navy); font-weight:700; margin-top:8px; letter-spacing:-.3px;}
+  .qhead p{color:var(--gray); margin-top:8px; max-width:52ch; margin-left:auto; margin-right:auto; font-size:15px;}
+  .opts{display:grid; gap:12px; margin:28px auto 0; max-width:560px;}
+  .opt{
+    background:var(--card); border:1.5px solid var(--line); border-radius:14px;
+    padding:18px 20px; text-align:left; display:flex; gap:16px; align-items:flex-start;
+    transition:border-color .15s, background .15s;
+  }
+  .opt:hover, .opt:focus-visible{border-color:var(--orange); background:var(--soft); outline:none;}
+  .opt .oico{color:var(--navy2); flex:none; margin-top:2px;}
+  .opt .oico .ic{width:24px; height:24px;}
+  .opt h3{font-size:16.5px; color:var(--navy); font-weight:600;}
+  .opt p{font-size:13.5px; color:var(--gray); margin-top:3px;}
+  .navrow{display:flex; justify-content:center; margin-top:26px;}
+  .ghostbtn{color:var(--gray); font-size:14px; padding:8px 16px; border-radius:8px;}
+  .ghostbtn:hover, .ghostbtn:focus-visible{color:var(--navy); background:#EFF1F4; outline:none;}
+
+  /* ---------- result ---------- */
+  .resulthead{text-align:center; margin-bottom:26px;}
+  .resulthead .eyebrow{font-size:12.5px; font-weight:700; letter-spacing:1.5px; color:var(--good); text-transform:uppercase;}
+  .resulthead h2{font-size:28px; color:var(--navy); font-weight:700; margin-top:8px; letter-spacing:-.3px;}
+  .pickcard{
+    background:var(--card); border:2px solid var(--orange); border-radius:18px;
+    padding:28px 30px; position:relative; box-shadow:0 10px 30px rgba(247,147,26,.10);
+  }
+  .pickbadge{
+    position:absolute; top:-13px; left:28px; background:var(--orange); color:#fff;
+    font-size:12px; font-weight:700; letter-spacing:.8px; text-transform:uppercase;
+    border-radius:999px; padding:5px 14px;
+  }
+  .pickhead{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:4px;}
+  .plogo{width:54px; height:54px; border-radius:14px; background:#EAF1FB; color:#1B4E89; display:flex; align-items:center; justify-content:center; font-size:24px; font-weight:700; flex:none;}
+  .ptitle{flex:1; min-width:160px;}
+  .ptitle h3{font-size:22px; color:var(--navy); font-weight:700;}
+  .ptitle small{color:var(--gray); font-size:13.5px;}
+  .cta{background:var(--orange); color:#fff; font-weight:600; font-size:15px; border-radius:10px; padding:12px 24px; transition:filter .12s;}
+  .cta:hover, .cta:focus-visible{filter:brightness(.94); outline:none;}
+  .whytitle{font-size:13px; font-weight:700; letter-spacing:1px; color:var(--gray); text-transform:uppercase; margin:24px 0 12px;}
+  .why{display:grid; gap:10px;}
+  .whyitem{display:flex; gap:12px; align-items:flex-start; background:#F7F8FA; border-radius:11px; padding:13px 15px;}
+  .whyitem .check{flex:none; width:22px; height:22px; border-radius:50%; background:var(--good); color:#fff; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; margin-top:1px;}
+  .whyitem p{font-size:14px; color:var(--ink);}
+  .whyitem p b{color:var(--navy);}
+  .whyitem .you{display:block; font-size:12px; color:var(--gray); margin-top:2px;}
+  .honest{
+    background:var(--warn-bg); border-radius:11px; padding:13px 15px; margin-top:14px;
+    display:flex; gap:11px; align-items:flex-start; color:var(--warn-ink); font-size:13.5px;
+  }
+  .honest b{font-weight:600;}
+  .alts{margin-top:30px;}
+  .altgrid{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+  @media (max-width:560px){ .altgrid{grid-template-columns:1fr;} }
+  .alt{background:var(--card); border:1px solid var(--line); border-radius:13px; padding:16px 18px; text-align:left; transition:border-color .15s;}
+  .alt:hover, .alt:focus-visible{border-color:var(--navy2); outline:none;}
+  .alt h4{font-size:15.5px; color:var(--navy); font-weight:600;}
+  .alt p{font-size:13px; color:var(--gray); margin-top:4px;}
+  .resfoot{display:flex; justify-content:center; gap:20px; margin-top:30px; flex-wrap:wrap;}
+  .linklike{color:var(--gray); font-size:14px; text-decoration:underline; text-underline-offset:3px;}
+  .linklike:hover{color:var(--navy);}
+  .stepper-note{margin-top:26px; text-align:center;}
+
+  .platline{color:var(--gray); font-size:14px; margin-top:10px; max-width:56ch; margin-left:auto; margin-right:auto;}
+  .platline b{color:var(--navy);}
+  .whybox{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin-bottom:18px;}
+  .matchgrid{display:grid; gap:12px;}
+  .mcard{background:var(--card); border:1.5px solid var(--line); border-radius:14px; padding:18px 20px; transition:border-color .15s;}
+  .mcard:hover{border-color:var(--orange);}
+  .mtop{display:flex; align-items:center; gap:14px; flex-wrap:wrap;}
+  .mlogo{width:42px; height:42px; border-radius:11px; background:#EAF1FB; color:#1B4E89; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:700; flex:none;}
+  .mname{font-size:17px; color:var(--navy); font-weight:600; flex:1; min-width:120px;}
+  .mstrip{display:flex; gap:9px; align-items:center;}
+  .mget{border:1.5px solid var(--orange); color:var(--orange-dk); font-weight:600; font-size:13px; border-radius:9px; padding:7px 14px; transition:background .12s;}
+  .mget:hover, .mget:focus-visible{background:var(--soft); outline:none;}
+  .mnote{font-size:13px; color:var(--gray); margin-top:10px; max-width:64ch;}
+  .mnote b{color:var(--warn-ink);}
+  .mnote.okb b{color:var(--good);}
+  .shufnote{text-align:center; font-size:12px; color:#9AA1AB; margin-top:12px;}
+  .catcard{background:var(--card); border:1.5px solid var(--line); border-radius:14px; padding:22px 24px;}
+  .catcard h3{font-size:18px; color:var(--navy); font-weight:600; display:flex; align-items:center; gap:10px;}
+  .catcard p{font-size:14px; color:var(--gray); margin-top:8px; max-width:62ch;}
+
+  /* ---------- browse ---------- */
+  .toolbar{display:flex; align-items:center; justify-content:space-between; gap:16px; margin:26px 0 10px; flex-wrap:wrap;}
+  .count{font-size:15px; font-weight:600; color:var(--navy);}
+  .count strong{color:var(--orange); font-size:17px;}
+  .legend{display:flex; gap:18px; font-size:12.5px; color:var(--gray); align-items:center; flex-wrap:wrap;}
+  .legend span{display:inline-flex; align-items:center; gap:6px;}
+  .dot{width:11px; height:11px; border-radius:50%; background:var(--good); display:inline-block; flex:none;}
+  .tri{width:0; height:0; border-left:6.5px solid transparent; border-right:6.5px solid transparent; border-bottom:11px solid var(--ok); display:inline-block; flex:none;}
+  .tri.warn{border-bottom-color:var(--warn);}
+  .tablecard{background:var(--card); border:1px solid var(--line); border-radius:14px; overflow-x:auto;}
+  table{width:100%; border-collapse:collapse; min-width:620px;}
+  thead th{text-align:center; font-size:11.5px; font-weight:600; color:var(--gray); text-transform:uppercase; letter-spacing:.6px; padding:13px 6px; border-bottom:1px solid var(--line); background:#FBFCFD;}
+  thead th:first-child{text-align:left; padding-left:20px;}
+  tbody td{padding:0; border-bottom:1px solid var(--line);}
+  tbody tr:last-child td{border-bottom:none;}
+  .rowbtn{display:flex; width:100%; align-items:center; gap:12px; padding:14px 20px; text-align:left; transition:background .12s;}
+  .rowbtn:hover, .rowbtn:focus-visible{background:var(--soft); outline:none;}
+  .wname{font-weight:600; color:var(--navy); font-size:15px; flex:1;}
+  .chev{color:#B4BAC3; transition:transform .15s; font-size:13px;}
+  tr.open .chev{transform:rotate(180deg);}
+  .gcell{width:12.5%; display:inline-flex; justify-content:center;}
+  .expand td{background:#FBFCFD;}
+  .expand .inner{padding:6px 20px 18px; font-size:13.5px; color:var(--gray); max-width:64ch;}
+  .expand b{color:var(--warn-ink);}
+  .expand .okb b{color:var(--good);}
+  .footnote{margin-top:16px; font-size:12px; color:#9AA1AB; text-align:center;}
+  .backlink{display:inline-flex; gap:7px; align-items:center; color:var(--gray); font-size:14px; margin-bottom:20px;}
+  .backlink:hover{color:var(--navy);}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="coin">₿</span> bitcoin.org <span style="font-weight:400; color:#8A93A6;">/ choose your wallet</span></div>
+  <span class="proto-tag">Design prototype — 2026</span>
+</header>
+
+<main class="wrap">
+
+<!-- ============ V0: LANDING ============ -->
+<section class="view active" id="v-landing">
+  <div class="hero">
+    <h1>Your bitcoin needs a home.<br>Let's find <em>yours</em>.</h1>
+    <p>A wallet is the app that keeps the keys to your bitcoin. Whoever holds the keys, holds the coins — so this choice matters. We'll walk you through it.</p>
+  </div>
+
+  <div class="doors">
+    <button class="door primary" onclick="startWizard()">
+      <span class="dico" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16 8 13.5 13.5 8 16 10.5 10.5 16 8"/></svg></span>
+      <h2>I'm new — guide me</h2>
+      <p>Answer 3 simple questions. No jargon, no homework. We'll match you with a wallet in under a minute.</p>
+      <span class="go">Start →</span>
+    </button>
+    <button class="door" onclick="showView('v-browse')">
+      <span class="dico" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="4" cy="6" r="0.8"/><circle cx="4" cy="12" r="0.8"/><circle cx="4" cy="18" r="0.8"/></svg></span>
+      <h2>I know what I want</h2>
+      <p>Browse every wallet, compare all six scoring criteria side by side, and filter by feature.</p>
+      <span class="go">Browse all wallets →</span>
+    </button>
+  </div>
+
+  <div class="learn" id="learnbox">
+    <button class="learnbtn" aria-expanded="false" onclick="toggleLearn()"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:19px;height:19px;color:var(--orange);"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg> New here? What a wallet is, in 20 seconds <span class="chev" aria-hidden="true">▾</span></button>
+    <div class="learnbody">
+      <p><b>Bitcoin doesn't live inside the wallet.</b> It lives on the Bitcoin network. Your wallet holds the <b>keys</b> that prove the bitcoin is yours — like the only key to a house.</p>
+      <p style="margin-top:8px;"><b>That's why the choice matters:</b> lose the keys, lose the bitcoin. Let someone else hold them, and you're trusting them completely. The right wallet depends on how much you'll keep and how hands-on you want to be — which is exactly what we'll ask you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ V1-V3: WIZARD ============ -->
+<section class="view" id="v-wizard">
+  <div class="steps" aria-hidden="true">
+    <span class="stepdot" id="sd1"></span><span class="stepdot" id="sd2"></span><span class="stepdot" id="sd3"></span>
+  </div>
+  <div id="qbox"></div>
+  <div class="navrow"><button class="ghostbtn" onclick="wizBack()" id="backbtn">← Back</button></div>
+</section>
+
+<!-- ============ V4: RESULT ============ -->
+<section class="view" id="v-result">
+  <div class="resulthead">
+    <div class="eyebrow">Based on your answers</div>
+    <h2 id="pickTitle">Wallets that fit you</h2>
+    <p class="platline" id="platLine"></p>
+  </div>
+
+  <div class="whybox">
+    <div class="whytitle" style="margin-top:0;">What we looked for — in your own words</div>
+    <div class="why" id="whyList"></div>
+  </div>
+
+  <div class="matchgrid" id="matchGrid"></div>
+  <p class="shufnote" id="shufNote"></p>
+
+  <div class="honest" id="honestBox">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:19px;height:19px;margin-top:2px;"><line x1="12" y1="4" x2="12" y2="20"/><line x1="5" y1="7" x2="19" y2="7"/><path d="M5 7l-2.5 6a3 3 0 0 0 5 0L5 7z"/><path d="M19 7l-2.5 6a3 3 0 0 0 5 0L19 7z"/><line x1="9" y1="20" x2="15" y2="20"/></svg>
+    <div id="honestText"></div>
+  </div>
+
+  <div class="resfoot">
+    <button class="linklike" onclick="startWizard()">Change my answers</button>
+    <button class="linklike" onclick="showView('v-browse')">See every wallet instead</button>
+  </div>
+</section>
+
+<!-- ============ V5: BROWSE (experienced) ============ -->
+<section class="view" id="v-browse">
+  <button class="backlink" onclick="showView('v-landing')">← Start over</button>
+  <div class="qhead" style="text-align:left;">
+    <h2 style="font-size:24px;">All iOS wallets</h2>
+    <p style="margin-left:0;">One glyph per score. The legend explains everything, once. Select a wallet to see the why.</p>
+  </div>
+  <div class="toolbar">
+    <div class="count"><strong id="matchCount">5</strong> wallets match</div>
+    <div class="legend" aria-label="Score legend">
+      <span><span class="dot" aria-hidden="true"></span> Good</span>
+      <span><span class="tri" aria-hidden="true"></span> Acceptable</span>
+      <span><span class="tri warn" aria-hidden="true"></span> Caution</span>
+    </div>
+  </div>
+  <div class="tablecard">
+    <table>
+      <thead><tr>
+        <th scope="col">Wallet</th><th scope="col">Control</th><th scope="col">Validation</th>
+        <th scope="col">Transparency</th><th scope="col">Environment</th><th scope="col">Privacy</th><th scope="col">Fees</th>
+      </tr></thead>
+      <tbody id="walletRows"></tbody>
+    </table>
+  </div>
+  <p class="footnote">Rows are shuffled on every visit — no wallet is favored. Prototype note: wallets, scores and copy are illustrative sample data for design review only.</p>
+</section>
+
+</main>
+
+<script>
+/* ---------------- data (illustrative) ---------------- */
+var WALLETS = [
+  { name:"Bither",     s:["good","ok","ok","ok","ok","warn"],
+    note:{k:"Fees — caution", t:"Limited control over fees can make transactions slow or costly during busy periods."} },
+  { name:"BitPay",     s:["good","warn","ok","ok","ok","ok"],
+    note:{k:"Validation — caution", t:"Relies on a centralized service by default: a third party must be trusted not to hide or simulate payments."} },
+  { name:"BlueWallet", s:["good","ok","ok","ok","ok","good"],
+    note:{k:"Strong overall", t:"Full control of your keys and your fees. Validation and privacy improve further with your own node.", ok:true} },
+  { name:"BULL",       s:["good","ok","ok","ok","ok","good"],
+    note:{k:"Strong overall", t:"Full key and fee control, with acceptable scores across the remaining criteria.", ok:true} },
+  { name:"Edge",       s:["ok","ok","ok","ok","ok","ok"],
+    note:{k:"Acceptable across the board", t:"A balanced wallet with no caution flags — and no standout strengths either."} }
+];
+
+/* ---------------- wizard ---------------- */
+var IC = {
+  phone:  '<svg class="ic" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>',
+  desktop:'<svg class="ic" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+  shield: '<svg class="ic" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>',
+  coffee: '<svg class="ic" viewBox="0 0 24 24"><path d="M4 8h12v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/></svg>',
+  note:   '<svg class="ic" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>',
+  safe:   '<svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="6.5" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="17.5"/><line x1="6.5" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="17.5" y2="12"/></svg>',
+  sprout: '<svg class="ic" viewBox="0 0 24 24"><path d="M12 21v-8"/><path d="M12 13C12 9 9 7 5 7c0 4 3 6 7 6z"/><path d="M12 11c0-3.5 2.5-5 6-5 0 3.5-2.5 5-6 5z"/></svg>',
+  sliders:'<svg class="ic" viewBox="0 0 24 24"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="9" cy="7" r="2"/><line x1="4" y1="15" x2="20" y2="15"/><circle cx="15" cy="15" r="2"/></svg>'
+};
+
+var QUESTIONS = [
+  { n:"Question 1 of 3", h:"Where will you use your bitcoin?",
+    p:"There's no wrong answer — wallets exist for every lifestyle.",
+    opts:[
+      { ico:IC.phone,   h:"On my phone", p:"With me everywhere. Great for everyday amounts, paying and receiving on the go.", v:"phone" },
+      { ico:IC.desktop, h:"On my computer", p:"At my desk. More screen, more features, good for managing things calmly.", v:"desktop" },
+      { ico:IC.shield,  h:"On a dedicated device", p:"A small gadget that stays offline — like a personal safe. The safest home for larger savings.", v:"hardware" }
+    ]},
+  { n:"Question 2 of 3", h:"How much will you keep in it?",
+    p:"Be honest with yourself — the answer changes how much security you need.",
+    opts:[
+      { ico:IC.coffee, h:"Small amounts", p:"Like cash in my pocket. If I lost it, it would sting but not hurt.", v:"small" },
+      { ico:IC.note,   h:"Meaningful savings", p:"Money I'm setting aside. Losing it would really hurt.", v:"savings" },
+      { ico:IC.safe,   h:"Long-term, serious value", p:"Treat it like a vault. Security beats convenience, every time.", v:"vault" }
+    ]},
+  { n:"Question 3 of 3", h:"How hands-on do you want to be?",
+    p:"Both paths are valid — this only changes which wallets we suggest first.",
+    opts:[
+      { ico:IC.sprout,  h:"Keep it simple", p:"I'm just starting. I want something that works in minutes and doesn't ask me hard questions.", v:"simple" },
+      { ico:IC.sliders, h:"I want full control", p:"I'm willing to learn. Show me the wallets that let me verify and configure everything.", v:"control" }
+    ]}
+];
+
+var answers = [];
+var step = 0;
+
+function startWizard(){ answers = []; step = 0; renderQ(); showView('v-wizard'); }
+
+function renderQ(){
+  var q = QUESTIONS[step];
+  var html = '<div class="qhead"><div class="qn">'+q.n+'</div><h2>'+q.h+'</h2><p>'+q.p+'</p></div><div class="opts">';
+  for(var i=0;i<q.opts.length;i++){
+    var o = q.opts[i];
+    html += '<button class="opt" onclick="answer(\''+o.v+'\')">' +
+      '<span class="oico" aria-hidden="true">'+o.ico+'</span>' +
+      '<span><h3>'+o.h+'</h3><p>'+o.p+'</p></span></button>';
+  }
+  html += '</div>';
+  document.getElementById('qbox').innerHTML = html;
+  for(var d=1; d<=3; d++){
+    var dot = document.getElementById('sd'+d);
+    dot.className = 'stepdot' + (d-1 < step ? ' done' : (d-1 === step ? ' on' : ''));
+  }
+  document.getElementById('backbtn').textContent = step === 0 ? '← Back to start' : '← Back';
+}
+
+function answer(v){
+  answers[step] = v;
+  if(step < QUESTIONS.length - 1){ step++; renderQ(); }
+  else { buildResult(); showView('v-result'); }
+}
+
+function wizBack(){
+  if(step === 0){ showView('v-landing'); return; }
+  step--; renderQ();
+}
+
+/* ---------------- matching engine (impartial, illustrative) ----------------
+   Principle: answers become CRITERIA, never brand picks. Every vetted wallet
+   that meets the criteria is shown, in shuffled order — same philosophy as
+   the shuffleWalletRows() in today's production code. */
+function shuffle(arr){
+  var a = arr.slice();
+  for(var i=a.length-1; i>0; i--){
+    var j = Math.floor(Math.random()*(i+1));
+    var t = a[i]; a[i]=a[j]; a[j]=t;
+  }
+  return a;
+}
+
+function buildResult(){
+  var place = answers[0], amount = answers[1], style = answers[2];
+  var platLabel = place==="phone" ? "your phone" : (place==="desktop" ? "your computer" : "a dedicated device");
+  var why = [], honest, matches, criteriaDesc;
+
+  if(amount === "vault" || place === "hardware"){
+    document.getElementById('platLine').innerHTML =
+      'For serious long-term value, the answer is a <b>category</b>, not a brand: hardware wallets. ' +
+      'Every hardware wallet listed on bitcoin.org passed the same review — none is favored over another.';
+    why = [
+      { b:"Keys that never touch the internet.", y:'You said: "treat it like a vault" — this is what a vault means in Bitcoin.' },
+      { b:"Every payment physically confirmed on the device.", y:"Malware on a phone or computer can't spend what you don't approve by hand." },
+      { b:"Reviewed, like everything on this site.", y:"Only wallets that passed bitcoin.org's six-criteria review appear here." }
+    ];
+    document.getElementById('matchGrid').innerHTML =
+      '<div class="catcard"><h3>' + IC.shield + ' Hardware wallets</h3>' +
+      '<p>A small offline device that holds your keys and signs payments without ever exposing them. ' +
+      'In the real page, every hardware wallet listed on bitcoin.org appears here — in shuffled order, so no vendor is favored.</p>' +
+      '<p style="margin-top:8px; font-size:12.5px; color:#9AA1AB;">(Prototype: sample data covers iOS wallets only, so this category card stands in for the shuffled hardware list.)</p></div>';
+    document.getElementById('shufNote').textContent = '';
+    honest = "<b>The honest trade-off:</b> a hardware wallet costs money and takes ~20 minutes to set up properly. For serious savings, that trade is worth it every time.";
+  } else {
+    if(style === "simple"){
+      criteriaDesc = "wallets with no caution flags on any criterion";
+      matches = WALLETS.filter(function(w){ return w.s.indexOf("warn") === -1; });
+      why = [
+        { b:"No caution flags, anywhere.", y:'You said: "keep it simple" — so we filtered out anything with a warning you\'d have to study first.' },
+        { b:"You hold your own keys.", y:"Every wallet on this page passes that bar — simple never means handing your bitcoin to a company." },
+        { b:"Room to grow later.", y:"Outgrowing a wallet is normal; moving to another takes minutes." }
+      ];
+      honest = "<b>The honest trade-off:</b> filtering for simplicity hides wallets with one caution flag that might suit you fine once you understand it. The full list is one click away — nothing is hidden from you.";
+    } else {
+      criteriaDesc = "wallets scoring Good on both control and fees";
+      matches = WALLETS.filter(function(w){ return w.s[0]==="good" && w.s[5]==="good"; });
+      why = [
+        { b:"Full control of keys and fees.", y:'You said: "I want full control" — these score Good on both, nothing decided for you.' },
+        { b:"Verify, don't trust.", y:"Check each wallet's Validation section for how far you can take self-verification." },
+        { b:"Reviewed like everything here.", y:"Only wallets that passed bitcoin.org's six-criteria review appear on this site." }
+      ];
+      honest = "<b>The honest trade-off:</b> strict criteria mean a shorter list. Loosen them in the full comparison view — every vetted wallet is there, always.";
+    }
+
+    matches = shuffle(matches);
+    document.getElementById('platLine').innerHTML =
+      'Showing <b>' + matches.length + ' of ' + WALLETS.length + '</b> wallets for <b>' + platLabel + '</b> — ' + criteriaDesc + '. ' +
+      'All of them passed the same review; the order is shuffled so no wallet is favored.';
+
+    var mg = '';
+    for(var i=0;i<matches.length;i++){
+      var w = matches[i], strip = '';
+      for(var j=0;j<6;j++){ strip += glyph(w.s[j]); }
+      mg += '<div class="mcard"><div class="mtop">' +
+        '<div class="mlogo" aria-hidden="true">'+w.name.charAt(0)+'</div>' +
+        '<span class="mname">'+w.name+'</span>' +
+        '<span class="mstrip" aria-label="Six criteria scores">'+strip+'</span>' +
+        '<button class="mget">Details</button></div>' +
+        '<p class="mnote'+(w.note.ok?' okb':'')+'"><b>'+w.note.k+':</b> '+w.note.t+'</p></div>';
+    }
+    document.getElementById('matchGrid').innerHTML = mg;
+    document.getElementById('shufNote').textContent = 'Order shuffled on every visit — bitcoin.org doesn\'t play favorites.';
+  }
+
+  var wl = '';
+  for(var k=0;k<why.length;k++){
+    wl += '<div class="whyitem"><span class="check" aria-hidden="true">✓</span><p><b>'+why[k].b+'</b><span class="you">'+why[k].y+'</span></p></div>';
+  }
+  document.getElementById('whyList').innerHTML = wl;
+  document.getElementById('honestText').innerHTML = honest;
+}
+
+/* ---------------- browse table ---------------- */
+function glyph(v){
+  if(v==="good") return '<span class="dot" role="img" aria-label="Good"></span>';
+  if(v==="ok")   return '<span class="tri" role="img" aria-label="Acceptable"></span>';
+  return '<span class="tri warn" role="img" aria-label="Caution"></span>';
+}
+function buildRows(){
+  var tb = document.getElementById("walletRows"), html = "";
+  var shuffled = shuffle(WALLETS);
+  for(var i=0;i<shuffled.length;i++){
+    var w = shuffled[i];
+    html += '<tr id="row'+i+'"><td colspan="7" style="padding:0;">' +
+      '<button class="rowbtn" aria-expanded="false" onclick="toggleRow('+i+')">' +
+      '<span class="wname">'+w.name+'</span>';
+    for(var j=0;j<6;j++){ html += '<span class="gcell">'+glyph(w.s[j])+'</span>'; }
+    html += '<span class="chev" aria-hidden="true">▾</span></button></td></tr>';
+    html += '<tr class="expand" id="exp'+i+'" hidden><td colspan="7"><div class="inner'+(w.note.ok?' okb':'')+'">' +
+      '<b>'+w.note.k+':</b> '+w.note.t+'</div></td></tr>';
+  }
+  tb.innerHTML = html;
+  document.getElementById("matchCount").textContent = WALLETS.length;
+}
+function toggleRow(i){
+  var exp = document.getElementById("exp"+i), row = document.getElementById("row"+i);
+  var btn = row.querySelector(".rowbtn"), isOpen = !exp.hidden;
+  exp.hidden = isOpen; row.classList.toggle("open", !isOpen);
+  btn.setAttribute("aria-expanded", String(!isOpen));
+}
+
+/* ---------------- shared ---------------- */
+function showView(id){
+  var views = document.querySelectorAll(".view");
+  for(var i=0;i<views.length;i++) views[i].classList.remove("active");
+  document.getElementById(id).classList.add("active");
+  window.scrollTo(0,0);
+}
+function toggleLearn(){
+  var box = document.getElementById('learnbox');
+  var open = box.classList.toggle('open');
+  box.querySelector('.learnbtn').setAttribute('aria-expanded', String(open));
+}
+
+buildRows();
+</script>
+</body>
+</html>
