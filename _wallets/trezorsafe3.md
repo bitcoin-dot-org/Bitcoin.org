@@ -16,7 +16,7 @@ platform:
         link: "https://trezor.io/trezor-safe-3"
         source: "https://github.com/trezor/trezor-firmware"
         screenshot: "trezorsafe3.png"
-        features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+        features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"
