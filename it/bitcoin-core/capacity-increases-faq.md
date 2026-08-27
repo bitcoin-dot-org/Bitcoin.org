@@ -363,7 +363,7 @@ mettere in atto i soft fork.
 Per ricevere suggerimenti specifici su come si può contribuire, unisciti
 al canale IRC [#bitcoin-dev][].
 
-[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
+[#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
 [actively studied]: https://diyhpl.us/wiki/transcripts/scalingbitcoin/bitcoin-block-propagation-iblt-rusty-russell/
 [bip-segwit]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
