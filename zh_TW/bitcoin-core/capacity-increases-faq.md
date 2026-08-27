@@ -178,7 +178,7 @@ David Harding 提供了下表以[估計][estimated savings]在不同費用和交
 
 如果你想得到更多有關如何貢獻的建議，請加入[#bitcoin-dev][] IRC 頻道討論。
 
-[#bitcoin-dev]: https://webchat.freenode.net/?channels=bitcoin-dev&amp;uio=d4
+[#bitcoin-dev]: https://web.libera.chat/#bitcoin-core-dev
 [BIP9]: https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki
 [BIP16]: https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki
 [BIP34]: https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki

@@ -201,12 +201,6 @@ function librariesShow(e) {
   onTouchClick(e, init);
 }
 
-function freenodeShow(e) {
-  // Display freenode chat window on the "Development" page at user request.
-  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="https://webchat.freenode.net/?channels=bitcoin-dev" />';
-  cancelEvent(e);
-}
-
 function updateToc() {
     // Update table of content active entry and browser url on scroll.
     var pageoffset;
