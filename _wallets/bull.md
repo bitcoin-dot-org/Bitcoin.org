@@ -20,7 +20,7 @@ platform:
         check:
           control: "checkgoodcontrolfull"
           validation: "checkpassvalidationservers" # default Bull Bitcoin electrum server but support custom servers
-          transparency: "checkpasstransparencyopensource"
+          transparency: "checkgoodtransparencydeterministic"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic" # default reveals addresses to Bull electrum server; Payjoin v2 and Tor supported
           fees: "checkgoodfeecontrolfull" # rbf
