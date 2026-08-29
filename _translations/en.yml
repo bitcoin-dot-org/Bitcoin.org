@@ -1160,7 +1160,7 @@ en:
     spend-give: "Support a cause"
     spend-give-text: "Many nonprofits, charities, and open-source projects around the world accept bitcoin donations, which work across borders without intermediaries. Examples include the <a href=\"https://runningbitcoin.us/\">Hal Finney ALS/MND Research Fund</a>, created in memory of the recipient of the first bitcoin transaction, and <a href=\"https://opensats.org/\">OpenSats</a> and the <a href=\"https://hrf.org/btc/\">Human Rights Foundation</a>, both funding open-source Bitcoin development."
     spend-business: "Accept Bitcoin at your business"
-    spend-business-text: "If you run a business, accepting Bitcoin lets you reach customers who are looking for places to spend it. Learn how on the <a href=\"#bitcoin-for-businesses#\">Bitcoin for Businesses</a> page. Once you accept it, you can add your business to the map."
+    spend-business-text: "If you run a business, accepting Bitcoin lets you reach customers who are looking for places to spend it. <a href=\"https://squareup.com/us/en/bitcoin\">Square</a>, a mainstream point-of-sale provider, lets sellers in the United States accept Bitcoin payments over the Lightning Network. Learn how on the <a href=\"#bitcoin-for-businesses#\">Bitcoin for Businesses</a> page. Once you accept it, you can add your business to the map."
   support-bitcoin:
     title: "Support Bitcoin - Bitcoin"
     pagetitle: "Support Bitcoin"
