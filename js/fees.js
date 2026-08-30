@@ -3,6 +3,8 @@ This file is licensed under the MIT License (MIT) available on
 https://opensource.org/licenses/MIT.
 */
 
+/* global Promise, fetch */
+
 (function() {
     'use strict';
 
@@ -64,7 +66,7 @@ https://opensource.org/licenses/MIT.
     }
 
     function formatRate(rate) {
-        if (typeof rate !== 'number' || !(rate > 0)) { return null; }
+        if (typeof rate !== 'number' || isNaN(rate) || rate <= 0) { return null; }
         if (rate >= 10) { return String(Math.round(rate)); }
         var rounded = Math.round(rate * 10) / 10;
         return String(rounded % 1 === 0 ? Math.round(rounded) : rounded);
