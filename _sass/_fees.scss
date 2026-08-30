@@ -1,0 +1,162 @@
+/*
+This file is licensed under the MIT License (MIT) available on
+https://opensource.org/licenses/MIT.
+*/
+
+.fees-page {
+  color: #4d5060;
+  background: #fffaf5;
+}
+
+.fees-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 56px 0 60px;
+  color: #fff;
+  background: #090c14;
+  text-align: center;
+}
+
+.fees-hero::before,
+.fees-hero::after {
+  content: '';
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  border-radius: 50%;
+}
+
+.fees-hero::before {
+  width: 420px;
+  height: 420px;
+  top: -230px;
+  right: -45px;
+}
+
+.fees-hero::after {
+  width: 260px;
+  height: 260px;
+  left: -120px;
+  bottom: -190px;
+}
+
+.fees-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.fees-eyebrow {
+  margin: 0 0 8px;
+  font-size: 87.5%;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.fees-hero h1 {
+  margin: 0 0 10px;
+  font-size: 350%;
+  font-weight: 600;
+  color: #fff;
+}
+
+.fees-hero__summary {
+  margin: 0 auto 36px;
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.fees-tiers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.fees-tier {
+  padding: 22px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+
+.fees-tier__label {
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.fees-tier__target {
+  margin: 2px 0 14px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fees-tier__rate {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.fees-tier__unit {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fees-tier__cost {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.fees-updated {
+  margin: 24px 0 4px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fees-note {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.fees-content {
+  max-width: 760px;
+  padding: 44px 20px 60px;
+}
+
+.fees-section {
+  margin: 0 0 32px;
+}
+
+.fees-section h2 {
+  margin: 0 0 10px;
+}
+
+.fees-section p {
+  margin: 0;
+  line-height: 1.65;
+  color: #4d5060;
+}
+
+.fees-attribution {
+  margin: 40px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #e6e1dc;
+  font-size: 13px;
+  color: #8a8d93;
+}
+
+@media (max-width: 760px) {
+  .fees-tiers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fees-hero h1 {
+    font-size: 250%;
+  }
+}

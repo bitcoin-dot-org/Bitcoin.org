@@ -73,6 +73,7 @@ https://opensource.org/licenses/MIT.
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>
   </li>
-  <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
   {% if page.lang == 'en' %}<li{% if page.id == 'price' %} class="active"{% endif %}><a href="/price/">{% translate menu-price layout %}</a></li>{% endif %}
+  {% if page.lang == 'en' %}<li{% if page.id == 'fees' %} class="active"{% endif %}><a href="/fees/">{% translate menu-fees layout %}</a></li>{% endif %}
+  <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
 </ul>
