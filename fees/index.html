@@ -53,32 +53,32 @@ end_of_page: |
 
   <div class="container fees-content">
     <section class="fees-section">
-      <h2>What is a transaction fee?</h2>
+      <h2 id="what-is-a-transaction-fee">What is a transaction fee?</h2>
       <p>Every Bitcoin transaction includes a small fee. The fee does not go to any company or to this website: it is collected by the miner who includes your transaction in a block. Fees reward miners for securing the network, and they act as the price of space in the next block, which is limited.</p>
     </section>
 
     <section class="fees-section">
-      <h2>Why fees change</h2>
+      <h2 id="why-fees-change">Why fees change</h2>
       <p>Block space is roughly constant, but the number of people trying to transact is not. When many transactions compete at once, fees rise; when the network is quiet, fees fall. The same transaction can cost noticeably more on a busy day than on a calm one. Nothing is wrong in either case &mdash; the fee market is simply doing its job of deciding whose transactions go first.</p>
     </section>
 
     <section class="fees-section">
-      <h2>How fees are measured: sat/vB</h2>
+      <h2 id="how-fees-are-measured">How fees are measured: sat/vB</h2>
       <p>Fees are quoted in satoshis per virtual byte (sat/vB). You pay for the <em>size</em> of your transaction in the block, not for the amount of bitcoin you send: moving a small payment and moving a fortune can cost the same fee if the transactions are the same size. A satoshi is the smallest unit of bitcoin (100,000,000 satoshis = 1 BTC). A simple payment &mdash; one input, two outputs &mdash; takes up around 140 virtual bytes; transactions with more inputs and outputs are larger.</p>
     </section>
 
     <section class="fees-section">
-      <h2>Choosing a fee</h2>
+      <h2 id="choosing-a-fee">Choosing a fee</h2>
       <p>Most wallets estimate fees for you and let you choose between speed and economy: a higher rate aims for the next block, a lower rate waits until the network is quieter. Different wallets can suggest different numbers for the same moment &mdash; fee estimation is a prediction, not an exact science. If your payment is not urgent, choosing a lower fee and waiting is a perfectly good strategy.</p>
     </section>
 
     <section class="fees-section">
-      <h2>If your transaction seems stuck</h2>
+      <h2 id="if-your-transaction-seems-stuck">If your transaction seems stuck</h2>
       <p>A transaction with a low fee during a busy period is not lost &mdash; it is waiting in a queue (the mempool) until space is available. It may confirm once demand for block space falls. Many wallets can also speed up a waiting transaction by increasing its fee (a feature called Replace-by-Fee), or you can simply wait: an unconfirmed transaction either confirms or is eventually dropped by the network &mdash; and in that case the funds simply remain spendable in your wallet, because they never actually left it.</p>
     </section>
 
     <section class="fees-section">
-      <h2>Small and everyday payments</h2>
+      <h2 id="small-and-everyday-payments">Small and everyday payments</h2>
       <p>For small or frequent payments, the <a href="/en/resources#lightning">Lightning Network</a> offers near-instant transfers with fees that are typically a tiny fraction of a cent. It works on top of Bitcoin and is supported by a growing number of wallets and merchants &mdash; see <a href="/en/spend-bitcoin">Spend Bitcoin</a> for places that accept it.</p>
     </section>
 
