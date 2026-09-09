@@ -1,0 +1,8 @@
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+https://opensource.org/licenses/MIT.
+Keep the poster in the document; the lazy loader creates the player on demand.
+{% endcomment %}
+<div id="animation-{{ include.name | replace: '_', '-' }}" class="bitcoin-animation" data-bitcoin-animation="/json/{{ include.name }}.json"{% if include.autoplay %} data-autoplay="true"{% endif %}{% if include.loop %} data-loop="true"{% endif %}{% if include.interactive %} data-interactive="true"{% endif %}{% if include.hover %} data-hover="{{ include.hover }}"{% endif %}{% if include.frame %} data-start-frame="{{ include.frame }}"{% endif %} aria-hidden="true">
+  <img class="bitcoin-animation__poster" src="/img/animations/herecomesbitcoin/posters/{{ include.name }}.svg" width="{{ include.width | default: 1000 }}" height="{{ include.height | default: 1000 }}" alt="" decoding="async" loading="{{ include.loading | default: 'eager' }}">
+</div>

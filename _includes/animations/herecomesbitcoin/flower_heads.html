@@ -1,20 +1,5 @@
-   <!--
-      This file is licensed under the MIT License (MIT) available on
-      https://opensource.org/licenses/MIT.
-   -->
-<lottie-player id="animation-flower-heads" src="/json/flower_heads.json"></lottie-player>
-  <script>
-    const animFlowerHeads = document.querySelector('#animation-flower-heads');
-    animFlowerHeads.addEventListener('click', playFlowerHeadsAnimation);
-    animFlowerHeads.addEventListener('complete', stopFlowerHeadsAnimation);
-
-    document.querySelector('#flower-heads-hoverable').addEventListener('mouseenter', playFlowerHeadsAnimation);
-
-    function stopFlowerHeadsAnimation() {
-      animFlowerHeads.stop();
-    }
-
-    function playFlowerHeadsAnimation() {
-      animFlowerHeads.play(animFlowerHeads.firstFrame);
-    }
-  </script>
+{% comment %}
+This file is licensed under the MIT License (MIT) available on
+https://opensource.org/licenses/MIT.
+{% endcomment %}
+{% include animations/herecomesbitcoin/player.html name="flower_heads" interactive=true hover="flower-heads-hoverable" width=600 height=600 loading="lazy" %}

@@ -56,11 +56,11 @@ https://opensource.org/licenses/MIT.
 <script type="text/javascript" src="/js/base.js?{{site.time | date: '%s'}}"></script>
 <script type="text/javascript" src="/js/main.js?{{site.time | date: '%s'}}"></script>
 {% comment %}
-Content animations are already rendered when this layout runs. The homepage
-cat and business-page construction animation are added by the layout itself.
+The small loader keeps static artwork visible and loads Lottie on demand.
+The homepage cat and business-page construction artwork are added by the layout.
 {% endcomment %}
-{% if content contains '<lottie-player' or page.id == 'index' or page.id == 'bitcoin-for-businesses' %}
-<script type="text/javascript" src="/js/lottie-player.js?{{site.time | date: '%s'}}"></script>
+{% if content contains 'data-bitcoin-animation' or page.id == 'index' or page.id == 'bitcoin-for-businesses' %}
+<script id="bitcoin-animation-loader" data-cfasync="false" defer src="/js/lazy-animations.js?{{site.time | date: '%s'}}" data-player-src="/js/lottie-player.js?{{site.time | date: '%s'}}"></script>
 {% endif %}
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
 <script src="/js/jquery/jquery.qrcode.min.js"></script>
