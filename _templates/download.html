@@ -40,7 +40,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
   <div class="container core-content clearfix">
     <div class="core-column-left clearfix">
       <div class="mainbutton">
-        <a id="downloadbutton" href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}-{{ page.win64exe }}">
+        <a id="downloadbutton" href="#download-options">
           <!-- <img src="/img/os/but_windows.svg?{{site.time | date: '%s'}}" alt="icon"> -->
           {% translate download %}
         </a>
@@ -65,7 +65,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
       
     </div>
     
-    <div class="downloadbox core-column-left clearfix">
+    <div id="download-options" class="downloadbox core-column-left clearfix" tabindex="-1">
       <p class="corecard-label">{% translate downloados %}</p>
 
         <div class="corecard windows-card">
@@ -120,41 +120,112 @@ lin64: "x86_64-linux-gnu.tar.gz"
   </div>
 </div>
 <script type="text/javascript">
-var os = 'windows64';
-if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
-else if (navigator.userAgent.indexOf('Linux') != -1) {
-	var os='linux32';
-	if (navigator.userAgent.indexOf('x86_64') != -1) var os = 'linux64';
-	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'snap';
-}
-else if (navigator.userAgent.indexOf('WOW64') != -1 || navigator.userAgent.indexOf('Win64') != -1) var os='windows64';
-var but = document.getElementById('downloadbutton');
-var linkwinexe = document.getElementById('downloadwinexe');
-var linkwinzip = document.getElementById('downloadwinzip');
-var linklin = document.getElementById('downloadlin');
-var hrefwin64exe = document.getElementById('win64exe').href;
-var hrefwin64zip = document.getElementById('win64zip').href;
-var hrefmaczip = document.getElementById('maczip').href;
-var hrefmactar = document.getElementById('mactar').href;
-var hreflin64 = document.getElementById('lin64').href;
-switch (os) {
-case 'windows64':
-	but.href = hrefwin64exe;
-	linkwinexe.href = hrefwin64exe;
-	linkwinzip.href = hrefwin64zip;
-break;
-case 'linux64':
-	but.href = hreflin64;
-	linklin.href = hreflin64;
-break;
-case 'snap':
-	but.href = 'https://snapcraft.io/bitcoin-core';
-break;
-case 'mac':
-	but.href = hrefmaczip;
-break;
-}
+(function () {
+    var button = document.getElementById('downloadbutton');
+    if (!button) {
+        return;
+    }
 
+    var ua = (navigator.userAgent || '').toLowerCase();
+    var platform = (navigator.platform || '').toLowerCase();
+    var clientHints = navigator.userAgentData;
+    var system = ((clientHints && clientHints.platform) || platform).toLowerCase();
+    var device = system + ' ' + platform + ' ' + ua;
+    var os = '';
+    var interacted = false;
+    var firefoxVersion = /firefox\/(\d+)/.exec(ua);
+
+    // Mobile devices and ChromeOS have no matching desktop download here.
+    // iPadOS can identify itself as a Mac when requesting desktop websites.
+    if ((clientHints && clientHints.mobile) ||
+            /android|iphone|ipad|ipod|mobile|windows phone|cros|chrome os/.test(device) ||
+            (/mac/.test(device) && navigator.maxTouchPoints > 1)) {
+        return;
+    }
+
+    if (/windows|win32|win64/.test(device)) {
+        os = 'windows';
+    } else if (/mac/.test(device)) {
+        os = 'mac';
+    } else if (/linux/.test(device)) {
+        os = 'linux';
+    } else {
+        return;
+    }
+
+    function useDownload(id) {
+        var link = document.getElementById(id);
+        if (!interacted && link && link.getAttribute('href')) {
+            button.href = link.href;
+        }
+    }
+
+    function selectDownload(architecture, bitness) {
+        if (architecture === 'x86' && bitness === '64') {
+            useDownload(os === 'windows' ? 'win64exe' : (os === 'mac' ? 'maczip' : 'lin64'));
+        } else if (architecture === 'arm' && bitness === '64') {
+            if (os === 'mac') {
+                useDownload('macarmzip');
+            } else if (os === 'linux') {
+                useDownload('lin64arm');
+            }
+        } else if (architecture === 'arm' && bitness === '32' && os === 'linux') {
+            useDownload('lin32arm');
+        }
+    }
+
+    // Do not change a link after the user has started to activate it.
+    function keepDownload() {
+        interacted = true;
+    }
+    button.addEventListener('focus', keepDownload);
+    button.addEventListener('mousedown', keepDownload);
+    button.addEventListener('touchstart', keepDownload);
+    button.addEventListener('click', keepDownload);
+
+    // Chromium freezes desktop CPU tokens in the user agent. Keep the
+    // platform chooser until its optional architecture hints are available.
+    if (clientHints && typeof clientHints.getHighEntropyValues === 'function') {
+        try {
+            clientHints.getHighEntropyValues(['architecture', 'bitness']).then(function (hints) {
+                if (hints) {
+                    selectDownload(hints.architecture, hints.bitness);
+                }
+            }, function () {
+                // Restricted hints leave the platform chooser available.
+            });
+        } catch (error) {
+            // Some browsers expose the API but do not allow it to be used.
+        }
+        return;
+    }
+
+    // A reduced Chromium user agent is not evidence of CPU architecture.
+    if (clientHints || /chrome|chromium|crios|edg\/|opr\//.test(ua)) {
+        return;
+    }
+
+    if (/aarch64|arm64/.test(device)) {
+        selectDownload('arm', '64');
+    } else if (/armv7|armv8l/.test(device)) {
+        selectDownload('arm', '32');
+    } else if (os === 'mac') {
+        // Both Intel and Apple Silicon Macs can report "Intel" or "MacIntel".
+        // Let the visitor choose when the architecture cannot be determined.
+        return;
+    } else if (os === 'linux' && /riscv64/.test(device)) {
+        useDownload('riscvlin64');
+    } else if (os === 'linux' && /\b(?:ppc64|powerpc64)\b/.test(device)) {
+        // Do not confuse little-endian ppc64le with the powerpc64 build.
+        useDownload('ppclin64');
+    } else if (/x86_64|amd64|x64|win64|wow64/.test(device)) {
+        // Firefox 127+ also masks 32-bit x86 Linux as x86_64.
+        if (os === 'linux' && firefoxVersion && Number(firefoxVersion[1]) >= 127) {
+            return;
+        }
+        selectDownload('x86', '64');
+    }
+}());
 </script>
 {% else %}
 {% capture redirect %}https://bitcoin.org/{{page.lang}}/{% translate download url %}{% endcapture %}
