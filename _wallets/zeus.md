@@ -19,7 +19,7 @@ platform:
         features: "bech32 lightning segwit taproot"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
@@ -36,7 +36,7 @@ platform:
         features: "bech32 lightning segwit taproot"
         check:
           control: "checkgoodcontrolfull"
-          validation: "checkpassvalidationspvservers"
+          validation: "checkfailvalidationcentralized"
           transparency: "checkpasstransparencyopensource"
           environment: "checkpassenvironmentmobile"
           privacy: "checkpassprivacybasic"
