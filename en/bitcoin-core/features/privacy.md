@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoin-core-privacy
 layout: base-core
@@ -55,10 +55,10 @@ third_party_privacy:
 {% include bitcoin-core/download-bitcoin-core.html %}
 
 > What if every time you spent or received cash, all the transaction
-> details were published to your Twitter or Facebook feed for all your
+> details were published to your social media feed for all your
 > friends to see? You probably wouldn't want to use cash any more.
 
-Every confirmed Bitcoin transaction is published to the block chain
+Every confirmed Bitcoin transaction is published to the blockchain
 where anyone can see it. So **why do people still use Bitcoin?** And why
 do many of them believe that Bitcoin is a private way of sending money?
 
@@ -268,7 +268,7 @@ against eavesdroppers for received transactions.
 
 ## Strong Privacy for Sent Transactions
 
-To put a transaction on the block chain, you must send it publicly---but
+To put a transaction on the blockchain, you must send it publicly---but
 how you send it can make a big difference.
 
 ![Sending privacy](/img/bitcoin-core/sending-privacy.svg?{{site.time | date: '%s'}})
@@ -379,7 +379,7 @@ Isn't that worth occasionally starting up a few seconds slower?
 
   Some lightweight wallets don't connect to the Bitcoin peer-to-peer (P2P)
   network.  Instead, they make a (usually secure) connection to a single
-  server that provides block chain data.
+  server that provides blockchain data.
 
   The wallet tells the server all of its addresses, and the server replies
   with all of the transactions that belong to the wallet.  This explicitly
@@ -397,12 +397,10 @@ Isn't that worth occasionally starting up a few seconds slower?
   </div>
 
   <div id="spv_decentralized_peer" title="P2P Decentralized Peer Discovery" markdown="block">
-  The following P2P lightweight wallets use decentralized peer discovery
-  by default.
+  We don't currently know of any P2P lightweight wallets that use
+  decentralized peer discovery by default.
 
-  - BRD
-
-  If you know of another compliant lightweight wallet, please [tell us
+  If you know of a compliant lightweight wallet, please [tell us
   about it][docs issue].
   </div>
 

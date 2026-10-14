@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: cypherockx1
 title: "Cypherock X1"
@@ -16,7 +16,7 @@ platform:
         link: "https://www.cypherock.com/"
         source: "https://github.com/Cypherock/x1_wallet_firmware"
         screenshot: "cypherockx1.png"
-        features: "bech32 hardware_wallet legacy_addresses segwit"
+        features: "bech32 hardware_wallet legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkneutralvalidationvariable"

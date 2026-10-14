@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 type: posts
 layout: post
@@ -118,6 +118,6 @@ Should altcoins wish to continue using the Alert system but with a different Ale
 
 [1]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-September/013104.html
 [2]: https://bitcoin.org/en/alert/2016-11-01-alert-retirement
-[3]: http://www.erisian.com.au/meetbot/bitcoin-core-dev/2018/bitcoin-core-dev.2018-06-21-19.00.log.html#l-30
+[3]: https://www.erisian.com.au/meetbot/bitcoin-core-dev/2018/bitcoin-core-dev.2018-06-21-19.00.log.html#l-30
 [4]: https://www.coindesk.com/long-secret-bitcoin-key-finally-revealed/
 [5]: https://gist.github.com/achow101/02d03238090691558a68010a9ccbbf9d

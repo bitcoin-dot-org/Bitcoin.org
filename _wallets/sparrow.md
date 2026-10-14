@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: sparrow
 title: "Sparrow Wallet"
@@ -15,7 +15,7 @@ platform:
       link: "https://sparrowwallet.com/"
       source: "https://github.com/sparrowwallet/sparrow/"
       screenshot: "sparrow.png"
-      features: "bech32 hardware_wallet legacy_addresses multisig segwit"
+      features: "bech32 hardware_wallet legacy_addresses multisig segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkpassvalidationservers"

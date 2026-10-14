@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #releases.rb generates release pages using files in _releases
 #and assign them the 'release' category.
@@ -25,6 +25,7 @@ module Jekyll
 
       ## Read in the file's YAML header
       self.read_yaml(File.join(base, srcdir), src)
+      self.data["path"] = srcdir + "/" + src
 
       ## Die if required_ variables aren't set
       if self.data['required_version']

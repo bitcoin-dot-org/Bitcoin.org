@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoin-core-contribute-documentation
 lang: en
@@ -31,7 +31,7 @@ is available and how you can contribute.
 
 ## Bitcoin Core Docs Directory
 
-The [developer.bitcoin.org GitHub repository](https://github.com/bitcoin-dot-org/developer.bitcoin.org)
+The Bitcoin Core [`doc/` directory][Bitcoin Core docs directory]
 contains various files describing aspects of Bitcoin Core. Almost all of
 the files are meant for developers and testers rather than users.
 
@@ -49,7 +49,7 @@ The files can be easily edited in GitHub's web interface:
 5. At the bottom of the page, fill out the Propose File Change form and
    submit it.
 
-*Need help getting started?  Stop by the [#bitcoin-dev][] IRC chatroom
+*Need help getting started?  Stop by the [#bitcoin-core-dev][#bitcoin-dev] IRC chatroom
 and tell us what documentation you want to write.*
 
 ## Bitcoin.org Bandwidth Sharing Guide
@@ -63,8 +63,7 @@ To contribute, you can [edit the guide][edit bandwidth sharing
 guide] using the same GitHub web interface as described in the
 previous section.
 
-*Need help getting started? You can [open an issue][] or email Bitcoin.org
-documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
+*Need help getting started? You can [open an issue][].*
 
 ## Bitcoin Wiki
 
@@ -110,8 +109,7 @@ To contribute RPC edits, the easiest way is to:
 6. At the bottom of the page, fill out the Propose File Change form and
    submit it.
 
-*Need help getting started? You can [open an issue][] or email
-Bitcoin.org documentation maintainer {{site.text.bitcoin_org_docs_maintainer_email_link}}.*
+*Need help getting started? You can [open an issue][].*
 
 <br class="clear big">
 <div class="prevnext" markdown="block">

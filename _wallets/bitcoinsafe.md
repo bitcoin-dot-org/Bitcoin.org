@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoinsafe
 title: "Bitcoin Safe"
@@ -15,10 +15,10 @@ platform:
       link: "https://bitcoin-safe.org/"
       source: "https://github.com/andreasgriffin/bitcoin-safe/"
       screenshot: "bitcoinsafe.png"
-      features: "bech32 hardware_wallet multisig segwit"
+      features: "bech32 hardware_wallet multisig segwit taproot"
       check: &DEFAULT-CHECK
         control: "checkgoodcontrolfull"
-        validation: "checkfailvalidationcentralized"
+        validation: "checkpassvalidationservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
         privacy: "checkpassprivacybasic"

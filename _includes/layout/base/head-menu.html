@@ -1,6 +1,6 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
@@ -11,6 +11,7 @@ http://opensource.org/licenses/MIT.
       <li><a href="https://developer.bitcoin.org/">{% translate menu-bitcoin-for-developers layout %}</a></li>
       <li{% if page.id == 'getting-started' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate getting-started url %}">{% translate menu-getting-started layout %}</a></li>
       <li{% if page.id == 'how-it-works' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate how-it-works url %}">{% translate menu-how-it-works layout %}</a></li>
+      <li{% if page.id == 'you-need-to-know' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate menu-you-need-to-know layout %}</a></li>
       {% if
          page.lang == 'en' or
          page.lang == 'de' or
@@ -39,6 +40,14 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
       <li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a></li>
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
+      <li{% if page.id == 'bip' %} class="active"{% endif %}><a href="/bips/">{% translate menu-bips layout %}</a></li>
+      {% comment %}
+        After the halving page is translated, add the language to the
+        condition below
+      {% endcomment %}
+      {% if page.lang == 'en' %}
+      <li{% if page.id == 'halving' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate halving url %}">{% translate menu-halving layout %}</a></li>
+      {% endif %}
       {% comment %}
         After the developer-documentation page is translated, add the language
         to the condition below
@@ -47,7 +56,6 @@ http://opensource.org/licenses/MIT.
       <li><a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a></li>
       {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
-      <li{% if page.id == 'events' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a></li>
       {% if page.lang == 'en' %}
         <li><a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
       {% else %}
@@ -65,5 +73,7 @@ http://opensource.org/licenses/MIT.
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>
   </li>
+  {% if page.lang == 'en' %}<li{% if page.id == 'price' %} class="active"{% endif %}><a href="/price/">{% translate menu-price layout %}</a></li>{% endif %}
+  {% if page.lang == 'en' %}<li{% if page.id == 'fees' %} class="active"{% endif %}><a href="/fees/">{% translate menu-fees layout %}</a></li>{% endif %}
   <li{% if page.id == 'faq' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate faq url %}">{% translate menu-faq layout %}</a></li>
 </ul>

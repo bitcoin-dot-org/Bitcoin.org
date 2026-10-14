@@ -1,6 +1,6 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <div class="row footer-row">
@@ -78,12 +78,22 @@ http://opensource.org/licenses/MIT.
         <li{% if page.id == 'community' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a>
         </li>
+        <li{% if page.id == 'bip' %} class="active"{% endif %}>
+          <a href="/bips/">{% translate menu-bips layout %}</a>
+        </li>
+        {% if page.lang == 'en' %}
+        <li{% if page.id == 'halving' %} class="active"{% endif %}>
+          <a href="/{{ page.lang }}/{% translate halving url %}">{% translate menu-halving layout %}</a>
+        </li>
+        {% endif %}
+        {% if page.lang == 'en' %}
+        <li>
+          <a href="https://developer.bitcoin.org/">{% translate menu-developer-documentation layout %}</a>
+        </li>
+        {% endif %}
         <li{% if page.id == 'vocabulary' %} class="active"{% endif %}>
           <a href="/{{ page.lang }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}
           </a>
-        </li>
-        <li{% if page.id == 'events' %} class="active"{% endif %}>
-          <a href="/{{ page.lang }}/{% translate events url %}">{% translate menu-events layout %}</a>
         </li>
         {% if page.lang == 'en' %}
         <li>
@@ -120,6 +130,12 @@ http://opensource.org/licenses/MIT.
     </div>
     <div class="footermenu-item footermenu-other">
       <p class="footer-title">{% translate menu-other layout %}:</p>
+      {% if page.lang == 'en' %}
+          <a href="/price/">{% translate menu-price layout %}</a>
+      {% endif %}
+      {% if page.lang == 'en' %}
+          <a href="/fees/">{% translate menu-fees layout %}</a>
+      {% endif %}
       {% if page.lang == 'en' %}
       <a href="/{{ page.lang }}/{% translate scams url %}">{% translate menu-scams layout %}</a>
       {% endif %}

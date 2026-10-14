@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: mycelium
 title: "Mycelium"
@@ -16,7 +16,7 @@ platform:
         link: "https://play.google.com/store/apps/details?id=com.mycelium.wallet"
         source: "https://github.com/mycelium-com/wallet"
         screenshot: "mycelium.png"
-        features: "bech32 hardware_wallet legacy_addresses segwit"
+        features: "bech32 hardware_wallet legacy_addresses segwit taproot"
         check:
           control: "checkgoodcontrolfull"
           validation: "checkfailvalidationcentralized"

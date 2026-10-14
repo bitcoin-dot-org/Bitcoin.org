@@ -1,5 +1,5 @@
 // This file is licensed under the MIT License (MIT) available on
-// http://opensource.org/licenses/MIT.
+// https://opensource.org/licenses/MIT.
 
 // This file is used for javascript code
 // necessary for some pages to work properly.
@@ -199,12 +199,6 @@ function librariesShow(e) {
     cancelEvent(e);
   }
   onTouchClick(e, init);
-}
-
-function freenodeShow(e) {
-  // Display freenode chat window on the "Development" page at user request.
-  document.getElementById('chatbox').innerHTML = '<iframe style=width:98%;min-width:400px;height:600px src="http://webchat.freenode.net/?channels=bitcoin-dev" />';
-  cancelEvent(e);
 }
 
 function updateToc() {
@@ -430,21 +424,56 @@ var xint = setInterval(function() {
   clearInterval(xint);
 }, 200);
 
-function generateDonationUrl(address, amountBtc, message) {
-    var result = [
-        address
-    ];
+var donationUsdRate = null;
+var donationTickerRequest = null;
+var donationModalOpener = null;
+var donationModalOpenTimer = null;
+var donationBodyOverflow = '';
 
-    amountBtc = parseFloat(amountBtc);
-
-    if (!isNaN(amountBtc)) {
-        result.push('?amount=' + amountBtc);
+function parseDonationAmount(value) {
+    var normalized = String(value || '').replace(',', '.').replace(/^\s+|\s+$/g, '');
+    if (!/^(?:\d+\.?\d*|\.\d+)$/.test(normalized)) {
+        return null;
     }
 
+    var amount = parseFloat(normalized);
+    return !isNaN(amount) && amount > 0 ? amount : null;
+}
+
+function formatDonationBtc(value) {
+    var amount = value.toFixed(8).replace(/0+$/, '').replace(/\.$/, '');
+    return amount === '0' ? '' : amount;
+}
+
+function donationUsdToBtc(amount) {
+    var amountUsd = parseDonationAmount(amount);
+    if (amountUsd === null || donationUsdRate === null) {
+        return '';
+    }
+    return formatDonationBtc(amountUsd / donationUsdRate);
+}
+
+function donationBtcToUsd(amount) {
+    var amountBtc = parseDonationAmount(amount);
+    if (amountBtc === null || donationUsdRate === null) {
+        return '';
+    }
+    return (amountBtc * donationUsdRate).toFixed(2);
+}
+
+function generateDonationUrl(address, amountBtc, message) {
+    var result = [address];
+    var parsedAmount = parseDonationAmount(amountBtc);
+    var formattedAmount = parsedAmount === null ? '' : formatDonationBtc(parsedAmount);
+
+    if (formattedAmount !== '') {
+        result.push('?amount=' + formattedAmount);
+    }
+
+    message = message || '';
     if (message !== '') {
-        message = encodeURIComponent(message);
         result.push(result.length === 1 ? '?' : '&');
-        result.push('message=' + message);
+        result.push('message=' + encodeURIComponent(message));
     }
 
     return result.join('');
@@ -452,92 +481,180 @@ function generateDonationUrl(address, amountBtc, message) {
 
 function generateDonationQrCode() {
     var qrcodeContainer = $('#donation-qr-code');
-    qrcodeContainer.empty();
+    if (!qrcodeContainer.length) {
+        return;
+    }
 
     var address = qrcodeContainer.data('address');
     var amount = $('#donation-input-amount-btc').val();
     var message = $('#donation-input-message').val();
-
     var text = 'bitcoin:' + generateDonationUrl(address, amount, message);
 
-    $('.donation-btc-address').attr('href', text);
+    $('.donation-wallet-btn').attr('href', text);
+    qrcodeContainer.empty();
 
-    $('#donation-qr-code').qrcode({
-        width: 150,
-        height: 150,
-        text: text
+    if ($.fn.qrcode) {
+        qrcodeContainer.qrcode({
+            width: 150,
+            height: 150,
+            text: text
+        });
+    }
+}
+
+function setDonationRateStatus(message, isError) {
+    $('#donation-rate-status')
+        .text(message || '')
+        .toggleClass('is-error', !!isError);
+}
+
+function clearDonationSelectedAmount() {
+    $('[data-amount-usd]')
+        .removeClass('is-selected')
+        .attr('aria-pressed', 'false');
+}
+
+function selectDonationAmount(button) {
+    clearDonationSelectedAmount();
+    $(button)
+        .addClass('is-selected')
+        .attr('aria-pressed', 'true');
+}
+
+function applyDonationUsdAmount(amountUsd) {
+    var modal = $('#donation-modal');
+    var amountBtc = donationUsdToBtc(amountUsd);
+
+    $('#donation-input-amount-usd').val(amountUsd);
+
+    if (amountBtc !== '') {
+        $('#donation-input-amount-btc').val(amountBtc);
+        setDonationRateStatus('', false);
+    } else {
+        $('#donation-input-amount-btc').val('');
+        setDonationRateStatus(
+            modal.data(donationTickerRequest ? 'rate-loading' : 'rate-unavailable'),
+            !donationTickerRequest
+        );
+    }
+
+    generateDonationQrCode();
+}
+
+function refreshDonationAmountButtons() {
+    $('[data-amount-usd]').each(function() {
+        var amountBtc = donationUsdToBtc($(this).data('amount-usd'));
+        $('.donation-amount-usd-in-btc', this).text(amountBtc ? amountBtc + ' BTC' : '… BTC');
     });
-
 }
 
 function loadTickerPrices() {
-    $.ajax('https://blockchain.info/ticker').then(function(data) {
-        var rate = data.USD.last;
+    var modal = $('#donation-modal');
 
-        function usdToBtc(amount) {
-            var amountUsd = parseFloat(amount);
-            if (isNaN(amountUsd)) {
-                return 0;
+    if (donationUsdRate !== null) {
+        refreshDonationAmountButtons();
+        return;
+    }
+
+    if (donationTickerRequest) {
+        return;
+    }
+
+    setDonationRateStatus(modal.data('rate-loading'), false);
+
+    donationTickerRequest = $.ajax({
+        url: 'https://blockchain.info/ticker',
+        dataType: 'json',
+        timeout: 6000
+    })
+        .done(function(data) {
+            var rate = data && data.USD ? parseFloat(data.USD.last) : NaN;
+
+            if (isNaN(rate) || rate <= 0) {
+                setDonationRateStatus(modal.data('rate-unavailable'), true);
+                return;
             }
-            var amountBtc = amountUsd / rate;
-            return amountBtc.toFixed(8);
-        }
 
-        function btcToUsd(amount) {
-            var amountBtc = parseFloat(amount);
-            if (isNaN(amountBtc)) {
-                return 0;
+            donationUsdRate = rate;
+            refreshDonationAmountButtons();
+
+            var amountUsd = $('#donation-input-amount-usd').val();
+            if (parseDonationAmount(amountUsd) !== null) {
+                applyDonationUsdAmount(amountUsd);
+            } else {
+                setDonationRateStatus('', false);
             }
-            var amountUsd = amountBtc * rate;
-            return amountUsd.toFixed(2);
-        }
-
-        $('#donation-input-amount-usd').on('input', function() {
-            var amount = $(this).val();
-            $('#donation-input-amount-btc').val(usdToBtc(amount));
-            generateDonationQrCode();
+        })
+        .fail(function() {
+            setDonationRateStatus(modal.data('rate-unavailable'), true);
+        })
+        .always(function() {
+            donationTickerRequest = null;
         });
-
-        $('#donation-input-amount-btc').on('input', function() {
-            var amount = $(this).val();
-            $('#donation-input-amount-usd').val(btcToUsd(amount));
-            generateDonationQrCode();
-        });
-
-        $('#donation-input-message').on('input', function() {
-            generateDonationQrCode();
-        });
-
-        $('[data-amount-usd]').each(function() {
-            var amountUsd = $(this).data('amount-usd');
-            var amountBtc = usdToBtc(amountUsd);
-            $('div', this).text('(' + amountBtc + ' BTC)');
-
-            $(this).on('click', function() {
-                $('#donation-input-amount-btc').val(amountBtc);
-                $('#donation-input-amount-usd').val(amountUsd);
-
-                generateDonationQrCode();
-            });
-        });
-    });
 }
 
-function openDonationModal() {
-    var drop = $('<div class="modal-drop" />');
-    var body = $('body');
+function getDonationFocusableElements() {
+    return $('#donation-modal')
+        .find('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), summary, [tabindex]:not([tabindex="-1"])')
+        .filter(':visible');
+}
+
+function handleDonationModalKeydown(event) {
+    if (event.keyCode === 27) {
+        closeDonationModal();
+        return;
+    }
+
+    if (event.keyCode !== 9) {
+        return;
+    }
+
+    var focusable = getDonationFocusableElements();
+    if (!focusable.length) {
+        event.preventDefault();
+        return;
+    }
+
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === $('#donation-modal')[0])) {
+        event.preventDefault();
+        last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+    }
+}
+
+function openDonationModal(event) {
     var modal = $('#donation-modal');
-    body.append(drop);
-    body.css('overflow', 'hidden');
-    modal.css('display', 'block');
+    if (!modal.length || modal.css('display') !== 'none' || modal.hasClass('open')) {
+        return;
+    }
+
+    donationModalOpener = event && event.currentTarget ? event.currentTarget : document.activeElement;
+    donationBodyOverflow = document.body.style.overflow;
+
+    var drop = $('<div class="modal-drop" />');
+    $('body')
+        .append(drop)
+        .css('overflow', 'hidden');
+
+    modal
+        .css('display', 'block')
+        .attr('aria-hidden', 'false');
 
     drop.on('click', closeDonationModal);
+    $(document).on('keydown.donationModal', handleDonationModalKeydown);
 
-    // postpone opacity update
-    setTimeout(function() {
+    clearTimeout(donationModalOpenTimer);
+    donationModalOpenTimer = setTimeout(function() {
         drop.css('opacity', 1);
-        modal.removeClass('hidden');
-        modal.addClass('open');
+        modal
+            .removeClass('hidden')
+            .addClass('open')
+            .focus();
     }, 0);
 
     loadTickerPrices();
@@ -546,33 +663,146 @@ function openDonationModal() {
 
 function closeDonationModal() {
     var drop = $('.modal-drop');
-    var body = $('body');
     var modal = $('#donation-modal');
 
+    if (!modal.length || modal.css('display') === 'none' || modal.attr('aria-hidden') === 'true') {
+        return;
+    }
+
+    clearTimeout(donationModalOpenTimer);
+    donationModalOpenTimer = null;
     drop.css('opacity', 0);
-    body.css('overflow', 'auto');
+    modal
+        .addClass('hidden')
+        .removeClass('open')
+        .attr('aria-hidden', 'true');
+
+    document.body.style.overflow = donationBodyOverflow;
+    $(document).off('keydown.donationModal');
 
     setTimeout(function() {
         drop.remove();
-        modal.addClass('hidden');
-        modal.removeClass('open');
         modal.css('display', 'none');
-    }, 120);
+
+        if (donationModalOpener && document.documentElement.contains(donationModalOpener)) {
+            donationModalOpener.focus();
+        }
+    }, 180);
+}
+
+function fallbackCopyDonationAddress(address) {
+    var input = document.createElement('textarea');
+    input.value = address;
+    input.setAttribute('readonly', '');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    input.setSelectionRange(0, input.value.length);
+
+    var copied = false;
+    try {
+        copied = document.execCommand('copy');
+    } catch (error) {
+        copied = false;
+    }
+
+    document.body.removeChild(input);
+    return copied;
+}
+
+function markDonationAddressCopied(button, copied) {
+    var status = $('#donation-copy-status');
+    var defaultLabel = $(button).data('default-label');
+    var message = copied ? $(button).data('copied-label') : $(button).data('failed-label');
+
+    status
+        .text(message)
+        .toggleClass('is-error', !copied);
+
+    if (copied) {
+        $(button).text(message);
+        setTimeout(function() {
+            $(button).text(defaultLabel);
+            status.text('');
+        }, 2000);
+    }
+}
+
+function copyDonationAddress(button) {
+    var address = $('#donation-btc-address-text').text();
+
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(address)
+            .then(function() {
+                markDonationAddressCopied(button, true);
+            })
+            .catch(function() {
+                markDonationAddressCopied(button, fallbackCopyDonationAddress(address));
+            });
+    } else {
+        markDonationAddressCopied(button, fallbackCopyDonationAddress(address));
+    }
+}
+
+function initDonationUI() {
+    var modal = $('#donation-modal');
+    if (!modal.length) {
+        return;
+    }
+
+    $('[data-amount-usd]').off('.donation').on('click.donation', function() {
+        selectDonationAmount(this);
+        applyDonationUsdAmount($(this).data('amount-usd'));
+    });
+
+    $('#donation-input-amount-usd').off('.donation').on('input.donation', function() {
+        clearDonationSelectedAmount();
+
+        var amountBtc = donationUsdToBtc($(this).val());
+        $('#donation-input-amount-btc').val(amountBtc);
+
+        if (amountBtc !== '') {
+            setDonationRateStatus('', false);
+        } else if (parseDonationAmount($(this).val()) !== null) {
+            setDonationRateStatus(
+                modal.data(donationTickerRequest ? 'rate-loading' : 'rate-unavailable'),
+                !donationTickerRequest
+            );
+        } else {
+            setDonationRateStatus('', false);
+        }
+
+        generateDonationQrCode();
+    });
+
+    $('#donation-input-amount-btc').off('.donation').on('input.donation', function() {
+        clearDonationSelectedAmount();
+
+        var amountUsd = donationBtcToUsd($(this).val());
+        $('#donation-input-amount-usd').val(amountUsd);
+        setDonationRateStatus('', false);
+        generateDonationQrCode();
+    });
+
+    $('#donation-input-message').off('.donation').on('input.donation', generateDonationQrCode);
+
+    var selectedAmount = $('[data-amount-usd][aria-pressed="true"]').first();
+    if (selectedAmount.length) {
+        $('#donation-input-amount-usd').val(selectedAmount.data('amount-usd'));
+    }
+
+    generateDonationQrCode();
 }
 
 function toggleDonationBanner() {
-    var banner = $('.donation-text');
-    var open = $('.donation-visibility-toggle');
-
-    open.addClass("active");
-    banner.addClass("expanded");
+    openDonationModal();
 }
-function closeDonationBanner() {
-  var banner = $(".donation-text");
-  var open = $(".donation-visibility-toggle");
 
-  open.removeClass("active");
-  banner.removeClass("expanded");
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDonationUI);
+} else {
+    setTimeout(initDonationUI, 0);
 }
 function accordion() {
   $(document).ready(function($) {
@@ -731,38 +961,255 @@ function changeAccordionButtonText(button, text) {
   button.textContent = text;
 }
 
-function showBuyWidget() {
+var moonPaySignerBaseUrl = 'https://moonpay.bitcoin.org';
+var moonPayApiKey = 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R';
+var moonPayEnvironment;
 
-  var buyWidget = window.MoonPayWebSdk.init({
-    flow: 'buy',
-    environment: 'production',
-    containerNodeSelector: '.buy-widget',
-    variant: 'embedded',
-    params: {
-      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
-      theme: 'light',
-      colorCode: '#FF9500'
+if (moonPayApiKey.indexOf('pk_test_') === 0) {
+  moonPayEnvironment = 'sandbox';
+} else if (moonPayApiKey.indexOf('pk_live_') === 0) {
+  moonPayEnvironment = 'production';
+} else {
+  throw new Error(
+    'MoonPay API key must begin with pk_test_ or pk_live_.'
+  );
+}
+
+function getMoonPaySignerUrl(path) {
+  return moonPaySignerBaseUrl.replace(/\/$/, '') + path;
+}
+
+function getMoonPaySignerError(jqXHR, fallbackMessage) {
+  var payload = jqXHR.responseJSON;
+
+  if (!payload && jqXHR.responseText) {
+    try {
+      payload = JSON.parse(jqXHR.responseText);
+    } catch (e) {
+      payload = null;
     }
-  });
+  }
 
-  buyWidget.show();
+  var message = fallbackMessage;
+  var code = 'signer_request_failed';
+
+  if (payload && payload.error) {
+    if (payload.error.message) {
+      message = payload.error.message;
+    }
+
+    if (payload.error.code) {
+      code = payload.error.code;
+    }
+  }
+
+  var error = new Error(message);
+
+  error.code = code;
+  error.status = jqXHR.status;
+
+  return error;
+}
+
+function requestMoonPayAllowedIpAddress() {
+  return $.ajax({
+    url: getMoonPaySignerUrl('/v1/moonpay/ip-hash'),
+    type: 'POST',
+    dataType: 'json',
+    cache: false,
+    crossDomain: true
+  });
+}
+
+function requestMoonPaySignature(urlForSignature) {
+  return $.ajax({
+    url: getMoonPaySignerUrl('/v1/moonpay/signature'),
+    type: 'POST',
+    contentType: 'application/json; charset=utf-8',
+    dataType: 'json',
+    processData: false,
+    cache: false,
+    crossDomain: true,
+    data: JSON.stringify({
+      urlForSignature: urlForSignature
+    })
+  });
+}
+
+function initializeSignedMoonPayWidget(flow, containerSelector) {
+  var deferred = $.Deferred();
+
+  if (!window.MoonPayWebSdk ||
+      typeof window.MoonPayWebSdk.init !== 'function') {
+    deferred.reject(
+      new Error('MoonPay Web SDK is not loaded.')
+    );
+
+    return deferred.promise();
+  }
+
+  if ($(containerSelector).length === 0) {
+    deferred.reject(
+      new Error(
+        'MoonPay widget container was not found: ' +
+        containerSelector
+      )
+    );
+
+    return deferred.promise();
+  }
+
+  requestMoonPayAllowedIpAddress()
+    .done(function(ipResponse) {
+      if (!ipResponse ||
+          typeof ipResponse.allowedIpAddress !== 'string' ||
+          ipResponse.allowedIpAddress === '') {
+        deferred.reject(
+          new Error(
+            'The MoonPay signer returned an invalid IP hash.'
+          )
+        );
+
+        return;
+      }
+
+      var widget;
+
+      try {
+        widget = window.MoonPayWebSdk.init({
+          flow: flow,
+          environment: moonPayEnvironment,
+          containerNodeSelector: containerSelector,
+          variant: 'embedded',
+          params: {
+            apiKey: moonPayApiKey,
+            theme: 'light',
+            colorCode: '#FF9500',
+            allowedIpAddress: ipResponse.allowedIpAddress
+          }
+        });
+
+        if (!widget ||
+            typeof widget.generateUrlForSigning !== 'function' ||
+            typeof widget.updateSignature !== 'function' ||
+            typeof widget.show !== 'function') {
+          throw new Error(
+            'The MoonPay Web SDK returned an unsupported ' +
+            flow +
+            ' widget.'
+          );
+        }
+      } catch (error) {
+        deferred.reject(error);
+        return;
+      }
+
+      var urlForSignature;
+
+      try {
+        urlForSignature = widget.generateUrlForSigning();
+      } catch (error) {
+        deferred.reject(error);
+        return;
+      }
+
+      requestMoonPaySignature(urlForSignature)
+        .done(function(signatureResponse) {
+          if (!signatureResponse ||
+              typeof signatureResponse.signature !== 'string' ||
+              signatureResponse.signature === '') {
+            deferred.reject(
+              new Error(
+                'The MoonPay signer returned an invalid signature.'
+              )
+            );
+
+            return;
+          }
+
+          try {
+            widget.updateSignature(
+              signatureResponse.signature
+            );
+
+            deferred.resolve(widget);
+          } catch (error) {
+            deferred.reject(error);
+          }
+        })
+        .fail(function(jqXHR) {
+          deferred.reject(
+            getMoonPaySignerError(
+              jqXHR,
+              'Unable to sign the MoonPay ' +
+              flow +
+              ' widget URL.'
+            )
+          );
+        });
+    })
+    .fail(function(jqXHR) {
+      deferred.reject(
+        getMoonPaySignerError(
+          jqXHR,
+          'Unable to bind the MoonPay ' +
+          flow +
+          ' widget to the client IP address.'
+        )
+      );
+    });
+
+  return deferred.promise();
+}
+
+function showMoonPayWidget(flow, containerSelector, retry) {
+  if (retry === undefined) {
+    retry = false;
+  }
+
+  initializeSignedMoonPayWidget(
+    flow,
+    containerSelector
+  )
+    .done(function(widget) {
+      widget.show();
+    })
+    .fail(function(error) {
+      /*
+       * Repeat the complete IP-hash and signing sequence once
+       * if the visitor's public IP changes between requests.
+       */
+      if (!retry && error.code === 'client_ip_changed') {
+        showMoonPayWidget(
+          flow,
+          containerSelector,
+          true
+        );
+
+        return;
+      }
+
+      console.error(
+        'Unable to display the MoonPay ' +
+        flow +
+        ' widget:',
+        error
+      );
+    });
+}
+
+function showBuyWidget() {
+  showMoonPayWidget(
+    'buy',
+    '.buy-widget'
+  );
 }
 
 function showSellWidget() {
-
-  var sellWidget = window.MoonPayWebSdk.init({
-    flow: 'sell',
-    environment: 'production',
-    containerNodeSelector: '.sell-widget',
-    variant: 'embedded',
-    params: {
-      apiKey: 'pk_live_QWvwDl3WJAq7S8fDjsOUMfjn09DSw8R',
-      theme: 'light',
-      colorCode: '#FF9500'
-    }
-  });
-
-  sellWidget.show();
+  showMoonPayWidget(
+    'sell',
+    '.sell-widget'
+  );
 }
 
 function handlePageRedirect(isBuyPage, isSellPage) {

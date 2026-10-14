@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 ## liquid-warn.rb prints a warning to stdout (not stderr). This can allow
 ## someone manually building the site (or reviewing logs) to detect a problem

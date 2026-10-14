@@ -12,6 +12,8 @@ _cache
 .jekyll-metadata
 .jekyll-cache/
 .sass-cache/
+__pycache__/
+/bip/
 
 # To prevent accidental push of translations from
 # Transifex.

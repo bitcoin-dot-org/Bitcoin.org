@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 # This file depends on JQuery and JQuery UI, so it should be separate
 # from the base and main JS files which don't depend on those libraries

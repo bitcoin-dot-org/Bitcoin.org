@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 type: posts
 layout: post
@@ -74,9 +74,8 @@ In addition, we hope to provide more resources that help businesses
 understand the benefits of validating the transactions they receive with
 their own full nodes.
 
-If you want to help, please feel free to email the Bitcoin.org
-documentation maintainer,
-{{site.text.bitcoin_org_docs_maintainer_email_link}}.
+If you want to help, please feel free to
+[open an issue](https://github.com/bitcoin-dot-org/bitcoin.org/issues/new).
 </div>
 
 <div class="toccontent-block boxexpand expanded" markdown="1">

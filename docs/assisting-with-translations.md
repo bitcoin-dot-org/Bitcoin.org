@@ -13,23 +13,23 @@ ___
 
 ## Getting Started with the Translation Team
 
-While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://www.transifex.com/bitcoinorg/bitcoinorg/).
+While the website itself is managed on [GitHub](https://github.com/bitcoin-dot-org/bitcoin.org/), the translations are handled through [Transifex](https://app.transifex.com/bitcoinorg/bitcoinorg/).
 This section shall explain the first steps on Transifex for new volunteers who want to help with translating bitcoin.org.
 
-General guidelines provided by Transifex itself can be found [here](https://docs.transifex.com/getting-started/translators).
+General guidelines provided by Transifex itself can be found [here](https://help.transifex.com/en/collections/3441044-starting-with-the-basics).
 
 ### 1. Create a Transifex Account
-* Follow this [link](https://www.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
+* Follow this [link](https://app.transifex.com/signup/) and create an account. Creating a Transifex account is free and not much information is needed.
 
 ### 2. Login and join the Bitcoin.org Translation Team
-* Follow this [link](https://www.transifex.com/bitcoinorg/bitcoinorg/) and click on “Join team”.
+* Follow this [link](https://app.transifex.com/bitcoinorg/bitcoinorg/) and click on “Join team”.
 * Select the language you want to translate into.
 * Your request to join a team will be accepted instantly, and you will be a translator for the language you selected.
 * If your language is not available yet, close the pop-up, scroll down, and click on “Request language” on the right side. Please consider first if it is necessary that bitcoin.org is available in your language. There is a lot of content to be translated and especially for languages with a low number of native speakers, there won’t be many people available that are willing to assist you.
 
 ### 3. Get to know the Interface
 * Play around with the interface. Transifex's interface can be a bit confusing and it cannot hurt to take a look around.
-* An introduction, provided by Transifex, can be found [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator).
+* An introduction, provided by Transifex, can be found [here](https://help.transifex.com/en/articles/6318216-translating-with-the-web-editor).
 * As Translator, you cannot cause any harm as you can only edit unreviewed strings. A complete history is saved for every string, making it impossible to destroy previous work.
 * In the beginning, stay away from the Glossary as this can be edited by new translators but no history is saved.
 
@@ -116,7 +116,7 @@ No, even though the website is managed on GitHub, it is only necessary to unders
 
 ### 4. How do I use Transifex? 
 
-It is probably best if you take a look at the info provided by Transifex [here](https://docs.transifex.com/getting-started-1/translators) and [here](https://docs.transifex.com/translation/translating-with-the-web-editor/?utm_source=welcome&utm_medium=email&utm_content=translator). Everything beyond the basics is probably best learned by clicking through the menus of Transifex. 
+It is probably best if you take a look at the info provided by Transifex [here](https://help.transifex.com/en/collections/3441044-starting-with-the-basics) and [here](https://help.transifex.com/en/articles/6318216-translating-with-the-web-editor). Everything beyond the basics is probably best learned by clicking through the menus of Transifex. 
 
 ### 5. What are resources? 
 
@@ -242,7 +242,7 @@ ___
 
 ## Handling Translations on GitHub
 
-This section outlines how to handle translations on GitHub. In order to handle translations on GitHub, it's important that you have a fundamental understanding of [Ruby](https://ruby.github.io/TryRuby/), [HTML](https://www.w3schools.com/html/default.asp)/[CSS](https://www.w3schools.com/css/default.asp), [JavaScript](https://www.javascript.com/try), [Jekyll](https://jekyllrb.com/), [Git](https://guides.github.com/) and [Travis CI](https://travis-ci.org/bitcoin-dot-org/bitcoin.org). You should also be able to [set up your environment](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/setting-up-your-environment.md).
+This section outlines how to handle translations on GitHub. In order to handle translations on GitHub, it's important that you have a fundamental understanding of [Ruby](https://try.ruby-lang.org/), [HTML](https://www.w3schools.com/html/default.asp)/[CSS](https://www.w3schools.com/css/default.asp), [JavaScript](https://www.javascript.com/try), [Jekyll](https://jekyllrb.com/), [Git](https://docs.github.com/en/get-started) and [Travis CI](https://app.travis-ci.com/bitcoin-dot-org/bitcoin.org). You should also be able to [set up your environment](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/setting-up-your-environment.md).
 
 **If you only want to help by translating content, simply navigate to [Getting Started with the Translation Team](#getting-started-with-the-translation-team) section.**
 
@@ -274,29 +274,4 @@ code for other languages until they are updated.
 **When translation is needed**: If you want all changes you've made to be
 re-translated, you can simply update the resource file (en.yml) on Transifex.
 
-**When translation is not needed**: If you are only pushing typo fixes and that
-you don't want translators to redo all their work again, you can use the
-Transifex client to pull translations, update en.yml and push back all
-translations at once:
-
-
-    # Init Transifex project
-    tx init
-    
-    # Setup Transifex local client to use a project created on Transifex
-    tx set --auto-remote https://www.transifex.com/bitcoinorg/bitcoinorg/
-    
-    # Download all translations
-    tx pull -a -s --skip
-    
-    # Set the translations/bitcoinorg.bitcoinorg/en.yml file
-    # as a source that will be pushed back to the server after
-    # updating the translation
-    tx set --source -r bitcoinorg.bitcoinorg -l en translations/bitcoinorg.bitcoinorg/en.yml
-    
-    # (update en.yml)
-    
-    # Push changes back to Transifex
-    tx push -s -t -f --skip --no-interactive
-    
 

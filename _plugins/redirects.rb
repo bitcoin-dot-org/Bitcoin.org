@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 #redirects.rb generates all redirection pages
 #from _config.yml .
@@ -33,7 +33,7 @@ module Jekyll
       end
 
       #Load redirections
-      redirects = YAML.load_file("_config.yml")['redirects']
+      redirects = YAML.unsafe_load_file("_config.yml")['redirects']
       #Generate each redirection page
       if !File.directory?(site.dest)
         Dir.mkdir(site.dest)

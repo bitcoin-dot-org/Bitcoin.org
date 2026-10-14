@@ -1,9 +1,12 @@
 #!/usr/bin/env ruby
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 require 'safe_yaml/load'
 require 'json-schema'
+
+# MultiJSON support is deprecated by json-schema 6.x.
+JSON::Validator.use_multi_json = false
 
 if ARGV[1].nil?
   puts "Usage: schema-validator.rb <schema-file> <file-to-validate>"

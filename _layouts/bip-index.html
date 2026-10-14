@@ -1,0 +1,25 @@
+---
+# This file is licensed under the MIT License (MIT) available on
+# https://opensource.org/licenses/MIT.
+layout: base
+end_of_page: |
+  <script type="text/javascript" src="/js/bips.js"></script>
+---
+
+<div class="bip-index-page">
+  <header class="bip-hero bip-index-hero">
+    <div class="container bip-hero__inner">
+      <p class="bip-hero__eyebrow">Technical proposals and documentation</p>
+      <h1>Bitcoin Improvement Proposals</h1>
+      <p class="bip-index-hero__summary">Search and read the BIPs mirrored from their canonical source repository.</p>
+    </div>
+  </header>
+
+  <div class="bip-neutrality-notice bip-index-notice container" role="note">
+    <strong>Neutral mirror.</strong> Listing a BIP does not imply adoption, Bitcoin community consensus, or endorsement
+    by Bitcoin.org. Status labels and document contents come from the
+    <a href="https://github.com/bitcoin/bips">bitcoin/bips repository</a>.
+  </div>
+
+  {{ content }}
+</div>

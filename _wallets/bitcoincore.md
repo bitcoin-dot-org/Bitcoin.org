@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 id: bitcoincore
 title: "Bitcoin Core"
@@ -15,7 +15,7 @@ platform:
       link: "bitcoincore"
       source: "https://github.com/bitcoin/bitcoin"
       screenshot: "bitcoincore.png"
-      features: "bech32 full_node hardware_wallet legacy_addresses multisig segwit"
+      features: "bech32 full_node hardware_wallet legacy_addresses multisig segwit taproot"
       check:
         control: "checkgoodcontrolfull"
         validation: "checkgoodvalidationfullnode"

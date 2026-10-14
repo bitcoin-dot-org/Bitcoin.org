@@ -1,24 +1,68 @@
 {% comment %}
 This file is licensed under the MIT License (MIT) available on
-http://opensource.org/licenses/MIT.
+https://opensource.org/licenses/MIT.
 {% endcomment %}
 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png?{{site.time | date: '%s'}}" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title }}{% endif %}</title>
-{% capture metadescription %}{% translate metadescription %}{% endcapture %}{% if metadescription != '' %}<meta name="description" content="{{ metadescription }}">{% endif %}
-<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% capture title %}{% translate title %}{% endcapture %}{% if title != '' %}{{ title }}{% else %}{{ page.title | escape }}{% endif %}</title>
+{% capture metadescription %}{% translate metadescription {{page.id}} {{page.lang}} %}{% endcapture %}
+{% if metadescription != '' %}
+<meta name="description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta name="description" content="{{ page.description | escape }}">
+{% endif %}
+<meta property="og:site_name" content="bitcoin.org">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if title != '' %}{{ title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+{% if metadescription != '' %}
+<meta property="og:description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta property="og:description" content="{{ page.description | escape }}">
+{% endif %}
+<meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url | escape }}{% else %}https://bitcoin.org{{ page.url | escape }}{% endif %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title != '' %}{{ title | escape }}{% else %}{{ page.title | escape }}{% endif %}">
+{% if metadescription != '' %}
+<meta name="twitter:description" content="{{ metadescription | escape }}">
+{% elsif page.lang == 'en' and page.description %}
+<meta name="twitter:description" content="{{ page.description | escape }}">
+{% endif %}
+<meta name="twitter:image" content="https://bitcoin.org/img/icons/opengraph-card.png">
+{% include layout/base/hreflang.html %}
+{% comment %}Icons can load after the initial layout. Keep a no-JavaScript fallback.{% endcomment %}
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css" media="print" onload="this.onload=null;this.media='all'">
+<noscript><link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css"></noscript>
 <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s'}}">
+{% comment %}Keep page styles in their original cascade order, before language overrides.{% endcomment %}
+{% if content contains 'class="bip-page"' or content contains 'class="bip-index-page"' %}
+<link rel="stylesheet" href="/css/page-bips.css?{{site.time | date: '%s'}}">
+{% endif %}
+{% if page.id == 'price' %}
+<link rel="stylesheet" href="/css/page-price.css?{{site.time | date: '%s'}}">
+{% endif %}
+{% if page.id == 'halving' %}
+<link rel="stylesheet" href="/css/page-halving.css?{{site.time | date: '%s'}}">
+{% endif %}
+{% if page.id == 'fees' %}
+<link rel="stylesheet" href="/css/page-fees.css?{{site.time | date: '%s'}}">
+{% endif %}
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
-<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
 {% if page.lang == 'ar' or page.lang == 'he' or page.lang == 'fa' %}<link rel="stylesheet" href="/css/rtl.css?{{site.time | date: '%s'}}">{% endif %}
 {% if page.lang == 'bg' or page.lang == 'el' or page.lang == 'ko' or page.lang == 'hi' or page.lang == 'pl' or page.lang == 'sl' or page.lang == 'ro' or page.lang == 'ru' or page.lang == 'tr' or page.lang == 'uk' or page.lang == 'zh_CN' or page.lang == 'zh_TW' %}<link rel="stylesheet" href="/css/sans.css?{{site.time | date: '%s'}}">{% endif %}
 <script type="text/javascript" src="/js/base.js?{{site.time | date: '%s'}}"></script>
 <script type="text/javascript" src="/js/main.js?{{site.time | date: '%s'}}"></script>
-<script type="text/javascript" src="/js/lottie-player.js?{{site.time | date: '%s'}}"></script>
+{% comment %}
+The small loader keeps static artwork visible and loads Lottie on demand.
+The homepage cat and business-page construction artwork are added by the layout.
+{% endcomment %}
+{% if content contains 'data-bitcoin-animation' or page.id == 'index' or page.id == 'bitcoin-for-businesses' %}
+<script id="bitcoin-animation-loader" data-cfasync="false" defer src="/js/lazy-animations.js?{{site.time | date: '%s'}}" data-player-src="/js/lottie-player.js?{{site.time | date: '%s'}}"></script>
+{% endif %}
 <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-<script src="/js/jquery/jquery-ui.min.js"></script>
 <script src="/js/jquery/jquery.qrcode.min.js"></script>
 {% if page.id == "buy" or page.id == "sell" %}
 <script src="https://static.moonpay.com/web-sdk/v1/moonpay-web-sdk.min.js"></script>
@@ -31,10 +75,3 @@ http://opensource.org/licenses/MIT.
     }
 </script>
 <script type="text/javascript" src="/js/cookieconsent/cookieconsent.js?{{site.time | date: '%s'}}"></script>
-<script>
-if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
-	var script = document.createElement('script');
-	script.src = '/js/analytics.js'
-	document.getElementsByTagName("head")[0].appendChild(script);
-}
-</script>

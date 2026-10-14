@@ -1,5 +1,5 @@
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 ## githubify.rb automatically adds links to pull requests, issues, and
 ## commits using pattern matches

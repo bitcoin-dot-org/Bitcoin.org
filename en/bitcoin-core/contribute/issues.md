@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 layout: base-core
 id: bitcoin-core-contribute-issues
@@ -25,7 +25,7 @@ breadcrumbs:
 <div class="container" markdown="block">
 
 If you discover a bug or other problem with Bitcoin Core, please report
-it.  The are two different processes, [responsible disclosure](#disclosure) for
+it.  There are two different processes, [responsible disclosure](#disclosure) for
 security bugs and [public issue tracking](#public-issue-tracking) for all other bugs.
 
 <div class="warning" markdown="block">
@@ -55,12 +55,12 @@ new issue] providing the information listed below.
 3. Any relevant entries from your `debug.log` file. Note, this file can
    contain private information, so review it before posting or ask in
    the issue to email it directly to a developer rather than posting
-   publicly. You can publicly post logs on a [0bin service][0bin]. By
+   publicly. By
    default, the `debug.log` can be found at the following locations:
 
     - Windows: `%APPDATA%\Bitcoin\debug.log`
 
-    - OS X: `$HOME/Library/Application Support/Bitcoin/debug.log`
+    - macOS: `$HOME/Library/Application Support/Bitcoin/debug.log`
 
     - Linux: `$HOME/.bitcoin/debug.log`
 

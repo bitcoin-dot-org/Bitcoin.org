@@ -1,6 +1,6 @@
 ---
 # This file is licensed under the MIT License (MIT) available on
-# http://opensource.org/licenses/MIT.
+# https://opensource.org/licenses/MIT.
 
 type: posts
 layout: post
@@ -12,7 +12,7 @@ date: 2015-04-14
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
   href="https://github.com/harding">GitHub</a>,
-  <a href="http://www.reddit.com/user/harda/">Reddit</a>)
+  <a href="https://www.reddit.com/user/harda/">Reddit</a>)
 ---
 
 *Thanks to [several volunteers][] and the financial sponsorship of [The
@@ -34,7 +34,7 @@ desktop/laptop screens.
 
 A link is provided at the bottom of the page to allow readers to
 recommend new glossary terms. (It works like the Submit New Event link
-on the [Events page][].)
+on the Events page.)
 
 ### Glossary entries
 
@@ -87,4 +87,3 @@ people load them.
 [Bitcoin.org developer documentation]: https://developer.bitcoin.org/
 [the bitcoin foundation]: https://bitcoinfoundation.org/
 [glossary section]: /en/developer-glossary
-[events page]: /en/events

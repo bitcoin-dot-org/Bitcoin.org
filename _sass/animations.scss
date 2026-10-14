@@ -1,3 +1,41 @@
+.bitcoin-animation {
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.bitcoin-animation__poster {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bitcoin-animation > lottie-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.bitcoin-animation.is-ready > lottie-player {
+    opacity: 1;
+}
+
+.bitcoin-animation.is-ready > .bitcoin-animation__poster {
+    visibility: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bitcoin-animation.is-ready > lottie-player {
+        opacity: 0;
+    }
+    .bitcoin-animation.is-ready > .bitcoin-animation__poster {
+        visibility: visible;
+    }
+}
+
 #animation-astronaut {
     width: 100%;
     height: 100%;
