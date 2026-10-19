@@ -30,14 +30,14 @@ https://opensource.org/licenses/MIT.
     {% when "dev docs" %}
     <a href="https://developer.bitcoin.org/">{% translate pagetitle developer-documentation %}</a>
     {% when "dev docs glossary" %}
-    <a href="https://developer.bitcoin.org/glossary">{% translate docreferencemenuglossary developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/glossary.html">{% translate docreferencemenuglossary developer-documentation %}</a>
     {% when "dev docs examples" %}
-    <a href="https://developer.bitcoin.org/examples">{% translate docreferencemenuexamples developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/examples/">{% translate docreferencemenuexamples developer-documentation %}</a>
     {% when "dev docs guides" %}
-    <a href="https://developer.bitcoin.org/devguide">{% translate docreferencemenuguides developer-documentation %}</a>
+    <a href="https://developer.bitcoin.org/devguide/">{% translate docreferencemenuguides developer-documentation %}</a>
     {% when "dev docs reference" %}
-    <a href="https://developer.bitcoin.org/reference">{% translate docreferencemenureference developer-documentation %}</a>
-    {% else %}{% die "Breadcrumb not found in _includes/layout/breadcrumbs.html" %} {% endcase %} &gt; {% endif %} {% endfor
+    <a href="https://developer.bitcoin.org/reference/">{% translate docreferencemenureference developer-documentation %}</a>
+    {% else %}{% die "Breadcrumb not found in _includes/layout/base/breadcrumbs.html" %} {% endcase %} &gt; {% endif %} {% endfor
     %}
   </div>
 </div>
