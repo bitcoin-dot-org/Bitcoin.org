@@ -2,8 +2,8 @@
 
 Posts for the [Bitcoin.org Site Blog](https://bitcoin.org/en/blog) should be 
 added to the `_posts` directory with the naming convention:
-`YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year, month, and day as
-two-digit numbers).  The YAML front matter should be similar to this:
+`YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year as a four-digit number,
+and month and day as two-digit numbers).  The YAML front matter should be similar to this:
 
     ---
     type: posts
