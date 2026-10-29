@@ -30,7 +30,7 @@ id: getting-started
             {% translate inform %}</h2>
           <p>{% translate informtxt %}</p>
           <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate informbut %}</a>
+            <a class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate you-need-to-know url %}">{% translate informbut %}</a>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ id: getting-started
             {% translate choose %}</h2>
           <p>{% translate choosetxt %}</p>
           <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a>
+            <a class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate choose-your-wallet url %}">{% translate choosebut %}</a>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ id: getting-started
             {% translate get %}</h2>
           <p>{% translate gettxt %}</p>
           <div>
-            <a id="getstartedbuybutton" class="btn-bright" href="/{{ page.lang }}/{% translate buy url %}">{% translate getbut %}</a>
+            <a id="getstartedbuybutton" class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate buy url %}">{% translate getbut %}</a>
           </div>
        </div>
       </div>
@@ -69,7 +69,7 @@ id: getting-started
             {% translate spend %}</h2>
           <p>{% translate spendtxt %}</p>
           <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate spend-bitcoin url %}">{% translate spendbut %}</a>
+            <a class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate spend-bitcoin url %}">{% translate spendbut %}</a>
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ id: getting-started
             {% translate merchantinform %}</h2>
           <p>{% translate merchantinformtxt %}</p>
           <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a>
+            <a class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate you-need-to-know url %}">{% translate merchantinformbut %}</a>
           </div>
         </div>
       </div>
@@ -127,7 +127,7 @@ id: getting-started
             {% translate visibility %}</h2>
           <p>{% translate visibilitytxt %}</p>
           <div>
-            <a class="btn-bright" href="/{{ page.lang }}/{% translate spend-bitcoin url %}">{% translate visibilitybut %}</a>
+            <a class="btn-bright" href="{{ page.lang | lang_prefix }}/{% translate spend-bitcoin url %}">{% translate visibilitybut %}</a>
           </div>
         </div>
       </div>

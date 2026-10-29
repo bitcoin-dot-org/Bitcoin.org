@@ -228,7 +228,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
 }());
 </script>
 {% else %}
-{% capture redirect %}https://bitcoin.org/{{page.lang}}/{% translate download url %}{% endcapture %}
+{% capture redirect %}https://bitcoin.org{{ page.lang | lang_prefix }}/{% translate download url %}{% endcapture %}
 <meta name="robots" content="noindex">
 <script>window.location.href='{{ redirect }}';</script>
 

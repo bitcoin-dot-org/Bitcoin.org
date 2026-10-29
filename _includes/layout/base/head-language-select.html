@@ -7,7 +7,7 @@ https://opensource.org/licenses/MIT.
         <select id="select-input" class="center-select__input" onchange="window.location=this.value;">
             {% for lang in site.langsorder %}{% assign active = ''%}{% if lang == page.lang %}{% assign active = ' selected="selected"'%}{%
             endif %}
-            <option value="/{{ lang }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
+            <option value="{{ lang | lang_prefix }}/{% translate {{page.id}} url {{lang}} %}" {{ active }}>{{ site.langs[lang] }}</option>
             {% endfor %}
         </select>
         <span class="center-select__text">Language: <span class="is-capital">{{ page.lang }}</span></span>

@@ -87,7 +87,7 @@ module Jekyll
       url = site['loc'][lang]['url']
       url.each do |key,value|
         if !value.nil?
-          text.gsub!("#"+key+"#",'/'+lang+'/'+CGI::escape(value))
+          text.gsub!("#"+key+"#",LangPrefix.for(lang)+'/'+CGI::escape(value))
         end
       end
 

@@ -3,6 +3,6 @@ This file is licensed under the MIT License (MIT) available on
 https://opensource.org/licenses/MIT. 
 {% endcomment %}
 
-<a class="logo-footer" href="/{{ page.lang }}/">
+<a class="logo-footer" href="{{ page.lang | lang_prefix }}/">
   <img src="/img/icons/logo-footer.svg?{{site.time | date: '%s'}}" alt="Bitcoin">
 </a>

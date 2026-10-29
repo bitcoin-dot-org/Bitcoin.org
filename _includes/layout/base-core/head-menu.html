@@ -18,12 +18,12 @@ https://opensource.org/licenses/MIT.
   <li{% if page.id == 'bitcoin-core-contribute' %} class="active"{% endif %}><a class="is-expand">Contribute</a>
     <ul>
       <li{% if page.id == 'bitcoin-core-contribute-issues' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/issues">Bug reports</a></li>
-      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="/{{page.lang}}/{% translate development url %}">Code</a></li>
+      <li{% if page.id == 'development' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate development url %}">Code</a></li>
       <li{% if page.id == 'bitcoin-core-contribute-documentation' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/documentation">Documentation</a></li>
       <li{% if page.id == 'bitcoin-core-contribute-translations' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/translations">Translations</a></li>
       <li{% if page.id == 'bitcoin-core-contribute-tech-support' %} class="active"{% endif %}><a href="/en/bitcoin-core/contribute/support">Tech Support</a></li>
     </ul>
   </li>
   <li{% if page.id == 'version-history' %} class="active"{% endif %}><a href="/en/version-history">News</a></li>
-  <li{% if page.id == 'download' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate download url %}">Download</a></li>
+  <li{% if page.id == 'download' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate download url %}">Download</a></li>
 </ul>
