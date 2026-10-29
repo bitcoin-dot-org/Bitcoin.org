@@ -57,7 +57,7 @@ https://opensource.org/licenses/MIT.
       {% endif %}
       <li{% if page.id == 'vocabulary' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate vocabulary url %}">{% translate menu-vocabulary layout %}</a></li>
       {% if page.lang == 'en' %}
-        <li><a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
+        <li><a href="/bitcoin-core/">{% translate bitcoin-core layout %}</a></li>
       {% else %}
         <li{% if page.id == 'download' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate download url %}">{% translate bitcoin-core layout %}</a></li>
       {% endif %}
@@ -68,8 +68,8 @@ https://opensource.org/licenses/MIT.
     <ul>
       <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
       <li id="buybitcoinmenulink" {% if page.id == 'buy' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate buy url %}">{% translate menu-buy layout %}</a></li>
-      <li id="sellbitcoinmenulink" {% if page.id == 'sell' %} class="active"{% endif %}><a href="/en/{% translate sell url %}">{% translate menu-sell layout %}</a></li>
-      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
+      <li id="sellbitcoinmenulink" {% if page.id == 'sell' %} class="active"{% endif %}><a href="/{% translate sell url %}">{% translate menu-sell layout %}</a></li>
+      {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/full-node">Running a full node</a></li>{% endif %}
       <li{% if page.id == 'development' %} class="active"{% endif %}><a href="{{ page.lang | lang_prefix }}/{% translate development url %}">{% translate menu-development layout %}</a></li>
     </ul>
   </li>

@@ -18,7 +18,7 @@ author: |
 {:.center}
 ![Bitcoin Core Version 0.14.0](/img/blog/free/bitcoin-core-0140.png?{{site.time | date: '%s'}})
 
-[Bitcoin Core version 0.14.0 is now available](https://bitcoin.org/en/download).
+[Bitcoin Core version 0.14.0 is now available](https://bitcoin.org/download).
 
 This is a new major version release, including new features, various bugfixes
 and performance improvements, as well as updated translations.
@@ -183,7 +183,7 @@ changes will not be lost.
 
 ### Final Alert
 
-The Alert System was [disabled and deprecated](https://bitcoin.org/en/alert/2016-11-01-alert-retirement)
+The Alert System was [disabled and deprecated](https://bitcoin.org/alert/2016-11-01-alert-retirement)
 in Bitcoin Core 0.12.1 and removed in 0.13.0. The Alert System was retired with
 a maximum sequence final alert which causes any nodes supporting the Alert
 System to display a static hard-coded "Alert Key Compromised" message which also

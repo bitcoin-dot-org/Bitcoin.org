@@ -18,7 +18,7 @@ author: |
 {:.center}
 ![Bitcoin Core Version 0.14.2](/img/blog/free/bitcoin-core-0142.png?{{site.time | date: '%s'}})
 
-[Bitcoin Core version 0.14.2 is now available](https://bitcoin.org/en/download).
+[Bitcoin Core version 0.14.2 is now available](https://bitcoin.org/download).
 
 This is a new minor version release, including various bugfixes and
 performance improvements, as well as updated translations.

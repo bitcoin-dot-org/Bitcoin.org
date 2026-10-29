@@ -23,7 +23,7 @@ can see how wallets fare against one another. This is designed to help
 people quickly find a wallet to meet their needs.
 
 [Check out the new wallet pages and curate your own list of
-wallets.](https://bitcoin.org/en/choose-your-wallet)
+wallets.](https://bitcoin.org/choose-your-wallet)
 
 ## The Old Design
 

@@ -16,7 +16,7 @@ author: |
 ## Supporting Sponsorship from Paxful
 
 [Paxful](https://paxful.com/), a leading P2P exchange that helps people buy
-bitcoin, has become a [supporting sponsor](/en/about-us#sponsorship) of
+bitcoin, has become a [supporting sponsor](/about-us#sponsorship) of
 Bitcoin.org. Since the Bitcoin Foundation sponsorship ended in 2015, Bitcoin.org
 has been self-funded by the domain owners and by community donations.
 

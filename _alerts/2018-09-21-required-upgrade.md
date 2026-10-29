@@ -10,11 +10,11 @@ date: 2018-09-21
 
 ## Summary
 
-[0.16.3](https://bitcoin.org/en/download) was recently released, and if you're
+[0.16.3](https://bitcoin.org/download) was recently released, and if you're
 running a node and haven't already updated, we recommend you do so as soon as
 possible. A bug fixed in 0.16.3 [is more severe](https://bitcoincore.org/en/2018/09/20/notice/)
 than was previously made public. You can download 0.16.3 from
-[bitcoin.org](https://bitcoin.org/en/download). As always, make sure that you
+[bitcoin.org](https://bitcoin.org/download). As always, make sure that you
 verify the authenticity of the download with [GPG](https://gnupg.org/) using the
 [signing key](https://bitcoin.org/laanwj-releases.asc) and
 [release signatures](https://bitcoin.org/bin/bitcoin-core-0.16.3/SHA256SUMS.asc).

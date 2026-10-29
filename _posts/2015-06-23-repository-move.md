@@ -11,7 +11,7 @@ title: "Repository Move"
 permalink: /posts/repository-move.html
 date: 2015-06-23
 author: |
-  <a href="https://bitcoin.org/en/about-us#maintenance">Bitcoin.org Maintainers</a>
+  <a href="https://bitcoin.org/about-us#maintenance">Bitcoin.org Maintainers</a>
 ---
 Bitcoin.org has moved our main git repository to the new
 *bitcoin-dot-org* GitHub organization:
@@ -38,7 +38,7 @@ on GitHub][] shouldn't need to be updated.
 
 If you have any problems, please [open an issue][].
 
-[team of contributors]: https://bitcoin.org/en/about-us#https://bitcoin.org/en/about-us#help
+[team of contributors]: https://bitcoin.org/about-us#https://bitcoin.org/about-us#help
 [issues]: https://github.com/bitcoin-dot-org/bitcoin.org/issues
 [pull requests]: https://github.com/bitcoin-dot-org/bitcoin.org/pulls
 [forks hosted on github]: https://github.com/bitcoin-dot-org/bitcoin.org/network

@@ -117,7 +117,7 @@ Fixing these issues is relatively easy. The first and most obvious solution is t
 Should altcoins wish to continue using the Alert system but with a different Alert Key, a few very simple fixes will safeguard nodes from the aforementioned issues. Limiting the number of alerts, the size of `setCancel` and `setSubVer`, and only allowing one final alert altogether fix the above issues. [This patch][5], on top of Bitcoin Core 0.11 (a vulnerable version), fixes the aforementioned issues. Altcoins that still use the Alert system are recommended to port this patch to their software. Outdated node software is still vulnerable.
 
 [1]: https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2016-September/013104.html
-[2]: https://bitcoin.org/en/alert/2016-11-01-alert-retirement
+[2]: https://bitcoin.org/alert/2016-11-01-alert-retirement
 [3]: https://www.erisian.com.au/meetbot/bitcoin-core-dev/2018/bitcoin-core-dev.2018-06-21-19.00.log.html#l-30
 [4]: https://www.coindesk.com/long-secret-bitcoin-key-finally-revealed/
 [5]: https://gist.github.com/achow101/02d03238090691558a68010a9ccbbf9d

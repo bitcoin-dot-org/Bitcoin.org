@@ -97,7 +97,7 @@ https://opensource.org/licenses/MIT.
         </li>
         {% if page.lang == 'en' %}
         <li>
-          <a href="/en/bitcoin-core/">{% translate bitcoin-core layout %}</a>
+          <a href="/bitcoin-core/">{% translate bitcoin-core layout %}</a>
         </li>
         {% else %}
           <li{% if page.id == 'download' %} class="active"{% endif %}>
@@ -116,11 +116,11 @@ https://opensource.org/licenses/MIT.
           <a href="{{ page.lang | lang_prefix }}/{% translate buy url %}">{% translate menu-buy layout %}</a>
         </li>
         <li id="sellbitcoinfootermenulink" {% if page.id == 'sell' %} class="active"{% endif %}>
-          <a href="/en/{% translate sell url %}">{% translate menu-sell layout %}</a>
+          <a href="/{% translate sell url %}">{% translate menu-sell layout %}</a>
         </li>
         {% if page.lang == 'en' %}
         <li{% if page.id == 'full-node' %} class="active"{% endif %}>
-          <a href="/en/full-node">{% translate menu-full-node layout %}</a>
+          <a href="/full-node">{% translate menu-full-node layout %}</a>
         </li>
         {% endif %}
         <li{% if page.id == 'development' %} class="active"{% endif %}>
@@ -141,11 +141,11 @@ https://opensource.org/licenses/MIT.
       {% endif %}
       <a href="{{ page.lang | lang_prefix }}/{% translate legal url %}">{% translate menu-legal layout %}</a>
       {% if page.lang != 'ar' or 'es' or 'sl' %}
-      <a href="/en/privacy">Privacy Policy</a>
+      <a href="/privacy">Privacy Policy</a>
       {% endif %}
       <a href="{{ page.lang | lang_prefix }}/{% translate press url %}">{% translate menu-press layout %}</a>
       <a href="{{ page.lang | lang_prefix }}/{% translate about-us url %}">{% translate menu-about-us layout %}</a>
-      <a href="/en/blog">Blog</a>
+      <a href="/blog">Blog</a>
     </div>
   </div>
 </div>

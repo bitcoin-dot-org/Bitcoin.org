@@ -376,9 +376,9 @@ al canale IRC [#bitcoin-dev][].
 [BIP68]: https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
-[bitcoin core contributor]: /en/bitcoin-core/
+[bitcoin core contributor]: /bitcoin-core/
 [Bitcoin relay network]: https://bitcoinrelaynetwork.org/
-[code review]: https://bitcoin.org/en/development#code-review
+[code review]: https://bitcoin.org/development#code-review
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
 [increase in total bandwidth]: https://scalingbitcoin.org/hongkong2015/presentations/DAY1/3_block_propagation_1_rosenbaum.pdf
 [libsecp256k1]: https://github.com/bitcoin/secp256k1

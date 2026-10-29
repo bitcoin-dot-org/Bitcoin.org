@@ -18,7 +18,7 @@ In particular, we need to know that:
 2. The company will not by default do anything that would deprive users of their bitcoins (by eg. using S2X software without addressing replay attacks<sup><b>2</b></sup>, selling user bitcoins automatically, crediting BTC deposits only as S2X deposits, etc.). Providing access to S2X-coins is acceptable, however.
 3. The company will continue to provide normal service to Bitcoin (ie. non-S2X) users.
 
-Although bitcoin.org [condemns](/en/posts/hard-fork-policy) contentious hard fork attempts such as S2X, we consider it *tolerable* for companies to support S2X in ways that do not contradict the above three points, such as by supporting both Bitcoin and S2X simultaneously as separate cryptocurrencies.
+Although bitcoin.org [condemns](/posts/hard-fork-policy) contentious hard fork attempts such as S2X, we consider it *tolerable* for companies to support S2X in ways that do not contradict the above three points, such as by supporting both Bitcoin and S2X simultaneously as separate cryptocurrencies.
 
 By default, we will be using the following list of companies known to support S2X in our warning:
 

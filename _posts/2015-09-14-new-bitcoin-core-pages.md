@@ -25,7 +25,7 @@ Bitcoin Core.
 ![Excerpts from Bitcoin.org's Bitcoin Core pages](/img/blog/free/bitcoin-core-pages-collage.png?{{site.time | date: '%s'}})
 
 {:.center}
-*Excerpts from Bitcoin.org's <a href="/en/bitcoin-core/">Bitcoin Core</a> pages*
+*Excerpts from Bitcoin.org's <a href="/bitcoin-core/">Bitcoin Core</a> pages*
 
 Both Bitcoin Core and Bitcoin.org have come a long way since the site
 began promoting the earliest public versions of the software.
@@ -91,17 +91,17 @@ during the time these pages were written.
 We hope you enjoy the new pages.  If you see any problems, please don't
 hesitate to [open an issue][].
 
-[Bitcoin Core]: /en/bitcoin-core/
-[Bitcoin Core's powerful features]: /en/bitcoin-core/features/
-[provide help]: /en/bitcoin-core/help
-[start contributing]: /en/bitcoin-core/contribute/
+[Bitcoin Core]: /bitcoin-core/
+[Bitcoin Core's powerful features]: /bitcoin-core/features/
+[provide help]: /bitcoin-core/help
+[start contributing]: /bitcoin-core/contribute/
 [Internet Archive]: https://web.archive.org/web/20090303195936/http://bitcoin.org/
-[helps protect Bitcoin's essential decentralization]: /en/bitcoin-core/features/validation#help-protect-decentralization
-[bitcoin core overview]: /en/bitcoin-core/
-[feature overview]: /en/bitcoin-core/features/
-[get help page]: /en/bitcoin-core/help
+[helps protect Bitcoin's essential decentralization]: /bitcoin-core/features/validation#help-protect-decentralization
+[bitcoin core overview]: /bitcoin-core/
+[feature overview]: /bitcoin-core/features/
+[get help page]: /bitcoin-core/help
 [Bitcoin Core help pages]: https://en.bitcoin.it/wiki/Category:Bitcoin_Core_documentation
-[contribute overview]: /en/bitcoin-core/contribute/
+[contribute overview]: /bitcoin-core/contribute/
 [1044]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/1044
 [1009]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/1009
 [1007]: https://github.com/bitcoin-dot-org/bitcoin.org/pull/1007

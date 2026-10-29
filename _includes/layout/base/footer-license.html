@@ -8,7 +8,7 @@ https://opensource.org/licenses/MIT.
     <div class="row footer-bottom-row">
       <div class="footerlicense">© Bitcoin Project 2009-{{ site.time | date: '%Y' }} {% translate footer layout %}</div>
       <div class="row footer-status-block">
-        <a href="/en/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">{% translate network-status layout %}</a>
+        <a href="/alerts" class="statusmenu{% if site.STATUS == 1 %} alert{% endif %}">{% translate network-status layout %}</a>
         {% unless page.hide_language_selector %}
         {% include layout/base/head-language-dropdown.html %} 
         <div id="footer-langselect" class="footer-langselect langselect">

@@ -10,7 +10,7 @@ lang: en
   <channel>
     <title>Bitcoin.org Site Blog</title>
     <description>News about Bitcoin.org</description>
-    <link>https://bitcoin.org/en/blog</link>
+    <link>https://bitcoin.org/blog</link>
     <atom:link href="https://bitcoin.org/en/rss/blog.xml" rel="self" type="application/rss+xml"/>
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>

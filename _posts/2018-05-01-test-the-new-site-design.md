@@ -27,7 +27,7 @@ As traffic and engagement has increased, however, the design has become very
 dated. In fact, the current look and feel of the site has pretty much remained
 the same for ~5 years, going all the way back to 2013. As a result, a large
 amount of effort and attention has gone into a recent redesign project, that's
-getting closer to complete. After holding a [community vote](https://bitcoin.org/en/posts/vote-on-the-new-site-design)
+getting closer to complete. After holding a [community vote](https://bitcoin.org/posts/vote-on-the-new-site-design)
 on various design options, the community selection has been extended into all of
 the different subpages.
 

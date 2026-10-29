@@ -377,9 +377,9 @@ To get specific suggestions on how you can help, please join the
 [BIP68]: https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki
 [BIP112]: https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki
 [BIP113]: https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki
-[bitcoin core contributor]: /en/bitcoin-core/
+[bitcoin core contributor]: /bitcoin-core/
 [Bitcoin relay network]: https://bitcoinrelaynetwork.org/
-[code review]: https://bitcoin.org/en/development#code-review
+[code review]: https://bitcoin.org/development#code-review
 [commit spreadsheet]: https://docs.google.com/spreadsheets/d/15jtxuA3dVY5NUuYezZ4d_69ASUMYjqFOMxsF9ZX-BKA/edit?usp=sharing
 [commit stats]: https://github.com/bitcoin/bitcoin/graphs/contributors?from=2015-01-01&to=2015-12-31&type=c
 [estimated savings]: https://www.reddit.com/r/bitcoinxt/comments/3w1i6b/i_attended_scaling_bitcoin_hong_kong_these_are_my/cxtkaih
@@ -390,7 +390,7 @@ To get specific suggestions on how you can help, please join the
 [miners' panel]: https://youtu.be/H-ErmmDQRFs?t=1086
 [payment channel efficiency]: https://scalingbitcoin.org/hongkong2015/presentations/DAY2/1_layer2_2_dryja.pdf
 [previous soft forks]: https://github.com/bitcoin/bips/blob/master/bip-0123.mediawiki#classification-of-existing-bips
-[statement]: /en/bitcoin-core/capacity-increases
+[statement]: /bitcoin-core/capacity-increases
 [weak blocks and iblts]: https://www.youtube.com/watch?v=ivgxcEOyWNs&t=1h40m20s
 [q simple raise]: #size-bump
 </div>
