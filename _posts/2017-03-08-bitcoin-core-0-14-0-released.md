@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Bitcoin Core Version 0.14.0 Released"
-permalink: /en/posts/bitcoin-core-version-0-14-0-released.html
+permalink: /posts/bitcoin-core-version-0-14-0-released.html
 date: 2017-03-08
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

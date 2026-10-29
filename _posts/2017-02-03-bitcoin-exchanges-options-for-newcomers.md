@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Bitcoin Exchanges: Options for Newcomers to Bitcoin Now Available"
-permalink: /en/posts/bitcoin-exchanges-options-for-newcomers.html
+permalink: /posts/bitcoin-exchanges-options-for-newcomers.html
 date: 2017-02-03
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

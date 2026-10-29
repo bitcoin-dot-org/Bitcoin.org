@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Help Test Bitcoin.org's New Design Before Launch"
-permalink: /en/posts/test-the-new-site-design.html
+permalink: /posts/test-the-new-site-design.html
 date: 2018-05-01
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

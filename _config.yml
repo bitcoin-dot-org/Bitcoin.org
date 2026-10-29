@@ -640,11 +640,11 @@ collections:
   ## _alerts
   alerts:
     output: false
-    permalink: /en/alert/:path
+    permalink: /alert/:path
   ## _releases
   releases:
     output: false
-    permalink: /en/release/:path
+    permalink: /release/:path
   ## _wallets
   wallets:
     output: false

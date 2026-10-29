@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Bitcoin.org is 10 Years Old!"
-permalink: /en/posts/ten-year-anniversary.html
+permalink: /posts/ten-year-anniversary.html
 date: 2018-08-16
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

@@ -8,7 +8,7 @@ lang: en
 category: blog
 
 title: "Repository Move"
-permalink: /en/posts/repository-move.html
+permalink: /posts/repository-move.html
 date: 2015-06-23
 author: |
   <a href="https://bitcoin.org/en/about-us#maintenance">Bitcoin.org Maintainers</a>

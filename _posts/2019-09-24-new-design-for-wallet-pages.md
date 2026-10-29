@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "A New Design for Wallet Pages"
-permalink: /en/posts/new-design-for-wallet-pages.html
+permalink: /posts/new-design-for-wallet-pages.html
 date: 2019-09-24
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

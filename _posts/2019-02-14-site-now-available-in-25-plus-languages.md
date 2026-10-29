@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Bitcoin.org Content Now Available in 25+ Languages"
-permalink: /en/posts/content-now-available-in-over-25-languages.html
+permalink: /posts/content-now-available-in-over-25-languages.html
 date: 2019-02-14
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

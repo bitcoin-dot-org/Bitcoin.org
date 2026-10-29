@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "A Big Thanks to Recent Translators"
-permalink: /en/posts/thanks-to-recent-translators.html
+permalink: /posts/thanks-to-recent-translators.html
 date: 2018-09-07
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

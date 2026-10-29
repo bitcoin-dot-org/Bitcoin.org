@@ -7,7 +7,7 @@ layout: post
 category: blog
 show_toc: true
 title: "Quarterly Report March 2015"
-permalink: /en/posts/quarterly-report-march-2015.html
+permalink: /posts/quarterly-report-march-2015.html
 date: 2015-03-05
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a

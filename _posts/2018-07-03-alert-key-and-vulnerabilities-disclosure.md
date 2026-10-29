@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Alert Key and Alert System Vulnerabilities Disclosure"
-permalink: /en/posts/alert-key-and-vulnerabilities-disclosure.html
+permalink: /posts/alert-key-and-vulnerabilities-disclosure.html
 date: 2018-07-03
 author: |
   <a href="https://github.com/kanzure">Bryan Bishop</a> and <a href="https://github.com/achow101">Andrew Chow</a>

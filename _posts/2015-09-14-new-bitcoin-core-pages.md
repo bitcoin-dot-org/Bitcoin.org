@@ -7,7 +7,7 @@ layout: post
 category: blog
 show_toc: true
 title: "New Bitcoin Core Sub-Site"
-permalink: /en/posts/bitcoin-core-subsite.html
+permalink: /posts/bitcoin-core-subsite.html
 ## Set correct date at merge
 date: 2015-09-14
 author: |

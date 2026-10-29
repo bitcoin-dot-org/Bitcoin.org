@@ -14,7 +14,7 @@
 
 #urls and anchors are automatically replaced and translated.
 #Example: #vocabulary##[vocabulary.wallet] is replaced by
-#/en/vocabulary#wallet when the page is in english or
+#/vocabulary#wallet when the page is in english or
 #/fr/vocabulaire#porte-monnaie when the page is in french.
 
 require 'yaml'

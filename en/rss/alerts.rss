@@ -20,7 +20,7 @@ lang: en
         <item>
             <title>{{ p.title | htmlescape }}</title>
             <link>https://bitcoin.org{{ p.url }}</link>
-            <guid>https://bitcoin.org{{ p.url }}</guid>
+            <guid>https://bitcoin.org/en{{ p.url }}</guid>
             <pubDate>{{ p.date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
         </item>
 	{% endfor %}

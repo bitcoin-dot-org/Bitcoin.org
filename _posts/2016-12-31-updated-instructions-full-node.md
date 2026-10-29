@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Updated Instructions: How to Run a Full Node"
-permalink: /en/posts/how-to-run-a-full-node.html
+permalink: /posts/how-to-run-a-full-node.html
 date: 2016-12-31
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Dev Docs: New Glossary And Search Feature"
-permalink: /en/posts/developer-docs-glossary-and-search.html
+permalink: /posts/developer-docs-glossary-and-search.html
 date: 2015-04-14
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a

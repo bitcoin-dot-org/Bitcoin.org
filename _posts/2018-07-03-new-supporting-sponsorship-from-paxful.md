@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "A New Supporting Sponsorship from Paxful"
-permalink: /en/posts/new-supporting-sponsorship-from-paxful.html
+permalink: /posts/new-supporting-sponsorship-from-paxful.html
 date: 2018-07-03
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
