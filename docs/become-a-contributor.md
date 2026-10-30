@@ -11,7 +11,7 @@ Here are some ways you can help:
 
 * Help [write new documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org/)
   for the [developer documentation pages](https://developer.bitcoin.org/)
-  or [full node page](https://bitcoin.org/en/full-node), or **[review PRs
+  or [full node page](https://bitcoin.org/full-node), or **[review PRs
   adding new documentation](https://github.com/bitcoin-dot-org/developer.bitcoin.org/pulls).**
   You don't need to be a Bitcoin expert to review a PR---these docs are written
   for non-experts, so we need to know if non-experts find them confusing or
@@ -19,7 +19,7 @@ Here are some ways you can help:
   about, leave a "Looks Good To Me (LGTM)" comment.
 
 * [Submit new wallets](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/managing-wallets.md)
-  for the [Choose Your Wallet page](https://bitcoin.org/en/choose-your-wallet) or
+  for the [Choose Your Wallet page](https://bitcoin.org/choose-your-wallet) or
   help us [review wallet submissions](https://github.com/bitcoin-dot-org/bitcoin.org/pulls?q=is%3Aopen+label%3Awallet+is%3Apr).
 
 * [Translate Bitcoin.org into another language](https://github.com/bitcoin-dot-org/bitcoin.org/blob/master/docs/assisting-with-translations.md)

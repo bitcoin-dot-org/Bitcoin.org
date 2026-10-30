@@ -59,7 +59,7 @@ detailed instructions for at least some of these things. -->
 - Setup an <button class="popup js" data-container="offline_wallet">offline wallet</button>
   (cold storage) for significant amounts of bitcoins
 
-- Watch for [security notifications](/en/alerts)
+- Watch for [security notifications](/alerts)
 
 - Allow your heirs to <button class="popup js" data-container="bitcoin_inheritance">receive your bitcoins</button>
   if you die or become incapacitated

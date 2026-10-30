@@ -9,7 +9,7 @@ layout: base
 {% assign pagePlatform = page.platform %}
 {% capture currentPlatformLabel %}{% translate walletcat{{pagePlatform.name}} choose-your-wallet %}{% endcapture %}
 {% capture currentOsLabel %}{% if pagePlatform.name == pageOs.name %}{{ currentPlatformLabel }}{% else %}{% translate platform{{pageOs.name}} choose-your-wallet %}{% endif %}{% endcapture %}
-{% capture currentPlatformUrl %}{% if pagePlatform.name == pageOs.name %}/{{page.lang}}/wallets/{{pagePlatform.name}}/{% else %}/{{page.lang}}/wallets/{{pagePlatform.name}}/{{pageOs.name}}/{% endif %}{% endcapture %}
+{% capture currentPlatformUrl %}{% if pagePlatform.name == pageOs.name %}{{ page.lang | lang_prefix }}/wallets/{{pagePlatform.name}}/{% else %}{{ page.lang | lang_prefix }}/wallets/{{pagePlatform.name}}/{{pageOs.name}}/{% endif %}{% endcapture %}
 {% assign criteriaOrder = "control validation transparency environment privacy fees" | split: " " %}
 {% assign walletOsCount = 0 %}
 {% for walletPlatform in page.wallet.platform %}
@@ -69,7 +69,7 @@ layout: base
                       <li>
                         <a
                           class="wallet-os-link{% if walletPlatform.name == pagePlatform.name and platformOs.name == pageOs.name %} active{% endif %}"
-                          href="{% if walletPlatform.name == platformOs.name %}/{{page.lang}}/wallets/{{walletPlatform.name}}/{{page.wallet.id}}/{% else %}/{{page.lang}}/wallets/{{walletPlatform.name}}/{{platformOs.name}}/{{page.wallet.id}}/{% endif %}"
+                          href="{% if walletPlatform.name == platformOs.name %}{{ page.lang | lang_prefix }}/wallets/{{walletPlatform.name}}/{{page.wallet.id}}/{% else %}{{ page.lang | lang_prefix }}/wallets/{{walletPlatform.name}}/{{platformOs.name}}/{{page.wallet.id}}/{% endif %}"
                           {% if walletPlatform.name == pagePlatform.name and platformOs.name == pageOs.name %}aria-current="page"{% endif %}
                         >
                           <img
@@ -87,7 +87,7 @@ layout: base
 
             <div class="wallet-install-actions">
               {% if pageOs.link == 'bitcoincore' %}
-                <a class="wallet-action wallet-action-primary" href="/{{page.lang}}/{% translate download url %}">
+                <a class="wallet-action wallet-action-primary" href="{{ page.lang | lang_prefix }}/{% translate download url %}">
                   {% translate walletdownload choose-your-wallet %}
                   <span class="wallet-action-context">{{ page.wallet.title | escape }}</span>
                 </a>
@@ -309,7 +309,7 @@ layout: base
                       <li class="wallet-similar-item">
                         <a
                           class="wallet-similar-card"
-                          href="{% if walletPlatform.name == os.name %}/{{page.lang}}/wallets/{{walletPlatform.name}}/{{id}}/{% else %}/{{page.lang}}/wallets/{{walletPlatform.name}}/{{os.name}}/{{id}}/{% endif %}"
+                          href="{% if walletPlatform.name == os.name %}{{ page.lang | lang_prefix }}/wallets/{{walletPlatform.name}}/{{id}}/{% else %}{{ page.lang | lang_prefix }}/wallets/{{walletPlatform.name}}/{{os.name}}/{{id}}/{% endif %}"
                         >
                           <span class="wallet-similar-card-heading">
                             <img src="/img/wallet/{{id}}.png" width="144" height="144" alt="" />

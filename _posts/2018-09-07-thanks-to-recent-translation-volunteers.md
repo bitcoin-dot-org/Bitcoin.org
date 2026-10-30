@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "A Big Thanks to Recent Translators"
-permalink: /en/posts/thanks-to-recent-translators.html
+permalink: /posts/thanks-to-recent-translators.html
 date: 2018-09-07
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -17,7 +17,7 @@ author: |
 {:.center}
 ![A Big Thanks to Recent Translation Volunteers](/img/blog/free/transifex.png?{{site.time | date: '%s'}})
 
-Thanks to a [sponsorship from Paxful](https://bitcoin.org/en/posts/new-supporting-sponsorship-from-paxful),
+Thanks to a [sponsorship from Paxful](https://bitcoin.org/posts/new-supporting-sponsorship-from-paxful),
 the following volunteer translators who have been the most active contributors
 in recent months are being given bitcoin for their efforts:
 

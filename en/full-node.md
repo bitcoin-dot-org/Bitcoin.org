@@ -21,7 +21,7 @@ breadcrumbs:
 <!-- Variable assignment
 
 {% capture installFinished %}
-You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/en/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://web.libera.chat/#bitcoin) IRC chatroom on Libera Chat.
+You have now completed installing Bitcoin Core.  If you have any questions, please ask in one of Bitcoin's many [communities](/community), such as [Bitcoin StackExchange](https://bitcoin.stackexchange.com/), [BitcoinTalk technical support](https://bitcointalk.org/index.php?board=4.0), or the [#bitcoin](https://web.libera.chat/#bitcoin) IRC chatroom on Libera Chat.
 
 To support the Bitcoin network, you also need to allow incoming
 connections. Please read the [Network
@@ -167,7 +167,7 @@ full nodes and take special safety precautions. This document does not
 cover those precautions---it only describes running a full node to help
 support the Bitcoin network in general.
 
-Please seek out assistance in the [community](/en/community) if you need help
+Please seek out assistance in the [community](/community) if you need help
 setting up your full node correctly to handle high-value and privacy-sensitive
 tasks. Do your own diligence to ensure who you get help from is ethical,
 reputable and qualified to assist you.
@@ -177,7 +177,7 @@ reputable and qualified to assist you.
 It's possible and safe to run a full node to support the network and use
 its wallet to store your bitcoins, but you must take the same
 precautions you would when using any Bitcoin wallet.  Please see the
-[securing your wallet page](/en/secure-your-wallet) for more
+[securing your wallet page](/secure-your-wallet) for more
 information.
 
 ### Minimum Requirements
@@ -253,7 +253,7 @@ The following instructions describe installing Bitcoin Core using tools
 available in most mainstream Linux distributions.  We assume you use a
 Bourne-like shell such as `bash`.
 
-Using any computer, go to the [Bitcoin Core download page](https://bitcoin.org/en/download)
+Using any computer, go to the [Bitcoin Core download page](https://bitcoin.org/download)
 and verify you have made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -434,7 +434,7 @@ If you're a expert system administrator and want to use an init script instead, 
 
 ### Windows 10
 
-Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-win10-secure-connection.png?{{site.time | date: '%s'}})
@@ -586,7 +586,7 @@ daemon will be automatically started.
 
 ### Windows 8.x
 
-Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -738,7 +738,7 @@ daemon will be automatically started.
 
 ### Windows 7
 
-Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-secure-connection.png?{{site.time | date: '%s'}})
@@ -890,7 +890,7 @@ Save the file. The next time you login to your computer, Bitcoin Core daemon wil
 
 ### Mac OS X Yosemite 10.10.x+
 
-Go to the [Bitcoin Core download page](https://bitcoin.org/en/download) and verify you have
+Go to the [Bitcoin Core download page](https://bitcoin.org/download) and verify you have
 made a secure connection to the server.
 
 ![Verify secure connection](/img/full-node/en-osx-safari-secure-connection.png?{{site.time | date: '%s'}})
@@ -1323,8 +1323,8 @@ par=1
 
 A user-friendly configuration file generator is [available here.](https://jlopp.github.io/bitcoin-core-config-generator/)
 If you have any questions about configuring Bitcoin Core, please stop by
-one of our [forums](/en/bitcoin-core/help#forums) or [live
-chatrooms](/en/bitcoin-core/help#live).
+one of our [forums](/bitcoin-core/help#forums) or [live
+chatrooms](/bitcoin-core/help#live).
 
 ### Reduce Storage
 

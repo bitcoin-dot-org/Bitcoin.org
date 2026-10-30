@@ -362,7 +362,7 @@ zh_TW:
     secure: "Bitcoin 安全嗎？"
     securetxt1: "Bitcoin 技術 - 其協議和密碼技術 - 有很強的安全痕跡記錄，而且 Bitcoin 網路可能是世界上最大的分散的計算器工程。Bitcoin 最常見的安全隱患是用戶的犯錯。存儲必要的私密金鑰的 Bitcoin 錢包文件可能會不小心被刪除、丟失或被盜。這跟實體鈔票存儲成一個數位形式很像。好在，用戶可以實施很好的 <a href=\"#secure-your-wallet#\">安全措施</a>來保護他們的錢或選擇提供良好安全水準和預防被盜或丟失的保險的服務供應商。"
     hacked: "Bitcoin 在過去有沒有被駭過？"
-    hackedtxt1: "Bitcoin 使用的協議規則和密碼技術在它創始之後多年仍在使用，這很好地說明了這個理念是設計得很好的。然而，<a href=\"/en/alerts\">安全瑕疵</a> 已經在不同的軟體工具中被找到并解決。跟其他任何的軟體一樣，Bitcoin 軟體的安全與問題被發現和解決的速度息息相關。像這樣的問題被發現得越多， Bitcoin 的成熟速度就越快。"
+    hackedtxt1: "Bitcoin 使用的協議規則和密碼技術在它創始之後多年仍在使用，這很好地說明了這個理念是設計得很好的。然而，<a href=\"/alerts\">安全瑕疵</a> 已經在不同的軟體工具中被找到并解決。跟其他任何的軟體一樣，Bitcoin 軟體的安全與問題被發現和解決的速度息息相關。像這樣的問題被發現得越多， Bitcoin 的成熟速度就越快。"
     hackedtxt2: "人們對在各種交換和業務中出現的盜賊和安全漏洞問題常常有錯誤認識。這些事件是很不幸的，但是它們和 Bitcoin 被駭毫無關係，也不意味著 Bitcoin 中有先天瑕疵；就像銀行被搶劫并不意味著美元是危險的。然而，更准確地說，用一套完整的良好措施和直覺的安全解決辦法來保護用戶的錢、降低一般的被盜和丟失的風險是必須的，在過去幾年中，這樣的安全功能已經得到迅速發展，像錢包加密、線下錢包，硬體錢包還有多重簽署交易等等皆屬此類。"
     collude: "用戶會串通來反對 Bitcoin 嗎？"
     colludetxt1: "改變 Bitcoin 協議是不可能那麼容易做到的。任何不遵守同樣規則的 Bitcoin 客戶端是不能把自己的規則強加給其他用戶的。依據現在的規範，在同一個區塊鏈中重複花費是不可能的，而且在沒有一個有效的簽署的情況下花費比特幣也是不可能的。所以，不可能憑空產生不受控制的數量的比特幣，也不可能使用別人的資金，腐敗這個網路或像這樣的事情也不可能發生。"
@@ -487,7 +487,7 @@ zh_TW:
     summary: "尋找受訪者、答案和高質量的新聞媒體資料"
     volunteer: "受訪者"
     volunteernonprofit: "與<a href=\"https://bitcoincore.org/en/contact\">Bitcoin 基金會</a> 或本地的 <a href=\"#community##[community.non-profit]\">非牟利機構</a>交流。"
-    faqmore: "要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href=\"/en/faq\">常見問題</a> 或者<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>。"
+    faqmore: "要瞭解更多關於 Bitcoin 的資訊，請訪問完整的<a href=\"/faq\">常見問題</a> 或者<a href=\"https://en.bitcoin.it/wiki/Help:FAQ\">Bitcoin Wiki</a>。"
     materialpicture: "圖片"
     materialpicturemore: "顯示更多圖片……"
   privacy:

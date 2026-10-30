@@ -22,7 +22,7 @@ The signatories of this agreement wrongly believe that the currency created by a
 this contentious hard fork will eventually become Bitcoin. Therefore storing any BTC on services such
 as Coinbase, Bitpay and Xapo is strongly not recommended. By storing BTC on these services, you could
 find that after the hard fork, your BTC has been renamed to something else or replaced entirely with the new altcoin.
-The best way to ensure that your BTC is protected is to [download the latest version of Bitcoin Core](https://bitcoin.org/en/download)
+The best way to ensure that your BTC is protected is to [download the latest version of Bitcoin Core](https://bitcoin.org/download)
 and transfer out any BTC stored on services that are a signatory to this agreement. We have
 listed the businesses supporting this contentious hard fork at the bottom of this document.
 
