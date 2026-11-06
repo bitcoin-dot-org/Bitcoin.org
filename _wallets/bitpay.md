@@ -11,7 +11,7 @@ level: 3
 platform:
   - mobile:
     name: mobile
-    default: &DEFAULT
+    default: &DEFAULT-MOBILE
       text: "walletbitpay"
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
@@ -30,12 +30,12 @@ platform:
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: android
-        <<: *DEFAULT
+        <<: *DEFAULT-MOBILE
       - name: ios
-        <<: *DEFAULT
+        <<: *DEFAULT-MOBILE
   - desktop:
     name: desktop
-    default: &DEFAULT
+    default: &DEFAULT-DESKTOP
       text: "walletbitpay"
       link: "https://bitpay.com/wallet"
       source: "https://github.com/bitpay/copay"
@@ -54,9 +54,9 @@ platform:
         privacynetwork: "checkfailprivacynetworknosupporttor"
     os:
       - name: windows
-        <<: *DEFAULT
+        <<: *DEFAULT-DESKTOP
       - name: mac
-        <<: *DEFAULT
+        <<: *DEFAULT-DESKTOP
       - name: linux
-        <<: *DEFAULT
+        <<: *DEFAULT-DESKTOP
 ---
