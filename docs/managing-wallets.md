@@ -174,8 +174,9 @@ Multiple features can be assigned like so, for example:
 
 `features: "bech32 legacy_addresses segwit"`
 
-**Icon**: The png file must go in `/img/wallet`, be 144 X 144 px and optimized
-with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
+**Icon**: The png file must go in `/img/wallet/<id>.png`, using the wallet's
+`id` from its Markdown file (not its description translation key). It must
+be 144 X 144 px and optimized with `optipng -o7 file.png`. The icon must fit within 96 X 96 px inside the png,
 or 85 X 85 px for square icons.
 
 **Description**: The text must go in `_translations/en.yml` alongside other
