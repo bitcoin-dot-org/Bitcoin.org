@@ -7,11 +7,11 @@
 /*Styles for HTML tags*/
 
 body{
-	font-family:'DroidNaskh', sans-serif;
+	font-family:'Vazirmatn', sans-serif;
 	direction:rtl;
 }
 h1,h2{
-	font-family:'DroidNaskh', sans-serif;
+	font-family:'VazirmatnBold', sans-serif;
 }
 h2,h3{
 	text-align:right;
@@ -41,7 +41,7 @@ p{
 .menusimple li a:active,
 .menusimple li a:visited,
 .menusimple li a:link{
-	font-family:'DroidNaskh', sans-serif;
+	font-family:'Vazirmatn', sans-serif;
 	text-align: right;
 }
 .menusimple>li:not(:first-child) {
@@ -99,7 +99,7 @@ h2 .rssicon{
 .mainbutton a:link,
 .mainbutton a:visited,
 .mainbutton a:active{
-	font-family:'DroidNaskh', sans-serif;
+	font-family:'Vazirmatn', sans-serif;
 	text-align:right;
 	padding:15px 68px 15px 20px;
 }
@@ -633,10 +633,12 @@ h2 .rssicon{
 .column-text p {
 	text-align: right;
 }
-/*Override UbuntuBold by Droid Naskh*/
 
-@font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.eot');font-weight:normal;font-style:normal;}
-@font-face{font-family:'DroidNaskh';src:url('/font/droidnaskh/droidnaskh-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}
+@font-face {font-family: 'Vazirmatn';src: url('/font/vazirmatn/Vazirmatn-Regular.ttf') format('truetype');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'Vazirmatn';src: url('/font/vazirmatn/Vazirmatn-Regular.woff2') format('woff2');font-weight: normal;font-style: normal;}
+
+@font-face {font-family: 'VazirmatnBold';src: url('/font/vazirmatn/Vazirmatn-Bold.ttf') format('truetype');font-weight: bold;font-style: normal;}
+@font-face {font-family: 'VazirmatnBold';src: url('/font/vazirmatn/Vazirmatn-Bold.woff2') format('woff2');font-weight: bold;font-style: normal;}
 
 /*Styles specific to mobiles*/
 
