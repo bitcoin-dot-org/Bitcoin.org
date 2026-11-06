@@ -31,10 +31,50 @@ Configuration](#network-configuration) section for details.
 {% capture verifyReleaseSignatures %}
 *Optional: Verify the release signatures*
 
-If you know how to use PGP, you should also click the *Verify Release
-Signatures* link on the download page to download a signed list of SHA256
-file hashes. The 0.11 and later releases are signed by [Wladimir J. van
-der Laan's releases key](/laanwj-releases.asc) with the fingerprint:
+If you know how to use PGP, you can check that the file you downloaded is
+the one Bitcoin Core released. Since version 22.0, every release comes
+with two files: `SHA256SUMS`, which lists the SHA256 hashes of all release
+files, and `SHA256SUMS.asc`, which holds the PGP signatures of several
+people who built the release independently. Both are linked from the
+download page, as *SHA256 binary hashes* and *Verify release
+signatures*. Download both into the folder that holds the file you
+downloaded, and open a terminal in that folder.
+
+First, check that the hash of your file is listed in `SHA256SUMS`. On
+Linux, run:
+
+    sha256sum --ignore-missing --check SHA256SUMS
+
+On macOS, run:
+
+    shasum -a 256 --ignore-missing --check SHA256SUMS
+
+The output must show "OK" after the name of your file. On Windows, run
+`certUtil -hashfile` followed by the file name and `SHA256`, and compare
+the result with the matching line in `SHA256SUMS`.
+
+Then import the keys of the people who build Bitcoin Core releases,
+published in the [guix.sigs repository](https://github.com/bitcoin-core/guix.sigs/tree/main/builder-keys),
+and verify the signatures. This needs Git and GnuPG:
+
+    git clone https://github.com/bitcoin-core/guix.sigs
+    gpg --import guix.sigs/builder-keys/*
+    gpg --verify SHA256SUMS.asc SHA256SUMS
+
+Each valid signature is reported as a "Good signature". GnuPG also warns
+that each key "is not certified with a trusted signature"; that is
+expected, and it is why you should verify that the keys of several of
+these signers belong to their owners, using the web of trust or other
+trustworthy means. Step-by-step instructions for each operating system,
+including Windows, are on
+[bitcoincore.org](https://bitcoincore.org/en/download/#verify-your-download).
+
+Releases before 22.0 were signed with a single key, and their
+`SHA256SUMS.asc` file holds both the hashes and the signature, so
+`gpg --verify SHA256SUMS.asc` checks it. Releases 0.11 to 0.21 were
+signed by [Wladimir J. van der Laan's releases
+key](/laanwj-releases.asc), which expired in February 2022. Its
+fingerprint is:
 
     01EA 5486 DE18 A882 D4C2  6845 90C8 019E 36C2 E964
 
@@ -47,13 +87,6 @@ Even earlier releases were signed by Gavin Andresen's
 key. His primary key's fingerprint is:
 
     2664 6D99 CBAE C9B8 1982  EF60 29D9 EE6B 1FC7 30C1
-
-You should verify these keys belong to their owners using the web of
-trust or other trustworthy means. Then use PGP to verify the signature
-on the release signatures file. Finally, use PGP or another utility to
-compute the SHA256 hash of the archive you downloaded, and ensure the
-computed hash matches the hash listed in the verified release
-signatures file.
 {% endcapture %}
 
 
