@@ -7,7 +7,7 @@ layout: post
 category: blog
 show_toc: true
 title: "Quarterly Report March 2015"
-permalink: /en/posts/quarterly-report-march-2015.html
+permalink: /posts/quarterly-report-march-2015.html
 date: 2015-03-05
 author: >
   David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a
@@ -153,13 +153,13 @@ conducted by Saïvann Carignan, Jonas Schnelli, and others.
 
 ![Excerpt from the Events page map](/img/blog/free/events.png?{{site.time | date: '%s'}})
 
-The English [homepage](https://bitcoin.org/en/) and [Getting
-Started](https://bitcoin.org/en/getting-started) page by themselves
+The English [homepage](https://bitcoin.org/) and [Getting
+Started](https://bitcoin.org/getting-started) page by themselves
 received over 2.0 million visits this quarter. These and other regular
 content pages are often updated based on suggestions by first-time
 contributors, with the bulk of updates going to the Events
 page and the [Resources
-page](https://bitcoin.org/en/resources) (and its many translations).
+page](https://bitcoin.org/resources) (and its many translations).
 
 * **Update events:** listed 20 new events in addition to the events
   automatically listed by the site software.
@@ -191,7 +191,7 @@ pull requests to keep the site content current and useful.
 
 ![Just some of the wallets currently listed](/img/blog/free/wallets.png?{{site.time | date: '%s'}})
 
-The [Choose Your Wallet page](https://bitcoin.org/en/choose-your-wallet)
+The [Choose Your Wallet page](https://bitcoin.org/choose-your-wallet)
 is one of our most visited pages---just the English version of the page
 alone has received over 400,000 visitors this quarter.  However,
 maintaining the page is also one of our most time-consuming activities due
@@ -246,7 +246,7 @@ to interact directly with wallet authors.
 Fulfilling a [request made by Wladimir J. van der
 Laan](https://www.mail-archive.com/bitcoin-development%40lists.sourceforge.net/msg05406.html),
 Bitcoin Core's lead developer, we were proud to write and publish a
-[guide to running a full node](https://bitcoin.org/en/full-node) this
+[guide to running a full node](https://bitcoin.org/full-node) this
 quarter.  The goal is to encourage users to run full nodes when possible
 to support the Bitcoin network.
 
@@ -263,7 +263,7 @@ five days and has received over 4,000 page views.
 * **Describe opening port 8333:** thanks to the core developers, running
   Bitcoin Core is easy. The hard part for some users is opening port
   8333, so we [provide detailed
-  instructions](https://bitcoin.org/en/full-node#network-configuration)
+  instructions](https://bitcoin.org/full-node#network-configuration)
   for just that aspect.
 
 * **Detail risks:** feedback from a core developer encouraged us to make
@@ -296,8 +296,8 @@ changes made this quarter include:
 * **Bitcoin Core 0.10.0:** it is our privilege to help the
   core developers release new versions of Bitcoin Core by
   [updating](https://github.com/bitcoin-dot-org/bitcoin.org/pull/664) the
-  [Download page](https://bitcoin.org/en/download) and the [hosted
-  release notes.](https://bitcoin.org/en/version-history) For the
+  [Download page](https://bitcoin.org/download) and the [hosted
+  release notes.](https://bitcoin.org/version-history) For the
   0.10.0 release, we added a [torrent
   file](https://bitcoin.org/bin/bitcoin-core-0.10.0/bitcoin-0.10.0.torrent)
   and [magnet

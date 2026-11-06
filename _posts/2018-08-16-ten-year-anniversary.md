@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Bitcoin.org is 10 Years Old!"
-permalink: /en/posts/ten-year-anniversary.html
+permalink: /posts/ten-year-anniversary.html
 date: 2018-08-16
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -47,7 +47,7 @@ Here are a few mentions and links to bitcoin.org from over the years:
 
 Today, bitcoin.org is one of the most visited Bitcoin websites and receives
 millions of visitors. Many thanks to all of the
-[contributors](/en/about-us#github) who have spent their time improving the
+[contributors](/about-us#github) who have spent their time improving the
 site!
 
 ## Interested in getting involved?

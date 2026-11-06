@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Bitcoin.org Content Now Available in 25+ Languages"
-permalink: /en/posts/content-now-available-in-over-25-languages.html
+permalink: /posts/content-now-available-in-over-25-languages.html
 date: 2019-02-14
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -22,7 +22,7 @@ Over the the past year, as part of Bitcoin.org's ongoing content translation
 initiative to help spread information about Bitcoin all around the world, many
 people have helped extend and update the site into their own native languages.
 
-Thanks to community donations and a [sponsorship from Paxful](https://bitcoin.org/en/posts/new-supporting-sponsorship-from-paxful),
+Thanks to community donations and a [sponsorship from Paxful](https://bitcoin.org/posts/new-supporting-sponsorship-from-paxful),
 translators throughout 2018 received bitcoin bonuses in appreciation
 for the time and efforts that they had spent volunteering. Bitcoin.org content
 is available in 25+ languages including:
@@ -70,6 +70,6 @@ where translated content previously wasn't available, areas such as the develope
 documentation, for example.
 
 If you speak English and another language and would like to help spread the word
-about Bitcoin, [it's easy to get started](https://bitcoin.org/en/posts/how-to-help-translate)!
+about Bitcoin, [it's easy to get started](https://bitcoin.org/posts/how-to-help-translate)!
 
 Thanks goes to everyone who contributes to make this possible.

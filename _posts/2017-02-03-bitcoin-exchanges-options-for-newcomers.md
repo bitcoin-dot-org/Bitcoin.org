@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Bitcoin Exchanges: Options for Newcomers to Bitcoin Now Available"
-permalink: /en/posts/bitcoin-exchanges-options-for-newcomers.html
+permalink: /posts/bitcoin-exchanges-options-for-newcomers.html
 date: 2017-02-03
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -20,7 +20,7 @@ author: |
 ![Bitcoin Exchanges](/img/blog/free/bitcoin-exchanges.png?{{site.time | date: '%s'}})
 
 [A directory of Bitcoin Exchanges servicing the world’s 20 largest
-economies](https://bitcoin.org/en/exchanges), as well as several international
+economies](https://bitcoin.org/exchanges), as well as several international
 options (serving many countries) are now available on Bitcoin.org.
 </div>
 
@@ -30,7 +30,7 @@ options (serving many countries) are now available on Bitcoin.org.
 
 This new addition to the site:
 
-- Links to the `Find an Exchange` button on the [Getting Started](https://bitcoin.org/en/getting-started)
+- Links to the `Find an Exchange` button on the [Getting Started](https://bitcoin.org/getting-started)
 page and helps many of the new people entering the Bitcoin ecosystem via
 Bitcoin.org, get bitcoin.
 - Improves SEO for Bitcoin.org, because the site can now potentially rank very
@@ -40,7 +40,7 @@ Exchange India, etc.).
 - Has unique anchor links for each country that people can share on social media
 that will allow others to find the bitcoin exchanges that are available for
 their specific country.
-- Allows Bitcoin.org to focus the [wallets page](https://bitcoin.org/en/choose-your-wallet)
+- Allows Bitcoin.org to focus the [wallets page](https://bitcoin.org/choose-your-wallet)
 on wallets that allow people to maintain full control over their funds
 (Resolving [issue #1109](https://github.com/bitcoin-dot-org/bitcoin.org/issues/1109),
 because custodial wallets that provide exchange services can be moved off of the

@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "Recognizing Recent Efforts By Volunteer Contributors on the Translation Team"
-permalink: /en/posts/recognizing-recent-efforts-of-volunteer-translators.html
+permalink: /posts/recognizing-recent-efforts-of-volunteer-translators.html
 date: 2019-09-26
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

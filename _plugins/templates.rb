@@ -19,6 +19,7 @@ module Jekyll
       self.process(dst)
       self.read_yaml(File.join(base, srcdir), src)
       self.data['lang'] = lang
+      self.data['english_root'] = true if dstdir == '' && lang == LangPrefix::ROOT_LANG
     end
   end
   class TranslatePageGenerator < Generator
@@ -54,11 +55,17 @@ module Jekyll
 
           dst = dst + '.html'
 
+          ## Keys in the redirects list are the pages' original addresses,
+          ## which always carried the language prefix (/en/... for English).
           redirect_path = "/#{lang}/#{dst.sub(/\.html\z/, '')}"
           next if site.config.fetch('redirects', {}).key?(redirect_path)
+          root_path = "#{LangPrefix.for(lang)}/#{dst.sub(/\.html\z/, '')}"
+          next if site.config.fetch('redirects', {}).key?(root_path)
 
-          site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, lang, dst)
+          site.pages << TranslatePage.new(site, site.source, lang, '_templates', src, LangPrefix.dir(lang), dst)
         end
+        ## The English homepage is the root index.html
+        next if LangPrefix.dir(lang) == ''
         site.pages << TranslatePage.new(site, site.source, lang, '_templates', 'index.html', lang, 'index.html')
       end
     end

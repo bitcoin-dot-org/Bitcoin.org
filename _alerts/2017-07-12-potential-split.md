@@ -150,9 +150,9 @@ first.
 
 [full history]: https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_alerts/2017-07-12-potential-split.md
 [list of updates]: #document-history
-[community resources]: /en/community
-[confirmation scoring]: /en/you-need-to-know#instant
-[price volatility]: /en/you-need-to-know#volatile
+[community resources]: /community
+[confirmation scoring]: /you-need-to-know#instant
+[price volatility]: /you-need-to-know#volatile
 </div>
 
 <script>

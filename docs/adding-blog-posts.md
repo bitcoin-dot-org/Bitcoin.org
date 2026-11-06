@@ -1,6 +1,6 @@
 ## Blog Posts
 
-Posts for the [Bitcoin.org Site Blog](https://bitcoin.org/en/blog) should be 
+Posts for the [Bitcoin.org Site Blog](https://bitcoin.org/blog) should be 
 added to the `_posts` directory with the naming convention:
 `YEAR-MONTH-DAY-ARBITRARY_FILE_NAME` (with year, month, and day as
 two-digit numbers).  The YAML front matter should be similar to this:
@@ -12,7 +12,7 @@ two-digit numbers).  The YAML front matter should be similar to this:
     category: blog
 
     title: "Quarterly Report March 2015"
-    permalink: /en/posts/quarterly-report-march-2015.html
+    permalink: /posts/quarterly-report-march-2015.html
     date: 2015-03-05
     author: >
       David A. Harding (<a href="mailto:dave@dtrt.org">email</a>, <a

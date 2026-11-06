@@ -26,7 +26,7 @@ https://opensource.org/licenses/MIT.
           {% assign ulClass = " active" %}
         {% endif %}
         <div class="accordion-item {{ platformClass }}">
-          {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
+          {% assign platformHref = page.lang | lang_prefix | append: "/wallets/" | append: platformName | append: "/" %}
           {% if platformName == 'hardware' or platformName == 'web' %}
             <a class="accordion-link {{platformName}}-link" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
           {% else %}
@@ -59,7 +59,7 @@ https://opensource.org/licenses/MIT.
 
               {% if item.os.name != 'desktop' and item.os.name != 'mobile' %}
               <div class="accordion-item {{osClass}}">
-                <a class="accordion-link link-{{osClass}}" href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                <a class="accordion-link link-{{osClass}}" href="{{ page.lang | lang_prefix }}/wallets/{{ platformName }}/{{ item.os.name }}/">
                   {% translate platform{{item.os.name}} choose-your-wallet %}
                 </a>
               </div>

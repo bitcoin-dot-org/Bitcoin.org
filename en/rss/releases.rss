@@ -8,19 +8,19 @@ lang: en
 <rss version="2.0">
 <channel>
 	<title>Bitcoin Core releases</title>
-	<link>https://bitcoin.org/en/version-history</link>
+	<link>https://bitcoin.org/version-history</link>
 	<description>This RSS feed allows to follow Bitcoin Core new releases.</description>
 	<image>
 		<title>Bitcoin Core releases</title>
 		<url>https://bitcoin.org/img/icons/logo_rss.png?1528322191</url>
-		<link>https://bitcoin.org/en/version-history</link>
+		<link>https://bitcoin.org/version-history</link>
 	</image>
         {% assign date_sorted_releases = site.releases | sort: 'optional_date', 'last' %}
 	{% for p in date_sorted_releases reversed %}
         <item>
             <title>{{ p.title | xmlescape }}</title>
             <link>https://bitcoin.org{{ p.url }}</link>
-            <guid>https://bitcoin.org{{ p.url }}</guid>
+            <guid>https://bitcoin.org/en{{ p.url }}</guid>
           {% if p.optional_date %}
             <pubDate>{{ p.optional_date | date: "%a, %d %b %Y" }} 00:00:00 GMT</pubDate>
           {% else %}

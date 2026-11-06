@@ -8,7 +8,7 @@ lang: en
 category: blog
 
 title: "Bitcoin.org Hard Fork Policy"
-permalink: /en/posts/hard-fork-policy.html
+permalink: /posts/hard-fork-policy.html
 date: 2015-06-16
 ---
 Contentious hard forks are bad for Bitcoin. At the very best, a

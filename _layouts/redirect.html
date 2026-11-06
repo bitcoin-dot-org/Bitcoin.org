@@ -5,7 +5,8 @@
 layout: base
 ---
 <meta name="robots" content="noindex">
-<script>window.location.href='{{ page.redirect }}';</script>
+<meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+<script>(function(){var t='{{ page.redirect }}';if(t.indexOf('#')<0){t+=window.location.search+window.location.hash;}window.location.replace(t);})();</script>
 
 <div class="redirectmsg">
 <h1>This page has been moved</h1>

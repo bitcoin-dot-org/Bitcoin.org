@@ -8,7 +8,7 @@ entries redirect paths whose content has moved to `developer.bitcoin.org`, and
 there are also some internal slug renames. For example:
 
     redirects:
-      /news: /en/version-history
+      /news: /version-history
 
 ### Aliases For Contributors
 

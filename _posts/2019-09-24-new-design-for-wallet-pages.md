@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "A New Design for Wallet Pages"
-permalink: /en/posts/new-design-for-wallet-pages.html
+permalink: /posts/new-design-for-wallet-pages.html
 date: 2019-09-24
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -23,7 +23,7 @@ can see how wallets fare against one another. This is designed to help
 people quickly find a wallet to meet their needs.
 
 [Check out the new wallet pages and curate your own list of
-wallets.](https://bitcoin.org/en/choose-your-wallet)
+wallets.](https://bitcoin.org/choose-your-wallet)
 
 ## The Old Design
 

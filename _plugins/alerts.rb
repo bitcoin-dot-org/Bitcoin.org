@@ -34,9 +34,10 @@ module Jekyll
       self.data['path'] = srcdir+'/'+src
       self.data['layout'] = 'alert'
       if dstdir == ''
-        self.data['canonical'] = '/en/alert/' + src.split('.')[0]
+        self.data['canonical'] = LangPrefix.for(lang) + '/alert/' + src.split('.')[0]
       else
         self.data['category'] = 'alert'
+        self.data['english_root'] = true if lang == LangPrefix::ROOT_LANG
         if self.data.has_key?('banner') and !self.data['banner'].nil? and self.data['banner'].length>0
           site.config['ALERT']=self.data['banner']
           site.config['ALERTURL']='/'+dstdir+'/'+dst.gsub('.html','').gsub('.md','')
@@ -71,7 +72,7 @@ module Jekyll
         src = file
         dst = file
         srcdir = '_alerts'
-        dstdir = lang + '/alert'
+        dstdir = LangPrefix.join(LangPrefix.dir(lang), 'alert')
         date = dst.split('-')
         next if date.length < 4
         date = date[0] + '-' + date[1] + '-' + date[2]

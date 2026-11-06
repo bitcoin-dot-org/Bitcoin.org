@@ -26,6 +26,7 @@ module Jekyll
       ## Read in the file's YAML header
       self.read_yaml(File.join(base, srcdir), src)
       self.data["path"] = srcdir + "/" + src
+      self.data['english_root'] = true if lang == LangPrefix::ROOT_LANG
 
       ## Die if required_ variables aren't set
       if self.data['required_version']
@@ -87,7 +88,7 @@ module Jekyll
         lang = 'en'
         src = file
         srcdir = '_releases'
-        output_directory = lang + '/release'
+        output_directory = LangPrefix.join(LangPrefix.dir(lang), 'release')
         site.pages << ReleasePage.new(site, site.source, lang, '_releases', src, output_directory)
       end
       #TODO releases are only generated for english language,

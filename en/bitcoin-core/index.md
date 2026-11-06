@@ -125,7 +125,7 @@ breadcrumbs:
 
 <div class="core-column-left clearfix">
   <div class="corecard releases-card" markdown="block">
-  <a href="/en/version-history">Bitcoin Core Releases</a>
+  <a href="/version-history">Bitcoin Core Releases</a>
   For more News, see the complete list
   </div>
   <div class="corecard rss-card" markdown="block">

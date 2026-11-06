@@ -7,7 +7,7 @@ layout: post
 category: blog
 
 title: "How to Help Translate Bitcoin.org"
-permalink: /en/posts/how-to-help-translate.html
+permalink: /posts/how-to-help-translate.html
 date: 2018-09-14
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
