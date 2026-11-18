@@ -21,11 +21,11 @@ platform:
         validation: "checkpassvalidationservers"
         transparency: "checkpasstransparencyopensource"
         environment: "checkfailenvironmentdesktop"
-        privacy: "checkpassprivacybasic"
+        privacy: "checkgoodprivacyimproved"
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
-        privacydisclosure: "checkfailprivacydisclosurecentralized"
+        privacydisclosure: "checkpassprivacydisclosurefullnodetxt"
         privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
       - name: windows
