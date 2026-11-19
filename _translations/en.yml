@@ -590,6 +590,7 @@ en:
     latestversion: "Latest version:"
     download: "Download Bitcoin Core"
     downloados: "Or choose your operating system"
+    downloadsha: "SHA256 binary hashes"
     downloadsig: "Verify release signatures"
     downloadtorrent: "Download torrent"
     source: "Source code"
