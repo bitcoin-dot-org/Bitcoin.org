@@ -204,7 +204,7 @@ please read /home/myusername/.rvm/log/1739938091_ruby-3.3.10/make.log
 There has been an error while running make. Halting the installation.
 ```
 
-And if the the `make.log` file has these lines at the end:
+And if the `make.log` file has these lines at the end:
 ```
 make: *** [uncommon.mk:240: build-ext] Error 2
 ++ return 2
