@@ -3,8 +3,8 @@
 # https://opensource.org/licenses/MIT.
 
 id: bitcoinsafe
-title: "Bitcoin Safe"
-titleshort: "Bitcoin Safe"
+title: "Bitcoin-Safe"
+titleshort: "Bitcoin-Safe"
 compat: "desktop windows mac linux"
 level: 2
 platform:
