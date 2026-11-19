@@ -243,64 +243,64 @@ https://opensource.org/licenses/MIT.
 [version message]: https://developer.bitcoin.org/reference/p2p_networking.html#version "A P2P network message sent at the begining of a connection to allow protocol version negotiation"
 
 {% comment %}<!-- Other internal site links; alphabetical order -->{% endcomment %}
-[bandwidth sharing guide]: /en/full-node
-[bcc contribute]: /en/bitcoin-core/contribute/
-[bcc contribute code]: /{{page.lang}}/{% translate development url %}
-[bcc contribute documentation]: /en/bitcoin-core/contribute/documentation
-[bcc contribute issues]: /en/bitcoin-core/contribute/issues
-[bcc contribute support]: /en/bitcoin-core/contribute/support
-[bcc contribute translations]: /en/bitcoin-core/contribute/translations
-[bcc decentralized peer discovery]: /en/bitcoin-core/features/privacy#decentralized-peer-discovery
-[bcc documentation]: /en/bitcoin-core/help#documentation
-[bcc download]: /en/download
-[bcc features]: /en/bitcoin-core/features/
-[bcc forums]: /en/bitcoin-core/help#forums
-[bcc help]: /en/bitcoin-core/help
-[bcc live help]: /en/bitcoin-core/help#live
-[bcc main]: /en/bitcoin-core/
-[bcc network support]: /en/bitcoin-core/features/network-support
-[bcc privacy]: /en/bitcoin-core/features/privacy
-[bcc privacy data leaking]: /en/bitcoin-core/features/privacy#perfect-privacy-for-received-transactions
-[bcc requirements]: /en/bitcoin-core/features/requirements
-[bcc user interface]: /en/bitcoin-core/features/user-interface
-[bcc user interface lightweight]: /en/bitcoin-core/features/user-interface#lightweight
-[bcc validation]: /en/bitcoin-core/features/validation
-[bcc validation decentralization]: /en/bitcoin-core/features/validation#help-protect-decentralization
-[bcc validation do you validate]: /en/bitcoin-core/features/validation#do-you-validate
-[bcc validation protection]: /en/bitcoin-core/features/validation#how-validation-protects-your-bitcoins
-[bcc version history]: /en/version-history
+[bandwidth sharing guide]: /full-node
+[bcc contribute]: /bitcoin-core/contribute/
+[bcc contribute code]: {{ page.lang | lang_prefix }}/{% translate development url %}
+[bcc contribute documentation]: /bitcoin-core/contribute/documentation
+[bcc contribute issues]: /bitcoin-core/contribute/issues
+[bcc contribute support]: /bitcoin-core/contribute/support
+[bcc contribute translations]: /bitcoin-core/contribute/translations
+[bcc decentralized peer discovery]: /bitcoin-core/features/privacy#decentralized-peer-discovery
+[bcc documentation]: /bitcoin-core/help#documentation
+[bcc download]: /download
+[bcc features]: /bitcoin-core/features/
+[bcc forums]: /bitcoin-core/help#forums
+[bcc help]: /bitcoin-core/help
+[bcc live help]: /bitcoin-core/help#live
+[bcc main]: /bitcoin-core/
+[bcc network support]: /bitcoin-core/features/network-support
+[bcc privacy]: /bitcoin-core/features/privacy
+[bcc privacy data leaking]: /bitcoin-core/features/privacy#perfect-privacy-for-received-transactions
+[bcc requirements]: /bitcoin-core/features/requirements
+[bcc user interface]: /bitcoin-core/features/user-interface
+[bcc user interface lightweight]: /bitcoin-core/features/user-interface#lightweight
+[bcc validation]: /bitcoin-core/features/validation
+[bcc validation decentralization]: /bitcoin-core/features/validation#help-protect-decentralization
+[bcc validation do you validate]: /bitcoin-core/features/validation#do-you-validate
+[bcc validation protection]: /bitcoin-core/features/validation#how-validation-protects-your-bitcoins
+[bcc version history]: /version-history
 
-[Bitcoin Core 0.6.0]: /en/release/v0.6.0
-[Bitcoin Core 0.6.1]: /en/release/v0.6.1
-[Bitcoin Core 0.7.0]: /en/release/v0.7.0
-[Bitcoin Core 0.8.0]: /en/release/v0.8.0
-[Bitcoin Core 0.9.0]: /en/release/v0.9.0
-[Bitcoin Core 0.9.1]: /en/release/v0.9.1
-[Bitcoin Core 0.9.2]: /en/release/v0.9.2
-[Bitcoin Core 0.9.3]: /en/release/v0.9.3
-[Bitcoin Core 0.10.0]: /en/release/v0.10.0
-[Bitcoin Core 0.10.1]: /en/release/v0.10.1
-[Bitcoin Core 0.10.2]: /en/release/v0.10.2
-[Bitcoin Core 0.10.3]: /en/release/v0.10.3
-[Bitcoin Core 0.11.0]: /en/release/v0.11.0
-[Bitcoin Core 0.11.1]: /en/release/v0.11.1
-[Bitcoin Core 0.11.2]: /en/release/v0.11.2
-[Bitcoin Core 0.12.0]: /en/release/v0.12.0
-[Bitcoin Core 0.12.1]: /en/release/v0.12.1
-[Bitcoin Core 0.13.0]: /en/release/v0.13.0
-[Bitcoin Core 0.13.1]: /en/release/v0.13.1
-[Bitcoin Core 0.13.2]: /en/release/v0.13.2
-[Bitcoin Core 0.14.0]: /en/release/v0.14.0
-[Bitcoin Core 0.14.1]: /en/release/v0.14.1
-[Bitcoin Core 0.14.2]: /en/release/v0.14.2
-[Bitcoin Core 0.18.0]: /en/release/v0.18.0
+[Bitcoin Core 0.6.0]: /release/v0.6.0
+[Bitcoin Core 0.6.1]: /release/v0.6.1
+[Bitcoin Core 0.7.0]: /release/v0.7.0
+[Bitcoin Core 0.8.0]: /release/v0.8.0
+[Bitcoin Core 0.9.0]: /release/v0.9.0
+[Bitcoin Core 0.9.1]: /release/v0.9.1
+[Bitcoin Core 0.9.2]: /release/v0.9.2
+[Bitcoin Core 0.9.3]: /release/v0.9.3
+[Bitcoin Core 0.10.0]: /release/v0.10.0
+[Bitcoin Core 0.10.1]: /release/v0.10.1
+[Bitcoin Core 0.10.2]: /release/v0.10.2
+[Bitcoin Core 0.10.3]: /release/v0.10.3
+[Bitcoin Core 0.11.0]: /release/v0.11.0
+[Bitcoin Core 0.11.1]: /release/v0.11.1
+[Bitcoin Core 0.11.2]: /release/v0.11.2
+[Bitcoin Core 0.12.0]: /release/v0.12.0
+[Bitcoin Core 0.12.1]: /release/v0.12.1
+[Bitcoin Core 0.13.0]: /release/v0.13.0
+[Bitcoin Core 0.13.1]: /release/v0.13.1
+[Bitcoin Core 0.13.2]: /release/v0.13.2
+[Bitcoin Core 0.14.0]: /release/v0.14.0
+[Bitcoin Core 0.14.1]: /release/v0.14.1
+[Bitcoin Core 0.14.2]: /release/v0.14.2
+[Bitcoin Core 0.18.0]: /release/v0.18.0
 [bitcoin URI subsection]: https://developer.bitcoin.org/examples/payment_processing.html
 [bitcoind initial setup]: https://developer.bitcoin.org/examples/index.html
-[bitcoinpdf]: https://bitcoin.org/en/bitcoin-paper
-[choose your wallet]: /en/choose-your-wallet
-[communities]: /en/community
-[core executable]: /en/download
-[dev communities]: /en/development#devcommunities
+[bitcoinpdf]: https://bitcoin.org/bitcoin-paper
+[choose your wallet]: /choose-your-wallet
+[communities]: /community
+[core executable]: /download
+[dev communities]: /development#devcommunities
 [developer documentation]: https://developer.bitcoin.org/
 [devex complex raw transaction]: https://developer.bitcoin.org/examples/transactions#complex-raw-transaction
 [devex payment protocol]: https://developer.bitcoin.org/examples/payment_processing.html#payment-protocol
@@ -335,8 +335,8 @@ https://opensource.org/licenses/MIT.
 [section serialized blocks]: https://developer.bitcoin.org/reference/block_chain.html#serialized-blocks
 [section simple raw transaction]: https://developer.bitcoin.org/examples/transactions.html#simple-raw-transaction
 [section verifying payment]: https://developer.bitcoin.org/devguide/payment_processing.html#verifying-payment
-[secure your wallet]: /en/secure-your-wallet
-[v0.8 chain fork]: /en/alert/2013-03-11-chain-fork
+[secure your wallet]: /secure-your-wallet
+[v0.8 chain fork]: /alert/2013-03-11-chain-fork
 [Verification subsection]: https://developer.bitcoin.org/devguide/payment_processing.html#verifying-payment
 
 {% comment %}<!-- Official reference documents (BIPs should not use zero padding:
@@ -395,7 +395,7 @@ https://opensource.org/licenses/MIT.
 [core github tag]: https://github.com/bitcoin-dot-org/bitcoin.org/labels/Core
 [BFGMiner]: https://github.com/luke-jr/bfgminer
 [Bitcoin beginners]: https://www.reddit.com/r/bitcoinbeginners
-[Bitcoin Core]: https://bitcoin.org/en/download
+[Bitcoin Core]: https://bitcoin.org/download
 [Bitcoin Core 0.1.6]: https://github.com/bitcoin/bitcoin/commit/cc0b4c3b62367a2aebe5fc1f4d0ed4b97e9c2ac9
 [Bitcoin Core 0.2.9]: https://github.com/bitcoin/bitcoin/commit/42605ce8bcc9bd01b86491c74fee14de77960868
 [Bitcoin Core 0.3.11]: https://github.com/bitcoin/bitcoin/commit/343328c6b8db85e58a1feea85f0d10e62967fa19

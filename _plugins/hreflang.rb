@@ -31,13 +31,23 @@ module Jekyll
 
         path = public_path(page.url)
 
-        # Only /<language>/ belongs to the homepage translation group.
+        home = LangPrefix.for(lang) + '/'
+
+        # Only the language homepage (/ for English, /<language>/ for
+        # translations) belongs to the homepage translation group.
         # This also excludes /404.html and any other page that
         # unintentionally inherits id: index.
-        next if id == 'index' && path != "/#{lang}/"
+        next if id == 'index' && path != home
 
-        # Exclude non-localized pages such as the root homepage.
-        next unless path.start_with?("/#{lang}/")
+        # Exclude pages outside the language's URL space. English lives
+        # at the root, which it shares with pages that were never
+        # translated (BIPs, price, fees...), so for English only the pages
+        # moved out of /en/ (see english_root.rb) and the homepage count.
+        if lang == LangPrefix::ROOT_LANG
+          next unless page.data['english_root'] || path == home
+        else
+          next unless path.start_with?(home)
+        end
 
         groups[id] << [page, lang, path]
       end
@@ -75,8 +85,8 @@ module Jekyll
         entries.each do |page, _lang, _path|
           page.data['hreflang_alternates'] = alternates
 
-          # The root URL selects or redirects to the appropriate
-          # language and is therefore the homepage x-default.
+          # The root URL is the English homepage, which is also the
+          # default for visitors whose language has no translation.
           if id == 'index'
             page.data['hreflang_x_default'] = origin + '/'
           end

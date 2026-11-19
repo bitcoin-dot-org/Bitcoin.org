@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Updated Instructions: How to Run a Full Node"
-permalink: /en/posts/how-to-run-a-full-node.html
+permalink: /posts/how-to-run-a-full-node.html
 date: 2016-12-31
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -18,20 +18,20 @@ author: |
 {:.center}
 ![How to Run a Full Node](/img/blog/free/how-to-run-a-full-bitcoin-node.png?{{site.time | date: '%s'}})
 
-Updated instructions for [how to run a full node](https://bitcoin.org/en/full-node)
+Updated instructions for [how to run a full node](https://bitcoin.org/full-node)
 as of version **0.13.1** are now available on Bitcoin.org. These instructions allow
 one to quickly get set up and running with a full node on the following
 operating systems:
 
-- [Linux](https://bitcoin.org/en/full-node#linux-instructions)
+- [Linux](https://bitcoin.org/full-node#linux-instructions)
 
-- [MacOS](https://bitcoin.org/en/full-node#mac-os-x-instructions)
+- [MacOS](https://bitcoin.org/full-node#mac-os-x-instructions)
 
-- [Windows](https://bitcoin.org/en/full-node#windows-instructions)
+- [Windows](https://bitcoin.org/full-node#windows-instructions)
 
 In addition to the above operating systems, tips on [how to configure a full
-bitcoin node for a local area network](https://bitcoin.org/en/full-node#network-configuration)
-and [how to tweak the reference client configuration](https://bitcoin.org/en/full-node#configuration-tuning)
+bitcoin node for a local area network](https://bitcoin.org/full-node#network-configuration)
+and [how to tweak the reference client configuration](https://bitcoin.org/full-node#configuration-tuning)
 are available.
 </div>
 
@@ -100,7 +100,7 @@ running.
 
 ## What to do if you need help
 
-Please seek out assistance in the [community](https://bitcoin.org/en/community)
+Please seek out assistance in the [community](https://bitcoin.org/community)
 if you need help setting up your full node correctly to handle high-value and
 privacy-sensitive tasks. Do your own diligence to ensure who you get help from
 is ethical, reputable and qualified to assist you.

@@ -161,7 +161,7 @@ Please see the list of [invalid block hashes][] on the Bitcoin Wiki.
 
 [BIP66]: https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki
 [pool list]: https://en.bitcoin.it/wiki/Comparison_of_mining_pools#SPV_Mining_.2F_Old_Bitcoin_Core
-[bitcoin core]: /en/download
+[bitcoin core]: /download
 [SPV]: http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client
 [electrum note]: https://en.bitcoin.it/wiki/July_2015_Forks#Electrum
 [invalid block hashes]: https://en.bitcoin.it/wiki/July_2015_Forks#Invalid_Block_Hashes

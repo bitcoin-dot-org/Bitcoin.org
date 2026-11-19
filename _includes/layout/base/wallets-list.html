@@ -42,7 +42,7 @@ https://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == os.name %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{ id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="{{ page.lang | lang_prefix }}/wallets/{{platform.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -50,7 +50,7 @@ https://opensource.org/licenses/MIT.
                   </a>
                   {% else %}
 
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="{{ page.lang | lang_prefix }}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -88,7 +88,7 @@ https://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os%}
                   {% if platform.name == osName %}
-                  <a class="wallet-list-os-link" href="/{{ page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
+                  <a class="wallet-list-os-link" href="{{ page.lang | lang_prefix }}/wallets/{{platform.name}}/{{os.name}}/{{ id }}/" data-link-platform={{platform.name}}>
                     <span class="wallet-os-ico {{os.name}}-ico"></span>
                     <span class="wallet-os-ico-dark {{os.name}}-ico-dark" hidden></span>
                     <span class="wallet-os-ico-bright {{os.name}}-ico-bright" hidden></span>
@@ -103,9 +103,9 @@ https://opensource.org/licenses/MIT.
         {% else %}
         <div class="wallet-list-item">
           {% if platformName == osName %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ id }}/">
+          <a class="wallet-list-item-link" href="{{ page.lang | lang_prefix }}/wallets/{{ platformName }}/{{ id }}/">
           {% else %}
-          <a class="wallet-list-item-link" href="/{{ page.lang}}/wallets/{{ platformName }}/{{ osName }}/{{ id }}/">
+          <a class="wallet-list-item-link" href="{{ page.lang | lang_prefix }}/wallets/{{ platformName }}/{{ osName }}/{{ id }}/">
           {% endif %}
             <img src="/img/wallet/{{ id }}.png?{{site.time | date: '%s'}}" alt="{{ wallet.title }}" /> {{ wallet.titleshort }}
           </a>
