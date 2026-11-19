@@ -1,3 +1,5 @@
+ Copyright 2016 (c) Angelo L Ranille - All rights reserved
+
 ## Miscellaneous
 
 ### Redirects
