@@ -25,7 +25,7 @@ platform:
         fees: "checkgoodfeecontrolfull"
       privacycheck:
         privacyaddressreuse: "checkpassprivacyaddressrotation"
-        privacydisclosure: "checkpassprivacydisclosurefullnodetxt"
+        privacydisclosure: "checkpassprivacydisclosurefullnode"
         privacynetwork: "checkpassprivacynetworksupporttorproxy"
     os:
       - name: windows
