@@ -444,9 +444,9 @@ Bitcoin Core installer to your desktop.
 
 {{verifyReleaseSignatures}}
 
-After downloading the file to your desktop or your Downloads folder
-(`C:\Users\<YOUR USER NAME>\Downloads`), run it by double-clicking its icon.
-Windows will ask you to confirm that you want to run it. Click Yes and the
+After downloading the file to your desktop or your Downloads folder(`C:\Users\<YOUR USER NAME>\Downloads`), 
+right click and select "Run as administrator".
+Windows will ask you to confirm and then ask if you want to run it. Click Yes and the
 Bitcoin installer will start.  It's a typical Windows installer, and it will
 guide you through the decisions you need to make about where to install Bitcoin
 Core.
@@ -1311,6 +1311,8 @@ directories:
 - OSX: $HOME/Library/Application Support/Bitcoin/
 
 - Linux: $HOME/.bitcoin/
+
+The config file (`bitcoin.conf`) may not exist at these locations if you chose a custom location during the GUI setup it will be at this custom location. The file may also need to be created: in the custom data folder you chose, or in the locations above.
 
 To add an option to the configuration file, just remove its leading
 dash.  You may also need to remove any quotation marks you used in your shell.
