@@ -37,7 +37,7 @@ https://opensource.org/licenses/MIT.
   </li>
   <li><a class="is-expand">{% translate menu-resources layout %}</a>
     <ul>
-      <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a>
+      <li{% if page.id == 'resources' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate resources url %}">{% translate menu-resources layout %}</a></li>
       <li{% if page.id == 'exchanges' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate exchanges url %}">{% translate menu-exchanges layout %}</a></li>
       <li{% if page.id == 'community' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate community url %}">{% translate menu-community layout %}</a></li>
       <li{% if page.id == 'bip' %} class="active"{% endif %}><a href="/bips/">{% translate menu-bips layout %}</a></li>
@@ -66,7 +66,7 @@ https://opensource.org/licenses/MIT.
   <li{% if page.id == 'innovation' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate innovation url %}">{% translate menu-innovation layout %}</a></li>
   <li><a class="is-expand">{% translate menu-participate layout %}</a>
     <ul>
-      <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a>
+      <li{% if page.id == 'support-bitcoin' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate support-bitcoin url %}">{% translate menu-support-bitcoin layout %}</a></li>
       <li id="buybitcoinmenulink" {% if page.id == 'buy' %} class="active"{% endif %}><a href="/{{ page.lang }}/{% translate buy url %}">{% translate menu-buy layout %}</a></li>
       <li id="sellbitcoinmenulink" {% if page.id == 'sell' %} class="active"{% endif %}><a href="/en/{% translate sell url %}">{% translate menu-sell layout %}</a></li>
       {% if page.lang == 'en' %}<li{% if page.id == 'full-node' %} class="active"{% endif %}><a href="/en/full-node">Running a full node</a></li>{% endif %}
