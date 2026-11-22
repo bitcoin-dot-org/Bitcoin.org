@@ -55,6 +55,7 @@ lin64: "x86_64-linux-gnu.tar.gz"
       <p class="download-text">{% translate notelicense %}</p>
       
       <div class="downloadmore">
+        <a href="https://bitcoincore.org/bin/bitcoin-core-{{ site.DOWNLOAD_VERSION }}/SHA256SUMS" class="dl core-link">{% translate downloadsha %}</a>
         <a href="https://bitcoincore.org/bin/bitcoin-core-{{ site.DOWNLOAD_VERSION }}/SHA256SUMS.asc" class="dl core-link">{% translate downloadsig %}</a>
         <a href="{{ PATH_PREFIX }}/{{ FILE_PREFIX }}.torrent" class="dl core-link">{% translate downloadtorrent %}</a>
         {% if site.DOWNLOAD_MAGNETLINK %}
