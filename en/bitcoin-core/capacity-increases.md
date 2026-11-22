@@ -31,7 +31,7 @@ scalability for several years within the Bitcoin Core project and
 consider this the best possible continuation of our efforts.
 
 For more information, please see the
-[FAQ](/en/bitcoin-core/capacity-increases-faq).
+[FAQ](/bitcoin-core/capacity-increases-faq).
 
 {% include bitcoin-core/capability-increases-sigs.md %}
 

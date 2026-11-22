@@ -38,7 +38,7 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="android" data-path="/{{page.lang}}/wallets/mobile/android/" data-text="{% translate platformandroid choose-your-wallet %}"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="android" data-path="{{ page.lang | lang_prefix }}/wallets/mobile/android/" data-text="{% translate platformandroid choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_android.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_android_bright.svg" alt="" class="platform-radio-icon-active">
@@ -46,7 +46,7 @@ https://opensource.org/licenses/MIT.
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="ios" data-path="/{{page.lang}}/wallets/mobile/ios/" data-text="{% translate platformios choose-your-wallet %}" />
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="ios" data-path="{{ page.lang | lang_prefix }}/wallets/mobile/ios/" data-text="{% translate platformios choose-your-wallet %}" />
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
@@ -67,7 +67,7 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="linux" data-path="/{{page.lang}}/wallets/desktop/linux/" data-text="{% translate platformlinux choose-your-wallet %}" />
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="linux" data-path="{{ page.lang | lang_prefix }}/wallets/desktop/linux/" data-text="{% translate platformlinux choose-your-wallet %}" />
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_linux.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_linux_bright.svg" alt="" class="platform-radio-icon-active">
@@ -75,7 +75,7 @@ https://opensource.org/licenses/MIT.
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="mac" data-path="/{{page.lang}}/wallets/desktop/mac/" data-text="{% translate platformmac choose-your-wallet %}"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="mac" data-path="{{ page.lang | lang_prefix }}/wallets/desktop/mac/" data-text="{% translate platformmac choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_mac.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_mac_bright.svg" alt="" class="platform-radio-icon-active">
@@ -83,7 +83,7 @@ https://opensource.org/licenses/MIT.
                     </div>
                   </label>
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="windows" data-path="/{{page.lang}}/wallets/desktop/windows/" data-text="{% translate platformwindows choose-your-wallet %}"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="windows" data-path="{{ page.lang | lang_prefix }}/wallets/desktop/windows/" data-text="{% translate platformwindows choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_windows.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_windows_bright.svg" alt="" class="platform-radio-icon-active">
@@ -106,7 +106,7 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="hardware" data-path="/{{page.lang}}/wallets/hardware/" data-text="{% translate walletcathardware choose-your-wallet %}"/>
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="hardware" data-path="{{ page.lang | lang_prefix }}/wallets/hardware/" data-text="{% translate walletcathardware choose-your-wallet %}"/>
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_hardware.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_hardware_bright.svg" alt="" class="platform-radio-icon-active">
@@ -129,7 +129,7 @@ https://opensource.org/licenses/MIT.
                 </div>
                 <div class="sidebar-selector-os-row">
                   <label class="platform-radio-wrapper">
-                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="web" data-path="/{{page.lang}}/wallets/web/" />
+                    <input type="radio" class="platform-radio js-platform-radio js-wallet-selector js-selector" name="platform" value="web" data-path="{{ page.lang | lang_prefix }}/wallets/web/" />
                     <div class="platform-radio-custom">
                       <img src="/img/os/wallet_menu_web.svg" alt="" class="platform-radio-icon-inactive">
                       <img src="/img/os/wallet_menu_web_bright.svg" alt="" class="platform-radio-icon-active">
@@ -520,7 +520,7 @@ https://opensource.org/licenses/MIT.
               {% for platform in wallet.platform %}
                 {% for os in platform.os %}
                   <a
-                    href="{% if platform.name == os.name %}/{{page.lang}}/wallets/{{platform.name}}/{{id}}/{% else %}/{{page.lang}}/wallets/{{platform.name}}/{{os.name}}/{{id}}/{% endif %}"
+                    href="{% if platform.name == os.name %}{{ page.lang | lang_prefix }}/wallets/{{platform.name}}/{{id}}/{% else %}{{ page.lang | lang_prefix }}/wallets/{{platform.name}}/{{os.name}}/{{id}}/{% endif %}"
                     class="wallet-table-row wallet-link"
                     data-categories="{% if wallet.user %}{{wallet.user}}{% endif %} experienced {% for check in os.check %}{% assign checkValue = check[1] %}{% assign checkName = check[0] %}{% if checkValue contains 'checkgood' %}{{checkName}} {% endif %}{% if platform.name == 'hardware' and checkValue contains 'checkneutral' %}{{checkName}} {% endif %}{% endfor %}{{os.name}} {{os.features}}"
                   >

@@ -20,6 +20,7 @@ module Jekyll
       self.data['id'] = ['wallets', platform['name'], os['name'], wallet['id']].join('-')
       self.data['lang'] = lang
       self.data['title'] = title
+      self.data['english_root'] = true if lang == LangPrefix::ROOT_LANG
     end
   end
 
@@ -37,6 +38,7 @@ module Jekyll
       self.data['id'] = ['wallets', platform['name'], os['name']].join('-')
       self.data['lang'] = lang
       self.data['title'] = title
+      self.data['english_root'] = true if lang == LangPrefix::ROOT_LANG
     end
   end
 
@@ -92,7 +94,7 @@ module Jekyll
           else
             fullTitle = [platformTitle, osTitle, title].join(' - ')
           end
-          site.pages << PlatformPage.new(site, site.source, File.join(lang, walletsDir, dir), platform, os, fullTitle, lang)
+          site.pages << PlatformPage.new(site, site.source, LangPrefix.join(LangPrefix.dir(lang), walletsDir, dir), platform, os, fullTitle, lang)
         end
 
         walletsCol.docs.each do |doc|
@@ -123,7 +125,7 @@ module Jekyll
                   fullTitle = [walletTitle, platformTitle, osTitle, title].join(' - ')
                 end
 
-                site.pages << WalletPage.new(site, site.source, File.join(lang, walletsDir, dir), wallet, platform, os, fullTitle, lang)
+                site.pages << WalletPage.new(site, site.source, LangPrefix.join(LangPrefix.dir(lang), walletsDir, dir), wallet, platform, os, fullTitle, lang)
               end
 
             end

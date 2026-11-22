@@ -16,7 +16,7 @@ https://opensource.org/licenses/MIT.
        {% assign statusClass = "active" %}
      {% endif %}
     <li class="walletmenu-list-item">
-      <a class="walletmenu-platform-link allwallets-link {{statusClass}}" href="/{{ page.lang }}/{% translate choose-your-wallet url %}">{% translate wallet-all choose-your-wallet %}</a>
+      <a class="walletmenu-platform-link allwallets-link {{statusClass}}" href="{{ page.lang | lang_prefix }}/{% translate choose-your-wallet url %}">{% translate wallet-all choose-your-wallet %}</a>
     </li>
   {% for platform in platformsByPlatform %}
 
@@ -42,7 +42,7 @@ https://opensource.org/licenses/MIT.
       {% assign platformClass = platformClass | append: " active" %}
     {% endif %}
     <li class="walletmenu-list-item">
-      {% assign platformHref = "/" | append: page.lang | append: "/wallets/" | append: platformName | append: "/" %}
+      {% assign platformHref = page.lang | lang_prefix | append: "/wallets/" | append: platformName | append: "/" %}
       {% if platformName == 'hardware' or platformName == 'web' %}
         <a class="walletmenu-platform-link {{ platformClass }}" href="{{ platformHref }}">{% translate walletcat{{platformName}} choose-your-wallet %}</a>
       {% else %}
@@ -58,7 +58,7 @@ https://opensource.org/licenses/MIT.
             {% endif %}
             {% if item.os.name != 'desktop' and item.os.name != 'mobile' %}
               <li class="walletmenu-sublist-item">
-                <a class="walletmenu-sublist-link {{ osClass }}"  href="/{{ page.lang }}/wallets/{{ platformName }}/{{ item.os.name }}/">
+                <a class="walletmenu-sublist-link {{ osClass }}"  href="{{ page.lang | lang_prefix }}/wallets/{{ platformName }}/{{ item.os.name }}/">
                   {% translate platform{{item.os.name}} choose-your-wallet %}
                 </a>
               </li>

@@ -8,7 +8,7 @@ category: blog
 show_toc: true
 
 title: "Bitcoin Core Version 0.14.1 Released"
-permalink: /en/posts/bitcoin-core-version-0-14-1-released.html
+permalink: /posts/bitcoin-core-version-0-14-1-released.html
 date: 2017-04-22
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>
@@ -18,7 +18,7 @@ author: |
 {:.center}
 ![Bitcoin Core Version 0.14.1](/img/blog/free/bitcoin-core-0141.png?{{site.time | date: '%s'}})
 
-[Bitcoin Core version 0.14.1 is now available](https://bitcoin.org/en/download).
+[Bitcoin Core version 0.14.1 is now available](https://bitcoin.org/download).
 
 This is a new minor version release, including various bugfixes and performance improvements, as well as updated translations.
 

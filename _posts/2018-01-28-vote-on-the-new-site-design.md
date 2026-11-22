@@ -7,7 +7,7 @@ layout: post
 category: blog
 show_toc: true
 title: "Vote and Help Choose Bitcoin.org's New Design"
-permalink: /en/posts/vote-on-the-new-site-design.html
+permalink: /posts/vote-on-the-new-site-design.html
 date: 2018-01-28
 author: |
   <a href="https://github.com/wbnns">Will Binns</a>

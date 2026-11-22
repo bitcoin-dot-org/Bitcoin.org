@@ -13,7 +13,7 @@ var langs={};{% for lang in site.langs %}{% if lang[0] != page.lang %}langs['{{ 
 var lang=(navigator.language)?navigator.language:navigator.userLanguage;
 lang=lang.split('_')[0];
 if(!langs[lang])lang='en';
-window.location.href='/'+lang+'/';
+window.location.href=(lang=='en')?'/':'/'+lang+'/';
 </script>
 <!--Fallback page, don't allow indexing-->
 <meta name="robots" content="noindex">
