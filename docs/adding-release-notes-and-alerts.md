@@ -127,7 +127,7 @@ In addition to providing more information about how users should respond
 to the situation, you can enhance the alert in several ways described
 below.
 
-The following fields may be defined in the the alert YAML header:
+The following fields may be defined in the alert YAML header:
 
 ```yaml
 ---
